@@ -1,11 +1,24 @@
 from threading import Thread
-import serial, time
+import serial, time, sys
 
 ### Globals ###
 
 POLL_RATE = 0.1
+portname = 
 
-class Host(object):
+def main():
+	print "Starting RS-232 Master on port {:s}".format(portname)
+	master = host.Host()
+	master.start(portname)
+
+	if master.running = False:
+		print '\n\nGoodbye!'
+		print 'port {:s} closed'.format(portname)
+
+if __name__ == "__main__":
+    main()
+
+class HostRS(object):
 	def __init__(self, arg):
 		self.running = true
 		self.cmd = None
@@ -22,14 +35,6 @@ class Host(object):
 		self.running = False
 		self._serial_thread.join()
 
-	def parse_cmd(self, cmd):
-		if cmd == 'Q':
-			return 1
-		else 
-			return 0
-
-
-
 	def _serial_runner(self, portname):
 		
 		ser = serial.Serial(
@@ -42,8 +47,16 @@ class Host(object):
 		)
 
 		while ser.isOpen() and self.running
-
-
+			cmd = input(">> ")
+			if cmd = exit:
+				ser.close()
+				exit()
+			else:
+				ser.write(input)
+				out = ''
+				time.sleep(1)
+				while ser.inWaiting() > 0:
+					out += ser.read(100)
 
 
 
