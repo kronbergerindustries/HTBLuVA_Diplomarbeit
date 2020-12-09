@@ -1,0 +1,128 @@
+%% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{report}
+\usepackage{a4}
+
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+
+\usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
+
+\usepackage{parskip}
+
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%Zum Laden von Grafiken
+%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+%\usepackage{tikz} %%Vektorgrafiken aus LaTeX heraus erstellen
+
+  %% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb,amscd}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{mathrsfs}
+\usepackage{tabls}
+\usepackage{amsthm}
+
+\usepackage{fancyhdr} %%Fancy Kopf- und Fußzeilen
+%\usepackage{longtable} %%Für Tabellen, die eine Seite überschreiten
+\usepackage[text={150mm,240mm}]{geometry}
+
+\usepackage{listings}
+\usepackage{color}
+%Brüche kürzen
+\usepackage{cancel}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{byzantium},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOKUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
+
+\parindent 0pt                     % Setzt die Einrückung der ersten Zeile auf 0 Pt
+
+%% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{titlePage.tex}
+\pagenumbering{Roman}
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Inhaltsverzeichnis
+\bibliographystyle{plain}
+\bibliography{literature}
+
+\cleardoublepage %Das erste Kapitel soll auf einer ungeraden Seite beginnen.
+
+
+\pagestyle{plain} %%Ab hier die Kopf-/Fusszeilen: headings / fancy / ...
+
+%Input files
+\pagenumbering{arabic}
+\input{firstChapter.tex}		%in diesem Kapitel ist Einleitung
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LITERATUR UND ANDERE VERZEICHNISSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ein kleiner Abstand zu den Kapiteln im Inhaltsverzeichnis (toc)
+\addtocontents{toc}{\protect\vspace*{\baselineskip}}
+
+%% Literaturverzeichnis
+%% ==> Eine Datei 'literatur.bib' wird hierfür benötigt.
+%% ==> Sie müssen hierfür BibTeX verwenden (Projekt | Eigenschaften... | BibTeX)
+%\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+%\nocite{*} %Auch nicht-zitierte BibTeX-Einträge werden angezeigt.
+%\bibliographystyle{alpha} %Art der Ausgabe: plain / apalike / amsalpha / ...
+%\bibliography{literatur} %Eine Datei 'literatur.bib' wird hierfür benötigt.
+
+%% Abbildungsverzeichnis
+%\clearpage
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+%\listoffigures
+
+%% Tabellenverzeichnis
+%\clearpage
+%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+%\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ANHÄNGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%% ==> Schreiben Sie hier Ihren Text oder fügen Sie externe Dateien ein.
+
+%\input{Dateiname} %Eine Datei 'Dateiname.tex' wird hierfür benötigt.
+
+
+\end{document}
