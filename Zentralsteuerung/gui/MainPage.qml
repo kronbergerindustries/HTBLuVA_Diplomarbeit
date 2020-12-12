@@ -1,10 +1,17 @@
 import QtQuick 2.4
+import QtQuick.Controls 2.2
 
-MainPageForm {
-}
+Item {
+    id: mainPage
+    width: 1920
+    height: 1080
 
-/*##^##
-Designer {
-    D{i:0;formeditorZoom:0.6600000262260437}
+    Rectangle {
+        id: rectangle
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+        color: "#1a1d22"
+    }
 }
-##^##*/

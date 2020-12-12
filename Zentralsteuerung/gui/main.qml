@@ -6,7 +6,6 @@ ApplicationWindow {
     height: 1080
     visible: true
     visibility: "FullScreen"
-    title: qsTr("Hello World")
 
     StackView {
         id: stackView
@@ -15,21 +14,20 @@ ApplicationWindow {
         width: parent
         height: parent
 
-        LoginPage {
-            id: loginPage
-            x: 0
-            y: 0
-        }
 
         MainPage {
             id: mainPage
             x: 0
             y: 0
         }
+
+
+        LoginPage {
+            id: loginPage
+            x: 0
+            y: 0
+        }
     }
-
-
-
 }
 
 /*##^##

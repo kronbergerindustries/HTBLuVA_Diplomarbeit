@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2020-12-09T09:51:19. -->
+<!-- Written by QtCreator 4.13.2, 2020-12-09T20:06:08. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -173,7 +173,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/gui/main.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/gui/main.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{6097cab0-56ed-416d-9104-1ebc740bfafe}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{47c70292-cf20-41a8-a159-bd6d6f106f22}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\marti\Documents\Projects\HTBLuVA_Diplomarbeit\Zentralsteuerung\gui\main.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
