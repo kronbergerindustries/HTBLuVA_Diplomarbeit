@@ -25,16 +25,16 @@ pin_relai_2_2 = 24
 debounce = 0.02
 
 #Definieren der Objekte der Bedienelemente des rechten Lenkers
-button_1_1 = Button(pin = pin_button_1_1, pull_up = none, active_state = False, bounce_time = debounce)
-button_1_2 = Button(pin = pin_button_1_2, pull_up = none, active_state = False, bounce_time = debounce)
+button_1_1 = Button(pin = pin_button_1_1, pull_up = none, active_state = True, bounce_time = debounce)
+button_1_2 = Button(pin = pin_button_1_2, pull_up = none, active_state = True, bounce_time = debounce)
 
 #Definieren der Objekte der Bedienelemente des linken Lenkers
-button_2_1 = Button(pin = pin_button_2_1, pull_up = none, active_state = False, bounce_time = debounce)
-button_2_2 = Button(pin = pin_button_2_2, pull_up = none, active_state = False, bounce_time = debounce)
-button_2_3 = Button(pin = pin_button_2_3, pull_up = none, active_state = False, bounce_time = debounce)
-button_2_4 = Button(pin = pin_button_2_4, pull_up = none, active_state = False, bounce_time = debounce)
-button_2_5_0 = Button(pin = pin_button_2_5_0, pull_up = none, active_state = False, bounce_time = debounce)
-button_2_5_1 = Button(pin = pin_button_2_5_1, pull_up = none, active_state = False, bounce_time = debounce)
+button_2_1 = Button(pin = pin_button_2_1, pull_up = none, active_state = True, bounce_time = debounce)
+button_2_2 = Button(pin = pin_button_2_2, pull_up = none, active_state = True, bounce_time = debounce)
+button_2_3 = Button(pin = pin_button_2_3, pull_up = none, active_state = True, bounce_time = debounce)
+button_2_4 = Button(pin = pin_button_2_4, pull_up = none, active_state = True, bounce_time = debounce)
+button_2_5_0 = Button(pin = pin_button_2_5_0, pull_up = none, active_state = True, bounce_time = debounce)
+button_2_5_1 = Button(pin = pin_button_2_5_1, pull_up = none, active_state = True, bounce_time = debounce)
 
 #Definieren der Objecte des ersten Relai Moduls
 relai_1_1 = DigitalOutputDevice(pin = pin_relai_1_1, active_high = True, initial_value = False, pin_factory = None)
@@ -49,17 +49,17 @@ relai_2_2 = DigitalOutputDevice(pin = pin_relai_2_2, active_high = True, initial
 class gpio(object):
 	def __init__(self):
 		self.running = true
-		self._serial_thread = None
+		self._gpio_thread = None
 	
 	def start(self):
-		self._serial_thread = Thread(target = self._serial_runner)
+		self._gpio_thread = Thread(target = self._gpio_runner)
 
-		self._serial_thread.daemon = False
-		self._serial_thread.start()
+		self._gpio_thread.daemon = False
+		self._gpio_thread.start()
 
 	def stop(self)
 		self.running = False
-		self._serial_thread.join()
+		self._gpio_thread.join()
 
 	def _gpio_runner(self):
 		#Ansteuerung

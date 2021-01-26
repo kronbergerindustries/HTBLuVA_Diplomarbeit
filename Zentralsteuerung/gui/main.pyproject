@@ -1,3 +1,3 @@
 {
-    "files": ["main.py","main.qml","LoginPage.qml","LoginWindow.qml","MainPage.qml"]
+    "files": ["Component_Menu.qml","main.py","Page_Settings.qml","Component_Blinker.qml","Component_Highbeam.qml","Page_Dashboard.qml","Component_Dash.qml","Component_MenuButton.qml","Page_Login.qml","Component_Light.qml","main_User.qml","View_Admin.qml","main_Admin.qml","Page_Diagnosis.qml","Page_Battery.qml","Component_Bar.qml","View_User.qml","Component_Power.qml"]
 }
