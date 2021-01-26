@@ -1,4 +1,5 @@
-from gpio import gpio
+import sys
+import gpio
 
 def main():
 	master = gpio.gpio()
