@@ -8,13 +8,13 @@ Item {
     Image {
         id: light_on
         visible: false
-        source: "Pictures/light_on.png"
+        source: "Pictures/icon_light_on.png"
         anchors.fill: parent
     }
 
     Image {
         id: ligh_off
-        source: "Pictures/ligh_off.png"
+        source: "Pictures/icon_light_off.png"
         anchors.fill: parent
     }
     states: [

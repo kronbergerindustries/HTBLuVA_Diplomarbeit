@@ -3,7 +3,7 @@ import QtQuick.Controls 2.2
 import QtQuick.Shapes 1.14
 
 Item {
-    id: diagnosisPage
+    id: page
     width: 1920
     height: 1080
 
@@ -14,6 +14,19 @@ Item {
         width: 1920
         height: 1080
         color: "#0d1218"
+
+        Rectangle {
+            id: rectangle
+            y: 880
+            height: 160
+            color: "#1a1d22"
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
+            anchors.rightMargin: 0
+            anchors.leftMargin: 0
+        }
     }
 }
 

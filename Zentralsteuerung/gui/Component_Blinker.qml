@@ -9,7 +9,7 @@ Item {
         x: 214
         y: 175
         visible: false
-        source: "Pictures/blinker_on.png"
+        source: "Pictures/icon_blinker_on.png"
         anchors.fill: parent
     }
 
@@ -19,7 +19,7 @@ Item {
         y: 175
         width: 212
         visible: true
-        source: "Pictures/blinker_off.png"
+        source: "Pictures/icon_blinker_off.png"
         anchors.fill: parent
     }
     states: [

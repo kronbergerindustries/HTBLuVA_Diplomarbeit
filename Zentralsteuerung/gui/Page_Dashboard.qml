@@ -6,11 +6,10 @@ import Qt.labs.calendar 1.0
 import QtQuick.Timeline 1.0
 
 Item {
-    id: dashPage
+    id: page
     width: 1920
     height: 1080
     property alias valueDegEngineText: valueDegEngine.text
-
 
     Rectangle {
         id: rectangle
@@ -27,7 +26,7 @@ Item {
             width: 90
             height: 84
             anchors.verticalCenter: iconCPU.verticalCenter
-            source: "Pictures/iconBattery.png"
+            source: "Pictures/icon_battery_grey.png"
 
             Text {
                 id: degBattery
@@ -73,7 +72,7 @@ Item {
             width: 98
             height: 90
             anchors.verticalCenter: iconCPU.verticalCenter
-            source: "Pictures/iconOut.png"
+            source: "Pictures/icon_out.png"
 
             Text {
                 id: degOut
@@ -119,7 +118,7 @@ Item {
             y: 848
             width: 90
             height: 84
-            source: "Pictures/iconCPU.png"
+            source: "Pictures/icon_cpu.png"
             fillMode: Image.PreserveAspectFit
 
             Text {
@@ -167,7 +166,7 @@ Item {
             height: 118
             visible: true
             anchors.verticalCenter: dashComponent.verticalCenter
-            source: "Pictures/battery.png"
+            source: "Pictures/icon_battery_green.png"
             fillMode: Image.PreserveAspectFit
 
             Text {
@@ -194,7 +193,7 @@ Item {
                 width: 120
                 height: 78
                 color: "#ffffff"
-                text: "80"
+                text: "50"
                 anchors.verticalCenter: percBattery.verticalCenter
                 anchors.right: percBattery.left
                 font.pixelSize: 51
@@ -213,7 +212,7 @@ Item {
             width: 98
             height: 90
             anchors.verticalCenter: iconCPU.verticalCenter
-            source: "Pictures/iconEngine.png"
+            source: "Pictures/icon_engine.png"
             fillMode: Image.PreserveAspectFit
 
             Text {
@@ -259,7 +258,7 @@ Item {
             y: 48
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenterOffset: 0
-            anchors.verticalCenterOffset: -20
+            anchors.verticalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -287,7 +286,7 @@ Item {
         }
 
         Component_Blinker {
-            id: component_Blinker
+            id: component_blinker_left
             x: 1613
             width: 100
             height: 70
@@ -297,7 +296,7 @@ Item {
             anchors.rightMargin: 100
 
             Component_Blinker {
-                id: component_Blinker1
+                id: component_blinker_right
                 x: -131
                 y: 405
                 width: 100
@@ -307,6 +306,13 @@ Item {
                 anchors.rightMargin: 30
                 rotation: 180
             }
+        }
+        
+        Component_Mode {
+            id: component_Mode
+            x: 62
+            y: 320
+            anchors.verticalCenter: parent.verticalCenter
         }
     }
 
@@ -326,10 +332,10 @@ Item {
         startFrame: 0
         enabled: true
     }
+
+
 }
 
-/*##^##
-Designer {
-    D{i:0;formeditorZoom:0.66}D{i:22}
-}
-##^##*/
+
+
+

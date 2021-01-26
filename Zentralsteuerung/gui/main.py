@@ -1,6 +1,6 @@
 # This Python file uses the following encoding: utf-8
 import sys
-import mysql.connector as sql
+import mysql.connector
 from os.path import abspath, dirname, join
 
 
@@ -11,8 +11,8 @@ from PySide2.QtQml import QQmlApplicationEngine
 
 class Bridge(QObject):
 
-    @Slot(str, result=bool)
-    def loginData(self, username, password):
+    @Slot(str, str, result=bool)
+    def loginData(self, password, username):
         # Verbindungsaufbau zur Datenbank
         dbhost = "localhost"
         dbuser = "root"
@@ -20,19 +20,54 @@ class Bridge(QObject):
         dbname = "login_data"
 
         # Verbindung zur Datenbank herstellen
-        con = sql.connector.connect(host=dbhost, user=dbuser, password=dbpass, database=dbname)
+        con = mysql.connector.connect(host=dbhost, user=dbuser,
+                                      password=dbpass, database=dbname)
 
         # Cursor für Datenbank abfragen erzeugen
-        cursor = con.cursor(buffered=True)
+        cursor = con.cursor()
 
-        data = ("SELECT password FROM login_data" "WHERE username = %s")
+        # Abfragen der Login Daten aus der Datenbank
+        sql = "select * from users where username = %s and password = %s"
+        cursor.execute(sql, [(username), (password)])
+        results = cursor.fetchall()
 
-        if data == password:
-            return True
-
+        if results:
+            for i in results:
+                return True
+                break
         else:
             return False
 
+    @Slot(result=float)
+    def fetchDash(self):
+        count = 0
+        while True:
+            count = count + 1
+            return count
+            time.sleep(0.25)
+
+            if count > 120:
+                count = 0
+
+    @Slot(result=float)
+    def fetchTempEng(self):
+        pass
+
+    @Slot(result=float)
+    def fetchTempOut(self):
+        pass
+
+    @Slot(result=float)
+    def fetchTempBat(self):
+        pass
+
+    @Slot(result=float)
+    def fetchTempCon(self):
+        pass
+
+    @Slot(result=str)
+    def fetchDate(self):
+        pass
 
 if __name__ == "__main__":
 
@@ -48,7 +83,7 @@ if __name__ == "__main__":
 
     # Get the path of the current directory, and then add the name
     # of the QML file, to load it.
-    qmlFile = join(dirname(__file__), 'main_Admin.qml')
+    qmlFile = join(dirname(__file__), 'main.qml')
     engine.load(abspath(qmlFile))
 
     if not engine.rootObjects():

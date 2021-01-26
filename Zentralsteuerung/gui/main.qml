@@ -10,16 +10,19 @@ ApplicationWindow {
     height: 1080
     visible: true
 
-    View_Admin {
-        id: admin
-        x: 1832
-        y: 800
+    View_States {
+        id: view
+        x: 0
+        y: 0
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 
 }
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.5;height:1080;width:1920}
+    D{i:0;formeditorZoom:0.5;height:1080;width:1920}D{i:1}
 }
 ##^##*/

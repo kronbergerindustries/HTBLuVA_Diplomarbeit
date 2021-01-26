@@ -6,8 +6,8 @@ import QtQuick.Controls.Material 2.12
 
 Item {
     id: view
-    anchors.verticalCenter: parent.verticalCenter
-    anchors.horizontalCenter: parent.horizontalCenter
+    height: 1080
+    width: 1920
     Page_Login {
         id: loginPage
         anchors.verticalCenter: parent.verticalCenter
@@ -23,35 +23,39 @@ Item {
     }
 
     Page_Battery {
-        id: page_Battery
+        id: batteryPage
         x: 0
         y: 0
         visible: false
     }
 
     Page_Diagnosis {
-        id: page_Diagnosis
+        id: diagnosisPage
         x: 0
         y: 0
         visible: false
     }
 
     Page_Settings {
-        id: page_Settings
+        id: settingsPage
         x: 0
         y: 0
         visible: false
     }
 
+    Component_Menu {
+        id: component_Menu
+        x: 0
+        visible: false
+        anchors.top: parent.top
+        anchors.horizontalCenterOffset: 0
+        anchors.topMargin: -160
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     states: [
         State {
             name: "dash"
-
-            PropertyChanges {
-                target: mainPage
-                visible: true
-            }
-
             PropertyChanges {
                 target: loginPage
                 visible: false
@@ -59,17 +63,18 @@ Item {
 
             PropertyChanges {
                 target: dashPage
+                visible: true
+            }
+
+            PropertyChanges {
+                target: component_Menu
+                opacity: 1
                 visible: true
             }
         },
         State {
             name: "battery"
             PropertyChanges {
-                target: mainPage
-                visible: true
-            }
-
-            PropertyChanges {
                 target: loginPage
                 visible: false
             }
@@ -80,18 +85,18 @@ Item {
             }
 
             PropertyChanges {
-                target: page_Battery
+                target: batteryPage
+                visible: true
+            }
+
+            PropertyChanges {
+                target: component_Menu
                 visible: true
             }
         },
         State {
             name: "diagnosis"
             PropertyChanges {
-                target: mainPage
-                visible: true
-            }
-
-            PropertyChanges {
                 target: loginPage
                 visible: false
             }
@@ -102,23 +107,23 @@ Item {
             }
 
             PropertyChanges {
-                target: page_Battery
+                target: batteryPage
                 visible: false
             }
 
             PropertyChanges {
-                target: page_Diagnosis
+                target: diagnosisPage
+                visible: true
+            }
+
+            PropertyChanges {
+                target: component_Menu
                 visible: true
             }
         },
         State {
             name: "settings"
             PropertyChanges {
-                target: mainPage
-                visible: true
-            }
-
-            PropertyChanges {
                 target: loginPage
                 visible: false
             }
@@ -129,12 +134,17 @@ Item {
             }
 
             PropertyChanges {
-                target: page_Battery
+                target: batteryPage
                 visible: false
             }
 
             PropertyChanges {
-                target: page_Settings
+                target: settingsPage
+                visible: true
+            }
+
+            PropertyChanges {
+                target: component_Menu
                 visible: true
             }
         }

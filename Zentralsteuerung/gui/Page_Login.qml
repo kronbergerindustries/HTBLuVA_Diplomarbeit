@@ -16,7 +16,7 @@ Item {
         border.color: "#00000000"
 
         Rectangle {
-            id: sponsorsPanel
+            id: page
             x: 0
             y: 920
             width: 1920
@@ -27,19 +27,6 @@ Item {
             border.width: 1
 
             Image {
-                id: mysqllogo
-                y: 17
-                width: 120
-                height: 120
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: qtLogo.right
-                source: "Pictures/2000px-MySQL_logo.svg.png"
-                anchors.leftMargin: 60
-                anchors.verticalCenterOffset: 0
-                fillMode: Image.PreserveAspectFit
-            }
-
-            Image {
                 id: pythonLogo
                 x: 768
                 y: 27
@@ -47,7 +34,7 @@ Item {
                 height: 100
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: qtLogo.left
-                source: "Pictures/python_logo.png"
+                source: "Pictures/logo_python.png"
                 anchors.rightMargin: 60
                 anchors.verticalCenterOffset: 0
                 fillMode: Image.PreserveAspectFit
@@ -60,7 +47,7 @@ Item {
                 width: 100
                 height: 100
                 anchors.verticalCenter: parent.verticalCenter
-                source: "Pictures/qt_logo.png"
+                source: "Pictures/logo_qt.png"
                 anchors.horizontalCenter: parent.horizontalCenter
                 fillMode: Image.PreserveAspectFit
             }
@@ -73,7 +60,7 @@ Item {
                 height: 100
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: elinLogo.left
-                source: "Pictures/schrack_logo.png"
+                source: "Pictures/logo_schrack.png"
                 anchors.rightMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
@@ -86,8 +73,19 @@ Item {
                 height: 94
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: pythonLogo.left
-                source: "Pictures/elin_logo.png"
+                source: "Pictures/logo_elin.png"
                 anchors.rightMargin: 60
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Image {
+                id: mysqlLogo
+                y: 50
+                width: 120
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: qtLogo.right
+                source: "Pictures/logo_mysql.png"
+                anchors.leftMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
 
@@ -131,7 +129,7 @@ Item {
                     echoMode: TextInput.Password
 
                     Button {
-                        id: login_button
+                        id: loginButton
                         y: 0
                         width: 50
                         height: 50
@@ -147,8 +145,9 @@ Item {
                         display: AbstractButton.TextBesideIcon
                         highlighted: true
                         onClicked: {
-                            if (bridge.loginData(partial(usersBox.currentText, password.text)) === true) {
+                            if (bridge.loginData(password.text, usersBox.currentText) === true) {
                                 view.state = "dash"
+                                loginPage.state = "base state"
                             }
                             else {
                                 loginPage.state = "wrongPass"
@@ -164,6 +163,9 @@ Item {
                     width: 400
                     height: 50
                     anchors.top: parent.bottom
+                    enabled: true
+                    focusPolicy: Qt.StrongFocus
+                    displayText: qsTr("USERNAME")
                     font.family: "Tahoma"
                     textRole: ""
                     editable: true
@@ -171,15 +173,14 @@ Item {
                     anchors.topMargin: 50
                     font.pointSize: 18
                     model: ["USER", "GUEST", "ADMIN"]
-                    displayText: ""
                     anchors.horizontalCenterOffset: 0
                     anchors.horizontalCenter: parent.horizontalCenter
-                    currentIndex: 0
+                    currentIndex: -1
                 }
             }
 
             Text {
-                id: wrongPassText
+                id: wrongText
                 x: 228
                 y: 650
                 width: 265
@@ -199,7 +200,7 @@ Item {
             name: "wrongPass"
 
             PropertyChanges {
-                target: wrongPassText
+                target: wrongText
                 visible: true
             }
         }
@@ -210,6 +211,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66}D{i:3}D{i:6}
+    D{i:0;formeditorZoom:0.66}
 }
 ##^##*/

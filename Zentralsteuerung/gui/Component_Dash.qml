@@ -20,7 +20,7 @@ Item {
                 width: 296
                 height: 182
                 color: "#ffffff"
-                text: "50"
+                text: "100"
                 font.pixelSize: 150
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter

@@ -8,14 +8,14 @@ Item {
     Image {
         id: highbeam_off
         visible: true
-        source: "Pictures/highbeam_off.png"
+        source: "Pictures/icon_highbeam_off.png"
         anchors.fill: parent
     }
 
     Image {
         id: highbeam_on
         visible: false
-        source: "Pictures/highbeam_on.png"
+        source: "Pictures/icon_highbeam_on.png"
         anchors.fill: parent
     }
     states: [
