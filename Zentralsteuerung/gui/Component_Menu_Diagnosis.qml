@@ -25,7 +25,7 @@ Item {
         visible: true
         anchors.fill: parent
         onClicked: {
-            view.state = "diagnosis"
+            component_Menu.pageDiagnosis()
             menuBar.state = "base state"
 
         }

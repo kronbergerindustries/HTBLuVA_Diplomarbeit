@@ -1,10 +1,35 @@
 import QtQuick 2.4
 import QtQuick.Controls 2.2
+import QtQuick.Window 2.2
 
 Item {
     id:loginPage
     width: 1920
     height: 1080
+
+
+    // Function
+    // Function To Change The Visibility State of the Wrong Pass Statement
+    function wrongPass(boolValue) {
+        if(boolValue) {
+            wrongText.visible = true
+
+        } else {
+            wrongText.visible = false
+
+        }
+    }
+
+    // Function To Change The Visibility State of the State
+    function changeVisibility(boolValue) {
+        if(boolValue) {
+            loginPage.visible = true
+
+        } else {
+            loginPage.visible = false
+
+        }
+    }
 
     Rectangle {
         id: background
@@ -89,6 +114,16 @@ Item {
                 fillMode: Image.PreserveAspectFit
             }
 
+            Image {
+                id: logo_sigmatek
+                x: 1247
+                y: 48
+                width: 396
+                height: 64
+                source: "Pictures/logo_sigmatek.png"
+                fillMode: Image.PreserveAspectFit
+            }
+
         }
 
         Rectangle {
@@ -125,7 +160,7 @@ Item {
                     anchors.topMargin: 50
                     anchors.horizontalCenterOffset: -25
                     anchors.horizontalCenter: parent.horizontalCenter
-                    font.pointSize: 18
+                    font.pointSize: 16
                     echoMode: TextInput.Password
 
                     Button {
@@ -144,16 +179,7 @@ Item {
                         autoRepeat: true
                         display: AbstractButton.TextBesideIcon
                         highlighted: true
-                        onClicked: {
-                            if (bridge.loginData(password.text, usersBox.currentText) === true) {
-                                view.state = "dash"
-                                loginPage.state = "base state"
-                            }
-                            else {
-                                loginPage.state = "wrongPass"
-                            }
-                        }
-
+                        onClicked: bridge.loginData(password.text, usersBox.currentText)
                     }
                 }
 
@@ -163,6 +189,10 @@ Item {
                     width: 400
                     height: 50
                     anchors.top: parent.bottom
+                    activeFocusOnTab: true
+                    antialiasing: false
+                    focus: false
+                    smooth: true
                     enabled: true
                     focusPolicy: Qt.StrongFocus
                     displayText: qsTr("USERNAME")
@@ -171,11 +201,11 @@ Item {
                     editable: true
                     flat: false
                     anchors.topMargin: 50
-                    font.pointSize: 18
+                    font.pointSize: 16
                     model: ["USER", "GUEST", "ADMIN"]
                     anchors.horizontalCenterOffset: 0
                     anchors.horizontalCenter: parent.horizontalCenter
-                    currentIndex: -1
+                    currentIndex: 0
                 }
             }
 
@@ -194,7 +224,6 @@ Item {
             }
         }
 
-    }
     states: [
         State {
             name: "wrongPass"
@@ -205,12 +234,12 @@ Item {
             }
         }
     ]
+    }
 }
-
 
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66}
+    D{i:0;formeditorZoom:0.5}
 }
 ##^##*/

@@ -24,7 +24,7 @@ Item {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            view.state = "settings"
+            component_Menu.pageSettings()
             menuBar.state = "base state"
 
         }

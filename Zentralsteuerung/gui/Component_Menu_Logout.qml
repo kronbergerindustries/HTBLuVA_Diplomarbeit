@@ -5,6 +5,8 @@ Item {
     implicitHeight: 120
     implicitWidth: 120
 
+
+
     Image {
         id: menu_logout_white
         anchors.verticalCenter: parent.verticalCenter
@@ -30,8 +32,9 @@ Item {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            view.state = "base state"
+            component_Menu.pageLogin()
             menuBar.state = "base state"
+            page_Login.resetLogin()
         }
     }
 

@@ -1,23 +1,23 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.8)  12 DEC 2020 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  8 FEB 2021 15:23
 entering extended mode
-**./template.tex
-(template.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03>
+**./diplomarbeit.tex
+(diplomarbeit.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -26,18 +26,18 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 Package: a4 2020/02/18 v1.2g A4 based page layout
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/10/27 3.51 The Babel package
+Package: babel 2021/01/26 3.53 The Babel package
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/10/27 3.51 Babel common definitions
-\babel@savecnt=\count184
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count186
 \U@D=\dimen139
 \l@babelnohyphens=\language79
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count185
+\bbl@dirlevel=\count187
 
 *************************************
 * Local config file bblopts.cfg used
@@ -62,10 +62,7 @@ Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-
-(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/base\ansinew.def
-File: ansinew.def 2020/08/01 v1.3d Input encoding file
-))
+)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -119,7 +116,7 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count186
+\etb@tempcnta=\count188
 )) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
 y
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -160,13 +157,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count187
+\inf@bad=\count189
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count188
-\leftroot@=\count189
+\uproot@=\count190
+\leftroot@=\count191
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count190
-\DOTSCASE@=\count191
+\classnum@=\count192
+\DOTSCASE@=\count193
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -175,15 +172,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count192
-\c@MaxMatrixCols=\count193
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
 \dotsspace@=\muskip16
-\c@parentequation=\count194
-\dspbrk@lvl=\count195
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
 \tag@help=\toks19
-\row@=\count196
-\column@=\count197
-\maxfields@=\count198
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
 \andhelp@=\toks20
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
@@ -264,8 +261,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen154
-\Hy@linkcounter=\count199
-\Hy@pagecounter=\count266
+\Hy@linkcounter=\count267
+\Hy@pagecounter=\count268
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -278,7 +275,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count267
+\Hy@SavedSpaceFactor=\count269
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -286,7 +283,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count268
+\c@Hy@tempcnt=\count270
  (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -302,7 +299,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count269
+\Fld@menulength=\count271
 \Field@Width=\dimen156
 \Fld@charsize=\dimen157
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -320,9 +317,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count270
-\c@Item=\count271
-\c@Hfootnote=\count272
+\Hy@abspage=\count272
+\c@Item=\count273
+\c@Hfootnote=\count274
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -333,8 +330,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count273
-\c@bookmark@seq@number=\count274
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -365,8 +362,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \@skip@bove=\dimen163
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
 \f@nch@headwidth=\skip56
 \f@nch@O@elh=\skip57
 \f@nch@O@erh=\skip58
@@ -383,9 +380,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
 \Gm@bindingoffset=\dimen164
 \Gm@wd@mp=\dimen165
 \Gm@odd@mp=\dimen166
@@ -398,23 +395,23 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count278
+\lst@mode=\count280
 \lst@gtempboxa=\box49
 \lst@token=\toks31
-\lst@length=\count279
+\lst@length=\count281
 \lst@currlwidth=\dimen172
-\lst@column=\count280
-\lst@pos=\count281
+\lst@column=\count282
+\lst@pos=\count283
 \lst@lostspace=\dimen173
 \lst@width=\dimen174
-\lst@newlines=\count282
-\lst@lineno=\count283
+\lst@newlines=\count284
+\lst@lineno=\count285
 \lst@maxwidth=\dimen175
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count284
-\lst@skipnumbers=\count285
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
 \lst@framebox=\box50
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
@@ -445,11 +442,11 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count286
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box51
-) (template.aux)
-\openout1 = `template.aux'.
+) (diplomarbeit.aux)
+\openout1 = `diplomarbeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -471,16 +468,16 @@ LaTeX Font Info:    ... okay on input line 70.
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
+\scratchcounter=\count289
 \scratchdimen=\dimen176
 \scratchbox=\box52
-\nofMPsegments=\count288
-\nofMParguments=\count289
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count290
+\MPscratchCnt=\count292
 \MPscratchDim=\dimen177
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks33
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -501,14 +498,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count295
 )
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (template.out) (template.out)
+ (diplomarbeit.out) (diplomarbeit.out)
 \@outlinefile=\write3
-\openout3 = `template.out'.
+\openout3 = `diplomarbeit.out'.
 
 
 *geometry* driver: auto-detecting
@@ -545,7 +542,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count294
+\c@lstlisting=\count296
 (titlePage.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 2.
@@ -608,17 +605,22 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 16--26
 [1
 
 {C:/Users/marti/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Illustrations
-/HTL_logo.png>]) (template.toc)
+/HTL_logo.png>])
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
-\openout4 = `template.toc'.
+\openout4 = `diplomarbeit.toc'.
 
-
-No file template.bbl.
+No file diplomarbeit.bbl.
 [1
 
 ] (firstChapter.tex
 Kapitel 1.
-<./Illustrations/HTL_Logo.jpg, id=36, 370.986pt x 143.0946pt>
+
+LaTeX Warning: Reference `fig:HTL_Logo' on page 1 undefined on input line 13.
+
+<./Illustrations/HTL_Logo.jpg, id=31, 370.986pt x 143.0946pt>
 File: ./Illustrations/HTL_Logo.jpg Graphic file (type jpg)
 <use ./Illustrations/HTL_Logo.jpg>
 Package pdftex.def Info: ./Illustrations/HTL_Logo.jpg  used on input line 18.
@@ -644,22 +646,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: Citation `mann' on page 2 undefined on input line 51.
 
-) [2] (template.aux)
-Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 571047D5159733EB9395B4E10F5D6466;161.
-
+) [2] (diplomarbeit.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `diplomarbeit.out' has not changed.
+(rerunfilecheck)             Checksum: 571047D5159733EB9395B4E10F5D6466;161.
  ) 
 Here is how much of TeX's memory you used:
- 10071 strings out of 479799
- 150601 string characters out of 2869723
- 645587 words of memory out of 3000000
- 26788 multiletter control sequences out of 15000+200000
- 596291 words of font info for 75 fonts, out of 3000000 for 9000
+ 10167 strings out of 479618
+ 152224 string characters out of 2865027
+ 651807 words of memory out of 3000000
+ 27070 multiletter control sequences out of 15000+200000
+ 464633 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,9n,72p,503b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,9n,74p,507b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C
 :/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
@@ -676,9 +680,16 @@ arti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/mar
 ti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/marti
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/marti/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on template.pdf (4 pages, 253375 bytes).
+Output written on diplomarbeit.pdf (4 pages, 252228 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
  35 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+lic/lm/lmsy10.pfb>
+Output written on diplomarbeit.pdf (4 pages, 251436 bytes).
+PDF statistics:
+ 94 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

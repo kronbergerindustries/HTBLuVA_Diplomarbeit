@@ -1,15 +1,28 @@
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Shapes 1.14
-import QtGraphicalEffects 1.0
-import Qt.labs.calendar 1.0
 import QtQuick.Timeline 1.0
 
 Item {
-    id: page
+    id: dashPage
     width: 1920
     height: 1080
+
+    // Properties
+    // Value Properties
     property alias valueDegEngineText: valueDegEngine.text
+
+    // Functions
+    // Function To Change The Visibility State of the State
+    function changeVisibility(boolValue) {
+        if(boolValue) {
+            dashPage.visible = true
+
+        } else {
+            dashPage.visible = false
+
+        }
+    }
 
     Rectangle {
         id: rectangle
@@ -285,34 +298,31 @@ Item {
             }
         }
 
-        Component_Blinker {
-            id: component_blinker_left
-            x: 1613
-            width: 100
-            height: 70
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.topMargin: 60
-            anchors.rightMargin: 100
-
-            Component_Blinker {
-                id: component_blinker_right
-                x: -131
-                y: 405
-                width: 100
-                height: 70
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.right: parent.left
-                anchors.rightMargin: 30
-                rotation: 180
-            }
-        }
-        
         Component_Mode {
             id: component_Mode
             x: 62
             y: 320
             anchors.verticalCenter: parent.verticalCenter
+        }
+
+        Component_Blinker {
+            id: component_Blinker
+            x: 1720
+            y: 60
+            width: 100
+            height: 70
+
+            Component_Blinker {
+                id: component_Blinker1
+                width: 101
+                anchors.right: parent.left
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 0
+                anchors.topMargin: 0
+                anchors.rightMargin: 20
+                rotation: 180
+            }
         }
     }
 
@@ -332,10 +342,10 @@ Item {
         startFrame: 0
         enabled: true
     }
-
-
 }
 
-
-
-
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+##^##*/

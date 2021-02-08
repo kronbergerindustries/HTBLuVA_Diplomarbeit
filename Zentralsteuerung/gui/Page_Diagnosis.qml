@@ -3,9 +3,21 @@ import QtQuick.Controls 2.2
 import QtQuick.Shapes 1.14
 
 Item {
-    id: page
+    id: diagnosisPage
     width: 1920
     height: 1080
+
+    // Function
+    //Function To Change The Visibility State of the Page
+    function changeVisibility(boolValue) {
+        if (boolValue) {
+            diagnosisPage.visible = true
+
+        } else {
+            diagnosisPage.visible = false
+
+        }
+    }
 
     Rectangle {
         id: background

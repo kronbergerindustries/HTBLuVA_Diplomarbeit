@@ -3,9 +3,21 @@ import QtQuick.Controls 2.2
 import QtQuick.Shapes 1.14
 
 Item {
-    id: page
+    id: batteryPage
     width: 1920
     height: 1080
+
+    // Function
+    // Function To Change The Visibility State of the Page
+    function changeVisibility(boolValue) {
+        if (boolValue) {
+            batteryPage.visible = true
+
+        } else {
+            batteryPage.visible = false
+
+        }
+    }
 
     Rectangle {
         id: background
@@ -60,13 +72,11 @@ Item {
             height: 78
             color: "#ffffff"
             text: "50"
-            anchors.verticalCenter: percBattery.verticalCenter
-            anchors.right: component_Bar.horizontalCenter
             font.pixelSize: 60
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
             transformOrigin: Item.Right
-            anchors.rightMargin: 0
+            anchors.rightMargin: 960
             textFormat: Text.RichText
 
             Text {
@@ -91,6 +101,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.5}D{i:6}
+    D{i:0;formeditorZoom:0.5}
 }
 ##^##*/

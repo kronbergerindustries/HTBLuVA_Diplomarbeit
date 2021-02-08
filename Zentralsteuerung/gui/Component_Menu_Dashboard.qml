@@ -25,7 +25,7 @@ Item {
         visible: true
         anchors.fill: parent
         onClicked: {
-            view.state = "dash"
+            component_Menu.pageDash()
             menuBar.state = "base state"
 
         }

@@ -1,74 +1,60 @@
 # This Python file uses the following encoding: utf-8
+
+# Import Python Modules
 import sys
 import mysql.connector
 from os.path import abspath, dirname, join
 
-
-from PySide2.QtCore import QObject, Slot
+# Import QML Modules
+from PySide2.QtCore import QObject, Slot, Signal
 from PySide2.QtGui import QGuiApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
 
+# Bridge Class connected to the MainWindow
 class Bridge(QObject):
+    def __init__(self):
+        QObject.__init__(self)
 
-    @Slot(str, str, result=bool)
+    # Signals To Send Data
+    signalUser = Signal(str)
+    signalPass = Signal(str)
+    signalLogin = Signal(bool)
+
+    # Funktion To Check Login
+    @Slot(str, str)
     def loginData(self, password, username):
-        # Verbindungsaufbau zur Datenbank
+        # Database credentials
         dbhost = "localhost"
         dbuser = "root"
         dbpass = "8Yf!97mmnZbvYJe"
         dbname = "login_data"
 
-        # Verbindung zur Datenbank herstellen
+        # Connection to the database
         con = mysql.connector.connect(host=dbhost, user=dbuser,
                                       password=dbpass, database=dbname)
 
-        # Cursor für Datenbank abfragen erzeugen
+        # Creating cursor for database queries
         cursor = con.cursor()
 
-        # Abfragen der Login Daten aus der Datenbank
+        # Querying the data from the database
         sql = "select * from users where username = %s and password = %s"
         cursor.execute(sql, [(username), (password)])
         results = cursor.fetchall()
 
         if results:
             for i in results:
-                return True
-                break
+                # Send User
+                self.signalUser.emit(username)
+
+                # Send Login Signal
+                self.signalLogin.emit(True)
+
         else:
-            return False
+            self.signalLogin.emit(False)
 
-    @Slot(result=float)
-    def fetchDash(self):
-        count = 0
-        while True:
-            count = count + 1
-            return count
-            time.sleep(0.25)
 
-            if count > 120:
-                count = 0
-
-    @Slot(result=float)
-    def fetchTempEng(self):
-        pass
-
-    @Slot(result=float)
-    def fetchTempOut(self):
-        pass
-
-    @Slot(result=float)
-    def fetchTempBat(self):
-        pass
-
-    @Slot(result=float)
-    def fetchTempCon(self):
-        pass
-
-    @Slot(result=str)
-    def fetchDate(self):
-        pass
-
+# Instance Class
 if __name__ == "__main__":
 
     app = QGuiApplication(sys.argv)

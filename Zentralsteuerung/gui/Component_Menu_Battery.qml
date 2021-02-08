@@ -26,7 +26,7 @@ Item {
         visible: true
         anchors.fill: parent
         onClicked: {
-            view.state = "battery"
+            component_Menu.pageBattery()
             menuBar.state = "base state"
 
         }
