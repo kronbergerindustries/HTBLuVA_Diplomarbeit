@@ -19,9 +19,10 @@ AV Dipl.-Ing. Roland Holzer
 
 ## Betreuer
 
-- Hauptverantwortlicher: Prof. Dipl.-Ing. Reinhold Benedikter
-- Prof. Dipl.-Ing. MBA Adolf Reinhart
-- AV Dipl.-Ing. (FH) Roland Holzer
+- Hauptverantwortlicher:
+Prof. Dipl.-Ing. Reinhold Benedikter
+- Prof. Dipl.-Ing. Adolf Reinhart
+- Dipl.-Ing. Johannes Ferner
 - Prof. Dipl.-Ing. Peter Lindmoser
 
 ## Ausgangslage
