@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,10pt]{report}
+\documentclass[a4paper,10pt,twoside]{report}
 \usepackage{a4}
 
 %% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -15,13 +15,14 @@
 \usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
 
 \usepackage{parskip}
+\usepackage{ragged2e}
 
 %% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx} %%Zum Laden von Grafiken
 %\usepackage{subfig} %%Teilabbildungen in einer Abbildung
 %\usepackage{tikz} %%Vektorgrafiken aus LaTeX heraus erstellen
 
-  %% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}
 \usepackage{amssymb,amscd}
 \usepackage{amsthm}
@@ -30,14 +31,27 @@
 \usepackage[all]{hypcap}
 \usepackage{mathrsfs}
 \usepackage{tabls}
+\usepackage{booktabs}
 \usepackage{amsthm}
 
-\usepackage{fancyhdr} %%Fancy Kopf- und Fußzeilen
-%\usepackage{longtable} %%Für Tabellen, die eine Seite überschreiten
+%% Fancy Kopf- und Fußzeilen
+\usepackage{fancyhdr}
+\setlength{\headheight}{26pt}
+\fancyhead[LE, RO]{HTBLuVA Salzburg}
+\fancyhead[C]{Höhere Lehranstalt für Elektrotechnik}
+\fancyhead[RE, LO]{\includegraphics[scale=0.1]{Illustrations/HTL_logo.png}}
+\fancyfoot[LE, RO]{5AHET}
+\fancyfoot[C]{Kronberger, Lackner, Kern, Schmeisser}
+\fancyfoot[RE, LO]{Seite \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\usepackage{longtable}
 \usepackage[text={150mm,240mm}]{geometry}
 
 \usepackage{listings}
 \usepackage{color}
+
 %Brüche kürzen
 \usepackage{cancel}
 
@@ -63,66 +77,79 @@
   tabsize=3
 }
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-\pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
-
+\thispagestyle{empty}
 \parindent 0pt                     % Setzt die Einrückung der ersten Zeile auf 0 Pt
 
 %% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{titlePage.tex}
-\pagenumbering{Roman}
+\pagestyle{fancy}
+
+%% Prolog %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{Alph}
+\input{prolog.tex}
+\thispagestyle{fancy}
 
 %% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\tableofcontents %Inhaltsverzeichnis
-\bibliographystyle{plain}
-\bibliography{literature}
+\input{1stIndex.tex}
+\thispagestyle{fancy}
+\cleardoublepage
 
-\cleardoublepage %Das erste Kapitel soll auf einer ungeraden Seite beginnen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% IMPUT FILES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\pagestyle{plain} %%Ab hier die Kopf-/Fusszeilen: headings / fancy / ...
-
-%Input files
+\input{1stChapter.tex}
 \pagenumbering{arabic}
-\input{firstChapter.tex}		%in diesem Kapitel ist Einleitung
+\thispagestyle{fancy}
+\input{2ndChapter.tex}
+\thispagestyle{fancy}
+\input{3rdChapter.tex}
+\thispagestyle{fancy}
+\input{4thChapter.tex}
+\thispagestyle{fancy}
+\input{5thChapter.tex}
+\thispagestyle{fancy}
+\input{6thChapter.tex}
+\thispagestyle{fancy}
+\input{7thChapter.tex}
+\thispagestyle{fancy}
+\input{8thChapter.tex}
+\thispagestyle{fancy}
+\input{9thChapter.tex}
+\thispagestyle{fancy}
+\input{10thChapter.tex}
+\thispagestyle{fancy}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LITERATUR UND ANDERE VERZEICHNISSE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Ein kleiner Abstand zu den Kapiteln im Inhaltsverzeichnis (toc)
-\addtocontents{toc}{\protect\vspace*{\baselineskip}}
 
 %% Literaturverzeichnis
-%% ==> Eine Datei 'literatur.bib' wird hierfür benötigt.
-%% ==> Sie müssen hierfür BibTeX verwenden (Projekt | Eigenschaften... | BibTeX)
-%\addcontentsline{toc}{chapter}{Literaturverzeichnis}
-%\nocite{*} %Auch nicht-zitierte BibTeX-Einträge werden angezeigt.
-%\bibliographystyle{alpha} %Art der Ausgabe: plain / apalike / amsalpha / ...
-%\bibliography{literatur} %Eine Datei 'literatur.bib' wird hierfür benötigt.
+\input{2ndIndex.tex}
+\thispagestyle{fancy}
 
-%% Abbildungsverzeichnis
-%\clearpage
-%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
-%\listoffigures
+%%Abbildungsverzeichnis
+\input{3rdIndex.tex}
+\thispagestyle{fancy}
 
-%% Tabellenverzeichnis
-%\clearpage
-%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-%\listoftables
-
+%%Tabellenverzeichnis
+\input{4thIndex.tex}
+\thispagestyle{fancy}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ANHÄNGE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\appendix
-%% ==> Schreiben Sie hier Ihren Text oder fügen Sie externe Dateien ein.
 
-%\input{Dateiname} %Eine Datei 'Dateiname.tex' wird hierfür benötigt.
-
-
+\appendix
+\chapter{Anhang}
+\input{1stAppendix.tex}
+\thispagestyle{fancy}
+\input{2ndAppendix.tex}
+\thispagestyle{fancy}
+\input{3rdAppendix.tex}
+\thispagestyle{fancy}
 \end{document}
