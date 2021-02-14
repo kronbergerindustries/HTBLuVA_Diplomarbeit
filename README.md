@@ -33,7 +33,7 @@ Aufgrund des technisch geringen Entwicklungsstandes im Bereich der elektrifizier
 | Name  | Individuelle Themenstellung | Klasse | Arbeitsaufwand |
 | ------------- | ------------- | ------------- | ------------- |
 | Martin Kronberger (Hauptverantwortlicher) | Entwicklung der Zentralen Steuereinheit | 5AHET  | 180 Stunden  |
-| Simon Kern | Implementierung des Batteriemanagementsystems, Aufbau und Verschaltung der Akku  | 5AHET  | 180 Stunden  |
+| Simon Kern | Entwicklung des Akkusystems  | 5AHET  | 180 Stunden  |
 | Jakob Lackner | Entwicklung des Antriebskonzeptes | 5AHET | 180 Stunden |
 | Tobias Schmeisser | Konstruktion und Aufbau der Mechanik | 5AHET | 180 Stunden |
 
