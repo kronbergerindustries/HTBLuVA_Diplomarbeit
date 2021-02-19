@@ -12,7 +12,6 @@ ApplicationWindow {
     Connections {
         target: bridge
 
-
         // Function To Open The Window
         function onSignalLogin(boolValue) {
             if(boolValue) {
@@ -27,7 +26,6 @@ ApplicationWindow {
             }
         }
     }
-
 
     Page_Login {
         id: page_Login

@@ -1,28 +1,25 @@
-%% Preamble
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper,10pt,twoside]{report}
 \usepackage{a4}
 
-%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Deutsche Anpassungen
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-\usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
+\usepackage{lmodern}
 
 \usepackage{parskip}
 \usepackage{ragged2e}
 
-%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
-\usepackage{graphicx} %%Zum Laden von Grafiken
-%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
-%\usepackage{tikz} %%Vektorgrafiken aus LaTeX heraus erstellen
+%% Packages für Grafiken & Abbildungen
+\usepackage{graphicx} 
+%\usepackage{subfig}
+%\usepackage{tikz}
 
-%% Packages für Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages für Formeln
 \usepackage{amsmath}
 \usepackage{amssymb,amscd}
 \usepackage{amsthm}
@@ -36,23 +33,30 @@
 
 %% Fancy Kopf- und Fußzeilen
 \usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
 \setlength{\headheight}{26pt}
 \fancyhead[LE, RO]{HTBLuVA Salzburg}
 \fancyhead[C]{Höhere Lehranstalt für Elektrotechnik}
 \fancyhead[RE, LO]{\includegraphics[scale=0.1]{Illustrations/HTL_logo.png}}
 \fancyfoot[LE, RO]{5AHET}
-\fancyfoot[C]{Kronberger, Lackner, Kern, Schmeisser}
+\fancyfoot[C]{Kronberger}
 \fancyfoot[RE, LO]{Seite \thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
+\fancypagestyle{plain}{\fancyfoot[C]{\thepage}}
 
-\usepackage{longtable}
+
+%% Packages für Tabellen
+%\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage[text={150mm,240mm}]{geometry}
 
 \usepackage{listings}
 \usepackage{color}
 
-%Brüche kürzen
+%% Brüche kürzen
 \usepackage{cancel}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -82,63 +86,61 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \thispagestyle{empty}
-\parindent 0pt                     % Setzt die Einrückung der ersten Zeile auf 0 Pt
+\parindent 0pt
 
 %% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{titlePage.tex}
-\pagestyle{fancy}
 
 %% Prolog %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagenumbering{Alph}
 \input{prolog.tex}
-\thispagestyle{fancy}
+\pagestyle{fancy}
 
 %% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{1stIndex.tex}
-\thispagestyle{fancy}
-\cleardoublepage
+\tableofcontents
+\bibliographystyle{plain}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% IMPUT FILES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{1stChapter.tex}
+
 \pagenumbering{arabic}
-\thispagestyle{fancy}
 \input{2ndChapter.tex}
-\thispagestyle{fancy}
+
 \input{3rdChapter.tex}
-\thispagestyle{fancy}
+
 \input{4thChapter.tex}
-\thispagestyle{fancy}
+
 \input{5thChapter.tex}
-\thispagestyle{fancy}
+
 \input{6thChapter.tex}
-\thispagestyle{fancy}
+
 \input{7thChapter.tex}
-\thispagestyle{fancy}
+
 \input{8thChapter.tex}
-\thispagestyle{fancy}
+
 \input{9thChapter.tex}
-\thispagestyle{fancy}
+
 \input{10thChapter.tex}
-\thispagestyle{fancy}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LITERATUR UND ANDERE VERZEICHNISSE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Literaturverzeichnis
-\input{2ndIndex.tex}
-\thispagestyle{fancy}
 
-%%Abbildungsverzeichnis
-\input{3rdIndex.tex}
-\thispagestyle{fancy}
+%% Abbildungsverzeichnis
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
 
-%%Tabellenverzeichnis
-\input{4thIndex.tex}
-\thispagestyle{fancy}
+%% Tabellenverzeichnis
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+
+%% Abkürzungsverzeichnis
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ANHÄNGE
@@ -146,10 +148,11 @@
 
 \appendix
 \chapter{Anhang}
+
 \input{1stAppendix.tex}
-\thispagestyle{fancy}
+
 \input{2ndAppendix.tex}
-\thispagestyle{fancy}
+
 \input{3rdAppendix.tex}
-\thispagestyle{fancy}
+
 \end{document}

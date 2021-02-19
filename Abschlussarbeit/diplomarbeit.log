@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  12 FEB 2021 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  19 FEB 2021 21:32
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -417,24 +417,30 @@ rs
 \f@nch@O@olf=\skip77
 \f@nch@O@orf=\skip78
 )
-(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\longtable.s
-ty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip79
-\LTright=\skip80
-\LTpre=\skip81
-\LTpost=\skip82
-\LTchunksize=\count281
-\LTcapwidth=\dimen177
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count282
-\LT@rows=\count283
-\c@LT@tables=\count284
-\c@LT@chunks=\count285
-\LT@p@ftn=\toks30
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\tabularx.st
+y
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen177
+\ar@mcellbox=\box49
+\extrarowheight=\dimen178
+\NC@list=\toks30
+\extratabsurround=\skip79
+\backup@length=\skip80
+
+LaTeX Warning: Command \@xhline  has changed.
+               Check if current package is valid.
+
+\ar@cellbox=\box50
+)
+\TX@col@width=\dimen179
+\TX@old@table=\dimen180
+\TX@old@col=\dimen181
+\TX@target=\dimen182
+\TX@delta=\dimen183
+\TX@cols=\count281
+\TX@ftn=\toks31
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -442,39 +448,39 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count286
-\Gm@cntv=\count287
-\c@Gm@tempcnt=\count288
-\Gm@bindingoffset=\dimen178
-\Gm@wd@mp=\dimen179
-\Gm@odd@mp=\dimen180
-\Gm@even@mp=\dimen181
-\Gm@layoutwidth=\dimen182
-\Gm@layoutheight=\dimen183
-\Gm@layouthoffset=\dimen184
-\Gm@layoutvoffset=\dimen185
-\Gm@dimlist=\toks31
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen184
+\Gm@wd@mp=\dimen185
+\Gm@odd@mp=\dimen186
+\Gm@even@mp=\dimen187
+\Gm@layoutwidth=\dimen188
+\Gm@layoutheight=\dimen189
+\Gm@layouthoffset=\dimen190
+\Gm@layoutvoffset=\dimen191
+\Gm@dimlist=\toks32
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count289
-\lst@gtempboxa=\box53
-\lst@token=\toks32
-\lst@length=\count290
-\lst@currlwidth=\dimen186
-\lst@column=\count291
-\lst@pos=\count292
-\lst@lostspace=\dimen187
-\lst@width=\dimen188
-\lst@newlines=\count293
-\lst@lineno=\count294
-\lst@maxwidth=\dimen189
+\lst@mode=\count285
+\lst@gtempboxa=\box51
+\lst@token=\toks33
+\lst@length=\count286
+\lst@currlwidth=\dimen192
+\lst@column=\count287
+\lst@pos=\count288
+\lst@lostspace=\dimen193
+\lst@width=\dimen194
+\lst@newlines=\count289
+\lst@lineno=\count290
+\lst@maxwidth=\dimen195
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count295
-\lst@skipnumbers=\count296
-\lst@framebox=\box54
+\c@lstnumber=\count291
+\lst@skipnumbers=\count292
+\lst@framebox=\box52
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -496,7 +502,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 83
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 87
 .
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -505,44 +511,44 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count293
+\l__pdf_internal_box=\box53
 ) (diplomarbeit.aux)
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 83.
+LaTeX Info: Redefining \selectfont on input line 87.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen190
-\scratchbox=\box56
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen191
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count294
+\scratchdimen=\dimen196
+\scratchbox=\box54
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen197
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks35
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -550,7 +556,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 87.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -562,11 +568,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count300
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 87.
+LaTeX Info: Redefining \pageref on input line 87.
+LaTeX Info: Redefining \nameref on input line 87.
  (diplomarbeit.out) (diplomarbeit.out)
 \@outlinefile=\write3
 \openout3 = `diplomarbeit.out'.
@@ -606,51 +612,51 @@ LaTeX Info: Redefining \nameref on input line 83.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count305
+\c@lstlisting=\count301
 (titlePage.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-6.
+4.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-6.
+4.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-16.
+14.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-16.
+14.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 16.
+(Font)              <10> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 16.
+(Font)              <7> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              <5> on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
 
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 .
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -659,7 +665,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 <Illustrations/HTL_logo.png, id=126, 579.66562pt x 221.32687pt>
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
-Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 40.
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 38.
 (pdftex.def)             Requested size: 144.91605pt x 55.33157pt.
 
 [1
@@ -672,20 +678,59 @@ File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
 Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 40.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
- [1] [2]) (1stIndex.tex
+ [1] [2]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 55.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [3] [4]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 70.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [5] [6]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 101.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [7]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 126.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [8]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 151.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [9] [10]
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 192.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+
+[11]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 195.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 195.
+)
+File: Illustrations/HTL_logo.png Graphic file (type png)
+<use Illustrations/HTL_logo.png>
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 100.
+(pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
+ [12] (diplomarbeit.toc)
+\tf@toc=\write4
+\openout4 = `diplomarbeit.toc'.
+
+ (1stChapter.tex
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
 Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 1.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
- [3] (diplomarbeit.toc)
-\tf@toc=\write4
-\openout4 = `diplomarbeit.toc'.
+ [13
 
-
-No file diplomarbeit.bbl.
-[4
-
-]) (1stChapter.tex
+]
 Kapitel 1.
 ) (2ndChapter.tex
 File: Illustrations/HTL_logo.png Graphic file (type png)
@@ -698,8 +743,6 @@ been already used, duplicate ignored
                    \relax 
 l.1 \chapter
             {Einleitung} [1
-
-
 
 ]
 Kapitel 2.
@@ -780,10 +823,10 @@ Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 1.
 
 ]
 Kapitel 10.
-) (2ndIndex.tex
+)
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
-Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 1.
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 137.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
  [10
 
@@ -791,32 +834,28 @@ Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 1.
 \tf@lof=\write5
 \openout5 = `diplomarbeit.lof'.
 
-) (3rdIndex.tex
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
-Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 1.
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 141.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
  [11
-
 
 ] (diplomarbeit.lot)
 \tf@lot=\write6
 \openout6 = `diplomarbeit.lot'.
 
-) (4thIndex.tex)
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
-Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 148.
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 150.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
  [12
-
 
 ]
 Anhang A.
 (1stAppendix.tex) (2ndAppendix.tex) (3rdAppendix.tex)
 File: Illustrations/HTL_logo.png Graphic file (type png)
 <use Illustrations/HTL_logo.png>
-Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 155.
+Package pdftex.def Info: Illustrations/HTL_logo.png  used on input line 158.
 (pdftex.def)             Requested size: 57.96996pt x 22.13397pt.
  [13
 
@@ -825,21 +864,23 @@ Package rerunfilecheck Info: File `diplomarbeit.out' has not changed.
 (rerunfilecheck)             Checksum: 0D62691893B5FD5107F2E06314AB4AF7;1723.
  ) 
 Here is how much of TeX's memory you used:
- 10478 strings out of 479618
- 158102 string characters out of 2865027
- 660537 words of memory out of 3000000
- 27284 multiletter control sequences out of 15000+200000
- 440951 words of font info for 55 fonts, out of 3000000 for 9000
+ 10517 strings out of 479618
+ 158284 string characters out of 2865027
+ 661630 words of memory out of 3000000
+ 27316 multiletter control sequences out of 15000+200000
+ 458296 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,16n,74p,528b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,16n,74p,528b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
 :/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
 :/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
-/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on diplomarbeit.pdf (19 pages, 206553 bytes).
+:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:
+/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/
+Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/U
+sers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb>
+Output written on diplomarbeit.pdf (28 pages, 273407 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

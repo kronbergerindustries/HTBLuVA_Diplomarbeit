@@ -88,9 +88,9 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Replacement for &quot;Desktop Qt 5.15.2 MinGW 64-bit&quot;</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Replacement for &quot;Desktop Qt 5.15.2 MinGW 64-bit&quot;</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5152.win64_mingw81_kit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop (x86-windows-msys-pe-64bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop (x86-windows-msys-pe-64bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{ef1b1960-f727-40d0-87c2-0577621eb794}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">-1</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
@@ -169,16 +169,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/gui/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/gui/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/counter/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/counter/main.py</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{f0515ba0-89b6-46aa-9fbc-d23978c0fc7b}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\marti\Documents\Projects\HTBLuVA_Diplomarbeit\Zentralsteuerung\gui\main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\marti\Documents\Projects\HTBLuVA_Diplomarbeit\Zentralsteuerung\counter\main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/gui</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/marti/Documents/Projects/HTBLuVA_Diplomarbeit/Zentralsteuerung/counter</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

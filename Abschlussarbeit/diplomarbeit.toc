@@ -24,9 +24,8 @@
 \contentsline {section}{\numberline {9.1}Section}{9}{section.9.1}%
 \contentsline {chapter}{\numberline {10}Endergebnis - Alternative Lösungswege}{10}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Section}{10}{section.10.1}%
-\contentsline {chapter}{Abbildungsverzeichnis}{11}{section.10.1}%
-\contentsline {chapter}{Tabellenverzeichnis}{12}{chapter*.2}%
-\vspace *{\baselineskip }
+\contentsline {chapter}{Abbildungsverzeichnis}{10}{section.10.1}%
+\contentsline {chapter}{Tabellenverzeichnis}{11}{chapter*.2}%
 \contentsline {chapter}{\numberline {A}Anhang}{13}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Zeitplan}{13}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Kosten}{13}{section.A.2}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  12 FEB 2021 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  16 FEB 2021 12:59
 entering extended mode
 **./titlePage.tex
 (titlePage.tex
@@ -259,9 +259,9 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 16.
+(Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 16.
+(Font)              <5> on input line 14.
 Missing character: There is no M in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -486,7 +486,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (258.03482pt too wide) in paragraph at lines 16--29
+Overfull \hbox (258.03482pt too wide) in paragraph at lines 14--27
  [][] 
  []
 
@@ -543,7 +543,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
@@ -605,7 +605,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.40 {\includegraphics
+l.38 {\includegraphics
                       [scale=0.25]{Illustrations/HTL_logo.png}} \hspace{\fill}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -645,13 +645,13 @@ Missing character: There is no L in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.40 ...udegraphics[scale=0.25]{Illustrations/HTL_
+l.38 ...udegraphics[scale=0.25]{Illustrations/HTL_
                                                   logo.png}} \hspace{\fill}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.40 ...cs[scale=0.25]{Illustrations/HTL_logo.png}
+l.38 ...cs[scale=0.25]{Illustrations/HTL_logo.png}
                                                   } \hspace{\fill}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -660,7 +660,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Extra }, or forgotten $.
-l.40 ...s[scale=0.25]{Illustrations/HTL_logo.png}}
+l.38 ...s[scale=0.25]{Illustrations/HTL_logo.png}}
                                                    \hspace{\fill}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -671,7 +671,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.41 \end{minipage}
+l.39 \end{minipage}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -679,7 +679,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.41 \end{minipage}
+l.39 \end{minipage}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -690,7 +690,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.41 \end{minipage}
+l.39 \end{minipage}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -699,7 +699,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (3296.74998pt too wide) in paragraph at lines 32--42
+Overfull \hbox (4034.12498pt too wide) in paragraph at lines 30--40
 []$[]$
  []
 
@@ -711,14 +711,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \newpage
+l.40 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [1{C:/Users/marti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (20.0pt too wide) in paragraph at lines 44--45
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--44
 [][] 
  []
 
@@ -730,13 +730,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \newpage
+l.44 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2])
+[2
+
+])
 ! Emergency stop.
 <*> ./titlePage.tex
                    

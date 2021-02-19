@@ -79,12 +79,12 @@ Item {
 
             Image {
                 id: schrackLogo
-                x: 44
-                y: 27
-                width: 349
-                height: 100
+                x: 56
+                y: 41
+                width: 330
+                height: 80
                 anchors.verticalCenter: parent.verticalCenter
-                anchors.right: elinLogo.left
+                anchors.right: logo_skf.left
                 source: "Pictures/logo_schrack.png"
                 anchors.rightMargin: 60
                 fillMode: Image.PreserveAspectFit
@@ -92,14 +92,13 @@ Item {
 
             Image {
                 id: elinLogo
-                x: 480
-                y: 36
+                y: 34
                 width: 210
                 height: 94
                 anchors.verticalCenter: parent.verticalCenter
-                anchors.right: pythonLogo.left
+                anchors.left: logo_sigmatek.right
                 source: "Pictures/logo_elin.png"
-                anchors.rightMargin: 60
+                anchors.leftMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
 
@@ -116,11 +115,25 @@ Item {
 
             Image {
                 id: logo_sigmatek
-                x: 1247
-                y: 48
-                width: 396
-                height: 64
+                y: 54
+                width: 353
+                height: 67
+                anchors.left: mysqlLogo.right
                 source: "Pictures/logo_sigmatek.png"
+                anchors.leftMargin: 60
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Image {
+                id: logo_skf
+                x: 479
+                y: -510
+                width: 208
+                height: 100
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: pythonLogo.left
+                source: "Pictures/logo_skf.png"
+                anchors.rightMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
 
@@ -224,22 +237,22 @@ Item {
             }
         }
 
-    states: [
-        State {
-            name: "wrongPass"
+        states: [
+            State {
+                name: "wrongPass"
 
-            PropertyChanges {
-                target: wrongText
-                visible: true
+                PropertyChanges {
+                    target: wrongText
+                    visible: true
+                }
             }
-        }
-    ]
+        ]
     }
 }
 
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.75}
+    D{i:0;formeditorZoom:0.75}D{i:6}D{i:8}
 }
 ##^##*/
