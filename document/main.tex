@@ -38,7 +38,7 @@
 \setlength{\headheight}{26pt}
 \fancyhead[LE, RO]{HTBLuVA Salzburg}
 \fancyhead[C]{Höhere Lehranstalt für Elektrotechnik}
-\fancyhead[RE, LO]{\includegraphics[scale=0.1]{Illustrations/HTL_logo.png}}
+\fancyhead[RE, LO]{\includegraphics[scale=0.08]{figures/allgemein/HTBLuVA_Salzburg_Logo.png}}
 \fancyfoot[LE, RO]{5AHET}
 \fancyfoot[C]{Kronberger}
 \fancyfoot[RE, LO]{Seite \thepage}
@@ -89,7 +89,7 @@
 \parindent 0pt
 
 %% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{titlePage.tex}
+\input{title.tex}
 
 %% Prolog %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagenumbering{Alph}
@@ -102,29 +102,11 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% IMPUT FILES
+%% IMPUT FILE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{1stChapter.tex}
-
 \pagenumbering{arabic}
-\input{2ndChapter.tex}
-
-\input{3rdChapter.tex}
-
-\input{4thChapter.tex}
-
-\input{5thChapter.tex}
-
-\input{6thChapter.tex}
-
-\input{7thChapter.tex}
-
-\input{8thChapter.tex}
-
-\input{9thChapter.tex}
-
-\input{10thChapter.tex}
+\input{content/chapters.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LITERATUR UND ANDERE VERZEICHNISSE
@@ -146,13 +128,6 @@
 %% ANHÄNGE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\appendix
-\chapter{Anhang}
-
-\input{1stAppendix.tex}
-
-\input{2ndAppendix.tex}
-
-\input{3rdAppendix.tex}
+\input{anhang.tex}
 
 \end{document}

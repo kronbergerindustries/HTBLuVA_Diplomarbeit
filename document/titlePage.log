@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  16 FEB 2021 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  19 FEB 2021 22:17
 entering extended mode
 **./titlePage.tex
 (titlePage.tex
@@ -606,7 +606,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
 l.38 {\includegraphics
-                      [scale=0.25]{Illustrations/HTL_logo.png}} \hspace{\fill}
+                      [scale=0.25]{Illustrations/HTBLuVA_Salzburg_Logo.png}}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -641,17 +641,21 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no / in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no T in font nullfont!
+Missing character: There is no B in font nullfont!
 Missing character: There is no L in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no A in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.38 ...udegraphics[scale=0.25]{Illustrations/HTL_
-                                                  logo.png}} \hspace{\fill}
+l.38 ...raphics[scale=0.25]{Illustrations/HTBLuVA_
+                                                  Salzburg_Logo.png}} \hspac...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.38 ...cs[scale=0.25]{Illustrations/HTL_logo.png}
+l.38 ...]{Illustrations/HTBLuVA_Salzburg_Logo.png}
                                                   } \hspace{\fill}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -660,7 +664,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Extra }, or forgotten $.
-l.38 ...s[scale=0.25]{Illustrations/HTL_logo.png}}
+l.38 ...{Illustrations/HTBLuVA_Salzburg_Logo.png}}
                                                    \hspace{\fill}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
