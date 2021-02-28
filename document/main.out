@@ -11,17 +11,20 @@
 \BOOKMARK [0][-]{chapter.3}{Stand der Technik}{}% 11
 \BOOKMARK [0][-]{chapter.4}{Mechanische Umsetzung}{}% 12
 \BOOKMARK [1][-]{section.4.1}{Section}{chapter.4}% 13
-\BOOKMARK [0][-]{chapter.5}{Zentralsteuerung}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Section}{chapter.5}% 15
-\BOOKMARK [0][-]{chapter.6}{Antriebsstrang}{}% 16
-\BOOKMARK [1][-]{section.6.1}{Section}{chapter.6}% 17
-\BOOKMARK [0][-]{chapter.7}{Akku und Ladekonzept}{}% 18
-\BOOKMARK [1][-]{section.7.1}{Section}{chapter.7}% 19
-\BOOKMARK [0][-]{chapter.8}{Endergebnis}{}% 20
-\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 21
-\BOOKMARK [0][-]{section.8.1}{Abbildungsverzeichnis}{}% 22
-\BOOKMARK [0][-]{chapter*.2}{Tabellenverzeichnis}{}% 23
-\BOOKMARK [0][-]{appendix.A}{Arbeitsnachweis}{}% 24
-\BOOKMARK [1][-]{section.A.1}{Zeitplan}{appendix.A}% 25
-\BOOKMARK [1][-]{section.A.2}{Kosten}{appendix.A}% 26
-\BOOKMARK [0][-]{appendix.B}{Dokumente}{}% 27
+\BOOKMARK [0][-]{chapter.5}{Human-Computer Interaction System}{}% 14
+\BOOKMARK [1][-]{section.5.1}{\334bersicht}{chapter.5}% 15
+\BOOKMARK [2][-]{subsection.5.1.1}{Grundaufbau des Systems}{section.5.1}% 16
+\BOOKMARK [2][-]{subsection.5.1.2}{Grundfunktionen des Systems}{section.5.1}% 17
+\BOOKMARK [2][-]{subsection.5.1.3}{Zu bew\344ltigende Aufgaben}{section.5.1}% 18
+\BOOKMARK [1][-]{section.5.2}{Versorgung}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{Steuerung der Peripherie}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.4}{Benutzeroberfl\344che}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.5}{Kommunikation}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.6}{Fahrdatenspeicher}{chapter.5}% 23
+\BOOKMARK [0][-]{chapter.6}{Antriebsstrang}{}% 24
+\BOOKMARK [1][-]{section.6.1}{Section}{chapter.6}% 25
+\BOOKMARK [0][-]{chapter.7}{Akku und Ladekonzept}{}% 26
+\BOOKMARK [1][-]{section.7.1}{Section}{chapter.7}% 27
+\BOOKMARK [0][-]{chapter.8}{Endergebnis}{}% 28
+\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 29
+\BOOKMARK [0][-]{section.8.1}{Abbildungsverzeichnis}{}% 30

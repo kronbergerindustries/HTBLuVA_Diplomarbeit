@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  25 FEB 2021 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  27 FEB 2021 19:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -502,7 +502,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 87
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 88
 .
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -516,24 +516,24 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 87.
+LaTeX Info: Redefining \selectfont on input line 88.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -556,7 +556,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 87.
+Package hyperref Info: Link coloring OFF on input line 88.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -570,9 +570,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count300
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Info: Redefining \ref on input line 88.
+LaTeX Info: Redefining \pageref on input line 88.
+LaTeX Info: Redefining \nameref on input line 88.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -660,7 +660,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=106, 700.86844pt x 225.09094pt
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=122, 700.86844pt x 225.09094pt
 >
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -677,55 +677,55 @@ mein/HTBLuVA_Salzburg_Logo.png>] [2
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 45.
+nput line 48.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [1] [2]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 62.
+nput line 65.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [3] [4]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 78.
+nput line 81.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [5]
 [6]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 109.
+nput line 112.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [7]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 134.
+nput line 137.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [8]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 158.
+nput line 161.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [9] [10]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 184.
+nput line 187.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 187.
+(Font)              <9> on input line 190.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 187.
+(Font)              <6> on input line 190.
 )
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 100.
+nput line 101.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [12] (main.toc)
 \tf@toc=\write4
@@ -792,7 +792,18 @@ nput line 1.
 
 ]
 Kapitel 5.
-) (content/ch_antrieb.tex
+<figures/hcis/HCIS_Grundfunktion.png, id=210, 460.72125pt x 303.1325pt>
+File: figures/hcis/HCIS_Grundfunktion.png Graphic file (type png)
+<use figures/hcis/HCIS_Grundfunktion.png>
+Package pdftex.def Info: figures/hcis/HCIS_Grundfunktion.png  used on input lin
+e 9.
+(pdftex.def)             Requested size: 230.36006pt x 151.56587pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+6.
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(content/ch_antrieb.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
@@ -800,7 +811,13 @@ nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [6
 
-]
+ <./figures/hcis/HCIS_Grundfunktion.png>]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 1.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [7]
 Kapitel 6.
 ) (content/ch_akku.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -808,7 +825,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [7
+ [8
 
 ]
 Kapitel 7.
@@ -818,7 +835,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [8
+ [9
 
 ]
 Kapitel 8.
@@ -826,80 +843,52 @@ Kapitel 8.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 119.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [9
-
-] (main.lof)
-\tf@lof=\write5
-\openout5 = `main.lof'.
-
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 123.
+nput line 120.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [10
 
-] (main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
+] (main.lof
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.7 ...puter Interaction Systems"}}{6}{figure.5.1}
+                                                  %
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
- (anhang.tex
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 2.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [11
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.7 ...puter Interaction Systems"}}{6}{figure.5.1}
+                                                  %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-]
-Anhang A.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 8.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[12
 
-]
-Anhang B.
-)
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 133.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [13
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+ [][] [][]\T1/lmr/m/n/10 Grundaufbau des "Human-Computer In-ter-ac-ti-on Sys-te
+ms  
+ []
 
-] (main.aux)
+! pdfTeX error (ext1): \pdfendlink cannot be used in vertical mode.
+\close@pdflink ...\Hy@VerboseLinkStop \pdfendlink 
+                                                  
+l.7 ...puter Interaction Systems"}}{6}{figure.5.1}
+                                                  %
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: C810B6E17440C7CC5EB6C0EDA05BA4CD;1414
-(rerunfilecheck)             After:  889408F3835B0615EF08ED2D9F23E96A;1487.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 10496 strings out of 479618
- 157892 string characters out of 2865027
- 660650 words of memory out of 3000000
- 27308 multiletter control sequences out of 15000+200000
- 458296 words of font info for 70 fonts, out of 3000000 for 9000
+ 10534 strings out of 479618
+ 158890 string characters out of 2865027
+ 660561 words of memory out of 3000000
+ 27348 multiletter control sequences out of 15000+200000
+ 461659 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,16n,74p,695b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
-:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
-:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:
-/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/
-Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/U
-sers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb>
-Output written on main.pdf (27 pages, 230932 bytes).
-PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 71i,16n,74p,695b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
