@@ -1,0 +1,20 @@
+GUI:
+
+Gears by David from the Noun Project
+chart by newstudiodesign10 from the Noun Project
+Error by Adrien Coquet from the Noun Project
+logout by Chinnaking from the Noun Project
+Battery Charging by Adrien Coquet from the Noun Project
+Gauge by Daniel Shoreman from the Noun Project
+CPU by Vectors Point from the Noun Project
+Engine by Antonio Herrera from the Noun Project
+
+
+Grundaufbau:
+
+Raspberry Pi by DesignBite from the Noun Project
+motor by ic2icon from the Noun Project
+Battery by Eucalyp from the Noun Project
+dash by LAFS from the Noun Project
+input password by pictohaven from the Noun Project
+lampshade by Pham Duy Phuong Hung from the Noun Project

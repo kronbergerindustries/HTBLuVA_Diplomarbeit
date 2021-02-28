@@ -16,8 +16,9 @@
 
 %% Packages für Grafiken & Abbildungen
 \usepackage{graphicx} 
-%\usepackage{subfig}
-%\usepackage{tikz}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{float}
 
 %% Packages für Formeln
 \usepackage{amsmath}
@@ -31,21 +32,6 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
 
-%% Fancy Kopf- und Fußzeilen
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\setlength{\headheight}{26pt}
-\fancyhead[LE, RO]{2020/21}
-\fancyhead[CO]{\thesection }
-\fancyhead[CE]{Kapitel \thechapter }
-\fancyhead[RE, LO]{\includegraphics[scale=0.08]{figures/allgemein/HTBLuVA_Salzburg_Logo.png}}
-\fancyfoot[LE, RO]{5AHET}
-\fancyfoot[C]{Kronberger}
-\fancyfoot[RE, LO]{Seite \thepage}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0.5pt}
-\fancypagestyle{plain}{\fancyfoot[C]}
 
 
 %% Packages für Tabellen
@@ -56,6 +42,22 @@
 
 \usepackage{listings}
 \usepackage{color}
+
+%% Fancy Kopf- und Fußzeilen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{26pt}
+\fancyhead[LE, RO]{2020/21}
+\fancyhead[CO]{\nouppercase{\rightmark}}
+\fancyhead[CE]{\nouppercase{\leftmark}}
+\fancyhead[RE, LO]{\includegraphics[scale=0.08]{figures/allgemein/HTBLuVA_Salzburg_Logo.png}}
+\fancyfoot[LE, RO]{5AHET}
+\fancyfoot[CO, CE]{Kronberger, Lackner, Kern, Schmeisser}
+\fancyfoot[RE, LO]{Seite \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancypagestyle{plain}{\fancyfoot[C]}
 
 %% Brüche kürzen
 \usepackage{cancel}
@@ -81,6 +83,12 @@
   breakatwhitespace=true,
   tabsize=3
 }
+
+\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesection.\thesubsection.\arabic{subsubsection}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
