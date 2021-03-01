@@ -1,10 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[a4paper,10pt,twoside]{report}
 \usepackage{a4}
 
 %% Deutsche Anpassungen
+
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -15,12 +17,14 @@
 \usepackage{ragged2e}
 
 %% Packages für Grafiken & Abbildungen
+
 \usepackage{graphicx} 
 \usepackage{subfig}
 \usepackage{tikz}
 \usepackage{float}
 
 %% Packages für Formeln
+
 \usepackage{amsmath}
 \usepackage{amssymb,amscd}
 \usepackage{amsthm}
@@ -32,18 +36,25 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
 
-
-
 %% Packages für Tabellen
-%\usepackage{longtable}
+
+\usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage[text={150mm,240mm}]{geometry}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+
+%% Packages für Tabellen
 
 \usepackage{listings}
 \usepackage{color}
 
+%% Ändern des Heads bei Kapitelseiten
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
 %% Fancy Kopf- und Fußzeilen
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -53,13 +64,14 @@
 \fancyhead[CE]{\nouppercase{\leftmark}}
 \fancyhead[RE, LO]{\includegraphics[scale=0.08]{figures/allgemein/HTBLuVA_Salzburg_Logo.png}}
 \fancyfoot[LE, RO]{5AHET}
-\fancyfoot[CO, CE]{Kronberger, Lackner, Kern, Schmeisser}
+\fancyfoot[C]{Kronberger, Lackner, Kern, Schmeisser}
 \fancyfoot[RE, LO]{Seite \thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
 \fancypagestyle{plain}{\fancyfoot[C]}
 
 %% Brüche kürzen
+
 \usepackage{cancel}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -84,6 +96,8 @@
   tabsize=3
 }
 
+%% Ändern der Kapitelnummerierung
+
 \renewcommand\thechapter{\Roman{chapter}}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
@@ -93,50 +107,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 \thispagestyle{empty}
 \parindent 0pt
 
 %% Deckblatt %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{title.tex}
 
 %% Prolog %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagenumbering{Alph}
+
+\pagenumbering{Roman}
 \input{prolog.tex}
 \pagestyle{fancy}
 
 %% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \tableofcontents
 \bibliographystyle{plain}
 
+%% INPUT FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% IMPUT FILE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\pagenumbering{arabic}
 \input{content/chapters.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% LITERATUR UND ANDERE VERZEICHNISSE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ANHÄNGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{anhang.tex}
+
+%% LITERATUR UND ANDERE VERZEICHNISSE %%%%%%%%%%%%%%%%%%%%%%%
 
 %% Literaturverzeichnis
 
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
 %% Abbildungsverzeichnis
+
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoffigures
 
 %% Tabellenverzeichnis
+
 \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables
 
-%% Abkürzungsverzeichnis
+%% Codeverzeichnis
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ANHÄNGE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\input{anhang.tex}
+\addcontentsline{toc}{chapter}{Codeverzeichnis}
+\lstlistoflistings
 
 \end{document}
