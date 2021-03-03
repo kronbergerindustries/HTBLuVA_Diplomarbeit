@@ -1,14 +1,20 @@
 \fancyfoot[C]{Kronberger}
 
+%% Human-Computer Interaction System %%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Human-Computer Interaction System}
+
 \section{Übersicht}
-Das Human-Computer Interaction System ist, wie der Name schon verrät, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten Systems dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein, ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User angezeigen können.\\ Wichtig ist das System troz der großen Komplexität so intuitiv und nutzerfreundlich wie möglich zu gestallten.
+Das Human-Computer Interaction System ist, wie der Name schon verrät, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten Systems dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein, ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User angezeigen können.\\
+Wichtig ist das System troz der großen Komplexität so intuitiv und nutzerfreundlich wie möglich zu gestallten.
 
-\subsection{Grundaufbau des Systems}
+\subsection{Grundfunktionen des Systems}
+Die geplanten Funktionen des HCIS lassen sich grob in vier Grundfunktionen einteilen.
+\newpage
 
-
-
+\subsection{Hardwareaufbau des Systems}
 In der Abbildung wird der Grundaufbau des Systems und die Datenverbindungen der folgenden  Komponenten veranschaulicht.
+
 \begin{itemize}
 	\item Raspberry Pi - Die Steuereinheit des Systems.
 	\item User Input - Die vorhandenen Buttons am Lenker des Motorrads.
@@ -24,14 +30,55 @@ In der Abbildung wird der Grundaufbau des Systems und die Datenverbindungen der 
 \end{figure}
 
 Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, welche in dem folgenden Abschnitt noch genauer erläutert wird.
-\subsection{Grundfunktionen des Systems}
-Die geplanten Funktionen des HCIS lassen sich grob in vier Grundfunktionen einteilen.
 
-\subsection{Zu bewältigende Aufgaben}
+\subsection{Softwareaufbau des Systems}
 
+\newpage
+
+%% Versorgung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \section{Versorgung}
+\subsection{Aufbau des Versorgungssystems}
+\subsection{Spannungswandler}
+\subsubsection{5V Versorgungssystem}
+\subsubsection{12V Versorgungsysstem}
+
+%% Steuerung der Peripherie %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Steuerung der Peripherie}
+\subsection{Hardware}
+\subsubsection{Input}
+\subsubsection{Output}
+
+\subsection{Software}
+\subsubsection{GPIO Zero}
+\subsubsection{Threading}
+
+%% Benutzeroberfläche %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Benutzeroberfläche}
+
+\subsection{Pages}
+\subsection{Implementierung der Benutzeroberfäche}
+\subsubsection{QML}
+\subsubsection{Qt-Quick}
+\subsubsection{Slots and Signals}
+\subsubsection{Bridge}
+
+%% Kommunikation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Kommunikation}
+\subsection{Hardware}
+\subsection{Listener}
+\subsubsection{Receive Data}
+
+%% Fahrdatenspeicher %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Fahrdatenspeicher}
+\subsection{Datenbankstruktur}
+\subsubsection{Login System}
+\subsubsection{Motor Daten}
+\subsubsection{Akku Daten}
+\subsection{Handler}
+\subsubsection{SELECT Befehl}
+\subsubsection{INSERT Befehl}

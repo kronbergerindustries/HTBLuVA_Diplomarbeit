@@ -98,11 +98,11 @@
 
 %% Ändern der Kapitelnummerierung
 
-\renewcommand\thechapter{\Roman{chapter}}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesection.\thesubsection.\arabic{subsubsection}}
-
+\renewcommand{\thechapter}{\Roman{chapter}}
+	\renewcommand\thesection{\arabic{section}}
+		\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+			\setcounter{secnumdepth}{3}
+			\setcounter{tocdepth}{3}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT

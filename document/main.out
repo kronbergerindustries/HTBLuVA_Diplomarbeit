@@ -6,34 +6,65 @@
 \BOOKMARK [1][-]{section.2.1}{Motivation}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.2}{Zielsetzung}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.3}{Topologie des Gesamtsystems}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.4}{Funktionsprinzip}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.5}{Leitfaden}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Stand der Technik}{}% 11
-\BOOKMARK [0][-]{chapter.4}{Mechanische Umsetzung}{}% 12
-\BOOKMARK [1][-]{section.4.1}{Section}{chapter.4}% 13
-\BOOKMARK [0][-]{chapter.5}{Human-Computer Interaction System}{}% 14
-\BOOKMARK [1][-]{section.5.1}{\334bersicht}{chapter.5}% 15
-\BOOKMARK [2][-]{subsection.5.1.1}{Grundaufbau des Systems}{section.5.1}% 16
-\BOOKMARK [2][-]{subsection.5.1.2}{Grundfunktionen des Systems}{section.5.1}% 17
-\BOOKMARK [2][-]{subsection.5.1.3}{Zu bew\344ltigende Aufgaben}{section.5.1}% 18
-\BOOKMARK [1][-]{section.5.2}{Versorgung}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.3}{Steuerung der Peripherie}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.4}{Benutzeroberfl\344che}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.5}{Kommunikation}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.6}{Fahrdatenspeicher}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.6}{Antriebsstrang}{}% 24
-\BOOKMARK [1][-]{section.6.1}{Section}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Akku und Ladekonzept}{}% 26
-\BOOKMARK [1][-]{section.7.1}{Section}{chapter.7}% 27
-\BOOKMARK [0][-]{chapter.8}{Endergebnis}{}% 28
-\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 29
-\BOOKMARK [0][-]{appendix.A}{Arbeitsnachweis}{}% 30
-\BOOKMARK [1][-]{section.A.1}{Zeitplan}{appendix.A}% 31
-\BOOKMARK [1][-]{section.A.2}{Kosten}{appendix.A}% 32
-\BOOKMARK [0][-]{appendix.B}{Programmier-Code}{}% 33
-\BOOKMARK [0][-]{appendix.C}{CAD-Zeichnungen}{}% 34
-\BOOKMARK [0][-]{appendix.D}{Schaltpl\344ne}{}% 35
-\BOOKMARK [0][-]{appendix.D}{Literaturverzeichnis}{}% 36
-\BOOKMARK [0][-]{appendix.D}{Abbildungsverzeichnis}{}% 37
-\BOOKMARK [0][-]{appendix*.3}{Tabellenverzeichnis}{}% 38
-\BOOKMARK [0][-]{appendix*.4}{Codeverzeichnis}{}% 39
+\BOOKMARK [1][-]{section.2.4}{Leitfaden}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Stand der Technik}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Steuereinheiten}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Battery Management System}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{Raspberry PI}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Bussysteme}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{SPI Bus}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{CAN Bus}{section.3.2}% 16
+\BOOKMARK [0][-]{chapter.4}{Mechanische Umsetzung}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Section}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Human-Computer Interaction System}{}% 19
+\BOOKMARK [1][-]{section.5.1}{\334bersicht}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.1.1}{Grundfunktionen des Systems}{section.5.1}% 21
+\BOOKMARK [2][-]{subsection.5.1.2}{Hardwareaufbau des Systems}{section.5.1}% 22
+\BOOKMARK [2][-]{subsection.5.1.3}{Softwareaufbau des Systems}{section.5.1}% 23
+\BOOKMARK [1][-]{section.5.2}{Versorgung}{chapter.5}% 24
+\BOOKMARK [2][-]{subsection.5.2.1}{Aufbau des Versorgungssystems}{section.5.2}% 25
+\BOOKMARK [2][-]{subsection.5.2.2}{Spannungswandler}{section.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{5V Versorgungssystem}{subsection.5.2.2}% 27
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{12V Versorgungsysstem}{subsection.5.2.2}% 28
+\BOOKMARK [1][-]{section.5.3}{Steuerung der Peripherie}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.3.1}{Hardware}{section.5.3}% 30
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Input}{subsection.5.3.1}% 31
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Output}{subsection.5.3.1}% 32
+\BOOKMARK [2][-]{subsection.5.3.2}{Software}{section.5.3}% 33
+\BOOKMARK [3][-]{subsubsection.5.3.2.1}{GPIO Zero}{subsection.5.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.5.3.2.2}{Threading}{subsection.5.3.2}% 35
+\BOOKMARK [1][-]{section.5.4}{Benutzeroberfl\344che}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.4.1}{Pages}{section.5.4}% 37
+\BOOKMARK [2][-]{subsection.5.4.2}{Implementierung der Benutzeroberf\344che}{section.5.4}% 38
+\BOOKMARK [3][-]{subsubsection.5.4.2.1}{QML}{subsection.5.4.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.4.2.2}{Qt-Quick}{subsection.5.4.2}% 40
+\BOOKMARK [3][-]{subsubsection.5.4.2.3}{Slots and Signals}{subsection.5.4.2}% 41
+\BOOKMARK [3][-]{subsubsection.5.4.2.4}{Bridge}{subsection.5.4.2}% 42
+\BOOKMARK [1][-]{section.5.5}{Kommunikation}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.5.1}{Hardware}{section.5.5}% 44
+\BOOKMARK [2][-]{subsection.5.5.2}{Listener}{section.5.5}% 45
+\BOOKMARK [3][-]{subsubsection.5.5.2.1}{Receive Data}{subsection.5.5.2}% 46
+\BOOKMARK [1][-]{section.5.6}{Fahrdatenspeicher}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.6.1}{Datenbankstruktur}{section.5.6}% 48
+\BOOKMARK [3][-]{subsubsection.5.6.1.1}{Login System}{subsection.5.6.1}% 49
+\BOOKMARK [3][-]{subsubsection.5.6.1.2}{Motor Daten}{subsection.5.6.1}% 50
+\BOOKMARK [3][-]{subsubsection.5.6.1.3}{Akku Daten}{subsection.5.6.1}% 51
+\BOOKMARK [2][-]{subsection.5.6.2}{Handler}{section.5.6}% 52
+\BOOKMARK [3][-]{subsubsection.5.6.2.1}{SELECT Befehl}{subsection.5.6.2}% 53
+\BOOKMARK [3][-]{subsubsection.5.6.2.2}{INSERT Befehl}{subsection.5.6.2}% 54
+\BOOKMARK [0][-]{chapter.6}{Antriebsstrang}{}% 55
+\BOOKMARK [1][-]{section.6.1}{Section}{chapter.6}% 56
+\BOOKMARK [0][-]{chapter.7}{Akku und Ladekonzept}{}% 57
+\BOOKMARK [1][-]{section.7.1}{Section}{chapter.7}% 58
+\BOOKMARK [0][-]{chapter.8}{Endergebnis}{}% 59
+\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 60
+\BOOKMARK [0][-]{appendix.A}{Arbeitsnachweis}{}% 61
+\BOOKMARK [1][-]{section.A.1}{Zeitplan}{appendix.A}% 62
+\BOOKMARK [1][-]{section.A.2}{Kosten}{appendix.A}% 63
+\BOOKMARK [0][-]{appendix.B}{Programmier-Code}{}% 64
+\BOOKMARK [0][-]{appendix.C}{CAD-Zeichnungen}{}% 65
+\BOOKMARK [0][-]{appendix.D}{Schaltpl\344ne}{}% 66
+\BOOKMARK [0][-]{appendix.D}{Literaturverzeichnis}{}% 67
+\BOOKMARK [0][-]{appendix.D}{Abbildungsverzeichnis}{}% 68
+\BOOKMARK [0][-]{appendix*.3}{Tabellenverzeichnis}{}% 69
+\BOOKMARK [0][-]{appendix*.4}{Codeverzeichnis}{}% 70
