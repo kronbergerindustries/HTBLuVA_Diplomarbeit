@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  2 MAR 2021 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.8)  3 MAR 2021 09:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -1074,38 +1074,38 @@ nput line 48.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 65.
+nput line 67.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [3] [4]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 81.
+nput line 83.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [5]
 [6]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 112.
+nput line 114.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [7]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 137.
+nput line 139.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [8] [9]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 163.
+nput line 165.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [10]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 166.
+(Font)              <9> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 166.
+(Font)              <6> on input line 168.
 )
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1248,12 +1248,12 @@ nput line 13.
 File: figures/hcis/HCIS_Grundfunktion.png Graphic file (type png)
 <use figures/hcis/HCIS_Grundfunktion.png>
 Package pdftex.def Info: figures/hcis/HCIS_Grundfunktion.png  used on input lin
-e 27.
+e 29.
 (pdftex.def)             Requested size: 230.36006pt x 151.064pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 36.
+nput line 38.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [9 <./figures/hcis/HCIS_Grundfunktion.png>]) (content/ch_antrieb.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1382,7 +1382,7 @@ sers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Us
 ers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
 rs/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/User
 s/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb>
-Output written on main.pdf (34 pages, 1592949 bytes).
+Output written on main.pdf (34 pages, 1594223 bytes).
 PDF statistics:
  561 PDF objects out of 1000 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)

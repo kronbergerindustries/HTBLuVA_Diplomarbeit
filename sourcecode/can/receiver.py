@@ -1,7 +1,7 @@
 import sys
 import can
 
-
+class
 
 def main():
     pass
