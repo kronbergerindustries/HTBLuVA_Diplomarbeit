@@ -20,52 +20,71 @@
 \contentsline {chapter}{\numberline {V}Human-Computer Interaction System}{8}{chapter.5}%
 \contentsline {section}{\numberline {1}Übersicht}{8}{section.5.1}%
 \contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{8}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {1.2}Hardwareaufbau des Systems}{9}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {1.3}Softwareaufbau des Systems}{9}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {1.2}Grundaufbau des Systems}{9}{subsection.5.1.2}%
 \contentsline {section}{\numberline {2}Versorgung}{10}{section.5.2}%
 \contentsline {subsection}{\numberline {2.1}Aufbau des Versorgungssystems}{10}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {2.2}Spannungswandler}{10}{subsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}5V Versorgungssystem}{10}{subsubsection.5.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}12V Versorgungsysstem}{10}{subsubsection.5.2.2.2}%
-\contentsline {section}{\numberline {3}Steuerung der Peripherie}{10}{section.5.3}%
-\contentsline {subsection}{\numberline {3.1}Hardware}{10}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Input}{10}{subsubsection.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Output}{10}{subsubsection.5.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Software}{10}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}GPIO Zero}{10}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Threading}{10}{subsubsection.5.3.2.2}%
-\contentsline {section}{\numberline {4}Benutzeroberfläche}{10}{section.5.4}%
-\contentsline {subsection}{\numberline {4.1}Pages}{10}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {4.2}Implementierung der Benutzeroberfäche}{10}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}QML}{10}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Qt-Quick}{10}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Slots and Signals}{10}{subsubsection.5.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Bridge}{10}{subsubsection.5.4.2.4}%
-\contentsline {section}{\numberline {5}Kommunikation}{10}{section.5.5}%
-\contentsline {subsection}{\numberline {5.1}Hardware}{10}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.2}Listener}{10}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Receive Data}{10}{subsubsection.5.5.2.1}%
-\contentsline {section}{\numberline {6}Fahrdatenspeicher}{10}{section.5.6}%
-\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{10}{subsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Login System}{10}{subsubsection.5.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{10}{subsubsection.5.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{10}{subsubsection.5.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Handler}{10}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}SELECT Befehl}{10}{subsubsection.5.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}INSERT Befehl}{10}{subsubsection.5.6.2.2}%
-\contentsline {chapter}{\numberline {VI}Antriebsstrang}{11}{chapter.6}%
-\contentsline {section}{\numberline {1}Section}{11}{section.6.1}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{12}{chapter.7}%
-\contentsline {section}{\numberline {1}Section}{12}{section.7.1}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{13}{chapter.8}%
-\contentsline {section}{\numberline {1}Section}{13}{section.8.1}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{14}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{14}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{14}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{15}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{16}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{17}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{17}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{17}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{18}{appendix*.3}%
-\contentsline {chapter}{Codeverzeichnis}{19}{appendix*.4}%
+\contentsline {section}{\numberline {3}Steuerung der Peripherie}{11}{section.5.3}%
+\contentsline {subsection}{\numberline {3.1}Hardware}{11}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Input}{11}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Output}{11}{subsubsection.5.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Software}{11}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}GPIO Zero}{11}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Threading}{11}{subsubsection.5.3.2.2}%
+\contentsline {section}{\numberline {4}Benutzeroberfläche}{12}{section.5.4}%
+\contentsline {subsection}{\numberline {4.1}Pages}{12}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {4.2}Implementierung der Benutzeroberfäche}{12}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}QML}{12}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Qt-Quick}{12}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Slots and Signals}{12}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Bridge}{12}{subsubsection.5.4.2.4}%
+\contentsline {section}{\numberline {5}Kommunikation}{13}{section.5.5}%
+\contentsline {subsection}{\numberline {5.1}Hardware}{13}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.2}Listener}{13}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Receive Data}{13}{subsubsection.5.5.2.1}%
+\contentsline {section}{\numberline {6}Fahrdatenspeicher}{14}{section.5.6}%
+\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{14}{subsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Login System}{14}{subsubsection.5.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{14}{subsubsection.5.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{14}{subsubsection.5.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Handler}{14}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}SELECT Befehl}{14}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}INSERT Befehl}{14}{subsubsection.5.6.2.2}%
+\contentsline {chapter}{\numberline {VI}Antriebsstrang}{15}{chapter.6}%
+\contentsline {section}{\numberline {1}Übersicht}{15}{section.6.1}%
+\contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{15}{subsection.6.1.1}%
+\contentsline {section}{\numberline {2}Hardwareaufbau des Antriebssystems}{16}{section.6.2}%
+\contentsline {subsection}{\numberline {2.1}Mechanische Umsetzung}{17}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {2.2}Der Laststromkreis}{17}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {2.3}Verbindung zum Motor}{17}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Verbindung zum Akumulator}{17}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Sonstige Komponenten}{17}{subsubsection.6.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Der Steuerstromkreis}{17}{subsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Inputs}{17}{subsubsection.6.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Outputs}{17}{subsubsection.6.2.4.2}%
+\contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{17}{section.6.3}%
+\contentsline {section}{\numberline {4} Steuerung der In- und Outputs (I/O Assingment)}{17}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Funktionen}{17}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Zuweisung}{17}{subsection.6.4.2}%
+\contentsline {section}{\numberline {5}Drehmomentsteuerung (Torquecontrol)}{17}{section.6.5}%
+\contentsline {subsection}{\numberline {5.1}Grundfunktion}{17}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {5.2}Parameter}{17}{subsection.6.5.2}%
+\contentsline {section}{\numberline {6}Kommunikation (CAN-Bus)}{17}{section.6.6}%
+\contentsline {subsection}{\numberline {6.1}Grundfunktion}{17}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Parameter}{17}{subsubsection.6.6.1.1}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{18}{chapter.7}%
+\contentsline {section}{\numberline {1}Section}{18}{section.7.1}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{19}{chapter.8}%
+\contentsline {section}{\numberline {1}Section}{19}{section.8.1}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{20}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{20}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{20}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{21}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{22}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{23}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{23}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{23}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{24}{appendix*.4}%
+\contentsline {chapter}{Codeverzeichnis}{25}{appendix*.5}%

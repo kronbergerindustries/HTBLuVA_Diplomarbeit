@@ -346,6 +346,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:480;width:640}
+    D{i:0;formeditorZoom:0.5}D{i:23}
 }
 ##^##*/
