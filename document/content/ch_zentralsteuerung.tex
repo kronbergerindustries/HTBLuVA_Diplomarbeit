@@ -71,20 +71,40 @@ Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, 
 
 \section{Benutzeroberfläche}
 
-\subsection{Pages}
-\subsection{Implementierung der Benutzeroberfäche}
+\subsection{Program Fenster}
+\subsubsection{Login}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.25]{figures/hcis/window_login.png}
+		\caption{Login Fenster der Benutzeroberfläche}
+	\end{center}
+\end{figure}
+\subsubsection{Fahrdaten}
+\subsubsection{Akku- und Ladedaten}
+\subsubsection{Fahrdaten Diagnose}
+\subsubsection{Errors}
+\subsection{Realisierung der Benutzeroberfäche}
+
 \subsubsection{QML}
+QML ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen, und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche ermöglicht. Es bietet eine gut lesbare, deklarative, Syntax mit Unterstützung für JavaScript-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
 \subsubsection{Qt-Quick}
-\subsubsection{Slots and Signals}
+Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Back-End Bibliotheken verbunden werden.
+\newpage
+
+
+\subsubsection{Slots und Signals}
 Slots und Signals werden in Qml zur ereignisgesteuerte Kommunikation zwischen front-end und back-end verwendet. In der folgenden Illustration wird diese anhang eines einfachen Beispiels erklärt.
+
 \begin{center}
 \includegraphics[scale=0.5]{figures/hcis/signals_slots.png}
 \end{center}
 
-\textbf{Signals}\\ \medskip
-	Diese können als "Mitteilungen" angesen werden welche über das Aufrufen der signal.emit funktion vom back-end an das front-end gesehendet wird. Im front-end wird wiederum eine eigens definierte Funktion benötigt um dem Wert einem Property eines QML Elements zuzuweisen.
-	\item \textbf{Slots}\\ \medskip
-	Slots sind Call-Back funktionen. 
+\textbf{Signale}\\ \medskip
+Diese können als Mitteilungen angesehen werden welche über das Aufrufen der signal.emit funktion vom back-end an das front-end gesehendet wird. Im front-end wird wiederum eine eigens definierte Funktion benötigt um dem Wert einem Property eines QML Elements zuzuweisen.
+\medskip
+
+\textbf{Slots}\\ \medskip
+Slots sind Call-Back Funktionen, welche im Back-End definiert werden und sind über die Bridge Class mit dem Front-End verknüpft. Dadurch können diese Funktionen im Front-End aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar.
 	
 \subsubsection{Bridge}
 

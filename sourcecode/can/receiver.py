@@ -1,7 +1,11 @@
 import sys
 import can
 
-class
+class Listener(object):
+    def __init__(self):
+                
+
+
 
 def main():
     pass

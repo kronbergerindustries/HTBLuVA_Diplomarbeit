@@ -7,6 +7,7 @@ ApplicationWindow {
     width: 1920
     height: 1080
     visible: true
+    visibility: "FullScreen"
     title: qsTr("Login Page")
 
     Connections {
@@ -56,8 +57,8 @@ ApplicationWindow {
         visible: false
     }
 
-    Page_Settings {
-        id: page_Settings
+    Page_Error {
+        id: page_Error
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         visible: false
@@ -70,8 +71,6 @@ ApplicationWindow {
         anchors.topMargin: -160
         anchors.horizontalCenter: parent.horizontalCenter
     }
-
-
 }
 
 
