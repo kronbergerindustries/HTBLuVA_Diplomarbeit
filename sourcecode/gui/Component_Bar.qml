@@ -72,6 +72,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:250;width:250}
+    D{i:0;autoSize:true;formeditorColor:"#ffffff";height:250;width:250}
 }
 ##^##*/

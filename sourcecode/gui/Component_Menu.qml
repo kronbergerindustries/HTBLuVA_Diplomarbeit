@@ -5,7 +5,7 @@ Item {
     id: menuBar
     implicitWidth: 1920
     implicitHeight: 380
-    visible: false
+    visible: true
 
     function changeVisibility(boolValue) {
         if (boolValue) {
@@ -22,7 +22,7 @@ Item {
 
         page_Dashboard.changeVisibility(false)
         page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
         page_Login.changeVisibility(false)
     }
 
@@ -31,7 +31,7 @@ Item {
 
         page_Battery.changeVisibility(false)
         page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
         page_Login.changeVisibility(false)
     }
 
@@ -40,7 +40,7 @@ Item {
 
         page_Dashboard.changeVisibility(false)
         page_Battery.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
         page_Login.changeVisibility(false)
     }
 
@@ -59,7 +59,7 @@ Item {
         page_Dashboard.changeVisibility(false)
         page_Battery.changeVisibility(false)
         page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
     }
 
     Rectangle {

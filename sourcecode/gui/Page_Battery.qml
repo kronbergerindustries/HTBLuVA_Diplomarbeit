@@ -34,6 +34,7 @@ Item {
             width: 600
             height: 600
             anchors.verticalCenter: parent.verticalCenter
+            value: 50
             progressStrokeColor: "#2bcc48"
             roundCap: false
             bgstrokeWidth: 24
