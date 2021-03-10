@@ -115,20 +115,41 @@ Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche ü
 	\\ * Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
 	\item Ausgänge (Outputs)
 	\\ * Analoge Ausgänge (Analog Outputs)
-	\\ * Digitale und Phasenmodulierbare Outputs(Digital and PWM Outputs)
+	\\ * Digitale und Phasenmodulierbare Ausgänge (Digital and PWM Outputs)
 	\\ * Spannungsversorgungs-Ausgänge (Power Supply Outputs)
 	\item Kommunikation (Communication)
 	\\ * CAN-Port (CAN-Bus)
 	\\ * Serial-Port (Serielle Schnittstelle)
 \end{itemize}
 
+Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbare Ausgang verwendet, bei richtiger Konfiguration kann dieser jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/hcis/Antrieb_Steuerstromkreis.png}
+		\caption{Grundaufbau des Steuerstromkreises}
+	\end{center}
+\end{figure}
+
 \newpage
 
 
+
 \subsubsection{Eingänge (Inputs)}
-Encoder
-Throttle
-Switches
+Digitale Eingänge (Digital Inputs)
+Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, jedoch werden sieben Pins davon eigentlich als Ausgänge konfiguriert. 
+
+Analoge Eingänge (Analog Inputs)
+Es gibt insgesamt zwei Pins die als analoge Pins verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas
+
+Gas- und Bremseingänge (Throttle and Brake Inputs)
+
+Positionsrückmeldung vom Encoder (Position-feedback Input)
+
+Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
+
+
+
 \subsubsection{Ausgänge (Outputs)}
 Spannungswandler
 Driver
