@@ -104,7 +104,8 @@ Fazit:
 
 %% Der Steuerstromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Steuerstromkreis}
-Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche über den  35-poligen Niederleistung-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verchiedenen Ports, welche nochmals unterkategorisiert werden können:
+\subsubsection{Übersicht Ein- Ausgänge}
+Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verchiedenen Ports, welche nochmals unterkategorisiert werden können:
 
 \begin{itemize}
 	\item Eingänge (Inputs)
@@ -115,7 +116,7 @@ Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche ü
 	\\ * Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
 	\item Ausgänge (Outputs)
 	\\ * Analoge Ausgänge (Analog Outputs)
-	\\ * Digitale und Phasenmodulierbare Ausgänge (Digital and PWM Outputs)
+	\\ * Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)
 	\\ * Spannungsversorgungs-Ausgänge (Power Supply Outputs)
 	\item Kommunikation (Communication)
 	\\ * CAN-Port (CAN-Bus)
@@ -135,26 +136,36 @@ Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen v
 
 
 
-\subsubsection{Eingänge (Inputs)}
+\subsubsection{Digitale Eingänge (Digital Inputs)}
 Digitale Eingänge (Digital Inputs)
 Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, jedoch werden sieben Pins davon eigentlich als Ausgänge konfiguriert. 
 
-Analoge Eingänge (Analog Inputs)
-Es gibt insgesamt zwei Pins die als analoge Pins verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas
+\subsubsection{Analoge Eingänge (Analog Inputs)}
+Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür hergenommen werden.
 
-Gas- und Bremseingänge (Throttle and Brake Inputs)
+\subsubsection{Gas- und Bremseingänge (Throttle and Brake Inputs)}
+Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig von einander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung (zwei unabhängige 3-Draht Potentiometer-Ausgänge) verfügt.
 
-Positionsrückmeldung vom Encoder (Position-feedback Input)
+\subsubsection{Positionsrückmeldung vom Encoder (Position-feedback Input)}
+Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motorwelle einzulesen, um eine optimale feldorienterte Ansteuerung des Motors durchführen zu können. Dabei gibt es die Möglichkeiten über einen Quadratur-Encoder oder einen Sin/Cos-Encoder. Da in dem Ashwoods-Motor ein Sin/Cos-Sensor verbaut ist, wurde dies vorab bei dem Motorcontroller eingestellt.
 
-Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
+\subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf ist speziell für den Rücklauf der Pulsweitenmodulierbare-Ausgänge konfiguriert worden, um ein übrmäßiges Schaltrauschen zu verhindern.
 
 
+\subsubsection{Analoge Ausgänge (Analog Outputs)}
+Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausgang ist für die Ausgabe über Anzeigeinstrumente, wie zum Beispiel eine Anzeige über den aktuellen Ladestand des Akkumulators, vorgesehen.
 
-\subsubsection{Ausgänge (Outputs)}
-Spannungswandler
-Driver
-\subsubsection{Kommunikation}
 
+\subsubsection{Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}
+Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional Driver kann bei richtiger Konfiguration ebenfalls für die Anzeige eines Tachometers hergenommen werden. Diese Gruppe kann ebenfalls als digitaler Eingang benutzt werden.
+
+\subsubsection{Spannungsversorgungs-Ausgänge (Power Supply Outputs)}
+Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung vom Encoder, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
+
+
+\subsubsection{Kommunikations-Ports}
+Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die seielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Buses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten vom Motorcontroller zur Konfiguration des CAN-Buses, dies wird jedoch im Punkt Software genauer erklärt.
 
 
 %% Softwareaufbau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
