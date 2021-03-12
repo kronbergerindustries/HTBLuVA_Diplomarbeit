@@ -22,6 +22,20 @@ Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittste
 \end{itemize}
 \newpage
 
+\subsection{Steuereinheit}
+Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangeszogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichitg war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Microcomputer, doch letzten endes überzeugte der Micrcomputer Raspberry Pi.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.1]{figures/hcis/raspberryPi.png}
+		\caption{Raspberry Pi - Steuereinheite des HCIS}
+	\end{center}
+\end{figure}
+
+Durch 
+
+\newpage
+
 \subsection{Grundaufbau des Systems}
 In der Abbildung wird der Grundaufbau des Systems und die Datenverbindungen der folgenden  Komponenten veranschaulicht.
 
@@ -35,7 +49,7 @@ In der Abbildung wird der Grundaufbau des Systems und die Datenverbindungen der 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/hcis/HCIS_Grundfunktion.png}
+		\includegraphics[scale=0.6]{figures/hcis/HCIS_Grundfunktion.png}
 		\caption{Grundaufbau des Human-Computer Interaction Systems}
 	\end{center}
 \end{figure}
@@ -70,6 +84,8 @@ Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, 
 %% Benutzeroberfläche %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Benutzeroberfläche}
+Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades zu ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald man zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und die aufgezeichnetetn Fahrdaten anzeigen zu lassen. Ebenso kann der Akkuladestatus und Informationen über Fehler im System entnommen werden.
+\subsection{Hardwareaufbau}
 
 \subsection{Program Fenster}
 
@@ -176,11 +192,26 @@ Slots sind Call-Back Funktionen, welche im Back-End definiert werden und sind ü
 %% Kommunikation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kommunikation}
+Um Daten zwischen den mehreren Steuereinheiten des Motorrades zu versenden muss eine echtzeit Kommunikation über ein Bussystem gewährleistet werden. Die Entscheindung ist auf das Controller Area Network Bussystem (CAN-Bus) gefallen. Auschlaggebend für diese Entscheidung war der Curtis Motorcontroller, denn dieser verfügt über eine serielle Schnittstelle (RS-232) sowie ein CAN-System. Für unserer Anwendung bietet das CAN-System eine größere Ausbaufähigkeit sowie größere Übertragungsraten, weshalb wir uns letztendlich auch dafür entschieden haben.
 \subsection{Hardware}
+\subsubsection{CAN-Modul}
+Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Anschluss an die Busleitung über ein externes CAN-Modul, welches über das Serial Peripheral Interface (SPI) mit dem Raspberry kommuniziert, welches wie folgt angeschlossen werden muss: 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.9]{figures/hcis/can_module.png}
+		\caption{Anschlussplan CAN-Modul}
+	\end{center}
+\end{figure}
+
+Die Kommunikation wird über zwei Komponenten ermöclicht. Einen MCP2562 Transceiver, welcher für die Verabeitung der Nachrichten zuständig ist und ein MCP2515 CAN Interface, welches die Daten zwischenspeichert und sich um das Versenden der Nachrichten kümmert. Gemeinsam mit dem Mircocomputer ergibt dies nun eine CAN Node, welche fähig ist Nachrichten zu versenden und zu Empfangen.
+\subsubsection{Netzwerkstruktur}
+Ein CAN-Netzwerk wird standartmäßig als Linienstuktur oder Sternsturktur aufgebaut. Wir haben uns bewusst für ein Liniensystem entschieden da Sternsysteme nur in bestimmten anwendungen gebrauch finden und noch dazu markante Nachteile besitzt.\\ Es müsste zum Beispiel eine Zentrale Steuereinheit den Nachrichten verkehr steuern, ebenso gibt uns die niedrige Anzahl an Teilnehmern im Netzwerk nicht einmal die Freiheit dazu ein anderes system anzustreben. Erst falls wir in Zukunft das CAN-Netwerk um Sensoren und Aktoren erweitern wollten, müsste weitere Zeit in die Planung des Netzwerks gesteckt werden. 
+
+\newpage
+
 \subsection{Listener}
 \subsubsection{Receive Data}
 
-\newpage
 
 %% Fahrdatenspeicher %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
