@@ -4,9 +4,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {V.1}{\ignorespaces Grundaufbau des Human-Computer Interaction Systems\relax }}{9}{figure.caption.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Human-Computer Interaction Systems\relax }}{16}{figure.caption.3}%
+\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{12}{figure.caption.2}%
+\contentsline {figure}{\numberline {VI.2}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{15}{figure.caption.3}%
+\contentsline {figure}{\numberline {VI.3}{\ignorespaces Digital Input Specifications\relax }}{16}{figure.caption.4}%
+\contentsline {figure}{\numberline {VI.4}{\ignorespaces Analog Input Specifications\relax }}{16}{figure.caption.5}%
+\contentsline {figure}{\numberline {VI.5}{\ignorespaces Throttle Input Specifications\relax }}{17}{figure.caption.6}%
+\contentsline {figure}{\numberline {VI.6}{\ignorespaces Sin/Cos Sensor Input Specifications\relax }}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {VI.7}{\ignorespaces KSI and Coil Return Input Specifications\relax }}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {VI.8}{\ignorespaces Analog Output Specifications\relax }}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {VI.9}{\ignorespaces Digital and PWM Output Specifications\relax }}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {VI.10}{\ignorespaces Power Supply Output Specifications\relax }}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {VI.11}{\ignorespaces Communications Port Specifications\relax }}{20}{figure.caption.12}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
