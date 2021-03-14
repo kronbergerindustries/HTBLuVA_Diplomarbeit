@@ -9,17 +9,11 @@
 \contentsline {section}{\numberline {3}Topologie des Gesamtsystems}{5}{section.2.3}%
 \contentsline {section}{\numberline {4}Leitfaden}{5}{section.2.4}%
 \contentsline {chapter}{\numberline {III}Stand der Technik}{6}{chapter.3}%
-\contentsline {section}{\numberline {1}Steuerungshardware}{6}{section.3.1}%
-\contentsline {subsection}{\numberline {1.1}Battery Management System}{6}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {1.2}Raspberry PI}{6}{subsection.3.1.2}%
-\contentsline {section}{\numberline {2}Bussysteme}{6}{section.3.2}%
-\contentsline {subsection}{\numberline {2.1}SPI Bus}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {2.2}CAN Bus}{6}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3}Synchronmaschine mit Dauermagneterregung}{6}{section.3.3}%
-\contentsline {subsection}{\numberline {3.1}Auswertung der Anrtiebswelle}{6}{subsection.3.3.1}%
-\contentsline {section}{\numberline {4}Curtis Controller}{6}{section.3.4}%
-\contentsline {subsection}{\numberline {4.1}Allgemeines}{6}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {4.2}Feldorientierte Regelung}{6}{subsection.3.4.2}%
+\contentsline {section}{\numberline {1}Synchronmaschine mit Dauermagneterregung}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {1.1}Auswertung der Anrtiebswelle}{6}{subsection.3.1.1}%
+\contentsline {section}{\numberline {2}Curtis Controller}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {2.1}Allgemeines}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.2}Feldorientierte Regelung}{6}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{7}{chapter.4}%
 \contentsline {section}{\numberline {1}Section}{7}{section.4.1}%
 \contentsline {chapter}{\numberline {V}Human-Computer Interaction System}{8}{chapter.5}%
