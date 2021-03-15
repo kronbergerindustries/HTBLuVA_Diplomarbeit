@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.13)  15 MAR 2021 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.15)  15 MAR 2021 13:35
 entering extended mode
 **./ch_antrieb.tex
 (ch_antrieb.tex
@@ -2070,26 +2070,19 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no > in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no k in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 46--49
+Overfull \hbox (20.0pt too wide) in paragraph at lines 46--48
 []
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 46--49
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 46--48
 \/cmr/m/n/10 a
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 46--49
-\/cmr/m/n/10 u
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 46--48
+\/cmr/m/n/10 u 
  []
 
 
@@ -2220,7 +2213,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no H in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2624,11 +2616,6 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -6603,18 +6590,11 @@ or  <return>  to continue without it.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.146 	\begin{left}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 146.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 146.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 145--146
+[] 
+ []
+
 ! Undefined control sequence.
 l.147 		\includegraphics
                         [scale=0.4]{figures/hcis/Digital_Input_Specification...
@@ -6623,6 +6603,58 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.147 ...graphics[scale=0.4]{figures/hcis/Digital_
+                                                  Input_Specifications.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 147.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 147.
+! Extra }, or forgotten $.
+l.147 ...es/hcis/Digital_Input_Specifications.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
 ! LaTeX Error: \caption outside float.
@@ -6637,7 +6669,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Command \end{left} invalid in math mode.
+! LaTeX Error: Command \end{center} invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -6672,22 +6704,9 @@ l.149 	\end{center}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-! LaTeX Error: \begin{left} on input line 146 ended by \end{center}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 	\end{center}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing \right. inserted.
+! Missing $ inserted.
 <inserted text> 
-                \right .
+                $
 l.149 	\end{center}
                    
 I've inserted something that you may have forgotten.
@@ -6696,9 +6715,9 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing $ inserted.
+! Missing } inserted.
 <inserted text> 
-                $
+                }
 l.149 	\end{center}
                    
 I've inserted something that you may have forgotten.
@@ -6721,13 +6740,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 145--151
-[]
- []
-
-
-Overfull \hbox (382.85678pt too wide) in paragraph at lines 145--151
-[]$
+Overfull \hbox (232.77055pt too wide) in paragraph at lines 147--151
+[]\OML/cmm/m/it/10 nput[]pecifications:png[]$
  []
 
 ! Undefined control sequence.
@@ -7229,13 +7243,10 @@ or  <return>  to continue without it.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.160 	\begin{left}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 159--160
+[] 
+ []
 
 ! Undefined control sequence.
 l.161 		\includegraphics
@@ -7245,6 +7256,53 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.161 ...egraphics[scale=0.4]{figures/hcis/Analog_
+                                                  Input_Specifications.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.161 ...res/hcis/Analog_Input_Specifications.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
 ! LaTeX Error: \caption outside float.
@@ -7259,7 +7317,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Command \end{left} invalid in math mode.
+! LaTeX Error: Command \end{center} invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -7294,22 +7352,9 @@ l.163 	\end{center}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-! LaTeX Error: \begin{left} on input line 160 ended by \end{center}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.163 	\end{center}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing \right. inserted.
+! Missing $ inserted.
 <inserted text> 
-                \right .
+                $
 l.163 	\end{center}
                    
 I've inserted something that you may have forgotten.
@@ -7318,9 +7363,9 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing $ inserted.
+! Missing } inserted.
 <inserted text> 
-                $
+                }
 l.163 	\end{center}
                    
 I've inserted something that you may have forgotten.
@@ -7343,13 +7388,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 159--165
-[]
- []
-
-
-Overfull \hbox (380.72177pt too wide) in paragraph at lines 159--165
-[]$
+Overfull \hbox (232.06183pt too wide) in paragraph at lines 161--165
+[]\OML/cmm/m/it/10 nput[]pecifications:png[]$
  []
 
 ! Undefined control sequence.
@@ -12200,11 +12240,11 @@ Missing character: There is no r in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 36 strings out of 479323
- 714 string characters out of 2850852
- 292134 words of memory out of 3000000
- 17593 multiletter control sequences out of 15000+200000
+ 36 strings out of 479300
+ 714 string characters out of 2849638
+ 292173 words of memory out of 3000000
+ 17604 multiletter control sequences out of 15000+200000
  403430 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,4n,42p,882b,96s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,4n,42p,882b,107s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

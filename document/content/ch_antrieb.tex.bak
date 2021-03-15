@@ -45,13 +45,61 @@ Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galva
 %% Mechanische Umsetzung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{Mechanische Umsetzung}
 Die Fertigung des Getriebes und die Montage der einzelnen Betriebsmittel wurde vollständig von Tobias Schmeisser übernommen.
---> link
+
 
 \newpage
 
 
 
+%% Der Laststromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Der Laststromkreis}
+Der Laststromkreis befasst sich mit allen leistungsführenden Betriebsmitteln des Antriebssystems. ierbei unterscheiden wir zwischen zwei Grundfunktionen:
 
+\begin{itemize}
+	\item Elektrische Energieübertragung
+	\\ Umfasst die elektrische Verbindung von Motor, Motorcontroller und Akkumulator. 						\\ Realisiert durch einfache Leitungen, um Leistungen übertragen zu können.
+	\item Schutz aller Komponenten vor möglichen Beschädigungen (Leitungsschutzorgane)
+	\\ Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 									\\ Hochleistungs-Relais, um im Fehlerfall den kreis öffnen zu können und damit  		
+	\\ eine galvanische Trennung des Antriebs und der Energieversorgung gewährleisten zu können.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		%\includegraphics[scale=0.5]{figures/hcis/Antrieb_Laststromkreis.png}
+		\caption{Grundaufbau des Laststromkreises}
+	\end{center}
+\end{figure}
+
+\newpage
+
+
+
+%% Elektrische Energieübertragung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Elektrische Energieübertragung}
+Um die benötigte elektrische Energie übertragen zu können, müssen die Leitungen an den Leistungsverbrauch des Verbrauchers (Motor) angepasst werden. Bei einer zu hohen Stromaufnahme (Überlast) des Motors kann es zu einer übermäßigen Erwärmung der Leitungen bis hin zu dauerhaften Beschädigungen, wie durchschmorren der Isolierung oder sogar einen Leitungsbrand, führen. Um dies verhindern zu können, müssen die Leitungen an die Stromaufnahme des Motors angepasst werden. Das heißt, der zulässige Dauerstrom der Leitungen muss den maximalen Dauerstrom des Motors bzw. den maximalen Dauerstrom, welcher durch den Akkumulator zur Verfügung gestellten werden kann, übersteigen.
+
+Berechnung:
+In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die Länge der Leitung an die benötigte Stromaufnahme des Motors anpassen.
+
+Auswahl:
+
+Fazit:
+
+\newpage
+
+
+
+%% Leitungsschutzorgane %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Leitungsschutzorgane}
+Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen und damit den Motor bzw. Motorcontroller und den Akkumulator galvanisch zu trennen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dies hat nicht nur höhere Anschaffungskosten zur folge. Bei Überdimensionierung der Schmelzsicherung, löst diese zu spät aus und hat damit nur mehr eine sehr geringe bis gar keine Schutzfunktion mehr. 
+
+Berechnung:
+
+Auswahl:
+
+Fazit:
+
+\newpage
 
 
 
@@ -91,12 +139,11 @@ Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen v
 
 %% Digitale Eingänge (Digital Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Digitale Eingänge (Digital Inputs)}
-Digitale Eingänge (Digital Inputs)
 Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, jedoch werden sieben Pins davon eigentlich als Ausgänge konfiguriert. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.4]{figures/hcis/Digital_Input_Specifications.png}
+		\includegraphics[width=\textwidth]{figures/hcis/Digital_Input_Specifications.png}
 		\caption{Digital Input Specifications}
 	\end{center}
 \end{figure}
@@ -110,7 +157,7 @@ Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.4]{figures/hcis/Analog_Input_Specifications.png}
+		\includegraphics[width=\textwidth]{figures/hcis/Analog_Input_Specifications.png}
 		\caption{Analog Input Specifications}
 	\end{center}
 \end{figure}
@@ -119,11 +166,11 @@ Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. 
 
 %% Gas- und Bremseingänge (Throttle and Brake Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Gas- und Bremseingänge (Throttle and Brake Inputs)}
-Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig von einander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung (zwei unabhängige 3-Draht Potentiometer-Ausgänge) verfügt.
+Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig von einander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/hcis/Throttle_Input_Specifications.png}
+		\includegraphics[width=\textwidth]{figures/hcis/Throttle_Input_Specifications.png}
 		\caption{Throttle Input Specifications}
 	\end{center}
 \end{figure}
@@ -136,7 +183,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/hcis/SinCosSensor_Input_Specifications.png}
+		\includegraphics[width=\textwidth]{figures/hcis/SinCosSensor_Input_Specifications.png}
 		\caption{Sin/Cos Sensor Input Specifications}
 	\end{center}
 \end{figure}
@@ -145,7 +192,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 %% Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
-Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf ist speziell für den Rücklauf der Pulsweitenmodulierbare-Ausgänge konfiguriert worden, um ein übrmäßiges Schaltrauschen zu verhindern.
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf ist speziell für den Rücklauf der pulsweitenmodulierbaren Ausgänge konfiguriert worden, um ein übrmäßiges Schaltrauschen zu verhindern.
 
 \begin{figure}[H]
 	\begin{center}
@@ -171,7 +218,7 @@ Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausg
 
 %% Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}
-Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional Driver kann bei richtiger Konfiguration ebenfalls für die Anzeige eines Tachometers hergenommen werden. Diese Gruppe kann ebenfalls als digitaler Eingang benutzt werden.
+Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional-Driver kann bei richtiger Konfiguration auch für die Anzeige eines Tachometers hergenommen werden. Diese Gruppe kann ebenfalls als digitaler Eingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -196,7 +243,7 @@ Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsr
 
 %% Kommunikations-Ports %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kommunikations-Ports}
-Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die seielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Buses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten vom Motorcontroller zur Konfiguration des CAN-Buses, dies wird jedoch im Punkt Software genauer erklärt.
+Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Buses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten vom Motorcontroller zur Konfiguration des CAN-Buses, dies wird jedoch im Punkt Software genauer erklärt.
 
 \begin{figure}[H]
 	\begin{center}

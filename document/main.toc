@@ -31,11 +31,11 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{16}{subsubsection.6.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{17}{subsubsection.6.2.3.4}%
 \contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-feedback Input)}{17}{subsubsection.6.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{17}{subsubsection.6.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{18}{subsubsection.6.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{18}{subsubsection.6.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{18}{subsubsection.6.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{19}{subsubsection.6.2.3.8}%
 \contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{19}{subsubsection.6.2.3.9}%
-\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{19}{subsubsection.6.2.3.10}%
+\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{20}{subsubsection.6.2.3.10}%
 \contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{21}{section.6.3}%
 \contentsline {section}{\numberline {4} Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{section.6.4}%
 \contentsline {subsection}{\numberline {4.1}Funktionen}{21}{subsection.6.4.1}%
