@@ -37,15 +37,15 @@
 \contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{19}{subsubsection.6.2.3.9}%
 \contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{20}{subsubsection.6.2.3.10}%
 \contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{21}{section.6.3}%
-\contentsline {section}{\numberline {4} Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Funktionen}{21}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {4.2}Zuweisung}{21}{subsection.6.4.2}%
-\contentsline {section}{\numberline {5}Drehmomentsteuerung (Torquecontrol)}{21}{section.6.5}%
-\contentsline {subsection}{\numberline {5.1}Grundfunktion}{21}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {5.2}Parameter}{21}{subsection.6.5.2}%
-\contentsline {section}{\numberline {6}Kommunikation (CAN-Bus)}{21}{section.6.6}%
-\contentsline {subsection}{\numberline {6.1}Grundfunktion}{21}{subsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Parameter}{21}{subsubsection.6.6.1.1}%
+\contentsline {subsection}{\numberline {3.1} Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Funktionen}{21}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Zuweisung}{21}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{21}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Grundfunktion}{21}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Parameter}{21}{subsubsection.6.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Kommunikation (CAN-Bus)}{21}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{21}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Parameter}{21}{subsubsection.6.3.3.2}%
 \contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{22}{chapter.7}%
 \contentsline {section}{\numberline {1}Section}{22}{section.7.1}%
 \contentsline {chapter}{\numberline {VIII}Endergebnis}{23}{chapter.8}%

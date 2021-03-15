@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.15)  15 MAR 2021 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.15)  15 MAR 2021 15:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -201,7 +201,334 @@ tion3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen142
 \captionmargin@=\dimen143
-\c                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                6
+\captionwidth=\dimen144
+\caption@tempdima=\dimen145
+\caption@indent=\dimen146
+\caption@parindent=\dimen147
+\caption@hangindent=\dimen148
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count191
+\c@continuedfloat=\count192
+)
+\c@KVtest=\count193
+\sf@farskip=\skip63
+\sf@captopadj=\dimen149
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count194
+\c@subfigure@save=\count195
+\c@lofdepth=\count196
+\c@subtable=\count197
+\c@subtable@save=\count198
+\c@lotdepth=\count199
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/fronten
+dlayer\tikz.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basicla
+yer\pgf.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utiliti
+es\pgfrcs.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen150
+\pgfutil@tempdimb=\dimen151
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfutil-common-lists.tex))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfutil-latex.def
+\pgfutil@abb=\box47
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfrcs.code.tex
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.r
+evision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basicla
+yer\pgfcore.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systeml
+ayer\pgfsys.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
+\pgf@xd=\dimen160
+\pgf@yd=\dimen161
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count266
+\c@pgf@countb=\count267
+\c@pgf@countc=\count268
+\c@pgf@countd=\count269
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count270
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count271
+\pgfsyssoftpath@bigbuffer@items=\count272
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
+mlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcol
+or.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cf
+g\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmath.code.tex
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathcalc.code.tex
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathutil.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathparser.code.tex
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count273
+\pgfmath@box=\box48
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.code.tex
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.basic.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.trigonometric.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.random.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.comparison.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.base.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.round.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.misc.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfunctions.integerarithmetics.code.tex)))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count274
+))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfint.code.tex)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count275
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen181
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen185
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count276
+\pgf@shadingcount=\count277
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box52
+))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+layer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modul
+es\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box53
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modul
+es\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compati
+bility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
+)
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compati
+bility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utiliti
+es\pgffor.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utiliti
+es\pgfkeys.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgfkeys.code.tex))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pg
+fmath.sty
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmath.code.tex))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
+ties\pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\
+pgfmath.code.tex)
+\pgffor@iter=\dimen189
+\pgffor@skip=\dimen190
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/front
+endlayer/tikz\tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libra
+ries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count278
+\pgfplotmarksize=\dimen191
+)
+\tikz@lastx=\dimen192
+\tikz@lasty=\dimen193
+\tikz@lastxsaved=\dimen194
+\tikz@lastysaved=\dimen195
+\tikz@lastmovetox=\dimen196
 \tikz@lastmovetoy=\dimen197
 \tikzleveldistance=\dimen198
 \tikzsiblingdistance=\dimen199
@@ -334,493 +661,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip73
 \dth@everypar=\toks43
 )
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hy
-perref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ift
-ex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdftexcmd
-s\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr
-\infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinek
-eys\kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape
-\pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hyc
-olor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro
-\letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\aux
-hook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-\@linkdim=\dimen268
-\Hy@linkcounter=\count300
-\Hy@pagecounter=\count301
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd
-1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hy
-perref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\i
-ntcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\
-etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count302
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pu
-enc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count303
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen269
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bi
-tset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcal
-c\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count304
-\Field@Width=\dimen270
-\Fld@charsize=\dimen271
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atbegs
-hi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
-)
-\Hy@abspage=\count305
-\c@Item=\count306
-\c@Hfootnote=\count307
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hp
-dftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atvery
-end-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
-with kernel methods
-)
-\Fld@listcount=\count308
-\c@bookmark@seq@number=\count309
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilech
-eck\rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecou
-nter\uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-)
-\Hy@SectionHShift=\skip74
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\hy
-pcap.sty
-Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\ma
-thrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tabls\tabls
-.sty
-\tablinesep=\dimen272
-\arraylinesep=\dimen273
-\extrarulesep=\dimen274
-\@arstdepth=\dimen275
-\@arstheight=\dimen276
-\@skip@bove=\dimen277
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\bo
-oktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen278
-\lightrulewidth=\dimen279
-\cmidrulewidth=\dimen280
-\belowrulesep=\dimen281
-\belowbottomsep=\dimen282
-\aboverulesep=\dimen283
-\abovetopsep=\dimen284
-\cmidrulesep=\dimen285
-\cmidrulekern=\dimen286
-\defaultaddspace=\dimen287
-\@cmidla=\count310
-\@cmidlb=\count311
-\@aboverulesep=\dimen288
-\@belowrulesep=\dimen289
-\@thisruleclass=\count312
-\@lastruleclass=\count313
-\@thisrulewidth=\dimen290
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/latex-tools
-\longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip75
-\LTright=\skip76
-\LTpre=\skip77
-\LTpost=\skip78
-\LTchunksize=\count314
-\LTcapwidth=\dimen291
-\LT@head=\box62
-\LT@firsthead=\box63
-\LT@foot=\box64
-\LT@lastfoot=\box65
-\LT@cols=\count315
-\LT@rows=\count316
-\c@LT@tables=\count317
-\c@LT@chunks=\count318
-\LT@p@ftn=\toks44
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/latex-tools
-\tabularx.sty
-Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/latex-tools
-\array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen292
-\ar@mcellbox=\box66
-\extrarowheight=\dimen293
-\NC@list=\toks45
-\extratabsurround=\skip79
-\backup@length=\skip80
-
-
-LaTeX Warning: Command \@xhline  has changed.
-               Check if current package is valid.
-
-\ar@cellbox=\box67
-)
-\TX@col@width=\dimen294
-\TX@old@table=\dimen295
-\TX@old@col=\dimen296
-\TX@target=\dimen297
-\TX@delta=\dimen298
-\TX@cols=\count319
-\TX@ftn=\toks46
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\ge
-ometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifv
-tex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count320
-\Gm@cntv=\count321
-\c@Gm@tempcnt=\count322
-\Gm@bindingoffset=\dimen299
-\Gm@wd@mp=\dimen300
-\Gm@odd@mp=\dimen301
-\Gm@even@mp=\dimen302
-\Gm@layoutwidth=\dimen303
-\Gm@layoutheight=\dimen304
-\Gm@layouthoffset=\dimen305
-\Gm@layoutvoffset=\dimen306
-\Gm@dimlist=\toks47
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\ge
-ometry.cfg))
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\li
-stings.sty
-\lst@mode=\count323
-\lst@gtempboxa=\box68
-\lst@token=\toks48
-\lst@length=\count324
-\lst@currlwidth=\dimen307
-\lst@column=\count325
-\lst@pos=\count326
-\lst@lostspace=\dimen308
-\lst@width=\dimen309
-\lst@newlines=\count327
-\lst@lineno=\count328
-\lst@maxwidth=\dimen310
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\ls
-tmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count329
-\lst@skipnumbers=\count330
-\lst@framebox=\box69
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\li
-stings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fa
-ncyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
-\f@nch@headwidth=\skip81
-\f@nch@O@elh=\skip82
-\f@nch@O@erh=\skip83
-\f@nch@O@olh=\skip84
-\f@nch@O@orh=\skip85
-\f@nch@O@elf=\skip86
-\f@nch@O@erf=\skip87
-\f@nch@O@olf=\skip88
-\f@nch@O@orf=\skip89
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cancel\canc
-el.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\ls
-tlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\ls
-tmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-1.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l
-3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count331
-\l__pdf_internal_box=\box70
-) (main.aux)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
- ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 111.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii
-\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen311
-\scratchbox=\box71
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen312
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks50
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pk
-g\epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-)
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: hypcap package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: longtable package is loaded.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\ltc
-aption.sty
-Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
-)
-Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 111.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\na
-meref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\re
-fcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitles
-tring\gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count338
-)
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
- (main.out) (main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
-
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(68.28659pt, 426.79134pt, 102.42995pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79134pt
-* \textheight=702.78308pt
-* \oddsidemargin=-3.9834pt
-* \evensidemargin=30.15996pt
-* \topmargin=-38.1381pt
-* \headheight=26.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=72.26999pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\c@lstlisting=\count339
-(title.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-4.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.f
-d
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-4.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.f
-d
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-14.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.
-fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-14.
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.
-fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 14.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
-
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\um
-sa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
-
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\um
-sb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ymbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 .
@@ -1052,19 +893,19 @@ nput line 73.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 88.
+nput line 96.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [13]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 102.
+nput line 110.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [14]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 136.
+nput line 144.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [15]
 <figures/hcis/Digital_Input_Specifications.png, id=446, 1032.85875pt x 593.2162
@@ -1072,19 +913,19 @@ nput line 136.
 File: figures/hcis/Digital_Input_Specifications.png Graphic file (type png)
 <use figures/hcis/Digital_Input_Specifications.png>
 Package pdftex.def Info: figures/hcis/Digital_Input_Specifications.png  used on
- input line 146.
+ input line 154.
 (pdftex.def)             Requested size: 426.79134pt x 245.1211pt.
 <figures/hcis/Analog_Input_Specifications.png, id=447, 1250.42157pt x 338.76563
 pt>
 File: figures/hcis/Analog_Input_Specifications.png Graphic file (type png)
 <use figures/hcis/Analog_Input_Specifications.png>
 Package pdftex.def Info: figures/hcis/Analog_Input_Specifications.png  used on 
-input line 160.
+input line 168.
 (pdftex.def)             Requested size: 426.79134pt x 115.62332pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 167.
+nput line 175.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [16 <./figures/hcis/Digital_Input_Specifications.png> <./figures/hcis/Analog_I
 nput_Specifications.png>]
@@ -1093,7 +934,7 @@ nput_Specifications.png>]
 File: figures/hcis/Throttle_Input_Specifications.png Graphic file (type png)
 <use figures/hcis/Throttle_Input_Specifications.png>
 Package pdftex.def Info: figures/hcis/Throttle_Input_Specifications.png  used o
-n input line 177.
+n input line 185.
 (pdftex.def)             Requested size: 426.79134pt x 128.35019pt.
 <figures/hcis/SinCosSensor_Input_Specifications.png, id=457, 1316.66907pt x 237
 .88875pt>
@@ -1101,12 +942,12 @@ File: figures/hcis/SinCosSensor_Input_Specifications.png Graphic file (type png
 )
 <use figures/hcis/SinCosSensor_Input_Specifications.png>
 Package pdftex.def Info: figures/hcis/SinCosSensor_Input_Specifications.png  us
-ed on input line 190.
+ed on input line 198.
 (pdftex.def)             Requested size: 426.79134pt x 77.10965pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 196.
+nput line 204.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [17 <./figures/hcis/Throttle_Input_Specifications.png> <./figures/hcis/SinCosS
 ensor_Input_Specifications.png>]
@@ -1116,19 +957,19 @@ File: figures/hcis/KSI_CoilReturn_Input_Specifications.png Graphic file (type p
 ng)
 <use figures/hcis/KSI_CoilReturn_Input_Specifications.png>
 Package pdftex.def Info: figures/hcis/KSI_CoilReturn_Input_Specifications.png  
-used on input line 205.
+used on input line 213.
 (pdftex.def)             Requested size: 426.79134pt x 73.5764pt.
 <figures/hcis/Analog_Output_Specifications.png, id=468, 1267.73625pt x 185.9446
 9pt>
 File: figures/hcis/Analog_Output_Specifications.png Graphic file (type png)
 <use figures/hcis/Analog_Output_Specifications.png>
 Package pdftex.def Info: figures/hcis/Analog_Output_Specifications.png  used on
- input line 218.
+ input line 226.
 (pdftex.def)             Requested size: 426.79134pt x 62.59898pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 224.
+nput line 232.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [18 <./figures/hcis/KSI_CoilReturn_Input_Specifications.png> <./figures/hcis/A
 nalog_Output_Specifications.png>]
@@ -1138,7 +979,7 @@ File: figures/hcis/Digital_PWM_Output_Specifications.png Graphic file (type png
 )
 <use figures/hcis/Digital_PWM_Output_Specifications.png>
 Package pdftex.def Info: figures/hcis/Digital_PWM_Output_Specifications.png  us
-ed on input line 234.
+ed on input line 242.
 (pdftex.def)             Requested size: 426.79134pt x 142.34102pt.
 <figures/hcis/Power_Supply_Output_Specifications.png, id=478, 1284.29813pt x 33
 0.48468pt>
@@ -1146,12 +987,12 @@ File: figures/hcis/Power_Supply_Output_Specifications.png Graphic file (type pn
 g)
 <use figures/hcis/Power_Supply_Output_Specifications.png>
 Package pdftex.def Info: figures/hcis/Power_Supply_Output_Specifications.png  u
-sed on input line 247.
+sed on input line 255.
 (pdftex.def)             Requested size: 426.79134pt x 109.82173pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 253.
+nput line 261.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [19 <./figures/hcis/Digital_PWM_Output_Specifications.png> <./figures/hcis/Pow
 er_Supply_Output_Specifications.png>]
@@ -1161,12 +1002,12 @@ File: figures/hcis/Communications_Port_Specifications.png Graphic file (type pn
 g)
 <use figures/hcis/Communications_Port_Specifications.png>
 Package pdftex.def Info: figures/hcis/Communications_Port_Specifications.png  u
-sed on input line 262.
+sed on input line 270.
 (pdftex.def)             Requested size: 426.79134pt x 146.19534pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 269.
+nput line 277.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [20 <./figures/hcis/Communications_Port_Specifications.png>])
 (content/ch_akku.tex
@@ -1276,18 +1117,12 @@ nput line 159.
  [30
 
 ] (main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 415B7B8A6DEB9C2CFE3A6A2C097F202E;10509
-(rerunfilecheck)             After:  BF66BED863CA35E08BE69F4DE236CA7F;10509.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5F86119FE413E9C0BB877496656401B2;10580.
  ) 
 Here is how much of TeX's memory you used:
  25006 strings out of 479300
- 453052 string characters out of 2849638
+ 453132 string characters out of 2849638
  923222 words of memory out of 3000000
  41799 multiletter control sequences out of 15000+200000
  461659 words of font info for 72 fonts, out of 3000000 for 9000
@@ -1303,7 +1138,7 @@ ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jako
 b Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
 /Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 r9.pfb>
-Output written on main.pdf (44 pages, 2578970 bytes).
+Output written on main.pdf (44 pages, 2578749 bytes).
 PDF statistics:
  600 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)
