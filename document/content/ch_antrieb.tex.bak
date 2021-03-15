@@ -4,11 +4,11 @@
 
 %% Übersicht %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Übersicht}
-Die Hauptaufgabe des Anrtiebssystems ist die Umwandlung der von dem Akkumulator zur Verfügung gestellten elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst kreisförmig am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die kreisförmige kinetische Energie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, diese fungiert als Bindemittel zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
+Die Hauptaufgabe des Anrtiebssystems ist die Umwandlung der, von dem Akkumulator zur Verfügung gestellten, elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst kreisförmig am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die kreisförmige kinetische Energie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, diese fungiert als Bindemittel zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
 
 
 \subsection{Grundfunktionen des Systems}
-Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunktionen einteilen.
+Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunktionen einteilen:
 
 \begin{itemize}
 	\item Der Antrieb - Translation ist eine Grundfunktion eines jeden Verkehrsmittels
@@ -18,7 +18,7 @@ Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunkt
 	\\ Realisiert durch In- und Outputs, Datenübetragung mithilfe des CAN-Buses 
 \end{itemize}
 
-Um auf die einzelnen Details des Antriebssystems besser eingehen zu können, unterscheiden wir zwischen dem Hardwareaufbau und dem Softwareaufbau.
+Um auf die einzelnen Details des Antriebssystems besser eingehen zu können, unterscheiden wir zwischen dem Hardwareaufbau und dem Softwareaufbau des Antriebssystems.
 
 \newpage
 
@@ -30,7 +30,7 @@ Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galva
 
 \begin{itemize}
 	\item Mechanische Umsetzung (Kraftübertragung und Montage) 
-	\\ Umfasst das Getriebe und die Befestigung aller Komponenten am Rahmen
+	\\ Umfasst das Getriebe und die Befestigung aller Komponenten am Rahmen.
 	\item Der Laststromkreis
 	\\ Beinhaltet die Verbindung des Motorcontrollers mit dem Motor und dem Akkumulator.
 	\item Der Steuerstromkreis
@@ -44,61 +44,14 @@ Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galva
 
 %% Mechanische Umsetzung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{Mechanische Umsetzung}
-Dieser Teil des Antriebssystems wurde vollständig von Tobias Schmeisser übernommen.
+Die Fertigung des Getriebes und die Montage der einzelnen Betriebsmittel wurde vollständig von Tobias Schmeisser übernommen.
 --> link
 
 \newpage
 
 
 
-%% Der Laststromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Der Laststromkreis}
-Der Laststromkreis befasst sich mit allen leistungsführenden Betriebsmitteln des Antriebssystems. Hierbei unterscheiden wir zwischen zwei Grundfunktionen:
 
-\begin{itemize}
-	\item Elektrische Energieübertragung
-	\\ Umfasst die elektrische Verbindung von Motorcontroller und Akkumulator 					\\ mithilfe von einfachen Leitungen, um Leistungen übertragen zu können.
-	\item Schutz aller Komponenten vor möglichen Beschädigungen (Leitungsschutzorgane)
-	\\ Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 						\\ Hochleistungs-Relais, um im Fehlerfall den Stromkreis öffnen zu können und damit  		\\ eine galvanische Trennung der beiden Hauptkomponenten gewährleisten zu können.
-\end{itemize}
-
-\begin{figure}[H]
-	\begin{center}
-		%\includegraphics[scale=0.5]{figures/hcis/Antrieb_Laststromkreis.png}
-		\caption{Grundaufbau des Laststromkreises}
-	\end{center}
-\end{figure}
-
-\newpage
-
-
-
-%% Elektrische Energieübertragung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Elektrische Energieübertragung}
-Um die benötigte elektrische Energie übertragen zu können, müssen die Leitungen an den Leistungsverbrauch des Verbrauchers (Motor) angepasst werden. Bei einer zu hohen Stromaufnahme (Überlast) des Motors kann es zu einer übermäßigen Erwärmung der Leitungen bis hin zu dauerhaften Beschädigungen, wie durchschmorren der Isolierung oder sogar einen Leitungsbrand, führen. Um dies verhindern zu können, müssen die Leitungen an die Stromaufnahme des Motors angepasst werden. Das heißt, der zulässige Dauerstrom der Leitungen muss den maximalen Dauerstrom des Motors bzw. dem maximalen Dauerstrom, welcher durch den Akkumulator zur Verfügung gestellten werden kann, übersteigen.
-
-Berechnung:
-In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die Länge der Leitung an die benötigte Stromaufnahme des Motors anpassen.
-
-Auswahl:
-
-Fazit:
-
-\newpage
-
-
-
-%% Leitungsschutzorgane %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Leitungsschutzorgane}
-Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen und damit die zwei Hauptkomponenten, die dieser Stromkreis miteinander verbindet, galvanisch zu trennen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der ausgelösten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dies hat nicht nur höhere Anschaffungskosten zur folge. Bei Überdimensionierung der Schmelzsicherung, löst diese zu spät aus und hat damit nur mehr eine sehr geringe bis gar keine Schutzfunktion mehr. 
-
-Berechnung:
-
-Auswahl:
-
-Fazit:
-
-\newpage
 
 
 
@@ -109,18 +62,18 @@ Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche ü
 
 \begin{itemize}
 	\item Eingänge (Inputs)
-	\\ * Digitale Eingänge (Digital Inputs)
-	\\ * Analoge Eingänge (Analog Inputs)
-	\\ * Gas- und Bremseingänge (Throttle and Brake Inputs)
-	\\ * Positionsrückmeldung vom Encoder (Position-feedback Input)
-	\\ * Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
+	\\ - Digitale Eingänge (Digital Inputs)
+	\\ - Analoge Eingänge (Analog Inputs)
+	\\ - Gas- und Bremseingänge (Throttle and Brake Inputs)
+	\\ - Positionsrückmeldung vom Encoder (Position-feedback Input)
+	\\ - Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
 	\item Ausgänge (Outputs)
-	\\ * Analoge Ausgänge (Analog Outputs)
-	\\ * Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)
-	\\ * Spannungsversorgungs-Ausgänge (Power Supply Outputs)
+	\\ - Analoge Ausgänge (Analog Outputs)
+	\\ - Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)
+	\\ - Spannungsversorgungs-Ausgänge (Power Supply Outputs)
 	\item Kommunikation (Communication)
-	\\ * CAN-Port (CAN-Bus)
-	\\ * Serial-Port (Serielle Schnittstelle)
+	\\ -  CAN-Bus (CAN-Port)
+	\\ -  Serielle Schnittstelle (Serial-Port)
 \end{itemize}
 
 Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbare Ausgang verwendet, bei richtiger Konfiguration kann dieser jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
@@ -143,7 +96,7 @@ Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, je
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/hcis/Digital_Input_Specifications.png}
+		\includegraphics[scale=0.4]{figures/hcis/Digital_Input_Specifications.png}
 		\caption{Digital Input Specifications}
 	\end{center}
 \end{figure}
@@ -157,7 +110,7 @@ Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/hcis/Analog_Input_Specifications.png}
+		\includegraphics[scale=0.4]{figures/hcis/Analog_Input_Specifications.png}
 		\caption{Analog Input Specifications}
 	\end{center}
 \end{figure}
