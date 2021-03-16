@@ -71,12 +71,43 @@ Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, 
 %% Steuerung der Peripherie %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Steuerung der Peripherie}
+
+Die Grundfunktionen wie Beleuchtung, Hupe und Blinker werden hier als Peripherie bezeichnet. Diese sollten so einfach wie möglich und vom Lenker aus zu bedienen sein. Ebenso müssen sie verlässlich gesteuert werden können. Daher haben wir uns entschieden diese Funktionen ebenso über den Raspberry zu steuern, da dieser bei einem Fehler der Motorsteuerung über den eingebauten Puffer gespeist werden kann und daher diese wichtigen Funktionen bis zu einem sicheren Stillstand weiter betrieben und gesteuert werden können.\\
+Dennoch ist in Planung in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Inputs zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode wäre die Schaffung einer Zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
+
 \subsection{Hardware}
+
 \subsubsection{Input}
+
+Man einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände "High" und "Low" einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pi mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standartmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen unserer Eingänge 10k Pulldown Widerstände um die Eingänge des Raspberry Pis nicht immer an einer Spannung angeschlossen zu haben.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.8]{figures/hcis/input.png}
+			\caption{Anschlussplan Inputs}
+			\label{fig:input}
+	\end{center}
+\end{figure}
+
+\textbf{Pullup Widerstand}\\
+Bei den Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann "High". Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist den Zustand logisch "Low".\\\medskip
+\textbf{Pulldown Widerstand}\\
+Bei den Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann logisch "Low". Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist den Zustand logisch "High".
+
 \subsubsection{Output}
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.8]{figures/hcis/4ch_relai.png}
+			\caption{Anschlussplan Relai}
+			\label{fig:output}
+	\end{center}
+\end{figure}
+
 \subsection{Software}
+
 \subsubsection{GPIO Zero}
+
 \subsubsection{Threading}
 
 \newpage
@@ -85,14 +116,88 @@ Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, 
 
 \section{Benutzeroberfläche}
 Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades zu ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald man zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und die aufgezeichnetetn Fahrdaten anzeigen zu lassen. Ebenso kann der Akkuladestatus und Informationen über Fehler im System entnommen werden.
+
 \subsection{Hardware}
+
 Zur Anzeige und Bedienung wird ein 11.6 Zoll Kapazitives Touch LCD Display verwendet. Es besitzt eine FullHD Auflösung (1920x1080), was für eine professionelle Darstellung essenttiell ist. Ebenso hat es ein schützendes ABS Gehäuse, welches troz fehlender IPX zertivizierung das Abdichten ermöglicht. Die Versorgungsspannung beträgt 12V, was ident zu den anderen Komponenten am Motorrad ist und daher die Versorgung sehr vereinfacht, kann aslo über den gleichen Spannungswandler versorgt werden.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.45]{figures/hcis/display_maße.png}
+		\caption{Touch Panel Maße}
+		\label{fig:panel}
+	\end{center}
+\end{figure}
+
+Die Auflösung und die Größe des Touch Panels wirkt sich stark auf das Design der Benutzeroberfläche aus. Es muss die Größe der Icons und der anderen Designelemente so angepasst werden, dass sie einerseits gut ersichtlich und andererseits einfach über Touch zu bedienen sind. 
+
+\newpage
+
 \subsubsection{Befestigung}
+Das Touchpanel besitzt M4 verschraubungen in einem Abstand von 75mm x 75mm und kann daher einfach an Wänden oder Platten verschraubt werden. Um Den Bildshirm nun in einer ähnlichen Position wie die Intrumententafel zu befestigen wird eine 120mm x ...mm x 1mm Aluminum Platte, wie in der Abbildung zu sehen, gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.2]{figures/hcis/befestigung_display.jpg}
+		\caption{Befestigung des Displays}
+		\label{fig:befestigung}
+	\end{center}
+\end{figure}
 
 \subsection{Software}
 Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Design, Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Workflow beim Entwickeln des Front Ends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt In den Folgenden Seiten wird das Ergebnis dieses Prozesses dargeboten.
 \subsubsection{Aufbau}
+Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die Einzelnen Fenster werden als Tabelle mit ihren angezeigten informationen Dargestellt. Dies is wichtig da jede dieser Informationen vom back end an das front end gesendet werden müssen.\\
+Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen phase der Entwicklung der Benutzeroberfläche definiert werden.
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{figures/hcis/gui_aufbau.png}
+		\caption{Aufbau der Graphischen Benutzeroberfläche}
+		\label{fig:aufbauGUI}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\subsection{Komponenten}
+
+Komponenten sind wiederverwendbare, gekapselte QML-Elemente mit genau definierten Schnittstellen. Komponenten werden häufig durch Komponentendateien definiert, das heißt durch QML-Dateien. Wichtig ist dabei die Definierung von Schnittstellen sowie Properties und Signals (Siehe \ref{sec:slots}).\\\medskip
+\begin{large}
+\textbf{Properties}\\\medskip
+\end{large}
+
+Der Property eines Objektes kann ein statischer Wert zugewiesen werden, der konstant bleibt, bis ihm explizit ein neuer Wert zugewiesen wird. Um QML und seine integrierte Unterstützung für dynamisches Objektverhalten optimal zu nutzen, verwenden die meisten QML-Objekte jedoch Propertysbindings.\\
+Propertysbindings sind eine Kernfunktion von QML, mit der Beziehungen zwischen verschiedenen Objekteigenschaften festgelegt werden können. Wenn sich die Abhängigkeiten einer Property im Wert ändern, wird die Eigenschaft automatisch gemäß der angegebenen Beziehung aktualisiert.\\
+Hinter den Kulissen überwacht die QML-Engine die Abhängigkeiten der Eigenschaft. Wenn eine Änderung erkannt wird, wertet die QML-Engine den Bindungsausdruck erneut aus und wendet das neue Ergebnis auf die Eigenschaft an.
+
+
+
+
+
+\subsubsection{Navigations Menu}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.2]{figures/hcis/component_menu.png}
+		\caption{GUI Komponente - Navigation Menu}
+		\label{fig:kompNavigation}
+	\end{center}
+\end{figure}
+
+\subsubsection{Balken Anzeige}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/hcis/component_bar.png}
+		\caption{GUI Komponente - Balken Anzeige}
+				\label{fig:kompBalken}
+	\end{center}
+\end{figure}
+
+\subsubsection{Graph}
+
+\newpage
 
 \subsection{Program Fenster}
 
@@ -101,7 +206,8 @@ Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Desig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.24]{figures/hcis/window_login.png}
-		\caption{GUI Fenster - Login Menu}
+			\caption{GUI Fenster - Login Menu}
+			\label{fig:pageMenu}
 	\end{center}
 \end{figure}
 
@@ -110,7 +216,8 @@ Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Desig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
-		\caption{GUI Fenster - Fahrdaten}
+			\caption{GUI Fenster - Fahrdaten}
+			\label{fig:pageDash}
 	\end{center}
 \end{figure}
 
@@ -121,7 +228,8 @@ Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Desig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
-		\caption{GUI Fenster - Akkudaten}
+			\caption{GUI Fenster - Akkudaten}
+			\label{fig:pageAkku}
 	\end{center}
 \end{figure}
 
@@ -130,7 +238,8 @@ Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Desig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
-		\caption{GUI Fenster - Fahrdaten Diagnose}
+			\caption{GUI Fenster - Fahrdaten Diagnose}
+			\label{fig:pageDiagnose}
 	\end{center}
 \end{figure}
 
@@ -139,27 +248,8 @@ Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Desig
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
-		\caption{GUI Fenster - Error List}
-	\end{center}
-\end{figure}
-
-\subsection{Komponenten}
-
-\subsubsection{Navigations Menu}
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.2]{figures/hcis/component_menu.png}
-		\caption{GUI Komponente - Navigation Menu}
-	\end{center}
-\end{figure}
-
-\subsubsection{Balken Anzeige}
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.4]{figures/hcis/component_bar.png}
-		\caption{GUI Komponente - Balken Anzeige}
+			\caption{GUI Fenster - Error List}
+			\label{fig:pageError}
 	\end{center}
 \end{figure}
 
@@ -173,7 +263,7 @@ QML ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visu
 \subsubsection{Qt-Quick}
 Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Back-End Bibliotheken verbunden werden.
 
-\subsubsection{Slots und Signals}
+\subsubsection{Slots und Signals} \label{sec:slots}
 Slots und Signals werden in Qml zur ereignisgesteuerte Kommunikation zwischen front-end und back-end verwendet. In der folgenden Illustration wird diese anhang eines einfachen Beispiels erklärt.
 
 \begin{figure}[H]
@@ -219,6 +309,7 @@ Ein CAN-Netzwerk wird standartmäßig als Linienstuktur oder Sternsturktur aufge
 \subsection{Listener}
 \subsubsection{Receive Data}
 
+\newpage
 
 %% Fahrdatenspeicher %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

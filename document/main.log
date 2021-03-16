@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.13)  13 MAR 2021 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.13)  16 MAR 2021 22:22
 entering extended mode
 **./main.tex
 (main.tex
@@ -161,7 +161,34 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
-) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen142
+\WF@size=\dimen143
+\c@WF@wrappedlines=\count191
+\WF@box=\box47
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count192
+\l__pdf_internal_box=\box48
+))
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e-generic.tex))
+Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
+
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex
+File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
+)) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
@@ -169,29 +196,30 @@ Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen142
-\captionmargin@=\dimen143
-\captionwidth=\dimen144
-\caption@tempdima=\dimen145
-\caption@indent=\dimen146
-\caption@parindent=\dimen147
-\caption@hangindent=\dimen148
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@tempdima=\dimen147
+\caption@indent=\dimen148
+\caption@parindent=\dimen149
+\caption@hangindent=\dimen150
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count191
-\c@continuedfloat=\count192
+\c@caption@flags=\count193
+\c@continuedfloat=\count194
+Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count193
+\c@KVtest=\count195
 \sf@farskip=\skip63
-\sf@captopadj=\dimen149
+\sf@captopadj=\dimen151
 \sf@capskip=\skip64
 \sf@nearskip=\skip65
-\c@subfigure=\count194
-\c@subfigure@save=\count195
-\c@lofdepth=\count196
-\c@subtable=\count197
-\c@subtable@save=\count198
-\c@lotdepth=\count199
+\c@subfigure=\count196
+\c@subfigure@save=\count197
+\c@lofdepth=\count198
+\c@subtable=\count199
+\c@subtable@save=\count266
+\c@lotdepth=\count267
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
@@ -202,15 +230,15 @@ sty
 y
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen150
-\pgfutil@tempdimb=\dimen151
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen152
+\pgfutil@tempdimb=\dimen153
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common-lists.tex))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box47
+\pgfutil@abb=\box49
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -229,33 +257,33 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 filtered.code.tex
-\pgfkeys@tmptoks=\toks21
+\pgfkeys@tmptoks=\toks22
 ))
-\pgf@x=\dimen152
-\pgf@y=\dimen153
-\pgf@xa=\dimen154
-\pgf@ya=\dimen155
-\pgf@xb=\dimen156
-\pgf@yb=\dimen157
-\pgf@xc=\dimen158
-\pgf@yc=\dimen159
-\pgf@xd=\dimen160
-\pgf@yd=\dimen161
+\pgf@x=\dimen154
+\pgf@y=\dimen155
+\pgf@xa=\dimen156
+\pgf@ya=\dimen157
+\pgf@xb=\dimen158
+\pgf@yb=\dimen159
+\pgf@xc=\dimen160
+\pgf@yc=\dimen161
+\pgf@xd=\dimen162
+\pgf@yd=\dimen163
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count266
-\c@pgf@countb=\count267
-\c@pgf@countc=\count268
-\c@pgf@countd=\count269
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count270
+\c@pgf@counta=\count268
+\c@pgf@countb=\count269
+\c@pgf@countc=\count270
+\c@pgf@countd=\count271
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count272
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -274,8 +302,8 @@ File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count271
-\pgfsyssoftpath@bigbuffer@items=\count272
+\pgfsyssoftpath@smallbuffer@items=\count273
+\pgfsyssoftpath@bigbuffer@items=\count274
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -310,12 +338,12 @@ code.tex
 code.tex)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen162
-\pgfmath@count=\count273
-\pgfmath@box=\box48
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count275
+\pgfmath@box=\box50
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex
@@ -337,59 +365,59 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count274
+\c@pgfmathroundto@lastzeros=\count276
 ))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@picminx=\dimen163
-\pgf@picmaxx=\dimen164
-\pgf@picminy=\dimen165
-\pgf@picmaxy=\dimen166
-\pgf@pathminx=\dimen167
-\pgf@pathmaxx=\dimen168
-\pgf@pathminy=\dimen169
-\pgf@pathmaxy=\dimen170
-\pgf@xx=\dimen171
-\pgf@xy=\dimen172
-\pgf@yx=\dimen173
-\pgf@yy=\dimen174
-\pgf@zx=\dimen175
-\pgf@zy=\dimen176
+\pgf@picminx=\dimen165
+\pgf@picmaxx=\dimen166
+\pgf@picminy=\dimen167
+\pgf@picmaxy=\dimen168
+\pgf@pathminx=\dimen169
+\pgf@pathmaxx=\dimen170
+\pgf@pathminy=\dimen171
+\pgf@pathmaxy=\dimen172
+\pgf@xx=\dimen173
+\pgf@xy=\dimen174
+\pgf@yx=\dimen175
+\pgf@yy=\dimen176
+\pgf@zx=\dimen177
+\pgf@zy=\dimen178
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@path@lastx=\dimen177
-\pgf@path@lasty=\dimen178
+\pgf@path@lastx=\dimen179
+\pgf@path@lasty=\dimen180
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@shorten@end@additional=\dimen179
-\pgf@shorten@start@additional=\dimen180
+\pgf@shorten@end@additional=\dimen181
+\pgf@shorten@start@additional=\dimen182
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box49
-\pgf@hbox=\box50
-\pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count275
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count277
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgflinewidth=\dimen181
+\pgflinewidth=\dimen183
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@pt@x=\dimen182
-\pgf@pt@y=\dimen183
-\pgf@pt@temp=\dimen184
+\pgf@pt@x=\dimen184
+\pgf@pt@y=\dimen185
+\pgf@pt@temp=\dimen186
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -406,14 +434,14 @@ File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowsep=\dimen185
+\pgfarrowsep=\dimen187
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@max=\dimen186
-\pgf@sys@shading@range@num=\count276
-\pgf@shadingcount=\count277
+\pgf@max=\dimen188
+\pgf@sys@shading@range@num=\count278
+\pgf@shadingcount=\count279
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -422,7 +450,7 @@ File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box52
+\pgfexternal@startupbox=\box54
 ))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -443,7 +471,7 @@ File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box53
+\pgfnodeparttextbox=\box55
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -452,8 +480,8 @@ File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@nodesepstart=\dimen187
-\pgf@nodesepend=\dimen188
+\pgf@nodesepstart=\dimen189
+\pgf@nodesepend=\dimen190
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -474,10 +502,10 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
-\pgffor@iter=\dimen189
-\pgffor@skip=\dimen190
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
+\pgffor@iter=\dimen191
+\pgffor@skip=\dimen192
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
 ))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -486,34 +514,34 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count278
-\pgfplotmarksize=\dimen191
+\pgf@plot@mark@count=\count280
+\pgfplotmarksize=\dimen193
 )
-\tikz@lastx=\dimen192
-\tikz@lasty=\dimen193
-\tikz@lastxsaved=\dimen194
-\tikz@lastysaved=\dimen195
-\tikz@lastmovetox=\dimen196
-\tikz@lastmovetoy=\dimen197
-\tikzleveldistance=\dimen198
-\tikzsiblingdistance=\dimen199
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
-\tikztreelevel=\count279
-\tikznumberofchildren=\count280
-\tikznumberofcurrentchild=\count281
-\tikz@fig@count=\count282
+\tikz@lastx=\dimen194
+\tikz@lasty=\dimen195
+\tikz@lastxsaved=\dimen196
+\tikz@lastysaved=\dimen197
+\tikz@lastmovetox=\dimen198
+\tikz@lastmovetoy=\dimen199
+\tikzleveldistance=\dimen256
+\tikzsiblingdistance=\dimen257
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count281
+\tikznumberofchildren=\count282
+\tikznumberofcurrentchild=\count283
+\tikz@fig@count=\count284
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count283
-\pgfmatrixcurrentcolumn=\count284
-\pgf@matrix@numberofcolumns=\count285
+\pgfmatrixcurrentrow=\count285
+\pgfmatrixcurrentcolumn=\count286
+\pgf@matrix@numberofcolumns=\count287
 )
-\tikz@expandcount=\count286
+\tikz@expandcount=\count288
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -521,11 +549,11 @@ File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count287
-\float@exts=\toks30
-\float@box=\box58
-\@float@everytoks=\toks31
-\@floatcapt=\box59
+\c@float@type=\count289
+\float@exts=\toks31
+\float@box=\box60
+\@float@everytoks=\toks32
+\@floatcapt=\box61
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
@@ -537,51 +565,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks32
-\ex@=\dimen256
+\@emptytoks=\toks33
+\ex@=\dimen258
 ))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen257
+\pmbraise@=\dimen259
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count288
+\inf@bad=\count290
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count289
-\leftroot@=\count290
+\uproot@=\count291
+\leftroot@=\count292
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count291
-\DOTSCASE@=\count292
+\classnum@=\count293
+\DOTSCASE@=\count294
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box60
-\strutbox@=\box61
-\big@size=\dimen258
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+\big@size=\dimen260
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count293
-\c@MaxMatrixCols=\count294
+\macc@depth=\count295
+\c@MaxMatrixCols=\count296
 \dotsspace@=\muskip16
-\c@parentequation=\count295
-\dspbrk@lvl=\count296
-\tag@help=\toks33
-\row@=\count297
-\column@=\count298
-\maxfields@=\count299
-\andhelp@=\toks34
-\eqnshift@=\dimen259
-\alignsep@=\dimen260
-\tagshift@=\dimen261
-\tagwidth@=\dimen262
-\totwidth@=\dimen263
-\lineht@=\dimen264
-\@envbody=\toks35
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks34
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks35
+\eqnshift@=\dimen261
+\alignsep@=\dimen262
+\tagshift@=\dimen263
+\tagwidth@=\dimen264
+\totwidth@=\dimen265
+\lineht@=\dimen266
+\@envbody=\toks36
 \multlinegap=\skip69
 \multlinetaggap=\skip70
-\mathdisplay@stack=\toks36
+\mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -597,22 +625,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
-\athelp@=\toks37
-\minaw@=\dimen265
-\bigaw@=\dimen266
-\minCDarrowwidth=\dimen267
+\athelp@=\toks38
+\minaw@=\dimen267
+\bigaw@=\dimen268
+\minCDarrowwidth=\dimen269
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks38
-\thm@bodyfont=\toks39
-\thm@headfont=\toks40
-\thm@notefont=\toks41
-\thm@headpunct=\toks42
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
 \thm@preskip=\skip71
 \thm@postskip=\skip72
 \thm@headsep=\skip73
-\dth@everypar=\toks43
+\dth@everypar=\toks44
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
@@ -650,9 +678,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen268
-\Hy@linkcounter=\count300
-\Hy@pagecounter=\count301
+\@linkdim=\dimen270
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
@@ -670,7 +698,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count302
+\Hy@SavedSpaceFactor=\count304
  (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -683,14 +711,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count303
+\c@Hy@tempcnt=\count305
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen269
+\XeTeXLinkMargin=\dimen271
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -700,9 +728,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count304
-\Field@Width=\dimen270
-\Fld@charsize=\dimen271
+\Fld@menulength=\count306
+\Field@Width=\dimen272
+\Fld@charsize=\dimen273
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -718,9 +746,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count305
-\c@Item=\count306
-\c@Hfootnote=\count307
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -731,8 +759,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count308
-\c@bookmark@seq@number=\count309
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -755,32 +783,32 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/tabls\tabls.sty
-\tablinesep=\dimen272
-\arraylinesep=\dimen273
-\extrarulesep=\dimen274
-\@arstdepth=\dimen275
-\@arstheight=\dimen276
-\@skip@bove=\dimen277
+\tablinesep=\dimen274
+\arraylinesep=\dimen275
+\extrarulesep=\dimen276
+\@arstdepth=\dimen277
+\@arstheight=\dimen278
+\@skip@bove=\dimen279
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen278
-\lightrulewidth=\dimen279
-\cmidrulewidth=\dimen280
-\belowrulesep=\dimen281
-\belowbottomsep=\dimen282
-\aboverulesep=\dimen283
-\abovetopsep=\dimen284
-\cmidrulesep=\dimen285
-\cmidrulekern=\dimen286
-\defaultaddspace=\dimen287
-\@cmidla=\count310
-\@cmidlb=\count311
-\@aboverulesep=\dimen288
-\@belowrulesep=\dimen289
-\@thisruleclass=\count312
-\@lastruleclass=\count313
-\@thisrulewidth=\dimen290
+\heavyrulewidth=\dimen280
+\lightrulewidth=\dimen281
+\cmidrulewidth=\dimen282
+\belowrulesep=\dimen283
+\belowbottomsep=\dimen284
+\aboverulesep=\dimen285
+\abovetopsep=\dimen286
+\cmidrulesep=\dimen287
+\cmidrulekern=\dimen288
+\defaultaddspace=\dimen289
+\@cmidla=\count312
+\@cmidlb=\count313
+\@aboverulesep=\dimen290
+\@belowrulesep=\dimen291
+\@thisruleclass=\count314
+\@lastruleclass=\count315
+\@thisrulewidth=\dimen292
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\longtable.s
 ty
@@ -789,42 +817,42 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip76
 \LTpre=\skip77
 \LTpost=\skip78
-\LTchunksize=\count314
-\LTcapwidth=\dimen291
-\LT@head=\box62
-\LT@firsthead=\box63
-\LT@foot=\box64
-\LT@lastfoot=\box65
-\LT@cols=\count315
-\LT@rows=\count316
-\c@LT@tables=\count317
-\c@LT@chunks=\count318
-\LT@p@ftn=\toks44
+\LTchunksize=\count316
+\LTcapwidth=\dimen293
+\LT@head=\box64
+\LT@firsthead=\box65
+\LT@foot=\box66
+\LT@lastfoot=\box67
+\LT@cols=\count317
+\LT@rows=\count318
+\c@LT@tables=\count319
+\c@LT@chunks=\count320
+\LT@p@ftn=\toks45
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\tabularx.st
 y
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen292
-\ar@mcellbox=\box66
-\extrarowheight=\dimen293
-\NC@list=\toks45
+\col@sep=\dimen294
+\ar@mcellbox=\box68
+\extrarowheight=\dimen295
+\NC@list=\toks46
 \extratabsurround=\skip79
 \backup@length=\skip80
 
 LaTeX Warning: Command \@xhline  has changed.
                Check if current package is valid.
 
-\ar@cellbox=\box67
+\ar@cellbox=\box69
 )
-\TX@col@width=\dimen294
-\TX@old@table=\dimen295
-\TX@old@col=\dimen296
-\TX@target=\dimen297
-\TX@delta=\dimen298
-\TX@cols=\count319
-\TX@ftn=\toks46
+\TX@col@width=\dimen296
+\TX@old@table=\dimen297
+\TX@old@col=\dimen298
+\TX@target=\dimen299
+\TX@delta=\dimen300
+\TX@cols=\count321
+\TX@ftn=\toks47
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -832,39 +860,39 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count320
-\Gm@cntv=\count321
-\c@Gm@tempcnt=\count322
-\Gm@bindingoffset=\dimen299
-\Gm@wd@mp=\dimen300
-\Gm@odd@mp=\dimen301
-\Gm@even@mp=\dimen302
-\Gm@layoutwidth=\dimen303
-\Gm@layoutheight=\dimen304
-\Gm@layouthoffset=\dimen305
-\Gm@layoutvoffset=\dimen306
-\Gm@dimlist=\toks47
+\Gm@cnth=\count322
+\Gm@cntv=\count323
+\c@Gm@tempcnt=\count324
+\Gm@bindingoffset=\dimen301
+\Gm@wd@mp=\dimen302
+\Gm@odd@mp=\dimen303
+\Gm@even@mp=\dimen304
+\Gm@layoutwidth=\dimen305
+\Gm@layoutheight=\dimen306
+\Gm@layouthoffset=\dimen307
+\Gm@layoutvoffset=\dimen308
+\Gm@dimlist=\toks48
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count323
-\lst@gtempboxa=\box68
-\lst@token=\toks48
-\lst@length=\count324
-\lst@currlwidth=\dimen307
-\lst@column=\count325
-\lst@pos=\count326
-\lst@lostspace=\dimen308
-\lst@width=\dimen309
-\lst@newlines=\count327
-\lst@lineno=\count328
-\lst@maxwidth=\dimen310
+\lst@mode=\count325
+\lst@gtempboxa=\box70
+\lst@token=\toks49
+\lst@length=\count326
+\lst@currlwidth=\dimen309
+\lst@column=\count327
+\lst@pos=\count328
+\lst@lostspace=\dimen310
+\lst@width=\dimen311
+\lst@newlines=\count329
+\lst@lineno=\count330
+\lst@maxwidth=\dimen312
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count329
-\lst@skipnumbers=\count330
-\lst@framebox=\box69
+\c@lstnumber=\count331
+\lst@skipnumbers=\count332
+\lst@framebox=\box71
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -893,54 +921,48 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-1.
+3.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count331
-\l__pdf_internal_box=\box70
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
- ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 113.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen311
-\scratchbox=\box71
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen312
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count333
+\scratchdimen=\dimen313
+\scratchbox=\box72
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen314
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks51
 )
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -960,7 +982,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 111.
+Package hyperref Info: Link coloring OFF on input line 113.
 
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -972,11 +994,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1016,7 +1038,7 @@ LaTeX Info: Redefining \nameref on input line 111.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count339
+\c@lstlisting=\count340
 (title.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 4.
@@ -1064,7 +1086,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=320, 700.86844pt x 225.09094pt
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=324, 700.86844pt x 225.09094pt
 >
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1123,7 +1145,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 127.
+nput line 129.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11] (main.toc
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1134,12 +1156,12 @@ nput line 45.
  [12
 
 ]
-Overfull \hbox (2.7354pt too wide) detected at line 69
+Overfull \hbox (2.7354pt too wide) detected at line 70
 \T1/lmr/bx/n/10 VII 
  []
 
 
-Overfull \hbox (7.41582pt too wide) detected at line 70
+Overfull \hbox (7.41582pt too wide) detected at line 71
 \T1/lmr/bx/n/10 VIII 
  []
 
@@ -1160,25 +1182,25 @@ been already used, duplicate ignored
 l.1 \chapter
             {Einführung} [1]
 Kapitel I.
-<figures/allgemein/portrait_Kronberger.jpg, id=471, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Kronberger.jpg, id=476, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Kronberger.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kronberger.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kronberger.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 115.23404pt x 172.72142pt.
-<figures/allgemein/portrait_Lackner.jpg, id=472, 334.97145pt x 502.2765pt>
+<figures/allgemein/portrait_Lackner.jpg, id=477, 334.97145pt x 502.2765pt>
 File: figures/allgemein/portrait_Lackner.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Lackner.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Lackner.jpg  used on input 
 line 14.
 (pdftex.def)             Requested size: 115.23404pt x 172.78741pt.
-<figures/allgemein/portrait_Kern.jpg, id=473, 334.851pt x 501.91515pt>
+<figures/allgemein/portrait_Kern.jpg, id=478, 334.851pt x 501.91515pt>
 File: figures/allgemein/portrait_Kern.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kern.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kern.jpg  used on input lin
 e 22.
 (pdftex.def)             Requested size: 115.23404pt x 172.72437pt.
-<figures/allgemein/portrait_Schmeisser.jpg, id=474, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Schmeisser.jpg, id=479, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Schmeisser.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Schmeisser.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Schmeisser.jpg  used on inp
@@ -1257,7 +1279,7 @@ nput line 23.
 [8
 
 ]
-<figures/hcis/raspberryPi.png, id=504, 3011.25pt x 1934.22626pt>
+<figures/hcis/raspberryPi.png, id=509, 3011.25pt x 1934.22626pt>
 File: figures/hcis/raspberryPi.png Graphic file (type png)
 <use figures/hcis/raspberryPi.png>
 Package pdftex.def Info: figures/hcis/raspberryPi.png  used on input line 30.
@@ -1268,7 +1290,7 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 37.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [9 <./figures/hcis/raspberryPi.png>]
-<figures/hcis/HCIS_Grundfunktion.png, id=511, 460.72125pt x 302.12875pt>
+<figures/hcis/HCIS_Grundfunktion.png, id=516, 460.72125pt x 302.12875pt>
 File: figures/hcis/HCIS_Grundfunktion.png Graphic file (type png)
 <use figures/hcis/HCIS_Grundfunktion.png>
 Package pdftex.def Info: figures/hcis/HCIS_Grundfunktion.png  used on input lin
@@ -1286,118 +1308,165 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 69.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11]
+<figures/hcis/input.png, id=528, 358.33875pt x 285.065pt>
+File: figures/hcis/input.png Graphic file (type png)
+<use figures/hcis/input.png>
+Package pdftex.def Info: figures/hcis/input.png  used on input line 86.
+(pdftex.def)             Requested size: 286.67139pt x 228.0523pt.
+<figures/hcis/4ch_relai.png, id=529, 385.44pt x 265.793pt>
+File: figures/hcis/4ch_relai.png Graphic file (type png)
+<use figures/hcis/4ch_relai.png>
+Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 101.
+(pdftex.def)             Requested size: 308.35242pt x 212.63467pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 82.
+nput line 106.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [12]
-<figures/hcis/window_login.png, id=527, 1441.63594pt x 810.77907pt>
-File: figures/hcis/window_login.png Graphic file (type png)
-<use figures/hcis/window_login.png>
-Package pdftex.def Info: figures/hcis/window_login.png  used on input line 103.
-
-(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
-<figures/hcis/window_dashboard.png, id=528, 1441.63594pt x 810.77907pt>
-File: figures/hcis/window_dashboard.png Graphic file (type png)
-<use figures/hcis/window_dashboard.png>
-Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-112.
-(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+ [12 <./figures/hcis/input.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 116.
+nput line 113.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [13 <./figures/hcis/window_login.png>]
+ [13 <./figures/hcis/4ch_relai.png>]
+<figures/hcis/display_maße.png, id=542, 803.0pt x 803.0pt>
+File: figures/hcis/display_maße.png Graphic file (type png)
+<use figures/hcis/display_maße.png>
+Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 126
+.
+(pdftex.def)             Requested size: 361.34666pt x 361.34666pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 117.
+nput line 134.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [14 <./figures/hcis/window_dashboard.png>]
-File: figures/hcis/window_dashboard.png Graphic file (type png)
-<use figures/hcis/window_dashboard.png>
-Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-123.
-(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
-File: figures/hcis/window_dashboard.png Graphic file (type png)
-<use figures/hcis/window_dashboard.png>
-Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-132.
-(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
-File: figures/hcis/window_dashboard.png Graphic file (type png)
-<use figures/hcis/window_dashboard.png>
-Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-141.
-(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+[14 <./figures/hcis/display_maße.png>]
+<figures/hcis/befestigung_display.jpg, id=549, 857.1222pt x 857.1222pt>
+File: figures/hcis/befestigung_display.jpg Graphic file (type jpg)
+<use figures/hcis/befestigung_display.jpg>
+Package pdftex.def Info: figures/hcis/befestigung_display.jpg  used on input li
+ne 141.
+(pdftex.def)             Requested size: 171.4214pt x 171.4214pt.
+<figures/hcis/gui_aufbau.png, id=550, 1045.9075pt x 313.17pt>
+File: figures/hcis/gui_aufbau.png Graphic file (type png)
+<use figures/hcis/gui_aufbau.png>
+Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 155.
+(pdftex.def)             Requested size: 418.35559pt x 125.26576pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 145.
+nput line 161.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [15]
-<figures/hcis/component_menu.png, id=547, 1927.2pt x 233.87375pt>
+ [15 <./figures/hcis/befestigung_display.jpg> <./figures/hcis/gui_aufbau.png>]
+<figures/hcis/component_menu.png, id=559, 1927.2pt x 233.87375pt>
 File: figures/hcis/component_menu.png Graphic file (type png)
 <use figures/hcis/component_menu.png>
-Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 15
+Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 18
 2.
 (pdftex.def)             Requested size: 385.43318pt x 46.77391pt.
-<figures/hcis/component_bar.png, id=548, 322.20375pt x 261.97874pt>
+<figures/hcis/component_bar.png, id=560, 322.20375pt x 261.97874pt>
 File: figures/hcis/component_bar.png Graphic file (type png)
 <use figures/hcis/component_bar.png>
-Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 161
+Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 192
 .
-(pdftex.def)             Requested size: 128.87921pt x 104.78964pt.
+(pdftex.def)             Requested size: 161.10147pt x 130.98904pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 166.
+nput line 200.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [16 <./figures/hcis/component_menu.png> <./figures/hcis/component_bar.png>]
+<figures/hcis/window_login.png, id=569, 1441.63594pt x 810.77907pt>
+File: figures/hcis/window_login.png Graphic file (type png)
+<use figures/hcis/window_login.png>
+Package pdftex.def Info: figures/hcis/window_login.png  used on input line 208.
+
+(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
+<figures/hcis/window_dashboard.png, id=570, 1441.63594pt x 810.77907pt>
+File: figures/hcis/window_dashboard.png Graphic file (type png)
+<use figures/hcis/window_dashboard.png>
+Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
+218.
+(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 224.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [17 <./figures/hcis/window_login.png> <./figures/hcis/window_dashboard.png>]
+File: figures/hcis/window_dashboard.png Graphic file (type png)
+<use figures/hcis/window_dashboard.png>
+Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
+230.
+(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
+File: figures/hcis/window_dashboard.png Graphic file (type png)
+<use figures/hcis/window_dashboard.png>
+Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
+240.
+(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
+File: figures/hcis/window_dashboard.png Graphic file (type png)
+<use figures/hcis/window_dashboard.png>
+Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
+250.
+(pdftex.def)             Requested size: 345.9997pt x 194.59094pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 255.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [18]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 256.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[16 <./figures/hcis/component_menu.png> <./figures/hcis/component_bar.png>]
-<figures/hcis/signals_slots.png, id=558, 663.47874pt x 484.81125pt>
+[19]
+<figures/hcis/signals_slots.png, id=591, 663.47874pt x 484.81125pt>
 File: figures/hcis/signals_slots.png Graphic file (type png)
 <use figures/hcis/signals_slots.png>
-Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 181
+Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 271
 .
 (pdftex.def)             Requested size: 265.3868pt x 193.92105pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 193.
+nput line 283.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-
-[17 <./figures/hcis/signals_slots.png>]
+ [20 <./figures/hcis/signals_slots.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 197.
+nput line 287.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [18]
-<figures/hcis/can_module.png, id=570, 413.545pt x 265.793pt>
+ [21]
+<figures/hcis/can_module.png, id=602, 413.545pt x 265.793pt>
 File: figures/hcis/can_module.png Graphic file (type png)
 <use figures/hcis/can_module.png>
-Package pdftex.def Info: figures/hcis/can_module.png  used on input line 208.
+Package pdftex.def Info: figures/hcis/can_module.png  used on input line 298.
 (pdftex.def)             Requested size: 372.18704pt x 239.21147pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 217.
+nput line 307.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [19 <./figures/hcis/can_module.png>]
+ [22 <./figures/hcis/can_module.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 234.
+nput line 312.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [20]) (content/ch_antrieb.tex
+ [23]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 325.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [24]) (content/ch_antrieb.tex
 Kapitel VI.
 ) (content/ch_akku.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1405,7 +1474,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [21
+ [25
 
 ]
 Kapitel VII.
@@ -1415,7 +1484,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [22
+ [26
 
 ]
 Kapitel VIII.
@@ -1425,7 +1494,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 2.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [23
+ [27
 
 ]
 Anhang A.
@@ -1434,7 +1503,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 8.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[24
+[28
 
 ]
 Anhang B.
@@ -1443,7 +1512,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[25
+[29
 
 ]
 Anhang C.
@@ -1452,7 +1521,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 12.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[26
+[30
 
 ]
 Anhang D.
@@ -1460,9 +1529,9 @@ Anhang D.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 147.
+nput line 149.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [27
+ [31
 
 ] (main.lof)
 \tf@lof=\write6
@@ -1471,9 +1540,9 @@ nput line 147.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 152.
+nput line 154.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [28
+ [32
 
 ] (main.lot)
 \tf@lot=\write7
@@ -1482,9 +1551,9 @@ nput line 152.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 157.
+nput line 159.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [29
+ [33
 
 ] (main.lol)
 \tf@lol=\write8
@@ -1493,25 +1562,19 @@ nput line 157.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 159.
+nput line 161.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [30
+ [34
 
 ] (main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 1B0DFE2E83F22EAA71983A1D4AF19DB9;5297
-(rerunfilecheck)             After:  22D8338DC45CE69436E47BB28117AAF6;10243.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0FF9FDFDC257620DD51FA1CDBA582514;10340.
  ) 
 Here is how much of TeX's memory you used:
- 25036 strings out of 479334
- 447105 string characters out of 2857084
- 922985 words of memory out of 3000000
- 41796 multiletter control sequences out of 15000+200000
+ 25364 strings out of 479334
+ 455157 string characters out of 2857084
+ 1021081 words of memory out of 3000000
+ 42092 multiletter control sequences out of 15000+200000
  461659 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,17n,89p,772b,512s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1523,9 +1586,9 @@ sers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Us
 ers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
 rs/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/User
 s/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb>
-Output written on main.pdf (44 pages, 4473747 bytes).
+Output written on main.pdf (48 pages, 5128136 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 710 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 732 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 743 words of extra memory for PDF output out of 10000 (max. 10000000)
 
