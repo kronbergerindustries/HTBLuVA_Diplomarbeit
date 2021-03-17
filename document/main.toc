@@ -46,6 +46,7 @@
 \contentsline {subsection}{\numberline {3.3}Kommunikation (CAN-Bus)}{21}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{21}{subsubsection.6.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Parameter}{21}{subsubsection.6.3.3.2}%
+\contentsline {section}{\numberline {4}Inbetriebnahme}{21}{section.6.4}%
 \contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{22}{chapter.7}%
 \contentsline {section}{\numberline {1}Section}{22}{section.7.1}%
 \contentsline {chapter}{\numberline {VIII}Endergebnis}{23}{chapter.8}%
