@@ -22,9 +22,9 @@
 \contentsline {subsection}{\numberline {1.3}Grundaufbau des Systems}{10}{subsection.5.1.3}%
 \contentsline {section}{\numberline {2}Versorgung}{11}{section.5.2}%
 \contentsline {subsection}{\numberline {2.1}Aufbau des Versorgungssystems}{11}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {2.2}Spannungswandler}{11}{subsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}5V Versorgungssystem}{11}{subsubsection.5.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}12V Versorgungsysstem}{11}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.1}12V Versorgungsysstem}{11}{subsubsection.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}5V Versorgungssystem}{11}{subsubsection.5.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Abschalten der Spannungswandler}{11}{subsection.5.2.2}%
 \contentsline {section}{\numberline {3}Steuerung der Peripherie}{12}{section.5.3}%
 \contentsline {subsection}{\numberline {3.1}Hardware}{12}{subsection.5.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Input}{12}{subsubsection.5.3.1.1}%
@@ -77,5 +77,5 @@
 \contentsline {chapter}{\numberline {D}Schaltpläne}{31}{appendix.D}%
 \contentsline {chapter}{Literaturverzeichnis}{31}{appendix.D}%
 \contentsline {chapter}{Abbildungsverzeichnis}{31}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{32}{appendix*.18}%
-\contentsline {chapter}{Codeverzeichnis}{33}{appendix*.19}%
+\contentsline {chapter}{Tabellenverzeichnis}{32}{appendix*.19}%
+\contentsline {chapter}{Codeverzeichnis}{33}{appendix*.20}%

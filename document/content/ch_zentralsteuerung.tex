@@ -61,10 +61,39 @@ Nicht in der Abbildung dargstellt ist die Versorgung der einzelnen Komponenten, 
 %% Versorgung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \section{Versorgung}
+
 \subsection{Aufbau des Versorgungssystems}
-\subsection{Spannungswandler}
-\subsubsection{5V Versorgungssystem}
+Das Versorgungssysstem des Motorrades besteht aus zwei Spannungsebenen. Einer 12V Ebene zur Versorgung der Peripherie des Motorrades und einer 5V Ebene, welche nur den Raspberry Pi und seine Komponenten beinhaltet. Diese Ebenen werden durch DC-DC Wandler erzeugt, welche direkt an den 50,4V des Akkus des Motorrades angeschlossen werden. \\
+Wichtig hierbei ist, dass alle ausgewählten Spannungswandler über einen Kurzschluss- und Überstrom-Schutz verfügen. Dies macht es uns möglich diese Versorgungssysteme, solange die Drähte auch nach dem maximalen Strom der Spannungswandler dimensioniert wurden, ohne jegliche Leitungs und Überstromschutzorgane aufzubauen. Denn die Spannungswandler schalten hierbei bei jeglichen Fehlern ab und verbrennen die Überschüssige Leistung über einen eingebauten Widerstand. Sobald der Fehler behoben wurde oder sich von selbst aufgelöst hat schalten sich die Spannungswandler automatisch wieder ein.
 \subsubsection{12V Versorgungsysstem}
+Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, welche über die 12V versorgt werden sollten, zusammengefasst werden, um die mindestens benötigte Wirkleistung des Spannungswandlers zu errechnen. 
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Bauteilbezeichnung}     & \textbf{Spannung} & \textbf{Leistung} \\ \hline
+Tagfahrlicht           & 12V      & 10W      \\ \hline
+Abblendlicht           & 12V      & 10W      \\ \hline
+Aufblendlicht          & 12V      & 20W      \\ \hline
+Hupe                   & 12V      & 10W      \\ \hline
+Rücklicht              & 12V      & 21W      \\ \hline
+Kennzeichenbeleuchtung & 12V      & 5W       \\ \hline
+Blinker links          & 12V      & 2 x 10W  \\ \hline
+Blinker rechts         & 12V      & 2 x 10W  \\ \hline
+Bildschirm             & 12V      & 12W      \\ \hline
+\textbf{Gesamt}                 & \textbf{12V}      & \textbf{128W}     \\ \hline
+\end{tabular}
+\caption{Berechnung der Leistung des 12V-Systems}
+\label{tab:leistung12V}
+\end{center}
+\end{table}
+
+\subsubsection{5V Versorgungssystem}
+
+Die Leistung des Raspberry Pis ist mit einer Maximalen Leistung von 6.2W sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall sehr einfach. Auch die Komponenten, welche angeschlossen werden, haben grunsätzlich keine erwähnenswerte wirkleistung und müssen daher nicht genau einberechnet werden. Nun entschied nurmehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl.
+
+\subsection{Abschalten der Spannungswandler}
+
 
 \newpage
 
@@ -79,7 +108,7 @@ Dennoch ist in Planung in Zukunft die Motorsteuerung, welche ebenso in der Lage 
 
 \subsubsection{Input}
 
-Man einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände "High" und "Low" einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pi mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standartmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen unserer Eingänge 10k Pulldown Widerstände um die Eingänge des Raspberry Pis nicht immer an einer Spannung angeschlossen zu haben.
+Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände "High" und "Low" einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pi mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standartmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen unserer Eingänge 10k Pulldown Widerstände um die Eingänge des Raspberry Pis nicht immer an einer Spannung angeschlossen zu haben.
 
 \begin{figure}[H]
 	\begin{center}
