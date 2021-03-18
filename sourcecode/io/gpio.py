@@ -51,19 +51,19 @@ relai_2_2 = DigitalOutputDevice(pin = pin_relai_2_2, active_high = True, initial
 class gpio(object):
 	def __init__(self):
 		self.running = True
-		self._gpio_thread = None
+		self.thread = None
 	
 	def start(self):
-		self._gpio_thread = Thread(target = self._gpio_runner)
+		self.thread = Thread(target=self.runner)
 
-		self._gpio_thread.daemon = False
-		self._gpio_thread.start()
+		self.thread.daemon = False
+		self.thread.start()
 
 	def stop(self):
 		self.running = False
-		self._gpio_thread.join()
+		self.thread.join()
 
-	def _gpio_runner(self):
+	def runner(self):
 		#Ansteuerung
 		#button_1_1.when_pressed = pin___.toggle
 
