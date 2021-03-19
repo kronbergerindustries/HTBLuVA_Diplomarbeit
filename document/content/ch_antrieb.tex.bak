@@ -27,14 +27,16 @@ Um auf die einzelnen Details des Antriebssystems besser eingehen zu können, unt
 %% Hardwareaufbau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hardwareaufbau des Antriebssystems}
 Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galvanisch getrennte Stromkreise und der mechanischen Umsetzung unterscheiden:
-
+\\[5mm]
 \begin{itemize}
-	\item Mechanische Umsetzung (Kraftübertragung und Montage) 
-	\\ Umfasst das Getriebe und die Befestigung aller Komponenten am Rahmen.
-	\item Der Laststromkreis
-	\\ Beinhaltet die Verbindung des Motorcontrollers mit dem Motor und dem Akkumulator.
-	\item Der Steuerstromkreis
-	\\ Beinhaltet alle elektrischen Verbindungen, welche mithilfe des 35-poligen
+	\item \textbf{Mechanische Umsetzung (Kraftübertragung und Montage)} 
+	\\ \medskip Umfasst das Getriebe und die Befestigung aller Komponenten am Rahmen.
+	\medskip
+	\item \textbf{Der Laststromkreis}
+	\\ \medskip Beinhaltet die Verbindung des Motorcontrollers mit dem Motor und dem Akkumulator.
+	\medskip
+	\item \textbf{Der Steuerstromkreis}
+	\\ \medskip Beinhaltet alle elektrischen Verbindungen, welche mithilfe des 35-poligen
 	\\ Niederleistungs-Steckers mit dem Motorcontroller verbunden sind.
 \end{itemize}
 
@@ -54,13 +56,14 @@ Die Fertigung des Getriebes und die Montage der einzelnen Betriebsmittel wurde v
 %% Der Laststromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Laststromkreis}
 Der Laststromkreis befasst sich mit allen leistungsführenden Betriebsmitteln des Antriebssystems. ierbei unterscheiden wir zwischen zwei Grundfunktionen:
-
+\\[5mm]
 \begin{itemize}
-	\item Elektrische Energieübertragung
-	\\ Umfasst die elektrische Verbindung von Motor, Motorcontroller und Akkumulator. 						\\ Realisiert durch einfache Leitungen, um Leistungen übertragen zu können.
-	\item Schutz aller Komponenten vor möglichen Beschädigungen (Leitungsschutzorgane)
-	\\ Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 									\\ Hochleistungs-Relais, um im Fehlerfall den kreis öffnen zu können und damit  		
-	\\ eine galvanische Trennung des Antriebs und der Energieversorgung gewährleisten zu können.
+	\item \textbf{Elektrische Energieübertragung}
+	\\ \medskip Umfasst die elektrische Verbindung von Motor, Motorcontroller und Akkumulator. 			\\ Realisiert durch einfache Leitungen, um Leistungen übertragen zu können.
+	\medskip
+	\item \textbf{Schutz der Komponenten vor Beschädigungen (Leitungsschutzorgane)}
+	\\ \medskip Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 					\\ Hochleistungs-Relais, um im Fehlerfall den kreis öffnen zu können und damit eine  		
+	\\ galvanische Trennung des Antriebs und der Energieversorgung gewährleisten zu können.
 \end{itemize}
 
 \begin{figure}[H]
@@ -82,7 +85,25 @@ Um die benötigte elektrische Energie übertragen zu können, müssen die Leitun
 \textbf{Berechnung:} 
 \\[2mm]
 In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die Länge der Leitung an die benötigte Stromaufnahme des Motors anpassen.
-\\[5mm]
+
+Anzahl der Zellen die parallel Verschalten werden: 40
+
+
+\begin{align*}
+I_{Zmax} &= 14~\mathrm{A}	\\
+I_{max} &= 40 \cdot I_{Zmax} = 40 \cdot 14~\mathrm{A} = 560~\mathrm{A}
+\end{align*}
+%
+% 	 \nonumber	\\
+
+% 	 	\\
+%R = \dfrac{\delta \cdot l}{A} = \frac{0,0278~\mathrm{\dfrac{\Omega \cdot mm^{2}}{m}}  \cdot 1~\mathrm{m}{70\mathrm{mm^{2}}}}  	\\
+
+%
+
+%\Delta U &=\frac{•}{•}
+
+%\\[5mm]
 
 \textbf{Auswahl:}
 \\[2mm]
@@ -288,7 +309,19 @@ Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontrolle
 
 %% Softwareaufbau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Softwareaufbau des Antriebssystems}
-
+Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt werden:
+\\[5mm]
+\begin{itemize}
+	\item \textbf{Steuerung der Ein- und Ausgänge (I/O Assignment)}
+	\\ \medskip Umfasst alle Parameter und die vornehmbaren Konfigurationsmöglichkeiten.
+	\medskip
+	\item \textbf{Drehmomentsteuerung (Torquecontrol)}
+	\\ \medskip Beinhaltet alle Parametereinstellungen, welche für die Drehmomentsteuerung ausschlaggebend sind.
+	\medskip
+	\item \textbf{Vehicle-Control-Language (VCL) Programmierung}
+	\\ \medskip Umfasst das gesamte Programm, welches mit der Vehicle-Control-Language realisiert wurde.
+	\\ Ein Großteil dieses Programms beschäftigt sich hierbei mit der Kommunikation mit dem Raspberry PI.
+\end{itemize}
 
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{ Steuerung der Ein- und Ausgänge (I/O Assingment)}
@@ -307,6 +340,60 @@ Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontrolle
 \subsubsection{Grundfunktion}
 \subsubsection{Parameter}
 
+\newpage
 
 %% Inbetriebnahme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Inbetriebnahme}
+\vspace{5mm}
+\subsection{Leonard-Versuchsaufbau}
+\textbf{Grundidee:}
+\\[2mm]
+Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alterntive Spannungsversorgung gefunden werden. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als Gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu Kosten- und Zeitintensiv, weshalb mein Betreuungslehrer Herr Professor Reinhart vorschlug, die bipolare Spannungsquelle mittels einem Leonard-Umformer zu realisieren.
+\\[5mm]
+
+\textbf{Fazit:}
+\\[2mm]
+Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während den gescheiterten Test-Durchläufen nahmen wir genauere Messungen mittels einem Oszilloskop vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung des Gleichspannungs-Eingangs konnten wir feststellen, dass in einem Zeitbereich von circa 20ms eine unerwartet hohe Unterhöhung und Überhöhung der Spannung auftrat, welche einer Schwingung ähnelte. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
+
+\begin{figure}[H]
+	\begin{center}
+		%\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Versuchsaufbau.png}
+		\caption{Leonardumformer Versuchsaufbau}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Spannungsüberschwingung.jpg}
+		\caption{Leonardumformer Spannungsüberschwingung}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\subsection{Bleiakku-Versuchsaufbau}
+
+\textbf{Grundidee:}
+\\[2mm]
+Der Leonard-Veruchsaufbau hat aufgrund der Trägheit der Spannungsquelle nicht funktioniert. Übrig blieb deshalb nur die Realisierung der Spannungsquelle mithilfe eines Ersatz-Akkumulators. Zufälligerweise konnten wir im Projektraum vier Bleiakkumulatoren ausfindig machen, welche wir nun seriell zu einer 48V-Spannungsquelle verschalten wollten. Die Bleiakkus waren zwar teils angeschlagen bzw. sehr tief entladen, mittels einem intelligenten Ladegerät konnten aber 3 von 4 Akkus wieder erfolgreich aufgeladen werden. Mit einer von mir Zuhause mitgebrachten Autobatterie und zusätzlichen Starterkabeln konnten letztendlich aber die 48V-Spannungsquelle realisiert werden.
+\\[5mm]
+
+\textbf{Fazit:}
+\\[2mm]
+Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. Ein Problem stellten vorerst aber die großen Einschaltströme dar, welche bei der Schließung des Stromkreises zu Lichtbögen führten. Um Beschädigungen an den Kondensatoren zu verhindern, konnte dieses Problem jedoch mithilfe von einem Vorladen der Kondensatoren mithilfe eines 48V Netzgerätes behoben werden.
+\\[5mm]
+
+\textbf{Erste Inbetriebnahme:}
+\\[2mm]
+Der Teslauf zur Einstellung der Motorparameter hat mithilfe der Bleiakkumulatoren beim ersten Versuch erfolgreich funktioniert. Der Motor konnte nach weiteren Konfigurationen letztendlich auch eine bestimmte Drehzahl abhängig von einem Spannungssignal anfahren. 
+
+
+\begin{figure}[H]
+	\begin{center}
+		%\includegraphics[width=\textwidth]{figures/antrieb/Bleiakku.png}
+		\caption{Bleiakku}
+	\end{center}
+\end{figure}
+
+\newpage
+

@@ -14,6 +14,9 @@
 \contentsline {section}{\numberline {2}Curtis Controller}{6}{section.3.2}%
 \contentsline {subsection}{\numberline {2.1}Allgemeines}{6}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {2.2}Feldorientierte Regelung}{6}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3}Leonard-Umformer}{6}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Allgemeines}{6}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2} }{6}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{7}{chapter.4}%
 \contentsline {section}{\numberline {1}Section}{7}{section.4.1}%
 \contentsline {chapter}{\numberline {V}Human-Computer Interaction System}{8}{chapter.5}%
@@ -37,27 +40,29 @@
 \contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{19}{subsubsection.6.2.3.9}%
 \contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{20}{subsubsection.6.2.3.10}%
 \contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{21}{section.6.3}%
-\contentsline {subsection}{\numberline {3.1} Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {3.1}Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{subsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Funktionen}{21}{subsubsection.6.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Zuweisung}{21}{subsubsection.6.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{21}{subsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Grundfunktion}{21}{subsubsection.6.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Parameter}{21}{subsubsection.6.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Kommunikation (CAN-Bus)}{21}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{21}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{21}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Parameter}{21}{subsubsection.6.3.3.2}%
-\contentsline {section}{\numberline {4}Inbetriebnahme}{21}{section.6.4}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{22}{chapter.7}%
-\contentsline {section}{\numberline {1}Section}{22}{section.7.1}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{23}{chapter.8}%
-\contentsline {section}{\numberline {1}Section}{23}{section.8.1}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{24}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{24}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{24}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{25}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{26}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{27}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{27}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{27}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{28}{appendix*.13}%
-\contentsline {chapter}{Codeverzeichnis}{29}{appendix*.14}%
+\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{21}{subsubsection.6.3.3.2}%
+\contentsline {section}{\numberline {4}Inbetriebnahme}{22}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{22}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{23}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{24}{chapter.7}%
+\contentsline {section}{\numberline {1}Section}{24}{section.7.1}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{25}{chapter.8}%
+\contentsline {section}{\numberline {1}Section}{25}{section.8.1}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{26}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{26}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{26}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{27}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{28}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{29}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{29}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{29}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{30}{appendix*.16}%
+\contentsline {chapter}{Codeverzeichnis}{31}{appendix*.17}%
