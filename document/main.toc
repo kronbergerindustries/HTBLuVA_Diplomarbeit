@@ -29,7 +29,7 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Elektrische Energieübertragung}{13}{subsubsection.6.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Leitungsschutzorgane}{14}{subsubsection.6.2.2.2}%
 \contentsline {subsection}{\numberline {2.3}Der Steuerstromkreis}{15}{subsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- Ausgänge}{15}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- und Ausgänge}{15}{subsubsection.6.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{16}{subsubsection.6.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{16}{subsubsection.6.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{17}{subsubsection.6.2.3.4}%

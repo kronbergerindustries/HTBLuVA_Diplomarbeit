@@ -4,19 +4,24 @@
 
 %% Übersicht %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Übersicht}
-Die Hauptaufgabe des Anrtiebssystems ist die Umwandlung der, von dem Akkumulator zur Verfügung gestellten, elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst kreisförmig am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die kreisförmige kinetische Energie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, diese fungiert als Bindemittel zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
+Die Hauptaufgabe des Antriebssystems ist die Umwandlung der, von dem Akkumulator zur Verfügung gestellten, elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst kreisförmig am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die kreisförmige kinetische Energie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, diese fungiert als Bindemittel zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
 
 
 \subsection{Grundfunktionen des Systems}
 Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunktionen einteilen:
 
 \begin{itemize}
-	\item Der Antrieb - Translation ist eine Grundfunktion eines jeden Verkehrsmittels
+	\item \textbf{Der Antrieb} 
+	\\ \medskip Translation ist eine Grundfunktion eines jeden Verkehrsmittels.
 	\\ Durch die Umwandlung der elektrischen Energie in kinetische Energie erfährt 
 	\\ das gesamte System eine Beschleunigung in Fahrtrichtung.
-	\item Die Steuereinheit - Steuerung und Kommunikation mit anderen Betriebsmitteln
-	\\ Realisiert durch In- und Outputs, Datenübetragung mithilfe des CAN-Buses 
+	\medskip
+	\item \textbf{Die Steuereinheit}
+	\\ \medskip Steuerung und Kommunikation mit anderen Betriebsmitteln.
+	\\ Realisiert durch In- und Outputs, Datenübetragung mithilfe des CAN-Buses. 
 \end{itemize}
+
+\vspace{5mm}
 
 Um auf die einzelnen Details des Antriebssystems besser eingehen zu können, unterscheiden wir zwischen dem Hardwareaufbau und dem Softwareaufbau des Antriebssystems.
 
@@ -142,24 +147,28 @@ text
 
 %% Der Steuerstromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Steuerstromkreis}
-\subsubsection{Übersicht Ein- Ausgänge}
+\subsubsection{Übersicht Ein- und Ausgänge}
 Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verchiedenen Ports, welche nochmals unterkategorisiert werden können:
 
+\vspace{3mm}
+
 \begin{itemize}
-	\item Eingänge (Inputs)
+	\item \textbf{Eingänge (Inputs)}
 	\\ - Digitale Eingänge (Digital Inputs)
 	\\ - Analoge Eingänge (Analog Inputs)
 	\\ - Gas- und Bremseingänge (Throttle and Brake Inputs)
 	\\ - Positionsrückmeldung vom Encoder (Position-feedback Input)
 	\\ - Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
-	\item Ausgänge (Outputs)
+	\item \textbf{Ausgänge (Outputs)}
 	\\ - Analoge Ausgänge (Analog Outputs)
 	\\ - Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)
 	\\ - Spannungsversorgungs-Ausgänge (Power Supply Outputs)
-	\item Kommunikation (Communication)
+	\item \textbf{Kommunikation (Communication)}
 	\\ -  CAN-Bus (CAN-Port)
 	\\ -  Serielle Schnittstelle (Serial-Port)
 \end{itemize}
+
+\vspace{5mm}
 
 Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbare Ausgang verwendet, bei richtiger Konfiguration kann dieser jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
 
