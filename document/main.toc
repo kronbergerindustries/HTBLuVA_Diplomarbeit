@@ -39,44 +39,44 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Aufbau}{15}{subsubsection.5.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Nutzer / Berechtigungen}{16}{subsubsection.5.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Komponenten}{16}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Navigations Menu}{16}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Balken Anzeige}{16}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Graph}{16}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Program Fenster}{17}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Login}{17}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Fahrdaten}{17}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Akku- und Ladedaten}{18}{subsubsection.5.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Fahrdaten Diagnose}{18}{subsubsection.5.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Errors}{19}{subsubsection.5.4.4.5}%
-\contentsline {subsection}{\numberline {4.5}Realisierung der Benutzeroberfäche}{20}{subsection.5.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}QML}{20}{subsubsection.5.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Qt-Quick}{20}{subsubsection.5.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Slots und Signals}{20}{subsubsection.5.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Bridge}{21}{subsubsection.5.4.5.4}%
-\contentsline {section}{\numberline {5}Kommunikation}{22}{section.5.5}%
-\contentsline {subsection}{\numberline {5.1}Hardware}{22}{subsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}CAN-Modul}{22}{subsubsection.5.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Netzwerkstruktur}{22}{subsubsection.5.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Listener}{23}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Receive Data}{23}{subsubsection.5.5.2.1}%
-\contentsline {section}{\numberline {6}Fahrdatenspeicher}{24}{section.5.6}%
-\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{24}{subsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Login System}{24}{subsubsection.5.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{24}{subsubsection.5.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{24}{subsubsection.5.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Handler}{24}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}SELECT Befehl}{24}{subsubsection.5.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}INSERT Befehl}{24}{subsubsection.5.6.2.2}%
-\contentsline {chapter}{\numberline {VI}Antriebsstrang}{25}{chapter.6}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{26}{chapter.7}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{27}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{28}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{28}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{28}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{29}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{30}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{31}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{31}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{31}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{32}{appendix*.19}%
-\contentsline {chapter}{Codeverzeichnis}{33}{appendix*.20}%
+\contentsline {subsubsection}{\numberline {4.3.1}Navigations Menü}{16}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Balken Anzeige}{17}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Graph}{17}{subsubsection.5.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Program Fenster}{18}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Login}{18}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Fahrdaten}{18}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Akku- und Ladedaten}{19}{subsubsection.5.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Fahrdaten Diagnose}{19}{subsubsection.5.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Errors}{20}{subsubsection.5.4.4.5}%
+\contentsline {subsection}{\numberline {4.5}Realisierung der Benutzeroberfäche}{21}{subsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}QML}{21}{subsubsection.5.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Qt-Quick}{21}{subsubsection.5.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Slots und Signals}{21}{subsubsection.5.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Bridge}{22}{subsubsection.5.4.5.4}%
+\contentsline {section}{\numberline {5}Kommunikation}{23}{section.5.5}%
+\contentsline {subsection}{\numberline {5.1}Hardware}{23}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}CAN-Modul}{23}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Netzwerkstruktur}{23}{subsubsection.5.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Listener}{24}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Receive Data}{24}{subsubsection.5.5.2.1}%
+\contentsline {section}{\numberline {6}Fahrdatenspeicher}{25}{section.5.6}%
+\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{25}{subsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Login System}{25}{subsubsection.5.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{25}{subsubsection.5.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{25}{subsubsection.5.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Handler}{25}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}SELECT Befehl}{25}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}INSERT Befehl}{25}{subsubsection.5.6.2.2}%
+\contentsline {chapter}{\numberline {VI}Antriebsstrang}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{28}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{29}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{29}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{29}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{30}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{31}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{32}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{32}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{32}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{33}{appendix*.19}%
+\contentsline {chapter}{Codeverzeichnis}{34}{appendix*.20}%
