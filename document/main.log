@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.19)  19 MAR 2021 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.21)  21 MAR 2021 15:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -201,131 +201,7 @@ tion3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen142
 \captionmargin@=\dimen143
-\captionwidth=\dimen144
-\caption@tempdima=\dimen145
-\caption@indent=\dimen146
-\caption@parindent=\dimen147
-\caption@hangindent=\dimen148
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count191
-\c@continuedfloat=\count192
-)
-\c@KVtest=\count193
-\sf@farskip=\skip63
-\sf@captopadj=\dimen149
-\sf@capskip=\skip64
-\sf@nearskip=\skip65
-\c@subfigure=\count194
-\c@subfigure@save=\count195
-\c@lofdepth=\count196
-\c@subtable=\count197
-\c@subtable@save=\count198
-\c@lotdepth=\count199
-\sf@top=\skip66
-\sf@bottom=\skip67
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/fronten
-dlayer\tikz.sty
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basicla
-yer\pgf.sty
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utiliti
-es\pgfrcs.sty
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfutil-common.tex
-\pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen150
-\pgfutil@tempdimb=\dimen151
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfutil-common-lists.tex))
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfutil-latex.def
-\pgfutil@abb=\box47
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfrcs.code.tex
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.r
-evision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
-))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basicla
-yer\pgfcore.sty
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systeml
-ayer\pgfsys.sty
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgfsys.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utili
-ties\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks21
-))
-\pgf@x=\dimen152
-\pgf@y=\dimen153
-\pgf@xa=\dimen154
-\pgf@ya=\dimen155
-\pgf@xb=\dimen156
-\pgf@yb=\dimen157
-\pgf@xc=\dimen158
-\pgf@yc=\dimen159
-\pgf@xd=\dimen160
-\pgf@yd=\dimen161
-\w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count266
-\c@pgf@countb=\count267
-\c@pgf@countc=\count268
-\c@pgf@countd=\count269
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count270
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgf.cfg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
-)))
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count271
-\pgfsyssoftpath@bigbuffer@items=\count272
-)
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/syste
-mlayer\pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcol
-or.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cf
-g\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                cal\Programs\MiKTeX 2.9\tex/generic/pgf/basic
+\captionwidth=\dimen14                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                cal\Programs\MiKTeX 2.9\tex/generic/pgf/basic
 layer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
@@ -846,19 +722,25 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
+(C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\co
+lortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks49
+\minrowclearance=\skip81
+)
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fa
 ncyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip81
-\f@nch@O@elh=\skip82
-\f@nch@O@erh=\skip83
-\f@nch@O@olh=\skip84
-\f@nch@O@orh=\skip85
-\f@nch@O@elf=\skip86
-\f@nch@O@erf=\skip87
-\f@nch@O@olf=\skip88
-\f@nch@O@orf=\skip89
+\f@nch@headwidth=\skip82
+\f@nch@O@elh=\skip83
+\f@nch@O@erh=\skip84
+\f@nch@O@olh=\skip85
+\f@nch@O@orh=\skip86
+\f@nch@O@elf=\skip87
+\f@nch@O@erf=\skip88
+\f@nch@O@olf=\skip89
+\f@nch@O@orf=\skip90
 )
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cancel\canc
 el.sty
@@ -873,7 +755,7 @@ tmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-1.
+2.
 
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -883,30 +765,29 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count331
 \l__pdf_internal_box=\box70
-)
-No file main.aux.
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 112.
 
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii
 \supp-pdf.mkii
@@ -916,12 +797,12 @@ LaTeX Info: Redefining \selectfont on input line 111.
 \scratchbox=\box71
 \nofMPsegments=\count333
 \nofMParguments=\count334
-\everyMPshowfont=\toks49
+\everyMPshowfont=\toks50
 \MPscratchCnt=\count335
 \MPscratchDim=\dimen312
 \MPnumerator=\count336
 \makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks50
+\everyMPtoPDFconversion=\toks51
 )
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pk
 g\epstopdf-base.sty
@@ -946,7 +827,7 @@ aption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 111.
+Package hyperref Info: Link coloring OFF on input line 112.
 
 (C:\Users\Jakob Lackner\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\na
 meref.sty
@@ -962,9 +843,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -1060,7 +942,8 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=6, 700.86844pt x 225.09094pt>
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=284, 700.86844pt x 225.09094pt
+>
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
@@ -1117,14 +1000,31 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 127.
+nput line 128.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [11]
+ [11] (main.toc
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 43.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [12
+
+]
+Overfull \hbox (2.7354pt too wide) detected at line 58
+\T1/lmr/bx/n/10 VII 
+ []
+
+
+Overfull \hbox (7.41582pt too wide) detected at line 60
+\T1/lmr/bx/n/10 VIII 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (content/chapters.tex
-(content/ch_einführung.tex
+ (content/chapters.tex (content/ch_einführung.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
@@ -1135,29 +1035,27 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Einführung} [1
-
-]
+            {Einführung} [1]
 Kapitel I.
-<figures/allgemein/portrait_Kronberger.jpg, id=74, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Kronberger.jpg, id=427, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Kronberger.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kronberger.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kronberger.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 115.23404pt x 172.72142pt.
-<figures/allgemein/portrait_Lackner.jpg, id=75, 334.97145pt x 502.2765pt>
+<figures/allgemein/portrait_Lackner.jpg, id=428, 334.97145pt x 502.2765pt>
 File: figures/allgemein/portrait_Lackner.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Lackner.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Lackner.jpg  used on input 
 line 14.
 (pdftex.def)             Requested size: 115.23404pt x 172.78741pt.
-<figures/allgemein/portrait_Kern.jpg, id=76, 334.851pt x 501.91515pt>
+<figures/allgemein/portrait_Kern.jpg, id=429, 334.851pt x 501.91515pt>
 File: figures/allgemein/portrait_Kern.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kern.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kern.jpg  used on input lin
 e 22.
 (pdftex.def)             Requested size: 115.23404pt x 172.72437pt.
-<figures/allgemein/portrait_Schmeisser.jpg, id=77, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Schmeisser.jpg, id=430, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Schmeisser.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Schmeisser.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Schmeisser.jpg  used on inp
@@ -1282,14 +1180,14 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 182.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [15]
-<figures/antrieb/Digital_Input_Specifications.png, id=173, 1032.85875pt x 593.2
+<figures/antrieb/Digital_Input_Specifications.png, id=495, 1032.85875pt x 593.2
 1625pt>
 File: figures/antrieb/Digital_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Digital_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Digital_Input_Specifications.png  used
  on input line 192.
 (pdftex.def)             Requested size: 426.79134pt x 245.1211pt.
-<figures/antrieb/Analog_Input_Specifications.png, id=174, 1250.42157pt x 338.76
+<figures/antrieb/Analog_Input_Specifications.png, id=496, 1250.42157pt x 338.76
 563pt>
 File: figures/antrieb/Analog_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Input_Specifications.png>
@@ -1303,7 +1201,7 @@ nput line 213.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [16 <./figures/antrieb/Digital_Input_Specifications.png> <./figures/antrieb/An
 alog_Input_Specifications.png>]
-<figures/antrieb/Throttle_Input_Specifications.png, id=185, 1324.19719pt x 398.
+<figures/antrieb/Throttle_Input_Specifications.png, id=505, 1324.19719pt x 398.
 23781pt>
 File: figures/antrieb/Throttle_Input_Specifications.png Graphic file (type png)
 
@@ -1311,7 +1209,7 @@ File: figures/antrieb/Throttle_Input_Specifications.png Graphic file (type png)
 Package pdftex.def Info: figures/antrieb/Throttle_Input_Specifications.png  use
 d on input line 223.
 (pdftex.def)             Requested size: 426.79134pt x 128.35019pt.
-<figures/antrieb/SinCosSensor_Input_Specifications.png, id=186, 1316.66907pt x 
+<figures/antrieb/SinCosSensor_Input_Specifications.png, id=506, 1316.66907pt x 
 237.88875pt>
 File: figures/antrieb/SinCosSensor_Input_Specifications.png Graphic file (type 
 png)
@@ -1326,7 +1224,7 @@ nput line 242.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [17 <./figures/antrieb/Throttle_Input_Specifications.png> <./figures/antrieb/S
 inCosSensor_Input_Specifications.png>]
-<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=197, 1270.7475pt x
+<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=516, 1270.7475pt x
  219.06844pt>
 File: figures/antrieb/KSI_CoilReturn_Input_Specifications.png Graphic file (typ
 e png)
@@ -1334,7 +1232,7 @@ e png)
 Package pdftex.def Info: figures/antrieb/KSI_CoilReturn_Input_Specifications.pn
 g  used on input line 251.
 (pdftex.def)             Requested size: 426.79134pt x 73.5764pt.
-<figures/antrieb/Analog_Output_Specifications.png, id=198, 1267.73625pt x 185.9
+<figures/antrieb/Analog_Output_Specifications.png, id=517, 1267.73625pt x 185.9
 4469pt>
 File: figures/antrieb/Analog_Output_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Output_Specifications.png>
@@ -1348,7 +1246,7 @@ nput line 270.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [18 <./figures/antrieb/KSI_CoilReturn_Input_Specifications.png> <./figures/ant
 rieb/Analog_Output_Specifications.png>]
-<figures/antrieb/Digital_PWM_Output_Specifications.png, id=210, 1327.20844pt x 
+<figures/antrieb/Digital_PWM_Output_Specifications.png, id=526, 1327.20844pt x 
 442.65375pt>
 File: figures/antrieb/Digital_PWM_Output_Specifications.png Graphic file (type 
 png)
@@ -1356,7 +1254,7 @@ png)
 Package pdftex.def Info: figures/antrieb/Digital_PWM_Output_Specifications.png 
  used on input line 280.
 (pdftex.def)             Requested size: 426.79134pt x 142.34102pt.
-<figures/antrieb/Power_Supply_Output_Specifications.png, id=211, 1284.29813pt x
+<figures/antrieb/Power_Supply_Output_Specifications.png, id=527, 1284.29813pt x
  330.48468pt>
 File: figures/antrieb/Power_Supply_Output_Specifications.png Graphic file (type
  png)
@@ -1371,7 +1269,7 @@ nput line 299.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [19 <./figures/antrieb/Digital_PWM_Output_Specifications.png> <./figures/antri
 eb/Power_Supply_Output_Specifications.png>]
-<figures/antrieb/Communications_Port_Specifications.png, id=222, 1307.63531pt x
+<figures/antrieb/Communications_Port_Specifications.png, id=536, 1307.63531pt x
  447.92343pt>
 File: figures/antrieb/Communications_Port_Specifications.png Graphic file (type
  png)
@@ -1388,21 +1286,80 @@ nput line 315.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 352.
+nput line 340.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [21]
+Overfull \hbox (5.69252pt too wide) in paragraph at lines 374--381
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 380.
+nput line 384.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [22]
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
+[]|\T1/lmr/m/n/10 Accel Re-lea-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[]|\T1/lmr/m/n/10 Brake Re-lea-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+[]|\T1/lmr/m/n/10 Neutral Ta-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]|\T1/lmr/m/n/10 Forward Full
+ []
+
+
+Overfull \hbox (6.0339pt too wide) in paragraph at lines 388--399
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 406.
+nput line 402.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [23]) (content/ch_akku.tex
+ [23]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 407.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+
+[24]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 417.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [25]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 445.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [26]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 471.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [27]) (content/ch_akku.tex
 Kapitel VII.
 ) (content/ch_ergebnis.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1410,7 +1367,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [24
+ [28
 
 ]
 Kapitel VIII.
@@ -1420,7 +1377,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 2.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [25
+ [29
 
 ]
 Anhang A.
@@ -1429,7 +1386,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 8.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[26
+[30
 
 ]
 Anhang B.
@@ -1438,7 +1395,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[27
+[31
 
 ]
 Anhang C.
@@ -1447,7 +1404,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 12.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[28
+[32
 
 ]
 Anhang D.
@@ -1455,61 +1412,80 @@ Anhang D.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 147.
+nput line 148.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [29
+ [33
 
-]
+] (main.lof
+Overfull \hbox (0.88872pt too wide) detected at line 17
+\T1/lmr/m/n/10 VI.10 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 18
+\T1/lmr/m/n/10 VI.11 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 19
+\T1/lmr/m/n/10 VI.12 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 20
+\T1/lmr/m/n/10 VI.13 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 21
+\T1/lmr/m/n/10 VI.14 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 152.
+nput line 153.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [30
+ [34
 
-]
+] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 157.
+nput line 158.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [31
+ [35
 
-]
+] (main.lol)
 \tf@lol=\write8
 \openout8 = `main.lol'.
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 159.
+nput line 160.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [32
+ [36
 
 ] (main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  6E323EC15A985A0FE61E6E103FB4DE31;11583.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2051AA6204E9718EB4FF22A62475BE43;12020.
  ) 
 Here is how much of TeX's memory you used:
- 24950 strings out of 479290
- 451974 string characters out of 2849369
- 917300 words of memory out of 3000000
- 41753 multiletter control sequences out of 15000+600000
+ 25099 strings out of 479290
+ 454906 string characters out of 2849369
+ 924549 words of memory out of 3000000
+ 41874 multiletter control sequences out of 15000+600000
  461659 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,16n,89p,1237b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,17n,89p,1237b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-mathsy.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9
@@ -1526,9 +1502,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jakob Lackner/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jakob Lackner/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Jakob L
 ackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (45 pages, 2557919 bytes).
+Output written on main.pdf (50 pages, 2612092 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 700 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 643 words of extra memory for PDF output out of 10000 (max. 10000000)
 
