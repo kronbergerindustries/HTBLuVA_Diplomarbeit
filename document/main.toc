@@ -30,8 +30,8 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Input}{11}{subsubsection.5.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Output}{12}{subsubsection.5.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Software}{12}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Threading}{12}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}GPIO}{12}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}gpiozero}{12}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}threading}{12}{subsubsection.5.3.2.2}%
 \contentsline {section}{\numberline {4}Benutzeroberfläche}{13}{section.5.4}%
 \contentsline {subsection}{\numberline {4.1}Hardware}{13}{subsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Befestigung}{14}{subsubsection.5.4.1.1}%

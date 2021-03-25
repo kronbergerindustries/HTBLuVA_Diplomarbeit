@@ -125,10 +125,10 @@ Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand a
 Bei dem Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann Low. Mit einem Schalter oder Taster wird der Eingang dann gegen VCC gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Versorgunspotential am Eingang an.
 
 \subsubsection{Output}
-Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eingängen eines 4 Channel Relai Moduls, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun Möglich die 12V der Perpherie zu schalten und 
+Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eingängen eines 4 Channel Relais Moduls, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun Möglich die 12V der Perpherie zu schalten und 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{figures/hcis/4ch_relai.png}
+		\includegraphics[scale=0.7]{figures/hcis/4ch_relai.png}
 			\caption{Anschlussplan Relais}
 			\label{fig:output}
 	\end{center}
@@ -139,29 +139,24 @@ Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eing�
 Wichtig bei der Programmierung war in diesem Fall die dauerhafte Verfügbarkeit der Grundfunktionen  sowie die einfache Integrierbarkeit von alten und neuen Bauteilen. Dies wurde erreicht durch die Anwendung verschiedener Bibliotheken.\\
 Die Wichtigsten in dieser Anwendung waren: \\
 
+\subsubsection{gpiozero}
 
+Eine Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden. Hierzu kann die Klasse Button und DigitalOutputDevice verwendet werden. Dieser können Parameter wie die gewünschte Debounce Zeit und verwendete Pull-Widerstände übergeben werden. Es werden nur drei Zeilen Code benötigt um einen Aus- oder Eingang zu definieren und anzusteuern \footnote{siehe: Anhang}
 
+\subsubsection{threading}
 
-\subsubsection{Threading}
+Eine Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzeitig laufende Aufgabe} für das Programm zu öffnen, wodurch die Anwendung ohne Einflüsse oder Unterbrechungen anderer Programme weiter arbeiten kann. Der folgende Programmcode zeigt einen Ausschnitt der Klasse zum Steuern der GPIOs. 
 
-Die \textit{threading} Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzeitig laufende Aufgabe} für das Programm zu öffnen, wodurch die Anwendung ohne Einflüsse oder Unterbrechungen anderer Programme weiter arbeiten kann. \\
-
-\begin{lstlisting}[language=python]
+\begin{lstlisting}[language=Python, caption={Code Starten eines Threads},captionpos=b]
 	
 	def start(self):
 		self.thread=Thread(target=self.runner)
-		self.thread.daemon=False
+		self.thread.daemon=True
 		self.thread.start()
-
-	def stop(self):
-		self.running=False
-		self.thread.join()
 
 \end{lstlisting}
 
-\subsubsection{GPIO}
-
-Die \textit{gpiozero} Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden.
+In diesem Beispiel wird ein Demon Thread erzeugt und gestartet. Das beudetet dieser Thread wird beim schließen des Programmes automatisch mitgeschlossen und muss dadurch nicht mehr überwacht werden. Das Target ist die Funktion, welche unabhängig ausgeführt werden soll.
 
 \newpage
 
@@ -252,21 +247,31 @@ In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale V
 \textbf{Logout} \\
 \vspace{2mm}
 
-Wird der Logout Button gedrückt, werden die Anmelde-Informationen zurückgesetzt und dem Nutzer wird wieder das Login Fenster angezeigt, wo er sich nun mit anderen Anmelde-Informationen einloggen kann.
+Wird der Logout-Button gedrückt, werden die Anmelde-Informationen zurückgesetzt und dem Nutzer wird wieder das Login Fenster angezeigt, wo er sich nun mit anderen Anmelde-Informationen einloggen kann.
 
 \newpage
 
 \subsubsection{Balken Anzeige}
 
-Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung verschiedener Daten verwendet. Mi
+Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung verschiedener Daten verwendet. Mit ihr können diese übersichtlicher Dargestellt werden. Diese Komponente wird in mehreren QML-Dateien verwendet, daher sind Properties zur Anpassung notwendig. Die wichtigsten davon sind:
+
+\begin{itemize}
+	\item Wert - Der Aktuelle Wert, welcher am Balken angezeigt werden sollte.
+	\item Anfangswinkel - Der Winkel an dem der Balken entspringt.
+	\item maximaler Wert - Der maximal zu erreichende Wert. Dieser Bestimmt die Länge des Hintergrundbalkens
+	\item Hintergrundfarbe - Farbe des Hintergrundbalkens (in der Abbildung grau)
+	\item Balkenfarbe -Farbe des Anzeigebalkens (in der Abbildung blau)
+\end{itemize}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{figures/hcis/component_bar.png}
 		\caption{GUI Komponente - Balken Anzeige}
-				\label{fig:kompBalken}
+		\label{fig:kompBalken}
 	\end{center}
 \end{figure}
+
+Über ein \textit{Signal} kann nun über das Back-End der Wert des Balkens verändert werden und in Echtzeit angezeigt werden.
 
 \subsubsection{Modus Anzeige}
 
@@ -274,7 +279,7 @@ Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung
 	\begin{center}
 		\includegraphics[scale=0.3]{figures/hcis/component_mode.png}
 		\caption{GUI Komponente - Modus Anzeige}
-				\label{fig:kompGraph}
+				\label{fig:kompModus}
 	\end{center}
 \end{figure}
 
