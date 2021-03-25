@@ -5,23 +5,32 @@
 \chapter{Human-Computer Interaction System}
 
 \section{Übersicht}
-Das Human-Computer Interaction System ist, wie der Name schon verrät, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten elektrischen System dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein. Ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User anzeigen können.\\
+Das Human-Computer Interaction System ist, wie der Name schon sagt, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten elektrischen System dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein. Ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User anzeigen können.\\
 Wichtig ist das System, trotz der großen Komplexität, so intuitiv und nutzerfreundlich wie möglich zu gestalten.
 
 \subsection{Grundfunktionen des Systems}
-Die geplanten Funktionen des HCIS lassen sich grob in vier Grundfunktionen einteilen.
+Die geplanten Funktionen des HCIS \footnote{Abkurzümg: Human-Computer Interaction System} lassen sich grob in vier Grundfunktionen einteilen.
 \begin{itemize}
 	\item \textbf{Steuerung der Peripherie} \medskip\\
-	Die Schalter und Buttons am Lenker, welche zuvor über den Kabelbaum die Leuchten, Blinker und die Hupe gesteuert haben. Werden nun über die General-purpose input/output (GPIO)  des Raspberry Pi Mikrocomputers gesteuert.
+	Die Schalter und Buttons am Lenker, welche zuvor über den Kabelbaum die Leuchten, Blinker und die Hupe gesteuert haben, werden nun über die General-purpose input/output (GPIO) des Raspberry Pi Mikrocomputers gesteuert.
 	\item \textbf{Graphische Benutzeroberfläche}\medskip\\
 Dient der Anzeige wichtiger Fahr- und Ladedaten, welche entweder in Echtzeit oder über die Datenbankschnittstelle abgerufen und graphisch angezeigt werden können.
 	\item \textbf{Kommunikation mit den Steuereinheiten des Motorrades} \medskip\\
-	Über CAN-Bus werden Daten von dem Batterie Management Systems (BMS) und der Curtis Motorsteuerung empfangen und an die Benutzeroberfläche zur Echtzeitverwertung und an die Datenbankschnittstelle zur Langzeitsicherung der Fahrdaten weiter gegeben.
+	Über CAN-Bus werden Daten von dem Batterie Management Systems (BMS) und der Curtis Motorsteuerung empfangen und an die Benutzeroberfläche zur Anzeige und an die Datenbankschnittstelle zur Langzeitsicherung der Fahrdaten weiter gegeben.
 	\item \textbf{Speichern der relevanten Fahrdaten über die Datenbankschnittstelle} \medskip\\
-Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittstelle (Handler) weitergegeben um für Datenauswertung und Testberichte die Daten zu speichern. Ebenso bezieht das Diagnosesystem der Benutzeroberfläche die Daten über diese Schnittstelle.
+Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittstelle (Handler) weitergegeben um die Daten für Datenauswertung und Testberichte zu speichern. Ebenso bezieht das Diagnosesystem der Benutzeroberfläche die Daten über diese Schnittstelle.
 \end{itemize}
 \newpage
 
+\subsection{Steuereinheit}
+Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.08]{figures/hcis/raspberryPi.png}
+		\caption{Raspberry Pi - Steuereinheit des HCIS}
+	\end{center}
+\end{figure}
 
 \subsection{Grundaufbau des Systems}
 In der Abbildung \ref{fig:aufbauHCIS} wird der Grundaufbau des Systems und die Datenverbindungen der folgenden  Komponenten veranschaulicht.
@@ -29,14 +38,14 @@ In der Abbildung \ref{fig:aufbauHCIS} wird der Grundaufbau des Systems und die D
 \begin{itemize}
 	\item Raspberry Pi - Die Steuereinheit des Systems.
 	\\ Kommuniziert über CAN-Bus mit den anderen Steuerkomponenten des Motorrades.
-	\item User Input - Die vorhandenen Schalter am Lenker des Motorrads werden über Pulldown Widerstände mit den Inputs des Raspberry Pis verbunden. 
+	\item User Input - Die vorhandenen Schalter am Lenker des Motorrads werden direkt mit den Eingängen des Raspberry Pis verbunden. 
 	\item Peripherie - Die Grundkomponenten des Motorrades wie Scheinwerfer oder Hupe. Diese werden über Relais, welche an die Ausgänge des Raspberry Pis angeschlossen sind, gesteuert.
 	\item Dashboard - Der Bildschirm zur Anzeige der verarbeiteten Informationen. Dieser wird über HDMI und USB mit dem Raspberry Pi verbunden.
 \end{itemize}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{figures/hcis/HCIS_Grundfunktion.png}
+		\includegraphics[scale=0.5]{figures/hcis/HCIS_Grundfunktion.png}
 		\caption{Grundaufbau des Human-Computer Interaction Systems}
 		\label{fig:aufbauHCIS}
 	\end{center}
@@ -46,28 +55,14 @@ Nicht in der Abbildung dargestellt ist die Versorgung der einzelnen Komponenten,
 
 \newpage
 
-\subsection{Steuereinheit}
-Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi.
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.1]{figures/hcis/raspberryPi.png}
-		\caption{Raspberry Pi - Steuereinheit des HCIS}
-	\end{center}
-\end{figure}
-
-Durch 
-
-\newpage
-
 
 %% Versorgung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\section{Versorgung}
+\section{Spannungsversorgung}
 
-\subsection{Aufbau des Versorgungssystems}
-Das Versorgungssystem des Motorrades besteht aus zwei Spannungsebenen. Einer 12V Ebene zur Versorgung der Peripherie des Motorrades und einer 5V Ebene, welche nur den Raspberry Pi und seine Komponenten beinhaltet. Diese Ebenen werden durch DC-DC Wandler erzeugt, welche direkt an den 50,4V des Akkus des Motorrades angeschlossen werden. \\
-Wichtig hierbei ist, dass alle ausgewählten Spannungswandler über einen Kurzschluss- und Überstrom-Schutz verfügen. Dies macht es uns möglich diese Versorgungssysteme, solange die Drähte auch nach dem maximalen Strom der Spannungswandler dimensioniert wurden, ohne jegliche Leitungs- und Überstrom-Schutzorgane aufzubauen. Denn die Spannungswandler schalten bei jeglichen Fehlern ab und verbrennen die Überschüssige Leistung über einen eingebauten Widerstand. Sobald der Fehler behoben wurde oder sich von selbst aufgelöst hat schalten sich die Spannungswandler automatisch wieder ein.
+\subsection{Aufbau des Versorgungssystems} \label{sec:aufbauversorgung}
+Das Versorgungssystem des Motorrades besteht aus zwei Spannungsebenen: Einer 12V Ebene zur Versorgung der Peripherie des Motorrades und einer 5V Ebene, welche nur den Raspberry Pi und seine Komponenten beinhaltet. Diese Ebenen werden durch DC-DC Wandler erzeugt, welche direkt an den Akku des Motorrades angeschlossen werden. \\
+Wichtig hierbei ist, dass alle ausgewählten Spannungswandler über einen Kurzschluss- und Überstrom-Schutz verfügen. Dies macht es uns möglich diese Versorgungssysteme, solange die Drähte auch nach dem maximalen Strom der Spannungswandler dimensioniert wurden, ohne jegliche Leitungs- und Überstrom-Schutzorgane aufzubauen. Die Spannungswandler schalten bei jeglichen Fehlern ab und verbrennen die überschüssige Leistung über einen eingebauten Widerstand. Sobald der Fehler behoben wurde, schalten sich die Spannungswandler automatisch wieder ein.
 \subsubsection{12V Versorgungsysstem}
 Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, welche über die 12V versorgt werden sollten, zusammengefasst werden, um die mindestens benötigte Leistung des Spannungswandlers zu errechnen. 
 \begin{table}[H]
@@ -91,14 +86,15 @@ Bildschirm             & 12V      & 12W      \\ \hline
 \end{center}
 \end{table}
 
-Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftreten würde wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 300 Watt DC-DC Wandler von Meanwell entschieden. 
+Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: siehe Anhang \ref{app:mw12}} entschieden. 
 
 \subsubsection{5V Versorgungssystem}
 
-Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl.
+Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl. Daher haben wir uns für einen 48V-5V, 30 Watt DC-DC Wandler von Meanwell \footnote{Datenblatt: siehe Anhang \ref{app:mw5}} entschieden.
 
-\subsection{Abschalten der Spannungswandler}
-
+\subsubsection{Abschalten der Spannungswandler}
+Das Abschalten der Spannungswandler ist nicht notwendig, da diese - wie schon in Abschnitt \ref{sec:aufbauversorgung} erklärt - bei einem anliegenden Fehler automatisch abschalten.
+Ebenso wird beim Abschalten des Motorrades über die BMS jegliches andere Bauteil von der Spannungsversorgung getrennt. Was die Spannungswandler vom Entladen des Akkus abhält.  
 
 \newpage
 
@@ -107,55 +103,76 @@ Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und
 \section{Steuerung der Peripherie}
 
 Die Grundfunktionen wie Beleuchtung, Hupe und Blinker werden hier als Peripherie bezeichnet. Diese sollten so einfach wie möglich und vom Lenker aus zu bedienen sein. Ebenso müssen sie verlässlich gesteuert werden können. Daher haben wir uns entschieden diese Funktionen ebenso über den Raspberry Pi zu steuern, da dieser bei einem Fehler der Motorsteuerung über den eingebauten Puffer gespeist werden kann und daher diese wichtigen Funktionen bis zu einem sicheren Stillstand weiter betrieben und gesteuert werden können.\\
-Dennoch ist in der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Inputs zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode ist die Schaffung einer Zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
+Dennoch ist in der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Eingängen zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode ist die Schaffung einer Zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
 
 \subsection{Hardware}
 
 \subsubsection{Input}
 
-Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände High und Low einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pis mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standardmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um die Eingänge des Raspberry Pis nicht immer an einer Spannung angeschlossen zu haben.
+Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände High und Low einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pis mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standardmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um nicht immer eine Spannung an den Eingängen des Raspberry Pis anliegen zu haben.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.8]{figures/hcis/input.png}
-			\caption{Anschlussplan Inputs}
+			\caption{Anschlussplan Eingänge}
 			\label{fig:input}
 	\end{center}
 \end{figure}
 
 \textbf{Pullup Widerstand}\\
-Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann "High". Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist den Zustand "Low".\\\medskip
+Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann High. Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Massepotential am Eingang an..\\\medskip
 \textbf{Pulldown Widerstand}\\
-Bei dem Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann "Low". Mit einem Schalter oder Taster wird der Eingang dann gegen VCC gezogen. Das heißt er hat solange der Schalter geschlossen ist den Zustand "High".
+Bei dem Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann Low. Mit einem Schalter oder Taster wird der Eingang dann gegen VCC gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Versorgunspotential am Eingang an.
 
 \subsubsection{Output}
 Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eingängen eines 4 Channel Relai Moduls, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun Möglich die 12V der Perpherie zu schalten und 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.8]{figures/hcis/4ch_relai.png}
-			\caption{Anschlussplan Relai}
+			\caption{Anschlussplan Relais}
 			\label{fig:output}
 	\end{center}
 \end{figure}
 
 \subsection{Software}
 
-Wichtig bei der Programmierung war in diesem Fall die 
+Wichtig bei der Programmierung war in diesem Fall die dauerhafte Verfügbarkeit der Grundfunktionen  sowie die einfache Integrierbarkeit von alten und neuen Bauteilen. Dies wurde erreicht durch die Anwendung verschiedener Bibliotheken.\\
+Die Wichtigsten in dieser Anwendung waren: \\
 
-\subsubsection{GPIO Klasse}
+
+
 
 \subsubsection{Threading}
+
+Die \textit{threading} Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzeitig laufende Aufgabe} für das Programm zu öffnen, wodurch die Anwendung ohne Einflüsse oder Unterbrechungen anderer Programme weiter arbeiten kann. \\
+
+\begin{lstlisting}[language=python]
+	
+	def start(self):
+		self.thread=Thread(target=self.runner)
+		self.thread.daemon=False
+		self.thread.start()
+
+	def stop(self):
+		self.running=False
+		self.thread.join()
+
+\end{lstlisting}
+
+\subsubsection{GPIO}
+
+Die \textit{gpiozero} Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden.
 
 \newpage
 
 %% Benutzeroberfläche %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Benutzeroberfläche}
-Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald man zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und die aufgezeichneten Fahrdaten anzeigen zu lassen. Ebenso kann der Akkuladestatus und Informationen über Fehler im System entnommen werden.
+Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald das Motorrad zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und die aufgezeichneten Fahrdaten anzeigen zu lassen. Ebenso können der Akkuladestatus und Informationen über Fehler im System entnommen werden.
 
 \subsection{Hardware}
 
-Zur Anzeige und Bedienung wird ein 11.6 Zoll Kapazitives Touch LCD Display verwendet. Es besitzt eine Full HD Auflösung (1920x1080), was für eine professionelle Darstellung essentiell ist. Ebenso hat es ein schützendes ABS Gehäuse, welches trotz fehlender IPxx Zertifizierung das Abdichten ermöglicht. Die Versorgungsspannung beträgt 12V, was ident zu den anderen Komponenten am Motorrad ist und daher die Versorgung sehr vereinfacht, es kann also über den gleichen Spannungswandler versorgt werden.
+Zur Anzeige und Bedienung wird ein 11.6 Zoll kapazitives Touch LCD Display verwendet. Es besitzt eine Full HD Auflösung (1920x1080), was für eine professionelle Darstellung essentiell ist. Ebenso hat es ein schützendes ABS Gehäuse, welches trotz fehlender IPxx Zertifizierung das Abdichten ermöglicht. Die Versorgungsspannung beträgt 12V, was ident zu den anderen Komponenten am Motorrad ist und daher die Versorgung sehr vereinfacht, es kann also über den gleichen Spannungswandler versorgt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -171,7 +188,7 @@ Touchdisplay
 \newpage
 
 \subsubsection{Befestigung}
-Das Touchpanel besitzt M4 Verschraubungen in einem Abstand von 75mm x 75mm und kann daher einfach an Wänden oder Platten verschraubt werden. Um Den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wird eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
+Besser: In das Gehäuse des Touchpanels sind M4 Verschraubungen in einem Raster von 75mmx75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -182,10 +199,10 @@ Das Touchpanel besitzt M4 Verschraubungen in einem Abstand von 75mm x 75mm und k
 \end{figure}
 
 \subsection{Software}
-Bevor die Software für die Benutzeroberfläche verfasst wurde, musste das Design, Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Workflow beim Entwickeln des Front-Ends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt. In den folgenden Seiten wird das Ergebnis dieses Prozesses erläutert.
+Bevor die Software für die Benutzeroberfläche verfasst wurde, mussten das Design, die Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Workflow beim Entwickeln des Front-Ends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt. In den folgenden Seiten wird das Ergebnis dieses Prozesses erläutert.
 \subsubsection{Aufbau}
 Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die einzelnen Fenster werden als Tabelle mit ihren angezeigten Informationen dargestellt. Dies is wichtig da jede dieser Informationen vom Back-End an das Front-End gesendet werden müssen.\\
-Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen Phase der Entwicklung der Benutzeroberfläche definiert werden.
+Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente  zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen Phase der Entwicklung der Benutzeroberfläche definiert werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -201,18 +218,23 @@ Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente zur Navigation z
 
 \subsection{Komponenten}
 
-Komponenten sind wiederverwendbare, gekapselte QML-Elemente mit genau definierten Schnittstellen. Komponenten werden häufig durch Komponentendateien definiert, das heißt durch QML-Dateien. Wichtig ist dabei die Definierung von Schnittstellen sowie Properties und Signals (Siehe \ref{sec:slots}).
+Komponenten sind wiederverwendbare, gekapselte QML-Elemente mit genau definierten Schnittstellen. Komponenten werden häufig durch Komponentendateien definiert, das heißt durch QML-Dateien. Wichtig ist dabei die Definierung von Schnittstellen sowie Properties und Signals .
 
 \textbf{Properties}\\
 \vspace{2mm}
 
-Der Property eines Objektes kann ein statischer Wert zugewiesen werden, der konstant bleibt, bis ihm explizit ein neuer Wert zugewiesen wird. Um QML und seine integrierte Unterstützung für dynamisches Objektverhalten optimal zu nutzen, verwenden die meisten QML-Objekte jedoch Propertysbindings.\\
-Propertysbindings sind eine Kernfunktion von QML, mit der Beziehungen zwischen verschiedenen Objekteigenschaften festgelegt werden können. Wenn sich die Abhängigkeiten einer Property im Wert ändern, wird die Eigenschaft automatisch gemäß der angegebenen Beziehung aktualisiert.\\
+Einer Property eines Objektes kann ein statischer Wert zugewiesen werden, der konstant bleibt, bis ihm explizit ein neuer Wert zugewiesen wird. Um QML und seine integrierte Unterstützung für dynamisches Objektverhalten optimal zu nutzen, verwenden die meisten QML-Objekte jedoch Propertysbindings.\\
+Propertybindings sind eine Kernfunktion von QML, mit der Beziehungen zwischen verschiedenen Objekteigenschaften festgelegt werden können. Wenn sich die Abhängigkeiten einer Property im Wert ändern, wird die Eigenschaft automatisch gemäß der angegebenen Beziehung aktualisiert.\\
 Hinter den Kulissen überwacht die QML-Engine die Abhängigkeiten der Eigenschaft. Wenn eine Änderung erkannt wird, wertet die QML-Engine den Bindungsausdruck erneut aus und wendet das neue Ergebnis auf die Eigenschaft an.
+
+\textbf{JavaScript-Funktionen}\\
+\vspace{2mm}
+
+Programmlogik kann auch in JavaScript-Funktionen definiert werden. Diese können in QML-Dokumenten definiert und von Signalhandlern, Eigenschaftsbindungen oder Funktionen in anderen QML-Objekten aufgerufen werden. Solche Methoden werden häufig als Inline-JavaScript-Funktionen bezeichnet, da ihre Implementierung im QML-Dokument statt in einer externen JavaScript-Datei enthalten ist.
 
 \subsubsection{Navigations Menü}
 
-Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen den verschiedenen Pages benützt wird. Sobald man sich eingeloggt hat wird das Menü angezeigt und kann ausgewählt werden. Das Menü wird abhängig von den Berechtigungen des Benutzers angepasst.
+Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen den verschiedenen Pages benützt wird. Sobald man sich eingeloggt hat wird das Menü angezeigt und die einzelnen Untermenüs können aufgerufen werden. Das Menü wird abhängig von den Berechtigungen des Benutzers angepasst.
 
 \begin{figure}[H]
 	\begin{center}
@@ -224,8 +246,8 @@ Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen de
 
 \textbf{Buttons} \\
 \vspace{2mm}
-Die Navigation wird über das QML-Element Mousearea, welche direkt über den Icons der einzelnen Navigations elemente platziert wurde, gesteuert. Nun kann mit dem Befehl onClicked eine Funktion aufgerufen werden, welche das gewünschte Fenster sichtbar macht, sowie das Navigations Menü wieder nach oben fahren lässt.\\
-In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale Variable, welche beim Anmelden durch ein Signal gesetzt wird, abgefragt. Falls die Berechtigung die Ausgewählte Funtktion nicht zulässt wird ein Informationstext ausgegeben und das Menü wiederum geschlossen.\
+Die Navigation wird über das QML-Element Mousearea, welche direkt über den Icons der einzelnen Navigationselemente platziert wurde, gesteuert. Nun kann mit dem Befehl onClicked eine Funktion aufgerufen werden, welche das gewünschte Fenster sichtbar macht, sowie das Navigations Menü wieder nach oben fahren lässt.\\
+In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale Variable, welche beim Anmelden durch ein Signal gesetzt wird, abgefragt. Falls die Berechtigung die ausgewählte Funktion nicht zulässt wird ein Informationstext ausgegeben und das Menü wiederum geschlossen.\
 
 \textbf{Logout} \\
 \vspace{2mm}
@@ -236,6 +258,8 @@ Wird der Logout Button gedrückt, werden die Anmelde-Informationen zurückgesetz
 
 \subsubsection{Balken Anzeige}
 
+Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung verschiedener Daten verwendet. Mi
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{figures/hcis/component_bar.png}
@@ -244,9 +268,33 @@ Wird der Logout Button gedrückt, werden die Anmelde-Informationen zurückgesetz
 	\end{center}
 \end{figure}
 
-\subsubsection{Graph}
+\subsubsection{Modus Anzeige}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/hcis/component_mode.png}
+		\caption{GUI Komponente - Modus Anzeige}
+				\label{fig:kompGraph}
+	\end{center}
+\end{figure}
+
 
 \newpage
+
+\subsubsection{Graph}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/hcis/component_graph.png}
+		\caption{GUI Komponente - Graph}
+				\label{fig:kompGraph}
+	\end{center}
+\end{figure}
+
+\subsubsection{Weitere Komponenten}
+
+
+\newpage  
 
 \subsection{Program Fenster}
 
@@ -306,14 +354,14 @@ Wird der Logout Button gedrückt, werden die Anmelde-Informationen zurückgesetz
 
 \subsection{Realisierung der Benutzeroberfäche}
 
-\subsubsection{QML}
-QML ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für JavaScript-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
+\subsubsection{QML} \label{sec:qml}
+QML \footnote{Qt Modeling Language} ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für JavaScript-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
 
 \subsubsection{Qt-Quick}
 Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Back-End Bibliotheken verbunden werden.
 
 \subsubsection{Slots und Signals} \label{sec:slots}
-Slots und Signals werden in Qml zur ereignisgesteuerte Kommunikation zwischen Front-End und Back-End verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
+Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Front-End und Back-End verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
 
 \begin{figure}[H]
 \begin{center}
@@ -349,17 +397,17 @@ Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Ansc
 	\end{center}
 \end{figure}
 
-Die Kommunikation wird über zwei Komponenten ermöglicht. Einen MCP2562 Transceiver, welcher für die Verarbeitung der Nachrichten zuständig ist und ein MCP2515 CAN Interface, welches die Daten zwischenspeichert und sich um das Versenden der Nachrichten kümmert. Gemeinsam mit dem Mikrocomputer ergibt dies nun eine CAN Node, welche fähig ist Nachrichten zu versenden und zu empfangen.
+Die Kommunikation wird über zwei Komponenten ermöglicht. Einen MCP2562 Transceiver, welcher für die Verarbeitung der Nachrichten zuständig ist und ein MCP2515 CAN Interface, welches die Daten zwischenspeichert und sich um das Versenden der Nachrichten kümmert. Gemeinsam mit dem Mikrocomputer ergibt dies nun einen CAN Node, welcher fähig ist Nachrichten zu versenden und zu empfangen.
 
 \subsubsection{Netzwerkstruktur}
 
-Ein CAN-Netzwerk wird standardmäßig als Linienstruktur oder Sternstruktur aufgebaut. Wir haben uns bewusst für ein Liniensystem entschieden, da Sternsysteme nur in bestimmten Anwendungen Gebrauch finden und noch dazu markante Nachteile besitzt.\\ Es müsste zum Beispiel eine Zentrale Steuereinheit den Nachrichtenverkehr steuern, ebenso gibt uns die niedrige Anzahl an Teilnehmern im Netzwerk nicht einmal die Möglichkeit ein anderes System zu verwenden. Erst wenn wir in Zukunft das CAN-Netwerk um Sensoren und Aktoren erweitern würden, müsste weitere Zeit in die Planung des Netzwerks investiert werden. 
+Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wir haben uns bewusst für die Bustopologie entschieden, da Sterntopologien nur in bestimmten Anwendungen Gebrauch finden und noch dazu markante Nachteile besitzt.\\ Es müsste zum Beispiel eine zentrale Steuereinheit den Nachrichtenverkehr steuern, ebenso gibt uns die niedrige Anzahl an Teilnehmern im Netzwerk nicht einmal die Möglichkeit ein anderes System zu verwenden. Erst wenn wir in Zukunft das CAN-Netwerk um Sensoren und Aktoren erweitern würden, müsste weitere Zeit in die Planung des Netzwerks investiert werden. 
 
 \newpage
 
 \subsection{Listener}
 
-Die Listener Class ist dafür zuständig den Daten verkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Front-End (Bridge) weiterzugeben.
+Die Listener Class ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Front-End (Bridge) weiterzugeben.
 \subsubsection{Receive Data}
 
 \newpage

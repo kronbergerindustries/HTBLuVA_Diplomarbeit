@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k}{def} \PYG{n+nf}{start}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{thread} \PYG{o}{=} \PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{runner}\PYG{p}{)}
+
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{thread}\PYG{o}{.}\PYG{n}{daemon} \PYG{o}{=} \PYG{k+kc}{False}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{thread}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+
+	\PYG{k}{def} \PYG{n+nf}{stop}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{running} \PYG{o}{=} \PYG{k+kc}{False}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{thread}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+\end{Verbatim}
