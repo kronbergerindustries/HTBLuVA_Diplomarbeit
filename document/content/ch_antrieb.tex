@@ -4,7 +4,7 @@
 
 %% Übersicht %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Übersicht}
-Die Hauptaufgabe des Antriebssystems ist die Umwandlung der, von dem Akkumulator zur Verfügung gestellten, elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst kreisförmig am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die kreisförmige kinetische Energie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, diese fungiert als Bindemittel zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
+Die Hauptaufgabe des Antriebssystems ist die Umwandlung der, vom Akkumulator zur Verfügung gestellten, elektrischen Energie in die kinetische Antriebsenergie. Diese tritt zuerst rotatorisch am Motor auf und wird zunächst über das Direkt-Getriebe umgeformt bzw. auf die passende Drehzahl gebracht, anschließend wird die Rotationsenergie mithilfe des Hinterrades auf die Straße übertragen und das ganze Motorrad beschleunigt. Neben dem Antrieb des Motorrades hat die Motorsteuerung noch weitere Bedeutung als Steuereinheit, sie fungiert als Bindeglied zwischen dem Human-Computer Interacting System und den elektrischen Anforderungen an das Gesamtsystem.
 
 
 \subsection{Grundfunktionen des Systems}
@@ -60,14 +60,14 @@ Die Fertigung des Getriebes und die Montage der einzelnen Betriebsmittel wurde v
 
 %% Der Laststromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Laststromkreis}
-Der Laststromkreis befasst sich mit allen leistungsführenden Betriebsmitteln des Antriebssystems. ierbei unterscheiden wir zwischen zwei Grundfunktionen:
+Der Laststromkreis beinhaltet allen leistungsführenden Betriebsmitteln des Antriebssystems. Hierbei unterscheiden wir zwischen den zwei wichtigsten Grundfunktionen:
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Elektrische Energieübertragung}
 	\\ \medskip Umfasst die elektrische Verbindung von Motor, Motorcontroller und Akkumulator. 			\\ Realisiert durch einfache Leitungen, um Leistungen übertragen zu können.
 	\medskip
 	\item \textbf{Schutz der Komponenten vor Beschädigungen (Leitungsschutzorgane)}
-	\\ \medskip Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 					\\ Hochleistungs-Relais, um im Fehlerfall den kreis öffnen zu können und damit eine  		
+	\\ \medskip Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 					\\ Hochleistungs-Relais, um im Fehlerfall den Laststromkreis öffnen zu können und damit eine  		
 	\\ galvanische Trennung des Antriebs und der Energieversorgung gewährleisten zu können.
 \end{itemize}
 
@@ -84,14 +84,14 @@ Der Laststromkreis befasst sich mit allen leistungsführenden Betriebsmitteln de
 
 %% Elektrische Energieübertragung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Elektrische Energieübertragung}
-Um die benötigte elektrische Energie übertragen zu können, müssen die Leitungen an den Leistungsverbrauch des Verbrauchers (Motor) angepasst werden. Bei einer zu hohen Stromaufnahme (Überlast) des Motors kann es zu einer übermäßigen Erwärmung der Leitungen bis hin zu dauerhaften Beschädigungen, wie durchschmorren der Isolierung oder sogar einen Leitungsbrand, führen. Um dies verhindern zu können, müssen die Leitungen an die Stromaufnahme des Motors angepasst werden. Das heißt, der zulässige Dauerstrom der Leitungen muss den maximalen Dauerstrom des Motors bzw. den maximalen Dauerstrom, welcher durch den Akkumulator zur Verfügung gestellten werden kann, übersteigen.
+Um die benötigte elektrische Energie übertragen zu können, müssen die Leitungen an den Leistungsverbrauch des Verbrauchers (Motor) angepasst werden. Bei einer zu hohen Stromaufnahme (Überlast) des Motors kann es zu einer übermäßigen Erwärmung der Leitungen bis hin zu dauerhaften Beschädigungen, wie Durchschmoren der Isolierung, oder sogar einen Leitungsbrand führen. Um dies verhindern zu können, müssen die Leitungen an die Stromaufnahme des Motors angepasst werden. Das heißt, der zulässige Dauerstrom der Leitungen muss den maximalen Dauerstrom des Motors bzw. den maximalen Dauerstrom, welcher durch den Akkumulator zur Verfügung gestellten werden kann, übersteigen.
 \\[5mm]
 
 \textbf{Berechnung:} 
 \\[2mm]
 In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die Länge der Leitung an die benötigte Stromaufnahme des Motors anpassen.
 
-Anzahl der Zellen die parallel Verschalten werden: 40
+Anzahl der Zellen die parallel verschaltet werden: 40
 
 
 \begin{align*}
@@ -125,11 +125,11 @@ text
 
 %% Leitungsschutzorgane %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Leitungsschutzorgane}
-Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen und damit den Motor bzw. Motorcontroller und den Akkumulator galvanisch zu trennen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dies hat nicht nur höhere Anschaffungskosten zur folge. Bei Überdimensionierung der Schmelzsicherung, löst diese zu spät aus und hat damit nur mehr eine sehr geringe bis gar keine Schutzfunktion mehr. 
+Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen, um damit den Motor bzw. Motorcontroller vom Akkumulator galvanisch zu trennen. Diese Maßnahme wird ergriffen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dadurch steigen die Anschaffungskosten der Bauteile. Das noch größere Problem entsteht jedoch bei der Überdimensionierung der Schmelzsicherung, denn diese löst nun zu spät aus und hat damit nur mehr eine sehr geringe bis gar keine Schutzfunktion. 
 
 \textbf{Berechnung:} 
 \\[2mm]
-In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die Länge der Leitung an die benötigte Stromaufnahme des Motors anpassen.
+text
 \\[5mm]
 
 \textbf{Auswahl:}
@@ -170,7 +170,7 @@ Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche ü
 
 \vspace{5mm}
 
-Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbare Ausgang verwendet, bei richtiger Konfiguration kann dieser jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
+Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbarer Ausgang verwendet, bei richtiger Konfiguration kann er jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -216,7 +216,7 @@ Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. 
 
 %% Gas- und Bremseingänge (Throttle and Brake Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Gas- und Bremseingänge (Throttle and Brake Inputs)}
-Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig von einander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
+Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig voneinander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -229,7 +229,7 @@ Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig von einander pr
 
 %% Positionsrückmeldung vom Encoder (Position-feedback Input) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Positionsrückmeldung vom Encoder (Position-feedback Input)}
-Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motorwelle einzulesen, um eine optimale feldorienterte Ansteuerung des Motors durchführen zu können. Dabei gibt es die Möglichkeiten über einen Quadratur-Encoder oder einen Sin/Cos-Encoder. Da in dem Ashwoods-Motor ein Sin/Cos-Sensor verbaut ist, wurde dies vorab bei dem Motorcontroller eingestellt.
+Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motorwelle einzulesen, um eine optimale feldorienterte Ansteuerung des Motors durchführen zu können. Dabei gibt es die Möglichkeiten über einen Quadratur-Encoder oder einen Sin/Cos-Encoder. Da im Ashwoods-Motor ein Sin/Cos-Sensor verbaut ist, wurde dies vorab beim Motorcontroller eingestellt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -244,7 +244,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 %% Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
-Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf ist speziell für den Rücklauf der pulsweitenmodulierbaren Ausgänge konfiguriert worden, um ein übrmäßiges Schaltrauschen zu verhindern.
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Er soll übermäßige Schaltgeräusche im PWM-Betrieb verhindern und nur auf die Spulen begrenzen. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -273,7 +273,7 @@ Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausg
 
 %% Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}
-Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional-Driver kann bei richtiger Konfiguration auch für die Anzeige eines Tachometers hergenommen werden. Diese Gruppe kann ebenfalls als digitaler Eingang benutzt werden.
+Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional-Driver kann bei richtiger Konfiguration auch für die Anzeige eines Tachometers hergenommen werden. Generell kann jeder Pin dieser Gruppe ebenfalls als digitaler Eingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -301,7 +301,7 @@ Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsr
 
 %% Kommunikations-Ports %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kommunikations-Ports}
-Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Buses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten vom Motorcontroller zur Konfiguration des CAN-Buses, dies wird jedoch im Punkt Software genauer erklärt.
+Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Busses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten zur Konfiguration des CAN-Busses, dies wird jedoch im Punkt Software genauer erklärt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -334,6 +334,7 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Steuerung der Ein- und Ausgänge (I/O Assingment)}
+
 \subsubsection{Funktionen}
 \subsubsection{Zuweisung}
 
@@ -346,28 +347,21 @@ Die Drehmomensteuerung wird mithilfe von 12 unterschiedlichen Parametern beschri
 \vspace{5mm}
  
 \subsubsection{Parameter}
-Anhand dieser Parameter lassen sich zwei Hauptgruppen definieren:
+Grundsätzlich lassen sich diese Parameter in zwei Hauptgruppen unterscheiden:
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Geschwindigkeitsbegrenzer-Parameter (Speed-Limiter)}
-	\\ \medskip Max Speed
-	\\ Kp
-	\\ Ki
-	\\ Kd
+	\\ \medskip Bestimmen die maximale Geschwindigkeit und die Begrenzungsparameter des KPI-Reglers.
 	\medskip
 	\item \textbf{Reaktions-Parameter (Response)}
-	\\ \medskip Accel Rate
-	\\ Accel Release Rate
-	\\ Brake Rate
-	\\ Brake Release Rate
-	\\ Neutral Braking
-	\\ Neutral Taper Speed
-	\\ Forward Full Restraint Speed
-	\\ Back Full Restraint Speed
+	\\ \medskip Bestimmen die verschiedensten Ansprechzeiten und Drehzahlen für bestimmte Ereignisse.
 \end{itemize}
 
-\vspace{1cm}
+\vspace{5mm}
 
+Diese Parameter werden in den folgenden Tabellen noch genau erklärt:
+
+\vspace{5mm}
 
 \setlength{\tabcolsep}{9pt}
 \begin{table}[H]
@@ -382,6 +376,7 @@ Anhand dieser Parameter lassen sich zwei Hauptgruppen definieren:
 	\label{tab:Geschwindigkeitsbegrenzer-Parameter}
 \end{table}
 
+\newpage
 
 \setlength{\tabcolsep}{6pt}
 \begin{table}[H]
@@ -401,8 +396,38 @@ Anhand dieser Parameter lassen sich zwei Hauptgruppen definieren:
 \end{table}
 
 
+\newpage
 
 \subsubsection{Eco- und Sportmodus (Speed-Mode-Select)}
+Die oben genannten Parameter werden für die Erstellung der unterschiedlichen Antriebsmodi verwendet. Für den Ecomodus werden für die Parameter höhere Reaktionszeiten und weniger Aggressivität gewählt, daraus ergibt sich ein gemütlicherer und schonenderer Fahrbetrieb, welcher gleichzeitig weniger Leistung verbraucht. Für den Sportmodus hingegen werden kürzere Reaktionszeiten und höhere Aggressivität gewählt, daraus ergibt sich ein sportlicheres Fahrverhalten, die gewünschte Geschwindigkeit wird schneller erreicht. Natürlich zieht dieser Antriebsmodus einen erhöhten Leistungsverbrauch nach sich. Der Wechsel des Antriebsmodus bedeutet jedoch eine Veränderung kritischer Parameter, weshalb der KSI-Pin aus- und eingeschalten werden muss, um den normalen Fahrbetrieb wieder aufnehmen zu können. Da jedoch ein ausschalten des KSI-Pins zum sofortigen Stillstand (Einleiten des Bremsvorgangs bis die Geschwindigkeit 0 ist) des Motorrades führt, kann der Wechsel des Antriebsmodus nur im Stillstand erfolgen. Die einzelnen Modi können beliebig konfiguriert werden und auch im Nachhinein mittels dem Curtis Integrated Toolkit sehr schnell und leicht verändert oder angepasst werden. Vorerst wird es nur zwei unterschiedliche Antriebsmodi geben, da in diesem Fall nur ein Pin für die Selektierung benötigt wird (1 digitaler Eingang). Wenn in Zukunft jedoch weiterhin Interesse an weiteren unterschiedlichen Antriebsmodi besteht, können diese mit relativ wenig Aufwand hinzugefügt werden.
+
+\vspace{5mm}
+
+Hier eine Tabelle der einzelnen Parameter im Eco- und im Sportmodus:
+
+\vspace{2mm}
+
+\setlength{\tabcolsep}{9pt}
+\begin{table}[H]
+	\begin{tabular}{|lcc|}\hline
+	\rowcolor[gray]{0.8}\textbf{Parameter} & \textbf{ECO-Modus} &\textbf{SPORT-Modus}\\[2pt]
+		Max Speed 						& 7000 U/min	& 8000 U/min 	\\\hline
+		Kp 								& 30 \% 		& 40 \% 	 	\\\hline
+		Ki 								& 30 \% 		& 40 \% 	 	\\\hline
+		Kd    							& 15 \% 		& 10 \%		 	\\\hline		
+		Accel Rate 						& 2 s 			& 1 s		 	\\\hline
+		Accel Release Rate				& 1 s 	 		& 0.4 s		 	\\\hline
+		Brake Rate 						& 2 s 	 		& 1 s		 	\\\hline
+		Brake Release Rate				& 1 s 	 		& 0.4 s		 	\\\hline
+		Neutral Braking    				& 15 \% 		& 10 \%		 	\\\hline
+		Neutral Taper Speed    			& 500 U/min 	& 800 U/min 	\\\hline
+		Forward Full Restraint Speed	& 800 U/min 	& 500 U/min		\\\hline
+		Back Full Restraint Speed    	& 800 U/min 	& 500 U/min		\\\hline		
+	\end{tabular}	
+	\caption{Antriebsmodi}
+	\label{tab:Reaktions-Parameter}
+\end{table}
+
 
 \newpage
 
@@ -421,12 +446,12 @@ Anhand dieser Parameter lassen sich zwei Hauptgruppen definieren:
 \subsection{Leonard-Versuchsaufbau}
 \textbf{Grundidee:}
 \\[2mm]
-Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alterntive Spannungsversorgung gefunden werden. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als Gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu Kosten- und Zeitintensiv, weshalb mein Betreuungslehrer Herr Professor Reinhart vorschlug, die bipolare Spannungsquelle mittels einem Leonard-Umformer zu realisieren.
+Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alterntive Spannungsversorgung gefunden werden, welche für die Anforderungen der Motorsteuerung geeignet ist. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu kosten- und zeitintensiv, weshalb der Betreuungslehrer vorschlug, die bipolare Spannungsquelle mittels eines Leonard-Umformers zu realisieren.
 \\[5mm]
 
 \textbf{Fazit:}
 \\[2mm]
-Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während den gescheiterten Test-Durchläufen nahmen wir genauere Messungen mittels einem Oszilloskop vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung des Gleichspannungs-Eingangs konnten wir feststellen, dass in einem Zeitbereich von circa 20ms eine unerwartet hohe Unterhöhung und Überhöhung der Spannung auftrat, welche einer Schwingung ähnelte. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
+Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während der gescheiterten Test-Durchläufe nahmen wir genauere Messungen mittels eines Oszilloskops vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung der Gleichspannungs-Speisung konnten wir feststellen, dass in einem Zeitbereich von circa 40ms ein unerwarteter Einschwingvorgang zu beobachten war, welcher einer negativen Sinus-Schwingung sehr ähnelte. Es trat zuerst eine negative Flanke in einem Zeitbereich von 12ms und mit einer Spannungsunterhöhung von circa 30V auf, dann folgte eine Spannungsüberhöhung mit etwa den selben Werten. Nach weiteren 16ms war der Schwingungsvorgang wieder auf die Eingangsspannung von 50V zurückgefallen. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
 
 \begin{figure}[H]
 	\begin{center}
@@ -448,17 +473,17 @@ Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commission
 
 \textbf{Grundidee:}
 \\[2mm]
-Der Leonard-Veruchsaufbau hat aufgrund der Trägheit der Spannungsquelle nicht funktioniert. Übrig blieb deshalb nur die Realisierung der Spannungsquelle mithilfe eines Ersatz-Akkumulators. Zufälligerweise konnten wir im Projektraum vier Bleiakkumulatoren ausfindig machen, welche wir nun seriell zu einer 48V-Spannungsquelle verschalten wollten. Die Bleiakkus waren zwar teils angeschlagen bzw. sehr tief entladen, mittels einem intelligenten Ladegerät konnten aber 3 von 4 Akkus wieder erfolgreich aufgeladen werden. Mit einer von mir Zuhause mitgebrachten Autobatterie und zusätzlichen Starterkabeln konnten letztendlich aber die 48V-Spannungsquelle realisiert werden.
+Der Leonard-Veruchsaufbau hat aufgrund der Trägheit der Spannungsquelle nicht funktioniert. Übrig blieb deshalb nur die Realisierung der Spannungsquelle mithilfe eines Ersatz-Akkumulators. Zufälligerweise konnten wir im Projektraum vier Bleiakkumulatoren ausfindig machen, welche wir nun seriell zu einer 48V-Spannungsquelle verschalten wollten. Die Bleiakkus waren zwar teils angeschlagen bzw. sehr tief entladen, mittels eines intelligenten Ladegeräts konnten aber 3 von 4 Akkus wieder erfolgreich aufgeladen werden. Mit einer von Zuhause mitgebrachten Autobatterie und zusätzlichen Starterkabeln konnte letztendlich aber die 48V-Spannungsquelle realisiert werden.
 \\[5mm]
 
 \textbf{Fazit:}
 \\[2mm]
-Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. Ein Problem stellten vorerst aber die großen Einschaltströme dar, welche bei der Schließung des Stromkreises zu Lichtbögen führten. Um Beschädigungen an den Kondensatoren zu verhindern, konnte dieses Problem jedoch mithilfe von einem Vorladen der Kondensatoren mithilfe eines 48V Netzgerätes behoben werden.
+Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. Ein Problem stellten vorerst aber die großen Einschaltströme dar, welche bei der Schließung des Stromkreises zu Lichtbögen führten. Um Beschädigungen an den Kondensatoren zu verhindern, konnte dieses Problem jedoch durch Vorladen der Kondensatoren mithilfe eines 48V Netzgerätes behoben werden.
 \\[5mm]
 
 \textbf{Erste Inbetriebnahme:}
 \\[2mm]
-Der Teslauf zur Einstellung der Motorparameter hat mithilfe der Bleiakkumulatoren beim ersten Versuch erfolgreich funktioniert. Der Motor konnte nach weiteren Konfigurationen letztendlich auch eine bestimmte Drehzahl abhängig von einem Spannungssignal anfahren. 
+Der Testlauf zur Einstellung der Motorparameter hat mithilfe der Bleiakkumulatoren beim ersten Versuch erfolgreich funktioniert. Der Motor konnte nach weiteren Konfigurationen letztendlich auch eine bestimmte Drehzahl abhängig von einem Spannungssignal anfahren. 
 
 
 \begin{figure}[H]
