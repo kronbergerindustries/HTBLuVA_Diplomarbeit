@@ -329,7 +329,7 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 	\medskip
 	\item \textbf{Vehicle-Control-Language (VCL) Programmierung}
 	\\ \medskip Umfasst das gesamte Programm, welches mit der Vehicle-Control-Language realisiert wurde.
-	\\ Ein Großteil dieses Programms beschäftigt sich hierbei mit der Kommunikation mit dem Raspberry PI.
+	\\ Ein Großteil dieses Programms beschäftigt sich hierbei mit der Kommunikation zwischen der Motorsteuerung und dem Raspberry PI.
 \end{itemize}
 
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -425,7 +425,7 @@ Hier eine Tabelle der einzelnen Parameter im Eco- und im Sportmodus:
 		Back Full Restraint Speed    	& 800 U/min 	& 500 U/min		\\\hline		
 	\end{tabular}	
 	\caption{Antriebsmodi}
-	\label{tab:Reaktions-Parameter}
+	\label{tab:Antriebsmodi}
 \end{table}
 
 
@@ -436,8 +436,27 @@ Hier eine Tabelle der einzelnen Parameter im Eco- und im Sportmodus:
 
 %% Kommunikation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vehicle-Control-Language (VCL) Programmierung}
+Die Vehicle-Control-Language ist ein eigener Abschnitt der Programmierung und von der Grundidee auch sehr unterschiedlich. Die normale Parameterprogrammierung vereinfacht die generelle Programmierung des Curtis Controllers zwar sehr, beschränkt die Anzahl der Möglichkeiten jedoch auf die Anzahl der Parameter und deren Konfigurationsmöglichkeiten. Die VCL-Programmiersprache bietet hierbei eine sehr gute Erweiterungsmöglichkeit und bei Kombination der beiden Programmierarten kann die Programmierung des Curtis Controllers optimiert und enorm erweitert werden. Die Vehicle-Control-Language ist eine Programmiersprache auf der Basis von C und das VCL Studio sieht der Benutzeroberfläche eines normalen Programms mit integriertem Editor und Compiler wie zum Beispiel Dev-C++ sehr ähnlich. Da in diesem Fall jedoch jeder beliebige Programmcode verfasst werden kann, bietet VCL nahezu endlose Möglichkeiten. Die wichtigsten Grundlagen, auf die man bei der Programmierung von VCL aufpassen muss, sind in den beigelegten Skripten "WIN VCL User's Guide", "VCL Programmer's Guide" und "VCL Common Functions" im Anhang genauer erklärt. Das Wichtigste ist jedoch die Kenntnis darüber, dass mit dem VCL-Studio nicht nur die vorhandenen oder selbsterstellten VCL-Variablen verändert werden können. Die meisten Variablen, die in den Parametermenüs vorhanden sind, können ebenfalls eingelesen und beschrieben werden. Hier ist natürlich Vorsicht geboten, denn viele Parameter dürfen in keinem Fall während des Betriebs geändert werden. Bei wichtigen Variablen muss daher auch ein Aus- und Einschalten des KSI-Pins durchgeführt werden, um die Veränderung wirksam zu machen und Komplikationen zu vermeiden. Generell ist die Hauptaufgabe einer ausgefeilten VCL-Programmierung jedoch die Automatisierung des gesamten E-Motorrades. Zum Beispiel kann beim Auftritt eines Fehler automatisch ein zugehöriger Behebungsvorgang eingeleitet werden. Da wir in unserem Projekt jedoch nur ein sehr kleines Zeitfenster zur Verfügung haben, konnte das VCL-Programm nicht derartig ausgereift werden. In unserem Fall beschränkt sich die VCL-Programmierung fast ausschließlich auf die Kommunikation mit dem Raspberry PI, denn die Lösung über VCL-CAN schien uns einfacher und vorallem viel flexibler wie die vorgefertigte Programmierung von CANopen zu verwenden. Ebenfalls befindet sich noch der Speed-Mode-Select in der VCL-Programmierung, welcher abhängig von der Stellung eines digitalen Eingangs die Parameter der Drehmomentsteuerung verändert. 
 \subsubsection{Grundfunktion}
 \subsubsection{Kommunikation (CAN-Bus)}
+Die Kommunikation erfolgt grundsätzlich nur in eine Richtung, da dies nicht nur einfacher zu realisieren war, sondern für unsere Anwendungen auch völlig ausreicht. Der Curtis Controller sendet die ausgewählten Parameter immer in der selben Reihenfolge an den Raspberry PI, dafür wurden 3 unterschiedliche Datenpakete mit jeweils einem einzigartigen Identifier und 7 folgenden Parametern erstellt. Ein Parameter enthält immer 4 Hexadezimalzahlen, also insgesamt 2 Byte. Wenn ein Fehler am Motorcontroller erkannt wurde, wird nach dem dritten Datenpaket noch ein zusätzliches Fehler-Datenpaket eingeschoben. Wenn zum Beispiel zwei Fehler am Controller vorliegen, werden diese 2 Fehler nach dem Fehler-Identifier gesendet, danach werden die 5 weiteren freien Plätze des Fehler-Datenpakets mit dem Fehler-Identifier aufgefüllt. Nachdem das Fehler-Datenpaket gesendet wurde, werden die ersten 7 Fehler vom Datenspeicher gelöscht, liegt der Fehler jedoch weiterhin vor, kann dieser auch nicht gelöscht werden.
+
+\setlength{\tabcolsep}{9pt}
+\begin{table}[H]
+	\begin{tabular}{|lcccc|}\hline
+	\rowcolor[gray]{0.8} & \textbf{Datenpaket 1} & \textbf{Datenpaket 2} & \textbf{Datenpaket 3} &\textbf{Fehler-Datenpaket}\\[2pt]
+		Identifier		& 000F	& 00FF	& 0FFF	& FFFF	\\\hline
+		Parameter 1 	& 	1	&	2	&	3	&	F	\\\hline
+		Parameter 2 	&  		&  	 	&		&		\\\hline
+		Parameter 3 	&  		&  	 	&		&		\\\hline
+		Parameter 4   	&  		& 		&		&		\\\hline		
+		Parameter 5		&  		& 		&		&		\\\hline
+		Parameter 6		&  	 	& 		&		&		\\\hline
+		Parameter 7 	&  	 	& 		&		&		\\\hline		
+	\end{tabular}	
+	\caption{Datenpakete Deklaration}
+	\label{tab:Datenpakete_Deklaration}
+\end{table}
 
 \newpage
 

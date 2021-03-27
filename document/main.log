@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.21)  26 MAR 2021 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.21)  27 MAR 2021 13:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -993,6 +993,9 @@ File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `tab:Reaktions-Parameter' multiply defined.
 
+
+LaTeX Warning: Label `tab:Reaktions-Parameter' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1514,71 +1517,75 @@ nput line 315.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 340.
+nput line 341.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [21]
-Overfull \hbox (5.69252pt too wide) in paragraph at lines 367--374
+Overfull \hbox (5.69252pt too wide) in paragraph at lines 368--375
 [][] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 378.
+nput line 379.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 385--385
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 []|\T1/lmr/m/n/10 Accel Re-lea-se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
 []|\T1/lmr/m/n/10 Brake Re-lea-se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
 []|\T1/lmr/m/n/10 Neutral Ta-per
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
 []|\T1/lmr/m/n/10 Forward Full
  []
 
 
-Overfull \hbox (6.0339pt too wide) in paragraph at lines 382--393
+Overfull \hbox (6.0339pt too wide) in paragraph at lines 383--394
 [][] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 398.
+nput line 399.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [23]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 431.
+nput line 432.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [24]
+Overfull \hbox (13.58853pt too wide) in paragraph at lines 446--457
+[][] 
+ []
+
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 441.
+nput line 461.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [25]
+[25]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 469.
+nput line 489.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [26]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 495.
+nput line 515.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [27]) (content/ch_akku.tex
 Kapitel VII.
@@ -1700,16 +1707,16 @@ nput line 160.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9193196BD28A462A001CA29621AEA4F;12020.
+(rerunfilecheck)             Checksum: 8BD0A5BD5F3F36CDF4DECDC7B9BD844A;12020.
  ) 
 Here is how much of TeX's memory you used:
- 25100 strings out of 479290
- 454922 string characters out of 2849369
+ 25109 strings out of 479290
+ 455046 string characters out of 2849369
  924549 words of memory out of 3000000
- 41874 multiletter control sequences out of 15000+600000
+ 41882 multiletter control sequences out of 15000+600000
  461659 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,17n,89p,1589b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,17n,89p,2635b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-mathsy.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9
@@ -1726,9 +1733,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jakob Lackner/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jakob Lackner/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Jakob L
 ackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (50 pages, 2614569 bytes).
+Output written on main.pdf (50 pages, 2618243 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
  643 words of extra memory for PDF output out of 10000 (max. 10000000)
 

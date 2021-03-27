@@ -67,5 +67,5 @@
 \contentsline {chapter}{\numberline {D}Schaltpläne}{33}{appendix.D}%
 \contentsline {chapter}{Literaturverzeichnis}{33}{appendix.D}%
 \contentsline {chapter}{Abbildungsverzeichnis}{33}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{34}{appendix*.19}%
-\contentsline {chapter}{Codeverzeichnis}{35}{appendix*.20}%
+\contentsline {chapter}{Tabellenverzeichnis}{34}{appendix*.20}%
+\contentsline {chapter}{Codeverzeichnis}{35}{appendix*.21}%
