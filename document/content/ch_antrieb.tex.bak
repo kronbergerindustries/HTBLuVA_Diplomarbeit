@@ -334,9 +334,23 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Steuerung der Ein- und Ausgänge (I/O Assingment)}
+\subsubsection{Allgemeines}
+In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
 
 \subsubsection{Funktionen}
-\subsubsection{Zuweisung}
+Throttle
+Brake
+Battery Setup
+Main Contactor
+Pump Contactor
+EM Brake Control
+Emergency Reverse (EMR)
+Interlock Braking
+Dual Drive
+Vehicle und Supervision
+Current Limits
+
+
 
 \newpage
 
@@ -363,14 +377,18 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt:
 
 \vspace{5mm}
 
-\setlength{\tabcolsep}{9pt}
+
 \begin{table}[H]
 	\begin{tabular}{|lcp{8cm}|}\hline
-	\rowcolor[gray]{0.8}\textbf{Parameter} & \textbf{Einstellungsbereich} &\textbf{Beschreibung}\\[2pt]
-		Max Speed 	& 500-8000 U/min 	& Definiert die maximale Geschwindigkeit in U/min, welche mittels der Drehmomentsteuerung angesteuert werden kann. (Unabhängig von der Gasdrehgriff-Stellung)\\\hline
-		Kp 			& 0 – 100 \% 		& Legt fest, wie aggressiv der Drehzahlregler versucht, die Motordrehzahl auf die maximale Drehzahl zu begrenzen. Größere Werte sorgen für eine genauere Kontrolle, können jedoch zu Schwankungen führen. Bei einem zu niedrigen Kp kann die maximal Geschwindigkeit den Parameter Max Speed überschreiten.\\\hline
-		Ki 			& 5 – 100 \% 		& Mit diesem Parameter kann die Integralregelung genauer beschrieben werden, welche die Drehzahlbegrenzung unterschiedlich stark beeinflusst, abhängig von der aktuellen Regelabweichung. Größere Werte ermöglichen eine schnellere Regelung, können jedoch zu Schwankungen führen. Bei zu niedrigen Werten kann es lange dauern, bis sich der Motor bei einer Überdrehzahl dem Max Speed nähert. \\\hline
-		Kd    		& 0 – 100 \% 		& Beschreibt die Dämpfung, wenn sich das Fahrzeug der Höchstgeschwindigkeit nähert, dadurch werden Überschwingungen verringert. Bei einem zu hohen Kd kann es lange dauern, bis die Höchstgeschwindigkeit erreicht wird. Wenn Kd zu niedrig eingestellt ist, kann die Höchstgeschwindigkeit überschritten werden, insbesondere beim bergab Fahren. \\\hline		
+	\rowcolor[gray]{0.8}\textbf{Parameter} & \textbf{Einstellungsbereich} &\textbf{Beschreibung}\\[3pt]
+		Max Speed 	& 500-8000 U/min 	& Definiert die maximale Geschwindigkeit in U/min,\\
+		Max\_Speed\_TrqM & 500-8000 U 	& welche mittels der Drehmomentsteuerung\\&& angesteuert werden kann. (Unabhängig von der Gasdrehgriff-Stellung)\\\hline
+		Kp 			& 0 – 100 \% 		& Legt fest, wie aggressiv der Drehzahlregler versucht,\\
+		Kp\_TrqM	& 0 – 8192			& die Motordrehzahl auf die maximale Drehzahl zu begrenzen. Größere Werte sorgen für eine genauere Kontrolle, können jedoch zu Schwankungen führen. Bei einem zu niedrigen Kp kann die maximal\\&& Geschwindigkeit den Parameter Max Speed\\&& überschreiten.\\\hline
+		Ki 			& 5 – 100 \% 		& Mit diesem Parameter kann die Integralregelung\\
+		Ki\_TrqM	& 50 – 1000 		& genauer beschrieben werden, welche die Drehzahl-begrenzung unterschiedlich stark beeinflusst, abhängig von der aktuellen Regelabweichung. Größere Werte ermöglichen eine schnellere Regelung, können jedoch zu Schwankungen führen. Bei zu niedrigen Werten kann es lange dauern, bis sich der Motor bei einer Überdrehzahl dem Max Speed nähert. \\\hline
+		Kd    		& 0 – 100 \% 		& Beschreibt die Dämpfung, wenn sich das Fahrzeug\\
+		Kd\_TrqM	& 0 – 8192	 		& der Höchstgeschwindigkeit nähert, dadurch werden Überschwingungen verringert. Bei einem zu hohen Kd kann es lange dauern, bis die Höchstgeschwindigkeit erreicht wird. Wenn Kd zu niedrig eingestellt ist, kann die Höchstgeschwindigkeit überschritten\\&& werden, insbesondere beim bergab Fahren. \\\hline		
 	\end{tabular}	
 	\caption{Geschwindigkeitsbegrenzer-Parameter}
 	\label{tab:Geschwindigkeitsbegrenzer-Parameter}
@@ -378,18 +396,23 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt:
 
 \newpage
 
-\setlength{\tabcolsep}{6pt}
 \begin{table}[H]
-	\begin{tabular}{|p{2.5cm}cp{8cm}|}\hline
-	\rowcolor[gray]{0.8}\textbf{Parameter} & \textbf{Einstellungsbereich} &\textbf{Beschreibung}\\[2pt]
-		Accel Rate 						& 0.1 - 30.0 s 		& Legt fest, wie lange es dauert, bis das Motordrehmoment bei Vollgas auf das Maximum angestiegen ist. Größere Werte bedeuten eine langsamere Reaktion. \\\hline
-		Accel Release Rate				& 0.1 - 2.0 s 	 	&  Legt fest, wie schnell die Verzögerung des Fahrzeugs bei einem loslassen des Gasdrehgriffs eingeleitet wird. Bei einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, fährt das Fahrzeug für kurze Zeit weiter.\\\hline
-		Brake Rate 						& 0.1 - 5.0 s 	 	& Legt fest, wie lange es dauert, bis das Bremsmoment bei einem startenden Bremsvorgang oder einem Fahrtrichtungswechsel aufgebaut wird. Größere Werte bedeuten einen schonenderen Bremsvorgang. \\\hline
-		Brake Release Rate				& 0.1 - 2.0 s 	 	& Beschreibt, wie schnell sich das Bremsmoment löst, wenn das Fahrzeug vom Bremsvorgang zum Fahrbetrieb wechselt. Bei zu hohen Werten wird der Bremsvorgang noch kurzzeitig fortgeführt.  \\\hline
-		Neutral Braking    				& 0 – 100 \% 		& Der neutrale Bremsvorgang tritt auf, wenn der Gasdrehgriff losgelassn wird oder keine Fahrtrichtung gewählt wurde. Der neutrale Bremsparameter ist von 0 bis 100\% des maximalen Rekuperationsstromes einstellbar. \\\hline
-		Neutral Taper Speed    			& 200 - 6000 U/min 	& Legt die Motordrehzahl fest, an welcher der neutrale Bremsstrom rückgespeist wird, wenn der Gasdrehgriff losgelassen wird. Bei einem zu geringen Wert kann es zu Schwankungen kommen.\\\hline
-		Forward Full Restraint Speed	& 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest, an dem der volle Rekuperationsstrom rückgespeist wird, um das Vorwärtsrollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die Rückhaltestärke angesehen werden. Bei einem zu geringen Wert kann es zu Schwankungen kommen.  \\\hline
-		Back Full Restraint Speed    	& 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest, an dem der volle Rekuperationsstrom rückgespeist wird, um das Rückwärtsrollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die Rückhaltestärke angesehen werden. Bei einem zu geringen Wert kann es zu Schwankungen kommen. \\\hline		
+	\begin{tabular}{|lcp{6cm}|}\hline
+	\rowcolor[gray]{0.8}\textbf{Parameter} & \textbf{Einstellungsbereich} &\textbf{Beschreibung}\\[3pt]
+		Accel Rate 	& 0.1 - 30.0 s 		& Legt fest, wie lange es dauert, bis das\\
+		Accel\_Rate\_TrqM & 100 - 30000	& Motordrehmoment bei Vollgas auf das Maximum angestiegen ist. Größere Werte bedeuten eine langsamere\\&& Reaktion. \\\hline
+		Accel Release Rate	& 0.1 - 2.0 s 		& Legt fest, wie schnell die Verzögerung\\
+		Accel\_Release\_Rate\_TrqM & 100 - 2000 & des Fahrzeugs bei einem loslassen des Gasdrehgriffs eingeleitet wird. Bei\\&& einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, fährt das Fahrzeug für kurze Zeit weiter.\\\hline
+		Brake Rate 	& 0.1 - 5.0 s 		& Legt fest, wie lange es dauert, bis das\\
+		Brake\_Rate\_TrqM & 100 - 5000	& Bremsmoment bei einem startenden Bremsvorgang oder einem Fahrt-richtungswechsel aufgebaut wird. Größere Werte bedeuten einen\\&& schonenderen Bremsvorgang. \\\hline
+		Brake Release Rate	& 0.1 - 2.0 s 		& Beschreibt, wie schnell sich das Brems-\\
+		Brake\_Release\_Rate\_TrqM & 100 - 2000	& moment löst, wenn das Fahrzeug vom Bremsvorgang zum Fahrbetrieb\\&& wechselt. Bei zu hohen Werten wird der Bremsvorgang noch kurzzeitig\\&& fortgeführt.  \\\hline
+		Neutral Braking    & 0 – 100 \% 	& Der neutrale Bremsvorgang tritt auf,\\
+		Neutral\_Braking\_TrqM & 0 - 32767 	& wenn der Gasdrehgriff losgelassn wird oder keine Fahrtrichtung gewählt\\&& wurde. Der neutrale Bremsparameter ist von 0 bis 100\% des maximalen\\&& Rekuperationsstromes einstellbar. \\\hline
+		Neutral Taper Speed	& 200 - 6000 U/min 	 & Legt die Motordrehzahl fest, an welcher\\
+		Neutral\_Taper\_Speed\_TrqM & 200 - 6000 & der neutrale Bremsstrom rückgespeist wird, wenn der Gasdrehgriff losgelassen wird. Bei einem zu geringen Wert kann es zu Schwankungen kommen.\\\hline
+		Forward Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\   Forward\_Full\_Restraint\_Speed\_TrqM & 100 - 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Vorwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die              \\&&Rückhaltestärke angesehen werden. Bei einem zu geringen Wert kann es zu Schwankungen kommen.  \\\hline
+		Back Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\ 		Back\_Full\_Restraint\_Speed\_TrqM & 100 – 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Rückwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die 				\\&&Rückhaltestärke angesehen werden. Bei einem zu geringen Wert kann es zu Schwankungen kommen. \\\hline		
 	\end{tabular}	
 	\caption{Reaktions-Parameter}
 	\label{tab:Reaktions-Parameter}
@@ -467,6 +490,13 @@ Der gesamte VCL-Programmcode befindet sich im Anhang, auffällig ist hierbei unt
 
 \subsubsection{Speed-Mode-Select}
 Die Speed-Mode-Select Programmierung gehört eigentlich auch zum Punkt Drehmomentsteuerung, dieses Programm wurde aber ebenfalls in der Vehicle-Control-Language realisiert. Die zugehörigen Parmeter, welche ausschlaggebend für die Drehmomentsteuerung sind, wurden bereits genau erklärt. Grundsätzlich ist das VCL-Programm sehr einfach und kurz aufgebaut, die Parameter zur Drehmomentsteuerung werden abhängig von einem digitalen Eingang verändert. Der digitale Eingang wird mittels eines externen Schalters realisiert, dieser wurde auf der Lenkstange befestigt. Wenn der Schalter auf den ECO-Antriebsmodus geschalten wurde, werden die Parameter für den ECO-Antriebsmodus an den Drehmomentregler weitergegeben. Bei der Auswahl des Sport-Antriebsmodus werden die Parameter für den Sport-Antriebsmodus an den Regler weitergegeben. 
+
+\begin{figure}[H]
+	\begin{center}
+		%\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Versuchsaufbau.png}
+		\caption{Speed-Mode-Select}
+	\end{center}
+\end{figure}
 \newpage
 
 %% Inbetriebnahme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -45,8 +45,8 @@
 \contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{20}{subsubsection.6.2.3.10}%
 \contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{21}{section.6.3}%
 \contentsline {subsection}{\numberline {3.1}Steuerung der Ein- und Ausgänge (I/O Assingment)}{21}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Funktionen}{21}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Zuweisung}{21}{subsubsection.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{21}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{21}{subsubsection.6.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{22}{subsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Parameter}{22}{subsubsection.6.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Eco- und Sportmodus (Speed-Mode-Select)}{24}{subsubsection.6.3.2.2}%
@@ -69,5 +69,5 @@
 \contentsline {chapter}{\numberline {D}Schaltpläne}{34}{appendix.D}%
 \contentsline {chapter}{Literaturverzeichnis}{34}{appendix.D}%
 \contentsline {chapter}{Abbildungsverzeichnis}{34}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{35}{appendix*.20}%
-\contentsline {chapter}{Codeverzeichnis}{36}{appendix*.21}%
+\contentsline {chapter}{Tabellenverzeichnis}{35}{appendix*.21}%
+\contentsline {chapter}{Codeverzeichnis}{36}{appendix*.22}%
