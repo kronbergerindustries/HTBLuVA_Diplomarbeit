@@ -13,7 +13,8 @@
 \contentsline {subsection}{\numberline {1.1}Auswertung der Anrtiebswelle}{6}{subsection.3.1.1}%
 \contentsline {section}{\numberline {2}Curtis Controller}{6}{section.3.2}%
 \contentsline {subsection}{\numberline {2.1}Allgemeines}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {2.2}Feldorientierte Regelung}{6}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.2}VCL}{6}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.3}Feldorientierte Regelung}{6}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3}Leonard-Umformer}{6}{section.3.3}%
 \contentsline {subsection}{\numberline {3.1}Allgemeines}{6}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.2} }{6}{subsection.3.3.2}%
@@ -51,21 +52,22 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Eco- und Sportmodus (Speed-Mode-Select)}{24}{subsubsection.6.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{25}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{25}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{25}{subsubsection.6.3.3.2}%
-\contentsline {section}{\numberline {4}Inbetriebnahme}{26}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{26}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{27}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{28}{chapter.7}%
-\contentsline {section}{\numberline {1}Section}{28}{section.7.1}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{29}{chapter.8}%
-\contentsline {section}{\numberline {1}Section}{29}{section.8.1}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{30}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{30}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{30}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{31}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{32}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{33}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{33}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{33}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{34}{appendix*.20}%
-\contentsline {chapter}{Codeverzeichnis}{35}{appendix*.21}%
+\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{26}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{26}{subsubsection.6.3.3.3}%
+\contentsline {section}{\numberline {4}Inbetriebnahme}{27}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{27}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{28}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{29}{chapter.7}%
+\contentsline {section}{\numberline {1}Section}{29}{section.7.1}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{30}{chapter.8}%
+\contentsline {section}{\numberline {1}Section}{30}{section.8.1}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{31}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{31}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{31}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{32}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{33}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{34}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{34}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{34}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{35}{appendix*.20}%
+\contentsline {chapter}{Codeverzeichnis}{36}{appendix*.21}%
