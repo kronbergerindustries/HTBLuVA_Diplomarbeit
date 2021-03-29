@@ -1,4 +1,4 @@
-\import QtQuick 2.15
+import QtQuick 2.15
 import QtGraphicalEffects 1.15
 import QtQuick.Shapes 1.15
 
@@ -70,8 +70,4 @@ Item {
 
 }
 
-/*##^##
-Designer {
-    D{i:0;autoSize:true;formeditorColor:"#ffffff";height:250;width:250}
-}
-##^##*/
+

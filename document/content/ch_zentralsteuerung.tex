@@ -147,7 +147,7 @@ Eine Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Au
 
 Eine Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzeitig laufende Aufgabe} für das Programm zu öffnen, wodurch die Anwendung ohne Einflüsse oder Unterbrechungen anderer Programme weiter arbeiten kann. Der folgende Programmcode zeigt einen Ausschnitt der Klasse zum Steuern der GPIOs. 
 
-\begin{lstlisting}[language=Python, caption={Code Starten eines Threads},captionpos=b]
+\begin{lstlisting}[language=Python, caption={Code zum Starten eines Threads},captionpos=b]
 	
 	def start(self):
 		self.thread=Thread(target=self.runner)
@@ -156,7 +156,7 @@ Eine Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzei
 
 \end{lstlisting}
 
-In diesem Beispiel wird ein Demon Thread erzeugt und gestartet. Das beudetet dieser Thread wird beim schließen des Programmes automatisch mitgeschlossen und muss dadurch nicht mehr überwacht werden. Das Target ist die Funktion, welche unabhängig ausgeführt werden soll.
+In diesem Beispiel wird ein Demon Thread erzeugt und gestartet. Das beutetet dieser Thread wird beim schließen des Programms automatisch mit geschlossen und muss dadurch nicht mehr überwacht werden. Das Target ist die Funktion, welche unabhängig ausgeführt werden soll.
 
 \newpage
 
@@ -167,23 +167,22 @@ Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorr
 
 \subsection{Hardware}
 
-Zur Anzeige und Bedienung wird ein 11.6 Zoll kapazitives Touch LCD Display verwendet. Es besitzt eine Full HD Auflösung (1920x1080), was für eine professionelle Darstellung essentiell ist. Ebenso hat es ein schützendes ABS Gehäuse, welches trotz fehlender IPxx Zertifizierung das Abdichten ermöglicht. Die Versorgungsspannung beträgt 12V, was ident zu den anderen Komponenten am Motorrad ist und daher die Versorgung sehr vereinfacht, es kann also über den gleichen Spannungswandler versorgt werden.
+Zur Anzeige und Bedienung wird ein 11.6 Zoll kapazitives Touch LCD Display verwendet. Es besitzt eine Full HD Auflösung (1920x1080), was für eine professionelle Darstellung essentiell ist. Ebenso hat es ein schützendes ABS Gehäuse, welches trotz fehlender IP Zertifizierung das Abdichten ermöglicht. Die Versorgungsspannung beträgt 12V, was ident zu den anderen Komponenten am Motorrad ist und daher die Versorgung sehr vereinfacht, es kann also über den gleichen Spannungswandler versorgt werden.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.45]{figures/hcis/display_maße.png}
-		\caption{Touch Panel Maße}
+		\caption{Paneel Maße}
 		\label{fig:panel}
 	\end{center}
 \end{figure}
 
-Die Auflösung und die Größe des Touch Panels wirkt sich stark auf das Design der Benutzeroberfläche aus. Es muss die Größe der Icons und der anderen Designelemente so angepasst werden, dass sie einerseits gut ersichtlich und andererseits einfach über Touch zu bedienen sind.\\
-Touchdisplay
+Die Auflösung und die Größe des Paneels wirkt sich stark auf das Design der Benutzeroberfläche aus. Es muss die Größe der Icons und der anderen Designelemente so angepasst werden, dass sie einerseits gut ersichtlich und andererseits einfach über Berührung zu bedienen sind.\\
 
 \newpage
 
 \subsubsection{Befestigung}
-Besser: In das Gehäuse des Touchpanels sind M4 Verschraubungen in einem Raster von 75mmx75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
+Besser: In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -194,9 +193,9 @@ Besser: In das Gehäuse des Touchpanels sind M4 Verschraubungen in einem Raster 
 \end{figure}
 
 \subsection{Software}
-Bevor die Software für die Benutzeroberfläche verfasst wurde, mussten das Design, die Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Workflow beim Entwickeln des Front-Ends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt. In den folgenden Seiten wird das Ergebnis dieses Prozesses erläutert.
+Bevor die Software für die Benutzeroberfläche verfasst wurde, mussten das Design, die Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Arbeitsablauf beim Entwickeln des Frontends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt. In den folgenden Seiten wird das Ergebnis dieses Prozesses erläutert.
 \subsubsection{Aufbau}
-Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die einzelnen Fenster werden als Tabelle mit ihren angezeigten Informationen dargestellt. Dies is wichtig da jede dieser Informationen vom Back-End an das Front-End gesendet werden müssen.\\
+Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die einzelnen Fenster werden als Tabelle mit ihren angezeigten Informationen dargestellt. Dies is wichtig da jede dieser Informationen vom Backend an das Frontend gesendet werden müssen.\\
 Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente  zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen Phase der Entwicklung der Benutzeroberfläche definiert werden.
 
 \begin{figure}[H]
@@ -213,41 +212,41 @@ Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente  zur Navigation 
 
 \subsection{Komponenten}
 
-Komponenten sind wiederverwendbare, gekapselte QML-Elemente mit genau definierten Schnittstellen. Komponenten werden häufig durch Komponentendateien definiert, das heißt durch QML-Dateien. Wichtig ist dabei die Definierung von Schnittstellen sowie Properties und Signals .
+Komponenten sind wiederverwendbare, gekapselte QML-Elemente mit genau definierten Schnittstellen. Komponenten werden häufig durch Komponenten-Dateien definiert, das heißt durch QML-Dateien. Wichtig ist dabei die Definition von Schnittstellen sowie Properties und Signals .
 
 \textbf{Properties}\\
 \vspace{2mm}
 
 Einer Property eines Objektes kann ein statischer Wert zugewiesen werden, der konstant bleibt, bis ihm explizit ein neuer Wert zugewiesen wird. Um QML und seine integrierte Unterstützung für dynamisches Objektverhalten optimal zu nutzen, verwenden die meisten QML-Objekte jedoch Propertysbindings.\\
-Propertybindings sind eine Kernfunktion von QML, mit der Beziehungen zwischen verschiedenen Objekteigenschaften festgelegt werden können. Wenn sich die Abhängigkeiten einer Property im Wert ändern, wird die Eigenschaft automatisch gemäß der angegebenen Beziehung aktualisiert.\\
+Dies sind eine Kernfunktion von QML, mit der Beziehungen zwischen verschiedenen Objekteigenschaften festgelegt werden können. Wenn sich die Abhängigkeiten einer Property im Wert ändern, wird die Eigenschaft automatisch gemäß der angegebenen Beziehung aktualisiert.\\
 Hinter den Kulissen überwacht die QML-Engine die Abhängigkeiten der Eigenschaft. Wenn eine Änderung erkannt wird, wertet die QML-Engine den Bindungsausdruck erneut aus und wendet das neue Ergebnis auf die Eigenschaft an.
 
-\textbf{JavaScript-Funktionen}\\
+\textbf{Java-Script-Funktionen}\\
 \vspace{2mm}
 
-Programmlogik kann auch in JavaScript-Funktionen definiert werden. Diese können in QML-Dokumenten definiert und von Signalhandlern, Eigenschaftsbindungen oder Funktionen in anderen QML-Objekten aufgerufen werden. Solche Methoden werden häufig als Inline-JavaScript-Funktionen bezeichnet, da ihre Implementierung im QML-Dokument statt in einer externen JavaScript-Datei enthalten ist.
+Programmlogik kann auch in Java-Script-Funktionen definiert werden. Diese können in QML-Dokumenten definiert und von Signalhandlern, Eigenschaftsbindungen oder Funktionen in anderen QML-Objekten aufgerufen werden. Solche Methoden werden häufig als Inline-Java-Script-Funktionen bezeichnet, da ihre Implementierung im QML-Dokument statt in einer externen Java-Script-Datei enthalten ist.
 
-\subsubsection{Navigations Menü}
+\subsubsection{Navigationsmenü}
 
-Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen den verschiedenen Pages benützt wird. Sobald man sich eingeloggt hat wird das Menü angezeigt und die einzelnen Untermenüs können aufgerufen werden. Das Menü wird abhängig von den Berechtigungen des Benutzers angepasst.
+Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen den verschiedenen Fenstern benützt wird. Sobald man sich eingeloggt hat wird das Menü angezeigt und die einzelnen Untermenüs können aufgerufen werden. Das Menü wird abhängig von den Berechtigungen des Benutzers angepasst.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.2]{figures/hcis/component_menu.png}
-		\caption{GUI Komponente - Navigation Menu}
+		\caption{GUI Komponente - Navigation Menü}
 		\label{fig:kompNavigation}
 	\end{center}
 \end{figure}
 
 \textbf{Buttons} \\
 \vspace{2mm}
-Die Navigation wird über das QML-Element Mousearea, welche direkt über den Icons der einzelnen Navigationselemente platziert wurde, gesteuert. Nun kann mit dem Befehl onClicked eine Funktion aufgerufen werden, welche das gewünschte Fenster sichtbar macht, sowie das Navigations Menü wieder nach oben fahren lässt.\\
+Die Navigation wird über das QML-Element \textit{Mousearea}, welche direkt über den Icons der einzelnen Navigationselemente platziert wurde, gesteuert. Nun kann mit dem Befehl \textit{onClicked} eine Funktion aufgerufen werden, welche das gewünschte Fenster sichtbar macht, sowie das Navigationsmenü wieder nach oben fahren lässt.\\
 In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale Variable, welche beim Anmelden durch ein Signal gesetzt wird, abgefragt. Falls die Berechtigung die ausgewählte Funktion nicht zulässt wird ein Informationstext ausgegeben und das Menü wiederum geschlossen.\
 
-\textbf{Logout} \\
+\textbf{Abmelden} \\
 \vspace{2mm}
 
-Wird der Logout-Button gedrückt, werden die Anmelde-Informationen zurückgesetzt und dem Nutzer wird wieder das Login Fenster angezeigt, wo er sich nun mit anderen Anmelde-Informationen einloggen kann.
+Wird der Abmeldebutton gedrückt, werden die Anmeldeinformationen zurückgesetzt und dem Nutzer wird wieder das Anmeldefenster angezeigt, wo er sich nun mit anderen Anmelde-Informationen einloggen kann.
 
 \newpage
 
@@ -271,22 +270,27 @@ Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung
 	\end{center}
 \end{figure}
 
-Über ein \textit{Signal} kann nun über das Back-End der Wert des Balkens verändert werden und in Echtzeit angezeigt werden.
+Über ein \textit{Signal} kann nun über das Backend der Wert des Balkens verändert werden und in Echtzeit angezeigt werden.
 
 \subsubsection{Modus Anzeige}
+Diese Komponente befindet sich auf der Instrumenten Tafel. Der Modus kann über einen Button am Lenker, welcher mit der Curtis Steuerung verbunden ist, geändert werden. Sie dient zum Anzeigen der derzeitig gewählten Fahrmodi und wird über ein \textit{Signal} aus dem Backend gesteuert, welches mit der Listener Klasse verbunden ist.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{figures/hcis/component_mode.png}
+		\includegraphics[scale=0.4]{figures/hcis/component_mode.png}
 		\caption{GUI Komponente - Modus Anzeige}
 				\label{fig:kompModus}
 	\end{center}
 \end{figure}
 
+Die Modus Anzeige ist eine einfache Komponente. Sie ist ein Item QML-Typ, dadurch wird das Nutzen von \textit{States} möglich. Durch diese können verschiedene Eigenschaften gespeichert und über einen kurzen Befehl wiederhergestellt werden.\\
+In diesem Fall wird der Punkt ausgefüllt und die Farbe des Textes geändert.
 
 \newpage
 
-\subsubsection{Graph}
+\subsubsection{Graph} \label{sec:graph}
+
+Die Graph Komponente befindet sich auf dem Diagnose Fenster und dient zum Anzeigen der in der Datenbank gespeicherten Fahrdaten. Sie verfügt über einen Ladebalken, welcher nach dem Auswählen der anzuzeigenden Daten den Fortschritt des Auslesens der Datenbank anzeigt. Dieses Auslesen läuft über eine Funktion der Fetcher Klasse.
 
 \begin{figure}[H]
 	\begin{center}
@@ -296,77 +300,141 @@ Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung
 	\end{center}
 \end{figure}
 
+Realisiert wurde diese Komponente über öffentliche Bibliothek \textit{Charts.js} (Referenz), welche durch die Java Script Unterstützung von \textit{QT}, mit der Installation eines Adapters mit dem QML Programm kompatibel ist. Dadurch wird nun das Zeichnen von verschiedensten Graphen ermöglicht.
+
 \subsubsection{Weitere Komponenten}
 
+Wie schon bei der Fahr Modi Komponente, wurden weitere Objekte, welche zwischen zwei Zuständen hin und her gestalten werden müssen oder eine bestimmte Handlung ausführen sollten, über eine eigene QML Komponente verwirklicht. Diese Ermöglicht nun wiederum das wiederholte verwenden dieser Komponente, sowie das Ansteuern über \textit{States} und \textit{Signale}.\\
+Diese Komponenten sind:
 
-\newpage  
+\textbf{Umschaltkomponenten}\\
+Dies sind Komponenten, welche über ein \textit{Signal} angesteuert werden und dann mithilfe von \textit{States} ihr Aussehen verändern.
 
-\subsection{Program Fenster}
+\begin{itemize}
+	
+	\item Blinker Rechts
+	\item Blinker Links
+	\item Tagfahrlicht
+	\item Fernlicht
+	
+\end{itemize}
+
+\textbf{Touch Komponenten}\\
+Dies sind Komponenten, welche eine \textit{Mousearea} mit einer Graphik verbindet. Wird diese Komponente nun mit einem Mausklick ausgewählt, kann eine Funktion ausgeführt oder ein \textit{Signal} ausgesendet werden.
+
+\begin{itemize}
+	
+	\item Abmeldebutton
+	\item Navigationsmenübuttons
+	\item Menü-Öffnen-Button
+	
+\end{itemize}
+
+\newpage
+
+\subsection{Programm Fenster}
 
 \subsubsection{Login}
 
+Das Login Fenster dient zur Autorisierung des Benutzers. Über die User \textit{Kombobox} kann der gewünschte Nutzer mit der dazugehörigen Berechtigung ausgewählt werden (siehe Abschnitt ). Das Fenster dient ebenso zur Darstellung der Logos unserer Sponsoren\\
+
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.24]{figures/hcis/window_login.png}
-			\caption{GUI Fenster - Login Menu}
+		\includegraphics[scale=0.25]{figures/hcis/window_login.png}
+			\caption{GUI Fenster - Login Menü}
 			\label{fig:pageMenu}
 	\end{center}
 \end{figure}
 
-\subsubsection{Fahrdaten}
+ Um sich einzuloggen muss nur mehr das Passwort im \textit{Textfeld} darunter eingegeben werden. Nach dem Drücken des Login Pfeiles (Neben dem Passwort Textfeld) werden die Login Daten an das Backend versendet. Diese vergleicht die Daten über die Datenbankschnittstelle\footnote{siehe Abschnitt} und loggt, insofern das richtige Passwort gegeben ist, den Benutzer ein. Wird jedoch das Passwort falsch eingegeben, wird eine rote Fehlermeldung angezeigt.\\
+ 
+\subsubsection{Fahrdaten}		
+
+Dieses Fenster dient als Ersatz für die Instrumententafel des Motorrades. Es ist daher das einzige während der Fahrt ersichtliche Fenster. Es Zeigt alle wichtigen Fahrdaten wie Leistung, Geschwindigkeit und Akkuladestand, sowie den Aktuellen Fahrmodus an. Diese Anzeige kann jedem Nutzer, unabhängig der Berechtigung, angezeigt werden.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
+		\includegraphics[scale=0.25]{figures/hcis/window_dashboard.png}
 			\caption{GUI Fenster - Fahrdaten}
 			\label{fig:pageDash}
 	\end{center}
 \end{figure}
 
+Der Status der Blinker und der Beleuchtung wird ebenso wie die Temperaturen der verschiedenen Komponenten des Motorrades angezeigt. Derzeit ist diese Ansicht starr und kann noch nicht geändert werden. Doch es ist geplant in Zukunft weitere Designs, welche in den Einstellungen geändert werden können, zu implementieren.
+
 \newpage
 
 \subsubsection{Akku- und Ladedaten}
 
+Dieses Fenster dient Ähnlich wie das der Fahrdaten zur Darstellung wichtiger Daten. Es können alle wichtigen Daten bezüglich Akku und BMS auf einem Blick abgelesen werden. 
+
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
+		\includegraphics[scale=0.25]{figures/hcis/window_battery.png}
 			\caption{GUI Fenster - Akkudaten}
 			\label{fig:pageAkku}
 	\end{center}
 \end{figure}
 
+Dieses Fenster wird Standardmäßig während dem Laden des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden.
+
 \subsubsection{Fahrdaten Diagnose}
 
+Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorsteuerung versendet und vom Raspberry Pi verarbeitet und in einer Datenbank gespeichert werden, in Graphen angezeigt werden. Hierzu wird die \textit{Graph Komponente} \footnote{siehe Abschnitt \ref{sec:graph}} verwendet.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
+		\includegraphics[scale=0.25]{figures/hcis/window_diagnosis.png}
 			\caption{GUI Fenster - Fahrdaten Diagnose}
 			\label{fig:pageDiagnose}
 	\end{center}
 \end{figure}
 
-\subsubsection{Errors}
+ Diese wird, um während der Fahrt die volle Prozessorleistung zu gewährleisten, erst auf Knopfdruck geladen. In der Menüleiste am unteren Ende des Fensters können verschiedene Vorlagen ausgewählt werden, welche über fixe Datensätze verfügen. Das bedeutet es werden erst beim Auswählen des anzuzeigenden Datensatzes die Daten der letzten Stunde ausgelesen und in den Graphen geladen.
+
+
+\newpage
+
+\subsubsection{Fehler}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.24]{figures/hcis/window_dashboard.png}
-			\caption{GUI Fenster - Error List}
+		\includegraphics[scale=0.25]{figures/hcis/window_error.png}
+			\caption{GUI Fenster - Fehler Liste}
 			\label{fig:pageError}
 	\end{center}
 \end{figure}
 
+
+
+
+\subsubsection{Nutzer und Berechtigungen}
+
+Um sicherzustellen das das Nutzen der Benutzeroberfläche nicht für jeden uneingeschränkt möglich ist wurde ein Anmeldesystem mit drei verschiedenen Benutzern, welche jeweils verschiedene Berechtigungen besitzen, umgesetzt.
+
+{\small \textbf{ADMIN}}\\
+Passwort: 53AC2\\
+
+Der ADMIN Benutzer verfügt über uneingeschränkte rechte und kann auf jede Verfügbare Funktion sowie Funktionen, welche noch in Entwicklung sind zugreifen.
+
+\textbf{USER}\\
+Passwort: 5AHET\\
+
+\textbf{GUEST}\\
+Passwort: 00000\\
+
+
 \newpage
 
-\subsection{Realisierung der Benutzeroberfäche}
+\subsection{Realisierung der Benutzeroberfächer}
 
 \subsubsection{QML} \label{sec:qml}
-QML \footnote{Qt Modeling Language} ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für JavaScript-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
+QML \footnote{Qt Modeling Language} ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für Java-Script-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
 
 \subsubsection{Qt-Quick}
-Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Back-End Bibliotheken verbunden werden.
+Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Backend Bibliotheken verbunden werden.
 
 \subsubsection{Slots und Signals} \label{sec:slots}
-Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Front-End und Back-End verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
+Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Frontend und Backend verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
 
 \begin{figure}[H]
 \begin{center}
@@ -376,15 +444,17 @@ Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen F
 \end{figure}
 
 \textbf{Signale}\\ \medskip
-Diese können als Mitteilungen angesehen werden, welche über das Aufrufen der signal.emit Funktion vom Back-End an das Front-End gesendet wird. Im Front-End wird wiederum eine eigens definierte Funktion benötigt um dem Wert einem Property eines QML Elements zuzuweisen.
+Diese können als Mitteilungen angesehen werden, welche über das Aufrufen der \textit{signal.emit()} Funktion vom Backend an das Frontend gesendet wird. Im Frontend wird wiederum eine eigens definierte Funktion benötigt um dem Wert einem Property eines QML Elements zuzuweisen.
 \medskip
 
 \textbf{Slots}\\ \medskip
-Slots sind Call-Back Funktionen, welche im Back-End definiert werden und sind über die Bridge Class mit dem Front-End verknüpft. Dadurch können diese Funktionen im Front-End aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar.
+Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind über die Bridge Klasse mit dem Frontend verknüpft. Dadurch können diese Funktionen im Frontend aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar.
 
 \newpage
 	
 \subsubsection{Bridge}
+
+Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des Backends mit denen der graphischen Benutzeroberfläche. 
 
 \newpage
 
@@ -406,14 +476,18 @@ Die Kommunikation wird über zwei Komponenten ermöglicht. Einen MCP2562 Transce
 
 \subsubsection{Netzwerkstruktur}
 
-Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wir haben uns bewusst für die Bustopologie entschieden, da Sterntopologien nur in bestimmten Anwendungen Gebrauch finden und noch dazu markante Nachteile besitzt.\\ Es müsste zum Beispiel eine zentrale Steuereinheit den Nachrichtenverkehr steuern, ebenso gibt uns die niedrige Anzahl an Teilnehmern im Netzwerk nicht einmal die Möglichkeit ein anderes System zu verwenden. Erst wenn wir in Zukunft das CAN-Netwerk um Sensoren und Aktoren erweitern würden, müsste weitere Zeit in die Planung des Netzwerks investiert werden. 
+Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wir haben uns bewusst für die Bustopologie entschieden, da Sterntopologien nur in bestimmten Anwendungen Gebrauch finden und noch dazu markante Nachteile besitzt.\\ Es müsste zum Beispiel eine zentrale Steuereinheit den Nachrichtenverkehr steuern, ebenso gibt uns die niedrige Anzahl an Teilnehmern im Netzwerk nicht einmal die Möglichkeit ein anderes System zu verwenden. Erst wenn wir in Zukunft das CAN-Netzwerk um Sensoren und Aktoren erweitern würden, müsste weitere Zeit in die Planung des Netzwerks investiert werden. 
 
 \newpage
 
 \subsection{Listener}
 
-Die Listener Class ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Front-End (Bridge) weiterzugeben.
-\subsubsection{Receive Data}
+Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Frontend (Bridge) weiterzugeben.
+
+\subsubsection{Konfigurieren der Schnittstelle}
+
+
+\subsubsection{Empfangen der Daten}
 
 \newpage
 

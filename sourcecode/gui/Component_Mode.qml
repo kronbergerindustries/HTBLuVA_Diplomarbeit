@@ -92,6 +92,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorColor:"#4c4e50";formeditorZoom:1.75;height:400;width:400}
+    D{i:0;autoSize:true;formeditorColor:"#000000";height:400;width:400}
 }
 ##^##*/

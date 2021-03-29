@@ -52,7 +52,7 @@ Item {
                     x: 200
                     y: 0
                     color: "#ffffff"
-                    text: qsTr("ERROR")
+                    text: qsTr("FEHLER Nr.")
                     anchors.fill: parent
                     font.pixelSize: 30
                     horizontalAlignment: Text.AlignHCenter
@@ -104,7 +104,7 @@ Item {
                     x: 13
                     y: 27
                     color: "#ffffff"
-                    text: qsTr("DESCRIPTION")
+                    text: qsTr("BESCHREIBUNG")
                     anchors.fill: parent
                     font.pixelSize: 30
                     horizontalAlignment: Text.AlignHCenter
