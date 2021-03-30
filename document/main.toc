@@ -65,26 +65,27 @@
 \contentsline {subsubsection}{\numberline {5.2.2}Empfangen der Daten}{24}{subsubsection.5.5.2.2}%
 \contentsline {section}{\numberline {6}Fahrdatenspeicher}{25}{section.5.6}%
 \contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{25}{subsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Login System}{25}{subsubsection.5.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Benutzer System}{25}{subsubsection.5.6.1.1}%
 \contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{25}{subsubsection.5.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{25}{subsubsection.5.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Handler}{25}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}SELECT Befehl}{25}{subsubsection.5.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}INSERT Befehl}{25}{subsubsection.5.6.2.2}%
-\contentsline {chapter}{\numberline {VI}Antriebsstrang}{26}{chapter.6}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{27}{chapter.7}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{28}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{29}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{29}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{29}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmcode}{30}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{31}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{32}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Datenblätter}{33}{appendix.E}%
-\contentsline {subsection}{\numberline {0.1}Mean Well RSD-30H-5}{34}{subsection.E.0.1}%
-\contentsline {subsection}{\numberline {0.2}Mean Well SD-350C-12}{44}{subsection.E.0.2}%
-\contentsline {subsection}{\numberline {0.3}Raspberry Pi 4 Moddel B}{47}{subsection.E.0.3}%
-\contentsline {chapter}{Literaturverzeichnis}{60}{subsection.E.0.3}%
-\contentsline {chapter}{Abbildungsverzeichnis}{60}{subsection.E.0.3}%
-\contentsline {chapter}{Tabellenverzeichnis}{60}{appendix*.21}%
-\contentsline {chapter}{Codeverzeichnis}{61}{appendix*.22}%
+\contentsline {subsubsection}{\numberline {6.1.3}Akku Daten}{27}{subsubsection.5.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Handler}{27}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Konfigurieren der Schnittstelle}{27}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}SELECT Befehl}{27}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}INSERT Befehl}{27}{subsubsection.5.6.2.3}%
+\contentsline {chapter}{\numberline {VI}Antriebsstrang}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{30}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{31}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{31}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{31}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmcode}{32}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{33}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{34}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Datenblätter}{35}{appendix.E}%
+\contentsline {subsection}{\numberline {0.1}Mean Well RSD-30H-5}{36}{subsection.E.0.1}%
+\contentsline {subsection}{\numberline {0.2}Mean Well SD-350C-12}{46}{subsection.E.0.2}%
+\contentsline {subsection}{\numberline {0.3}Raspberry Pi 4 Moddel B}{49}{subsection.E.0.3}%
+\contentsline {chapter}{Literaturverzeichnis}{62}{subsection.E.0.3}%
+\contentsline {chapter}{Abbildungsverzeichnis}{62}{subsection.E.0.3}%
+\contentsline {chapter}{Tabellenverzeichnis}{62}{appendix*.27}%
+\contentsline {chapter}{Codeverzeichnis}{63}{appendix*.28}%

@@ -108,7 +108,7 @@ Item {
                 width: 120
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: qtLogo.right
-                source: "Pictures/logo_mysql.png"
+                source: "figures/logos/logo_mysql.png"
                 anchors.leftMargin: 60
                 fillMode: Image.PreserveAspectFit
             }

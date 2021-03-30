@@ -5,24 +5,34 @@
 \chapter{Human-Computer Interaction System}
 
 \section{Übersicht}
+
 Das Human-Computer Interaction System ist, wie der Name schon sagt, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten elektrischen System dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein. Ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User anzeigen können.\\
 Wichtig ist das System, trotz der großen Komplexität, so intuitiv und nutzerfreundlich wie möglich zu gestalten.
 
 \subsection{Grundfunktionen des Systems}
+
 Die geplanten Funktionen des HCIS \footnote{Abkurzümg: Human-Computer Interaction System} lassen sich grob in vier Grundfunktionen einteilen.
+
 \begin{itemize}
+
 	\item \textbf{Steuerung der Peripherie} \medskip\\
 	Die Schalter und Buttons am Lenker, welche zuvor über den Kabelbaum die Leuchten, Blinker und die Hupe gesteuert haben, werden nun über die General-purpose input/output (GPIO) des Raspberry Pi Mikrocomputers gesteuert.
+
 	\item \textbf{Graphische Benutzeroberfläche}\medskip\\
 Dient der Anzeige wichtiger Fahr- und Ladedaten, welche entweder in Echtzeit oder über die Datenbankschnittstelle abgerufen und graphisch angezeigt werden können.
+
 	\item \textbf{Kommunikation mit den Steuereinheiten des Motorrades} \medskip\\
 	Über CAN-Bus werden Daten von dem Batterie Management Systems (BMS) und der Curtis Motorsteuerung empfangen und an die Benutzeroberfläche zur Anzeige und an die Datenbankschnittstelle zur Langzeitsicherung der Fahrdaten weiter gegeben.
+
 	\item \textbf{Speichern der relevanten Fahrdaten über die Datenbankschnittstelle} \medskip\\
 Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittstelle (Handler) weitergegeben um die Daten für Datenauswertung und Testberichte zu speichern. Ebenso bezieht das Diagnosesystem der Benutzeroberfläche die Daten über diese Schnittstelle.
+
 \end{itemize}
+
 \newpage
 
 \subsection{Steuereinheit}
+
 Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi.
 
 \begin{figure}[H]
@@ -33,14 +43,20 @@ Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunkt
 \end{figure}
 
 \subsection{Grundaufbau des Systems}
+
 In der Abbildung \ref{fig:aufbauHCIS} wird der Grundaufbau des Systems und die Datenverbindungen der folgenden  Komponenten veranschaulicht.
 
 \begin{itemize}
+	
 	\item Raspberry Pi - Die Steuereinheit des Systems.
 	\\ Kommuniziert über CAN-Bus mit den anderen Steuerkomponenten des Motorrades.
+	
 	\item User Input - Die vorhandenen Schalter am Lenker des Motorrads werden direkt mit den Eingängen des Raspberry Pis verbunden. 
+	
 	\item Peripherie - Die Grundkomponenten des Motorrades wie Scheinwerfer oder Hupe. Diese werden über Relais, welche an die Ausgänge des Raspberry Pis angeschlossen sind, gesteuert.
+	
 	\item Dashboard - Der Bildschirm zur Anzeige der verarbeiteten Informationen. Dieser wird über HDMI und USB mit dem Raspberry Pi verbunden.
+	
 \end{itemize}
 
 \begin{figure}[H]
@@ -61,29 +77,34 @@ Nicht in der Abbildung dargestellt ist die Versorgung der einzelnen Komponenten,
 \section{Spannungsversorgung}
 
 \subsection{Aufbau des Versorgungssystems} \label{sec:aufbauversorgung}
+
 Das Versorgungssystem des Motorrades besteht aus zwei Spannungsebenen: Einer 12V Ebene zur Versorgung der Peripherie des Motorrades und einer 5V Ebene, welche nur den Raspberry Pi und seine Komponenten beinhaltet. Diese Ebenen werden durch DC-DC Wandler erzeugt, welche direkt an den Akku des Motorrades angeschlossen werden. \\
+
 Wichtig hierbei ist, dass alle ausgewählten Spannungswandler über einen Kurzschluss- und Überstrom-Schutz verfügen. Dies macht es uns möglich diese Versorgungssysteme, solange die Drähte auch nach dem maximalen Strom der Spannungswandler dimensioniert wurden, ohne jegliche Leitungs- und Überstrom-Schutzorgane aufzubauen. Die Spannungswandler schalten bei jeglichen Fehlern ab und verbrennen die überschüssige Leistung über einen eingebauten Widerstand. Sobald der Fehler behoben wurde, schalten sich die Spannungswandler automatisch wieder ein.
+
 \subsubsection{12V Versorgungsysstem}
+
 Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, welche über die 12V versorgt werden sollten, zusammengefasst werden, um die mindestens benötigte Leistung des Spannungswandlers zu errechnen. 
+
 \begin{table}[H]
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Bauteilbezeichnung}     & \textbf{Spannung} & \textbf{Leistung} \\ \hline
-Tagfahrlicht           & 12V      & 10W      \\ \hline
-Abblendlicht           & 12V      & 10W      \\ \hline
-Aufblendlicht          & 12V      & 20W      \\ \hline
-Hupe                   & 12V      & 10W      \\ \hline
-Rücklicht              & 12V      & 21W      \\ \hline
-Kennzeichenbeleuchtung & 12V      & 5W       \\ \hline
-Blinker links          & 12V      & 2 x 10W  \\ \hline
-Blinker rechts         & 12V      & 2 x 10W  \\ \hline
-Bildschirm             & 12V      & 12W      \\ \hline
-\textbf{Gesamt}                 & \textbf{12V}      & \textbf{128W}     \\ \hline
-\end{tabular}
-\caption{Berechnung der Leistung des 12V-Systems}
-\label{tab:leistung12V}
-\end{center}
+	\begin{center}
+		\begin{tabular}{|l|c|c|}
+			\hline
+			\textbf{Bauteilbezeichnung}     & \textbf{Spannung} & \textbf{Leistung} \\ \hline
+			Tagfahrlicht           & 12V      & 10W      \\ \hline
+			Abblendlicht           & 12V      & 10W      \\ \hline
+			Aufblendlicht          & 12V      & 20W      \\ \hline
+			Hupe                   & 12V      & 10W      \\ \hline
+			Rücklicht              & 12V      & 21W      \\ \hline
+			Kennzeichenbeleuchtung & 12V      & 5W       \\ \hline
+			Blinker links          & 12V      & 2 x 10W  \\ \hline
+			Blinker rechts         & 12V      & 2 x 10W  \\ \hline
+			Bildschirm             & 12V      & 12W      \\ \hline
+			\textbf{Gesamt}                 & \textbf{12V}      & \textbf{128W}     \\ \hline
+		\end{tabular}
+			\caption{Berechnung der Leistung des 12V-Systems}
+			\label{tab:leistung12V}
+	\end{center}
 \end{table}
 
 Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: siehe Anhang \ref{app:mw12}} entschieden. 
@@ -93,6 +114,7 @@ Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auft
 Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl. Daher haben wir uns für einen 48V-5V, 30 Watt DC-DC Wandler von Meanwell \footnote{Datenblatt: siehe Anhang \ref{app:mw5}} entschieden.
 
 \subsubsection{Abschalten der Spannungswandler}
+
 Das Abschalten der Spannungswandler ist nicht notwendig, da diese - wie schon in Abschnitt \ref{sec:aufbauversorgung} erklärt - bei einem anliegenden Fehler automatisch abschalten.
 Ebenso wird beim Abschalten des Motorrades über die BMS jegliches andere Bauteil von der Spannungsversorgung getrennt. Was die Spannungswandler vom Entladen des Akkus abhält.  
 
@@ -103,6 +125,8 @@ Ebenso wird beim Abschalten des Motorrades über die BMS jegliches andere Bautei
 \section{Steuerung der Peripherie}
 
 Die Grundfunktionen wie Beleuchtung, Hupe und Blinker werden hier als Peripherie bezeichnet. Diese sollten so einfach wie möglich und vom Lenker aus zu bedienen sein. Ebenso müssen sie verlässlich gesteuert werden können. Daher haben wir uns entschieden diese Funktionen ebenso über den Raspberry Pi zu steuern, da dieser bei einem Fehler der Motorsteuerung über den eingebauten Puffer gespeist werden kann und daher diese wichtigen Funktionen bis zu einem sicheren Stillstand weiter betrieben und gesteuert werden können.\\
+
+
 Dennoch ist in der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Eingängen zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode ist die Schaffung einer Zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
 
 \subsection{Hardware}
@@ -120,12 +144,17 @@ Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Ein
 \end{figure}
 
 \textbf{Pullup Widerstand}\\
-Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann High. Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Massepotential am Eingang an..\\\medskip
+
+Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann High. Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Massepotential am Eingang an.\\\medskip
+
 \textbf{Pulldown Widerstand}\\
+
 Bei dem Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann Low. Mit einem Schalter oder Taster wird der Eingang dann gegen VCC gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Versorgunspotential am Eingang an.
 
 \subsubsection{Output}
+
 Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eingängen eines 4 Channel Relais Moduls, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun Möglich die 12V der Perpherie zu schalten und 
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{figures/hcis/4ch_relai.png}
@@ -404,23 +433,17 @@ Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorste
 	\end{center}
 \end{figure}
 
-
-
-
 \subsubsection{Nutzer und Berechtigungen}
 
 Um sicherzustellen das das Nutzen der Benutzeroberfläche nicht für jeden uneingeschränkt möglich ist wurde ein Anmeldesystem mit drei verschiedenen Benutzern, welche jeweils verschiedene Berechtigungen besitzen, umgesetzt.
 
-{\small \textbf{ADMIN}}\\
-Passwort: 53AC2\\
+{\small \textbf{ADMIN}} - Passwort: 53AC2\\
 
-Der ADMIN Benutzer verfügt über uneingeschränkte rechte und kann auf jede Verfügbare Funktion sowie Funktionen, welche noch in Entwicklung sind zugreifen.
+Dieser Benutzer verfügt über uneingeschränkte rechte und kann auf jede Verfügbare Funktion sowie Funktionen, welche noch in Entwicklung sind zugreifen.
 
-\textbf{USER}\\
-Passwort: 5AHET\\
+{\small \textbf{USER}} - Passwort: 5AHET\\
 
-\textbf{GUEST}\\
-Passwort: 00000\\
+{\small \textbf{GUEST}} - Passwort: 00000\\
 
 
 \newpage
@@ -437,10 +460,10 @@ Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen.
 Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Frontend und Backend verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
 
 \begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.4]{figures/hcis/signals_slots.png}
-\caption{Slots und Signals Konzept}
-\end{center}
+	\begin{center}
+		\includegraphics[scale=0.4]{figures/hcis/signals_slots.png}
+		\caption{Slots und Signals Konzept}
+	\end{center}
 \end{figure}
 
 \textbf{Signale}\\ \medskip
@@ -456,15 +479,27 @@ Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind üb
 
 Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des Backends mit denen der graphischen Benutzeroberfläche. 
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=1]{figures/hcis/bridge.png}
+		\caption{Verbindung Frontend zu Backend}
+	\end{center}
+\end{figure}
+
 \newpage
 
 %% Kommunikation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kommunikation}
+
 Um Daten zwischen den mehreren Steuereinheiten des Motorrades zu versenden, muss eine Echtzeit-Kommunikation über ein Bussystem gewährleistet werden. Die Entscheidung ist auf das Controller Area Network Bussystem (CAN-Bus) gefallen. Ausschlaggebend für diese Entscheidung war der Curtis Motorcontroller, dieser verfügt über eine serielle Schnittstelle (RS-232) sowie ein CAN-System. Für unserer Anwendung bietet das CAN-System eine größere Ausbaufähigkeit sowie größere Übertragungsraten, weshalb wir uns letztendlich auch dafür entschieden haben.
+
 \subsection{Hardware}
+
 \subsubsection{CAN-Modul}
+
 Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Anschluss an die Busleitung über ein externes CAN-Modul, welches über das Serial Peripheral Interface (SPI) mit dem Raspberry Pi kommuniziert, welches wie folgt angeschlossen werden muss: 
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.9]{figures/hcis/can_module.png}
@@ -485,7 +520,15 @@ Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wi
 Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Frontend (Bridge) weiterzugeben.
 
 \subsubsection{Konfigurieren der Schnittstelle}
-
+	
+\begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters},captionpos=b]
+	
+	def start(self):
+	self.thread=Thread(target=self.runner)
+	self.thread.daemon=True
+	self.thread.start()
+	
+\end{lstlisting}
 
 \subsubsection{Empfangen der Daten}
 
@@ -494,12 +537,169 @@ Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen
 %% Fahrdatenspeicher %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Fahrdatenspeicher}
+
+Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine Diagnose des gesamten Aufbaus zu gewährleisten. Dafür wird eine Datenbank verwendet, nämlich die weit verbreitete Software mySQL verwendet.
+
 \subsection{Datenbankstruktur}
-\subsubsection{Login System}
+
+\subsubsection{Benutzer System}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{users}}                          \\ \hline
+		\textbf{Attribut} & \textbf{Datentyp} & \textbf{Beschreibung} \\ \hline
+		id                & int               & Identifikationsnummer \\ \hline
+		username          & varchar(50)       & Name des Benutzers    \\ \hline
+		password          & varchar(255)      & Eingegebenes Passwort \\ \hline
+		\end{tabular}
+		\caption{Datenbankstruktur der Benutzer Tabelle}
+		\label{tab:logindata}
+	\end{center}
+\end{table}
+
 \subsubsection{Motor Daten}
+
+\textbf{Datenpacket 1}
+ 
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{data1}} \\ \hline
+			\textbf{Attribut} & \textbf{Datentyp} & \textbf{Beschreibung}            \\ \hline
+			id                & int               & Identifikationsnummer            \\ \hline
+			date\_time        & datetime          & Datum der Erstellung             \\ \hline
+			vehicle\_speed    & int               & Geschwindigkeit des Motorrades   \\ \hline
+			current\_rms      & int               & Ausgangsstrom der Motorsteuerung \\ \hline
+			controller\_temp  & int               & Temperatur des Kontrollers       \\ \hline
+			motor\_temp       & int               & Temperatur des Motors            \\ \hline
+			motor\_torque     & int               & Drehmoment am Motor              \\ \hline
+			modulation\_depth & int               & Modulationsgrad des Kontrollers  \\ \hline
+		\end{tabular}
+			\caption{Datenbankstruktur der Datenpaket 1 Tabelle}
+			\label{tab:data1}
+	\end{center}
+\end{table}
+
+\newpage
+
+\textbf{Datenpacket 2}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{data2}} \\ \hline
+			\textbf{Attribut}  & \textbf{Datentyp} & \textbf{Beschreibung}               \\ \hline
+			id                 & int               & Identifikationsnummer               \\ \hline
+			id\_data\_1        & int               & Fremdschlüssel von Datenpacket 1    \\ \hline
+			date\_time         & datetime          & Datum der Erstellung                \\ \hline
+			vehicle\_speed     & int               & Geschwindigkeit des Motorrades      \\ \hline
+			capacitator\_volts & int               & Eingangsspannung der Motorsteuerung \\ \hline
+			bdi\_percentage    & int               &                                     \\ \hline
+			interlock          & int               &                                     \\ \hline
+			throttle\_command  & int               & Stellung des Gasgriffes             \\ \hline
+			brake\_command     & int               & Stellung der Motorbremse (software) \\ \hline
+			emr\_state         & int               &                                     \\ \hline
+		\end{tabular}
+			\caption{Datenbankstruktur der Datenpaket 2 Tabelle}
+			\label{tab:data2}
+	\end{center}
+\end{table}
+
+\textbf{Datenpacket 3}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{data3}} \\ \hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
+			id                          & int               & Identifikationsnummer                     \\ \hline
+			id\_data\_2                 & int               & Fremdschlüssel von Datenpacket 2          \\ \hline
+			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
+			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
+			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
+			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
+			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
+			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
+			braking\_distance\_captured & int               & Zeit von Bremsbegin bis zu Stillstand     \\ \hline
+			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+		\end{tabular}
+		\caption{Datenbankstruktur der Datenpaket 3 Tabelle}
+		\label{tab:data3}
+	\end{center}
+\end{table}
+
+\newpage
+
+\textbf{Datenpacket 4 - Fehler}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{data4}} \\ \hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
+			id                          & int               & Identifikationsnummer                     \\ \hline
+			id\_data\_2                 & int               & Fremdschlüssel von Datenpacket 2          \\ \hline
+			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
+			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
+			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
+			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
+			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
+			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
+			braking\_distance\_captured & int               & Zeit von Bremsbeginn bis zu Stillstand     \\ \hline
+			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+		\end{tabular}
+		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
+		\label{tab:data4}
+	\end{center}
+\end{table}
+
 \subsubsection{Akku Daten}
+
 \subsection{Handler}
+
+Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und dem Programm herzustellen. Dazu verwendet sie die mySQL connector Bibliothek. Mit dieser können SQL Skripte direkt in die Python Klasse integriert werden ohne dass externe SQL Skript Dateien geöffnet werden müssen. 
+
+\subsubsection{Konfigurieren der Schnittstelle}
+
+\begin{lstlisting}[language=Python, caption={Konfiguration der Datenbankschnittstelle},captionpos=b]
+	
+	# Database credentials
+	dbhost = "localhost"
+	dbuser = "root"
+	dbpass = "8Yf!97mmnZbvYJe"
+	dbname = "login_data"
+	
+	# Connection to the database
+	con = mysql.connector.connect(host=dbhost, user=dbuser, password=dbpass, database=dbname)
+	
+	# Creating cursor for database queries
+	cursor = con.cursor()
+	
+\end{lstlisting}
+
+
 \subsubsection{SELECT Befehl}
+
 \subsubsection{INSERT Befehl}
+
+Dieser Befehl kann in zwei Bereiche unterteilt werden. In der ersten Zeile wird die
+Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. Ebenso unterstützt MySQL als Wert die Funktion \textit{NOW()}, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut.
+
+\begin{lstlisting}[language=SQL, caption={Konfiguration der Datenbankschnittstelle},captionpos=b]
+	
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (1, 'USER', '5AHET');
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (2, 'GUEST', '00000');
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (3, 'ADMIN', '53AC2');
+	
+\end{lstlisting}
 
 \newpage

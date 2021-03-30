@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  29 MAR 2021 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  30 MAR 2021 20:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -1137,7 +1137,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=360, 700.86844pt x 225.09094pt
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=364, 700.86844pt x 225.09094pt
 >
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1207,12 +1207,12 @@ nput line 45.
  [12
 
 ]
-Overfull \hbox (2.7354pt too wide) detected at line 75
+Overfull \hbox (2.7354pt too wide) detected at line 76
 \T1/lmr/bx/n/10 VII 
  []
 
 
-Overfull \hbox (7.41582pt too wide) detected at line 76
+Overfull \hbox (7.41582pt too wide) detected at line 77
 \T1/lmr/bx/n/10 VIII 
  []
 
@@ -1233,25 +1233,25 @@ been already used, duplicate ignored
 l.1  \chapter
              {Einführung} [1]
 Kapitel I.
-<figures/allgemein/portrait_Kronberger.jpg, id=521, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Kronberger.jpg, id=526, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Kronberger.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kronberger.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kronberger.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 115.23404pt x 172.72142pt.
-<figures/allgemein/portrait_Lackner.jpg, id=522, 334.97145pt x 502.2765pt>
+<figures/allgemein/portrait_Lackner.jpg, id=527, 334.97145pt x 502.2765pt>
 File: figures/allgemein/portrait_Lackner.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Lackner.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Lackner.jpg  used on input 
 line 14.
 (pdftex.def)             Requested size: 115.23404pt x 172.78741pt.
-<figures/allgemein/portrait_Kern.jpg, id=523, 334.851pt x 501.91515pt>
+<figures/allgemein/portrait_Kern.jpg, id=528, 334.851pt x 501.91515pt>
 File: figures/allgemein/portrait_Kern.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kern.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kern.jpg  used on input lin
 e 22.
 (pdftex.def)             Requested size: 115.23404pt x 172.72437pt.
-<figures/allgemein/portrait_Schmeisser.jpg, id=524, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Schmeisser.jpg, id=529, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Schmeisser.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Schmeisser.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Schmeisser.jpg  used on inp
@@ -1323,234 +1323,262 @@ nput line 5.
 ]
 Kapitel V.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 14.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 23.
+nput line 32.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [8
 
 ]
-<figures/hcis/raspberryPi.png, id=559, 3011.25pt x 1934.22626pt>
+<figures/hcis/raspberryPi.png, id=564, 3011.25pt x 1934.22626pt>
 File: figures/hcis/raspberryPi.png Graphic file (type png)
 <use figures/hcis/raspberryPi.png>
-Package pdftex.def Info: figures/hcis/raspberryPi.png  used on input line 30.
+Package pdftex.def Info: figures/hcis/raspberryPi.png  used on input line 40.
 (pdftex.def)             Requested size: 240.90492pt x 154.74126pt.
-<figures/hcis/HCIS_Grundfunktion.png, id=561, 460.72125pt x 302.12875pt>
+<figures/hcis/HCIS_Grundfunktion.png, id=566, 460.72125pt x 302.12875pt>
 File: figures/hcis/HCIS_Grundfunktion.png Graphic file (type png)
 <use figures/hcis/HCIS_Grundfunktion.png>
 Package pdftex.def Info: figures/hcis/HCIS_Grundfunktion.png  used on input lin
-e 48.
+e 64.
 (pdftex.def)             Requested size: 230.36006pt x 151.064pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 56.
+nput line 72.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [9 <./figures/hcis/raspberryPi.png> <./figures/hcis/HCIS_Grundfunktion.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 99.
+nput line 121.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [10]
-<figures/hcis/input.png, id=583, 358.33875pt x 285.065pt>
+<figures/hcis/input.png, id=588, 358.33875pt x 285.065pt>
 File: figures/hcis/input.png Graphic file (type png)
 <use figures/hcis/input.png>
-Package pdftex.def Info: figures/hcis/input.png  used on input line 116.
+Package pdftex.def Info: figures/hcis/input.png  used on input line 140.
 (pdftex.def)             Requested size: 286.67139pt x 228.0523pt.
-<figures/hcis/4ch_relai.png, id=584, 385.44pt x 248.39467pt>
-File: figures/hcis/4ch_relai.png Graphic file (type png)
-<use figures/hcis/4ch_relai.png>
-Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 131.
-(pdftex.def)             Requested size: 269.80615pt x 173.87508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 135.
+nput line 157.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11 <./figures/hcis/input.png>]
+<figures/hcis/4ch_relai.png, id=596, 385.44pt x 248.39467pt>
+File: figures/hcis/4ch_relai.png Graphic file (type png)
+<use figures/hcis/4ch_relai.png>
+Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 160.
+(pdftex.def)             Requested size: 269.80615pt x 173.87508pt.
+
 (C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 150.
+nput line 179.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 161.
+nput line 190.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [12 <./figures/hcis/4ch_relai.png>]
-<figures/hcis/display_maße.png, id=608, 803.0pt x 803.0pt>
+<figures/hcis/display_maße.png, id=613, 803.0pt x 803.0pt>
 File: figures/hcis/display_maße.png Graphic file (type png)
 <use figures/hcis/display_maße.png>
-Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 174
+Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 203
 .
 (pdftex.def)             Requested size: 361.34666pt x 361.34666pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 182.
+nput line 211.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [13 <./figures/hcis/display_maße.png>]
-<figures/hcis/befestigung_display.png, id=615, 1190.4475pt x 1190.4475pt>
+<figures/hcis/befestigung_display.png, id=620, 1190.4475pt x 1190.4475pt>
 File: figures/hcis/befestigung_display.png Graphic file (type png)
 <use figures/hcis/befestigung_display.png>
 Package pdftex.def Info: figures/hcis/befestigung_display.png  used on input li
-ne 189.
+ne 218.
 (pdftex.def)             Requested size: 214.2713pt x 214.2713pt.
-<figures/hcis/gui_aufbau.png, id=616, 1045.9075pt x 313.17pt>
+<figures/hcis/gui_aufbau.png, id=621, 1045.9075pt x 313.17pt>
 File: figures/hcis/gui_aufbau.png Graphic file (type png)
 <use figures/hcis/gui_aufbau.png>
-Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 203.
+Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 232.
 (pdftex.def)             Requested size: 418.35559pt x 125.26576pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 209.
+nput line 238.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [14 <./figures/hcis/befestigung_display.png> <./figures/hcis/gui_aufbau.png>]
-<figures/hcis/component_menu.png, id=625, 1927.2pt x 233.87375pt>
+<figures/hcis/component_menu.png, id=630, 1927.2pt x 233.87375pt>
 File: figures/hcis/component_menu.png Graphic file (type png)
 <use figures/hcis/component_menu.png>
-Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 23
-5.
+Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 26
+4.
 (pdftex.def)             Requested size: 385.43318pt x 46.77391pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 251.
+nput line 280.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [15 <./figures/hcis/component_menu.png>]
-<figures/hcis/component_bar.png, id=633, 322.20375pt x 261.97874pt>
+<figures/hcis/component_bar.png, id=638, 322.20375pt x 261.97874pt>
 File: figures/hcis/component_bar.png Graphic file (type png)
 <use figures/hcis/component_bar.png>
-Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 267
+Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 296
 .
 (pdftex.def)             Requested size: 161.10147pt x 130.98904pt.
-<figures/hcis/component_mode.png, id=634, 933.4875pt x 333.245pt>
+<figures/hcis/component_mode.png, id=639, 933.4875pt x 333.245pt>
 File: figures/hcis/component_mode.png Graphic file (type png)
 <use figures/hcis/component_mode.png>
-Package pdftex.def Info: figures/hcis/component_mode.png  used on input line 28
-0.
+Package pdftex.def Info: figures/hcis/component_mode.png  used on input line 30
+9.
 (pdftex.def)             Requested size: 373.38838pt x 133.29562pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 289.
+nput line 318.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [16 <./figures/hcis/component_bar.png> <./figures/hcis/component_mode.png>]
-<figures/hcis/component_graph.png, id=643, 1448.41125pt x 716.6775pt>
+<figures/hcis/component_graph.png, id=648, 1448.41125pt x 716.6775pt>
 File: figures/hcis/component_graph.png Graphic file (type png)
 <use figures/hcis/component_graph.png>
-Package pdftex.def Info: figures/hcis/component_graph.png  used on input line 2
-97.
+Package pdftex.def Info: figures/hcis/component_graph.png  used on input line 3
+26.
 (pdftex.def)             Requested size: 434.52673pt x 215.00491pt.
 
-Overfull \hbox (7.7354pt too wide) in paragraph at lines 297--298
+Overfull \hbox (7.7354pt too wide) in paragraph at lines 326--327
  [] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 333.
+nput line 362.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [17 <./figures/hcis/component_graph.png>]
-<figures/hcis/window_login.png, id=651, 1087.06125pt x 612.78937pt>
+<figures/hcis/window_login.png, id=656, 1087.06125pt x 612.78937pt>
 File: figures/hcis/window_login.png Graphic file (type png)
 <use figures/hcis/window_login.png>
-Package pdftex.def Info: figures/hcis/window_login.png  used on input line 343.
+Package pdftex.def Info: figures/hcis/window_login.png  used on input line 372.
 
 (pdftex.def)             Requested size: 271.76465pt x 153.19696pt.
-<figures/hcis/window_dashboard.png, id=653, 1084.05pt x 609.77812pt>
+<figures/hcis/window_dashboard.png, id=658, 1084.05pt x 609.77812pt>
 File: figures/hcis/window_dashboard.png Graphic file (type png)
 <use figures/hcis/window_dashboard.png>
 Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-357.
+386.
 (pdftex.def)             Requested size: 271.01184pt x 152.44415pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 365.
+nput line 394.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [18 <./figures/hcis/window_login.png> <./figures/hcis/window_dashboard.png>]
-<figures/hcis/window_battery.png, id=663, 956.82469pt x 539.76656pt>
+<figures/hcis/window_battery.png, id=668, 956.82469pt x 539.76656pt>
 File: figures/hcis/window_battery.png Graphic file (type png)
 <use figures/hcis/window_battery.png>
-Package pdftex.def Info: figures/hcis/window_battery.png  used on input line 37
-3.
+Package pdftex.def Info: figures/hcis/window_battery.png  used on input line 40
+2.
 (pdftex.def)             Requested size: 239.20558pt x 134.9413pt.
-<figures/hcis/window_diagnosis.png, id=666, 956.82469pt x 540.51938pt>
+<figures/hcis/window_diagnosis.png, id=671, 956.82469pt x 540.51938pt>
 File: figures/hcis/window_diagnosis.png Graphic file (type png)
 <use figures/hcis/window_diagnosis.png>
 Package pdftex.def Info: figures/hcis/window_diagnosis.png  used on input line 
-386.
+415.
 (pdftex.def)             Requested size: 239.20558pt x 135.1295pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 395.
+nput line 424.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [19 <./figures/hcis/window_battery.png> <./figures/hcis/window_diagnosis.png>]
-<figures/hcis/window_error.png, id=676, 1086.30844pt x 611.28375pt>
+<figures/hcis/window_error.png, id=681, 1086.30844pt x 611.28375pt>
 File: figures/hcis/window_error.png Graphic file (type png)
 <use figures/hcis/window_error.png>
-Package pdftex.def Info: figures/hcis/window_error.png  used on input line 401.
+Package pdftex.def Info: figures/hcis/window_error.png  used on input line 430.
 
 (pdftex.def)             Requested size: 271.57645pt x 152.82056pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 426.
+nput line 449.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [20 <./figures/hcis/window_error.png>]
-<figures/hcis/signals_slots.png, id=684, 663.47874pt x 484.81125pt>
+<figures/hcis/signals_slots.png, id=689, 663.47874pt x 484.81125pt>
 File: figures/hcis/signals_slots.png Graphic file (type png)
 <use figures/hcis/signals_slots.png>
-Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 441
+Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 464
 .
 (pdftex.def)             Requested size: 265.3868pt x 193.92105pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 453.
+nput line 476.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [21 <./figures/hcis/signals_slots.png>]
+<figures/hcis/bridge.png, id=697, 432.61626pt x 181.67876pt>
+File: figures/hcis/bridge.png Graphic file (type png)
+<use figures/hcis/bridge.png>
+Package pdftex.def Info: figures/hcis/bridge.png  used on input line 484.
+(pdftex.def)             Requested size: 432.6152pt x 181.6783pt.
+
+Overfull \hbox (5.82387pt too wide) in paragraph at lines 484--485
+ [] 
+ []
+
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 459.
+nput line 489.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [22]
-<figures/hcis/can_module.png, id=696, 413.545pt x 249.733pt>
+[22 <./figures/hcis/bridge.png>]
+<figures/hcis/can_module.png, id=704, 413.545pt x 249.733pt>
 File: figures/hcis/can_module.png Graphic file (type png)
 <use figures/hcis/can_module.png>
-Package pdftex.def Info: figures/hcis/can_module.png  used on input line 470.
+Package pdftex.def Info: figures/hcis/can_module.png  used on input line 505.
 (pdftex.def)             Requested size: 372.18704pt x 224.75761pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 481.
+nput line 516.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [23 <./figures/hcis/can_module.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 492.
+nput line 535.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [24]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 505.
+nput line 586.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [25]) (content/ch_antrieb.tex
+
+[25]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 636.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [26]
+(C:\Users\marti\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 702.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+
+[27]) (content/ch_antrieb.tex
 Kapitel VI.
 ) (content/ch_akku.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1558,7 +1586,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [26
+ [28
 
 ]
 Kapitel VII.
@@ -1568,7 +1596,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [27
+ [29
 
 ]
 Kapitel VIII.
@@ -1578,7 +1606,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 2.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [28
+ [30
 
 ]
 Anhang A.
@@ -1587,7 +1615,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 8.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[29
+[31
 
 ]
 Anhang B.
@@ -1596,7 +1624,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[30
+[32
 
 ]
 Anhang C.
@@ -1605,7 +1633,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 12.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[31
+[33
 
 ]
 Anhang D.
@@ -1614,11 +1642,11 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 14.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[32
+[34
 
 ]
 Anhang E.
-<pdf/meanwell5.pdf, id=741, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=786, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 16.
@@ -1627,7 +1655,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 16.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell5.pdf, id=744, page=1, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=789, page=1, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell5.pdf , page1 used on input line 16.
@@ -1641,7 +1669,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 16.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[33
+[35
 
 ]
 File: pdf/meanwell5.pdf Graphic file (type pdf)
@@ -1666,7 +1694,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell5.pdf , page1 used on input line 16.
 (pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
-[34 <./pdf/meanwell5.pdf>]
+[36 <./pdf/meanwell5.pdf>]
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 17.
@@ -1675,7 +1703,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 17.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell5.pdf, id=792, page=2, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=838, page=2, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 2>
 Package pdftex.def Info: pdf/meanwell5.pdf , page2 used on input line 17.
@@ -1700,54 +1728,16 @@ nput line 17.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 2>
 Package pdftex.def Info: pdf/meanwell5.pdf , page2 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [35 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=803, page=3, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 17.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [36 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=808, page=4, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 17.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [37 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=819, page=5, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=848, page=3, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1755,18 +1745,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 17.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [38 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=827, page=6, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=853, page=4, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1774,18 +1764,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 17.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [39 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=832, page=7, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=864, page=5, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1793,18 +1783,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 17.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [40 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=839, page=8, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=872, page=6, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1812,18 +1802,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 17.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [41 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=845, page=9, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=878, page=7, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1831,11 +1821,49 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 17.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [42 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=850, page=10, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=885, page=8, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 17.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [43 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=890, page=9, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 17.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 17.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [44 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=895, page=10, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 10>
 Package pdftex.def Info: pdf/meanwell5.pdf , page10 used on input line 17.
@@ -1853,8 +1881,8 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 10>
 Package pdftex.def Info: pdf/meanwell5.pdf , page10 used on input line 17.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [43 <./pdf/meanwell5.pdf>]
-<pdf/meanwell12.pdf, id=855, 597.45204pt x 845.1575pt>
+ [45 <./pdf/meanwell5.pdf>]
+<pdf/meanwell12.pdf, id=900, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 20.
@@ -1863,7 +1891,7 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell12.pdf, id=858, page=1, 597.45204pt x 845.1575pt>
+<pdf/meanwell12.pdf, id=903, page=1, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell12.pdf , page1 used on input line 20.
@@ -1889,62 +1917,62 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell12.pdf , page1 used on input line 20.
 (pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
- [44 <./pdf/meanwell12.pdf>]
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf>
-Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 21.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf>
-Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 21.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell12.pdf, id=898, page=2, 597.45204pt x 845.1575pt>
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 2>
-Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 2>
-Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 2>
-Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 2>
-Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 21.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 2>
-Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [45 <./pdf/meanwell12.pdf>]
-<pdf/meanwell12.pdf, id=903, page=3, 597.45204pt x 845.1575pt>
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 21.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell12.pdf Graphic file (type pdf)
-<use pdf/meanwell12.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [46 <./pdf/meanwell12.pdf>]
-<pdf/raspberry.pdf, id=910, 597.50829pt x 845.0471pt>
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf>
+Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 21.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf>
+Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 21.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+<pdf/meanwell12.pdf, id=943, page=2, 597.45204pt x 845.1575pt>
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 2>
+Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 2>
+Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 2>
+Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 2>
+Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 21.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 2>
+Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [47 <./pdf/meanwell12.pdf>]
+<pdf/meanwell12.pdf, id=949, page=3, 597.45204pt x 845.1575pt>
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 21.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell12.pdf Graphic file (type pdf)
+<use pdf/meanwell12.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 21.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [48 <./pdf/meanwell12.pdf>]
+<pdf/raspberry.pdf, id=956, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf>
 Package pdftex.def Info: pdf/raspberry.pdf  used on input line 23.
@@ -1953,7 +1981,7 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf>
 Package pdftex.def Info: pdf/raspberry.pdf  used on input line 23.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<pdf/raspberry.pdf, id=913, page=1, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=959, page=1, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 1>
 Package pdftex.def Info: pdf/raspberry.pdf , page1 used on input line 23.
@@ -1979,69 +2007,31 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 1>
 Package pdftex.def Info: pdf/raspberry.pdf , page1 used on input line 23.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [47 <./pdf/raspberry.pdf>]
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf>
-Package pdftex.def Info: pdf/raspberry.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf>
-Package pdftex.def Info: pdf/raspberry.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<pdf/raspberry.pdf, id=930, page=2, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 24.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [48 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=945, page=3, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 24.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [49 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=950, page=4, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
+<use pdf/raspberry.pdf>
+Package pdftex.def Info: pdf/raspberry.pdf  used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf>
+Package pdftex.def Info: pdf/raspberry.pdf  used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<pdf/raspberry.pdf, id=975, page=2, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2049,18 +2039,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [50 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=955, page=5, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=990, page=3, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2068,18 +2058,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [51 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=960, page=6, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=995, page=4, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2087,18 +2077,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [52 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=965, page=7, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1000, page=5, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2106,18 +2096,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [53 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=976, page=8, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1006, page=6, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2125,18 +2115,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [54 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=983, page=9, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1011, page=7, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 9>
-Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 9>
-Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2144,18 +2134,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 9>
-Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [55 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=1022, page=10, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1021, page=8, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 10>
-Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 10>
-Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2163,18 +2153,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 10>
-Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [56 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=1028, page=11, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1028, page=9, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 11>
-Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+<use pdf/raspberry.pdf, page 9>
+Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 11>
-Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+<use pdf/raspberry.pdf, page 9>
+Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2182,18 +2172,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 11>
-Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+<use pdf/raspberry.pdf, page 9>
+Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [57 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=1033, page=12, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1067, page=10, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 12>
-Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+<use pdf/raspberry.pdf, page 10>
+Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 12>
-Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+<use pdf/raspberry.pdf, page 10>
+Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -2201,11 +2191,49 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 12>
-Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+<use pdf/raspberry.pdf, page 10>
+Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [58 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=1038, page=13, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=1073, page=11, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 11>
+Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 11>
+Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 24.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 11>
+Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [59 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=1079, page=12, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 12>
+Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 12>
+Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 24.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 12>
+Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 24.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [60 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=1084, page=13, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 13>
 Package pdftex.def Info: pdf/raspberry.pdf , page13 used on input line 24.
@@ -2223,7 +2251,7 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 13>
 Package pdftex.def Info: pdf/raspberry.pdf , page13 used on input line 24.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [59 <./pdf/raspberry.pdf>])
+ [61 <./pdf/raspberry.pdf>])
 (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
@@ -2233,7 +2261,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 152.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [60
+ [62
 
 ] (main.lot)
 \tf@lot=\write7
@@ -2244,7 +2272,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 157.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [61
+ [63
 
 ] (main.lol)
 \tf@lol=\write8
@@ -2255,20 +2283,20 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 159.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [62
+ [64
 
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C7E96368CB38D87D8FB551DE977E7356;12079.
+(rerunfilecheck)             Checksum: 8F70AC93E20F9273DD49BF0EF8D8C24E;12327.
  ) 
 Here is how much of TeX's memory you used:
- 26799 strings out of 479324
- 477562 string characters out of 2856815
- 1046886 words of memory out of 3000000
- 43430 multiletter control sequences out of 15000+600000
+ 27074 strings out of 479324
+ 480981 string characters out of 2856815
+ 1139215 words of memory out of 3000000
+ 43669 multiletter control sequences out of 15000+600000
  479068 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,18n,89p,771b,1289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,18n,89p,771b,1367s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/marti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
@@ -2290,9 +2318,9 @@ ype1/public/lm/lmri10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/urw/courier/ucrr8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmb8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (76 pages, 6292217 bytes).
+Output written on main.pdf (78 pages, 6322370 bytes).
 PDF statistics:
- 1165 PDF objects out of 1200 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 1045 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1228 PDF objects out of 1440 (max. 8388607)
+ 230 named destinations out of 1000 (max. 500000)
+ 1058 words of extra memory for PDF output out of 10000 (max. 10000000)
 

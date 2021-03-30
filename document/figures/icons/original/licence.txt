@@ -18,3 +18,10 @@ Battery by Eucalyp from the Noun Project
 dash by LAFS from the Noun Project
 input password by pictohaven from the Noun Project
 lampshade by Pham Duy Phuong Hung from the Noun Project
+
+Code:
+
+EXE File by Atif Arshad from the Noun Project
+PY File by Atif Arshad from the Noun Project
+Coding file by Atif Arshad from the Noun Project
+SQL File by Atif Arshad from the Noun Project
