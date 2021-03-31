@@ -425,6 +425,8 @@ Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorste
 
 \subsubsection{Fehler}
 
+Sobald ein Fehlerdatenpaket über den CAN-Bus versendet wird, gibt der Listener Klasse die Fehlercodes an die Bridge Klasse weiter, um sie in diesem Fenster anzuzeigen. In einer \textit{Listview} werden nun die Aktiven Fehler angezeigt. Solange Fehler anliegen werden diese angezeigt und erst sobald die zuvor angezeigten Fehler nicht mehr anliegen werden diese aus der Liste gelöscht.
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.25]{figures/hcis/window_error.png}
@@ -433,18 +435,24 @@ Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorste
 	\end{center}
 \end{figure}
 
+Der Name und die Beschreibung der Fehler, wird über eine Fehlertabelle\footnote{siehe Abschnitt } in der Datenbank ausgelesen. Diese werden während dem Testen des Motorrades gesammelt und häufig auftretende Fehler werden in diese Tabelle eingetragen. 
+
 \subsubsection{Nutzer und Berechtigungen}
 
 Um sicherzustellen das das Nutzen der Benutzeroberfläche nicht für jeden uneingeschränkt möglich ist wurde ein Anmeldesystem mit drei verschiedenen Benutzern, welche jeweils verschiedene Berechtigungen besitzen, umgesetzt.
 
-{\small \textbf{ADMIN}} - Passwort: 53AC2\\
+{\small \textbf{ADMIN}} - Passwort: 53AC2\\ \vspace{2mm}
 
-Dieser Benutzer verfügt über uneingeschränkte rechte und kann auf jede Verfügbare Funktion sowie Funktionen, welche noch in Entwicklung sind zugreifen.
 
-{\small \textbf{USER}} - Passwort: 5AHET\\
+Dieser Benutzer verfügt über uneingeschränkte Rechte und kann auf jede verfügbare Funktion sowie Funktionen, welche noch in Entwicklung sind zugreifen.
 
-{\small \textbf{GUEST}} - Passwort: 00000\\
+{\small \textbf{USER}} - Passwort: 5AHET\\ \vspace{2mm}
 
+Dieser Benutzer verfügt über wenig eingeschränkte Rechte. Er kann auf jede fertig entwickelte Funktion zugreifen kann jedoch keine Änderungen an der Benutzeroberfläche vornehmen und hat ebenso keinen Zugriff auf experimentelle Funktionen.
+
+{\small \textbf{GUEST}} - Passwort: 00000\\ \vspace{2mm}
+
+Dieser Benutzer verfügt nur über sehr eingeschränkte Rechte. Er wird zum Präsentieren der Maschine benützt und lässt den unerfahrenen Nutzer nur auf die Fahrdaten und Akku- und Ladedaten zugreifen. Ebenso sollte in Zukunft die Leistung des Motorrades beim einloggen dieses Benutzers stark eingeschränkt werden, um Unfälle zu verhindern.
 
 \newpage
 
@@ -583,6 +591,11 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 	\end{center}
 \end{table}
 
+id und enabled sind nicht signiert, wobei id der Prim¨arschl ¨ ussel mit Auto-Inkrement ist.
+step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
+sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
+tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
+
 \newpage
 
 \textbf{Datenpacket 2}
@@ -644,7 +657,7 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 			\multicolumn{3}{|c|}{\textbf{data4}} \\ \hline
 			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
 			id                          & int               & Identifikationsnummer                     \\ \hline
-			id\_data\_2                 & int               & Fremdschlüssel von Datenpacket 2          \\ \hline
+			id\_data\_3                 & int               & Fremdschlüssel von Datenpacket 3          \\ \hline
 			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
 			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
 			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
@@ -659,7 +672,13 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 	\end{center}
 \end{table}
 
+\subsubsection{Fehler Tabelle}
+
+Diese Tabelle ist ebenso in der Datenbank gespeichert. Sie beinhaltet die Fehlercodes der Motorsteuerung mit weiteren Informationen wie Name und Beschreibung. Sie muss per Hand angelegt werden und sollte während dem Testen der Maschine mit dokumentiert, um sie dann in das Fehler Fenster der Benutzeroberfläche zu implementieren.
+
 \subsubsection{Akku Daten}
+
+Da die Kommunikation der BMS noch nicht umgesetzt wurde, werden von Ihr keine Daten auf den CAN-Bus gelegt und daher muss auch keine Tabelle dafür erstellt werden. Somit werden alle Daten über Akku und Ladestand über die Motorsteuerung empfangen.
 
 \subsection{Handler}
 
@@ -683,23 +702,46 @@ Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und de
 	
 \end{lstlisting}
 
+\newpage
 
 \subsubsection{SELECT Befehl}
 
-\subsubsection{INSERT Befehl}
-
-Dieser Befehl kann in zwei Bereiche unterteilt werden. In der ersten Zeile wird die
-Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. Ebenso unterstützt MySQL als Wert die Funktion \textit{NOW()}, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut.
+Der SELECT Befehl wird zum Abrufen von Daten einer Tabelle verwendet und besitzt mehrere Parameter.
 
 \begin{lstlisting}[language=SQL, caption={Konfiguration der Datenbankschnittstelle},captionpos=b]
 	
 	INSERT INTO `users` (`id`, `username`, `password`)
 	VALUES (1, 'USER', '5AHET');
+	
 	INSERT INTO `users` (`id`, `username`, `password`)
 	VALUES (2, 'GUEST', '00000');
+	
 	INSERT INTO `users` (`id`, `username`, `password`)
 	VALUES (3, 'ADMIN', '53AC2');
 	
 \end{lstlisting}
+
+Der Befehl kann in drei Bereiche unterteilt werden. In der ersten Zeile werden die
+Attribute, die von der Tabelle Tutorials ausgegeben werden sollen, definiert. Da sich diese jedoch nicht in Tutorials befinden, werden im mittleren Abschnitt alle Tabellen durch den Befehl JOIN anhand der Fremdschlüssel verbunden. Die anzuzeigenden Ergebnisse werden durch den \textit{WHERE} Befehl gefiltert werden. Dieser Befehl zeigt die Attribute id, step id sowie detection aller Tutorials vom Programm mit dem Namen Windows Settings an.
+
+\subsubsection{INSERT Befehl}
+
+Der INSERT Befehl wird zum Schreiben von Daten in eine Tabelle verwendet.
+
+\begin{lstlisting}[language=SQL, caption={Einfügen der Benutzer und Passwörter über den},captionpos=b]
+	
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (1, 'USER', '5AHET');
+	
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (2, 'GUEST', '00000');
+	
+	INSERT INTO `users` (`id`, `username`, `password`)
+	VALUES (3, 'ADMIN', '53AC2');
+	
+\end{lstlisting}
+
+Dieser Befehl kann in zwei Teile unterteilt werden. In der ersten Zeile wird die
+Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. Ebenso unterstützt MySQL als Wert die Funktion \textit{NOW()}, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut.
 
 \newpage
