@@ -8,7 +8,7 @@ Die Hauptaufgabe des Antriebssystems ist die Umwandlung der, vom Akkumulator zur
 
 
 \subsection{Grundfunktionen des Systems}
-Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunktionen einteilen:
+Die geplanten Aufgaben des Antriebssystems lassen sich grob in zwei Grundfunktionen einteilen:
 
 \begin{itemize}
 	\item \textbf{Der Antrieb} 
@@ -17,8 +17,8 @@ Die geplanten Funktionen des Antriebssystems lassen sich grob in zwei Grundfunkt
 	\\ das gesamte System eine Beschleunigung in Fahrtrichtung.
 	\medskip
 	\item \textbf{Die Steuereinheit}
-	\\ \medskip Steuerung und Kommunikation mit anderen Betriebsmitteln.
-	\\ Realisiert durch In- und Outputs, Datenübetragung mithilfe des CAN-Buses. 
+	\\ \medskip Steuerung und Kommunikation mit anderen Betriebsmitteln,
+	\\ realisiert durch In- und Outputs, Datenübetragung mithilfe des CAN-Buses. 
 \end{itemize}
 
 \vspace{5mm}
@@ -31,7 +31,7 @@ Um auf die einzelnen Details des Antriebssystems besser eingehen zu können, unt
 
 %% Hardwareaufbau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hardwareaufbau des Antriebssystems}
-Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galvanisch getrennte Stromkreise und der mechanischen Umsetzung unterscheiden:
+Der grundsätzliche Hardwareaufbau des Antriebssystems lässt sich in zwei galvanisch getrennte Stromkreise und die mechanische Umsetzung unterscheiden:
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Mechanische Umsetzung (Kraftübertragung und Montage)} 
@@ -60,7 +60,7 @@ Die Fertigung des Getriebes und die Montage der einzelnen Betriebsmittel wurde v
 
 %% Der Laststromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Laststromkreis}
-Der Laststromkreis beinhaltet allen leistungsführenden Betriebsmitteln des Antriebssystems. Hierbei unterscheiden wir zwischen den zwei wichtigsten Grundfunktionen:
+Der Laststromkreis beinhaltet alle leistungsführenden Betriebsmittel des Antriebssystems. Hierbei unterscheiden wir zwischen den zwei wichtigsten Grundfunktionen:
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Elektrische Energieübertragung}
@@ -70,7 +70,15 @@ Der Laststromkreis beinhaltet allen leistungsführenden Betriebsmitteln des Antr
 	\\ \medskip Beinhaltet eine Schmelzsicherung zum Schutz vor Überströmen und ein 					\\ Hochleistungs-Relais, um im Fehlerfall den Laststromkreis öffnen zu können und damit eine  		
 	\\ galvanische Trennung des Antriebs und der Energieversorgung gewährleisten zu können.
 \end{itemize}
+\vspace{5mm}
 
+Im folgenden Bild ist der Grundaufbau des Laststromkreises ausführlich beschrieben:
+\vspace{2mm}
+\\R1 ... Vorladewiderstand
+\\F1 ... Schmelzsicherung
+\\S4.1 ... Hauptschütz (Hochleistungs-Relais)
+\\S4.2 ... Vorladeschütz
+\vspace{5mm}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{figures/Antrieb/Antrieb_Laststromkreis.png}
@@ -94,12 +102,11 @@ Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die L�
 
 \textbf{Berechnung:} 
 \\[2mm]
-In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Der Motor erhält nahezu die selbe Leistung, weshalb der Motorstrom durch die Annordnung der Phasen ebenfalls bestimmt werden kann. Da die Größenordnungen der beiden Ströme im Akkumluator-Stromkreis und im Motor-Stromkreis sehr unterschiedlich sind, können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\ 
-\vspace{4mm}
+In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Der Motor erhält nahezu die selbe Leistung, weshalb der Motorstrom durch die Annordnung der Phasen ebenfalls bestimmt werden kann. Da die Größenordnungen der beiden Ströme im Akkumluator-Stromkreis und im Motor-Stromkreis sehr unterschiedlich sind, können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\[4mm]
 \begin{itemize}
 	\item \textbf{Berechnung der Ströme:}
 	\\[1mm] Maximaler Strom, der von einer Zelle zur Verfügung gestellt werden kann: 14 A 
-	\\ Anzahl der Zellen die parallel verschaltet werden: 40 \\[3mm]
+	\\ Anzahl der Zellen die in einem Akkupack parallel verschaltet werden: 40 \\[3mm]
 	\item \textbf{Akkumulator-Stromkreis:} 
 	\\[1mm] Querschnitt    A$_A$ =  70~mm$^2$
 	\\ Leitungslänge  l$_A$ =  1m  		
@@ -120,7 +127,7 @@ I_{Mmax} &= \dfrac{I_{Amax}}{\sqrt{3}} = \dfrac{560~\mathrm{A}}{\sqrt{3}} = 323~
 \begin{align*}
 \text{Spannungsabfall Akkumulator-Stromkreis:} \\
 R_{A} &= \dfrac{\delta_{A} \cdot l_{A}}{A_{A}} = \dfrac{0,0278~\mathrm{\dfrac{\Omega \cdot mm^{2}}{m}}  \cdot 1~\mathrm{m}}{70\mathrm{mm^{2}}} = 0,397~\mathrm{m\Omega} \\[3mm]
-\Delta U &= R_{A}\cdot I_{Amax} = 0,41~\mathrm{m\Omega} \cdot 560~\mathrm{A} = 222~\mathrm{mV} \\[3mm]
+\Delta U &= R_{A}\cdot I_{Amax} = 0,397~\mathrm{m\Omega} \cdot 560~\mathrm{A} = 222~\mathrm{mV} \\[3mm]
 U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 222~\mathrm{mV} = 50,178~\mathrm{V} \\[9mm]
 \text{Spannungsabfall Motor-Stromkreis:} \\
 R_{M} &= \dfrac{\delta_{K} \cdot l_{M}}{A_{M}} = \dfrac{0,01786~\mathrm{\dfrac{\Omega \cdot mm^{2}}{m}}  \cdot 1~\mathrm{m}}{35\mathrm{mm^{2}}} = 0,51~\mathrm{m\Omega} \\[3mm]
@@ -130,8 +137,8 @@ U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 165~\mathrm{mV} = 50,235~\mathrm{
 
 \textbf{Fazit:}
 \\[2mm]
-Bei der Andwendung als E-Motorrad spielen der Widerstand und der damit verbundene Spannungsabfall eigentlich keine Rolle, da die Leitungslängen bezogen auf den Querschnitt enorm klein sind. Hinzu kommt noch, dass die Leitungslängen in dieser Berechnung sicherheitshalber größer angenommen wurden, wie sie in Wirklichkeit umgesetzt werden, da die Leitungslängen vorab schwer abgeschätzt werden können und nach der Montage ebenfalls  variieren werden. Der Curtis Controller ist ebenfalls sehr unempfindlich gegenüber Spannungsschwankungen, welche so oder so durch das Laden und Entladen des Akkumulators entstehen. \\
-Der Aluminiumleiter verfügt über eine maximale Dauerbelastung von 160A, was deutlich unter dem Maximalstrom liegt. Bei unserer Anwendung als Motorrad ist die Dauerbelastung aber eher unwichtig, da nur kurzzeitig hohe Leistungen benötigt werden (Beschleunigungsvorgang). Ebenfalls wird der vom Motor angeforderte Strom dauerhaft vom Batterie-Management-System und vom Curtis Controller überprüft und reguliert bzw. im Notfall abgeschalten. Kommt es zu starken Erwärmungen im Motor, der Motorsteuerung oder dem Akkumulator wird die Maximalleistung gedrosselt.
+Bei der Anwendung als E-Motorrad spielen der Widerstand und der damit verbundene Spannungsabfall eigentlich keine Rolle, da die Leitungslängen bezogen auf den Querschnitt klein sind. Hinzu kommt noch, dass die Leitungslängen in dieser Berechnung sicherheitshalber größer angenommen wurden, als sie in Wirklichkeit umgesetzt werden, da die Leitungslängen vorab schwer abgeschätzt werden können und nach der Montage ebenfalls  variieren werden. Der Curtis Controller ist ebenfalls sehr unempfindlich gegenüber Spannungsschwankungen, welche so oder so durch das Laden und Entladen des Akkumulators entstehen. \\
+Der Aluminiumleiter verfügt über eine maximale Dauerbelastung von 160A, was deutlich unter dem Maximalstrom liegt. Bei unserer Anwendung als Motorrad ist die Dauerbelastung aber eher unwichtig, da nur kurzzeitig hohe Leistungen benötigt werden (Beschleunigungsvorgang). Weiters wird der vom Motor angeforderte Strom dauerhaft vom Batterie-Management-System und vom Curtis Controller überprüft und reguliert bzw. im Notfall abgeschaltet. Kommt es zu starken Erwärmungen im Motor, der Motorsteuerung oder dem Akkumulator, wird die Maximalleistung gedrosselt.
 
 \newpage
 
@@ -139,17 +146,17 @@ Der Aluminiumleiter verfügt über eine maximale Dauerbelastung von 160A, was de
 
 %% Leitungsschutzorgane %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Leitungsschutzorgane}
-Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen, um damit den Motor bzw. Motorcontroller vom Akkumulator galvanisch zu trennen. Diese Maßnahme wird ergriffen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dadurch steigen die Anschaffungskosten der Bauteile. Das noch größere Problem entsteht jedoch bei der Überdimensionierung der Schmelzsicherung, denn diese löst nun zu spät aus und hat damit nur mehr eine sehr geringe bis gar keine Schutzfunktion. 
+Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen, um damit den Motor bzw. Motorcontroller vom Akkumulator galvanisch zu trennen. Diese Maßnahme wird ergriffen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dadurch steigen die Anschaffungskosten der Bauteile. Das eher größere Problem entsteht jedoch bei der Überdimensionierung der Schmelzsicherung, denn diese löst nun zu spät aus und hat damit nur mehr eine nicht geeignete Schutzfunktion. 
 \\[5mm]
 
 \textbf{Hochleistungs-Relais}
 \\[2mm]
-Bei der Auswahl des Hochleistungs-Relais muss vorallem der maximale Strom, der von dem Relais geschalten werden kann, höher wie der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche die Lebenszyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Bei einer Gleichspannung von 120V und einem Strom von 600A ergibt sich eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, ebenfalls ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
+Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der vom Relais geschalten werden kann, höher als der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche diese Zyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Bei einer Gleichspannung von 120V und einem Strom von 600A ergibt sich eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, ebenfalls ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
 \\[5mm]
 
 \textbf{Schmelzsicherung}
  \\[2mm]
-Bei der Auswahl der Schmelzsicherung ist es vorallem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet der Kurzschlussstrom muss um ein vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Schmelzsicherung, was bei der ausgewählten Sicherung eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer wie der Nennstrom der Schmelzsicherung ausgewählt wurde, um Beschädigungen an den Leitungen mithilfe der Sicherung verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom wie bereits erwähnt dauerhaft durch das Batterie-Managemen-System überprüft und begrenzt wird.
+Bei der Auswahl der Schmelzsicherung ist es vorallem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Schmelzsicherung, was bei der ausgewählten Sicherung eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Managemen-System überprüft und begrenzt wird.
 \\[3mm]
 
 \textbf{Fazit:}
@@ -160,13 +167,15 @@ benötigt?
 
 %% Motorauslegung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Motorbeschreibung}
-Die Nennleistung von Motor und Motorcontroller übersteigen die Nennleistung des Akkumlators, weshalb dieser Punkt unwichtig für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Da jedoch der Motor und die Motorsteuerung sehr wichtige Bauteile des E-Motorrades darstellen, werden unter diesem Punkt bestimmte Nenndaten genauer berechnet und beschrieben.
+Die Nennleistung von Motor und Motorcontroller übersteigen die Nennleistung des Akkumlators, weshalb die Nennwerte dieser Bauteile unwichtig für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Da jedoch Motor und Motorsteuerung die zentralen Elemente des E-Motorrades darstellen, werden unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben.
 
 Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, wirkt dieser Motor eigentlich wie eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
 
 Der Motor wurde von der Firma Ashwoods gebaut und hat die Bezeichnung \glqq IPM-200-50\grqq{}. Er besitzt eine mechanische Spitzenleistung von 16 kW und ein maximales Drehmoment von 74 Nm. Die maximale Drehzahl beträgt 8500 U/min und der Wirkungsgrad liegt bei circa 85\%.
 
-Die Motorsteuerung wurde von der Firma Curtis gebaut, dies ist ein Prototyp mit der Modelnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb verbraucht der Motorcontroller circa 500W.
+Die Motorsteuerung wurde von der Firma Curtis gebaut, der Controller ist ein Prototyp mit der Modelnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb hat der Motorcontroller einen Leistungsverbrauch von rund 500W.
+
+Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale Leistung von 19,5 kW, sprich einen maximalen Strom von 385A bei einer Nennspannung von 50,4V. 
 
 \newpage
 
@@ -174,7 +183,7 @@ Die Motorsteuerung wurde von der Firma Curtis gebaut, dies ist ein Prototyp mit 
 %% Der Steuerstromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Steuerstromkreis}
 \subsubsection{Übersicht Ein- und Ausgänge}
-Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verchiedenen Ports, welche nochmals unterkategorisiert werden können:
+Der Steuerstromkreis umfasst mit alle elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verschiedenen Ports, welche nochmals unterkategorisiert werden können:
 
 \vspace{3mm}
 
@@ -196,7 +205,7 @@ Der Steuerstromkreis befasst sich mit allen elektrischen Verbindungen, welche ü
 
 \vspace{5mm}
 
-Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbarer Ausgang verwendet, bei richtiger Konfiguration kann er jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais oder einen Spannungswandler ansteuern möchte. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
+Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbarer Ausgang verwendet, bei richtiger Konfiguration kann er jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais, eine Pumpe oder Bremslichter ansteuern möchte, je nach gewünschter Andwendung gibt es auch unterschiedliche Funktionen. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
 
 \newpage
 
@@ -225,7 +234,7 @@ Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, je
 
 %% Analoge Eingänge (Analog Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Analoge Eingänge (Analog Inputs)}
-Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür hergenommen werden.
+Es gibt insgesamt zwei Pins, die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür verwendet werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -242,7 +251,7 @@ Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. 
 
 %% Gas- und Bremseingänge (Throttle and Brake Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Gas- und Bremseingänge (Throttle and Brake Inputs)}
-Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig voneinander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
+Die zwei Gas- und Bremssteuerungs-Eingänge sind wegen der speziellen Auslegung von den analogen Eingängen abgegrenzt und können unabhängig voneinander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -254,7 +263,7 @@ Die zwei Gas- oder Bremssteuerungs-Eingänge können unabhängig voneinander pro
 
 
 %% Positionsrückmeldung vom Encoder (Position-feedback Input) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Positionsrückmeldung vom Encoder (Position-feedback Input)}
+\subsubsection{Positionsrückmeldung vom Encoder (Position-Feedback Input)}
 Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motorwelle einzulesen, um eine optimale feldorienterte Ansteuerung des Motors durchführen zu können. Dabei gibt es die Möglichkeiten über einen Quadratur-Encoder oder einen Sin/Cos-Encoder. Da im Ashwoods-Motor ein Sin/Cos-Sensor verbaut ist, wurde dies vorab beim Motorcontroller eingestellt.
 
 \begin{figure}[H]
@@ -270,7 +279,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 %% Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
-Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Er soll übermäßige Schaltgeräusche im PWM-Betrieb verhindern und nur auf die Spulen begrenzen. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren über einen Widerstand vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -312,7 +321,7 @@ Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenm
 
 %% Spannungsversorgungs-Ausgänge (Power Supply Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Spannungsversorgungs-Ausgänge (Power Supply Outputs)}
-Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung vom Encoder, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
+Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung des Encoders, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit je einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
 
 \begin{figure}[H]
 	\begin{center}
@@ -362,7 +371,7 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Parameterbasierte Programmierung (Programmer)}
 \subsubsection{Allgemeines}
-In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
+In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die aktuelle Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
 
 \subsubsection{Funktionen}
 Throttle\\

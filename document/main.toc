@@ -38,7 +38,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{19}{subsubsection.6.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{19}{subsubsection.6.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{20}{subsubsection.6.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-feedback Input)}{20}{subsubsection.6.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-Feedback Input)}{20}{subsubsection.6.2.3.5}%
 \contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{21}{subsubsection.6.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{21}{subsubsection.6.2.3.7}%
 \contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{22}{subsubsection.6.2.3.8}%
