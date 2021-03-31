@@ -31,43 +31,44 @@
 \contentsline {subsection}{\numberline {2.1}Mechanische Umsetzung}{11}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {2.2}Der Laststromkreis}{12}{subsection.6.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Elektrische Energieübertragung}{13}{subsubsection.6.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Leitungsschutzorgane}{14}{subsubsection.6.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Der Steuerstromkreis}{15}{subsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- und Ausgänge}{15}{subsubsection.6.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{17}{subsubsection.6.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{17}{subsubsection.6.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{18}{subsubsection.6.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-feedback Input)}{18}{subsubsection.6.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{19}{subsubsection.6.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{19}{subsubsection.6.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{20}{subsubsection.6.2.3.8}%
-\contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{20}{subsubsection.6.2.3.9}%
-\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{21}{subsubsection.6.2.3.10}%
-\contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{22}{section.6.3}%
-\contentsline {subsection}{\numberline {3.1}Parameterbasierte Programmierung (Programmer)}{23}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{23}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{23}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{24}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{24}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{26}{subsubsection.6.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{27}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{27}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{28}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{29}{subsubsection.6.3.3.3}%
-\contentsline {section}{\numberline {4}Inbetriebnahme}{30}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{30}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{31}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{32}{chapter.7}%
-\contentsline {section}{\numberline {1}Section}{32}{section.7.1}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{33}{chapter.8}%
-\contentsline {section}{\numberline {1}Section}{33}{section.8.1}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{34}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{34}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{34}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{35}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{36}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{37}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{37}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{37}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{38}{appendix*.20}%
-\contentsline {chapter}{Codeverzeichnis}{39}{appendix*.21}%
+\contentsline {subsubsection}{\numberline {2.2.2}Leitungsschutzorgane}{15}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Motorbeschreibung}{16}{subsubsection.6.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Der Steuerstromkreis}{17}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- und Ausgänge}{17}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{19}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{19}{subsubsection.6.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{20}{subsubsection.6.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-feedback Input)}{20}{subsubsection.6.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{21}{subsubsection.6.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{21}{subsubsection.6.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{22}{subsubsection.6.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{22}{subsubsection.6.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{23}{subsubsection.6.2.3.10}%
+\contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{24}{section.6.3}%
+\contentsline {subsection}{\numberline {3.1}Parameterbasierte Programmierung (Programmer)}{25}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{25}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{25}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{26}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{26}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{28}{subsubsection.6.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{29}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{29}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{30}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{31}{subsubsection.6.3.3.3}%
+\contentsline {section}{\numberline {4}Inbetriebnahme}{32}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{32}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{33}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{34}{chapter.7}%
+\contentsline {section}{\numberline {1}Section}{34}{section.7.1}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{35}{chapter.8}%
+\contentsline {section}{\numberline {1}Section}{35}{section.8.1}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{36}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{36}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{36}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{37}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{38}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{39}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{39}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{39}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{40}{appendix*.20}%
+\contentsline {chapter}{Codeverzeichnis}{41}{appendix*.21}%

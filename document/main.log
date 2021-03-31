@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.21)  30 MAR 2021 13:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.21)  31 MAR 2021 14:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -1166,7 +1166,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=292, 700.86844pt x 225.09094pt
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=296, 700.86844pt x 225.09094pt
 >
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1235,12 +1235,12 @@ nput line 44.
  [12
 
 ]
-Overfull \hbox (2.7354pt too wide) detected at line 60
+Overfull \hbox (2.7354pt too wide) detected at line 61
 \T1/lmr/bx/n/10 VII 
  []
 
 
-Overfull \hbox (7.41582pt too wide) detected at line 62
+Overfull \hbox (7.41582pt too wide) detected at line 63
 \T1/lmr/bx/n/10 VIII 
  []
 
@@ -1261,25 +1261,25 @@ been already used, duplicate ignored
 l.1 \chapter
             {EinfÃ¼hrung} [1]
 Kapitel I.
-<figures/allgemein/portrait_Kronberger.jpg, id=437, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Kronberger.jpg, id=442, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Kronberger.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kronberger.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kronberger.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 115.23404pt x 172.72142pt.
-<figures/allgemein/portrait_Lackner.jpg, id=438, 334.97145pt x 502.2765pt>
+<figures/allgemein/portrait_Lackner.jpg, id=443, 334.97145pt x 502.2765pt>
 File: figures/allgemein/portrait_Lackner.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Lackner.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Lackner.jpg  used on input 
 line 14.
 (pdftex.def)             Requested size: 115.23404pt x 172.78741pt.
-<figures/allgemein/portrait_Kern.jpg, id=439, 334.851pt x 501.91515pt>
+<figures/allgemein/portrait_Kern.jpg, id=444, 334.851pt x 501.91515pt>
 File: figures/allgemein/portrait_Kern.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kern.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kern.jpg  used on input lin
 e 22.
 (pdftex.def)             Requested size: 115.23404pt x 172.72437pt.
-<figures/allgemein/portrait_Schmeisser.jpg, id=440, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Schmeisser.jpg, id=445, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Schmeisser.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Schmeisser.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Schmeisser.jpg  used on inp
@@ -1380,7 +1380,7 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 57.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11]
-<figures/Antrieb/Antrieb_Laststromkreis.png, id=483, 956.07187pt x 414.79968pt>
+<figures/Antrieb/Antrieb_Laststromkreis.png, id=488, 956.07187pt x 414.79968pt>
 
 File: figures/Antrieb/Antrieb_Laststromkreis.png Graphic file (type png)
 <use figures/Antrieb/Antrieb_Laststromkreis.png>
@@ -1407,257 +1407,270 @@ nput line 119.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 143.
+nput line 136.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [14]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 174.
+nput line 159.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [15]
-<figures/Antrieb/Antrieb_Steuerstromkreis.png, id=507, 627.84563pt x 585.68813p
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 171.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [16]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 201.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+
+[17]
+<figures/Antrieb/Antrieb_Steuerstromkreis.png, id=521, 627.84563pt x 585.68813p
 t>
 File: figures/Antrieb/Antrieb_Steuerstromkreis.png Graphic file (type png)
 <use figures/Antrieb/Antrieb_Steuerstromkreis.png>
 Package pdftex.def Info: figures/Antrieb/Antrieb_Steuerstromkreis.png  used on 
-input line 178.
+input line 205.
 (pdftex.def)             Requested size: 470.88306pt x 439.26501pt.
 
-Overfull \hbox (44.09172pt too wide) in paragraph at lines 178--179
+Overfull \hbox (44.09172pt too wide) in paragraph at lines 205--206
  [] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 183.
+nput line 210.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[16 <./figures/Antrieb/Antrieb_Steuerstromkreis.png>]
-<figures/antrieb/Digital_Input_Specifications.png, id=514, 1032.85875pt x 593.2
+[18 <./figures/Antrieb/Antrieb_Steuerstromkreis.png>]
+<figures/antrieb/Digital_Input_Specifications.png, id=528, 1032.85875pt x 593.2
 1625pt>
 File: figures/antrieb/Digital_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Digital_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Digital_Input_Specifications.png  used
- on input line 191.
+ on input line 218.
 (pdftex.def)             Requested size: 426.79134pt x 245.1211pt.
-<figures/antrieb/Analog_Input_Specifications.png, id=515, 1250.42157pt x 338.76
+<figures/antrieb/Analog_Input_Specifications.png, id=529, 1250.42157pt x 338.76
 563pt>
 File: figures/antrieb/Analog_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Analog_Input_Specifications.png  used 
-on input line 205.
+on input line 232.
 (pdftex.def)             Requested size: 426.79134pt x 115.62332pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 212.
+nput line 239.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [17 <./figures/antrieb/Digital_Input_Specifications.png> <./figures/antrieb/An
+ [19 <./figures/antrieb/Digital_Input_Specifications.png> <./figures/antrieb/An
 alog_Input_Specifications.png>]
-<figures/antrieb/Throttle_Input_Specifications.png, id=525, 1324.19719pt x 398.
+<figures/antrieb/Throttle_Input_Specifications.png, id=538, 1324.19719pt x 398.
 23781pt>
 File: figures/antrieb/Throttle_Input_Specifications.png Graphic file (type png)
 
 <use figures/antrieb/Throttle_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Throttle_Input_Specifications.png  use
-d on input line 222.
+d on input line 249.
 (pdftex.def)             Requested size: 426.79134pt x 128.35019pt.
-<figures/antrieb/SinCosSensor_Input_Specifications.png, id=526, 1316.66907pt x 
+<figures/antrieb/SinCosSensor_Input_Specifications.png, id=539, 1316.66907pt x 
 237.88875pt>
 File: figures/antrieb/SinCosSensor_Input_Specifications.png Graphic file (type 
 png)
 <use figures/antrieb/SinCosSensor_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/SinCosSensor_Input_Specifications.png 
- used on input line 235.
+ used on input line 262.
 (pdftex.def)             Requested size: 426.79134pt x 77.10965pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 241.
+nput line 268.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [18 <./figures/antrieb/Throttle_Input_Specifications.png> <./figures/antrieb/S
+ [20 <./figures/antrieb/Throttle_Input_Specifications.png> <./figures/antrieb/S
 inCosSensor_Input_Specifications.png>]
-<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=535, 1270.7475pt x
+<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=548, 1270.7475pt x
  219.06844pt>
 File: figures/antrieb/KSI_CoilReturn_Input_Specifications.png Graphic file (typ
 e png)
 <use figures/antrieb/KSI_CoilReturn_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/KSI_CoilReturn_Input_Specifications.pn
-g  used on input line 250.
+g  used on input line 277.
 (pdftex.def)             Requested size: 426.79134pt x 73.5764pt.
-<figures/antrieb/Analog_Output_Specifications.png, id=536, 1267.73625pt x 185.9
+<figures/antrieb/Analog_Output_Specifications.png, id=549, 1267.73625pt x 185.9
 4469pt>
 File: figures/antrieb/Analog_Output_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Output_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Analog_Output_Specifications.png  used
- on input line 263.
+ on input line 290.
 (pdftex.def)             Requested size: 426.79134pt x 62.59898pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 269.
+nput line 296.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [19 <./figures/antrieb/KSI_CoilReturn_Input_Specifications.png> <./figures/ant
+ [21 <./figures/antrieb/KSI_CoilReturn_Input_Specifications.png> <./figures/ant
 rieb/Analog_Output_Specifications.png>]
-<figures/antrieb/Digital_PWM_Output_Specifications.png, id=545, 1327.20844pt x 
+<figures/antrieb/Digital_PWM_Output_Specifications.png, id=558, 1327.20844pt x 
 442.65375pt>
 File: figures/antrieb/Digital_PWM_Output_Specifications.png Graphic file (type 
 png)
 <use figures/antrieb/Digital_PWM_Output_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Digital_PWM_Output_Specifications.png 
- used on input line 279.
+ used on input line 306.
 (pdftex.def)             Requested size: 426.79134pt x 142.34102pt.
-<figures/antrieb/Power_Supply_Output_Specifications.png, id=546, 1284.29813pt x
+<figures/antrieb/Power_Supply_Output_Specifications.png, id=559, 1284.29813pt x
  330.48468pt>
 File: figures/antrieb/Power_Supply_Output_Specifications.png Graphic file (type
  png)
 <use figures/antrieb/Power_Supply_Output_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Power_Supply_Output_Specifications.png
-  used on input line 292.
+  used on input line 319.
 (pdftex.def)             Requested size: 426.79134pt x 109.82173pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 298.
+nput line 325.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [20 <./figures/antrieb/Digital_PWM_Output_Specifications.png> <./figures/antri
+ [22 <./figures/antrieb/Digital_PWM_Output_Specifications.png> <./figures/antri
 eb/Power_Supply_Output_Specifications.png>]
-<figures/antrieb/Communications_Port_Specifications.png, id=555, 1307.63531pt x
+<figures/antrieb/Communications_Port_Specifications.png, id=568, 1307.63531pt x
  447.92343pt>
 File: figures/antrieb/Communications_Port_Specifications.png Graphic file (type
  png)
 <use figures/antrieb/Communications_Port_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Communications_Port_Specifications.png
-  used on input line 307.
+  used on input line 334.
 (pdftex.def)             Requested size: 426.79134pt x 146.19534pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 314.
+nput line 341.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [21 <./figures/antrieb/Communications_Port_Specifications.png>]
+ [23 <./figures/antrieb/Communications_Port_Specifications.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 333.
+nput line 360.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [22]
+ [24]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 355.
+nput line 382.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [23]
-Underfull \hbox (badness 1371) in paragraph at lines 385--385
+ [25]
+Underfull \hbox (badness 1371) in paragraph at lines 412--412
 []|\T1/lmr/m/n/10 angesteuert wer-den kann. (Un-ab-hän-gig von der
  []
 
 
-Overfull \hbox (19.93059pt too wide) in paragraph at lines 382--393
+Overfull \hbox (19.93059pt too wide) in paragraph at lines 409--420
 [][] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 397.
+nput line 424.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[24]
-Underfull \hbox (badness 5050) in paragraph at lines 403--403
+[26]
+Underfull \hbox (badness 5050) in paragraph at lines 430--430
 \T1/lmr/m/n/10 Ma-xi-mum an-ge-stie-gen ist. Grö-ÿe-re
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 407--407
+Underfull \hbox (badness 1715) in paragraph at lines 434--434
 []|\T1/lmr/m/n/10 Bremsmoment bei ei-nem star-ten-den
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+Underfull \hbox (badness 10000) in paragraph at lines 434--434
 \T1/lmr/m/n/10 Brems-vor-gang oder ei-nem Fahrt-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+Underfull \hbox (badness 10000) in paragraph at lines 434--434
 \T1/lmr/m/n/10 richtungswechsel auf-ge-baut wird.
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 414--414
+Underfull \hbox (badness 1354) in paragraph at lines 441--441
 \T1/lmr/m/n/10 rollen des Fahr-zeugs zu ver-hin-dern.
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 415--415
+Underfull \hbox (badness 1354) in paragraph at lines 442--442
 \T1/lmr/m/n/10 rollen des Fahr-zeugs zu ver-hin-dern.
  []
 
 
-Overfull \hbox (51.91357pt too wide) in paragraph at lines 400--417
+Overfull \hbox (51.91357pt too wide) in paragraph at lines 427--444
 [][] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 422.
+nput line 449.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[25]
+[27]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 462.
+nput line 489.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [26]
+ [28]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 472.
+nput line 499.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [27]
-Overfull \hbox (39.1596pt too wide) in paragraph at lines 479--490
+ [29]
+Overfull \hbox (39.1596pt too wide) in paragraph at lines 506--517
 [][] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 496.
+nput line 523.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[28]
-<figures/antrieb/ECO_Sport_Select_Programmschnippsel.png, id=595, 649.67719pt x
+[30]
+<figures/antrieb/ECO_Sport_Select_Programmschnippsel.png, id=609, 649.67719pt x
  606.01407pt>
 File: figures/antrieb/ECO_Sport_Select_Programmschnippsel.png Graphic file (typ
 e png)
 <use figures/antrieb/ECO_Sport_Select_Programmschnippsel.png>
 Package pdftex.def Info: figures/antrieb/ECO_Sport_Select_Programmschnippsel.pn
-g  used on input line 505.
+g  used on input line 532.
 (pdftex.def)             Requested size: 324.8378pt x 303.00629pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 510.
+nput line 537.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [29 <./figures/antrieb/ECO_Sport_Select_Programmschnippsel.png>]
-<figures/antrieb/Leonard_Umformer.png, id=603, 996.72375pt x 490.83376pt>
+ [31 <./figures/antrieb/ECO_Sport_Select_Programmschnippsel.png>]
+<figures/antrieb/Leonard_Umformer.png, id=616, 996.72375pt x 490.83376pt>
 File: figures/antrieb/Leonard_Umformer.png Graphic file (type png)
 <use figures/antrieb/Leonard_Umformer.png>
 Package pdftex.def Info: figures/antrieb/Leonard_Umformer.png  used on input li
-ne 527.
+ne 554.
 (pdftex.def)             Requested size: 426.79134pt x 210.17064pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 533.
+nput line 560.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [30 <./figures/antrieb/Leonard_Umformer.png>]
+ [32 <./figures/antrieb/Leonard_Umformer.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 559.
+nput line 586.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [31]) (content/ch_akku.tex
+ [33]) (content/ch_akku.tex
 Kapitel VII.
 ) (content/ch_ergebnis.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1665,7 +1678,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [32
+ [34
 
 ]
 Kapitel VIII.
@@ -1675,7 +1688,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 2.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [33
+ [35
 
 ]
 Anhang A.
@@ -1684,7 +1697,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 8.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[34
+[36
 
 ]
 Anhang B.
@@ -1693,7 +1706,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[35
+[37
 
 ]
 Anhang C.
@@ -1702,7 +1715,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 12.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[36
+[38
 
 ]
 Anhang D.
@@ -1712,7 +1725,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 148.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [37
+ [39
 
 ] (main.lof
 Overfull \hbox (0.88872pt too wide) detected at line 17
@@ -1748,7 +1761,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 153.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [38
+ [40
 
 ] (main.lot)
 \tf@lot=\write7
@@ -1759,7 +1772,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 158.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [39
+ [41
 
 ] (main.lol)
 \tf@lol=\write8
@@ -1770,23 +1783,23 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 160.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [40
+ [42
 
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C61C2F0355F38FD28CFCE2E526BA99C3;12234.
+(rerunfilecheck)             Checksum: 130D40A23DF153EC2C56F9073890C152;12391.
  ) 
 Here is how much of TeX's memory you used:
- 25137 strings out of 479290
- 456188 string characters out of 2849369
+ 25145 strings out of 479290
+ 456284 string characters out of 2849369
  927549 words of memory out of 3000000
- 41899 multiletter control sequences out of 15000+600000
- 461659 words of font info for 72 fonts, out of 8000000 for 9000
+ 41902 multiletter control sequences out of 15000+600000
+ 467632 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,17n,89p,2497b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-rm.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathsy.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9
+lm-mathsy.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Users/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9
 /fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Jakob Lackner/AppData/Local/Program
 s/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Jakob Lackner/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Jakob Lackner/AppD
@@ -1802,9 +1815,9 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/Jakob L
 ackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Use
 rs/Jakob Lackner/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
 .pfb>
-Output written on main.pdf (54 pages, 2786880 bytes).
+Output written on main.pdf (56 pages, 2795218 bytes).
 PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 679 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
+ 687 words of extra memory for PDF output out of 10000 (max. 10000000)
 
