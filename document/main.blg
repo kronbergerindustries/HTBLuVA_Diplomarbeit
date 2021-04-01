@@ -4,6 +4,7 @@ The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 I found no \citation commands---while reading file main.aux
 I found no \bibdata command---while reading file main.aux
 You've used 0 entries,
@@ -49,6 +50,8 @@ width$ -- 0
 write$ -- 2
 (There were 2 error messages)
 =======
+=======
+>>>>>>> Stashed changes
 Illegal, another \bibstyle command---line 24 of file main.aux
  : \bibstyle
  :          {plain}
@@ -108,4 +111,7 @@ while$ -- 14
 width$ -- 9
 write$ -- 81
 (There was 1 error message)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -10,13 +10,12 @@
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
 \usepackage{lmodern}
 
 \usepackage{parskip}
 \usepackage{ragged2e}
 
-%% Packages für Grafiken & Abbildungen
+%% Packages für Grafiken & Abbildungen & Pdf-Dateien & Zitieren
 
 \usepackage{graphicx} 
 \usepackage{wrapfig}
@@ -24,6 +23,8 @@
 \usepackage{subfig}
 \usepackage{tikz}
 \usepackage{float}
+\usepackage{pdfpages}
+\bibliographystyle{plain}
 
 %% Packages für Formeln
 
@@ -142,6 +143,8 @@
 
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
 
+\bibliography{content/literatur}
+
 %% Abbildungsverzeichnis
 
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
@@ -156,5 +159,6 @@
 
 \addcontentsline{toc}{chapter}{Codeverzeichnis}
 \lstlistoflistings
+
 
 \end{document}
