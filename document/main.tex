@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -10,18 +10,21 @@
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
 \usepackage{lmodern}
 
 \usepackage{parskip}
 \usepackage{ragged2e}
 
-%% Packages für Grafiken & Abbildungen
+%% Packages für Grafiken & Abbildungen & Pdf-Dateien & Zitieren
 
 \usepackage{graphicx} 
+\usepackage{wrapfig}
+\usepackage{lipsum}
 \usepackage{subfig}
 \usepackage{tikz}
 \usepackage{float}
+\usepackage{pdfpages}
+\bibliographystyle{plain}
 
 %% Packages für Formeln
 
@@ -43,9 +46,13 @@
 \usepackage{array}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 
-%% Packages für Tabellen
+\usepackage{pdfpages}
+
+%% Packages für Listings
 
 \usepackage{listings}
+\usepackage{pythonhighlight}
+\usepackage{xcolor}
 \usepackage{color}
 \usepackage{colortbl}
 
@@ -75,28 +82,6 @@
 
 \usepackage{cancel}
 
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-\definecolor{byzantium}{rgb}{0.44, 0.16, 0.39}
-
-\lstset{frame=tb,
-  language=C,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{byzantium},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3
-}
-
 %% Ändern der Kapitelnummerierung
 
 \renewcommand{\thechapter}{\Roman{chapter}}
@@ -104,6 +89,22 @@
 		\renewcommand\thesubsection{\thesection.\arabic{subsection}}
 			\setcounter{secnumdepth}{3}
 			\setcounter{tocdepth}{3}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+	backgroundcolor=\color{white},   % choose the background color
+	basicstyle=\footnotesize,        % size of fonts used for the code
+	breaklines=true,                 % automatic line breaking only at whitespace
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	keywordstyle=\color{blue},       % keyword style
+	stringstyle=\color{mymauve},     % string literal style
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
@@ -142,6 +143,8 @@
 
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
 
+\bibliography{content/literatur}
+
 %% Abbildungsverzeichnis
 
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
@@ -156,5 +159,6 @@
 
 \addcontentsline{toc}{chapter}{Codeverzeichnis}
 \lstlistoflistings
+
 
 \end{document}

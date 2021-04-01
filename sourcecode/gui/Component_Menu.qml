@@ -18,20 +18,23 @@ Item {
     }
 
     function pageBattery(boolValue) {
-        page_Battery.changeVisibility(true)
+        if (window.user === "admin" || window.u) {
+            page_Battery.changeVisibility(true)
 
-        page_Dashboard.changeVisibility(false)
-        page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
-        page_Login.changeVisibility(false)
-    }
+            page_Dashboard.changeVisibility(false)
+            page_Diagnosis.changeVisibility(false)
+            page_Error.changeVisibility(false)
+            page_Login.changeVisibility(false)
+
+        } else
+
 
     function pageDash(boolValue) {
         page_Dashboard.changeVisibility(true)
 
         page_Battery.changeVisibility(false)
         page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
         page_Login.changeVisibility(false)
     }
 
@@ -40,12 +43,12 @@ Item {
 
         page_Dashboard.changeVisibility(false)
         page_Battery.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
         page_Login.changeVisibility(false)
     }
 
     function pageSettings(boolValue) {
-        page_Settings.changeVisibility(true)
+        page_Error.changeVisibility(true)
 
         page_Dashboard.changeVisibility(false)
         page_Battery.changeVisibility(false)
@@ -59,7 +62,7 @@ Item {
         page_Dashboard.changeVisibility(false)
         page_Battery.changeVisibility(false)
         page_Diagnosis.changeVisibility(false)
-        page_Settings.changeVisibility(false)
+        page_Error.changeVisibility(false)
     }
 
     Rectangle {
@@ -198,6 +201,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66}
+    D{i:0;autoSize:true;height:480;width:640}
 }
 ##^##*/

@@ -3,6 +3,8 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 I found no \citation commands---while reading file main.aux
 I found no \bibdata command---while reading file main.aux
 You've used 0 entries,
@@ -47,3 +49,69 @@ while$ -- 0
 width$ -- 0
 write$ -- 2
 (There were 2 error messages)
+=======
+=======
+>>>>>>> Stashed changes
+Illegal, another \bibstyle command---line 24 of file main.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Database file #1: content/schmeisser.bib
+Warning--entry type for "Kuehlung1" isn't style-file defined
+--line 3 of file content/schmeisser.bib
+Warning--entry type for "Wasserkuehlung" isn't style-file defined
+--line 21 of file content/schmeisser.bib
+Warning--entry type for "AktiveKuehlung" isn't style-file defined
+--line 56 of file content/schmeisser.bib
+Warning--entry type for "PassiveKuehlung" isn't style-file defined
+--line 67 of file content/schmeisser.bib
+Warning--empty author and editor in Luftkuehlung1
+Warning--can't use both volume and number fields in Luftkuehlung1
+Warning--there's a number but no series in Luftkuehlung2
+You've used 8 entries,
+            2118 wiz_defined-function locations,
+            552 strings with 4908 characters,
+and the built_in function-call counts, 1706 in all, are:
+= -- 156
+> -- 50
+< -- 2
++ -- 22
+- -- 14
+* -- 80
+:= -- 284
+add.period$ -- 20
+call.type$ -- 8
+change.case$ -- 31
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 77
+empty$ -- 179
+format.name$ -- 14
+if$ -- 370
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 7
+newline$ -- 38
+num.names$ -- 14
+pop$ -- 56
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 56
+stack$ -- 0
+substring$ -- 40
+swap$ -- 11
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 3
+while$ -- 14
+width$ -- 9
+write$ -- 81
+(There was 1 error message)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
