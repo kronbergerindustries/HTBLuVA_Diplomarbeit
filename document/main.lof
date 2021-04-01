@@ -4,6 +4,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {V.1}{\ignorespaces Raspberry Pi - Steuereinheit des HCIS\relax }}{9}{figure.caption.2}%
+\contentsline {figure}{\numberline {V.2}{\ignorespaces Grundaufbau des Human-Computer Interaction Systems\relax }}{9}{figure.caption.3}%
+\contentsline {figure}{\numberline {V.3}{\ignorespaces Anschlussplan Eingänge\relax }}{11}{figure.caption.5}%
+\contentsline {figure}{\numberline {V.4}{\ignorespaces Anschlussplan Relais\relax }}{12}{figure.caption.6}%
+\contentsline {figure}{\numberline {V.5}{\ignorespaces Paneel Maße\relax }}{13}{figure.caption.7}%
+\contentsline {figure}{\numberline {V.6}{\ignorespaces Befestigung des Displays\relax }}{14}{figure.caption.8}%
+\contentsline {figure}{\numberline {V.7}{\ignorespaces Aufbau der Graphischen Benutzeroberfläche\relax }}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {V.8}{\ignorespaces GUI Komponente - Navigation Menü\relax }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {V.9}{\ignorespaces GUI Komponente - Balken Anzeige\relax }}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {V.10}{\ignorespaces GUI Komponente - Modus Anzeige\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {V.11}{\ignorespaces GUI Komponente - Graph\relax }}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {V.12}{\ignorespaces GUI Fenster - Login Menü\relax }}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {V.13}{\ignorespaces GUI Fenster - Fahrdaten\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {V.14}{\ignorespaces GUI Fenster - Akkudaten\relax }}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {V.15}{\ignorespaces GUI Fenster - Fahrdaten Diagnose\relax }}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {V.16}{\ignorespaces GUI Fenster - Fehler Liste\relax }}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {V.17}{\ignorespaces Slots und Signals Konzept\relax }}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {V.18}{\ignorespaces Verbindung Frontend zu Backend\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {V.19}{\ignorespaces Anschlussplan CAN-Modul\relax }}{23}{figure.caption.21}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {VI.2}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{38}{figure.caption.28}%
+\contentsline {figure}{\numberline {VI.3}{\ignorespaces Digital Input Specifications\relax }}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {VI.4}{\ignorespaces Analog Input Specifications\relax }}{39}{figure.caption.30}%
+\contentsline {figure}{\numberline {VI.5}{\ignorespaces Throttle Input Specifications\relax }}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {VI.6}{\ignorespaces Sin/Cos Sensor Input Specifications\relax }}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {VI.7}{\ignorespaces KSI and Coil Return Input Specifications\relax }}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {VI.8}{\ignorespaces Analog Output Specifications\relax }}{41}{figure.caption.34}%
+\contentsline {figure}{\numberline {VI.9}{\ignorespaces Digital and PWM Output Specifications\relax }}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {VI.10}{\ignorespaces Power Supply Output Specifications\relax }}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {VI.11}{\ignorespaces Communications Port Specifications\relax }}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {VI.12}{\ignorespaces ECO/Sport-Select Programmschnippsel\relax }}{52}{figure.caption.42}%
+\contentsline {figure}{\numberline {VI.13}{\ignorespaces Leonardumformer Versuchsaufbau\relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {VI.14}{\ignorespaces Bleiakku\relax }}{54}{figure.caption.44}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
