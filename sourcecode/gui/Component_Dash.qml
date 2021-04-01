@@ -2,8 +2,8 @@ import QtQuick 2.0
 
 Item {
     id: dash
-    implicitWidth: 880
-    implicitHeight: 800
+    implicitWidth: 770
+    implicitHeight: 770
 
         Image {
             id: iconDash
@@ -87,6 +87,6 @@ Item {
     }
 /*##^##
 Designer {
-    D{i:0;height:880;width:880}
+    D{i:0;autoSize:true;height:770;width:770}
 }
 ##^##*/
