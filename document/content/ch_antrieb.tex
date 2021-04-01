@@ -1,7 +1,6 @@
 \chapter{Antriebsstrang}
 \fancyfoot[C]{Lackner}
 
-<<<<<<< HEAD
 
 %% Übersicht %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Übersicht}
@@ -374,56 +373,54 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 \subsection{Parameterbasierte Programmierung (Programmer)}
 \subsubsection{Allgemeines}
 In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die aktuelle Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
+\\[5mm]
 
 \subsubsection{Funktionen}
+Die folgenden Parametermenüs sind auf bestimmte Funktionen angepasst und optimiert worden. Muss eine Funktion angesteuert werden, so kann sie einen beliebigen Pin zugewiesen werden.
+\\[4mm] 
+
 \textbf{Throttle and Brake}\\[1mm]
-Die Hauptfunktion dieser Parametergruppen ist die genaue Einstellung der Potentiometer-Eingänge für den Bremsvorgang, Vorwärts- und Rückwärtsbetrieb. Es können der Start- und Endwert des Potentiometer festgelegt werden, ebenso bestimmte Formänderungen der Eingangskurve, welche die Intensität des Gas- bzw. Bremsbefehls abhängig von der Potentiometerstellung beschreibt. Ebenso gibt es mehrere mögliche Sicherheitskonfigurationen, Filtereinstellungen und auch die Möglichkeit der Ansteuerung mittels VCL.\\[3mm]
+Die Hauptfunktion dieser Parametergruppen ist die genaue Einstellung der Potentiometer-Eingänge für den Bremsvorgang, Vorwärts- und Rückwärtsbetrieb. Es können der Start- und Endwert des Potentiometer festgelegt werden, ebenso bestimmte Formänderungen der Eingangskurve, welche die Intensität des Gas- bzw. Bremsbefehls abhängig von der Potentiometerstellung beschreibt. Ebenso gibt es mehrere mögliche Sicherheitskonfigurationen, Filtereinstellungen und auch die Möglichkeit der Ansteuerung mittels VCL.\\[4mm]
 
 \textbf{CAN Interface}\\[1mm]
 Das CAN-Interface wird in unerer Anwendung nicht benötigt, denn die Kommunikation wurde mittels VCL-CAN umgesetzt. Die vorgefertigte Version CANopen bietet jedoch auch mehrere Einstellungsmöglichkeiten, wie ID und Taktfrequenzanpassungen. Ebenfalls gibt es jeweils 4 Datenpakete, welche für den Senden- und Empfangenvorgang konfiguriert werden können.
-\\[3mm]
+\\[4mm]
 
 \textbf{Battery Setup}\\[1mm]
 In diesem Parametermenü kann die Nennspannung festgelegt werden, ebenfalls gibt es mehrere Einstellungsmöglichkeiten, welche in einem Über- oder Unterspannungsfall von Bedeutung sind. Um den Ladestand des Akkumulators besser abschätzen zu können, sollten hier auch bestimmte Eigenschaften festgelegt werden.
-\\[3mm]
+\\[4mm]
 
 \textbf{Main Contactor}\\[1mm]
 Dieses Menü dient zur Konfiguration Hauptschütz (Hochleistungs-Relais). Die Ansteuerungsspannung wird hier genau beschrieben, nach dem Schließen des Schützes kann eine kleiner Spannung zum halten der Kontakte verwendet werden. Ebenfalls kann eine Zeitverzögerung eingestellt werden, welche bestimmt wie lange der KSI-Pin geöffnet sein darf, bevor der Hauptschütz geöffnet wird. Diese Funktion kann sehr wichtig sein, denn ein Wechsel des Antriebsmodus kann somit ebenfalls während des Betriebs erfolgen (Gaseingang muss aber 0\% sein). Ebenfalls kann die Vorladefunktion und auch mehrere sicherheitsrelevante Funktionstests eingeschalten und konfiguriert werden.
-%\\[3mm]
-
+\\[4mm]
 
 \textbf{Pump Contactor}\\[1mm]
 Dieses Menü dient zur Konfiguration einer Pumpe, für den Kühlkreislauf. Es kann eine erhöhte Versorgungsspannung im Anlaufbetrieb festgelegt werden.
-\\[3mm]
+\\[4mm]
 
 \textbf{EM Brake Control}\\[1mm]
 Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bremse angesteuert werden. Da in unserem Motorrad jedoch nur herkömmliche mechanische Bremsen verbaut sind, ist diese Funktion für unsere Anwendung nicht zu gebrauchen. Für die elektromagnetische Bremse gibt es jedoch eine große Menge an Konfigurationsmöglichkeiten. Für verschiedene Ereignisse können bestimmte Drehmoment- und Zeitwerte festgelegt werden. Ebenfalls können viele sicherheitsrelevante Einstellungen getätigt werden. 
-\\[3mm]
+
+\newpage
 
 \textbf{Emergency Reverse (EMR)}\\[1mm]
 Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht. Wenn der Switch 1 angesteuert wird, beschleunigt das Motorrad für eine festgelegte Zeit und Geschwindigkeit in die Rückwärts-Richtung. Wenn sich das Motorrad währenddessen forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
-\\[3mm]
-
-
+\\[4mm]
 
 \textbf{Interlock Braking}\\[1mm]
 Wenn die Funktion Interlock Braking aktiviert wurde, wird das Motorrad durch Rekuperation zum Stillstand gebracht, wenn der Eingang Interlock deaktiviert wurde. Wird Interlock Braking deaktiviert, so rollt das Fahrzeug im Leerlauf weiter. Die gewünschte Stärke der Verzögerung kann definiert werden, ebenso wie weiter sicherheitsrelevante Einstellungen.
-\\[3mm]
+\\[4mm]
 
 \textbf{Dual Drive}\\[1mm]
 Diese Funktion dient dazu, ein Fahrzeug mit zwei Motoren betreiben zu können. Die zwei zugehörigen Motorcontroller interagieren über ein Master-Slave-System miteinander.
-\\[3mm]
+\\[4mm]
 
 \textbf{Vehicle}\\[1mm]
-Über dieses Paramermenü können allgemeine Einstellungen, wie zum Beispiel die Einheit der Geschwindigkeit oder der Raddurchmesser eingegeben werden. Ebenfalls sind sehr viele unterschiedliche Parameter für eine genau Auswertung und Ausgabe aktueller Fahrdaten vorhanden.
-\\[3mm]
+Über dieses Paramermenü können allgemeine Einstellungen, wie zum Beispiel die Einheit der Geschwindigkeit oder der Raddurchmesser festgelegt werden. Ebenfalls sind sehr viele unterschiedliche Parameter für eine genau Auswertung und Ausgabe aktueller Fahrdaten vorhanden.
+\\[4mm]
 
 \textbf{Supervision}\\[1mm]
-.
-\\[3mm]
-
-\textbf{Current Limits}\\[1mm]
-
+Diese Parameter sind für die Einstellung der Geschwindigkeits- und Strom- bzw. Frequenzüberwachung. Wenn die zu kontrollierenden Werte ein definiertes Maximum übersteigen, wird ein Fehler ausgelöst.
 
 
 \newpage
