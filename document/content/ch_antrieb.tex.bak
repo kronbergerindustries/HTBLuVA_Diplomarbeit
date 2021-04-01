@@ -234,7 +234,7 @@ Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, je
 
 %% Analoge Eingänge (Analog Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Analoge Eingänge (Analog Inputs)}
-Es gibt insgesamt zwei Pins die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür hergenommen werden.
+Es gibt insgesamt zwei Pins, die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür verwendet werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -279,7 +279,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 %% Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
-Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren über einen Widerstand vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Er soll übermäßige Schaltgeräusche im PWM-Betrieb verhindern und nur auf die Spulen begrenzen. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren über einen Widerstand vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -321,7 +321,7 @@ Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenm
 
 %% Spannungsversorgungs-Ausgänge (Power Supply Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Spannungsversorgungs-Ausgänge (Power Supply Outputs)}
-Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung vom Encoder, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
+Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung des Encoders, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit je einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
 
 \begin{figure}[H]
 	\begin{center}
@@ -374,17 +374,46 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die aktuelle Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
 
 \subsubsection{Funktionen}
-Throttle\\
-Brake\\
-Battery Setup\\
-Main Contactor\\
-Pump Contactor\\
-EM Brake Control\\
-Emergency Reverse (EMR)\\
-Interlock Braking\\
-Dual Drive\\
-Vehicle und Supervision\\
-Current Limits\\
+\textbf{Throttle and Brake}\\[1mm]
+Die Hauptfunktion dieser Parametergruppen ist die genaue Einstellung der Potentiometer-Eingänge für den Bremsvorgang, Vorwärts- und Rückwärtsbetrieb. Es können der Start- und Endwert des Potentiometer festgelegt werden, ebenso bestimmte Formänderungen der Eingangskurve, welche die Intensität des Gas- bzw. Bremsbefehls abhängig von der Potentiometerstellung beschreibt. Ebenso gibt es mehrere mögliche Sicherheitskonfigurationen, Filtereinstellungen und auch die Möglichkeit der Ansteuerung mittels VCL.\\[3mm]
+
+\textbf{CAN Interface}\\[1mm]
+Das CAN-Interface wird in unerer Anwendung nicht benötigt, denn die Kommunikation wurde mittels VCL-CAN umgesetzt. Die vorgefertigte Version CANopen bietet jedoch auch mehrere Einstellungsmöglichkeiten, wie ID und Taktfrequenzanpassungen. Ebenfalls gibt es jeweils 4 Datenpakete, welche für den Senden- und Empfangenvorgang konfiguriert werden können.
+\\[3mm]
+
+\textbf{Battery Setup}\\[1mm]
+In diesem Parametermenü kann die Nennspannung festgelegt werden, ebenfalls gibt es mehrere Einstellungsmöglichkeiten, welche in einem Über- oder Unterspannungsfall von Bedeutung sind. Um den Ladestand des Akkumulators besser abschätzen zu können, sollten hier auch bestimmte Eigenschaften festgelegt werden.
+\\[3mm]
+
+\textbf{Main Contactor}\\[1mm]
+Dieses Menü dient zur Konfiguration Hauptschütz (Hochleistungs-Relais). Die Ansteuerungsspannung wird hier genau beschrieben, nach dem Schließen des Schützes kann eine kleiner Spannung zum halten der Kontakte verwendet werden. Ebenfalls kann eine Zeitverzögerung eingestellt werden, welche bestimmt wie lange der KSI-Pin geöffnet sein darf, bevor der Hauptschütz geöffnet wird. Diese Funktion kann sehr wichtig sein, denn ein Wechsel des Antriebsmodus kann somit ebenfalls während des Betriebs erfolgen (Gaseingang muss aber 0\% sein).
+\\[3mm]
+
+\textbf{Pump Contactor}\\[1mm]
+.
+\\[3mm]
+
+\textbf{EM Brake Control}\\[1mm]
+.
+\\[3mm]
+
+\textbf{Emergency Reverse (EMR)}\\[1mm]
+.
+\\[3mm]
+
+\textbf{Interlock Braking}\\[1mm]
+.
+\\[3mm]
+
+\textbf{Dual Drive}\\[1mm]
+.
+\\[3mm]
+
+\textbf{Vehicle und Supervision}\\[1mm]
+.
+\\[3mm]
+
+\textbf{Current Limits}\\[1mm]
 
 
 
