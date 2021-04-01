@@ -70,8 +70,4 @@ Item {
 
 }
 
-/*##^##
-Designer {
-    D{i:0;autoSize:true;height:250;width:250}
-}
-##^##*/
+

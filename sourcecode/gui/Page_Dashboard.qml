@@ -178,7 +178,7 @@ Item {
             width: 57
             height: 118
             visible: true
-            anchors.verticalCenter: dashComponent.verticalCenter
+            anchors.verticalCenter: component_dash.verticalCenter
             source: "Pictures/icon_battery_green.png"
             fillMode: Image.PreserveAspectFit
 
@@ -266,9 +266,11 @@ Item {
         }
 
         Component_Dash {
-            id: dashComponent
+            id: component_dash
             x: 520
             y: 48
+            width: 770
+            height: 770
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenterOffset: 0
             anchors.verticalCenterOffset: 0

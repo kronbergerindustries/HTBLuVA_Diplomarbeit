@@ -8,7 +8,8 @@ ApplicationWindow {
     height: 1080
     visible: true
     visibility: "FullScreen"
-    title: qsTr("Login Page")
+
+
 
     Connections {
         target: bridge
@@ -25,6 +26,10 @@ ApplicationWindow {
                 page_Login.wrongPass(true)
 
             }
+        }
+
+        function onSignalUser(user) {
+            window.username = user
         }
     }
 

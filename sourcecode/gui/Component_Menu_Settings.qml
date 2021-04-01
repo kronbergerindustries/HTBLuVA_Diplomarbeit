@@ -8,7 +8,7 @@ Item {
     Image {
         id: menu_settings_white
         anchors.fill: parent
-        source: "Pictures/menu_settings_white.png"
+        source: "figures/icons/noun_Error_3194205_white.svg"
         fillMode: Image.PreserveAspectFit
     }
 
@@ -41,11 +41,13 @@ Item {
             PropertyChanges {
                 target: menu_settings_white
                 visible: false
+                source: "figures/icons/noun_Error_3194205_grey.svg"
             }
 
             PropertyChanges {
                 target: menu_settings_grey
                 visible: true
+                source: "figures/icons/noun_Error_3194205_grey.svg"
             }
         }
     ]

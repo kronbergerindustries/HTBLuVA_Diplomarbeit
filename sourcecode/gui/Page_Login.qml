@@ -82,10 +82,10 @@ Item {
                 x: 56
                 y: 41
                 width: 330
-                height: 80
+                height: 120
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: logo_skf.left
-                source: "Pictures/logo_schrack.png"
+                source: "figures/logos/logo_schrack.png"
                 anchors.rightMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
@@ -108,7 +108,7 @@ Item {
                 width: 120
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: qtLogo.right
-                source: "Pictures/logo_mysql.png"
+                source: "figures/logos/logo_mysql.png"
                 anchors.leftMargin: 60
                 fillMode: Image.PreserveAspectFit
             }
@@ -253,6 +253,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.75}D{i:6}D{i:8}
+    D{i:0;formeditorZoom:0.5}
 }
 ##^##*/
