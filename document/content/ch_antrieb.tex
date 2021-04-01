@@ -336,6 +336,7 @@ Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsr
 
 %% Kommunikations-Ports %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kommunikations-Ports}
+\label{Kommunikations-Port}
 Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Busses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten zur Konfiguration des CAN-Busses, dies wird jedoch im Punkt Software genauer erklärt.
 
 \begin{figure}[H]
@@ -399,18 +400,24 @@ Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bre
 \\[3mm]
 
 \textbf{Emergency Reverse (EMR)}\\[1mm]
-Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht. Wenn der Switch 1 angesteuert wird, beschleunigt das Motorrad für eine festgelegte Zeit und Geschwindigkeit in die Rückwärts-Richtung. 
+Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht. Wenn der Switch 1 angesteuert wird, beschleunigt das Motorrad für eine festgelegte Zeit und Geschwindigkeit in die Rückwärts-Richtung. Wenn sich das Motorrad währenddessen forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
 \\[3mm]
 
+
+
 \textbf{Interlock Braking}\\[1mm]
-.
+Wenn die Funktion Interlock Braking aktiviert wurde, wird das Motorrad durch Rekuperation zum Stillstand gebracht, wenn der Eingang Interlock deaktiviert wurde. Wird Interlock Braking deaktiviert, so rollt das Fahrzeug im Leerlauf weiter. Die gewünschte Stärke der Verzögerung kann definiert werden, ebenso wie weiter sicherheitsrelevante Einstellungen.
 \\[3mm]
 
 \textbf{Dual Drive}\\[1mm]
-.
+Diese Funktion dient dazu, ein Fahrzeug mit zwei Motoren betreiben zu können. Die zwei zugehörigen Motorcontroller interagieren über ein Master-Slave-System miteinander.
 \\[3mm]
 
-\textbf{Vehicle und Supervision}\\[1mm]
+\textbf{Vehicle}\\[1mm]
+Über dieses Paramermenü können allgemeine Einstellungen, wie zum Beispiel die Einheit der Geschwindigkeit oder der Raddurchmesser eingegeben werden. Ebenfalls sind sehr viele unterschiedliche Parameter für eine genau Auswertung und Ausgabe aktueller Fahrdaten vorhanden.
+\\[3mm]
+
+\textbf{Supervision}\\[1mm]
 .
 \\[3mm]
 
