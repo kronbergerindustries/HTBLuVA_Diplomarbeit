@@ -9,20 +9,54 @@
 \contentsline {section}{\numberline {3}Topologie des Gesamtsystems}{5}{section.2.3}%
 \contentsline {section}{\numberline {4}Leitfaden}{5}{section.2.4}%
 \contentsline {chapter}{\numberline {III}Stand der Technik}{6}{chapter.3}%
-\contentsline {section}{\numberline {1}Steuereinheiten}{6}{section.3.1}%
-\contentsline {section}{\numberline {2}Bussysteme}{6}{section.3.2}%
-\contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {V}Human-Computer Interaction System}{8}{chapter.5}%
-\contentsline {chapter}{\numberline {VI}Antriebsstrang}{9}{chapter.6}%
-\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{10}{chapter.7}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{11}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{12}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{12}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{12}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmier-Code}{13}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{14}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Schaltpläne}{15}{appendix.D}%
-\contentsline {chapter}{Literaturverzeichnis}{15}{appendix.D}%
-\contentsline {chapter}{Abbildungsverzeichnis}{15}{appendix.D}%
-\contentsline {chapter}{Tabellenverzeichnis}{16}{appendix*.2}%
-\contentsline {chapter}{Codeverzeichnis}{17}{appendix*.3}%
+\contentsline {section}{\numberline {1}Akkusysteme}{6}{section.3.1}%
+\contentsline {section}{\numberline {2}Batteriearten}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {2.1}Bleiakkumulator}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.2}Nickel-Metallhybrid Akkumulatoren}{7}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.3}Nickel-Cadmium Akkumulatoren}{8}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {2.4}Lithium-Ionen Batterie}{9}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Geschichte}{9}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Allgemeines}{9}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Prinzip der Lithium-Ionen Batterie}{10}{subsubsection.3.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Lagerung und Sicherheithinweise}{11}{subsubsection.3.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Anwendungbereiche von Lithium-Ionen Akkumulatoren}{12}{subsubsection.3.2.4.5}%
+\contentsline {subsection}{\numberline {2.5}Batteriemanagementsystem}{13}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Komponenten eines BMS}{14}{subsubsection.3.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Battery-Balancing}{15}{subsubsection.3.2.5.2}%
+\contentsline {section}{\numberline {3}Steuereinheiten}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Raspberry PI}{17}{subsection.3.3.1}%
+\contentsline {section}{\numberline {4}Bussysteme}{17}{section.3.4}%
+\contentsline {subsection}{\numberline {4.1}SPI Bus}{17}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {4.2}CAN Bus}{17}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {V}Human-Computer Interaction System}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {VI}Antriebsstrang}{20}{chapter.6}%
+\contentsline {chapter}{\numberline {VII}Akku und Ladekonzept}{21}{chapter.7}%
+\contentsline {section}{\numberline {1}Übersicht}{21}{section.7.1}%
+\contentsline {subsection}{\numberline {1.1}Aufgaben der Energieversorgung}{21}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {1.2}Aufgaben des Batteriemanagement}{21}{subsection.7.1.2}%
+\contentsline {section}{\numberline {2}Energieversorgung}{22}{section.7.2}%
+\contentsline {subsection}{\numberline {2.1}Dimensionierung der Akkuzellen}{22}{subsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Zusammenstellung der Batteriezellen}{23}{subsubsection.7.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Verschaltung der Batteriezellen}{25}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Serienschaltung}{25}{subsubsection.7.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Parallelschaltung}{26}{subsubsection.7.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Kombination aus Serien- und Parallelschaltung}{27}{subsubsection.7.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Geschätzt Betriebszeit des Akkumulators}{29}{subsubsection.7.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Allgemeine Übersicht der Elektroinstallation}{29}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {2.4}Batteriemanagementsystem}{30}{subsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Funktionen des Batteriemanagementsystems}{30}{subsubsection.7.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Akkumulatoren}{33}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {2.6}Akkumulatoren}{33}{subsection.7.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Lithiumbatterien}{33}{subsubsection.7.2.6.1}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{34}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{35}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{35}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{35}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmier-Code}{36}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{37}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Schaltpläne}{38}{appendix.D}%
+\contentsline {chapter}{Literaturverzeichnis}{38}{appendix.D}%
+\contentsline {chapter}{Abbildungsverzeichnis}{38}{appendix.D}%
+\contentsline {chapter}{Tabellenverzeichnis}{39}{appendix*.20}%
+\contentsline {chapter}{Codeverzeichnis}{40}{appendix*.21}%
