@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  1 APR 2021 11:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  1 APR 2021 11:34
 entering extended mode
 **./main.tex
 (main.tex
@@ -2642,14 +2642,8 @@ nput line 160.
  [91
 
 ] (main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 007169C8D9FC9C8E73A8FDA765F5C0B9;21283
-(rerunfilecheck)             After:  9919D4250D6DF285B884F4790ACC522F;21150.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 9919D4250D6DF285B884F4790ACC522F;21150.
  ) 
 Here is how much of TeX's memory you used:
  27361 strings out of 479324
@@ -2686,7 +2680,7 @@ public/lm/lmsy10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/courier/ucrr8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/times/utmb8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/times/utmr8a.pfb>
-Output written on main.pdf (106 pages, 7558931 bytes).
+Output written on main.pdf (106 pages, 7558849 bytes).
 PDF statistics:
  1680 PDF objects out of 1728 (max. 8388607)
  335 named destinations out of 1000 (max. 500000)
