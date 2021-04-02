@@ -163,21 +163,22 @@
 \contentsline {subsubsection}{\numberline {6.1.4}Akku Daten}{99}{subsubsection.7.6.1.4}%
 \contentsline {subsection}{\numberline {6.2}Handler}{99}{subsection.7.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Konfigurieren der Schnittstelle}{99}{subsubsection.7.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}SELECT Befehl}{100}{subsubsection.7.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}INSERT Befehl}{100}{subsubsection.7.6.2.3}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{101}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{102}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{102}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{102}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmcode}{103}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{104}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Solid Edge Simulationen}{115}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Schaltpläne}{130}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Datenblätter}{131}{appendix.F}%
-\contentsline {subsection}{\numberline {0.1}Mean Well RSD-30H-5}{132}{subsection.F.0.1}%
-\contentsline {subsection}{\numberline {0.2}Mean Well SD-350C-12}{142}{subsection.F.0.2}%
-\contentsline {subsection}{\numberline {0.3}Raspberry Pi 4 Moddel B}{145}{subsection.F.0.3}%
-\contentsline {chapter}{Literaturverzeichnis}{158}{subsection.F.0.3}%
-\contentsline {chapter}{Abbildungsverzeichnis}{158}{appendix*.119}%
-\contentsline {chapter}{Tabellenverzeichnis}{160}{appendix*.120}%
-\contentsline {chapter}{Codeverzeichnis}{161}{appendix*.121}%
+\contentsline {subsubsection}{\numberline {6.2.2}Cursor klasse}{101}{subsubsection.7.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}SELECT Befehl}{101}{subsubsection.7.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}INSERT Befehl}{101}{subsubsection.7.6.2.4}%
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{102}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Arbeitsnachweis}{103}{appendix.A}%
+\contentsline {section}{\numberline {1}Zeitplan}{103}{section.A.1}%
+\contentsline {section}{\numberline {2}Kosten}{103}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Programmcode}{104}{appendix.B}%
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{105}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Solid Edge Simulationen}{116}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Schaltpläne}{131}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Datenblätter}{132}{appendix.F}%
+\contentsline {subsection}{\numberline {0.1}Mean Well RSD-30H-5}{133}{subsection.F.0.1}%
+\contentsline {subsection}{\numberline {0.2}Mean Well SD-350C-12}{143}{subsection.F.0.2}%
+\contentsline {subsection}{\numberline {0.3}Raspberry Pi 4 Moddel B}{146}{subsection.F.0.3}%
+\contentsline {chapter}{Literaturverzeichnis}{159}{subsection.F.0.3}%
+\contentsline {chapter}{Abbildungsverzeichnis}{159}{appendix*.121}%
+\contentsline {chapter}{Tabellenverzeichnis}{161}{appendix*.122}%
+\contentsline {chapter}{Codeverzeichnis}{162}{appendix*.123}%
