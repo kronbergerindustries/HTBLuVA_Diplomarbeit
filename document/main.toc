@@ -97,15 +97,15 @@
 \contentsline {subsection}{\numberline {3.1}Parameterbasierte Programmierung (Programmer)}{70}{subsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{70}{subsubsection.6.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{70}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{73}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{73}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{75}{subsubsection.6.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{76}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{76}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{77}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{78}{subsubsection.6.3.3.3}%
-\contentsline {section}{\numberline {4}Inbetriebnahme}{79}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{79}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{72}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{72}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{74}{subsubsection.6.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{75}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{75}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{76}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{77}{subsubsection.6.3.3.3}%
+\contentsline {section}{\numberline {4}Inbetriebnahme}{78}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{78}{subsection.6.4.1}%
 \contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{80}{subsection.6.4.2}%
 \contentsline {chapter}{\numberline {VII}Human-Computer Interaction System}{81}{chapter.7}%
 \contentsline {section}{\numberline {1}Übersicht}{81}{section.7.1}%
@@ -179,5 +179,5 @@
 \contentsline {subsection}{\numberline {0.3}Raspberry Pi 4 Moddel B}{146}{subsection.F.0.3}%
 \contentsline {chapter}{Literaturverzeichnis}{159}{subsection.F.0.3}%
 \contentsline {chapter}{Abbildungsverzeichnis}{159}{subsection.F.0.3}%
-\contentsline {chapter}{Tabellenverzeichnis}{159}{appendix*.119}%
-\contentsline {chapter}{Codeverzeichnis}{160}{appendix*.120}%
+\contentsline {chapter}{Tabellenverzeichnis}{160}{appendix*.120}%
+\contentsline {chapter}{Codeverzeichnis}{161}{appendix*.121}%

@@ -81,7 +81,7 @@ Im folgenden Bild ist der Grundaufbau des Laststromkreises ausführlich beschrie
 \vspace{5mm}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Antrieb/Antrieb_Laststromkreis.png}
+		\includegraphics[scale=0.35]{figures/Antrieb/Antrieb_Laststromkreis.png}
 		\caption{Grundaufbau des Laststromkreises}
 	\end{center}
 \end{figure}
@@ -102,7 +102,7 @@ Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die L�
 
 \textbf{Berechnung:} 
 \\[2mm]
-In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Der Motor erhält nahezu die selbe Leistung, weshalb der Motorstrom durch die Annordnung der Phasen ebenfalls bestimmt werden kann. Da die Größenordnungen der beiden Ströme im Akkumluator-Stromkreis und im Motor-Stromkreis sehr unterschiedlich sind, können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\[4mm]
+In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Der Motor erhält nahezu die selbe Leistung, weshalb der Motorstrom durch die Annordnung der Phasen ebenfalls bestimmt werden kann. Da die Größenordnungen der beiden Ströme im Akkumluator-Stromkreis und im Motor-Stromkreis sehr unterschiedlich sind, können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\[6mm]
 \begin{itemize}
 	\item \textbf{Berechnung der Ströme:}
 	\\[1mm] Maximaler Strom, der von einer Zelle zur Verfügung gestellt werden kann: 14 A 
@@ -149,14 +149,14 @@ Der Aluminiumleiter verfügt über eine maximale Dauerbelastung von 160A, was de
 Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder in einem Fehlerfall den Laststromkreis zu öffnen, um damit den Motor bzw. Motorcontroller vom Akkumulator galvanisch zu trennen. Diese Maßnahme wird ergriffen, um mögliche Beschädigungen an den Komponenten oder an den Leitungen verhindern zu können. Da jedoch ungewünschte Fehlauslösungen zum sofortigen Stillstand des Motorrades führen und eventuell sogar benötigte Wartungen (Wechsel der durchgebrannten Schmelzsicherung) nach sich ziehen, müssen diese Leitungsschutzorgane sehr sorgfältig ausgewählt werden. Eine Überdimensionierung ist ebenso unerwünscht, denn dadurch steigen die Anschaffungskosten der Bauteile. Das eher größere Problem entsteht jedoch bei der Überdimensionierung der Schmelzsicherung, denn diese löst nun zu spät aus und hat damit nur mehr eine nicht geeignete Schutzfunktion. 
 \\[5mm]
 
-\textbf{Hochleistungs-Relais}
+\textbf{Hochleistungs-Relais:}
 \\[2mm]
-Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der vom Relais geschalten werden kann, höher als der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche diese Zyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Bei einer Gleichspannung von 120V und einem Strom von 600A ergibt sich eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, ebenfalls ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
+Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der vom Relais geschalten werden kann, höher als der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche diese Zyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Das im endeffekt ausgewählte Bauteil stammt von der Firma \glqq TE Connectivity / Raychem\grqq{} und hat die Bezeichnung \glqq KILOVAC LEV200 A4ANA\grqq{}. Bei diesem Hochleistungs-Relais ergibt sich bei einer Gleichspannung von 120V und einem Strom von 600A eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, ebenfalls ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
 \\[5mm]
 
-\textbf{Schmelzsicherung}
+\textbf{Schmelzsicherung:}
  \\[2mm]
-Bei der Auswahl der Schmelzsicherung ist es vorallem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Schmelzsicherung, was bei der ausgewählten Sicherung eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Managemen-System überprüft und begrenzt wird.
+Bei der Auswahl der Schmelzsicherung ist es vor allem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Sicherung, was bei der ausgewählten Schmelzsicherung \glqq FWA-400B\grqq{} von der Firma \glqq Bussmann / Eaton\grqq{} eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Managemen-System überprüft und begrenzt wird.
 \\[3mm]
 
 \textbf{Fazit:}
@@ -188,30 +188,32 @@ Der Steuerstromkreis umfasst mit alle elektrischen Verbindungen, welche über de
 \vspace{3mm}
 
 \begin{itemize}
-	\item \textbf{Eingänge (Inputs)}
+	\item \textbf{Eingänge (Inputs)} \medskip
 	\\ - Digitale Eingänge (Digital Inputs)
 	\\ - Analoge Eingänge (Analog Inputs)
 	\\ - Gas- und Bremseingänge (Throttle and Brake Inputs)
 	\\ - Positionsrückmeldung vom Encoder (Position-feedback Input)
-	\\ - Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)
-	\item \textbf{Ausgänge (Outputs)}
+	\\ - Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) \medskip
+	\item \textbf{Ausgänge (Outputs)} \medskip
 	\\ - Analoge Ausgänge (Analog Outputs)
 	\\ - Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)
-	\\ - Spannungsversorgungs-Ausgänge (Power Supply Outputs)
-	\item \textbf{Kommunikation (Communication)}
+	\\ - Spannungsversorgungs-Ausgänge (Power Supply Outputs) \medskip
+	\item \textbf{Kommunikation (Communication)} \medskip
 	\\ -  CAN-Bus (CAN-Port)
 	\\ -  Serielle Schnittstelle (Serial-Port)
 \end{itemize}
 
 \vspace{5mm}
 
-Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbarer Ausgang verwendet, bei richtiger Konfiguration kann er jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais, eine Pumpe oder Bremslichter ansteuern möchte, je nach gewünschter Andwendung gibt es auch unterschiedliche Funktionen. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
+Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen verfügen, es muss jedoch eine dieser Funktionen ausgewählt werden. Pin 6 zum Beispiel wird eigentlich als digitaler und phasenmodulierbarer Ausgang verwendet, bei richtiger Konfiguration kann er jedoch auch als digitaler Input verwendet werden. Weiteres kann frei konfiguriert werden, ob man mit diesem Ausgang zum Beispiel das Hochleistungs-Relais, eine Pumpe oder Bremslichter ansteuern möchte. Je nach gewünschter Andwendung gibt es auch unterschiedliche, für diese Anwendung vorgefertigte Funktionen. Um den passenden Pin für eine Anwendung auswählen zu können, muss man jedoch die elektrischen Eigenschaften der Pins genauer unter die Lupe nehmen. Oftmals haben auch die Pins der selben Unterkategorie verschiedene Funktionen, Eingangsimpedanzen oder Toleranzen. 
 
 \newpage
+In dieser Abbildung kann man den prinzipiellen Aufbau des Steuerstromkreises genauer betrachten. Die einzelnen Ein- und Ausgänge (Schalter und Induktivitäten) sind mit Ausnahme von Encoder, Throttle-Pot und CAN-Bus nur mit der allgemeinen Bezeichnung des Curtis Controllers versehen. Da der Curtis Controller ein umfassendes Einsatzgebiet abdeckt, werden nicht alle Funktionen bzw. Pins für die Anwendung als Motorrad benötigt, somit fällt die Verdrahtung dieser Pins weg. Die zugehörigen Eigenschaften und ausgewählten Funktionen der einzelnen Pins kann man auf dieser Abbildung nicht erkennen, diese sind aber in folgenden Punkten erklärt.
+\vspace{5mm}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.75]{figures/Antrieb/Antrieb_Steuerstromkreis.png}
+		\includegraphics[scale=0.67]{figures/Antrieb/Antrieb_Steuerstromkreis.png}
 		\caption{Grundaufbau des Steuerstromkreises}
 	\end{center}
 \end{figure}
@@ -220,7 +222,7 @@ Der Motorcontroller verfügt über viele Pins, welche über mehrere Funktionen v
 
 %% Digitale Eingänge (Digital Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Digitale Eingänge (Digital Inputs)}
-Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, jedoch werden sieben Pins davon eigentlich als Ausgänge konfiguriert. 
+Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, jedoch werden die letzten sieben Pins davon eigentlich für die Verwendung als Ausgänge konfiguriert. Der Switch 1 wird im Normalfall für die Funktion \glqq Emergency Reverse\grqq{} verwendet, da die Realisierung dieser Funktion bei einem Motorrad aber eher unwichtig ist, wird der zugehörige Pin 24 vorerst nicht verwendet (wird eventuell bei späteren Verbesserungen hinzugefügt). Switch 2 wird als analoger Eingang verwendet und ist in diesem Punkt genauer erklärt. Switch 3 wird für die Betätigung von Interlock verwendet. Interlock wird vom Raspberry PI angesteuert und muss aktiviert sein, damit der Motorcontroller in den Fahrbetrieb wechseln kann. Der NOT-Aus befindet sich auf der Lenkstange und steuert den Switch 4 an, bei Betätigung wird jeglicher Betrieb sofort eingestellt. Der Schalter zur Auswahl des gewünschten Antriebsmodus befindet sich ebenfalls auf der Lenkstange und ist mit dem Switch 5 verbunden. Die Parameter \glqq Forward\grqq{} und \glqq Reverse\grqq{}, welche die Auswahl der gewünschten Fahrtrichtung ermöglichen, werden normalerweise auf Switch 7 und 8 gelegt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -234,7 +236,7 @@ Es gibt insgesamt 16 Pins, die als digitale Eingänge genutzt werden können, je
 
 %% Analoge Eingänge (Analog Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Analoge Eingänge (Analog Inputs)}
-Es gibt insgesamt zwei Pins, die als analoge Eingänge verwendet werden können. Ein Pin davon wird jedoch im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür verwendet werden.
+Es gibt insgesamt zwei Pins, die als analoge Eingänge verwendet werden können. Analog 2 wird hierbei im Normalfall für den Motortemperatur-Sensor verwendet. Die Eingänge, die für das Gas- und Bremspotentiometer verwendet werden, sind in dieser Kategorie nicht aufgelistet, obwohl diese ebenfalls als analoge Eingänge genutzt werden. Diese Pins sind jedoch speziell für die Gas- und Bremssteuerung konfiguriert und sollten im Normalfall auch dafür verwendet werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -251,7 +253,7 @@ Es gibt insgesamt zwei Pins, die als analoge Eingänge verwendet werden können.
 
 %% Gas- und Bremseingänge (Throttle and Brake Inputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Gas- und Bremseingänge (Throttle and Brake Inputs)}
-Die zwei Gas- und Bremssteuerungs-Eingänge sind wegen der speziellen Auslegung von den analogen Eingängen abgegrenzt und können unabhängig voneinander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat insgesamt zwei unabhängige 3-Draht Potentiometer-Ausgänge, welche beide für den Gaseingang benutzt werden.
+Die zwei Gas- und Bremssteuerungs-Eingänge sind wegen der speziellen Auslegung von den analogen Eingängen abgegrenzt und können unabhängig voneinander programmiert werden. Sie sind optimiert für die Anwendung mittels Spannungssteuerung, 2-Draht Widerstandssteuerung oder 3-Draht Widerstandssteuerung. Bei der Spannungssteuerung benötigt man die Pins Pot Wiper und I/O Ground, bei der 2-Draht Widerstandssteuerung Pot Wiper und Pot Low und bei der 3-Draht Widerstandssteuerung Pot High, Pot Wiper und Pot Low. In unserem Fall benutzen wir beide Steuerungs-Eingänge für die 3-Draht Widerstandssteuerung, da der Gasdrehgriff über eine Drahtbrucherkennung verfügt. Das heißt, der Gasdrehgriff hat zwei unabhängige 3-Draht Potentiometer-Ausgänge verbaut, welche beide für den Gaseingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -279,7 +281,7 @@ Diese zwei Pins sind intern dafür konfiguriert, die aktuelle Position der Motor
 
 %% Prozessorversorgung und Spulenrücklauf (KSI and Coil Return) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}
-Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren über einen Widerstand vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Die elektrische Trennung von KSI und Coil Return muss aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
+Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkreise zur Verfügung. Dies  beinhaltet ebenfalls die Versorgung aller Ausgänge und die Kondensator-Vorlade-Funktion, welche dazu dient, die Kondensatoren über einen Widerstand vorzuladen, um hohe Einschaltströme zu verhindern. Der Spulenrücklauf stellt die Versorgung der pulsweitenmodulierbaren Ausgänge zur Verfügung und hat die gleiche Spannung wie der KSI-Pin. Die elektrische Trennung von KSI und Coil Return muss jedoch aufrechterhalten werden, um einen Verpolungsschutz gewährleisten zu können. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -292,7 +294,7 @@ Der KSI-Eingang stellt die elektrische Versorgung aller Niederleistungs-Schaltkr
 
 %% Analoge Ausgänge (Analog Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Analoge Ausgänge (Analog Outputs)}
-Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausgang ist für die Ausgabe über Anzeigeinstrumente, wie zum Beispiel eine Anzeige über den aktuellen Ladestand des Akkumulators, vorgesehen.
+Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausgang ist für die Datenausgabe über bestimmte Anzeigeinstrumente vorgesehen, wie zum Beispiel eine Anzeige für den aktuellen Ladestand des Akkumulators, vorgesehen. Da alle benötigten Fahrdaten mithilfe des Touchdisplays visualisiert werden, wird dieser Pin nicht verwendet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -308,7 +310,7 @@ Der analoge Ausgang kann ein Spannungssignal von 0 bis 10V ausgeben. Dieser Ausg
 
 %% Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}
-Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohmsche Lasten können ebenfalls gesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional-Driver kann bei richtiger Konfiguration auch für die Anzeige eines Tachometers hergenommen werden. Generell kann jeder Pin dieser Gruppe ebenfalls als digitaler Eingang benutzt werden.
+Es gibt insgesamt sieben digitale Ausgänge, wovon jedoch nur die ersten fünf für eine Pulsweitenmodulation konfiguriert werden können. Diese Ausgänge sind für induktive Lasten, wie zum Beispiel den Hauptschütz oder eine elektromagnetische Bremse, vorgesehen. Rein ohm'sche Lasten können ebenfalls angesteuert werden, jedoch darf der zulässige Spitzenstrom nicht überschritten werden. Der Proportional-Driver kann bei richtiger Konfiguration auch für die Anzeige eines Tachometers oder ähnlichem hergenommen werden. Generell kann jeder Pin dieser Gruppe ebenfalls als digitaler Eingang benutzt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -321,7 +323,7 @@ Es gibt insgesamt 7 digitale Ausgänge, wovon jedoch nur 5 für eine Pulsweitenm
 
 %% Spannungsversorgungs-Ausgänge (Power Supply Outputs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Spannungsversorgungs-Ausgänge (Power Supply Outputs)}
-Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung des Encoders, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit je einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde.
+Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsrückmeldung des Encoders, mit Spannung versorgen zu können, gibt es zwei dafür vorgesehene Spannungsversorgungs-Ausgänge mit je einem Pin für 5V und 12V. Für diese Anwendungen gibt es ebenfalls noch einen Rücklauf, der als I/O Ground definiert wurde. Die 5V-Spannungsversorgung wird in unserem Fall für den Encoder verwendet, die 12V-Versorgung wird aufgrund des vorhandenen Spannungswandlers nicht benötigt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -337,7 +339,7 @@ Um kleine Schaltkreise, wie zum Beispiel einen LED-Indikator oder die Positionsr
 %% Kommunikations-Ports %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kommunikations-Ports}
 \label{Kommunikations-Port}
-Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Busses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins CAN Term High und CAN Term Low werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es drei Möglichkeiten zur Konfiguration des CAN-Busses, dies wird jedoch im Punkt Software genauer erklärt.
+Für die Kommunikation mit anderen Betriebsmitteln stellt der Motorcontroller zwei Möglichkeiten zur Verfügung, den CAN-Bus und die serielle Schnittstelle. Da sich unser Projektteam auf die Nutzung des CAN-Busses geeinigt hat, wird die serielle Schnittstelle nicht verwendet. Die zwei Pins \glqq CAN Term High\grqq{} und \glqq CAN Term Low\grqq{} werden ebenfalls nicht benötigt, denn diese dienen nur dazu, den CAN-Bus vorübergehend funktionsunfähig zu schalten. Programmtechnisch gibt es zwei Möglichkeiten zur Konfiguration des CAN-Busses, dies wird jedoch im Punkt Software genauer erklärt. Der CAN-Bus wird also über die Pins \glqq CAN H\grqq{} und \glqq CAN L\grqq{} realisiert, dieser wird mit dem Batterie-Management-System und der Zentralsteuerung verbunden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -353,7 +355,7 @@ Für die Kommunikation mit anderen Betriebsmitteln stellt uns der Motorcontrolle
 
 %% Softwareaufbau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Softwareaufbau des Antriebssystems}
-Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt werden:
+Der Softwareaufbau des Antriebssystems kann grob in drei Grundfunktionen unterteilt werden:
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Parameterbasierte Programmierung (Programmer)}
@@ -372,7 +374,7 @@ Der Softwareaufbau des Antriebssystems kann grob in 3 Grundfunktionen unterteilt
 %% Steuerung der In- und Outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Parameterbasierte Programmierung (Programmer)}
 \subsubsection{Allgemeines}
-In dem Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte wie zum Beispiel die aktuelle Geschwindigkeit oder Temperatur verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
+Im Curtis Integrated Toolkit befindet sich unter anderem die Funktion \glqq Programmer\grqq{}, welche sehr viele Applikationseinstellungen für die Controllerprogrammierung zur Verfügung stellt. Es gibt mehrere verschiedene Menüs, welche die jeweils zugehörigen Parametergruppen auflisten. Viele Variablen können konfiguriert werden, andere werden nur für die Ausgabe aktueller Werte, wie zum Beispiel die aktuelle Geschwindigkeit oder Temperatur, verwendet. Die Parameter können je nach Anwendung und Funktion verschiedene Einheiten und einstellbare Wertebereiche besitzen. Sehr vorteilhaft sind hierbei die meist vorhandenen Kurzbeschreibungen im Curtis Integrated Toolkit oder die Parameterdeklaration in der Anleitung.
 \\[5mm]
 
 \subsubsection{Funktionen}
@@ -396,12 +398,12 @@ Dieses Menü dient zur Konfiguration Hauptschütz (Hochleistungs-Relais). Die An
 
 \textbf{Pump Contactor}\\[1mm]
 Dieses Menü dient zur Konfiguration einer Pumpe, für den Kühlkreislauf. Es kann eine erhöhte Versorgungsspannung im Anlaufbetrieb festgelegt werden.
-\\[4mm]
+
+\newpage
 
 \textbf{EM Brake Control}\\[1mm]
 Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bremse angesteuert werden. Da in unserem Motorrad jedoch nur herkömmliche mechanische Bremsen verbaut sind, ist diese Funktion für unsere Anwendung nicht zu gebrauchen. Für die elektromagnetische Bremse gibt es jedoch eine große Menge an Konfigurationsmöglichkeiten. Für verschiedene Ereignisse können bestimmte Drehmoment- und Zeitwerte festgelegt werden. Ebenfalls können viele sicherheitsrelevante Einstellungen getätigt werden. 
-
-\newpage
+\\[4mm]
 
 \textbf{Emergency Reverse (EMR)}\\[1mm]
 Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht. Wenn der Switch 1 angesteuert wird, beschleunigt das Motorrad für eine festgelegte Zeit und Geschwindigkeit in die Rückwärts-Richtung. Wenn sich das Motorrad währenddessen forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
@@ -427,7 +429,7 @@ Diese Parameter sind für die Einstellung der Geschwindigkeits- und Strom- bzw. 
 
 %% Drehmomentsteuerung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Drehmomentsteuerung (Torquecontrol)}
-Die Drehmomensteuerung wird mithilfe von 12 unterschiedlichen Parametern beschrieben. Generell können diese Parameter eher als Feineinstellungen angesehen werden, da der grundsätzliche Vorgang immer der gleiche bleibt. Mit diesen Parametern werden jedoch die maximale Geschwindigkeit, die Reaktionszeit und die Aggresivität des Motors genau definiert, um das gewünschte Beschleunigungsmuster erhalten zu können.
+Die Drehmomensteuerung wird mithilfe von zwölf unterschiedlichen Parametern beschrieben. Generell können diese Parameter eher als Feineinstellungen angesehen werden, da der grundsätzliche Vorgang immer der gleiche bleibt. Mit diesen Parametern werden die maximale Geschwindigkeit, die Reaktionszeit und die Aggresivität des Motors genau definiert, um das gewünschte Beschleunigungsmuster erhalten zu können.
 
 \vspace{1mm}
  
@@ -455,11 +457,11 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt. Für ein b
 		Max Speed & 500 - 8000 U/min & Definiert die maximale Geschwindigkeit in U/min,\\
 		Max\_Speed\_TrqM & 500 - 8000	& welche mittels der Drehmomentsteuerung\\&& angesteuert werden kann. (Unabhängig von der Gasdrehgriff-Stellung)\\\hline
 		Kp 	& 0 – 100 \% 	& Legt fest, wie aggressiv der Drehzahlregler versucht,\\
-		Kp\_TrqM	& 0 – 8192			& die Motordrehzahl auf die maximale Drehzahl zu begrenzen. Größere Werte sorgen für eine genauere Kontrolle, können jedoch zu Schwankungen führen. Bei einem zu niedrigen Kp kann die maximal\\&& Geschwindigkeit den Parameter Max Speed\\&& überschreiten.\\\hline
+		Kp\_TrqM	& 0 – 8192			& die Motordrehzahl auf die maximale Drehzahl zu begrenzen. Größere Werte sorgen für eine genauere Kontrolle, können jedoch zu Regelschwingungen\\&& führen. Bei einem zu niedrigen Kp kann die\\&& maximale Geschwindigkeit den Parameter Max\\&& Speed überschreiten.\\\hline
 		Ki 			& 5 – 100 \% 		& Mit diesem Parameter kann die Integralregelung\\
-		Ki\_TrqM	& 50 – 1000 		& genauer beschrieben werden, welche die Drehzahl-begrenzung unterschiedlich stark beeinflusst, abhängig von der aktuellen Regelabweichung. Größere Werte ermöglichen eine schnellere Regelung, können jedoch zu Schwankungen führen. Bei zu niedrigen Werten kann es lange dauern, bis sich der Motor bei einer Überdrehzahl dem Max Speed nähert. \\\hline
+		Ki\_TrqM	& 50 – 1000 		& genauer beschrieben werden, welche die Drehzahl-begrenzung unterschiedlich stark beeinflusst, abhängig von der aktuellen Regelabweichung. Größere Werte ermöglichen eine schnellere Regelung, können jedoch zu Regelschwingungen führen. Bei zu\\&& niedrigen Werten kann es lange dauern, bis sich der Motor bei einer Überdrehzahl dem Parameter Max Speed nähert. \\\hline
 		Kd    		& 0 – 100 \% 	& Beschreibt die Dämpfung, wenn sich das Fahrzeug\\
-		Kd\_TrqM	& 0 – 8192	 	& der Höchstgeschwindigkeit nähert, dadurch werden Überschwingungen verringert. Bei einem zu hohen Kd kann es lange dauern, bis die Höchstgeschwindigkeit erreicht wird. Wenn Kd zu niedrig eingestellt ist, kann die Höchstgeschwindigkeit überschritten\\&& werden, insbesondere beim bergab Fahren. \\\hline	
+		Kd\_TrqM	& 0 – 8192	 	& der Höchstgeschwindigkeit nähert, dadurch werden Überschwingungen verringert. Bei einem zu hohen Kd kann es lange dauern, bis die Höchstgeschwindigkeit erreicht wird. Wenn Kd zu niedrig eingestellt ist, kann die Höchstgeschwindigkeit überschritten\\&& werden, insbesondere beim Bergabfahren. \\\hline	
 	\end{tabular}	
 	\caption{Geschwindigkeitsbegrenzer-Parameter}
 	\label{tab:Geschwindigkeitsbegrenzer-Parameter}
@@ -473,17 +475,17 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt. Für ein b
 		Accel Rate 	& 0.1 - 30.0 s 		& Legt fest, wie lange es dauert, bis das\\
 		Accel\_Rate\_TrqM & 100 - 30000	& Motordrehmoment bei Vollgas auf das Maximum angestiegen ist. Größere Werte bedeuten eine langsamere\\&& Reaktion. \\\hline
 		Accel Release Rate	& 0.1 - 2.0 s 		& Legt fest, wie schnell die Verzögerung\\
-		Accel\_Release\_Rate\_TrqM & 100 - 2000 & des Fahrzeugs bei einem loslassen des Gasdrehgriffs eingeleitet wird. Bei\\&& einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, fährt das Fahrzeug für kurze Zeit weiter.\\\hline
+		Accel\_Release\_Rate\_TrqM & 100 - 2000 & des Fahrzeugs bei einem Loslassen des Gasdrehgriffs eingeleitet wird. Bei\\&& einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, kann es sich anfühlen, wie wenn das Fahrzeug für kurze Zeit\\&& weiterfährt.\\\hline
 		Brake Rate 	& 0.1 - 5.0 s 		& Legt fest, wie lange es dauert, bis das\\
 		Brake\_Rate\_TrqM & 100 - 5000	& Bremsmoment bei einem startenden Bremsvorgang oder einem Fahrt-richtungswechsel aufgebaut wird. Größere Werte bedeuten einen\\&& schonenderen Bremsvorgang. \\\hline
 		Brake Release Rate	& 0.1 - 2.0 s 		& Beschreibt, wie schnell sich das Brems-\\
 		Brake\_Release\_Rate\_TrqM & 100 - 2000	& moment löst, wenn das Fahrzeug vom Bremsvorgang zum Fahrbetrieb\\&& wechselt. Bei zu hohen Werten wird der Bremsvorgang noch kurzzeitig\\&& fortgeführt.  \\\hline
 		Neutral Braking    & 0 – 100 \% 	& Der neutrale Bremsvorgang tritt auf,\\
-		Neutral\_Braking\_TrqM & 0 - 32767 	& wenn der Gasdrehgriff losgelassn wird oder keine Fahrtrichtung gewählt\\&& wurde. Der neutrale Bremsparameter ist von 0 bis 100\% des maximalen\\&& Rekuperationsstromes einstellbar. \\\hline
-		Neutral Taper Speed	& 200 - 6000 U/min 	 & Legt die Motordrehzahl fest, an welcher\\
-		Neutral\_Taper\_Speed\_TrqM & 200 - 6000 & der neutrale Bremsstrom rückgespeist wird, wenn der Gasdrehgriff losgelassen wird. Bei einem zu geringen Wert kann es zu Schwankungen kommen.\\\hline
-		Forward Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\   Forward\_Full\_Restraint\_Speed\_TrqM & 100 - 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Vorwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die              \\&&Rückhaltestärke angesehen werden.\\&& Bei einem zu geringen Wert kann es zu Schwankungen kommen.  \\\hline
-		Back Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\ 		Back\_Full\_Restraint\_Speed\_TrqM & 100 – 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Rückwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die 				\\&&Rückhaltestärke angesehen werden.\\&& Bei einem zu geringen Wert kann es zu Schwankungen kommen. \\\hline		
+		Neutral\_Braking\_TrqM & 0 - 32767 	& wenn der Gasdrehgriff losgelassn wird oder keine Fahrtrichtung gewählt\\&& wurde. Der neutrale Bremsstrom ist von 0 bis 100\% des maximalen\\&& Rekuperationsstromes einstellbar. \\\hline
+		Neutral Taper Speed	& 200 - 6000 U/min 	 & Bei dieser Motordrehzahl wird der\\ 
+		Neutral\_Taper\_Speed\_TrqM & 200 - 6000 & neutrale Bremsstrom rückgespeist, wenn der Gasdrehgriff losgelassen wird. Bei einem zu geringen Wert kann es zu Regelschwingungen kommen.\\\hline
+		Forward Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\   Forward\_Full\_Restraint\_Speed\_TrqM & 100 - 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Vorwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die              \\&&Rückhaltestärke angesehen werden.\\&& Bei einem zu geringen Wert kann es zu Regelschwingungen kommen.  \\\hline
+		Back Full Restraint Speed & 100 – 32000 U/min & Legt den Geschwindigkeitspunkt fest,\\ 		Back\_Full\_Restraint\_Speed\_TrqM & 100 – 32000 & an dem der volle Rekuperationsstrom rückgespeist wird, um das Rückwärts-rollen des Fahrzeugs zu verhindern. Kann auch als Parameter für die 				\\&&Rückhaltestärke angesehen werden.\\&& Bei einem zu geringen Wert kann es zu Regelschwingungen kommen. \\\hline		
 	\end{tabular}	
 	\caption{Reaktions-Parameter}
 	\label{tab:Reaktions-Parameter}
@@ -493,7 +495,7 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt. Für ein b
 \newpage
 
 \subsubsection{ECO- und Sportmodus (Speed-Mode-Select)}
-Die oben genannten Parameter werden für die Erstellung der unterschiedlichen Antriebsmodi verwendet. Für den Ecomodus werden für die Parameter höhere Reaktionszeiten und weniger Aggressivität gewählt, daraus ergibt sich ein gemütlicherer und schonenderer Fahrbetrieb, welcher gleichzeitig weniger Leistung verbraucht. Für den Sportmodus hingegen werden kürzere Reaktionszeiten und höhere Aggressivität gewählt, daraus ergibt sich ein sportlicheres Fahrverhalten, die gewünschte Geschwindigkeit wird schneller erreicht. Natürlich zieht dieser Antriebsmodus einen erhöhten Leistungsverbrauch nach sich. Der Wechsel des Antriebsmodus bedeutet jedoch eine Veränderung kritischer Parameter, weshalb der KSI-Pin aus- und eingeschalten werden muss, um den normalen Fahrbetrieb wieder aufnehmen zu können. Da jedoch ein ausschalten des KSI-Pins zum sofortigen Stillstand (Einleiten des Bremsvorgangs bis die Geschwindigkeit 0 ist) des Motorrades führt, kann der Wechsel des Antriebsmodus nur im Stillstand erfolgen. Die einzelnen Modi können beliebig konfiguriert werden und auch im Nachhinein mittels dem Curtis Integrated Toolkit bzw. VCL-Studio sehr schnell und leicht verändert oder angepasst werden. Vorerst wird es nur zwei unterschiedliche Antriebsmodi geben, da in diesem Fall nur ein Pin für die Selektierung benötigt wird (1 digitaler Eingang). Wenn in Zukunft jedoch weiterhin Interesse an weiteren unterschiedlichen Antriebsmodi besteht, können diese mit relativ wenig Aufwand hinzugefügt werden.
+Die oben genannten Parameter werden für die Erstellung der unterschiedlichen Antriebsmodi verwendet. Für den Ecomodus werden für die Parameter höhere Reaktionszeiten und weniger Aggressivität gewählt, daraus ergibt sich ein gemütlicherer und schonenderer Fahrbetrieb, welcher gleichzeitig weniger Leistung verbraucht. Für den Sportmodus hingegen werden kürzere Reaktionszeiten und höhere Aggressivität gewählt, daraus ergibt sich ein sportlicheres Fahrverhalten, die gewünschte Geschwindigkeit wird schneller erreicht. Natürlich zieht dieser Antriebsmodus einen erhöhten Leistungsverbrauch nach sich. Die einzelnen Modi können beliebig konfiguriert werden und auch im Nachhinein mittels des Curtis Integrated Toolkit bzw. VCL-Studio sehr schnell und leicht verändert oder angepasst werden. Vorerst wird es nur zwei unterschiedliche Antriebsmodi geben, da in diesem Fall nur ein Pin für die Selektierung benötigt wird (ein digitaler Eingang). Wenn in Zukunft jedoch weiterhin Interesse an weiteren unterschiedlichen Antriebsmodi besteht, können diese mit relativ wenig Aufwand hinzugefügt werden.
 
 \vspace{5mm}
 
@@ -525,7 +527,7 @@ Hier eine Tabelle der einzelnen Parameter im ECO- und im Sportmodus:
 
 \textbf{Konventionelle Umsetzung} \\
 \vspace{2mm}
-In konventionellen E-Motorrädern wird bei der Auswahl zwischen den Antriebsmodi ECO-Normal-Sport eine 7-Punkte Map hinterlegt, welche die Drehzahl abhängig vom Drehmoment beschreibt. Da dies für die schulische Umsetzung aber ebenfalls zu zeitintensiv wäre, wird dies wahrscheinlich bei späteren Optimierungen hinzugefügt.
+In konventionellen E-Motorrädern wird bei der Auswahl zwischen den Antriebsmodi ECO-Normal-Sport eine 7-Punkte-Map hinterlegt, welche die Drehzahl abhängig vom Drehmoment beschreibt. Da dies für die schulische Umsetzung aber ebenfalls zu zeitintensiv wäre, wird dies wahrscheinlich bei späteren Optimierungen hinzugefügt.
 
 
  
@@ -538,12 +540,12 @@ In konventionellen E-Motorrädern wird bei der Auswahl zwischen den Antriebsmodi
 %% Kommunikation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vehicle-Control-Language (VCL) Programmierung}
 \subsubsection{Grundfunktion}
-Die Vehicle-Control-Language ist ein eigener Abschnitt der Programmierung und von der Grundidee auch sehr unterschiedlich. Die normale Parameterprogrammierung vereinfacht die generelle Programmierung des Curtis Controllers zwar sehr, beschränkt die Anzahl der Möglichkeiten jedoch auf die Anzahl der Parameter und deren Konfigurationsmöglichkeiten. Die VCL-Programmiersprache bietet hierbei eine sehr gute Erweiterungsmöglichkeit und bei Kombination der beiden Programmierarten kann die Programmierung des Curtis Controllers optimiert und enorm erweitert werden. Die Vehicle-Control-Language ist eine Programmiersprache auf der Basis von C und das VCL-Studio sieht der Benutzeroberfläche eines normalen Programms mit integriertem Editor und Compiler, wie zum Beispiel Dev-C++, sehr ähnlich. Da in diesem Fall jedoch jeder beliebige Programmcode verfasst werden kann, bietet VCL nahezu endlose Möglichkeiten. Die wichtigsten Grundlagen, auf die man bei der Programmierung von VCL aufpassen muss, sind in den beigelegten Skripten \glqq WIN VCL User's Guide\grqq{}, \glqq VCL Programmer's Guide\grqq{} und \glqq VCL Common Functions\grqq{} im Anhang genauer erklärt. Das Wichtigste ist jedoch die Kenntnis darüber, dass mit dem VCL-Studio nicht nur die vorhandenen oder selbsterstellten VCL-Variablen verändert werden können. Die meisten Variablen, die in den Parametermenüs vorhanden sind, können ebenfalls eingelesen und beschrieben werden. Hier ist natürlich Vorsicht geboten, denn viele Parameter dürfen in keinem Fall während des Betriebs geändert werden. Bei wichtigen Variablen muss daher auch ein Aus- und Einschalten des KSI-Pins durchgeführt werden, um die Veränderung wirksam zu machen und Komplikationen zu vermeiden. Generell ist die Hauptaufgabe einer ausgefeilten VCL-Programmierung jedoch die Automatisierung des gesamten E-Motorrades. Zum Beispiel kann beim Auftritt eines Fehlers automatisch ein zugehöriger Fehlerbehebungsvorgang eingeleitet werden. Da wir in unserem Projekt jedoch nur ein sehr kleines Zeitfenster zur Verfügung haben, konnte das VCL-Programm nicht derartig ausgereift werden. In unserem Fall beschränkt sich die VCL-Programmierung fast ausschließlich auf die Kommunikation mit dem Raspberry PI, denn die Lösung über VCL-CAN schien uns einfacher und vorallem viel flexibler wie die vorgefertigte Programmierung \glqq CANopen\grqq{} zu verwenden. 
+Die Vehicle-Control-Language ist ein eigener Abschnitt der Programmierung und von der Grundidee auch sehr unterschiedlich. Die normale Parameterprogrammierung vereinfacht die generelle Programmierung des Curtis Controllers zwar sehr, beschränkt die Anzahl der Möglichkeiten jedoch auf die Anzahl der Parameter und deren Konfigurationsmöglichkeiten. Die VCL-Programmiersprache bietet hierbei eine sehr gute Erweiterungsmöglichkeit und bei Kombination der beiden Programmierarten kann die Programmierung des Curtis Controllers optimiert und enorm erweitert werden. Die Vehicle-Control-Language ist eine Programmiersprache auf der Basis von C und das VCL-Studio sieht der Benutzeroberfläche eines normalen Programms mit integriertem Editor und Compiler, wie zum Beispiel Dev-C++, sehr ähnlich. Da in diesem Fall jedoch jeder beliebige Programmcode verfasst werden kann, bietet VCL nahezu endlose Möglichkeiten. Die wichtigsten Grundlagen, auf die man bei der Programmierung von VCL aufpassen muss, sind in den beigelegten Skripten \glqq WIN VCL User's Guide\grqq{}, \glqq VCL Programmer's Guide\grqq{} und \glqq VCL Common Functions\grqq{} im Anhang genauer erklärt. Das Wichtigste ist jedoch die Kenntnis darüber, dass mit dem VCL-Studio nicht nur die vorhandenen oder selbsterstellten VCL-Variablen verändert werden können. Die meisten Variablen, die in den Parametermenüs vorhanden sind, können ebenfalls eingelesen und beschrieben werden. Hier ist natürlich Vorsicht geboten, denn viele Parameter dürfen in keinem Fall während des Betriebs geändert werden. Bei wichtigen Variablen muss daher auch ein Aus- und Einschalten des KSI-Pins durchgeführt werden, um die Veränderung wirksam zu machen und Komplikationen zu vermeiden. Generell ist die Hauptaufgabe einer ausgefeilten VCL-Programmierung jedoch die Automatisierung des gesamten E-Motorrades. Zum Beispiel kann beim Auftritt eines Fehlers automatisch ein zugehöriger Fehlerbehebungsvorgang eingeleitet werden. Da wir in unserem Projekt jedoch nur ein sehr kleines Zeitfenster zur Verfügung haben, konnte das VCL-Programm nicht derartig ausgereift werden. In unserem Fall beschränkt sich die VCL-Programmierung fast ausschließlich auf die Kommunikation mit dem Raspberry PI, denn die Lösung über VCL-CAN schien uns einfacher und vor allem viel flexibler als die vorgefertigte Programmierung \glqq CANopen\grqq{} zu verwenden. 
 
 \newpage
 
 \subsubsection{Kommunikation (CAN-Bus)}
-Die Kommunikation erfolgt grundsätzlich nur in eine Richtung, da dies nicht nur einfacher zu realisieren war, sondern für unsere Anwendungen auch völlig ausreicht. Der Curtis Controller sendet die ausgewählten Parameter immer in der selben Reihenfolge an den Raspberry PI, dafür wurden 3 unterschiedliche Datenpakete mit jeweils einem einzigartigen Identifier und 7 folgenden Parametern erstellt. Ein Parameter enthält immer 4 Hexadezimalzahlen, also insgesamt 2 Byte. Wenn ein Fehler am Motorcontroller erkannt wurde, wird nach dem dritten Datenpaket noch ein zusätzliches Fehler-Datenpaket eingeschoben. Wenn zum Beispiel zwei Fehler am Controller vorliegen, werden diese 2 Fehler nach dem Fehler-Identifier (FFFF) gesendet, danach werden die 5 weiteren freien Plätze des Fehler-Datenpakets mit dem Fehler-Identifier aufgefüllt. Nachdem das Fehler-Datenpaket gesendet wurde, werden die ersten 7 Fehler vom Datenspeicher gelöscht, liegt der Fehler jedoch weiterhin vor, kann dieser auch nicht gelöscht werden. Hier werden die Datenpaket mit den zugehörgen Parametern noch ausführlich dargestellt:
+Die Kommunikation erfolgt grundsätzlich nur in eine Richtung, da dies nicht nur einfacher zu realisieren war, sondern für unsere Anwendungen auch völlig ausreicht. Der Curtis Controller sendet die ausgewählten Parameter immer in der selben Reihenfolge an den Raspberry PI, dafür wurden drei unterschiedliche Datenpakete mit jeweils einem einzigartigen Identifier und sieben folgenden Parametern erstellt. Ein Parameter enthält immer vier Hexadezimalzahlen, also insgesamt zwei Byte. Wenn ein Fehler am Motorcontroller erkannt wurde, wird nach dem dritten Datenpaket noch ein zusätzliches Fehler-Datenpaket eingeschoben. Wenn zum Beispiel zwei Fehler am Controller vorliegen, werden diese zwei Fehler nach dem Fehler-Identifier (FFFF) gesendet, danach werden die fünf weiteren freien Plätze des Fehler-Datenpakets mit dem Fehler-Identifier aufgefüllt. Nachdem das Fehler-Datenpaket gesendet wurde, werden die ersten sieben Fehler vom Datenspeicher gelöscht, liegt der Fehler jedoch weiterhin vor, kann dieser auch nicht gelöscht werden. Hier werden die Datenpakete mit den zugehörigen Parametern ausführlich dargestellt:
 
 \setlength{\tabcolsep}{9pt}
 \begin{table}[H]
@@ -556,25 +558,25 @@ Die Kommunikation erfolgt grundsätzlich nur in eine Richtung, da dies nicht nur
 		Parameter 4 & Motor\_Temperature	& Interlock	& Time\_to\_Capture\_Speed\_1\\\hline		
 		Parameter 5	& Motor\_Power 	& Throttle\_Command & Time\_to\_Capture\_Distance\_1\\\hline
 		Parameter 6	& Motor\_Torque 	& Brake\_Command	& Braking\_Distance\_Captured\\\hline
-		Parameter 7 & Modulation\_Depth & EMR\_State & Distance\_Since\_Stop\\\hline		
+		Parameter 7 & Modulation\_Depth & Switch 5 & Distance\_Since\_Stop\\\hline		
 	\end{tabular}	
 	\caption{Datenpakete Deklaration}
 	\label{tab:Datenpakete_Deklaration}
 \end{table}
 
-Der gesamte VCL-Programmcode befindet sich im Anhang, auffällig ist hierbei unter anderem die enorm lange Zeitverzögerung, welche den selben Delay-Befehl 3330 mal beinhaltet. Die gewünschte CAN-Bus Übertragungsfrequenz beträgt 100ms, da jedoch der integrierte Logic-Controller eine sehr viel kürzere applikationsabhängige Taktfrequenz besitzt, erwies sich das Aussenden von Parametern in der selben Reihenfolge vorerst als sehr schwierig. Es wurden viele unterschiedliche Methoden versucht, jedoch erwies sich die Synchronisation der beiden Taktfrequenzen als die einfachste. Da ebenfalls sehr wenig hilfreiche Informationen im Internet zu finden waren, wurde die Realisierung mit einer besseren Methode vernachlässigt. Die Vereinfachung bzw. Verkürzung der langen Zeitverzögerung mit einer Schleife oder ähnlichem erwies sich ebenfalls als schwierig und fehleranfällig, wurde deshalb weggelassen.
+Der gesamte VCL-Programmcode befindet sich im Anhang, auffällig ist hierbei unter anderem die enorm lange Zeitverzögerung, welche den selben Delay-Befehl 3330 mal beinhaltet. Die gewünschte CAN-Bus Übertragungsrate beträgt 0,1 Sekunden, da jedoch der integrierte Logic-Controller eine sehr viel kürzere applikationsabhängige Taktzeit besitzt, erwies sich das Aussenden von Parametern in der selben Reihenfolge vorerst als sehr schwierig. Es wurden viele unterschiedliche Methoden versucht, jedoch erwies sich die Synchronisation der beiden Taktfrequenzen als die einfachste. Da im Internet auch sehr wenig hilfreiche Informationen zu finden waren, wurde keine alternative Realisierung mehr versucht. Die Vereinfachung bzw. Verkürzung der langen Zeitverzögerung mit einer Schleife oder ähnlichem erwies sich ebenfalls als schwierig und fehleranfällig, wurde deshalb weggelassen.
 
 \newpage
 
 \subsubsection{Speed-Mode-Select}
-Die Speed-Mode-Select Programmierung gehört eigentlich auch zum Punkt Drehmomentsteuerung, dieses Programm wurde aber ebenfalls in der Vehicle-Control-Language realisiert. Die zugehörigen Parmeter, welche ausschlaggebend für die Drehmomentsteuerung sind, wurden bereits genau erklärt. Grundsätzlich ist das VCL-Programm sehr einfach und kurz aufgebaut, die Parameter zur Drehmomentsteuerung werden abhängig von einem digitalen Eingang verändert. Der digitale Eingang wird mittels eines externen Schalters realisiert, dieser wurde auf der Lenkstange befestigt. Wenn der Schalter auf den ECO-Antriebsmodus geschalten wurde, werden die Parameter für den ECO-Antriebsmodus an den Drehmomentregler weitergegeben. Bei der Auswahl des Sport-Antriebsmodus werden die Parameter für den Sport-Antriebsmodus an den Regler weitergegeben.\\ 
+Die Speed-Mode-Select Programmierung gehört eigentlich auch zum Punkt Drehmomentsteuerung, dieses Programm wurde aber ebenfalls in der Vehicle-Control-Language realisiert. Die zugehörigen Parmeter, welche ausschlaggebend für die Drehmomentsteuerung sind, wurden bereits genau erklärt. Grundsätzlich ist das VCL-Programm sehr einfach und kurz aufgebaut, die Parameter zur Drehmomentsteuerung werden abhängig von einem digitalen Eingang verändert. Der digitale Eingang wird mittels eines externen Schalters realisiert, dieser wurde auf der Lenkstange befestigt. Wenn der Schalter auf den ECO-Antriebsmodus geschaltet wird, werden die Parameter für den ECO-Antriebsmodus an den Drehmomentregler weitergegeben. Bei der Auswahl des Sport-Antriebsmodus werden die Parameter für den Sport-Antriebsmodus an den Regler weitergegeben. Der Wechsel des Antriebsmodus bedeutet jedoch eine Veränderung kritischer Parameter, weshalb der KSI-Pin aus- und eingeschaltet werden muss, um die Änderung der Parameter wirksam zu machen. Ein Ausschalten des KSI-Pins führt nach 0,1 Sekunden zum sofortigen Einleiten des Bremsvorgangs, bis die Geschwindigkeit Null ist. Bei richtiger Konfiguration kann der KSI-Pin in dieser Zeit aus- und eingeschalten werden, um einen Wechsel des Antriebsmodus während des Fahrbetriebs wirksam zu machen. Aus sicherheitstechnischen Gründen kann der KSI-Schaltvorgang jedoch nur erfolgen, wenn der Gas-Eingang Null ist.\\ 
 \vspace{5mm}
-Wie im folgenden Programmschnippsel zu erkennen ist, ist der Aufbau dieses Programms äußerst einfach. Aufpassen muss man bei der Überschreibung der Parameter, da nicht die Werte mit den Einheiten, sondern die absoluten Werte verwendet werden müssen. Vorallem bei den Parametern des PID-Reglers sind unterschiedliche Absolutwerte vorgegeben, diese müssen auf den gewünschten Prozentwert scaliert werden.
+Wie im folgenden Programmausschnitt zu erkennen ist, ist der Aufbau dieses Programms äußerst einfach. Aufpassen muss man bei der Überschreibung der Parameter, da nicht die Werte mit den Einheiten, sondern die absoluten Werte verwendet werden müssen. Vor allem bei den Parametern des PID-Reglers sind unterschiedliche Absolutwerte vorgegeben, diese müssen auf den gewünschten Prozentwert skaliert werden.
 \vspace{2mm}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{figures/antrieb/ECO_Sport_Select_Programmschnippsel.png}
-		\caption{ECO/Sport-Select Programmschnippsel}
+		\caption{ECO/Sport-Select Programmierung}
 	\end{center}
 \end{figure}
 
@@ -586,17 +588,26 @@ Wie im folgenden Programmschnippsel zu erkennen ist, ist der Aufbau dieses Progr
 \subsection{Leonard-Versuchsaufbau}
 \textbf{Grundidee:}
 \\[2mm]
-Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alterntive Spannungsversorgung gefunden werden, welche für die Anforderungen der Motorsteuerung geeignet ist. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu kosten- und zeitintensiv, weshalb der Betreuungslehrer vorschlug, die bipolare Spannungsquelle mittels eines Leonard-Umformers zu realisieren.
-\\[5mm]
-
-\textbf{Fazit:}
-\\[2mm]
-Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während der gescheiterten Test-Durchläufe nahmen wir genauere Messungen mittels eines Oszilloskops vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung der Gleichspannungs-Speisung konnten wir feststellen, dass in einem Zeitbereich von circa 40ms ein unerwarteter Einschwingvorgang zu beobachten war, welcher einer negativen Sinus-Schwingung sehr ähnelte. Es trat zuerst eine negative Flanke in einem Zeitbereich von 12ms und mit einer Spannungsunterhöhung von circa 30V auf, dann folgte eine Spannungsüberhöhung mit etwa den selben Werten. Nach weiteren 16ms war der Schwingungsvorgang wieder auf die Eingangsspannung von 50V zurückgefallen. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
+Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alternative Spannungsversorgung gefunden werden, welche für die Anforderungen der Motorsteuerung geeignet ist. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle (beide Energierichtungen) benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu kosten- und zeitintensiv, weshalb der Betreuungslehrer vorschlug, die bipolare Spannungsquelle mittels eines Leonard-Umformers zu realisieren.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Umformer.png}
 		\caption{Leonardumformer Versuchsaufbau}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\textbf{Fazit:}
+\\[2mm]
+Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während der gescheiterten Test-Durchläufe nahmen wir genauere Messungen mittels eines Oszilloskops vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung der Gleichspannungs-Speisung konnten wir feststellen, dass in einem Zeitbereich von circa 40ms ein unerwarteter Einschwingvorgang zu beobachten war, welcher einer negativen Sinus-Schwingung sehr ähnelte. Es trat zuerst eine negative Flanke in einem Zeitbereich von 12ms und mit einer Spannungsunterhöhung von circa 30V auf, dann folgte eine Spannungsüberhöhung mit etwa den selben Werten. Nach weiteren 16ms war der Schwingungsvorgang wieder auf die Eingangsspannung von 50V zurückgefallen. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
+\vspace{5mm}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Spannungsueberschwingung.png}
+		\caption{Leonardumformer Spannungsüberhöhung}
 	\end{center}
 \end{figure}
 
@@ -607,12 +618,12 @@ Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commission
 
 \textbf{Grundidee:}
 \\[2mm]
-Der Leonard-Veruchsaufbau hat aufgrund der Trägheit der Spannungsquelle nicht funktioniert. Übrig blieb deshalb nur die Realisierung der Spannungsquelle mithilfe eines Ersatz-Akkumulators. Zufälligerweise konnten wir im Projektraum vier Bleiakkumulatoren ausfindig machen, welche wir nun seriell zu einer 48V-Spannungsquelle verschalten wollten. Die Bleiakkus waren zwar teils angeschlagen bzw. sehr tief entladen, mittels eines intelligenten Ladegeräts konnten aber 3 von 4 Akkus wieder erfolgreich aufgeladen werden. Mit einer von Zuhause mitgebrachten Autobatterie und zusätzlichen Starterkabeln konnte letztendlich aber die 48V-Spannungsquelle realisiert werden.
+Der Leonard-Veruchsaufbau hat aufgrund der Trägheit der Spannungsquelle nicht funktioniert. Übrig blieb deshalb nur die Realisierung der Spannungsquelle mithilfe eines Ersatz-Akkumulators. Zufälligerweise konnten wir im Projektraum vier Bleiakkumulatoren ausfindig machen, welche wir nun seriell zu einer 48V-Spannungsquelle verschalten wollten. Die Bleiakkus waren zwar teils angeschlagen bzw. sehr tief entladen, mittels eines intelligenten Ladegeräts konnten aber drei von vier Akkus wieder erfolgreich aufgeladen werden. Mit einer von Zuhause mitgebrachten Autobatterie und zusätzlichen Starterkabeln konnte letztendlich aber die 48V-Spannungsquelle realisiert werden.
 \\[5mm]
 
 \textbf{Fazit:}
 \\[2mm]
-Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. Ein Problem stellten vorerst aber die großen Einschaltströme dar, welche bei der Schließung des Stromkreises zu Lichtbögen führten. Um Beschädigungen an den Kondensatoren zu verhindern, konnte dieses Problem jedoch durch Vorladen der Kondensatoren mithilfe eines 48V Netzgerätes behoben werden.
+Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. Ein Problem stellten vorerst aber die großen Einschaltströme dar, welche bei der Schließung des Stromkreises zu Ladestromstößen führten. Um Beschädigungen an den Kondensatoren zu verhindern, konnte dieses Problem jedoch durch Vorladen der Kondensatoren mithilfe eines 48V Netzgerätes (durch Verwendung der Strombegrenzung) behoben werden.
 \\[5mm]
 
 \textbf{Erste Inbetriebnahme:}
