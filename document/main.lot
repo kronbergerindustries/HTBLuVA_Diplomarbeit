@@ -2,45 +2,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {III.1}{\ignorespaces Auszug IP Schutzarten\relax }}{14}{table.caption.4}%
+\contentsline {table}{\numberline {III.1}{\ignorespaces Auszug IP Schutzarten\relax }}{14}{table.caption.6}%
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {table}{\numberline {IV.1}{\ignorespaces Gewichtstabelle\relax }}{30}{table.caption.18}%
-\contentsline {table}{\numberline {IV.2}{\ignorespaces Aluminium: AlMg4.5Mn Materialdaten\relax }}{30}{table.caption.19}%
-\contentsline {table}{\numberline {IV.3}{\ignorespaces Auszug Wertetabelle ISO 08 B-1\relax }}{37}{table.caption.40}%
-\contentsline {table}{\numberline {IV.4}{\ignorespaces Auszug Wertetabelle ISO 10 B-1\relax }}{38}{table.caption.43}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {VI.1}{\ignorespaces Geschwindigkeitsbegrenzer-Parameter\relax }}{81}{table.caption.87}%
-\contentsline {table}{\numberline {VI.2}{\ignorespaces Reaktions-Parameter\relax }}{82}{table.caption.88}%
-\contentsline {table}{\numberline {VI.3}{\ignorespaces Antriebsmodi\relax }}{83}{table.caption.89}%
-\contentsline {table}{\numberline {VI.4}{\ignorespaces Datenpakete Deklaration\relax }}{85}{table.caption.90}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {VII.1}{\ignorespaces Berechnung der Leistung des 12V-Systems\relax }}{91}{table.caption.96}%
-\contentsline {table}{\numberline {VII.2}{\ignorespaces Datenbankstruktur der Benutzer Tabelle\relax }}{106}{table.caption.114}%
-\contentsline {table}{\numberline {VII.3}{\ignorespaces Datenbankstruktur der Datenpaket 1 Tabelle\relax }}{106}{table.caption.115}%
-\contentsline {table}{\numberline {VII.4}{\ignorespaces Datenbankstruktur der Datenpaket 2 Tabelle\relax }}{107}{table.caption.116}%
-\contentsline {table}{\numberline {VII.5}{\ignorespaces Datenbankstruktur der Datenpaket 3 Tabelle\relax }}{107}{table.caption.117}%
-\contentsline {table}{\numberline {VII.6}{\ignorespaces Datenbankstruktur der Fehler-Datenpaket Tabelle\relax }}{108}{table.caption.118}%
-=======
-\contentsline {table}{\numberline {IV.1}{\ignorespaces Gewichtstabelle\relax }}{21}{table.caption.9}%
-\contentsline {table}{\numberline {IV.2}{\ignorespaces Aluminium: AlMg4.5Mn Materialdaten\relax }}{21}{table.caption.10}%
-\contentsline {table}{\numberline {IV.3}{\ignorespaces Auszug Wertetabelle ISO 08 B-1\relax }}{28}{table.caption.31}%
-\contentsline {table}{\numberline {IV.4}{\ignorespaces Auszug Wertetabelle ISO 10 B-1\relax }}{29}{table.caption.34}%
+\contentsline {table}{\numberline {IV.1}{\ignorespaces Gewichtstabelle\relax }}{35}{table.caption.23}%
+\contentsline {table}{\numberline {IV.2}{\ignorespaces Aluminium: AlMg4.5Mn Materialdaten\relax }}{35}{table.caption.24}%
+\contentsline {table}{\numberline {IV.3}{\ignorespaces Auszug Wertetabelle ISO 08 B-1\relax }}{42}{table.caption.45}%
+\contentsline {table}{\numberline {IV.4}{\ignorespaces Auszug Wertetabelle ISO 10 B-1\relax }}{43}{table.caption.48}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {VI.1}{\ignorespaces Geschwindigkeitsbegrenzer-Parameter\relax }}{72}{table.caption.78}%
-\contentsline {table}{\numberline {VI.2}{\ignorespaces Reaktions-Parameter\relax }}{73}{table.caption.79}%
-\contentsline {table}{\numberline {VI.3}{\ignorespaces Antriebsmodi\relax }}{74}{table.caption.80}%
-\contentsline {table}{\numberline {VI.4}{\ignorespaces Datenpakete Deklaration\relax }}{76}{table.caption.81}%
+\contentsline {table}{\numberline {VI.1}{\ignorespaces Geschwindigkeitsbegrenzer-Parameter\relax }}{86}{table.caption.92}%
+\contentsline {table}{\numberline {VI.2}{\ignorespaces Reaktions-Parameter\relax }}{87}{table.caption.93}%
+\contentsline {table}{\numberline {VI.3}{\ignorespaces Antriebsmodi\relax }}{88}{table.caption.94}%
+\contentsline {table}{\numberline {VI.4}{\ignorespaces Datenpakete Deklaration\relax }}{90}{table.caption.95}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {VII.1}{\ignorespaces Berechnung der Leistung des 12V-Systems\relax }}{82}{table.caption.87}%
-\contentsline {table}{\numberline {VII.2}{\ignorespaces Datenbankstruktur der Benutzer Tabelle\relax }}{97}{table.caption.105}%
-\contentsline {table}{\numberline {VII.3}{\ignorespaces Datenbankstruktur der Datenpaket 1 Tabelle\relax }}{97}{table.caption.106}%
-\contentsline {table}{\numberline {VII.4}{\ignorespaces Datenbankstruktur der Datenpaket 2 Tabelle\relax }}{98}{table.caption.107}%
-\contentsline {table}{\numberline {VII.5}{\ignorespaces Datenbankstruktur der Datenpaket 3 Tabelle\relax }}{98}{table.caption.108}%
-\contentsline {table}{\numberline {VII.6}{\ignorespaces Datenbankstruktur der Fehler-Datenpaket Tabelle\relax }}{99}{table.caption.109}%
->>>>>>> kronberger
+\contentsline {table}{\numberline {VII.1}{\ignorespaces Berechnung der Leistung des 12V-Systems\relax }}{97}{table.caption.102}%
+\contentsline {table}{\numberline {VII.2}{\ignorespaces Datenbankstruktur der Benutzer Tabelle\relax }}{112}{table.caption.120}%
+\contentsline {table}{\numberline {VII.3}{\ignorespaces Datenbankstruktur der Datenpaket 1 Tabelle\relax }}{112}{table.caption.121}%
+\contentsline {table}{\numberline {VII.4}{\ignorespaces Datenbankstruktur der Datenpaket 2 Tabelle\relax }}{113}{table.caption.122}%
+\contentsline {table}{\numberline {VII.5}{\ignorespaces Datenbankstruktur der Datenpaket 3 Tabelle\relax }}{113}{table.caption.123}%
+\contentsline {table}{\numberline {VII.6}{\ignorespaces Datenbankstruktur der Fehler-Datenpaket Tabelle\relax }}{114}{table.caption.124}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
