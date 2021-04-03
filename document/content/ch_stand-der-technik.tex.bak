@@ -1,11 +1,30 @@
 \chapter{Stand der Technik}
 
 \section{Synchronmaschine mit Dauermagneterregung}
+\subsection{Allgemeines}
+Synchronmaschinen werden vor allem in Kraftwerken häufig verwendet.
+\subsection{Aufbau}
+Um eine gute Ausnutzung des Bauvolumens realisieren zu können, wird der Ständer meist mit einer sechspoligen Drehstromwicklung ausgeführt. Der Läufer ist dabei wie in folgender Abbildung beschrieben mit Dauermagneten ausgeführt.
+
+\begin{figure}[H]
+	\begin{center}
+		%\includegraphics[width=\textwidth]{figures/antrieb/Läufer_Synchronmaschine.png}
+		\caption{Läufer einer dauermagneterregten Synchronmaschine}
+	\end{center}
+\end{figure}
+
+\subsection{Funktionsweise}
+Im Motorbetrieb wird an die Klemmen der Ständerwicklungen ein Drehstrom angelegt und dadurch ein sinusförmiges Drehfeld erzeugt. Da sich ungleiche magnetische Pole anziehen, wird der Rotor mit seinem zugehörigen Magnetfeld synchron mit dem angelegten Drehfeld mitbewegt. Im Leerlauf stehen sich also der Norpol des Stator-Drehfelds und der Südpol des permagnenterregten Rotor-Drehfelds exakt gegenüber, die Drehzahl des Läufers ist also synchron mit der Drehzahl des angelegten Drehfelds. Wird eine Last angelegt, eilt das Drehfeld des Permanentmagneten um den Polradwinkel nach, es entsteht ein vom Winkel abhängiges Drehmoment. Dies kann jedoch nur bis zum sogenannten Kippmoment (Polradwinkel $\delta = 90^\circ$) gesteigert werden. Übersteigt das Drehmoment der Last das Kippmoment, so spricht man vom \glqq Reißen\grqq{} der magnetischen Felder und die Synchronmaschine bleibt stehen. Das selbe gilt für den Generatorbetrieb, hier eilt aber das Drehfeld des Rotors vor.
+
 \subsection{Auswertung der Antriebswelle (Encoder)}
+Für den Betrieb einer permanentmagneterregten Synchronmaschine wird immer ein zugehöriger Frequenzumrichter benötigt. Um eine optimale Regelung einer Synchronmaschine gewährleisten zu können, benötigt dieser die Rückmeldung eines Drehzahl- und Polradgeber, welcher im Motorgehäuse integriert ist. 
+\newpage
 
 \section{Curtis Controller}
 \subsection{Allgemeines}
 \subsection{Feldorientierte Regelung}
+
+\newpage
 
 \section{Leonard-Umformer}
 \subsection{Allgemeines}
@@ -138,6 +157,7 @@ Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschi
 %https://rn-wissen.de/wiki/index.php/Regelungstechnik
 %http://3digi.wikidot.com/allgemeines-zu-pid-reglern
 %AUT5
+%\putnote
 \newpage
 
 
