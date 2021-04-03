@@ -176,7 +176,7 @@ Durch eine Kombination aus einer Serien- und Parallelschaltung ermöglicht man e
 
 Diese Methode wird in der Praxis am häufigsten eingesetzt und ist auch bei unserem Akkusystem zum Einsatz gekommen.
 
-\textbf{Verschaltung der einzelnen Zellen in den Akkupacks:}
+\subsubsection{Verschaltung der Zellen zu einem Akkupack}
 
 Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zelle eine Spannung von 3,6V aufweist haben wir jeweils 40 einzelne Lithium Ionen Akkus zusammgeschaltet. Die einzelnen Batterie werden in den Akkupacks parallel verschaltet, da wir so einen deutlich höhere Leistungsfähigkeit erreichen und die Lebensdauer dadurch verlängert wird. 
 
@@ -188,7 +188,7 @@ Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zel
 \end{figure}
 \newpage
 
-\textbf{Verschaltung der Akkupacks:}
+\subsubsection{Verschaltung der Akkupacks}
 
 Durch die Parallelschaltung innerhalb der Akkupacks wird jedoch nicht die Spannung erhöht. Wir haben eine Anzahl von 560 einzelnen Lithium Ionen Zellen. Ein Akkupack beinhaltet 40 Zellen was dazu führt, dass wir insgesamt 14 Akkupacks haben. Diese 14 Akkupacks werden seriell verschalten um die Spannung von 3,6V auf die gewünschten 50,4V zu vergrößern.
 
@@ -311,7 +311,7 @@ Unter dem Begriff Batteriemanagementsystem versteht man die Überwachung und Reg
 In den folgenden Unterpunkten werden die Funktionen des Batteriemanagementsystems genauer erklärt.
 \newpage
 
-\textbf{Balancing:}
+\subsubsection{Balancing}
 
 Grundsätzlich wurde das Battery-Balancing bereits im Kapitel \ref{Battery-Balancing} erklärt. Im weiter Verlauf wird das Battery-Balancing im Zusammenhang mit den Akkupacks genauer erklärt und welche verschiedene Arten es davon gibt.
 
@@ -389,15 +389,15 @@ Im zweiten Schaltvorgang (Schleife in blau, 2) wird die Energie in der Spule L n
 \item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten} \medskip\\
 \end{itemize}
 
-\textbf{Spannungsmessung:}
+\subsubsection{Spannungsmessung}
 
-Lithium Ionen haben die Eigenschaft, dass sie Überladungen (Überspannung) sowie auch Unterspannung nicht gut verkraften. Im schlimmsten Fall, kann das sogar zur vollständigen Zerstörung einer Zelle kommen. Desswegen hat das Batteriemanagementsystem die Aufgabe jedes Akkupack zu messen und bei gegebener Über- und Unterspannung sofort abzuschalten. Der Schutz vor Überspannung wird zum Beispiel dann eingeschalten, sollte es zu einer ungewollten Rückspeisung kommen. Der Unterspannungsschutz hingegen tritt ein, wenn der vorgegebene Unterspannungsparameter überschritten wird. Sollte dies der Fall sein wird der Akkumulator von der Last getrennt, sodass der Akku nicht weiter entladen oder auch überladen werden kann. Die Spannungsmessung ist außerdem dafür zuständig die Spannung der Akkupacks zu messen.
-
-\textbf{Strommessung:}
+Lithium Ionen haben die Eigenschaft, dass sie Überladungen (Überspannung) sowie auch Unterspannung nicht gut verkraften. Im schlimmsten Fall, kann das sogar zur vollständigen Zerstörung einer Zelle kommen. Desswegen hat das Batteriemanagementsystem die Aufgabe jedes Akkupack zu messen und bei gegebener Über- und Unterspannung sofort abzuschalten. Der Schutz vor Überspannung wird zum Beispiel dann eingeschalten, sollte es zu einer ungewollten Rückspeisung kommen. Der Unterspannungsschutz hingegen tritt ein, wenn der vorgegebene Unterspannungsparameter überschritten wird. Sollte dies der Fall sein wird der Akkumulator von der Last getrennt, sodass der Akku nicht weiter entladen oder auch überladen werden kann. Die Spannungsmessung ist außerdem dafür zuständig die Spannung der Akkupacks zu m
+essen.
+\subsubsection{Strommessung}
 
 Bei dem Daly Batteriemanagementsystem ist eine Strommesseinrichtung bereits integriert. Diese Strommesseinrichtung misst einerseits den Entladestrom und andererseits den Ladestrom. Sollte es wie beim Überspannungschutz zu einer ungewollten Rückspeisung kommen, greift der Ladestromschutz ein. Sollte es dazu kommen, dass der Akkumulator zu viel Strom abgeben würde, wird der Entladeschutz aktiviert. Zudem wird die Strommesseinrichtung dazu benötigt, den Ladezustand des Akkumulator anzuzeigen.
 
-\textbf{Temperaturüberwachung:}
+\subsubsection{Temperaturüberwachung}
 
 Lithium Ionen Akkumulatoren neigen wie auch viele andere Akkus dazu, sich bei einer zu großen Stromentnahme stark zu erwärmen. Das kann zu innern sowie auch zu äußeren Schäden am Akkumulator führen. Deswegen ist es wichtig, die Temperatur der Akkupacks zu überwachen um Schäden vorzubeugen. Sollte der Akkumulator unter oder über einen gewissen Temperaturbereich gelangen, wird dieser von der Last getrennt um eine weitere Erwärmung und dadurch größere Schäden zu vermeiden.
 \newpage
@@ -410,7 +410,7 @@ Die Hersteller des BMS mini empfehlen die Akkumulatoren in einem möglichst geri
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.7]{figures/Akku/BMSAkkupacks.PNG}
+		\includegraphics[angle=90,scale=0.65]{figures/Akku/BMSAkkupacks.PNG}
 		\caption{Anschlussplan der Akkupacks an das BMS}
 	\end{center}
 \end{figure}
@@ -488,7 +488,7 @@ In der Hauptansicht der EMUS EVGUI App sind die wichtigsten Anzeigen abgebildet:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/EMUSAPP1.jpg}
+		\includegraphics[scale=0.4]{figures/Akku/EMUSAPP1.jpg}
 		\caption{Hauptansicht der EMUS EVGUI App}
 	\end{center}
 \end{figure}
@@ -499,10 +499,11 @@ Sobald man in dem Hauptansichtsfenster einen beliebigen Unterpunkt anklickt, öf
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/EMUSAPP2.jpg}
+		\includegraphics[scale=0.4]{figures/Akku/EMUSAPP2.jpg}
 		\caption{Detallierte Ansicht der EMUS EVGUI App}
 	\end{center}
 \end{figure}
+\newpage
 
 \subsubsection{Konfiguration der EMUS EVGUI App}
 
@@ -519,10 +520,11 @@ Klickt man diesen Button an, scheinen 4 weitere Unterpunkte auf.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/BMSAppMenü.png}
+		\includegraphics[scale=0.4]{figures/Akku/BMSAppMenü.png}
 		\caption{Menü der EMUS EVGUI App}
 	\end{center}
 \end{figure}
+\newpage
 
 Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. Auf diese zwei Punkte wird mithilfe von Bildern in den folgenden Seiten etwas genauer eingegangen.
 
@@ -530,23 +532,30 @@ Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/BMSBatteryStatus.png}
+		\includegraphics[scale=0.4]{figures/Akku/BMSBatteryStatus.png}
 		\caption{Battery Status Anzeige der EMUS EVGUI App}
 	\end{center}
 \end{figure}
-
+\newpage
 
 \textbf{Bms Status:}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{figures/Akku/BMSStatus.png}
+		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 1)}
+	\end{center}
+\end{figure}
+\newpage
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/BMSBatteryStatus.png}
-		\caption{Battery Status Anzeige der EMUS EVGUI App}
+		\includegraphics[scale=0.4]{figures/Akku/BMSStatus2.png}
+		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 2)}
 	\end{center}
 \end{figure}
+\newpage
 
-
-In der Kategorie BMS Status kann man widerrum verschiedenste Unterpunkte auswählen um die Anzeigen zu lassen.
+In der Kategorie BMS Status kann man widerrum verschiedenste Unterpunkte auswählen um diese im Detail anzeigen zu lassen.
 
 \begin{itemize}
 \item{Battery Status}\\
@@ -555,6 +564,12 @@ In der Kategorie BMS Status kann man widerrum verschiedenste Unterpunkte auswäh
 \item{Pin Status}\\
 \end{itemize}
 
-\subsection{Akkumulatoren}
+\textbf{Battery Status:}\\
+\textbf{Protection Status:}\\
+\textbf{Power Reduction:}\\
+\textbf{Pin Status:}\\
+
+\subsection{Laderegelung}
+
 
 
