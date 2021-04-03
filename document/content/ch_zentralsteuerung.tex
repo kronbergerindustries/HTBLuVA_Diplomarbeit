@@ -551,7 +551,7 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 
 \subsubsection{Benutzer System}
 
-id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
+Diese Tabelle wird zum Einloggen in das Programm verwendet und ist mit keiner weiteren Tabelle verbunden. Der Inhalt \footnote{siehe Abschnitt} dieser Tabelle sollte nicht verändert werden. Die Zuweisung der Rechte\footnote{siehe Abschnitt} läuft über den Benutzernamen im Frontend. Die id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \begin{table}[H]
 	\begin{center}
@@ -570,7 +570,36 @@ id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \subsubsection{Motor Daten}
 
+\textbf{Fehler Datenpacket}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
+			id                          & int               & Identifikationsnummer                     \\ \hline
+			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
+			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
+			error\_2            		& int               & Fehlercode 2            					\\ \hline
+			error\_3        			& int               & Fehlercode 3       						\\ \hline
+			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
+			error\_5    				& int               & Fehlercode 5 								\\ \hline
+			error\_6					& int               & Fehlercode 6        						\\ \hline
+			error\_7					& int               & Fehlercode 7    							\\ \hline
+		\end{tabular}
+		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
+		\label{tab:data4}
+	\end{center}
+\end{table}
+
+\newpage
+
 \textbf{Datenpacket 1}
+ 
+id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
+step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
+sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
+tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
  
 \begin{table}[H]
 	\begin{center}
@@ -591,13 +620,6 @@ id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 			\label{tab:data1}
 	\end{center}
 \end{table}
-
-id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
-step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
-sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
-tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
-
-\newpage
 
 \textbf{Datenpacket 2}
 
@@ -647,31 +669,9 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 	\end{center}
 \end{table}
 
+
+
 \newpage
-
-\textbf{Datenpacket 4 - Fehler}
-
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|c|c|l|}
-			\hline
-			\multicolumn{3}{|c|}{\textbf{data4}} \\ \hline
-			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
-			id                          & int               & Identifikationsnummer                     \\ \hline
-			id\_data\_3                 & int               & Fremdschlüssel von Datenpacket 3          \\ \hline
-			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
-			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
-			error\_2            		& int               & Fehlercode 2            					\\ \hline
-			error\_3        			& int               & Fehlercode 3       						\\ \hline
-			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
-			error\_5    				& int               & Fehlercode 5 								\\ \hline
-			error\_6					& int               & Fehlercode 6        						\\ \hline
-			error\_7					& int               & Fehlercode 7    							\\ \hline
-		\end{tabular}
-		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
-		\label{tab:data4}
-	\end{center}
-\end{table}
 
 \subsubsection{Fehler Tabelle}
 
@@ -708,7 +708,7 @@ Um auf eine Datenbank zu zugreifen wird muss ein \textit{connect} Objekt, mit de
 
 \newpage
 
-\subsubsection{Cursor klasse}
+\subsubsection{Cursor}
 
 Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mithilfe eines Connection Objekts. Sie können 
 

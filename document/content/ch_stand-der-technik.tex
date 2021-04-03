@@ -459,12 +459,6 @@ Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschi
 
 \fancyfoot[C]{Kronberger}
 
-\section{Steuereinheiten}
-
-\subsection{Raspberry Pi}
-
-\newpage
-
 \section{Bussysteme}
 
 \subsection{SPI-Bus}
@@ -895,61 +889,8 @@ Extended-Frame nach Standard CAN2.0B:
     \item \textbf{DLC:} Längeninformation der nachfolgenden Daten.
 \end{itemize}
 
-\textbf{Fehlererkennung im CAN Netzwerk}
-
-Das CAN-Protokoll kann Fehler selbst erkennen und signalisieren. Um Fehler zu
-erkennen, sind im CAN-Protokoll drei Mechanismen auf der Nachrichernebene
-implementiert:
-
-\begin{enumerate}
-	\item Cyclic Redundancy Check (CRC)\\
-	Der CRC sichert die Information des Rahmens , indem sendeseitig redundante Prüfbits
-	hinzugefügt werden. Empfangsseitig werden diese Prüfbits aus den empfangenen Bits
-	neu berechnet und mit den empfangenen Prüfbits verglichen. Bei Nichtübereinstimmung
-	liegt ein CRC-Fehler vor.
-	\item Frame-check\\
-	Dieser Mechanismus überprüft die Struktur des übertragenen Rahmens Die durch Frame-
-	Check erkannten Fehler werden als Formatfehler bezeichnet.
-	\item ACK-Fehler\\
-	Von allen Empfängern werden die empfangenen Rahmen durch positives
-	Acknowledgement quittiert. Wird am Sender kein Acknowledgement erkannt (ACKFehler),
-	so deutet dies auf einen möglicherweise nur von den Empfängern erkannten
-	Übertragungsfehler, auf eine Verfälschung des ACK-Feldes oder auf nicht vorhandene
-	Empfänger hin.
-\end{enumerate}
-
-Außerdem sind im CAN-Protokoll zwei Mechanismen zur Fehlererkennung auf der
-Bitebene implementiert.
-
-\begin{enumerate}
-	\item Monitoring\\
-	Jeder Knoten der sendet, beobachtet gleichzeitig den Busspegel. Er erkennt dabei
-	Differenzen zwischen gesendetem und empfangenen Bit. Dadurch können alle globalen
-	Fehler und lokal am Sender auftretenden Bitfehler sicher erkannt werden.
-	\item Bit-stuffing\\
-	Auf der Bitebene wird die Codierung der Einzelbits überprüft. Das CAN-Protokoll nutzt die
-	NRZ-Codierung (Non-Return-to Zero), die eine maximale Effizienz bei der Bitcodierung
-	gewährleistet. Dabei werden die Synchronisationsflanken nach der Methode des Bitstuffings
-	erzeugt, indem vom Sender nach fünf aufeinanderfolgenden gleichwertigen Bits
-	ein Stuff-Bit mit komplementärem Wert in den Bitstrom eingefügt wird, welches die
-	Empfänger automatisch wieder entfernen. Werden ein oder mehrere Fehler mit Hilfe der
-	oben beschriebenen Mechanismen von mindestens einem Knoten entdeckt, so wird die
-	laufende Übertragung durch Senden eines "Error flag" abgebrochen. Dadurch wird die
-	Annahme der übertragenen Nachricht durch andere Stationen verhindert und somit die
-	netzweite Datenkonsistenz sichergestellt. Nach Abbruch der Übertragung einer
-	fehlerhaften Botschaft beginnt der Sender automatisch, seine Nachricht erneut zu senden
-	(Automatic Repeat Request).
-	Tritt ein Fehler mehrmals aufeinanderfolgend auf, führt dies zur automatischen
-	Abschaltung des Knotens.
-\end{enumerate}
 \footnote{vgl. \cite{CAN}}
 
 \newpage
-
-\section{Programmiersprachen}
-
-\subsection{Python}
-
-\subsection{MySQL}
 
 

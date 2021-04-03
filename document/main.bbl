@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{CAN}
+Grundlagen zum can bus.
+
+\bibitem{SPI}
+Spi - serial peripheral interface.
+
 \bibitem{Kuehlung2}
 Karlheinz Blankenbach.
 \newblock {\em Wärmelehre}.
