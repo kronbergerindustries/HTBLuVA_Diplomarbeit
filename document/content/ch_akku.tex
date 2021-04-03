@@ -1,4 +1,4 @@
-\chapter{Akku und Ladekonzept} \label{Akku und Ladekonzept}
+\chapter{Akku und Ladekonzept}
 \fancyfoot[C]{Kern}
 
 %% Übersicht %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,6 +31,7 @@ I_{Raspberry} &= \frac{P_{Raspberry}}{U}=\frac{8 W}{5 V} = 1,6A\\
 I_{Motorcontroller} &= \frac{P_{Motorcontroller}}{U}=\frac{19,5 kW}{50,4 V} = 387 A\\
 \end{align*}
 Natürlich müsst auf der Stromverbrauch des Batteriemanagementsystem mit einberechnet werden. Dieser ist jedoch vernachlässigbar, weil dieser bei wenigen mA liegt.
+\newpage
 
 In der Nachfolgenden Abbildung kann man die Kenndaten einer einzelnen Lithium-Ionen Zelle betrachten. Durch diese Kenndaten setzt sich weitere Dimensionierung des Akkukonzeptes zusammen. 
 
@@ -54,8 +55,9 @@ Die Nennkapazität einer Lithium Ionen Zelle beträgt 3,6V. Innerhalb der Akkupa
 \begin{align*}
 U_{Gesamt} &= U_{Akkupack} \cdot 14= U_{Zelle} \cdot 14= 3.6~\mathrm{V} \cdot 14 = 50.4~\mathrm{V}\\
 \end{align*}
+\newpage
 
-\subsubsection{Zusammenstellung der Batteriezellen}
+\subsection{Zusammenstellung der Batteriezellen}
 Die Aufgabe besteht darin, die einzelnen Zellen zu sogenannten Akkupacks zusammenzuschalten. Dafür wurde Abstandshalter verwendet um die Zellen anzuordnen und anschließend mit einem Hiluminband zusammen zu schweißen. 
 
 \begin{figure}[H]
@@ -84,23 +86,43 @@ Die erste Akkubox besteht aus 2 Akkupacks. Das heißt insgesamt beinhaltet sie 8
 
 Die zweite Akkubox besteht aus insgesamt 6 Akkupacks. Diese Akkubox ist in drei Ebenen aufgeteilt wobei in einer Ebene 2 Akkuboxen Platz finden. Die nächsten beiden Akkuboxen liegen auf der ersten Ebene auf. Schlussendlich befinden sich die letzten 2 der 6 Akkuboxen auf der letzten, der dritten Ebene.
 
+
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/Box3.PNG}
+		\includegraphics[scale=0.7]{figures/Akku/Box3.PNG}
 		\caption{2. Akkubox}
 	\end{center}
 \end{figure}
 
+\newpage
 \textbf{3. Akkubox:}
 
 Die dritte und somit letzte Akkubox beinhaltet insgesamt 6 Akkupacks. Diese Box wird an der Vorderseite, genauer parallel zu den Stoßdämpfern, angebracht. Es ist wichtig die Box so nahe es geht am Mittelpunkt und möglichst weit in Bodennähe anzubringen, um den Schwerpunkt des Motorrads nicht drastisch zu verändern.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{figures/Akku/Akkubox2.PNG}
+		\includegraphics[scale=0.9]{figures/Akku/Akkubox2.PNG}
 		\caption{3. Akkubox}
 	\end{center}
 \end{figure}
+
+\textbf{Ergebnis:}
+Zuerst wird die Anzahl der  Akkupacks im gesamten System berechnet.
+\begin{align*}
+Akkupacks_{Gesamt} &= 1. Akkubox + 2. Akkubox + 3. Akkubox &=  2~\mathrm{Packs} + 6~\mathrm{Packs} + 6~\mathrm{Packs} = 14~\mathrm{Akkupacks}\\
+\end{align*}
+
+Anschließend werden die Zellen jeder einzelnen bereits oben beschriebenen Akkubox berechnet.
+\begin{align*}
+Zellen_{1.Akkupack} &= 1. Akkubox = 2~\mathrm{Packs} = 80~\mathrm{Zellen}\\
+Zellen_{2.Akkupack} &= 2. Akkubox = 6~\mathrm{Packs} = 240~\mathrm{Zellen}\\
+Zellen_{3.Akkupack} &= 3. Akkubox = 6~\mathrm{Packs} = 240~\mathrm{Zellen}\\
+\end{align*}
+
+Schlussendlich wird die Zellenanzahl der verschiedenen Akkuboxen miteinander addiert und ergeben die Gesamtanzahl der verwendeten Zellen in dem Konzept.
+\begin{align*}
+Zellen_{Gesamt} &= Zellen_{1.Akkupack} + Zellen_{2.Akkupack} + Zellen_{3.Akkupack}\\ &= 80~\mathrm{Zellen} + 240~\mathrm{Zellen} + 240~\mathrm{Zellen} = 560~\mathrm{Zellen}\\
+\end{align*}
 \newpage
 
 \subsection{Verschaltung der Batteriezellen}
@@ -219,38 +241,89 @@ Die geschätzte durch eine Näherung berechnet Laufzeit des Akkumulator, beträg
 \subsection{Allgemeine Übersicht der Elektroinstallation}
 \newpage
 %% Batteriemanagement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Batteriemanagementsystem}
+\section{Batteriemanagementsystem}
 Der zweite Teil, der für ein funktionierendes Akkusystem notwendig ist, ist das Batteriemanagementsystem. Die Aufgabe des BMS ist es die Akkumulatoren zu überwachen und an die aufgenommenen Daten über eine serielle Schnittstelle an die Zentralsteuerung weiterzugeben. 
 
-In unserm Projekt wurde ein 14S 48V 100A Li-ion Daly BMS Battery Management System verwendet. Wie bereits vorher erwähnt beinhaltet unser Akkusystem 560 Zellen. Die Bezeichnung 14s bedeudet, dass das Batteriemanagement insgesamt maximal 14 Zellen überwachen kann. Daher ist es nicht möglich jede Zelle einzeln zu überwachen da so viele Anschlüsse nicht vorhanden sind. Jedes Akkupack beinhaltet 40 Zellen.
+In unserm Projekt wurde ein BMS Mini des Hersteller EMUS verwendet. Wir haben uns für das EMUS BMS Mini entschieden, da es ein eigenständiges Lithium-Batteriemanagementsystem mit vielen bereits integrierten Bauteilen und die passenden Spezifikationen für unser Projekt hat. Unter anderem passen die Anwendungsbereiche des Batteriemanagementsystems genau zu unserer Diplomarbeit. Außerdem sind all diese BMS-Funktionen in einem einzigen Gerät integriert. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.9]{figures/Akku/BMSMINI.jpg}
+		\caption{Mini Batteriemanagementsystem der Firma EMUS}
+	\end{center}
+\end{figure}
+
+\textbf{Funktionen des EMUS BMS Mini:}
+\begin{itemize}
+\item {Messung der Zellenspannungen und Zellentemperaturen} 
+\item {Batteriestrommessung}
+\item {Ausgleich der Zellen (Battery-Balancing)}
+\item {Integriertes Schütz zum Schutz der Batterie}
+\item {Integrierter Vorladekreis für den Sanftanlauf der Motorsteuerung}
+\item {Konnektivität zu verschiedenen Arten von Ladegeräten}
+\item {Konnektivität zu Eingängen zur Steuerung des BMS und der Batterie}
+\item {Konnektivität zu den Ausgängen zur Anzeige des Batteriestatus und der Steuerung}
+\item {Gegebenfalls Konnektivität zu Smartphones zur Steuerung und Konfiguration}
+\end{itemize}
+
+\newpage
+\textbf{Spezifikationen des BMS:}
+\begin{itemize}
+\item {Anzahl der Zellen(Akkupacks): 6-16}
+\item {Einzellenspannung: 1,00 - 4,95 V}
+\item {Batteriepackspannung: DC 15,0 - 67,2 V}
+\item {Betriebstemperatur: -40°C bis +80°C}
+\item {Verbrauchte Leistung: im aktiven Modus (11mA bei 24V)}
+\item {Verbrauchte Leistung: im Leerlaufmodus (4mA bei 24V)}
+\item {Verbrauchte Leistung: im Tiefschalf (1mA bei 24V)}
+\item {Ausgleichsstrom: bis zu 200mA}
+\item {Dauerstrom 45A laden/entladen (Spitze 100A - 5s)}
+\item {Maße: 97 x 67,1 x 16,6mm}
+\end{itemize}
+
+
+\textbf{Verwendbare Schnittstellen:}
+\begin{itemize}
+\item {CAN v2.0 A/B}
+\item {RS-232 zur Fernüberwachung}
+\item {Drahtlose Smartphone - Konnektivitätsschnittstelle}
+\end{itemize}
+
+
+\textbf{Ladegeräte die das BMS unterstützt:}
+\begin{itemize}
+\item {Schützgesteuertes NonCAN-Ladegerät}
+\item {Elcon J1939 Ladegerät}
+\item {DeltaQ CANopen Ladegeräte}
+\end{itemize}
+
+Wie bereits vorher erwähnt beinhaltet unser Akkusystem 560 Zellen. Die Bezeichnung 16s bedeudet, dass das Batteriemanagement insgesamt maximal 16 Zellen überwachen kann. Daher ist es nicht möglich jede Zelle einzeln zu überwachen da so viele Anschlüsse nicht vorhanden sind. Jedes Akkupack beinhaltet 40 Zellen.
 
 \begin{align*}
 Akkupacks &= \frac{Zellen_{gesamt}}{Zellen_{Akkupack}} = \frac{560~\mathrm{Zellen}}{40~\mathrm{Zellen}} = 14~\mathrm{Akkupacks}\\
 \end{align*}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.9]{figures/Akku/Daly Batteriemanagementsystem.jpg}
-		\caption{Caly Batteriemanagementsystem}
-	\end{center}
-\end{figure}
-
-\subsubsection{Funktionen des Batteriemanagementsystems}
+\newpage
+\subsection{Funktionen des Batteriemanagementsystems}
 
 Unter dem Begriff Batteriemanagementsystem versteht man die Überwachung und Regelung von Akkumulatoren beim Laden und ebenfalls Entladen. Ein BMS ist nichts anderes als eine elktronische Regelschaltung. Zu den häufigsten Batteriekennwerten gehören die Erkennung des Batterietyps, die Batteriespannung, die Spannung sowie die Temperatur einzelner Akkumulatoren oder gesamter Akkupacks, die Akkukapazität, der Ladezustand, die Restbetriebszeit, die Stromentnahme und einige Kennwerte mehr. Die Aufgabe des Batteriemanagementsystems besteht also darin, sichzugehen, dass die Energie in einer Zellen effizient genutzt wird. Um Beschädigungen von Akkus zu vermeiden, haben die Akkus einen Tiefentladungsschutz, einen Überspannungsschutz und außerdem schützt das BMS auch vor zu schneller Ladung und ebenfalls vor einem zu hohen Entladestrom. Oft ist es der Fall, dass in einem Projekt mehrere einzelne Akkus oder sogar Akkupacks zum Einsatz kommen. In einem solchen Fall sorgt das Batteriemanagementsystem für ein sogenanntes Balancing. Das Battery-Balancing sorgt dafür, dass die Akkupacks oder einzelne Zellen gleiche Ladezustände und Entladezustände haben. 
 
 In den folgenden Unterpunkten werden die Funktionen des Batteriemanagementsystems genauer erklärt.
+\newpage
 
 \textbf{Balancing:}
-Grundsätzlich wurde das Battery-Balancing bereits im ........................................................................................
-\textbf{Akkupacks:}
+
+Grundsätzlich wurde das Battery-Balancing bereits im Kapitel \ref{Battery-Balancing} erklärt. Im weiter Verlauf wird das Battery-Balancing im Zusammenhang mit den Akkupacks genauer erklärt und welche verschiedene Arten es davon gibt.
+
+
+\textbf{Balancing in Zusammenhang mit den Akkupacks:}
 
 Muss noch zitiert werden: Cluster oder Akkupacks bestehen zur Erhöhung der Nennspannung in der Regel aus mehreren in Reihe geschalteten Einzelzellen oder Zellblöcken. Fertigungs- und alterungsbedingt gibt es hierbei Schwankungen in der Kapazität, im Innenwiderstand und weiteren Parametern dieser Zellen. Die schwächste Zelle ist dabei bestimmend, wie viel geladen oder entladen werden darf. Im praktischen Einsatz von mehrzelligen in Reihe verschalteten Akkus führt dieser Umstand dazu, dass die Zellen in Reihe unterschiedlich geladen und entladen werden.
 
 Es kommt dann im Verbund zu kritischer Tiefentladung oder bei der Ladung zu einer Überladung und Überschreiten der Ladeschlussspannung einzelner Zellen. Je nach Akkutyp kann es dabei zu einer irreversiblen Schädigung einzelner Zellen kommen. Die Folge: das gesamte Akkupack verliert an Kapazität. (Ende des Zitates)
 Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wichtige Rolle. Beim Battery-Balancing gibt es zwei verschiedene Arten. 
 \begin{itemize}
-\item \textbf{Passives Battery-Balancing} \medskip\\
+\item \textbf{Passives Battery-Balancing}
 \item \textbf{Aktives Battery-Balancing} \medskip\\
 \end{itemize}
 
@@ -316,9 +389,172 @@ Im zweiten Schaltvorgang (Schleife in blau, 2) wird die Energie in der Spule L n
 \item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten} \medskip\\
 \end{itemize}
 
-\subsection{Akkumulatoren}
-Um Beschädigungen von Lithium-Ionen-Akkus zu vermeiden haben die Akkus einen Tiefentladungsschutz. Für die Regelung überprüft das Batteriemanagementsystem die Restenergie, State of Health (SoH) und den Ladezustand, State of Charge (SoC). Die Werte werden an einen Prozessor übermittelt auf dem die BMS-Software läuft und der SoC-Algorithmus implementiert ist.
+\textbf{Spannungsmessung:}
+
+Lithium Ionen haben die Eigenschaft, dass sie Überladungen (Überspannung) sowie auch Unterspannung nicht gut verkraften. Im schlimmsten Fall, kann das sogar zur vollständigen Zerstörung einer Zelle kommen. Desswegen hat das Batteriemanagementsystem die Aufgabe jedes Akkupack zu messen und bei gegebener Über- und Unterspannung sofort abzuschalten. Der Schutz vor Überspannung wird zum Beispiel dann eingeschalten, sollte es zu einer ungewollten Rückspeisung kommen. Der Unterspannungsschutz hingegen tritt ein, wenn der vorgegebene Unterspannungsparameter überschritten wird. Sollte dies der Fall sein wird der Akkumulator von der Last getrennt, sodass der Akku nicht weiter entladen oder auch überladen werden kann. Die Spannungsmessung ist außerdem dafür zuständig die Spannung der Akkupacks zu messen.
+
+\textbf{Strommessung:}
+
+Bei dem Daly Batteriemanagementsystem ist eine Strommesseinrichtung bereits integriert. Diese Strommesseinrichtung misst einerseits den Entladestrom und andererseits den Ladestrom. Sollte es wie beim Überspannungschutz zu einer ungewollten Rückspeisung kommen, greift der Ladestromschutz ein. Sollte es dazu kommen, dass der Akkumulator zu viel Strom abgeben würde, wird der Entladeschutz aktiviert. Zudem wird die Strommesseinrichtung dazu benötigt, den Ladezustand des Akkumulator anzuzeigen.
+
+\textbf{Temperaturüberwachung:}
+
+Lithium Ionen Akkumulatoren neigen wie auch viele andere Akkus dazu, sich bei einer zu großen Stromentnahme stark zu erwärmen. Das kann zu innern sowie auch zu äußeren Schäden am Akkumulator führen. Deswegen ist es wichtig, die Temperatur der Akkupacks zu überwachen um Schäden vorzubeugen. Sollte der Akkumulator unter oder über einen gewissen Temperaturbereich gelangen, wird dieser von der Last getrennt um eine weitere Erwärmung und dadurch größere Schäden zu vermeiden.
+\newpage
+
+\subsection{Verschaltung des Batteriemanagementsystems}
+
+\subsubsection{Anschließen der Akkupacks an das BMS}
+
+Die Hersteller des BMS mini empfehlen die Akkumulatoren in einem möglichst geringen Abstand zur Batterie zu installieren, um den Verdrahtungsprozess zu vereinfachen. Da es notwendig ist die Spannung jedes Akkupacks zu überprüfen muss auch jedes einzelne an das Batteriemanagementsystem angeschlossen werden. Um mit einer sicheren Installation zu starten muss am Anfang sichergestellt werden, dass der Minuspol des ersten Akkumulators mit dem Terminal (-) am BMS verbunden wird. Anschließend wird genau anders herum der Pluspol des Akkus mit dem Terminal (+) verbunden. Danach werden die einzelnen Akkupacks mit dem Batteriemanagementsystem verbunden.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{figures/Akku/BMSAkkupacks.PNG}
+		\caption{Anschlussplan der Akkupacks an das BMS}
+	\end{center}
+\end{figure}
+
+\newpage
+\subsubsection{Temperaturmessung mithilfe des BMS}
+
+Im nächsten Schritt werden Temperatursensoren gleichmäßig verteilt und an die Akkupacks angebracht. Es ist nicht notwendig an jedem einzelnen Akkupacks einen Temperatursensor anzubringen. Jedoch sollteman sich bewusst sein, dass mithilfe solcher Sensoren teilweise Fehler schon im vorhinein behoben werden können bevor es noch zu größern Schäden im System kommt.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{figures/Akku/SystemStrukturBMSTemperatur.png}
+		\caption{Anschlussplan der Temperatursensoren}
+	\end{center}
+\end{figure}
+\newpage
+
+\subsubsection{Anschlussplan der Last}
+
+Im letzten Schritt wird die Last an dem Batteriemanagementsystem angeschlossen. Die Last entspricht entweder dem Verbrauchen oder anderfalls dem Ladegrät. Um die Last an das BMS anzuschließen muss das Power (+) Terminal mit dem Pluspol der Last (Load/Motor (+) Terminal) verbunden werden. Der zweite Pol der Last (Load/Motor (-) Terminal) wird mit dem Battery (-) Terminal verbunden. Sehr wichtig ist dabei darauf zu achten, dass die Last nicht unmittelbar mit Strom versorgt werden muss. Dazu wird ein Leistungsschutzschalter zwischen Last und dem Power (+) Terminal dazwischengeschalten.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{figures/Akku/SystemStrukturBMSLast.png}
+		\caption{Anschlussplan der Last an das BMS}
+	\end{center}
+\end{figure}
+\newpage
+
+\subsubsection{Kommunikation mittels CAN-Bus}
+
+Der CAN-Bus ist aufgrund seiner Stärkern und seines Kommunikationsmechanismus in vielen Anwendungsbereichen weit verbreitet. Wichtig ist, dass der CAN-Bus richtig eingerichtet wird, da man sonst seine Zuverlässigkeit stark gefährdet. Dies ist bereits bei den EMUS BMS-Komponenten welche mit einem CAN ausgestattet sind der Fall und weiters ist es sogar in der Norm ISO 11898-2 festgelegt. Meistens wird der CAN-Bus in Hochgeschwindigkeits Netzwerken verwendet. In der Norm ist eine Standard definierte Netzwerktopologie mit einer einzelnen Leistungstruktur abgebildet. Die Kernaussage dieser Norm ist, dass am Ende zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand integriert sein muss. Wie bereits vorher erwähnt kommuniziert das Batteriemanagementsystem mit der Zentralsteuerung mittel CAN-Bus. In der folgenden Abbildung ist die Topologie eines CAN-Netzwerkes abgebildet.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{figures/Akku/TopologieCAN-Netzwerks.PNG}
+		\caption{Topologie eines High Speed CAN-Netzwerks}
+	\end{center}
+\end{figure}
+
+Wenn man Daten von dem Batteriemanagementsystem zur SPS sendet, kann es zu Übertragungsproblemen kommen. Um diese Übertragungsprobleme zu minimieren muss zwischen CAN High und CAN Low ein Leitungsabschlusswiderstand (Skizze: Terminator) eingebaut werden. Dieser Terminator wird jeweils an dem Batteriemanagementsystem und ebenfalls an der SPS angebracht, da diese zwei Komponenten ununterbrochen miteinander verbunden sind. 
+
+\textbf{CAN-Bus Stecker an dem Batteriemanagementsystem:}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{figures/Akku/CANStecker.PNG}
+		\caption{Steckerbelegung des CAN-Buses an dem BMS}
+	\end{center}
+\end{figure}
+
+Pin 1: Versorgung\\
+Pin 2: CAN Terminator (Leitungsabschlusswiderstand)\\
+Pin 3: CAN - HIGH\\
+Pin 4: Ground (Masse)\\
+Pin 5: CAN Terminator (Leitungsabschlusswiderstand)\\
+Pin 6: CAN - LOW\\
+\newpage
+
+\subsection{Applikation des BMS Mini}
+
+Die Hersteller, EMUS, des Batteriemanagementsystems haben eine eigene Anwendung die auf jedem Smartphone und Tablet verfügbar ist erstellt. Die Anwendung Namens EMUS EVGUI ist eine frei verfügbare App für Android- und iOS-Geräte, die speziell für die Überwachung des Batteriestatus in einem Elektrofahrzeug entwickelt worden ist. Das Smartphone kann einerseits über ein drahtloses BT-Protokoll mit dem BMS Mini verbunden werden. Dazu wird jedoch die EMUS G1 Smartphone-Konnektivität benötigt. Die zweite Möglickeit besteht darin, das Smartphone über ein einfachs USB Kabel mit dem Batteriemanagementsystem zu verbinden.\\
+
+In der Hauptansicht der EMUS EVGUI App sind die wichtigsten Anzeigen abgebildet:
+
+\textbf{Hauptanzeige der EMUS EVGUI App:}
+\begin{itemize}
+\item{Temperatur und Ladezustand der Akkumulatoren}\\
+\item{Restspannung der Akkupacks}\\
+\item{Lade- Entladestrom}\\
+\item{Momentane Leistung des Elektromotors}\\
+\item{Momentaner Energieverbrauch des Sportmotorrads pro km}\\
+\item{Reichweite}\\
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/Akku/EMUSAPP1.jpg}
+		\caption{Hauptansicht der EMUS EVGUI App}
+	\end{center}
+\end{figure}
+
+\newpage
+
+Sobald man in dem Hauptansichtsfenster einen beliebigen Unterpunkt anklickt, öffnet sich ein Unterfenster, wo man die Anzeige detallierter erkennt.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/Akku/EMUSAPP2.jpg}
+		\caption{Detallierte Ansicht der EMUS EVGUI App}
+	\end{center}
+\end{figure}
+
+\subsubsection{Konfiguration der EMUS EVGUI App}
+
+Wie bereits vorher beschrieben, gibt es zwei verschiedene Ansichtsarten. In der Detallierten Ansicht gibt es im Linken unteren Eck einen Button mit dem Namen Menü.
+
+Klickt man diesen Button an, scheinen 4 weitere Unterpunkte auf. 
+
+\begin{itemize}
+\item{Battery Status}\\
+\item{Bms Status}\\
+\item{Event Log}\\
+\item{Settings}\\
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/Akku/BMSAppMenü.png}
+		\caption{Menü der EMUS EVGUI App}
+	\end{center}
+\end{figure}
+
+Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. Auf diese zwei Punkte wird mithilfe von Bildern in den folgenden Seiten etwas genauer eingegangen.
+
+\textbf{Battery Status:}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/Akku/BMSBatteryStatus.png}
+		\caption{Battery Status Anzeige der EMUS EVGUI App}
+	\end{center}
+\end{figure}
 
 
+\textbf{Bms Status:}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/Akku/BMSBatteryStatus.png}
+		\caption{Battery Status Anzeige der EMUS EVGUI App}
+	\end{center}
+\end{figure}
+
+
+In der Kategorie BMS Status kann man widerrum verschiedenste Unterpunkte auswählen um die Anzeigen zu lassen.
+
+\begin{itemize}
+\item{Battery Status}\\
+\item{Protection Status}\\
+\item{Power Reduction}\\
+\item{Pin Status}\\
+\end{itemize}
+
 \subsection{Akkumulatoren}
-\subsubsection{Lithiumbatterien}
+
+
