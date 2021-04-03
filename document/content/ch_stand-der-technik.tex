@@ -458,4 +458,143 @@ Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschi
 %%%%%%%%%%%%%%%%%%% HCIS
 
 \section{Steuereinheiten}
+
+\subsection{Raspberry Pi}
+
+\newpage
+
 \section{Bussysteme}
+
+\subsection{SPI-Bus}
+
+Als Zweidrahtbussystem besteht ein SPI-Bus aus zwei Datenleitungen und einer Taktleitung, über die alle Teilnehmer am SPI-Bus angeschlossen sind; eine vierte Leitung dient als Auswahlleitung:
+
+\begin{table}[H]
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Bezeichnung}                                    & \textbf{Erläuterung}                                                                               \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SDO oder\\ MOSI\end{tabular} & \begin{tabular}[c]{@{}l@{}}Serial Data Out, Datenausgang oder\\ Master Out - Slave In\end{tabular} \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SDI oder\\ MISO\end{tabular} & \begin{tabular}[c]{@{}l@{}}Serial Data In, Dateneingang oder\\ Master In - Slave Out\end{tabular}  \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SCLK oder\\ SCK\end{tabular} & Serial Clock, Takt                                                                                 \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SS oder\\ CS oder\\ STE\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Slave Select oder\\ Chip Select oder\\ Slave Transmit Enable (seltener benutzt)\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+
+Die von mir verwendeten Bezeichner sind rot markiert.
+
+In einem SPI-Bussystem gibt es genau einen Master, der das Taktsignal SCK erzeugt und über die zweite Leitung CS die Bausteine (Slaves) auswählt, mit denen er kommunizieren möchte.
+
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{figures/hcis/spi_taktabfrage.png}
+		\caption{Master-Slave Kommunikation. Die Taktabfrage erfolgt hier bei aufsteigender Flanke}
+		\label{abb:Taktabfrage}
+	\end{center}
+\end{figure}
+
+Eine CS-Leitung ist low-aktiv, das heißt, wird sie auf GND gezogen, wird der mit dieser Leitung verbundene Slave aktiviert (Abb. 1). Seine Aufgabe besteht nun darin, am MOSI-Pin zu "lauschen" und seine Daten entsprechend dem Taktsignal am MISO-Pin auf den Bus zu legen. In Abb. 1 erfolgt die Taktabfrage bei steigender Flanke; ebenso möglich ist die Abfrage bei fallender Flanke.
+
+Es gibt zwei technische Umsetzungsmöglichkeiten für eine CS-Leitung:
+
+\begin{enumerate}
+	\item alle Slaves teilen sich eine Leitung (Abb. \ref{abb:SPI_Anschluss_1}).
+	\item jeder Slave bekommt eine separate Leitung (Abb. \ref{abb:SPI_Anschluss_2} ).
+\end{enumerate}
+
+Mit den beiden Steuerleitungen (CS, SCK), den zwei Datenleitungen (MOSI, MISO) und den Kabeln für die Versorgungsspannung (+5V, GND) werden maximal insgesamt sechs Leitungen benötigt.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.45]{figures/hcis/spi_anschluss_1.png}
+		\caption{Alle Slaves sind über eine CS-Leitung miteinander verbunden.}
+		\label{abb:SPI_Anschluss_1}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.35]{figures/hcis/spi_anschluss_2.png}
+		\caption{ Jeder Slave ist über eine gesonderte CS-Leitung mit dem Master verbunden.}
+		\label{abb:SPI_Anschluss_2}
+	\end{center}
+\end{figure}
+
+Über einen MISO-Eingang werden nicht nur Daten von einem Slave zurückgelesen; er kann auch als Datenausgang für ein nachgeschaltetes Slavegerät dienen (Abb. 2). Eine solche Anordnung wird auch als Daisy-Chain-Konfiguration oder Kaskadierung bezeichnet.  
+
+\textbf{Einige Eigenschaften des SPI-Busses}
+
+\begin{itemize}
+
+	\item Das Gerät im Master-Modus gibt das Taktsignal vor und aktiviert über die CS-Leitung(en) die Bausteine, mit denen es kommunizieren möchte.
+	\item Nur ein Gerät kann auf einem SPI-Bus Master sein. Alle anderen Geräte sind Slaves.
+	\item Die Anzahl der Slaves wird begrenzt durch die Anzahl der CS-Leitungen.
+	\item CS und SCK werden beim Master als Ausgänge, beim Slave als Eingänge angesehen.
+	\item Der SPI-Bus arbeitet im Vollduplexbetrieb, das heißt, dass Daten gleichzeitig vom Master an den Slave und vom Slave an den Master übertragen werden können.
+	\item Es wird festgelegt, mit welcher Taktflanke (steigend oder fallend) eingelesen bzw. ausgelesen wird.
+	\item Es wird festgelegt, ob das MSB (most significant bit) oder das LSB zuerst übertragen wird.
+	\item Die Taktfrequenz geht bis in den MHz-Bereich.
+
+\end{itemize}
+
+\newpage
+
+\subsubsection{Die SPI-Modi}
+
+Motorola, die Entwicklungsfirma von SPI, hat keine Spezifikation zu Protokollen der Datenübertragung veröffentlicht und nicht festgeschrieben, ob Daten bei fallender oder steigender Taktflanke, bei CS low active oder high active übernommen werden sollen. Dadurch haben sich vier SPI Modi (Betriebsarten) entwickelt, die über die Parameter CPOL (Clock Polarität) und CPHA (Clock Phase) beschrieben werden.
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		SPI-Modus & CPOL & CPHA \\ \hline
+		0         & 0    & 0    \\ \hline
+		1         & 0    & 1    \\ \hline
+		2         & 1    & 0    \\ \hline
+		3         & 1    & 1    \\ \hline
+	\end{tabular}
+\end{table}
+
+Bei einer Phasenlage CPHA = 0 und einer Taktpolarität CPOL = 0 findet eine Datenübernahme bei steigender Taktflanke und CS = 0 statt; entsprechend bei CPOL = 1 mit fallender Taktflanke. Bei CPHA = 1 verhält es sich genau umgekehrt. Die folgende Tabelle gibt eine Übersicht.
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		CPOL & CPHA & Datenübernahme bei... \\ \hline
+		0    & 0    & steigender Taktflanke \\ \hline
+		0    & 1    & fallender Taktflanke  \\ \hline
+		1    & 0    & fallender Taktflanke  \\ \hline
+		1    & 1    & steigender Taktflanke \\ \hline
+	\end{tabular}
+\end{table}
+
+Wie sich die vier Modi im Zeitdiagramm unterscheiden, zeigen die folgenden beiden Abbildungen.
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{floatrow}
+		\ffigbox[\FBwidth]{\caption{Die Modi CPOL = 0, CPHA = 0 und CPOL = 0, CPHA = 1}\label{abb:SPI_Modi_1}}{
+			\includegraphics[scale=0.4]{figures/hcis/spi_modi_1.png}
+		}
+		\ffigbox[\FBwidth]{\caption{Die Modi CPOL = 1, CPHA = 0 und CPOL = 1, CPHA = 1}\label{abb:SPI_Modi_2}}{
+			\includegraphics[scale=0.4]{figures/hcis/spi_modi_2.png} 
+		}
+	\end{floatrow}
+\end{figure}
+
+
+Bleibt noch nachzutragen, dass mit acht Taktzyklen ein Byte übertragen wird. Die Übertragung mehrerer Datenbytes hintereinander ist erlaubt; sie endet, sobald die CS-Leitung wieder auf HIGH gesetzt wird.\footnote{vgl. \cite{SPI}}
+
+\newpage
+
+\subsection{CAN-Bus}
+
+\section{Programmiersprachen}
+
+\subsection{Python}
+
+\subsection{MySQL}
+
+
