@@ -1,3 +1,4 @@
+
 \pagenumbering{arabic}
 
 \input{content/ch_einführung}
@@ -8,10 +9,10 @@
 
 \input{content/ch_mechanik.tex}
 
-\input{content/ch_zentralsteuerung.tex}
+\input{content/ch_akku.tex}
 
 \input{content/ch_antrieb.tex}
 
-\input{content/ch_akku.tex}
+\input{content/ch_zentralsteuerung.tex}
 
 \input{content/ch_ergebnis.tex}

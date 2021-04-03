@@ -16,9 +16,6 @@ Insgesamt wird dies jedoch immer mit einer Erhöhung der Gesamtentropie und dami
 
 Die entscheidenden Einflussfaktoren sind dabei durch Wärmeleitkoeffizient, Wärmeübergangskoeffizient und Wärmekapazität gegeben. Bei Flüssigkeiten spielt die Wärmeleitung und Wärmestrahlung ebenfalls eine Rolle, hinzu kommt jedoch die Konvektion als wesentlicher Prozess des Temperaturausgleichs. Dieser dominiert hingegen bei Gasen, wobei diese allgemein nur sehr schlecht über Prozesse der Wärmeleitung abkühlen. Sie unterliegen jedoch verschiedenen Gasgesetzen, wodurch vor allem der adiabatischen Abkühlung und dem Joule-Thomson-Effekt eine große Rolle zukommt. 
 
-<<<<<<< HEAD
-\newpage
-
 \subsection{Technische Anwendung}
 
 Kühlsysteme können nach dem verwendeten Wärmeträgermedium unterteilt werden. Die geläufigsten Arten der Kühlung sind:
@@ -526,29 +523,147 @@ Im zweiten Schaltvorgang (Schleife in blau, 2) wird die Energie in der Spule L n
 \item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten} \medskip\\
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%% Antriebsstrang
-
 \section{Synchronmaschine mit Dauermagneterregung}
-\subsection{Auswertung der Antriebswelle}
+\subsection{Auswertung der Antriebswelle (Encoder)}
 
 \section{Curtis Controller}
 \subsection{Allgemeines}
-\subsection{VCL}
 \subsection{Feldorientierte Regelung}
 
 \section{Leonard-Umformer}
 \subsection{Allgemeines}
 \subsection{ }
 
-\section{KPI-Regler}
-\subsection{Allgemeines}
-\subsection{ }
+\newpage
+
+\section{PID-Regler}
+\subsection{Einleitung}
+Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
+
+Allein schon der aufrechte Gang funktioniert nur mit Regelung. Dabei wirken die Sinne als Sensoren, das Gehirn als Regler und die Muskeln als Aktuatoren. Weitere Regelungen in unserem Körper sind z.B. die Konstanthaltung der Körpertemperatur, der Blutdruck, die Anpassung der Pupille auf Helligkeitsänderungen usw.
+
+Der Begriff Regelung ist zu unterscheiden von dem im allgemeinen Sprachgebrauch oft synonym gebrauchten Begriff der Steuerung. Das Steuern ist ein rein vorwärts gerichteter Prozess ohne Rückkopplung. Die Ausgangsgröße wird dabei nicht überwacht und kann sich durch Störungen von außen verändern. Ein Beispiel ist die Steuerung eines Motors mit einer einstellbaren Spannung. Durch Laständerungen wird sich die Drehzahl des Motors ändern. Soll nun die Drehzahl konstant gehalten werden, bedarf es einer Rückkopplung um über die Spannung die Drehzahl anzupassen. Diese Rückkopplung ist das Kennzeichen einer Regelung.
+
+Das Regeln ist ein Vorgang, bei dem die Ausgangsgröße, im Beispiel die Drehzahl, fortlaufend überwacht wird und bei Abweichung über die Stellgröße, im Beispiel die Spannung, korrigiert wird. Der sich dabei ergebende Wirkungsablauf findet in einem geschlossenen Kreis, dem Regelkreis, statt.
+\vspace{5mm}
+
+\subsection{Der Regelkreis}
+Das Prinzip einer Regelung ist das fortlaufende: Messen – Vergleichen – Stellen
+\\[5mm]
+
+\begin{itemize}
+	\item \textbf{Messen}
+	\\[1mm] Die Regelgröße wird direkt oder mittels Sensoren gemessen.
+	\medskip
+	\item \textbf{Vergleichen}
+	\\[1mm] Der Wert der Regelgröße wird mit dem Sollwert verglichen. Die Differenz ist die Regelabweichung.
+	\medskip
+	\item \textbf{Stellen}
+	\\[1mm] Aus der Regelabweichung wird unter Berücksichtigung der dynamischen Eigenschaften der Regelstrecke die Stellgröße bestimmt.
+\end{itemize}
+\vspace{3mm}
+
+Ein Regelkreis dient dazu, eine vorgegebene physikalische Größe, die Regelgröße, auf einen gewünschten Wert (Sollwert) zu bringen und dort zu halten, unabhängig von eventuell auftretenden Störungen. Um die Regelungsaufgabe zu erfüllen, muss der Augenblickswert der Regelgröße – der Istwert – gemessen und mit dem Sollwert verglichen werden. Bei auftretenden Abweichungen muss in geeigneter Art und Weise nachgestellt werden.
+
+Um nun diese Aufgabe technisch zu lösen, gibt es die Regelungstechnik. Sie baut im wesentlichen auf die mathematische Beschreibung und Modellbildung des Systems Regelkreis. Zur Modellierung, Beschreibung und Simulation werden Blockschaltbilder mit diskreten Signalgliedern verwendet.
+
+\newpage
+
+Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es oft in der Regelungstechnik verwendet wird, aus den Hauptteilen Regler und Regelstrecke:
+\\[5mm]
+
+\begin{itemize}
+	\item \textbf{Regler G$_R$}
+	\\[1mm] Ist der Teil des Regelkreises, der unter Berücksichtigung der dynamischen Eigenschaften der Regelstrecke aus der Regelabweichung die Korrekturmaßnahmen zum Ausregeln ergreift.
+	\medskip
+	\item \textbf{Regelstrecke G$_S$}
+	\\[1mm] Ist der Teil des Regelkreises, der vom Regler ausgeregelt werden soll.
+	\medskip
+	\item \textbf{Führungsgröße w (Sollwert)}
+	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll. Sie ist eine von der Regelung nicht beeinflusste Größe und wird von außen zugeführt.
+	\medskip
+	\item \textbf{Regelgröße x (Istwert)}
+	\\[1mm] Ist die Ausgangsgröße der Regelstrecke, die zum Zweck des Regelns erfasst und zum Vergleich rückgeführt wird. In vielen Fällen ist in der Rückführung noch eine Messeinrichtung (Sensor) gezeichnet, die den Istwert erfasst, hier der Einfachheit halber weggelassen.
+	\medskip
+	\item \textbf{Regelabweichung e}
+	\\[1mm] Differenz zwischen Führungsgröße und Regelgröße e = w – x, bildet die eigentliche Eingangsgröße des Reglers.
+	\medskip
+	\item \textbf{Stellgröße y}
+	\\[1mm] Ausgangsgröße der Regeleinrichtung und zugleich Eingangsgröße der Strecke. Sie überträgt die steuernde Wirkung des Reglers auf die Strecke.
+	\medskip
+	\item \textbf{Störgröße z}
+	\\[1mm] Eine von außen wirkende Größe, die eine Änderung des Istwertes der Regelgröße bewirkt und einen Regelvorgang auslöst.
+\end{itemize}
+
+\vspace{5mm}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Regelkreis_Grundaufbau.png}
+		\caption{Grundaufbau des allgemeinen Regelkreises}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\subsection{Die Regelstrecke}
+Die Regelstrecke stellt den zu regelnden Teil bzw. den zu regelnden Prozess dar und umfasst normalerweise eine Reihe von einzelnen Gliedern, welche das dynamische Verhalten der Regelstrecke beschreiben. Zur Unterteilung werden die Glieder entsprechend ihrem Zeitverhalten charakterisiert. Um das Zeitverhalten herauszufinden, legt man an den Eingang ein Testsignal an und zeichnet die Antwort auf. Im einfachsten Fall wird der Eingang mit einer sprunghaften Änderung beaufschlagt. Die Antwort auf die sprunghafte Änderung der Eingangsgröße wird Sprungantwort genannt und gibt Aufschluss über die Art der Regelstrecke und kann eventuell bereits genutzt werden, um die Parameter der Regelstrecke zu bestimmen.
+
+Für den Aufbau eines gut funktionierenden Regelkreises und die Auslegung von Reglern ist es eine Voraussetzung zu wissen, wie die Regelstrecke reagiert. Ohne ein genaues Wissen um das dynamische Verhalten der Regelstrecke ist es nicht möglich geeignete Regler auszuwählen und diese zu parametrieren. Die einzelnen Eigenschaften der Glieder zu beschreiben würde aber den Rahmen sprengen.
+
+\subsection{Der Regler}
+Der Regler hat die Aufgabe, die Regelgröße zu messen, sie mit dem Sollwert zu vergleichen und bei Abweichungen die Stellgröße so zu verändern, dass Soll- und Istwert der Regelgröße wieder übereinstimmen bzw. die Differenz minimal wird.
+
+Die Wahl eines bestimmten Reglertyps richtet sich nach dem geforderten Zeitverhalten und der geforderten Regelgenauigkeit der Regelstrecke. Nachfolgend finden Sie eine kurze Beschreibung der wichtigsten klassischen Reglertypen: 
+\\[5mm]
+\textbf{P-Regler}\\[1mm]
+Der proportionalwirkende Regler multipliziert die Regelabweichung mit seinem Verstärkungsfaktor Kp und gibt das Ergebnis unverzögert weiter. Der P-geregelte Kreis ist einfach und mittelschnell im Vergleich zu anderen Regelungen. Das Problem ist die bleibende Regelabweichung!
+
+Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t)$ \hspace{5mm} bzw. \hspace{5mm} G$_R$ = K$_P$
+\\[5mm]
+
+\textbf{I-Regler}\\[1mm]
+Der integralwirkende Regler summiert die Regelabweichung über der Zeit auf und multipliziert die Summe (d.h. das Integral) mit dem Faktor Ki. Je länger eine Regelabweichung ansteht, desto größer wird die Stellgröße des I-Reglers. Der I-geregelte Kreis ist langsam im Vergleich zu anderen Regelungen. Er hat aber den Vorteil, dass die Abweichung vollständig eliminiert wird.
+
+Reglergleichung: \hspace{5mm} $y(t) = K_I \cdot \int\limits_{0}^{t} e(t) \,dt$ \hspace{5mm} bzw. \hspace{5mm} $G_R = \dfrac{K_I}{s}$
+
+\newpage
+
+\textbf{PD-Regler}\\[1mm]
+Der proportional-differential wirkende Regler kombiniert den P-Regler mit einem D-Anteil (einen D-Regler gibts es nicht). Der D-Anteil bewertet die Änderung einer Regelabweichung, er differenziert und berechnet so deren Änderungsgeschwindigkeit. Diese wird mit dem Faktor Kd multipliziert und zum P-Anteil hinzuaddiert. Der PD-Regler reagiert damit schon auf Ankündigungen von Veränderungen, das bewirkt sozusagen ein Vorhalten beim Regeln.
+
+Der PD-geregelte Kreis ist sehr schnell im Vergleich zu anderen Regelungen, und manche Regelkreise (solche mit zweifacher Integration) sind ohne D-Anteil überhaupt nicht stabilisierbar. Das Problem des P-Reglers, die bleibende Regelabweichung, ist beim PD-Regler allerdings weiterhin vorhanden!
+
+Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktuator stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden.
+
+Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t) + K_D \cdot \dfrac{de(t)}{dt}$\hspace{5mm} bzw. \hspace{5mm} $G_R = K_P + K_D \cdot s$
+\\[5mm]
+
+\textbf{PID-Regler}\\[1mm]
+Der PID Regler vereinigt die guten Eigenschaften der anderen Regler. Der PID-geregelte Kreis ist genau und sehr schnell. In den meisten Anwendungen kommt deshalb der PID-Regler zum Einsatz. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht. 
+
+Reglerleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^{t} e(t) \,dt + K_D \cdot \dfrac{de(t)}{dt}$ \hspace{3mm} bzw. \hspace{3mm} $G_R = K_P + \dfrac{K_I}{s} + K_D \cdot s$
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.15]{figures/antrieb/PID_Regler.png}
+		\caption{Zusammensetzung des PID-Reglers}
+	\end{center}
+\end{figure}
+
+Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschiedlichen klassischen Reglertypen dargestellt:
+ 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/antrieb/Reglertypen.png}
+		\caption{Vergleich der verschiedenen Reglertypen}
+	\end{center}
+\end{figure}
+%https://rn-wissen.de/wiki/index.php/Regelungstechnik
+%http://3digi.wikidot.com/allgemeines-zu-pid-reglern
+%AUT5
+\newpage
 
 %%%%%%%%%%%%%%%%%%% HCIS
 
 \section{Steuereinheiten}
-\section{Bussysteme}
-=======
-\section{Steuereinheiten}
-
 \section{Bussysteme}
