@@ -489,7 +489,7 @@ Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=1]{figures/hcis/bridge.png}
+		\includegraphics[scale=0.33]{figures/hcis/bridge.png}
 		\caption{Verbindung Frontend zu Backend}
 	\end{center}
 \end{figure}
@@ -525,20 +525,19 @@ Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wi
 
 \subsection{Listener}
 
-Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle (Fetcher) sowie die Schnittstelle zum Frontend (Bridge) weiterzugeben.
+Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle \footnote{siehe Abschnitt} sowie die Schnittstelle zum Frontend (Bridge) weiterzugeben.
 
 \subsubsection{Konfigurieren der Schnittstelle}
 	
 \begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters},captionpos=b]
 	
-	def start(self):
-	self.thread=Thread(target=self.runner)
-	self.thread.daemon=True
-	self.thread.start()
+
 	
 \end{lstlisting}
 
 \subsubsection{Empfangen der Daten}
+
+
 
 \newpage
 
@@ -546,11 +545,13 @@ Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen
 
 \section{Fahrdatenspeicher}
 
-Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine Diagnose des gesamten Aufbaus zu gewährleisten. Dafür wird eine Datenbank verwendet, nämlich die weit verbreitete Software mySQL verwendet.
+Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine Diagnose des gesamten Aufbaus zu gewährleisten. Dafür wird eine Datenbank verwendet, nämlich die weit verbreitete Software MySQL verwendet.
 
 \subsection{Datenbankstruktur}
 
 \subsubsection{Benutzer System}
+
+id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \begin{table}[H]
 	\begin{center}
@@ -591,7 +592,7 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 	\end{center}
 \end{table}
 
-id und enabled sind nicht signiert, wobei id der Prim¨arschl ¨ ussel mit Auto-Inkrement ist.
+id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
 sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
 tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
@@ -607,15 +608,15 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 			\multicolumn{3}{|c|}{\textbf{data2}} \\ \hline
 			\textbf{Attribut}  & \textbf{Datentyp} & \textbf{Beschreibung}               \\ \hline
 			id                 & int               & Identifikationsnummer               \\ \hline
-			id\_data\_1        & int               & Fremdschlüssel von Datenpacket 1    \\ \hline
+			id\_data\_1        & int               & Fremdschlüssel von Datenpaket 1     \\ \hline
 			date\_time         & datetime          & Datum der Erstellung                \\ \hline
 			vehicle\_speed     & int               & Geschwindigkeit des Motorrades      \\ \hline
 			capacitator\_volts & int               & Eingangsspannung der Motorsteuerung \\ \hline
-			bdi\_percentage    & int               &                                     \\ \hline
-			interlock          & int               &                                     \\ \hline
+			bdi\_percentage    & int               & Ladestand des Akkus              	 \\ \hline
+			interlock          & int               & Muss aktiv sein um zu fahren        \\ \hline
 			throttle\_command  & int               & Stellung des Gasgriffes             \\ \hline
 			brake\_command     & int               & Stellung der Motorbremse (software) \\ \hline
-			emr\_state         & int               &                                     \\ \hline
+			driving\_mode      & int               & Aktueller Fahrmodus                 \\ \hline
 		\end{tabular}
 			\caption{Datenbankstruktur der Datenpaket 2 Tabelle}
 			\label{tab:data2}
@@ -629,17 +630,17 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 		\begin{tabular}{|c|c|l|}
 			\hline
 			\multicolumn{3}{|c|}{\textbf{data3}} \\ \hline
-			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
-			id                          & int               & Identifikationsnummer                     \\ \hline
-			id\_data\_2                 & int               & Fremdschlüssel von Datenpacket 2          \\ \hline
-			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
-			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
-			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
-			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
-			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
-			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
-			braking\_distance\_captured & int               & Zeit von Bremsbegin bis zu Stillstand     \\ \hline
-			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     	\\ \hline
+			id                          & int               & Identifikationsnummer                     	\\ \hline
+			id\_data\_2                 & int               & Fremdschlüssel von Datenpaket 2          		\\ \hline
+			date\_time                  & datetime          & Datum der Erstellung                      	\\ \hline
+			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            	\\ \hline
+			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       	\\ \hline
+			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        	\\ \hline
+			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindigkeit 	\\ \hline
+			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        	\\ \hline
+			braking\_distance\_captured & int               & Zeit von Bremsbeginn bis zu Stillstand     	\\ \hline
+			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand	 	\\ \hline
 		\end{tabular}
 		\caption{Datenbankstruktur der Datenpaket 3 Tabelle}
 		\label{tab:data3}
@@ -658,14 +659,14 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
 			id                          & int               & Identifikationsnummer                     \\ \hline
 			id\_data\_3                 & int               & Fremdschlüssel von Datenpacket 3          \\ \hline
-			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
-			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
-			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
-			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
-			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
-			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
-			braking\_distance\_captured & int               & Zeit von Bremsbeginn bis zu Stillstand     \\ \hline
-			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
+			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
+			error\_2            		& int               & Fehlercode 2            					\\ \hline
+			error\_3        			& int               & Fehlercode 3       						\\ \hline
+			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
+			error\_5    				& int               & Fehlercode 5 								\\ \hline
+			error\_6					& int               & Fehlercode 6        						\\ \hline
+			error\_7					& int               & Fehlercode 7    							\\ \hline
 		\end{tabular}
 		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
 		\label{tab:data4}
@@ -682,66 +683,84 @@ Da die Kommunikation der BMS noch nicht umgesetzt wurde, werden von Ihr keine Da
 
 \subsection{Handler}
 
-Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und dem Programm herzustellen. Dazu verwendet sie die mySQL connector Bibliothek. Mit dieser können SQL Skripte direkt in die Python Klasse integriert werden ohne dass externe SQL Skript Dateien geöffnet werden müssen. 
+Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und dem Programm herzustellen. Dazu verwendet sie die MySQL-Connector Bibliothek. Mit dieser können SQL Skripten direkt in die Python Klasse integriert werden ohne dass externe SQL Skript Dateien geöffnet werden müssen.
+
+Dieser bekommt in Echtzeit eine Liste der aktuell Empfangenen Daten der Listener Klasse \footnote{siehe Abschnitt } und schreibt diese in die dafür vorgesehenen Tabelle der Datenbank. Hierfür wird ein eigener Thread \footnote{siehe Abschnitt } geöffnet, um diese Aufgabe unabhängig von dem Restlichen Programm ausführen zu können.
+
+Ebenso verfügt er über Funktionen, welche über das Diagnose Fenster \footnote{siehe Abschnitt } angewählt werden können und Daten aus der Datenbank auslesen, um sie in einem Graph anzeigen zu lassen.
 
 \subsubsection{Konfigurieren der Schnittstelle}
+
+Um auf eine Datenbank zu zugreifen wird muss ein \textit{connect} Objekt, mit den Anmeldedaten der lokalen Datenbank als Parameter, erstellt werden. Mit diesem Objekt kann nun auf Subklassen zugegriffen werden und Daten können aus- und eingelesen werden.
 
 \begin{lstlisting}[language=Python, caption={Konfiguration der Datenbankschnittstelle},captionpos=b]
 	
 	# Database credentials
-	dbhost = "localhost"
-	dbuser = "root"
-	dbpass = "8Yf!97mmnZbvYJe"
-	dbname = "login_data"
+	dbhost = "hostname"
+	dbuser = "username"
+	dbpass = "password"
+	dbname = "databasename"
 	
 	# Connection to the database
 	con = mysql.connector.connect(host=dbhost, user=dbuser, password=dbpass, database=dbname)
+	
+\end{lstlisting}
+
+\newpage
+
+\subsubsection{Cursor klasse}
+
+Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mithilfe eines Connection Objekts. Sie können 
+
+\begin{lstlisting}[language=Python, caption={Erstellen eines Cusorobjekts},captionpos=b]
 	
 	# Creating cursor for database queries
 	cursor = con.cursor()
 	
 \end{lstlisting}
 
-\newpage
+Einpaar der Wichtigsten Befehle sind:
+
+\begin{itemize}
+	
+	\item \textit{cursor.execute()} \\ Diese Methode führt die angegebene Abfrage aus. Die in den Tupel- oder Wörterbuchparametern gefundenen Parameter sind an die Variablen in der Operation gebunden. Geben Sie Variablen mit dem Parameterstil von \% s oder \% (Name) an.
+	
+	\item \textit{cursor.fetchall()} \\ Diese Methode ruft alle Zeilen einer Abfrage ab und gibt eine Liste von Tupeln \footnote{ein Datensatz (eine Zeile) einer Datenbank} zurück. Wenn keine Zeilen mehr verfügbar sind, wird eine leere Liste zurückgegeben.
+	
+	\item \textit{cursor.close()} \\ Diese Methode wird verwendet wenn man einem Cursor nicht mehr benötigt. Diese Methode schließt den Cursor, setzt alle Ergebnisse zurück und stellt sicher, dass das Cursorobjekt keinen Verweis auf sein ursprüngliches Verbindungsobjekt hat.
+	
+\end{itemize}
 
 \subsubsection{SELECT Befehl}
 
 Der SELECT Befehl wird zum Abrufen von Daten einer Tabelle verwendet und besitzt mehrere Parameter.
 
-\begin{lstlisting}[language=SQL, caption={Konfiguration der Datenbankschnittstelle},captionpos=b]
-	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (1, 'USER', '5AHET');
-	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (2, 'GUEST', '00000');
-	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (3, 'ADMIN', '53AC2');
+\begin{lstlisting}[language=Python, caption={SELECT Befehl über MySQL Connector},captionpos=b]
+		
+	# Querying the data from the database
+	sql = "SELECT * from users WHERE username = %s and password = %s"
+	cursor.execute(sql, [(username), (password)])
+	results = cursor.fetchall()
 	
 \end{lstlisting}
 
-Der Befehl kann in drei Bereiche unterteilt werden. In der ersten Zeile werden die
-Attribute, die von der Tabelle Tutorials ausgegeben werden sollen, definiert. Da sich diese jedoch nicht in Tutorials befinden, werden im mittleren Abschnitt alle Tabellen durch den Befehl JOIN anhand der Fremdschlüssel verbunden. Die anzuzeigenden Ergebnisse werden durch den \textit{WHERE} Befehl gefiltert werden. Dieser Befehl zeigt die Attribute id, step id sowie detection aller Tutorials vom Programm mit dem Namen Windows Settings an.
+Der Befehl kann in zwei Bereiche unterteilt werden. In der ersten Zeile werden die
+Attribute, die von der Tabelle ausgegeben werden sollen, definiert.  Die anzuzeigenden Ergebnisse werden durch den \textit{WHERE} Befehl gefiltert werden.
+\\ Nützlich ist auch der Befehl JOIN durch den Tabellen anhand der Fremdschlüssel verbunden werden.
 
 \subsubsection{INSERT Befehl}
 
 Der INSERT Befehl wird zum Schreiben von Daten in eine Tabelle verwendet.
 
-\begin{lstlisting}[language=SQL, caption={Einfügen der Benutzer und Passwörter über den},captionpos=b]
+\begin{lstlisting}[language=Python, caption={INSERT Befehl über MySQL Connector},captionpos=b]
 	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (1, 'USER', '5AHET');
-	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (2, 'GUEST', '00000');
-	
-	INSERT INTO `users` (`id`, `username`, `password`)
-	VALUES (3, 'ADMIN', '53AC2');
+	# Inserting data into the database
+	sql = "INSERT INTO `users` (`id`, `username`, `password`); VALUES (1, %s, %s);"
+	cursor.execute(sql, [(username), (password)])
 	
 \end{lstlisting}
 
-Dieser Befehl kann in zwei Teile unterteilt werden. In der ersten Zeile wird die
-Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. Ebenso unterstützt MySQL als Wert die Funktion \textit{NOW()}, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut.
+Dieser Befehl kann in zwei Teile unterteilt werden. In der ersten Zeile wird die Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. \\
+Als Wert wird ebenso die Funktion \textit{NOW()} unterstützt, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut\footnote{siehe Abschnitt }.
 
 \newpage
