@@ -23,6 +23,7 @@
 
 \section{Bussysteme}
 
+\newpage
 \section{Akkusysteme}
 Verschiedene Speicher für elektrische Energie, die auf einer elektrochemischen Basis basieren, nennt man Batterien oder auch Akkumulatoren. Elektrochemische Speicher haben in den vergangenen Jahren immer mehr an Bedeutung gewonnen und werden auch in Zukunft immer öfter Gebrauch finden. Möglich wurde unsere heutige elektronische Mobilität erst mit der Erfindung der galvanischen Zelle. Seit dieser Erfindung,die mit Hilfe eines Stromkreises chemische Energie in elektrische Energie umzuwandeln, hat sich über die jahrzehntelange Weiterentwicklung der Batterie einiges getan. Die Einsatzmöglichkeiten von Akkumulatoren sind extrem vielfältig. Kleine Lithium-Ionen Akkus werden zum Beispiel als Knopfzellen in Smartphones verwendet. Jedoch können sie auch bis hin zu großen stationären Energiespeichern für erneuerbare Energien benutzt werden. Wie bereits vorher erwähnt, sind elektrische Energiespeicher ein wichtiger Bestandteil für den Erfolg der Elektromobilität geworden. Es gibt unzählig viele verschiedene Arten von Batterien, die sich im chemischen Aufbau, ihrer Form und natürlich in ihren Einsatzmöglichkeiten unterscheiden. Durch die äußerst besonderen chemischen Eigenschaften und die vielseitigen Anwendungsbereiche, hat sich der Lithium-Ionen Akku durchgesetzt.
 \newpage
@@ -138,7 +139,7 @@ Grundsätzlich setzt sich ein vollständiges Batteriemanagementsystem aus folgen
 	Die Kontrolleinheit berechnet die State of Charge (SOC), die State 	of Health (SOH) und überprüft auch die Funktionalität der 				Batterien (State of Function). Außerdem wird von der 					Kontrolleinheit auch der Ladeausgleich gesteuert und kommuniziert 		über eine Serielle Schnittstelle mit einem Prozessor. 
 
 	\item \textbf{Circuit Breaker:}\medskip\\
-	Der Circuit Breaker trennt im Fehlerfall die Batterie von der 			Last. Dies erfolgt mithilfe eines HS-Kontaktors.
+	Der Circuit Breaker trennt im Fehlerfall die Batterie von der 		Last. Dies erfolgt mithilfe eines HS-Kontaktors.
 	
 	\item \textbf{Strommessvorrichtung:}\medskip\\
 	Diese Komponente ist für die Messung des Stromes zuständig.
@@ -178,82 +179,10 @@ Die letzte Komponente, die benötigt wird, um das Batteriemanagementsystem zu ve
 \newpage
 
 \subsubsection{Battery-Balancing}
+\label{Battery-Balancing}
 Der Ausdruck Balancing bezogen auf Akkumulatoren bedeutet so viel wie Ladeausgleich. Ohne Battery-Balancing bestimmt in einem Mehrzellen-Akku immer die schwächste Zelle darüber, welche Kapazität oder Spannung das Gesamtsystem aufweist. Das ergibt sich daraus, da sich jede Zelle minimal von einer anderen Zelle, durch ihre chemischen Struktur, unterscheidet. Einzelne Batteriezellen können auch unterschiedlich altern und deswegen kann man nie sicherstellen, dass jede Zelle exakt die identische Kapazität aufweist. Manche Zellen laden etwas schneller oder langsamer als andere. Wiederrum andere Batterien entladen sich etwas zügiger oder eben auch langsamer. In der Regel gibt es zwei verschiedene Arten von Battery-Balancing.
 \begin{itemize}
 \item \textbf{Passives Battery-Balancing} \medskip\\
 \item \textbf{Aktives Battery-Balancing} \medskip\\
 \end{itemize}
 
-
-\textbf{Akkupacks:}
-
-Muss noch zitiert werden: Cluster oder Akkupacks bestehen zur Erhöhung der Nennspannung in der Regel aus mehreren in Reihe geschalteten Einzelzellen oder Zellblöcken. Fertigungs- und alterungsbedingt gibt es hierbei Schwankungen in der Kapazität, im Innenwiderstand und weiteren Parametern dieser Zellen. Die schwächste Zelle ist dabei bestimmend, wie viel geladen oder entladen werden darf. Im praktischen Einsatz von mehrzelligen in Reihe verschalteten Akkus führt dieser Umstand dazu, dass die Zellen in Reihe unterschiedlich geladen und entladen werden.
-
-Es kommt dann im Verbund zu kritischer Tiefentladung oder bei der Ladung zu einer Überladung und Überschreiten der Ladeschlussspannung einzelner Zellen. Je nach Akkutyp kann es dabei zu einer irreversiblen Schädigung einzelner Zellen kommen. Die Folge: das gesamte Akkupack verliert an Kapazität. (Ende des Zitates)
-Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wichtige Rolle. Beim Battery-Balancing gibt es zwei verschiedene Arten. 
-\begin{itemize}
-\item \textbf{Passives Battery-Balancing} \medskip\\
-\item \textbf{Aktives Battery-Balancing} \medskip\\
-\end{itemize}
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=1.5]{figures/Akku/Vergleichaktivespassives.jpg}
-		\caption{Vergleich zwischen Aktiven- und Passiven-Battery Balancing}
-	\end{center}
-\end{figure}
-\newpage
-
-\textbf{Passives Battery-Balancing:}
-
-Eine technische weit verbreitete Methode für das Balancing, ist das Passive Battery-Balancing. Dabei arbeitet es nur im Bereich des Ladeschlusses. Der Ausdruck Ladeschluss bedeutet soviel, dass wenn die Akkumulatoren fast vollständig aufgeladen sind das Balancing zu arbeiten beginnt. Sobald die Zellen die Ladeschlussspannung erreicht haben, wird durch den Balancer ein Widerstand parallel dazugeschalten, um so die Spannung auf die Ladeschlussspannung zu begrenzen. Zellen, welche diese Spannung bereits erreicht haben, werden dann nur noch geringfügig weitergeladen oder teilweise sogar etwas entladen. Die Zellen, die jedoch noch in der Reihenschaltung verschalten sind und die Ladeschlussspannung noch nicht erreicht haben, werden weiterhin mit dem Ladestrom versorgt und somit weitergeladen. Wichtig ist darauf zu achten, dass die Leistung des Parallelwiderstandes auf den Ladstrom angepasst werden muss, da sonst zuviel Energie in Form von Wärme am Widerstand auftreten wird.
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.5]{figures/Akku/Passive-cell-balancing.png}
-		\caption{Funktionsweise des Passiven Battery-Balancing}
-	\end{center}
-\end{figure}
-
-\textbf{Vorteile} des Passiven Battery-Balancing:
-\begin{itemize}
-\item {sehr kostengünsigt} \medskip\\
-\item {technisch relativ leicht realisierbar} \medskip\\
-\end{itemize}
-
-\textbf{Nachteile} des Passiven Battery-Balancing:
-\begin{itemize}
-\item {Ladevorgang kann extrem lange dauern, da man warten muss bis die schwächste Zelle den geforderten State of Charge (SOC) erreicht hat} \medskip\\
-\item {viel Energie verpufft in Form von Wärme} \medskip\\
-\item {Diese Verlustwärme wirkt sich negativ auf die Lebensdauer der Akkumulatoren aus} \medskip\\
-\item {nicht unerhebliche Brandgefahr} \medskip\\
-\end{itemize}
-\newpage
-
-\textbf{Aktives Battery-Balancing:}
-
-Diese Methode des Balancing ist etwas komplexer als beim Passiven Battery-Balancing, jedoch ist sie deutlich effizienter. Bei den aktiven Balancern wird ein Ladungstransfer von Zellen untereinander realisiert. Das bedeutet, dass die Energie der Zellen die bereits ein höher Ladung aufweisen, auf die Akkumulatoren mit niedrigerer Ladung übertragen werden. Beim Aktiven Battery-Balancing werden sogenannte Ladreglungen benötigt. Ladreglungen sind im Prinzip speziell auf eine Anwendung optimierte Schaltregler, die pro Zelle arbeiten und aktiv die Energie übertragen. Dieser Vorgang kann bereits während des Ladeprozesses erfolgen. Standartmäßig wird dieser Vorgang jedoch erst im Bereich des Ladeschlusses aktiv (gleich wie beim Passiven Battery-Balancing). Eine weiterentwickelte Form dieses Systems wird bidirektionalens Balancer-System genannt. Hierbei ist es möglich, dass des Ladungsaustausch sowohl beim Entladen als auch beim Aufladen der Zellen stattfinden kann. Desswegen sind diese bidrektionalen Balancer noch deutlich effizienter. Das Akitve Battery-Balancing wird heutzutage meistens bei größeren Leistungen angewandt, wie zum Beispiel im Bereich der Elektromobilität.
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.4]{figures/Akku/Aktives Balancing.png}
-		\caption{Funktionsweise des Aktiven Battery-Balancing}
-	\end{center}
-\end{figure}
-
-In der obigen Abbildung kann man die Prinzipschaltung eines aktiven Balancers mit zwei Stufen sehen. Innerhalb von zwei Schaltvorgängen kann dabei die Energie aus der Akkuzelle Cell n über den FET n in die Spule L n übertragen werden (Schleife in rot, 1).
-Im zweiten Schaltvorgang (Schleife in blau, 2) wird die Energie in der Spule L n über Diode D n-1 in die Cell n-1 geladen und Cell n-1 aufgeladen.
-
-\textbf{Vorteile} des Aktiven Battery-Balancing:
-\begin{itemize}
-\item {deutlich höherer Wirkungsgrad als beim passiven Battery-Balancing} \medskip\\
-\item {übergeordnete Ladereglung mit intelligenter und lernfähiger Software} \medskip\\
-\item {Lebensdauer der Akkumulatoren kann durch die Methode der Ladungsumverteilung deutlich erhöht werden} \medskip\\
-\item {überschüssige Energie wird nur zu einem geringen Grad in Wärme umgewandelt} \medskip\\
-\item {geringeres Risiko für eine Entflammung} \medskip\\
-\end{itemize}
-
-\textbf{Nachteile} des Aktiven Battery-Balancing:
-\begin{itemize}
-\item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten} \medskip\\
-\end{itemize}
