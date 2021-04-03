@@ -359,13 +359,13 @@ Der Softwareaufbau des Antriebssystems kann grob in drei Grundfunktionen unterte
 \\[5mm]
 \begin{itemize}
 	\item \textbf{Parameterbasierte Programmierung (Programmer)}
-	\\ \medskip Umfasst alle Parameter und die vornehmbaren Konfigurationsmöglichkeiten.
+	\\[1mm] Umfasst alle Parameter und die vornehmbaren Konfigurationsmöglichkeiten.
 	\medskip
 	\item \textbf{Drehmomentsteuerung (Torquecontrol)}
-	\\ \medskip Beinhaltet alle Parametereinstellungen, welche für die Drehmomentsteuerung ausschlaggebend sind.
+	\\[1mm] Beinhaltet alle Parametereinstellungen, welche für die Drehmomentsteuerung ausschlaggebend sind.
 	\medskip
 	\item \textbf{Vehicle-Control-Language (VCL) Programmierung}
-	\\ \medskip Umfasst das gesamte Programm, welches mit der Vehicle-Control-Language realisiert wurde.
+	\\[1mm] Umfasst das gesamte Programm, welches mit der Vehicle-Control-Language realisiert wurde.
 	\\ Ein Großteil dieses Programms beschäftigt sich hierbei mit der Kommunikation zwischen der Motorsteuerung und dem Raspberry PI.
 \end{itemize}
 
@@ -597,11 +597,19 @@ Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv a
 	\end{center}
 \end{figure}
 
+\newpage
+
 \textbf{Fazit:}
 \\[2mm]
 Der erste Schritt bei der Inbetriebnahme des Motors ist der Testlauf (Commissionierung) zur Ausmessung und Einstellung der Motorparameter. Bei der Durchführung dieses Testlaufs stoppte die Motorsteuerung jedoch immer wieder nach kurzer Zeit. Auch viele weitere Versuche bei geänderten Testparametern oder zusätzlichen parallelgeschalten Kondensatoren brachten keine weiteren Erkenntnisse. Aufgrund des schwankenden Spannungspegels während der gescheiterten Test-Durchläufe nahmen wir genauere Messungen mittels eines Oszilloskops vor, um mögliche Fehlerursachen herausfinden zu können. Bei der Untersuchung der Gleichspannungs-Speisung konnten wir feststellen, dass in einem Zeitbereich von circa 40ms ein unerwarteter Einschwingvorgang zu beobachten war, welcher einer negativen Sinus-Schwingung sehr ähnelte. Es trat zuerst eine negative Flanke in einem Zeitbereich von 12ms und mit einer Spannungsunterhöhung von circa 30V auf, dann folgte eine Spannungsüberhöhung mit etwa den selben Werten. Nach weiteren 16ms war der Schwingungsvorgang wieder auf die Eingangsspannung von 50V zurückgefallen. Aufgrund dessen konnten wir rückschließen, dass unsere Leonard-Spannungsquelle zu träge für die Motorsteuerung ist. Außerdem entstand aus den hohen Induktivitäten des Motors und den langen Leitungen kombiniert mit den großen Kondensatoren der Motorsteurung eine Art Schwingkreis, welcher den Trägheitseffekt zusätzlich verstärkte.
+\vspace{5mm}
 
-
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Leonard_Spannungsueberschwingung.png}
+		\caption{Leonardumformer Spannungsüberhöhung}
+	\end{center}
+\end{figure}
 
 
 \newpage
