@@ -457,6 +457,8 @@ Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschi
 
 %%%%%%%%%%%%%%%%%%% HCIS
 
+\fancyfoot[C]{Kronberger}
+
 \section{Steuereinheiten}
 
 \subsection{Raspberry Pi}
@@ -590,6 +592,359 @@ Bleibt noch nachzutragen, dass mit acht Taktzyklen ein Byte übertragen wird. Di
 \newpage
 
 \subsection{CAN-Bus}
+
+\subsubsection{Allgemeine Einführung}
+
+Schnittstellen dienen zur Übertragung von Informationen zwischen den einzelnen Komponenten eines Systems.
+
+In einem Bussystem werden alle Komponenten über kurze Stichleitungen an eine gemeinsame Datenleitung angeschlossen.
+
+Der Aufwand für die Verkabelung wird dadurch minimiert, und es können leicht zusätzliche Komponenten angeschlossen werden.
+
+Der Datenfluss muss jedoch über ein Zugriffsverfahren (Protokoll) gesteuert werden, wenn alle Komponenten eine gemeinsame Busleitung benutzen. Dabei sollen möglichst auch Komponenten unterschiedlicher Hersteller zusammenarbeiten. Dies nennt man offenes Bussystem.
+
+Das Controller Area Network (CAN) verbindet mehrere gleichberechtigte Komponenten(Knoten, Node) über einen 2-Draht Bus miteinander. Das CAN-Protokoll wurde 1983 von Bosch für den Einsatz in Kraftfahrzeugen entwickelt.
+
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.35]{figures/hcis/can_busleitung.png}
+		\caption{Aufbau der CAN-Bus Busleitung}
+		\label{abb:CAN_Busleitung}
+	\end{center}
+\end{figure}
+
+Aufgrund der hohen Störsicherheit, der geringen Kosten und der Echtzeitfähigkeit wird
+CAN auch in der Automatisierungstechnik, vor allem in Textilmaschinen,
+Aufzugssteuerungen und in Landmaschinen eingesetzt.
+Die Organisation „Can in Automation“ (CiA) widmet sich der Weiterentwicklung des CAN
+Protokolls.
+
+\subsubsection{Physikalische Beschreibung der CAN Schnittstelle}
+
+Die physikalischen Gegebenheiten für CAN und viele andere Busprotokolle, wie z.B.
+Profibus, sind in der ISO 11898 definiert. Zur Umsetzung dieser Spezifikation stehen viele
+Microchips zur Verfügung, wie z.B. der PCA82C250 von Philips.
+
+Die elektrische Störsicherheit wird unter anderem dadurch erreicht, dass ein Bit auf zwei
+Leitungen gleichzeitig mit einer gegensinnigen Potezialänderung abgebildet wird. Man
+spricht hier auch von einem differentiellen Signal.
+
+Auf einer zweiten Leitung wird also eine redundant invertierte Übertragung des logischen
+Signals vorgenommen.
+In die Leitung eingestreute Störungen wirken auf beide Leitungen in der gleichen
+Richtung. Da die beiden differentiellen Leitungen jedoch immer gegensinnige Pegel
+haben, bleibt die Differenz der Pegel auch bei Störungen weitgehend erhalten. Dies nennt
+man Gleichtaktunterdrückung, auf englisch „Common Mode Rejection Ratio“ (CMRR). Die 
+Leitung CAN-High und Can-Low. enthalten das invertierte und das nicht invertierte serielle
+Datensignal.
+Durch die Ausführung als offener Collector (PNP auf VCC bei CAN-H und NPN auf GND
+bei CAN-L) können ausserdem mehrere Teilnehmer auf dem Bus parallelgeschaltet
+werden, ohne daß im Konfliktfall elektrische Kurzschlüsse entstehen.
+Der Zustand mit zwei unterschiedlichen Pegeln auf Can-H und CAN-L wird als der
+dominante Zustand genannt (Pegeldifferenz > 3,5 Volt); der Zustand mit zwei gleichen
+Pegeln wird als rezessiv bezeichnet (Pegeldifferenz < 1,5 Volt).
+Der dominante Zustand entspricht per CAN Definition einer logischen Null: Legt ein
+Knoten eine logische Null auf den Bus, überschreibt er möglicherweise den Zustand einer
+logischen Eins eines anderen Knotens. Die Kopplung der Knoten über die Bussleitung
+stellt eine logische Und-Verknüpfung dar (Wired-And).
+
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.35]{figures/hcis/can_receiver.png}
+		\caption{Aufbau eines CAN-Bus Receiver}
+		\label{abb:CAN_Receiver}
+	\end{center}
+\end{figure}
+
+\begin{table}[H]
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}logischer\\ Pegel\end{tabular}}} &
+		\multicolumn{1}{c|}{\textbf{Zustand}} &
+		\multicolumn{1}{c|}{\textbf{CAN-H}} &
+		\multicolumn{1}{c|}{\textbf{CAN-L}} &
+		\multicolumn{1}{c|}{\textbf{Differenzpegel}} \\ \hline
+		0 &
+		dominant &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geöffnet\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geschlossen\\ (zieht Pegel auf\\ GND)\end{tabular} &
+		+5 Volt \\ \hline
+		1 &
+		rezessiv &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geschlossen\\ (zieht Pegel auf\\ VCC)\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geöffnet\end{tabular} &
+		0 Volt \\ \hline
+		Tristate &
+		floating &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geöffnet\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Transistor\\ geöffnet\end{tabular} &
+		\\ \hline
+	\end{tabular}
+\end{table}
+
+Eine weitere Maßnahme zur Erhöhung der Störsicherheit ist das NRZI-Verfahren: Dabei
+wird nach maximal fünf Bits gleicher „Polarität“ (rezessiv bzw. dominant) ein Bit der jeweils
+anderen Polarität eingefügt.
+
+\textbf{Steckerbelegung}
+
+Als Steckverbinder für den CANbus hat sich der vom CiA vorgeschlagene 9 polige Sub-D
+Stecker durchgesetzt. In den Knoten werden sowohl weibliche wie auch männliche
+Steckverbinder gleichzeitig eingesetzt. Somit können ohne Unterbrechung weitere Knoten
+in die Busleitung integriert werden.
+Für die Übertragung von CAN Signalen ist mindestens ein 3 poliges Kabel mit CAN-High,
+CAN-Low und Ground erforderlich. Die Verwendung eines geschirmten Kabels ist nicht
+vorgeschrieben. Bei größeren Leitungslängen sind Verdrillung des Leitungspaares und
+Schirmung zu empfehlen.
+Die Organisation CiA definierte daneben auch noch einen 5 poligen Rundsteckverbinder
+und einen 4- oder 5-poligen "open style" Stecker, ohne auf die Abmessungen einzugehen.
+Eine ebenfalls nützliche Sache ist der von CiA definierte 10 polige "multipole Connector".
+Dahinter steckt eine 10 polige Doppelpfostenleiste. Pin 10 ist dabei reserviert und bleibt
+frei.
+
+\newpage
+
+\begin{table}[H]
+	\begin{tabular}{|c|l|l|}
+		\hline
+		\textbf{PIN} & \multicolumn{1}{c|}{\textbf{Signal}} & \multicolumn{1}{c|}{\textbf{Beschreibung}} \\ \hline
+		1 &          & reserviert                           \\ \hline
+		2 & CAN-L    & negiertes CAN-Signal (Dominant Low)  \\ \hline
+		3 & CAN-GND  & Masse                                \\ \hline
+		4 &          & reserviert                           \\ \hline
+		5 & CAN-SHLD & Schirmung (optional)                 \\ \hline
+		6 & GND      & Geräte Masse (optional)              \\ \hline
+		7 & CAN-H    & positives CAN-Signal (Dominant High) \\ \hline
+		8 &          & reserviert                           \\ \hline
+		9 & VCC      & Versorgungsspannung (optional)       \\ \hline
+	\end{tabular}
+\end{table}
+
+\textbf{Bitrate und Leitungslängen}
+
+Das CAN Netzwerk kann prinzipiell Bitraten bis zu 1Mbit/s übertragen. Alle CAN-Knoten
+müssen die Nachricht gleichzeitig verarbeiten können. Die maximae Kabel-Länge ist
+daher abhängig von der Bitrate. Die Tabelle zeigt empfohlene Bitraten und die
+entsprechende maximale Kabellänge.
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Bitrate} & \textbf{Kabellänge} \\ \hline
+		10 kbits/s       & 6,7 km              \\ \hline
+		20 kbits/s       & 3,3 km              \\ \hline
+		50 kbits/s       & 1,3 km              \\ \hline
+		125 kbits/s      & 530 m               \\ \hline
+		250 kbits/s      & 270 m               \\ \hline
+		500 kbits/s      & 130 m               \\ \hline
+		1 Mbits/s        & 40 m                \\ \hline
+	\end{tabular}
+\end{table}
+
+\textbf{Busterminierung (Abschlusswiderstand)}
+
+Die Busterminierung erfolgt beim CAN Bus mit 120 Ohm. Eine Terminierung ist auch
+schon bei kurzen Leitungen mit niedrigen Baudraten erforderlich, da sie bei CAN
+gleichzeitig als kombinierter Pullup und Pulldown Widerstand für alle Teilnehmer arbeitet.
+Ohne Terminierung gibt es nicht nur Reflexionen, sondern beide CAN Leitungen hängen
+in der Luft. In der Praxis reicht bei kurzen Leitungen eine Terminierung an einem Ende,
+idealerweise wird der Bus aber an beiden Enden (und nur dort) mit jeweils 120 Ohm
+terminiert.
+
+\textbf{Prinzip des Datenaustausches im CAN Netzwerk}
+
+Bei der Datenübertragung in einem CAN Bus werden keine Knoten adressiert, sondern
+der Inhalt einer Nachricht (z.B. Drehzahl oder Motortemperatur) wird durch einen
+eindeutigen Identifier gekennzeichnet. Neben der Inhaltskennzeichnung legt der Identifier
+auch die Priorität der Nachricht fest.
+Mit der dann folgenden Akzeptanzprüfung stellen alle Stationen nach korrektem Empfang
+der Nachricht anhand des Identifiers fest, ob die empfangenen Daten für sie relevant sind
+oder nicht. Durch die inhaltsbezogene Adressierung wird eine hohe Flexibilität erreicht: Es
+lassen sich sehr einfach Stationen zum bestehenden CAN-Netz hinzufügen.
+Außerdem ergibt sich die Möglichkeit des Multicasting: Eine Nachricht kann von mehreren
+Teilnehmern gleichzeitig empfangen und ausgewertet werden. Messgrößen, die von
+mehreren Steuergeräten als Information benötigt werden, können über das CAN-Netz so
+verteilt werden, dass nicht jedes Steuergerät einen eigenen Sensor benötigt.
+
+\textbf{Kollisionsprüfung}
+
+Jeder Teilnehmer darf Daten ohne besondere Aufforderung irgend eines Masters
+verschicken. Wie bei Ethernet kann es hier zu Kollisionen kommen, die allerdings per
+Hardware aufgelöst und durch Wiederholung behoben werden. Eine Kollision wird
+dadurch erkannt, daß ein Sender den gesendeten Identifier selbst zurückliest und
+vergleicht. Bei Ungleichheit war ein Teilnehmer mit höherer Priorität da, welcher die
+Leitung an irgendeiner Stelle in den dominanten Pegel gezogen hat.
+Der Identifier mit der niedrigsten Binärzahl hat somit die höchste Priorität.
+Den Vorgang zur Kollisionsprüfung über den Identifier nennt man „bitweise Arbitrierung“.
+Entsprechend dem "Wired-and-Mechanismus", bei dem der dominante Zustand (logisch
+0) den rezessiven Zustand (logisch 1) überschreibt, verlieren all diejenigen Knoten den
+Wettstreit um die Buszuteilung, die rezessiv senden, aber auf dem Bus dominant
+beobachten. Alle "Verlierer" werden automatisch zu Empfängern der Nachricht mit der
+höchsten Priorität und versuchen erst dann wieder zu senden, wenn der Bus frei wird.
+Der CANbus ist somit ein Bussystem mit bedarfsabhängiger Buszuteilung.
+Auch gleichzeitige Buszugriffe mehrerer Knoten müssen immer zu einer eindeutigen
+Busvergabe führen. Durch das Verfahren der bitweisen Arbitrierung über die Identifier der
+zur Übertragung anstehenden Botschaften wird jede Kollision nach einer berechenbaren
+Zeit eindeutig aufgelöst: Im CAN Standard Format sind es maximal 13 Bitzeiten, im
+erweiterten Format sind es maximal 33 Bitzeiten.
+
+\textbf{Schichten der CAN-Software und CAN-Hardware}
+
+Die einzelnen Aufgaben des CANBus sind in sogenannten „Schichten“ (Layer) definiert.
+
+\begin{enumerate}
+
+	\item Bitübertragungsschicht (Physical Layer).
+	Diese Schicht beschreibt die physikalischen
+	Eigenschaften, wie z.B. Stecker, Kabel, Signalpegel und wie ein Bit auf der Leitung
+	dargestellt wird.
+	\item Übertragungsschicht (Transfer Layer)
+	Die Übertragungsschicht hat die Aufgabe, das spezifizierte Busprotokoll abzuarbeiten.
+	Dazu gehören die Erzeugung eines Übertragungsrahmens (,‚Pakets"), die Anforderung
+	des Busses mit der nötigen Erkennung des Buszustands (frei, belegt) und evtl. die
+	Durch- bzw. Weiterführung des Zugriffs (dezentrale Buszuteilung). Dazu kommen die
+	Aufgaben der Fehlererkennung und Fehleranzeige.
+	\item Objektschicht (Object Layer)
+	Diese Schicht hat als Hauptaufgaben die Botschaftenverwaltung und
+	Zustandsermittlung. Sie entscheidet, welche Botschaften momentan zu übertragen
+	sind. Auf der Empfängerseite nimmt sie eine Botschaftenfilterung anhand der Kennung
+	im Identifikationsfeld vor, d.h. eine Entscheidung, welche Botschaften vom Knoten
+	akzeptiert werden müssen und welche nicht.
+	\item Anwendungsschicht (CAN Application Layer CAL)
+	In dieser Schicht werden die zu übertragenden Daten als Botschaften bereit gestellt
+	und mit einer Kennung versehen, die eine inhaltsbezogene Adressierung ermöglichen.
+	Durch die Wahl der Kennung wird jede Nachricht mit einer festgelegten Priorität
+	versehen.
+
+\end{enumerate}
+
+\textbf{Aufbau einer CAN Nachricht}
+
+Eine Nachricht wird in einer für den CAN-Bus eigenen Form verpackt. Diese Verpackung
+wird als „Frame“ bezeichnet.
+Ein Frame besteht aus 7 Kennfeldern::
+
+\begin{itemize}
+	\item Start-Condition
+	\item Message Identifier
+	\item Steuerbits
+	\item Daten (0-8 Bytes)
+	\item Prüfbits
+	\item Acknowledge-Bit
+	\item Stop-Condition
+\end{itemize}
+
+Man unterscheidet außerdem die Frames nach der Länge des Identifiers:
+
+\begin{itemize}
+	\item Standard Frame (11 Bit Identifier)
+	\item Extendet Frame (29 Bit Identifier)
+\end{itemize}
+
+Nach der Art des Frames unterscheidet man den
+
+\begin{itemize}
+	\item Data Frame (Daten werden ohne spezielle Aufforderung gesendet)
+	\item Remote Data Frame (Daten werden angefordert – Ein Empfänger, der den REMOTE
+	identifiziert, sendet daraufhin seine Nachricht)
+\end{itemize}
+
+Standard-Frame nach Standard CAN 2.0A:
+
+\begin{table}[H]
+	\begin{scriptsize}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Start & Id & RTR   & IDE   & r0    & DLC   & DATA       & CRC    & ACK   & EOF+IFS \\
+		1 Bit & 11 Bit      & 1 Bit & 1 Bit & 1 Bit & 4 Bit & 0...8 Byte & 15 Bit & 2 Bit & 10 Bit  \\ \hline
+	\end{tabular}
+	\end{scriptsize}
+\end{table}
+
+Extended-Frame nach Standard CAN2.0B:
+
+\begin{table}[H]
+	\begin{scriptsize}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Start & Id & SRR   & RTR   & IDE   & Id & RTR   & r1    & r0    & DLC   & DATA       & CRC    & ACK   & EOF+IFS \\
+		1 Bit & 11 Bit      & 1 Bit & 1 Bit & 1 Bit & 18 Bit     & 1 Bit & 1 Bit & 1 Bit & 4 Bit & 0...8 Byte & 15 Bit & 2 Bit & 10 Bit  \\ \hline
+	\end{tabular}
+	\end{scriptsize}
+\end{table}
+
+\begin{itemize}
+	\item \textbf{Start:} dominant, dient der Synchronisation,
+	\item \textbf{Identifier:} Information für den Empfänger und Prioritätsinformation für die
+	Busarbitrierung,
+	\item \textbf{RTR}: rezessiv, unterscheidet zwischen Daten- (dominant) und Datenanforderungstelegramm (rezessiv),
+	\item \textbf{IDE:} Identifier Extension,
+	\item \textbf{r0:} reserviert,
+	\item \textbf{DLC:} enthält die Längeninformation der nachfolgenden Daten,
+	\item \textbf{DATA:} enthält die Daten des Telegramms,
+	\item \textbf{CRC:} kennzeichnet den Fehlercode für die vorangegangenen Informationen. Die CRC
+	Prüfsumme wird zur Fehlererkennung verwendet,
+	\item \textbf{ACK:} enthält Rückmeldung von anderen Teilnehmern bei korrektem Empfang der
+	Nachricht,
+	\item \textbf{EOF:} kennzeichnet das Ende des Datentelegramms (7 rezessive Bits),
+	\item \textbf{IFS:} kennzeichnet den Zeitraum für das Übertragen einer korrekt empfangenen
+	Nachricht,
+	\item \textbf{SRR:} ersetzt im Extended Frame das RTR Bit des Standard Frames,
+	\item \textbf{IDE:} zeigt an, dass noch weitere 18 Bits folgen,
+	\item \textbf{r1, r0:} reservierte Bits,
+    \item \textbf{DLC:} Längeninformation der nachfolgenden Daten.
+\end{itemize}
+
+\textbf{Fehlererkennung im CAN Netzwerk}
+
+Das CAN-Protokoll kann Fehler selbst erkennen und signalisieren. Um Fehler zu
+erkennen, sind im CAN-Protokoll drei Mechanismen auf der Nachrichernebene
+implementiert:
+
+\begin{enumerate}
+	\item Cyclic Redundancy Check (CRC)\\
+	Der CRC sichert die Information des Rahmens , indem sendeseitig redundante Prüfbits
+	hinzugefügt werden. Empfangsseitig werden diese Prüfbits aus den empfangenen Bits
+	neu berechnet und mit den empfangenen Prüfbits verglichen. Bei Nichtübereinstimmung
+	liegt ein CRC-Fehler vor.
+	\item Frame-check\\
+	Dieser Mechanismus überprüft die Struktur des übertragenen Rahmens Die durch Frame-
+	Check erkannten Fehler werden als Formatfehler bezeichnet.
+	\item ACK-Fehler\\
+	Von allen Empfängern werden die empfangenen Rahmen durch positives
+	Acknowledgement quittiert. Wird am Sender kein Acknowledgement erkannt (ACKFehler),
+	so deutet dies auf einen möglicherweise nur von den Empfängern erkannten
+	Übertragungsfehler, auf eine Verfälschung des ACK-Feldes oder auf nicht vorhandene
+	Empfänger hin.
+\end{enumerate}
+
+Außerdem sind im CAN-Protokoll zwei Mechanismen zur Fehlererkennung auf der
+Bitebene implementiert.
+
+\begin{enumerate}
+	\item Monitoring\\
+	Jeder Knoten der sendet, beobachtet gleichzeitig den Busspegel. Er erkennt dabei
+	Differenzen zwischen gesendetem und empfangenen Bit. Dadurch können alle globalen
+	Fehler und lokal am Sender auftretenden Bitfehler sicher erkannt werden.
+	\item Bit-stuffing\\
+	Auf der Bitebene wird die Codierung der Einzelbits überprüft. Das CAN-Protokoll nutzt die
+	NRZ-Codierung (Non-Return-to Zero), die eine maximale Effizienz bei der Bitcodierung
+	gewährleistet. Dabei werden die Synchronisationsflanken nach der Methode des Bitstuffings
+	erzeugt, indem vom Sender nach fünf aufeinanderfolgenden gleichwertigen Bits
+	ein Stuff-Bit mit komplementärem Wert in den Bitstrom eingefügt wird, welches die
+	Empfänger automatisch wieder entfernen. Werden ein oder mehrere Fehler mit Hilfe der
+	oben beschriebenen Mechanismen von mindestens einem Knoten entdeckt, so wird die
+	laufende Übertragung durch Senden eines "Error flag" abgebrochen. Dadurch wird die
+	Annahme der übertragenen Nachricht durch andere Stationen verhindert und somit die
+	netzweite Datenkonsistenz sichergestellt. Nach Abbruch der Übertragung einer
+	fehlerhaften Botschaft beginnt der Sender automatisch, seine Nachricht erneut zu senden
+	(Automatic Repeat Request).
+	Tritt ein Fehler mehrmals aufeinanderfolgend auf, führt dies zur automatischen
+	Abschaltung des Knotens.
+\end{enumerate}
+\footnote{vgl. \cite{CAN}}
+
+\newpage
 
 \section{Programmiersprachen}
 
