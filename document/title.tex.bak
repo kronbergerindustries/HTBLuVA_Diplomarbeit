@@ -1,0 +1,44 @@
+% Beginn - Formatierung der Titelseite
+\vspace*{20mm}
+\begin{center} 
+\begin{Huge}\textbf{Diplomarbeit}\end{Huge} \par \bigskip 
+\begin{Large}Höhere Technische Bundeslehr- und Versuchsanstalt Salzburg \par \medskip 
+Abteilung für Elektrotechnik\end{Large} 
+\vspace*{20mm}
+
+\begin{Huge}
+\textbf{Entwicklung eines emissionsfreien Sportmotorrades \\[1ex]}
+\end{Huge}
+\vspace{\fill}
+
+\begin{tabular}{lll}
+\multicolumn{3}{l}{\textbf{Entwicklung der Zentralsteuerung / Projektleitung}} \\
+ Martin Kronberger & 5AHET & Betreuer: Dipl.-Ing. (FH) Johannes Ferner\\
+      &       &      \\
+\multicolumn{3}{l}{\textbf{Entwicklung des Antriebssystems}}\\
+Jakob Lackner & 5AHET & Betreuer: Prof. Dipl.-Ing. MBA Adolf Reinhart \\
+      &       &      \\
+\multicolumn{3}{l}{\textbf{Entwicklung des Akkusystems}} \\
+Simon Kern & 5AHET & Betreuer: Prof. Dipl.-Ing. Reinhold Benedikter\\
+      &       &      \\
+\multicolumn{3}{l}{\textbf{Entwicklung der mechanischen Komponenten}} \\
+Tobias Schmeisser & 5AHET & Betreuer: Prof. Dipl.-Ing. Peter Lindmoser\\
+\end{tabular}
+\end{center}
+\vspace{\fill}
+
+\begin{minipage}{0.49\textwidth}
+Höhere Technische Bundeslehr-\\
+und Versuchsanstalt Salzburg \par \medskip 
+Itzlinger Hauptstraße 30 \par \medskip 
+A-5022 Salzburg \par \medskip 
+www.htl-salzburg.ac.at
+\end{minipage}
+\begin{minipage}{0.49\textwidth} \hspace*{\fill}
+{\includegraphics[scale=0.25]{figures/allgemein/HTBLuVA_Salzburg_Logo.png}} \hspace{\fill}
+\end{minipage}
+\newpage
+\clearpage
+\thispagestyle{empty}
+\mbox{}
+\newpage

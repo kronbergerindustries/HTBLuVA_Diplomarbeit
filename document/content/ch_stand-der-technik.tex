@@ -314,17 +314,44 @@ Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wich
 \item \textbf{Aktives Battery-Balancing} \medskip\\
 \end{itemize}
 
+\newpage
 
 \section{Synchronmaschine mit Dauermagneterregung}
+\subsection{Allgemeines}
+Permanenterregte Synchronmotoren haben eine mindestens doppelt so große Bemessungsleistung wie Asynchronmaschinen mit gleicher Baugröße, zudem besitzen sie ebenfalls weniger Gesamtverluste. Die fehlende Läufernutung und die hohe Remanenzflussdichte der Dauermagnete erlauben höhere Luftspaltflussdichten, dadurch lassen sich ebenfalls höhere Leistunsdaten realisieren. Die Permanentmagneten befreien die Ständerwicklung von der Aufgabe der Magnetisierung durch Aufnahme einer Blindstromkomponente, dies erhöht den Wirkstrom und damit auch die erreichbare Leistung. Die PSM müssen jedoch anwendungsspezifischer ausgelegt werden, denn es entfallen alle Einflussmöglichkeiten auf die Betriebsdaten, speziell auf Betrag und Phasenlage des Ständerstroms, die sonst durch die Änderung des Feldes über den Erregerstrom gegeben sind.
+
+\subsection{Aufbau}
+Um eine gute Ausnutzung des Bauvolumens realisieren zu können, wird der Ständer meist mit einer sechspoligen Drehstromwicklung ausgeführt. Der Läufer ist dabei wie in folgender Abbildung beschrieben mit Dauermagneten ausgeführt. Große Aussparungen im Läuferblech (2) reduzieren das Trägheitsmoment. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/antrieb/Läufer_Synchronmaschine.png}
+		\caption{Läufer einer dauermagneterregten Synchronmaschine}
+	\end{center}
+\end{figure}
+
+\subsection{Funktionsweise}
+Im Motorbetrieb wird an die Klemmen der Ständerwicklungen ein Drehstrom angelegt und dadurch ein sinusförmiges Drehfeld erzeugt. Da sich ungleiche magnetische Pole anziehen, wird der Rotor mit seinem zugehörigen Magnetfeld synchron mit dem angelegten Drehfeld mitbewegt. Im Leerlauf stehen sich also der Norpol des Stator-Drehfelds und der Südpol des permanenterregten Rotor-Magnetfelds exakt gegenüber, die Drehzahl des Läufers ist also synchron mit der Drehzahl des angelegten Drehfelds. Bei bremsender Last eilt das Magnetfeld des Permanentmagneten dem Stator-Drehfeld um den Polradwinkel nach. Die Größe des Winkels stellt sich also abhängig von der Stärke des Lastdrehmoments ein. Dies kann jedoch nur bis zum sogenannten Kippmoment (Polradwinkel $\vartheta = 90^\circ$) gesteigert werden. Übersteigt das Drehmoment der Last das Kippmoment, so spricht man vom \glqq Abreißen\grqq{} der magnetischen Felder und die Synchronmaschine bleibt stehen. Das selbe gilt für den Generatorbetrieb, hier eilt aber das Drehfeld des Rotors vor. Bei Frequenzumrichterspeisung mit Feldorientierung kann jedoch dauerhaft mit $\vartheta$ = +/- $90^\circ$ gefahren werden, man spricht von sogenannter Querstromspeisung, der Zusammenhang zwischen (Läufer)-Feld und (Ständer)-Strom entspricht dann jenem der fremderregten Gleichstrommaschine.
+
+\newpage
+
 \subsection{Auswertung der Antriebswelle (Encoder)}
+Für den Betrieb einer permanentmagneterregten Synchronmaschine wird immer ein zugehöriger Frequenzumrichter benötigt. Um eine gute Regelung einer Synchronmaschine gewährleisten zu können, benötigt dieser die Rückmeldung von einem Resolver (Encoder) oder einem hochauflösenden Inkrementalgeber, welcher im Motorgehäuse integriert ist. Denn im Betrieb mit sinusförmigen Strömen muss die exakte Läuferfeldlage bekannt sein, um eine feldorientierte Regelung durchführen zu können. 
+
+Die Übertragung des elektrischen Signals erfolgt in Synchronmaschinen mit eingebauten Dauermagneten am häufigsten mit einem Sinus/Cosinus-Sensor. Der Sensor besteht hierbei aus zwei Versorgungsleitungen (positive Spannungsversorgung = 5V + Ground = 0V) und zwei Sensordrähten. Über die zwei Sensordrähte wird das Spannungssignal (0-5V) abhängig vom aktuellen Stand der Motorwelle ausgegeben. Betrachtet man die Spannungswerte über den gesamten Winkel der Motorwelle, erkennt man zwei sinusförmige Kurven, die um $90^\circ$ versetzt sind. Bei einer korrekten Auswertung dieser Signale kann der aktuelle Stand der Motorwelle in jeder beliebigen Position absolut bestimmt werden.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/antrieb/SinCos_Sensor.png}
+		\caption{Aufbau eines AC-Motorsystems}
+	\end{center}
+\end{figure}
+\newpage
 
 \section{Curtis Controller}
 \subsection{Allgemeines}
 \subsection{Feldorientierte Regelung}
 
-\section{Leonard-Umformer}
-\subsection{Allgemeines}
-\subsection{ }
 
 \newpage
 
@@ -332,20 +359,20 @@ Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wich
 \subsection{Einleitung}
 Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
 
-Allein schon der aufrechte Gang funktioniert nur mit Regelung. Dabei wirken die Sinne als Sensoren, das Gehirn als Regler und die Muskeln als Aktuatoren. Weitere Regelungen in unserem Körper sind z.B. die Konstanthaltung der Körpertemperatur, der Blutdruck, die Anpassung der Pupille auf Helligkeitsänderungen usw.
+Allein schon der aufrechte Gang funktioniert nur mit Regelung. Dabei wirken die Sinne als Sensoren, das Gehirn als Regler und die Muskeln als Aktoren. Weitere Regelungen in unserem Körper sind z.B. die Konstanthaltung der Körpertemperatur, der Blutdruck, die Anpassung der Pupille auf Helligkeitsänderungen usw.
 
-Der Begriff Regelung ist zu unterscheiden von dem im allgemeinen Sprachgebrauch oft synonym gebrauchten Begriff der Steuerung. Das Steuern ist ein rein vorwärts gerichteter Prozess ohne Rückkopplung. Die Ausgangsgröße wird dabei nicht überwacht und kann sich durch Störungen von außen verändern. Ein Beispiel ist die Steuerung eines Motors mit einer einstellbaren Spannung. Durch Laständerungen wird sich die Drehzahl des Motors ändern. Soll nun die Drehzahl konstant gehalten werden, bedarf es einer Rückkopplung um über die Spannung die Drehzahl anzupassen. Diese Rückkopplung ist das Kennzeichen einer Regelung.
+Der Begriff Regelung ist zu unterscheiden von dem im allgemeinen Sprachgebrauch oft synonym gebrauchten Begriff der Steuerung. Das Steuern ist ein rein vorwärts gerichteter Prozess ohne Rückkopplung. Die Ausgangsgröße wird dabei nicht überwacht und kann sich durch Störungen von außen verändern. Ein Beispiel ist die Steuerung eines Elektromotors mit einer einstellbaren Spannung. Durch Laständerungen wird sich die Drehzahl des Motors ändern. Soll nun die Drehzahl konstant gehalten werden, bedarf es einer Rückkopplung, um über die Spannung die Drehzahl anzupassen. Diese Rückkopplung ist das Kennzeichen einer Regelung.
 
 Das Regeln ist ein Vorgang, bei dem die Ausgangsgröße, im Beispiel die Drehzahl, fortlaufend überwacht wird und bei Abweichung über die Stellgröße, im Beispiel die Spannung, korrigiert wird. Der sich dabei ergebende Wirkungsablauf findet in einem geschlossenen Kreis, dem Regelkreis, statt.
 \vspace{5mm}
 
 \subsection{Der Regelkreis}
-Das Prinzip einer Regelung ist das fortlaufende: Messen – Vergleichen – Stellen
+Das Prinzip einer Regelung ist das fortlaufende Messen – Vergleichen – Stellen.
 \\[5mm]
 
 \begin{itemize}
 	\item \textbf{Messen}
-	\\[1mm] Die Regelgröße wird direkt oder mittels Sensoren gemessen.
+	\\[1mm] Die Regelgröße wird mittels Sensoren gemessen.
 	\medskip
 	\item \textbf{Vergleichen}
 	\\[1mm] Der Wert der Regelgröße wird mit dem Sollwert verglichen. Die Differenz ist die Regelabweichung.
@@ -355,7 +382,7 @@ Das Prinzip einer Regelung ist das fortlaufende: Messen – Vergleichen – Stel
 \end{itemize}
 \vspace{3mm}
 
-Ein Regelkreis dient dazu, eine vorgegebene physikalische Größe, die Regelgröße, auf einen gewünschten Wert (Sollwert) zu bringen und dort zu halten, unabhängig von eventuell auftretenden Störungen. Um die Regelungsaufgabe zu erfüllen, muss der Augenblickswert der Regelgröße – der Istwert – gemessen und mit dem Sollwert verglichen werden. Bei auftretenden Abweichungen muss in geeigneter Art und Weise nachgestellt werden.
+Ein Regelkreis dient dazu, eine vorgegebene physikalische Größe, die Regelgröße, auf einen gewünschten Wert (Sollwert) zu bringen und dort zu halten, unabhängig von eventuell auftretenden Störungen. Um die Regelungsaufgabe zu erfüllen, muss der Augenblickswert der Regelgröße – der Istwert – gemessen und mit dem Sollwert verglichen werden. Auftretende Abweichungen müssen in geeigneter Art und Weise nachgestellt werden.
 
 Um nun diese Aufgabe technisch zu lösen, gibt es die Regelungstechnik. Sie baut im wesentlichen auf die mathematische Beschreibung und Modellbildung des Systems Regelkreis. Zur Modellierung, Beschreibung und Simulation werden Blockschaltbilder mit diskreten Signalgliedern verwendet.
 
@@ -366,32 +393,32 @@ Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es 
 
 \begin{itemize}
 	\item \textbf{Regler G$_R$}
-	\\[1mm] Ist der Teil des Regelkreises, der unter Berücksichtigung der dynamischen Eigenschaften der Regelstrecke aus der Regelabweichung die Korrekturmaßnahmen zum Ausregeln ergreift.
+	\\[1mm] Um die Regelabweichung zu minimieren müssen Korrekturmaßnahmen ergriffen werden.
 	\medskip
 	\item \textbf{Regelstrecke G$_S$}
-	\\[1mm] Ist der Teil des Regelkreises, der vom Regler ausgeregelt werden soll.
+	\\[1mm] Das zu regelnde System
 	\medskip
 	\item \textbf{Führungsgröße w (Sollwert)}
-	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll. Sie ist eine von der Regelung nicht beeinflusste Größe und wird von außen zugeführt.
+	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll.
 	\medskip
 	\item \textbf{Regelgröße x (Istwert)}
-	\\[1mm] Ist die Ausgangsgröße der Regelstrecke, die zum Zweck des Regelns erfasst und zum Vergleich rückgeführt wird. In vielen Fällen ist in der Rückführung noch eine Messeinrichtung (Sensor) gezeichnet, die den Istwert erfasst, hier der Einfachheit halber weggelassen.
+	\\[1mm] Die Ausgangsgröße der Regelstrecke wird für den Vergleich mit dem Sollwert rückgekoppelt.
 	\medskip
 	\item \textbf{Regelabweichung e}
 	\\[1mm] Differenz zwischen Führungsgröße und Regelgröße e = w – x, bildet die eigentliche Eingangsgröße des Reglers.
 	\medskip
 	\item \textbf{Stellgröße y}
-	\\[1mm] Ausgangsgröße der Regeleinrichtung und zugleich Eingangsgröße der Strecke. Sie überträgt die steuernde Wirkung des Reglers auf die Strecke.
+	\\[1mm] Die Ausgangsgröße des Reglers wird vom zu regelnden System beeinflusst.
 	\medskip
 	\item \textbf{Störgröße z}
-	\\[1mm] Eine von außen wirkende Größe, die eine Änderung des Istwertes der Regelgröße bewirkt und einen Regelvorgang auslöst.
+	\\[1mm] Es können unvorhersehbare Störgrößen auftreten, die ebenfalls ausgeregelt werden müssen.
 \end{itemize}
 
 \vspace{5mm}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{figures/antrieb/Regelkreis_Grundaufbau.png}
-		\caption{Grundaufbau des allgemeinen Regelkreises}
+		\caption{Das Blockschaltbild eines allgemeinen Regelkreises}
 	\end{center}
 \end{figure}
 
@@ -442,7 +469,7 @@ Reglerleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^
 	\end{center}
 \end{figure}
 
-Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschiedlichen klassischen Reglertypen dargestellt:
+Hier sind für ein besseres Verständnis die Sprungantworten der unterschiedlichen klassischen Reglertypen dargestellt. Der Regelkreis ist geschlossen, ein PT2-Glied bildet die Regelstrecke.
  
 \begin{figure}[H]
 	\begin{center}
