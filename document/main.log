@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  2 APR 2021 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  3 APR 2021 13:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -2515,32 +2515,32 @@ nput line 542.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 598.
+nput line 600.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [97]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 648.
+nput line 650.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [98]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 705.
+nput line 707.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [99]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 707.
+nput line 709.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [100]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 764.
+nput line 766.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [101]) (content/ch_ergebnis.tex
 Kapitel VIII.
@@ -4129,7 +4129,7 @@ public/lm/lmsy10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/courier/ucrr8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/times/utmb8a.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/times/utmr8a.pfb>
-Output written on main.pdf (179 pages, 12259655 bytes).
+Output written on main.pdf (179 pages, 12259431 bytes).
 PDF statistics:
  2566 PDF objects out of 2984 (max. 8388607)
  536 named destinations out of 1000 (max. 500000)

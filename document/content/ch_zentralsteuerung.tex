@@ -551,6 +551,8 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 
 \subsubsection{Benutzer System}
 
+id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
+
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|c|c|l|}
@@ -590,7 +592,7 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 	\end{center}
 \end{table}
 
-id und enabled sind nicht signiert, wobei id der Prim¨arschl ¨ ussel mit Auto-Inkrement ist.
+id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
 sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
 tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
@@ -606,12 +608,12 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 			\multicolumn{3}{|c|}{\textbf{data2}} \\ \hline
 			\textbf{Attribut}  & \textbf{Datentyp} & \textbf{Beschreibung}               \\ \hline
 			id                 & int               & Identifikationsnummer               \\ \hline
-			id\_data\_1        & int               & Fremdschlüssel von Datenpacket 1    \\ \hline
+			id\_data\_1        & int               & Fremdschlüssel von Datenpaket 1     \\ \hline
 			date\_time         & datetime          & Datum der Erstellung                \\ \hline
 			vehicle\_speed     & int               & Geschwindigkeit des Motorrades      \\ \hline
 			capacitator\_volts & int               & Eingangsspannung der Motorsteuerung \\ \hline
-			bdi\_percentage    & int               &                                     \\ \hline
-			interlock          & int               &                                     \\ \hline
+			bdi\_percentage    & int               & Ladestand des Akkus              	 \\ \hline
+			interlock          & int               & Muss aktiv sein um zu fahren        \\ \hline
 			throttle\_command  & int               & Stellung des Gasgriffes             \\ \hline
 			brake\_command     & int               & Stellung der Motorbremse (software) \\ \hline
 			driving\_mode      & int               & Aktueller Fahrmodus                 \\ \hline
@@ -628,17 +630,17 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 		\begin{tabular}{|c|c|l|}
 			\hline
 			\multicolumn{3}{|c|}{\textbf{data3}} \\ \hline
-			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
-			id                          & int               & Identifikationsnummer                     \\ \hline
-			id\_data\_2                 & int               & Fremdschlüssel von Datenpacket 2          \\ \hline
-			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
-			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
-			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
-			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
-			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
-			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
-			braking\_distance\_captured & int               & Zeit von Bremsbegin bis zu Stillstand     \\ \hline
-			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     	\\ \hline
+			id                          & int               & Identifikationsnummer                     	\\ \hline
+			id\_data\_2                 & int               & Fremdschlüssel von Datenpaket 2          		\\ \hline
+			date\_time                  & datetime          & Datum der Erstellung                      	\\ \hline
+			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            	\\ \hline
+			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       	\\ \hline
+			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        	\\ \hline
+			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindigkeit 	\\ \hline
+			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        	\\ \hline
+			braking\_distance\_captured & int               & Zeit von Bremsbeginn bis zu Stillstand     	\\ \hline
+			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand	 	\\ \hline
 		\end{tabular}
 		\caption{Datenbankstruktur der Datenpaket 3 Tabelle}
 		\label{tab:data3}
@@ -657,14 +659,14 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
 			id                          & int               & Identifikationsnummer                     \\ \hline
 			id\_data\_3                 & int               & Fremdschlüssel von Datenpacket 3          \\ \hline
-			date\_time                  & datetime          & Datum der Erstellung                      \\ \hline
-			vehicle\_speed              & int               & Geschwindigkeit des Motorrades            \\ \hline
-			vehicle\_accelration        & int               & Eingangsspannung der Motorsteuerung       \\ \hline
-			vehicle\_odometer           & int               & Vom Motorrad zurückgelegte Strecke        \\ \hline
-			time\_to\_capture\_speed    & int               & Zeit bis zur eingestellten Geschwindikeit \\ \hline
-			time\_to\_capture\_distance & int               & Zeit bis zur eingestellten Distanz        \\ \hline
-			braking\_distance\_captured & int               & Zeit von Bremsbeginn bis zu Stillstand     \\ \hline
-			distance\_since\_stop       & int               & Zurückgelegte Distanz seit dem Stillstand \\ \hline
+			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
+			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
+			error\_2            		& int               & Fehlercode 2            					\\ \hline
+			error\_3        			& int               & Fehlercode 3       						\\ \hline
+			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
+			error\_5    				& int               & Fehlercode 5 								\\ \hline
+			error\_6					& int               & Fehlercode 6        						\\ \hline
+			error\_7					& int               & Fehlercode 7    							\\ \hline
 		\end{tabular}
 		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
 		\label{tab:data4}
