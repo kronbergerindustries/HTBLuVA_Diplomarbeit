@@ -1,27 +1,143 @@
 \chapter{Stand der Technik}
 
-\section{Synchronmaschine mit Dauermagneterregung}
-\subsection{Auswertung der Antriebswelle}
+%%%%%%%%%%%%%%%%%%% Mechanik
 
-\section{Curtis Controller}
+\section{Kühlung} 
 
-\subsection{Allgemeines}
-\subsection{VCL}
-\subsection{Feldorientierte Regelung}
+Bei dem Vorgang der Kühlung oder Abkühlung, wird einem System Wärme, oder thermische Energie entzogen. (Deshalb auch Entwärmung genannt)
+Unter Kühlung versteht man die Übertragung von Wärme einer technischen Komponente, an die Umwelt. Dieses Phänomen wird oft beabsichtigt hervorgerufen, um bestimmte temperaturabhängige Eigenschaften erreichen und erhalten, aber auch Systeme vor Überhitzung schützen zu können. 
+Durch Isolierungen, wie beispielsweise bei Häusern, kann unerwünschter Wärmeentzug zu einem gewissen Teil verhindert werden.
 
-\section{Leonard-Umformer}
+\subsection{Thermodynamische Grundlagen}
 
-\subsection{Allgemeines}
-\subsection{ }
+Der Entzug von Wärme geht bei Feststoffen und Flüssigkeiten durch Wärmeübertragung entsprechend einem Temperaturgradienten vonstatten. Die wesentlichen Prozesse sind dabei Wärmeleitung und Wärmestrahlung, eingeschränkt auch die Konvektion. Da all diese Prozesse spontan ablaufen und folglich entsprechend den Grundgesetzen der Thermodynamik einen Temperaturausgleich zur Folge haben, kann eine künstlich erwünschte Kühlung eines Gegenstandes gegen einen Temperaturgradienten nur unter hohem Energieaufwand erfolgen. 
 
-\section{KPI-Regler}
+Insgesamt wird dies jedoch immer mit einer Erhöhung der Gesamtentropie und damit im Regelfall einer Umwandlung Energieformen höherer Ordnung in thermische Energie resultieren. Eine Kühlung im Sinne einer Reduzierung der thermischen Energie eines abgeschlossenen Systems ist daher nicht möglich, was sich in der Praxis zum Beispiel darin äußert, dass auch Kühlschränke letztlich die Temperatur (der Umgebung) erhöhen und nicht senken, wenn dies auch lokal der Fall sein mag.
 
-\subsection{Allgemeines}
-\subsection{ }
+Die entscheidenden Einflussfaktoren sind dabei durch Wärmeleitkoeffizient, Wärmeübergangskoeffizient und Wärmekapazität gegeben. Bei Flüssigkeiten spielt die Wärmeleitung und Wärmestrahlung ebenfalls eine Rolle, hinzu kommt jedoch die Konvektion als wesentlicher Prozess des Temperaturausgleichs. Dieser dominiert hingegen bei Gasen, wobei diese allgemein nur sehr schlecht über Prozesse der Wärmeleitung abkühlen. Sie unterliegen jedoch verschiedenen Gasgesetzen, wodurch vor allem der adiabatischen Abkühlung und dem Joule-Thomson-Effekt eine große Rolle zukommt. 
 
-\section{Steuereinheiten}
+\subsection{Technische Anwendung}
 
-\section{Bussysteme}
+Kühlsysteme können nach dem verwendeten Wärmeträgermedium unterteilt werden. Die geläufigsten Arten der Kühlung sind:
+
+\begin{itemize}
+	\item Wasserkühlung und
+	\item Luftkühlung.
+	\item Ölkühlung z.  B. im Automotor und in Hydrauliksystemen (hydraulischen Antrieben) 
+	\item Natriumkühlung in Kernkraftwerken
+	\item Kühlung durch Peltier-Elemente Kühlung von Prozessoren
+\end{itemize}
+
+\subsection{Funktionsweise}
+
+Eine Kühlung basiert meist auf der Übertragung der Wärme (Wärmeleitung) vom zu kühlendem Körper zum Kühlstoff (Gas oder Flüssigkeit) und deren Abtransport (Wärmeströmung).
+Bei manchen Anwendungen mit engen Platzverhältnissen (innerhalb eines Computers oder HiFi-Verstärkers) werden zum Abtransport Heatpipes verwendet.
+Bei den meisten Motoren wird eine spezielle Kühlflüssigkeit eingesetzt.
+
+\subsection{Einsatzgebiete}
+
+Kühlungen werden in fast allen technischen Geräten, die sich erwärmen, eingesetzt. Zumeist wird jedoch eine passive Kühlung, das heißt die Abgabe der Wärme über Kühlkörper an die umgebende Luft, genutzt.
+Das bekannteste Beispiel ist der Kühlschrank zur Konservierung von Lebensmitteln. In Kfz wird meist eine Wasserkühlung benutzt, in Computern kommen überwiegend Luftkühlungen zum Einsatz. Ein weiteres großes Einsatzgebiet ist zum Beispiel die Klimaanlage.
+
+\subsection{Beispiele}
+
+\begin{itemize}
+	\item Kühlsysteme von Kraftwerken und chemischen Prozessen
+	\item Kühlung in der Klimatechnik
+	\item Öl- und Ladeluftkühler im Turbodiesel-Motor
+	\item Abgaskühlung in AGR-Systemen (zur Emissionsreduzierung (NOx))
+	\item Wasserkühlung eines Automotors
+	\item Luftkühlung eines Prozessors
+\end{itemize}
+
+%Quelle: https://www.chemie.de/lexikon/K%C3%BChlung.html 09:29 Uhr 17.03.2021
+%Dieser Artikel basiert auf dem Artikel Kühlung aus der freien Enzyklopädie Wikipedia und steht unter der GNU-Lizenz für freie Dokumentation. In der Wikipedia ist eine Liste der Autoren verfügbar.
+
+Zu Kühlung siehe auch \cite{Kuehlung1,Kuehlung2}
+
+\newpage
+
+\subsection{Wasserkühlung} 
+
+Bei einer Wasserkühlung (Flüssigkeitskühlung), wird Wasser als primäres Kühlmittel verwendet wird. Die Wasserkühlung kann sehr vielseitig eingesetzt werden. Wasser wird als Kühlung in Elektro- wie auch in Verbrennungsmotoren, Hochöfen, Stromrichtern, Kraftwerken, Computern und noch vielen weiteren Anwendungen verwendet.   
+
+\subsubsection{Wasserkühlung bei elektronischen Geräten}
+
+Seit 1930 werden die röhrenbestückten Endstufen von Hochleistungssendern mit Wasser gekühlt. Da hierbei hohe elektrische Spannungen zum Einsatz kommen, kann nur destilliertes deionisiertes Wasser zum Einsatz kommen. Dieses gibt in einem Wärmeübertrager seine Wärme an einem zweiten Kreislauf ab, in dem das Wasser keinen besonderen Reinheitsanforderungen genügen muss, da es mit keinen spannungsführenden Komponenten in Kontakt kommt.
+
+Bei Hochleistungsröhren wird die Siedekondensationskühlung angewandt. Bei dieser Technik sind Dampferzeugung und Kondensation räumlich nicht voneinander getrennt. Das Kühlmittel durchfließt den Kühlkanal, der mit zur Anodeninnenseite hin orientierten Nuten ausgestattet ist. Der in diesen Nuten entstehende Dampf gerät in den Hauptkühlkanal, wo er verwirbelt wird und wieder kondensiert. Da sich dieser Vorgang bei Temperaturen von über 100 °C abspielt, und den Aggregatzustand flüssig zu gasförmig nutzt, können mit diesem Kühlverfahren auf Grund der dafür notwendigen Verdampfungswärme auch bei relativ kleinen Röhren große Wärmemengen abgeführt werden.
+Moderne, halbleiterbestückte Sender haben keine Wasserkühlung mehr.
+Wasserkühlung wird auch in der Leistungselektronik angewandt. Zum Beispiel für Stromrichter in Anlagen der Hochspannungs-Gleichstrom-Übertragung oder für Traktionsstromrichter in Schienenfahrzeugen.
+
+
+\subsubsection{Wasserkühlung in Personal Computern}
+
+Wasserkühlungen werden auch in modernen PC-Systemen zur leisen und effektiven Kühlung einzelner Komponenten eingesetzt. Dabei wird am häufigsten der Hauptprozessor gekühlt. Weitere Komponenten, die in den Kühlkreislauf eingebunden werden können, sind Grafikkarten, Hauptplatinen­chipsätze, Festplatten, Netzteile, Spannungswandler und auch RAM-Bausteine.
+Wasserkühlungen für PCs sind in PC-Moddingkreisen sehr verbreitet. Mittlerweile ist ein großer Markt um Wasserkühlungen entstanden.
+Die Vorteile einer Wasserkühlung sind zum einen die effektive Kühlung der Hardware mit für Modder und Overclocker wichtigem Übertaktungsspielraum der CPU durch verbesserte Wärmeabfuhr. Zum anderen arbeitet die Kühlung fast lautlos, da auf dem Radiator (Wärmeübertrager) große, langsam drehende Lüfter eingesetzt oder auch passive Radiatoren ohne Lüfter verwendet werden können. Außerdem erhöht sich in der Regel die Zuverlässigkeit und Lebensdauer der mit Wasser gekühlten Komponenten. Je nach verwendeter Pumpe kann die Wasserkühlung eine der stromsparendsten Kühlungsmethoden sein.
+Nachteilig ist der erheblich größere Installationsaufwand, die vergleichsweise hohen Kosten und der Wartungsbedarf. Häufig führt der Verzicht auf den Einsatz von Gehäuselüftern dazu, dass einzelne Komponenten überhitzen, die nicht in den Kühlkreislauf einbezogen werden können. Je nach Anzahl der verbauten Komponenten kann ein grösserer Platzbedarf im Gehäuse erforderlich sein.
+Reines destilliertes Wasser besitzt verglichen mit allen anderen natürlichen Stoffen, die bei Zimmertemperatur flüssig sind, den höchsten Wärmeleitkoeffizienten und ist daher erste Wahl beim Bau einer Flüssigkühlung.
+
+Zu Wasserkühlung siehe auch \cite{Wasserkuehlung}
+%Quelle https://www.chemie.de/lexikon/Wasserk%C3%BChlung.html 09:50 Uhr 17.03.2021
+%Dieser Artikel basiert auf dem Artikel Wasserkühlung aus der freien Enzyklopädie Wikipedia und steht unter der GNU-Lizenz für freie Dokumentation. In der Wikipedia ist eine Liste der Autoren verfügbar.
+
+\newpage
+
+\subsection{Luftkühlung} 
+
+Durch Luftkühlung wird die Oberfläche von wärmeerzeugenden Objekten wie elektronischen Bauelementen der Leistungselektronik, Verbrennungsmotoren und Klimaanlagen durch daran vorbei strömende Luft gekühlt.
+Die zur Luftkühlung notwendige Luftbewegung kann entweder durch Konvektion, Gebläse oder bei Fahrzeugen durch den Fahrtwind bewirkt werden. Das zu kühlende Objekt steht frei oder wird kanalisiert umflossen. Häufig ist das zu kühlende Objekt auch mit Kühlrippen oder einem Kühlkörper als Wärmeübertrager versehen, die durch eine größere Oberfläche einen größeren Wärmeabfluss ermöglichen.
+
+\subsubsection{Luftkühlung bei Personalcomputern}
+
+Im Verhältnis zur Baugröße geht - insbesondere bei Prozessoren ab der Klasse Intel 486/66 - mit der kommerziell wirtschaftlich zur Verfügung stehenden Technologie eine große Wärmeentwicklung einher. Leistungsstarke Mikrochips, wie sie in aktuellen PCs verwendet werden, erzeugen erhebliche Verlustwärme, die überwiegend durch eine Luftkühlung abgeführt wird. Zweck ist, eine thermische Überlastung der Chips zu verhindern.
+
+Da die gesamte Aufnahmeleistung in Wärme umgesetzt wird, wurde zunächst die Betriebsspannungen der wärmeerzeugenden Komponenten reduziert. Ferner werden in aktuellen Prozessoren Teile des Rechenwerkes bei Nichtgebrauch in der Taktfrequenz reduziert oder ganz abgeschaltet. Trotzdem reichte die natürliche Wärmeabfuhr durch Strahlung und Konvektion nicht mehr aus, so dass die thermisch wirksamen Oberflächen erst durch den Einsatz von Kühlkörpern gekühlt wurden und dann - weil immer noch nicht ausreichend - die mögliche Wärmeabfuhr durch Einsatz von elektrisch betriebenen Ventilatoren vergrößert wurde (vgl. Prozessorkühler). 
+
+Das am stärksten gekühlte System in PCs ist die CPU, doch auch das Netzteil und seit einiger Zeit auch die Prozessoren von Grafikkarten werden luftgekühlt. Alternativ dazu kann man auch in PCs eine Wasserkühlung einbauen.
+
+Weitere Anwendungen:
+\begin{itemize}
+	\item HiFi-Verstärker 
+	\item Spanen an hygroskopischen(Feuchtigkeitziehenden) Kunststoff
+\end{itemize}
+
+Zu Luftkühlung siehe auch \cite{Luftkuehlung1,Luftkuehlung2}
+
+%Quelle: https://www.chemie.de/lexikon/Luftk%C3%BChlung.html 10:56 Uhr17.03.2021#
+%Dieser Artikel basiert auf dem Artikel Luftkühlung aus der freien Enzyklopädie Wikipedia und steht unter der GNU-Lizenz für freie Dokumentation. In der Wikipedia ist eine Liste der Autoren verfügbar.
+
+\subsection{Ölkühlung}
+
+Unter Ölkühlung versteht man eine Kühlung mit Öl. Die Ölkühlung wird hauptsächlich für leistungselektrische Geräte, wie Transformatoren angewandt, wobei das Öl auch die Funktion der Isolation übernimmt. Bei der Ölkühlung befindet sich das wärmeentwickelnde Element in einem Ölbad, welches mit einem Ausdehnungsgefäß ausgestattet ist, um Volumenschwankungen des Öls auszugleichen.
+
+%Quelle: https://www.chemie.de/lexikon/%C3%96lk%C3%BChlung.html 10:59 Uhr 17.03.2021
+%Dieser Artikel basiert auf dem Artikel Ölkühlung aus der freien Enzyklopädie Wikipedia und steht unter der GNU-Lizenz für freie Dokumentation. In der Wikipedia ist eine Liste der Autoren verfügbar.
+
+\newpage
+
+\subsection{Aktive Kühlung} 
+
+Bei aktiver Kühlung wird die zu kühlende Komponente mit Hilfe eines Lüfters oder einer Pumpe gekühlt.
+\subsubsection{Aufbau}
+
+Im Regelfall besteht eine aktive Kühlung aus folgenden Komponenten:
+Kühlmittel kann aus Luft, Wasser oder einer speziellen Kühlflüssigkeit bestehen, welche meist noch für eine Schmierung der Bauteile sorgt.
+Lüfter oder Pumpe, welcher einen Kühlmittelstrom erzeugt der den Wärmeübertrager Radiator durchströmt und das Kühlmedium auf seine Ausgangstemperatur herunterkühlt, oder aber durch den Luftstrom das zu kühlende Bauteil direkt kühlt.
+
+Funktionsprinzip: Flüssigkühlung
+Das Kühlmedium (Wasser, Kühlmittel) wird mit Hilfe einer Pumpe durch diverse Leitungen an das zu kühlende Bauteil befördert. Dort umströmt es entweder das Bauteil direkt oder fließt durch einen speziellen Aufsatz am zu kühlenden Bauteil (z.B. Prozessor in einer PC-Wasserkühlung).
+Hierbei nimmt das Kühlmittel die Wärme des Bauteils auf und transportiert sie beim Weiterfließen ab.
+Das Kühlmittel fließt anschließen, (bei nur einer zu kühlenden Komponente), durch den Radiator welcher aktiv mit Lüfter, oder passiv ohne Lüfter, dafür aber größer ausgelegt sein kann.
+
+Durch den Radiator kann das Kühlmedium die Wärme an die Umgebung abgeben. Ein Temperaturgefälle ist dazu immer notwendig; je größer das Temperaturgefälle, desto größer die Wärmemenge, die je Zeiteinheit und Fläche übertragen werden kann.
+Funktionsprinizp Luftkühlung
+
+Zu Aktive Kühlung siehe auch \cite{AktiveKuehlung}
+
+%Quelle: https://www.chemie.de/lexikon/Aktive_K%C3%BChlung.html 11:03 Uhr 17.03.2021
+%Dieser Artikel basiert auf dem Artikel Passive_Kühlung aus der freien Enzyklopädie Wikipedia und steht unter der GNU-Lizenz für freie Dokumentation. In der Wikipedia ist eine Liste der Autoren verfügbar.
 
 \newpage
 \section{Akkusysteme}
@@ -186,3 +302,160 @@ Der Ausdruck Balancing bezogen auf Akkumulatoren bedeutet so viel wie Ladeausgle
 \item \textbf{Aktives Battery-Balancing} \medskip\\
 \end{itemize}
 
+
+\textbf{Akkupacks:}
+
+Muss noch zitiert werden: Cluster oder Akkupacks bestehen zur Erhöhung der Nennspannung in der Regel aus mehreren in Reihe geschalteten Einzelzellen oder Zellblöcken. Fertigungs- und alterungsbedingt gibt es hierbei Schwankungen in der Kapazität, im Innenwiderstand und weiteren Parametern dieser Zellen. Die schwächste Zelle ist dabei bestimmend, wie viel geladen oder entladen werden darf. Im praktischen Einsatz von mehrzelligen in Reihe verschalteten Akkus führt dieser Umstand dazu, dass die Zellen in Reihe unterschiedlich geladen und entladen werden.
+
+Es kommt dann im Verbund zu kritischer Tiefentladung oder bei der Ladung zu einer Überladung und Überschreiten der Ladeschlussspannung einzelner Zellen. Je nach Akkutyp kann es dabei zu einer irreversiblen Schädigung einzelner Zellen kommen. Die Folge: das gesamte Akkupack verliert an Kapazität. (Ende des Zitates)
+Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wichtige Rolle. Beim Battery-Balancing gibt es zwei verschiedene Arten. 
+\begin{itemize}
+\item \textbf{Passives Battery-Balancing} \medskip\\
+\item \textbf{Aktives Battery-Balancing} \medskip\\
+\end{itemize}
+
+
+\section{Synchronmaschine mit Dauermagneterregung}
+\subsection{Auswertung der Antriebswelle (Encoder)}
+
+\section{Curtis Controller}
+\subsection{Allgemeines}
+\subsection{Feldorientierte Regelung}
+
+\section{Leonard-Umformer}
+\subsection{Allgemeines}
+\subsection{ }
+
+\newpage
+
+\section{PID-Regler}
+\subsection{Einleitung}
+Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
+
+Allein schon der aufrechte Gang funktioniert nur mit Regelung. Dabei wirken die Sinne als Sensoren, das Gehirn als Regler und die Muskeln als Aktuatoren. Weitere Regelungen in unserem Körper sind z.B. die Konstanthaltung der Körpertemperatur, der Blutdruck, die Anpassung der Pupille auf Helligkeitsänderungen usw.
+
+Der Begriff Regelung ist zu unterscheiden von dem im allgemeinen Sprachgebrauch oft synonym gebrauchten Begriff der Steuerung. Das Steuern ist ein rein vorwärts gerichteter Prozess ohne Rückkopplung. Die Ausgangsgröße wird dabei nicht überwacht und kann sich durch Störungen von außen verändern. Ein Beispiel ist die Steuerung eines Motors mit einer einstellbaren Spannung. Durch Laständerungen wird sich die Drehzahl des Motors ändern. Soll nun die Drehzahl konstant gehalten werden, bedarf es einer Rückkopplung um über die Spannung die Drehzahl anzupassen. Diese Rückkopplung ist das Kennzeichen einer Regelung.
+
+Das Regeln ist ein Vorgang, bei dem die Ausgangsgröße, im Beispiel die Drehzahl, fortlaufend überwacht wird und bei Abweichung über die Stellgröße, im Beispiel die Spannung, korrigiert wird. Der sich dabei ergebende Wirkungsablauf findet in einem geschlossenen Kreis, dem Regelkreis, statt.
+\vspace{5mm}
+
+\subsection{Der Regelkreis}
+Das Prinzip einer Regelung ist das fortlaufende: Messen – Vergleichen – Stellen
+\\[5mm]
+
+\begin{itemize}
+	\item \textbf{Messen}
+	\\[1mm] Die Regelgröße wird direkt oder mittels Sensoren gemessen.
+	\medskip
+	\item \textbf{Vergleichen}
+	\\[1mm] Der Wert der Regelgröße wird mit dem Sollwert verglichen. Die Differenz ist die Regelabweichung.
+	\medskip
+	\item \textbf{Stellen}
+	\\[1mm] Aus der Regelabweichung wird unter Berücksichtigung der dynamischen Eigenschaften der Regelstrecke die Stellgröße bestimmt.
+\end{itemize}
+\vspace{3mm}
+
+Ein Regelkreis dient dazu, eine vorgegebene physikalische Größe, die Regelgröße, auf einen gewünschten Wert (Sollwert) zu bringen und dort zu halten, unabhängig von eventuell auftretenden Störungen. Um die Regelungsaufgabe zu erfüllen, muss der Augenblickswert der Regelgröße – der Istwert – gemessen und mit dem Sollwert verglichen werden. Bei auftretenden Abweichungen muss in geeigneter Art und Weise nachgestellt werden.
+
+Um nun diese Aufgabe technisch zu lösen, gibt es die Regelungstechnik. Sie baut im wesentlichen auf die mathematische Beschreibung und Modellbildung des Systems Regelkreis. Zur Modellierung, Beschreibung und Simulation werden Blockschaltbilder mit diskreten Signalgliedern verwendet.
+
+\newpage
+
+Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es oft in der Regelungstechnik verwendet wird, aus den Hauptteilen Regler und Regelstrecke:
+\\[5mm]
+
+\begin{itemize}
+	\item \textbf{Regler G$_R$}
+	\\[1mm] Ist der Teil des Regelkreises, der unter Berücksichtigung der dynamischen Eigenschaften der Regelstrecke aus der Regelabweichung die Korrekturmaßnahmen zum Ausregeln ergreift.
+	\medskip
+	\item \textbf{Regelstrecke G$_S$}
+	\\[1mm] Ist der Teil des Regelkreises, der vom Regler ausgeregelt werden soll.
+	\medskip
+	\item \textbf{Führungsgröße w (Sollwert)}
+	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll. Sie ist eine von der Regelung nicht beeinflusste Größe und wird von außen zugeführt.
+	\medskip
+	\item \textbf{Regelgröße x (Istwert)}
+	\\[1mm] Ist die Ausgangsgröße der Regelstrecke, die zum Zweck des Regelns erfasst und zum Vergleich rückgeführt wird. In vielen Fällen ist in der Rückführung noch eine Messeinrichtung (Sensor) gezeichnet, die den Istwert erfasst, hier der Einfachheit halber weggelassen.
+	\medskip
+	\item \textbf{Regelabweichung e}
+	\\[1mm] Differenz zwischen Führungsgröße und Regelgröße e = w – x, bildet die eigentliche Eingangsgröße des Reglers.
+	\medskip
+	\item \textbf{Stellgröße y}
+	\\[1mm] Ausgangsgröße der Regeleinrichtung und zugleich Eingangsgröße der Strecke. Sie überträgt die steuernde Wirkung des Reglers auf die Strecke.
+	\medskip
+	\item \textbf{Störgröße z}
+	\\[1mm] Eine von außen wirkende Größe, die eine Änderung des Istwertes der Regelgröße bewirkt und einen Regelvorgang auslöst.
+\end{itemize}
+
+\vspace{5mm}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Regelkreis_Grundaufbau.png}
+		\caption{Grundaufbau des allgemeinen Regelkreises}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\subsection{Die Regelstrecke}
+Die Regelstrecke stellt den zu regelnden Teil bzw. den zu regelnden Prozess dar und umfasst normalerweise eine Reihe von einzelnen Gliedern, welche das dynamische Verhalten der Regelstrecke beschreiben. Zur Unterteilung werden die Glieder entsprechend ihrem Zeitverhalten charakterisiert. Um das Zeitverhalten herauszufinden, legt man an den Eingang ein Testsignal an und zeichnet die Antwort auf. Im einfachsten Fall wird der Eingang mit einer sprunghaften Änderung beaufschlagt. Die Antwort auf die sprunghafte Änderung der Eingangsgröße wird Sprungantwort genannt und gibt Aufschluss über die Art der Regelstrecke und kann eventuell bereits genutzt werden, um die Parameter der Regelstrecke zu bestimmen.
+
+Für den Aufbau eines gut funktionierenden Regelkreises und die Auslegung von Reglern ist es eine Voraussetzung zu wissen, wie die Regelstrecke reagiert. Ohne ein genaues Wissen um das dynamische Verhalten der Regelstrecke ist es nicht möglich geeignete Regler auszuwählen und diese zu parametrieren. Die einzelnen Eigenschaften der Glieder zu beschreiben würde aber den Rahmen sprengen.
+
+\subsection{Der Regler}
+Der Regler hat die Aufgabe, die Regelgröße zu messen, sie mit dem Sollwert zu vergleichen und bei Abweichungen die Stellgröße so zu verändern, dass Soll- und Istwert der Regelgröße wieder übereinstimmen bzw. die Differenz minimal wird.
+
+Die Wahl eines bestimmten Reglertyps richtet sich nach dem geforderten Zeitverhalten und der geforderten Regelgenauigkeit der Regelstrecke. Nachfolgend finden Sie eine kurze Beschreibung der wichtigsten klassischen Reglertypen: 
+\\[5mm]
+\textbf{P-Regler}\\[1mm]
+Der proportionalwirkende Regler multipliziert die Regelabweichung mit seinem Verstärkungsfaktor Kp und gibt das Ergebnis unverzögert weiter. Der P-geregelte Kreis ist einfach und mittelschnell im Vergleich zu anderen Regelungen. Das Problem ist die bleibende Regelabweichung!
+
+Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t)$ \hspace{5mm} bzw. \hspace{5mm} G$_R$ = K$_P$
+\\[5mm]
+
+\textbf{I-Regler}\\[1mm]
+Der integralwirkende Regler summiert die Regelabweichung über der Zeit auf und multipliziert die Summe (d.h. das Integral) mit dem Faktor Ki. Je länger eine Regelabweichung ansteht, desto größer wird die Stellgröße des I-Reglers. Der I-geregelte Kreis ist langsam im Vergleich zu anderen Regelungen. Er hat aber den Vorteil, dass die Abweichung vollständig eliminiert wird.
+
+Reglergleichung: \hspace{5mm} $y(t) = K_I \cdot \int\limits_{0}^{t} e(t) \,dt$ \hspace{5mm} bzw. \hspace{5mm} $G_R = \dfrac{K_I}{s}$
+
+\newpage
+
+\textbf{PD-Regler}\\[1mm]
+Der proportional-differential wirkende Regler kombiniert den P-Regler mit einem D-Anteil (einen D-Regler gibts es nicht). Der D-Anteil bewertet die Änderung einer Regelabweichung, er differenziert und berechnet so deren Änderungsgeschwindigkeit. Diese wird mit dem Faktor Kd multipliziert und zum P-Anteil hinzuaddiert. Der PD-Regler reagiert damit schon auf Ankündigungen von Veränderungen, das bewirkt sozusagen ein Vorhalten beim Regeln.
+
+Der PD-geregelte Kreis ist sehr schnell im Vergleich zu anderen Regelungen, und manche Regelkreise (solche mit zweifacher Integration) sind ohne D-Anteil überhaupt nicht stabilisierbar. Das Problem des P-Reglers, die bleibende Regelabweichung, ist beim PD-Regler allerdings weiterhin vorhanden!
+
+Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktuator stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden.
+
+Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t) + K_D \cdot \dfrac{de(t)}{dt}$\hspace{5mm} bzw. \hspace{5mm} $G_R = K_P + K_D \cdot s$
+\\[5mm]
+
+\textbf{PID-Regler}\\[1mm]
+Der PID Regler vereinigt die guten Eigenschaften der anderen Regler. Der PID-geregelte Kreis ist genau und sehr schnell. In den meisten Anwendungen kommt deshalb der PID-Regler zum Einsatz. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht. 
+
+Reglerleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^{t} e(t) \,dt + K_D \cdot \dfrac{de(t)}{dt}$ \hspace{3mm} bzw. \hspace{3mm} $G_R = K_P + \dfrac{K_I}{s} + K_D \cdot s$
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.15]{figures/antrieb/PID_Regler.png}
+		\caption{Zusammensetzung des PID-Reglers}
+	\end{center}
+\end{figure}
+
+Hier ist für ein besseres Verständnis jeweils eine Sprungantwort der unterschiedlichen klassischen Reglertypen dargestellt:
+ 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.3]{figures/antrieb/Reglertypen.png}
+		\caption{Vergleich der verschiedenen Reglertypen}
+	\end{center}
+\end{figure}
+%https://rn-wissen.de/wiki/index.php/Regelungstechnik
+%http://3digi.wikidot.com/allgemeines-zu-pid-reglern
+%AUT5
+\newpage
+
+%%%%%%%%%%%%%%%%%%% HCIS
+
+\section{Steuereinheiten}
+\section{Bussysteme}
