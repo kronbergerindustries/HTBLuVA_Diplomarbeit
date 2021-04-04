@@ -318,15 +318,22 @@ Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wich
 
 \section{Synchronmaschine mit Dauermagneterregung}
 \subsection{Allgemeines}
-Permanenterregte Synchronmotoren haben eine mindestens doppelt so große Bemessungsleistung wie Asynchronmaschinen mit gleicher Baugröße, zudem besitzen sie ebenfalls weniger Gesamtverluste. Die fehlende Läufernutung und die hohe Remanenzflussdichte der Dauermagnete erlauben höhere Luftspaltflussdichten, dadurch lassen sich ebenfalls höhere Leistunsdaten realisieren. Die Permanentmagneten befreien die Ständerwicklung von der Aufgabe der Magnetisierung durch Aufnahme einer Blindstromkomponente, dies erhöht den Wirkstrom und damit auch die erreichbare Leistung. Die PSM müssen jedoch anwendungsspezifischer ausgelegt werden, denn es entfallen alle Einflussmöglichkeiten auf die Betriebsdaten, speziell auf Betrag und Phasenlage des Ständerstroms, die sonst durch die Änderung des Feldes über den Erregerstrom gegeben sind.
+Die permanenterregte Synchronmaschine benötigt keine zusätzlichen Komponenten für die Einspeisung des Erregersystems. Neben dem Wegfall der Schleifringe bzw. des Kommutators hat die PSM noch weitere Vorteile:
+\\[5mm]
+\begin{itemize}
+	\item Aufgrund der Erregung mit Permanentmagneten ist die Einspeisung einer flussbildenden Blindstromkomponente, wie bei der Asynchronmaschine bekannt ist, nicht notwendig. Somit ist der einzuspeisende Strom und damit der Energieverbrauch für vergleichbare Maschinen kleiner. \medskip
+	\item Weiteres erlauben die fehlende Läufernutung und die hohe Remanenzflussdichte der Dauermagneten höhere Luftspaltflussdichten, dadurch lassen sich auch höhere Leistunsdaten realisieren. \\[4mm]
+\end{itemize}
+
+Verglichen mit Asynchronmaschinen haben permanenterregte Synchronmotoren also eine mindestens doppelt so große Bemessungsleistung bei gleicher Baugröße, zudem besitzen sie ebenfalls weniger Gesamtverluste. Die PSM müssen jedoch anwendungsspezifischer ausgelegt werden, denn es entfallen alle Einflussmöglichkeiten auf die Betriebsdaten, speziell auf Betrag und Phasenlage des Ständerstroms, die sonst durch die Änderung des Feldes über den Erregerstrom gegeben sind.
 
 \subsection{Aufbau}
-Um eine gute Ausnutzung des Bauvolumens realisieren zu können, wird der Ständer meist mit einer sechspoligen Drehstromwicklung ausgeführt. Der Läufer ist dabei wie in folgender Abbildung beschrieben mit Dauermagneten ausgeführt. Große Aussparungen im Läuferblech (2) reduzieren das Trägheitsmoment. 
-
+Um eine gute Ausnutzung des Bauvolumens realisieren zu können, wird der Ständer meist mit einer sechspoligen Drehstromwicklung ausgeführt. Der Läufer ist dabei wie in folgender Abbildung beschrieben mit Dauermagneten ausgeführt. Große Aussparungen im Läuferblech (2) reduzieren das Trägheitsmoment und führen zu besseren dynamischen Eigenschaften. 
+\\[3mm]
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{figures/antrieb/Läufer_Synchronmaschine.png}
-		\caption{Läufer einer dauermagneterregten Synchronmaschine}
+		\includegraphics[scale=0.25]{figures/antrieb/Läufer_Synchronmaschine.png}
+		\caption{Läufer einer dauermagneterregten Synchronmaschine\cite{Fischer}}
 	\end{center}
 \end{figure}
 
@@ -338,24 +345,64 @@ Im Motorbetrieb wird an die Klemmen der Ständerwicklungen ein Drehstrom angeleg
 \subsection{Auswertung der Antriebswelle (Encoder)}
 Für den Betrieb einer permanentmagneterregten Synchronmaschine wird immer ein zugehöriger Frequenzumrichter benötigt. Um eine gute Regelung einer Synchronmaschine gewährleisten zu können, benötigt dieser die Rückmeldung von einem Resolver (Encoder) oder einem hochauflösenden Inkrementalgeber, welcher im Motorgehäuse integriert ist. Denn im Betrieb mit sinusförmigen Strömen muss die exakte Läuferfeldlage bekannt sein, um eine feldorientierte Regelung durchführen zu können. 
 
-Die Übertragung des elektrischen Signals erfolgt in Synchronmaschinen mit eingebauten Dauermagneten am häufigsten mit einem Sinus/Cosinus-Sensor. Der Sensor besteht hierbei aus zwei Versorgungsleitungen (positive Spannungsversorgung = 5V + Ground = 0V) und zwei Sensordrähten. Über die zwei Sensordrähte wird das Spannungssignal (0-5V) abhängig vom aktuellen Stand der Motorwelle ausgegeben. Betrachtet man die Spannungswerte über den gesamten Winkel der Motorwelle, erkennt man zwei sinusförmige Kurven, die um $90^\circ$ versetzt sind. Bei einer korrekten Auswertung dieser Signale kann der aktuelle Stand der Motorwelle in jeder beliebigen Position absolut bestimmt werden.
-
+Die Übertragung des elektrischen Signals erfolgt in Synchronmaschinen mit eingebauten Dauermagneten am häufigsten mit einem Sinus/Cosinus-Sensor. Der Sensor besteht hierbei aus zwei Versorgungsleitungen (positive Spannungsversorgung = 5V; Ground = 0V) und zwei Sensordrähten. Über die zwei Sensordrähte wird das Spannungssignal (0-5V) abhängig vom aktuellen Stand der Motorwelle ausgegeben. Betrachtet man die Spannungswerte über den gesamten Winkel der Motorwelle, erkennt man zwei sinusförmige Kurven, die um $90^\circ$ versetzt sind. Bei einer korrekten Auswertung dieser Signale kann der aktuelle Stand der Motorwelle in jeder beliebigen Position absolut bestimmt werden.
+\\[8mm]
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{figures/antrieb/SinCos_Sensor.png}
-		\caption{Aufbau eines AC-Motorsystems}
+		\caption{Ausgabe eines Sinus/Cosinus-Sensors\cite{Manual}}
 	\end{center}
 \end{figure}
 \newpage
 
 \section{Curtis Controller}
 \subsection{Allgemeines}
-\subsection{Feldorientierte Regelung}
+Der Curtis Controller ermöglicht eine genaue, zuverlässige und hocheffiziente Regelung von Drehzahl und Drehmoment bei Wechselstrom-Induktionsmotoren (ACIM) und Permanentmagnet-Synchronmotoren (SPM). Dieser Motorcontroller verfügt über zwei unabhängige Microprozessoren, um gleichzeitig eine außergewöhnliche Leistungsfähigkeit und funktionale Sicherheit gewährleisten zu können. 
 
+Der primäre Mikroprozessor führt eine fortschrittliche feldorientierte AC-Motorregelung durch, ebenso beinhaltet er einen weiteren integrierten Logik-Prozessor für eine zeitgleiche Operation durch die VCL-Software. Der zweite Mikroprozessor überwacht kontinuierlich den Betrieb des Gesamtsystems. Er misst Eingänge und kontrolliert die zugehörigen Ergebnisse, weiteres überprüft er kritische Zeitpunkte und Operationen. 
+
+Die Vehicle-Control-Language (VCL) ist eine  innovative Programmiersprache, welche von Curtis entwickelt wurde. Sehr viele einzigartige Funktionen sind in dieser Programmiersprache enthalten, weiteres können bei Bedarf selbst Funktionen erstellt und konfiguriert werden. VCL eröffnet neue Möglichkeiten der Anpassung, sodass bestimmte fahrzeugspezifische Anwendungen schnell und einfach in der Motorsteuerung selbst erstellt werden können, um den Einbau von zusätzlichen Steuer-Modulen verhindern zu können.
+
+Für die umfassende Einsatzmöglichkeit dieses Controllers sind ebenfalls sehr wichtige Kommunikationsmöglichkeit über den CAN-Bus gegeben. Ein- und Ausgänge können im gesamten System geteilt und optimal gemeinsam genutzt werden, wodurch die Verkabelung minimiert und zusätzliche Applikationsmöglichkeiten erstellt werden können, die häufig die Kosten des Gesamtsystems senken.
+
+Dieser Motorcontroller ist eine ideale Lösung für Motorantriebe in der Anwendung für Elektrofahrzeuge, Hebevorrichtungen und Doppelmotorantriebe. 
+\\[10mm]
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/antrieb/Curtis_Bauformen.png}
+		\caption{Übersicht der häufigsten Bauformen eines Curtis Controllers}
+	\end{center}
+\end{figure}
+
+\newpage
+ 
+\subsection{Feldorientierte Regelung}
+Die herkömmliche Technik zur Regelung von PSM wird als Sechsstufen- oder Trapezsteuerung bezeichnet. Dabei wir der Stator in einem sechsstufigen Prozess angesteuert, der Schwankungen des erzeugten Drehmoments hervorruft. Jedes Wicklungspaar wird einzeln erregt, bis der Rotor die nächste Position erreicht, dann wird der Motor zum nächsten Schritt kommutiert. Skalare Techniken sind jedoch für Anwendungen mit dynamisch wechselnden Lasten nicht präzise genug. Durch den Einsatz der feldorientierten Regelung lässt sich die Präzision, Effizients und Lebensdauer des Antriebs erheblich steigern, weiteres lassen sich bei hohen und niedrigen Drehzahlen leistungsstarke Drehmomentregelungen realisieren.
+
+Die feldorientierte Regelung (auch Vektorregelung gennant) ist ein sinusförmiges Kommutierungsverfahren. Der Motorcontroller hat die Aufgabe die Statorströme zu berechnen, um den Rotor basierend auf der Stromrückkoppelung des Motors ansteuern zu können. Abgeleitet von der Raumzeigerdarstellung für Wechselspannungen und -strömen und deren bezug zueinander wird ein rotierendes Koordinatensystem mit den Größen Drehmoment und magnetische Flussdichte als Achsen erstellt. Das Verfahren wandelt die Statorströme über dieses Koordinatensystem in magnetische Flussdichte und Drehmoment erzeugende Komponenten um. Zudem regelt es die Statorströme über einen PID-Regler und wandelt sie dann in drei Spannungswerte zurück, aus denen wiederum der PWM-Ausgang erstellt wird. Dieser ist dann auch für das sinusförmige Kommutierungssignal verantwortlich.
+\\[7mm]
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{figures/antrieb/Kommutierung_Trapezsteuerung.png}
+		\caption{Kommutierung mittels Trapezsteuerung}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{figures/antrieb/Kommutierung_Vektorregelung.png}
+		\caption{Kommutierung mittels Vektorregelung}
+	\end{center}
+\end{figure}
+
+%https://www.digikey.de/de/articles/field-oriented-control-of-small-dc-motors-put-drones-on-a-rising-flight-path
+%https://www.all-electronics.de/foc-mcu-antriebssteuerung/
 
 \newpage
 
-\section{PID-Regler}
+
+
+\section{Der Regler}
 \subsection{Einleitung}
 Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
 
@@ -396,25 +443,20 @@ Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es 
 	\\[1mm] Um die Regelabweichung zu minimieren müssen Korrekturmaßnahmen ergriffen werden.
 	\medskip
 	\item \textbf{Regelstrecke G$_S$}
-	\\[1mm] Das zu regelnde System
-	\medskip
+	\\[1mm] Das zu regelnde System \medskip
 	\item \textbf{Führungsgröße w (Sollwert)}
-	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll.
-	\medskip
+	\\[1mm] Vorgegebener Wert, auf dem die Regelgröße durch die Regelung gehalten werden soll. \medskip
 	\item \textbf{Regelgröße x (Istwert)}
-	\\[1mm] Die Ausgangsgröße der Regelstrecke wird für den Vergleich mit dem Sollwert rückgekoppelt.
-	\medskip
+	\\[1mm] Die Ausgangsgröße der Regelstrecke wird für den Vergleich mit dem Sollwert bzw. zur Berechnung der Regelabweichung rückgekoppelt. \medskip
 	\item \textbf{Regelabweichung e}
-	\\[1mm] Differenz zwischen Führungsgröße und Regelgröße e = w – x, bildet die eigentliche Eingangsgröße des Reglers.
-	\medskip
+	\\[1mm] Differenz zwischen Führungsgröße und Regelgröße e = w – x, bildet die eigentliche Eingangsgröße des Reglers. \medskip
 	\item \textbf{Stellgröße y}
-	\\[1mm] Die Ausgangsgröße des Reglers wird vom zu regelnden System beeinflusst.
-	\medskip
+	\\[1mm] Die Ausgangsgröße des Reglers wird vom zu regelnden System beeinflusst. \medskip
 	\item \textbf{Störgröße z}
 	\\[1mm] Es können unvorhersehbare Störgrößen auftreten, die ebenfalls ausgeregelt werden müssen.
 \end{itemize}
 
-\vspace{5mm}
+\vspace{7mm}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{figures/antrieb/Regelkreis_Grundaufbau.png}
@@ -424,53 +466,45 @@ Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es 
 
 \newpage
 
-\subsection{Die Regelstrecke}
-Die Regelstrecke stellt den zu regelnden Teil bzw. den zu regelnden Prozess dar und umfasst normalerweise eine Reihe von einzelnen Gliedern, welche das dynamische Verhalten der Regelstrecke beschreiben. Zur Unterteilung werden die Glieder entsprechend ihrem Zeitverhalten charakterisiert. Um das Zeitverhalten herauszufinden, legt man an den Eingang ein Testsignal an und zeichnet die Antwort auf. Im einfachsten Fall wird der Eingang mit einer sprunghaften Änderung beaufschlagt. Die Antwort auf die sprunghafte Änderung der Eingangsgröße wird Sprungantwort genannt und gibt Aufschluss über die Art der Regelstrecke und kann eventuell bereits genutzt werden, um die Parameter der Regelstrecke zu bestimmen.
-
-Für den Aufbau eines gut funktionierenden Regelkreises und die Auslegung von Reglern ist es eine Voraussetzung zu wissen, wie die Regelstrecke reagiert. Ohne ein genaues Wissen um das dynamische Verhalten der Regelstrecke ist es nicht möglich geeignete Regler auszuwählen und diese zu parametrieren. Die einzelnen Eigenschaften der Glieder zu beschreiben würde aber den Rahmen sprengen.
-
-\subsection{Der Regler}
-Der Regler hat die Aufgabe, die Regelgröße zu messen, sie mit dem Sollwert zu vergleichen und bei Abweichungen die Stellgröße so zu verändern, dass Soll- und Istwert der Regelgröße wieder übereinstimmen bzw. die Differenz minimal wird.
-
-Die Wahl eines bestimmten Reglertyps richtet sich nach dem geforderten Zeitverhalten und der geforderten Regelgenauigkeit der Regelstrecke. Nachfolgend finden Sie eine kurze Beschreibung der wichtigsten klassischen Reglertypen: 
+\subsection{Der PID-Regler}
+Der PID-Regler vereinigt die guten Eigenschaften der anderen klassischen Regler. Der PID-Regler ist genau und sehr schnell, in den meisten Anwendungen kommt deshalb dieser Regler zum Einsatz. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht.
 \\[5mm]
-\textbf{P-Regler}\\[1mm]
-Der proportionalwirkende Regler multipliziert die Regelabweichung mit seinem Verstärkungsfaktor Kp und gibt das Ergebnis unverzögert weiter. Der P-geregelte Kreis ist einfach und mittelschnell im Vergleich zu anderen Regelungen. Das Problem ist die bleibende Regelabweichung!
-
+Der PID-Regler besteht grundlegend aus drei einzelnen Reglern, die mit einander kombiniert werden:
+\\[5mm]
+\textbf{P-Anteil}\\[1mm]
+Der proportionalwirkende Regler multipliziert die Regelabweichung mit seinem Verstärkungsfaktor Kp und gibt das Ergebnis unverzögert weiter. Der P-geregelte Kreis ist einfach und mittelschnell im Vergleich zu anderen Regelungen. Das Problem hierbei ist die bleibende Regelabweichung!
+\\[4mm]
 Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t)$ \hspace{5mm} bzw. \hspace{5mm} G$_R$ = K$_P$
-\\[5mm]
+\\[7mm]
 
-\textbf{I-Regler}\\[1mm]
+\textbf{I-Anteil}\\[1mm]
 Der integralwirkende Regler summiert die Regelabweichung über der Zeit auf und multipliziert die Summe (d.h. das Integral) mit dem Faktor Ki. Je länger eine Regelabweichung ansteht, desto größer wird die Stellgröße des I-Reglers. Der I-geregelte Kreis ist langsam im Vergleich zu anderen Regelungen. Er hat aber den Vorteil, dass die Abweichung vollständig eliminiert wird.
-
+\\[4mm]
 Reglergleichung: \hspace{5mm} $y(t) = K_I \cdot \int\limits_{0}^{t} e(t) \,dt$ \hspace{5mm} bzw. \hspace{5mm} $G_R = \dfrac{K_I}{s}$
+\\[7mm]
+
+\textbf{D-Anteil}\\[1mm]
+Der D-Anteil ist ein Differenzierer, der nur in Verbindung mit anderen Reglern eingesetzt wird. Er reagiert nicht auf die Regelabweichung, sondern nur auf deren Änderungsgeschwindigkeit. Je schneller sich das Signal ändert, desto größer ist die Ausgangsgröße, diese wird noch mit Kd multipliziert.
+
+Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktor stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden.
+\\[4mm]
+Reglergleichung: \hspace{7mm} $y(t) = K_D \cdot \dfrac{de(t)}{dt}$\hspace{5mm} bzw. \hspace{5mm} $G_R = K_D \cdot s$
 
 \newpage
 
-\textbf{PD-Regler}\\[1mm]
-Der proportional-differential wirkende Regler kombiniert den P-Regler mit einem D-Anteil (einen D-Regler gibts es nicht). Der D-Anteil bewertet die Änderung einer Regelabweichung, er differenziert und berechnet so deren Änderungsgeschwindigkeit. Diese wird mit dem Faktor Kd multipliziert und zum P-Anteil hinzuaddiert. Der PD-Regler reagiert damit schon auf Ankündigungen von Veränderungen, das bewirkt sozusagen ein Vorhalten beim Regeln.
-
-Der PD-geregelte Kreis ist sehr schnell im Vergleich zu anderen Regelungen, und manche Regelkreise (solche mit zweifacher Integration) sind ohne D-Anteil überhaupt nicht stabilisierbar. Das Problem des P-Reglers, die bleibende Regelabweichung, ist beim PD-Regler allerdings weiterhin vorhanden!
-
-Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktuator stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden.
-
-Reglergleichung: \hspace{5mm} $y(t) = K_P \cdot e(t) + K_D \cdot \dfrac{de(t)}{dt}$\hspace{5mm} bzw. \hspace{5mm} $G_R = K_P + K_D \cdot s$
-\\[5mm]
-
-\textbf{PID-Regler}\\[1mm]
-Der PID Regler vereinigt die guten Eigenschaften der anderen Regler. Der PID-geregelte Kreis ist genau und sehr schnell. In den meisten Anwendungen kommt deshalb der PID-Regler zum Einsatz. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht. 
-
+Kombiniert man also die drei unterschiedlichen Regler miteinander, so erhält man den sogennanten PID-Regler, dieser vereint die guten Eigenschaften der einzelnen Regler. Der P-Regler ist für die schnelle Korrekturen zuständig, er reagiert ohne Verzögerung auf die Regelabweichung. Der I-Regler überwacht die Regelung des P-Reglers und korrigiert diese über die Zeit, um eventuelle Regelabweichungen auszubessern. Der D-Anteil verstärkt bei schnellen Veränderungen beide Regelkreise, um das Ansprechverhalten zu verbessern.
+\\[4mm]
 Reglerleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^{t} e(t) \,dt + K_D \cdot \dfrac{de(t)}{dt}$ \hspace{3mm} bzw. \hspace{3mm} $G_R = K_P + \dfrac{K_I}{s} + K_D \cdot s$
-
+\\[5mm]
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.15]{figures/antrieb/PID_Regler.png}
 		\caption{Zusammensetzung des PID-Reglers}
 	\end{center}
 \end{figure}
-
+\vspace{5mm}
 Hier sind für ein besseres Verständnis die Sprungantworten der unterschiedlichen klassischen Reglertypen dargestellt. Der Regelkreis ist geschlossen, ein PT2-Glied bildet die Regelstrecke.
- 
+\\[4mm]
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{figures/antrieb/Reglertypen.png}

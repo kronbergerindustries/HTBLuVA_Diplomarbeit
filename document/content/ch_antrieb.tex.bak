@@ -148,12 +148,12 @@ Die Aufgabe der Leitungsschutzorgane ist es, bei unerwarteten Überströmen oder
 
 \textbf{Hochleistungs-Relais:}
 \\[2mm]
-Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der vom Relais geschalten werden kann, höher als der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche diese Zyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Das im endeffekt ausgewählte Bauteil stammt von der Firma \glqq TE Connectivity / Raychem\grqq{} und hat die Bezeichnung \glqq KILOVAC LEV200 A4ANA\grqq{}. Bei diesem Hochleistungs-Relais ergibt sich bei einer Gleichspannung von 120V und einem Strom von 600A eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, ebenfalls ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
+Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der vom Relais geschaltet werden kann, höher als der Verbraucherstrom bei maximaler Auslastung sein. Ebenfalls werden die zu erwarteten Lebenszyklen mithilfe einer speziellen Kennlinie abgeschätzt, welche diese Zyklen abhängig von bestimmten Strom- und Spannungswerten angibt. Das im Endeffekt ausgewählte Bauteil stammt von der Firma \glqq TE Connectivity / Raychem\grqq{} und hat die Bezeichnung \glqq KILOVAC LEV200 A4ANA\grqq{}. Bei diesem Hochleistungs-Relais ergibt sich bei einer Gleichspannung von 120V und einem Strom von 600A eine ungefähre Lebenszeit von 5.000 Schaltvorgängen. Die oben gennanten Werte sind aber entsprechend der Kennlinie deutlich höher als die realen Leistungswerte, zudem ist der Schaltvorgang meist nahezu unbelastet, da die Kondensatoren vorgeladen werden und das Hochleistungs-Relais nur in einem Fehlerfall während des Betriebs geöffnet wird. Aufgrund dessen kann auf eine Lebenszeit von deutlich über 10.000 Schaltvorgängen geschlossen werden. Natürlich muss auch die Spulenspannung und der zugehörige Leistungsverbrauch für die gewünschte Anwendung passen. Die Spulenspannung wurde passend zu den anderen Bauteilen für 12V ausgewählt, der Leistungsverbrauch befindet sich im Bereich von wenigen Watt und ist damit vernachlässigbar.
 \\[5mm]
 
 \textbf{Schmelzsicherung:}
  \\[2mm]
-Bei der Auswahl der Schmelzsicherung ist es vor allem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Sicherung, was bei der ausgewählten Schmelzsicherung \glqq FWA-400B\grqq{} von der Firma \glqq Bussmann / Eaton\grqq{} eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Managemen-System überprüft und begrenzt wird.
+Bei der Auswahl der Schmelzsicherung ist es vor allem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Miliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Sicherung, was bei der ausgewählten Schmelzsicherung \glqq FWA-400B\grqq{} von der Firma \glqq Bussmann / Eaton\grqq{} eine Ausschaltzeit von wenigen Milisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Management-System überprüft und begrenzt wird.
 \\[3mm]
 
 \textbf{Fazit:}
@@ -166,13 +166,17 @@ benötigt?
 \subsubsection{Motorbeschreibung}
 Die Nennleistung von Motor und Motorcontroller übersteigen die Nennleistung des Akkumlators, weshalb die Nennwerte dieser Bauteile unwichtig für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Da jedoch Motor und Motorsteuerung die zentralen Elemente des E-Motorrades darstellen, werden unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben.
 
-Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, wirkt dieser Motor eigentlich wie eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
+Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, ist dieser Motor eigentlich eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
 
 Der Motor wurde von der Firma Ashwoods gebaut und hat die Bezeichnung \glqq IPM-200-50\grqq{}. Er besitzt eine mechanische Spitzenleistung von 16 kW und ein maximales Drehmoment von 74 Nm. Die maximale Drehzahl beträgt 8500 U/min und der Wirkungsgrad liegt bei circa 85\%.
 
-Die Motorsteuerung wurde von der Firma Curtis gebaut, der Controller ist ein Prototyp mit der Modelnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb hat der Motorcontroller einen Leistungsverbrauch von rund 500W.
+Die Motorsteuerung wurde von der Firma Curtis gebaut, der Controller ist ein Prototyp mit der Modellnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb hat der Motorcontroller einen Leistungsverbrauch von rund 500W.
 
-Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale Leistung von 19,5 kW, sprich einen maximalen Strom von 385A bei einer Nennspannung von 50,4V. 
+Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale elektrische Leistung von 19,5 kW, sprich einen maximalen Strom von 385A bei einer Nennspannung von 50,4V. 
+
+\begin{align*}
+P_{max} &= 	P_{Motor} + P_{Controller} = \frac{16~\mathrm{kW}}{0,85}  + 500~\mathrm{W} \approx 19,5~\mathrm{kW}\\[3mm]
+\end{align*}
 
 \newpage
 
@@ -180,7 +184,7 @@ Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale Leistung 
 %% Der Steuerstromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Steuerstromkreis}
 \subsubsection{Übersicht Ein- und Ausgänge}
-Der Steuerstromkreis umfasst mit alle elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verschiedenen Ports, welche nochmals unterkategorisiert werden können:
+Der Steuerstromkreis umfasst alle elektrischen Verbindungen, welche über den  35-poligen Niederleistungs-Stecker mit dem Motorcontroller verbunden sind. Hierbei unterscheiden wir grundsätzlich zwischen drei verschiedenen Ports, welche nochmals unterkategorisiert werden können:
 
 \vspace{3mm}
 
@@ -390,20 +394,20 @@ In diesem Parametermenü kann die Nennspannung festgelegt werden, ebenfalls gibt
 \\[4mm]
 
 \textbf{Main Contactor}\\[1mm]
-Dieses Menü dient zur Konfiguration Hauptschütz (Hochleistungs-Relais). Die Ansteuerungsspannung wird hier genau beschrieben, nach dem Schließen des Schützes kann eine kleiner Spannung zum halten der Kontakte verwendet werden. Ebenfalls kann eine Zeitverzögerung eingestellt werden, welche bestimmt wie lange der KSI-Pin geöffnet sein darf, bevor der Hauptschütz geöffnet wird. Diese Funktion kann sehr wichtig sein, denn ein Wechsel des Antriebsmodus kann somit ebenfalls während des Betriebs erfolgen (Gaseingang muss aber 0\% sein). Ebenfalls kann die Vorladefunktion und auch mehrere sicherheitsrelevante Funktionstests eingeschalten und konfiguriert werden.
+Dieses Menü dient zur Konfiguration Hauptschütz (Hochleistungs-Relais). Die Ansteuerungsspannung wird hier genau beschrieben, nach dem Schließen des Schützes kann eine kleinere Spannung zum Halten der Kontakte verwendet werden. Ebenfalls kann eine Zeitverzögerung eingestellt werden, welche bestimmt, wie lange der KSI-Pin geöffnet sein darf, bevor der Hauptschütz geöffnet wird. Diese Funktion kann sehr wichtig sein, denn ein Wechsel des Antriebsmodus kann somit ebenfalls während des Betriebs erfolgen (Gaseingang muss aber 0\% sein). Weiteres können die Vorladefunktion und auch mehrere sicherheitsrelevante Funktionstests eingeschaltet und konfiguriert werden.
 \\[4mm]
 
 \textbf{Pump Contactor}\\[1mm]
-Dieses Menü dient zur Konfiguration einer Pumpe, für den Kühlkreislauf. Es kann eine erhöhte Versorgungsspannung im Anlaufbetrieb festgelegt werden.
+Dieses Menü dient zur Konfiguration einer Pumpe für den Kühlkreislauf. Es kann eine erhöhte Versorgungsspannung im Anlaufbetrieb festgelegt werden.
 
 \newpage
 
 \textbf{EM Brake Control}\\[1mm]
-Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bremse angesteuert werden. Da in unserem Motorrad jedoch nur herkömmliche mechanische Bremsen verbaut sind, ist diese Funktion für unsere Anwendung nicht zu gebrauchen. Für die elektromagnetische Bremse gibt es jedoch eine große Menge an Konfigurationsmöglichkeiten. Für verschiedene Ereignisse können bestimmte Drehmoment- und Zeitwerte festgelegt werden. Ebenfalls können viele sicherheitsrelevante Einstellungen getätigt werden. 
+Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bremse angesteuert werden. Da in unserem Motorrad jedoch nur herkömmliche mechanische Bremsen verbaut sind, ist diese Funktion für unsere Anwendung nicht zu gebrauchen. Für die elektromagnetische Bremse gibt es jedoch eine große Menge an Konfigurationsmöglichkeiten, für verschiedene Ereignisse können bestimmte Drehmoment- und Zeitwerte festgelegt werden. Ebenso können viele sicherheitsrelevante Einstellungen getätigt werden. 
 \\[4mm]
 
 \textbf{Emergency Reverse (EMR)}\\[1mm]
-Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht. Wenn der Switch 1 angesteuert wird, beschleunigt das Motorrad für eine festgelegte Zeit und Geschwindigkeit in die Rückwärts-Richtung. Wenn sich das Motorrad währenddessen forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
+Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht, welche bei einem Motorrad nicht gebraucht wird. Das Fahrzeug wird für eine bestimmte Zeit auf die festgelegte Geschwindigkeit im Rückwärtsbetrieb gebracht. Wenn sich das Motorrad währenddessen Forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
 \\[4mm]
 
 \textbf{Interlock Braking}\\[1mm]
@@ -415,11 +419,11 @@ Diese Funktion dient dazu, ein Fahrzeug mit zwei Motoren betreiben zu können. D
 \\[4mm]
 
 \textbf{Vehicle}\\[1mm]
-Über dieses Paramermenü können allgemeine Einstellungen, wie zum Beispiel die Einheit der Geschwindigkeit oder der Raddurchmesser festgelegt werden. Ebenfalls sind sehr viele unterschiedliche Parameter für eine genau Auswertung und Ausgabe aktueller Fahrdaten vorhanden.
+Über dieses Paramermenü können allgemeine Einstellungen, wie zum Beispiel die Einheit der Geschwindigkeit oder der Raddurchmesser festgelegt werden. Zusätzlich sind sehr viele unterschiedliche Parameter für eine genaue Auswertung und Ausgabe aktueller Fahrdaten vorhanden.
 \\[4mm]
 
 \textbf{Supervision}\\[1mm]
-Diese Parameter sind für die Einstellung der Geschwindigkeits- und Strom- bzw. Frequenzüberwachung. Wenn die zu kontrollierenden Werte ein definiertes Maximum übersteigen, wird ein Fehler ausgelöst.
+Diese Parameter dienen der Einstellung der Geschwindigkeits- und Strom- bzw. Frequenzüberwachung. Wenn die zu kontrollierenden Werte ein definiertes Maximum übersteigen, wird ein Fehler ausgelöst.
 
 
 \newpage
@@ -585,7 +589,7 @@ Wie im folgenden Programmausschnitt zu erkennen ist, ist der Aufbau dieses Progr
 \subsection{Leonard-Versuchsaufbau}
 \textbf{Grundidee:}
 \\[2mm]
-Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alternative Spannungsversorgung gefunden werden, welche für die Anforderungen der Motorsteuerung geeignet ist. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle (beide Energierichtungen) benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu kosten- und zeitintensiv, weshalb der Betreuungslehrer vorschlug, die bipolare Spannungsquelle mittels eines Leonard-Umformers zu realisieren. Dabei treibt eine vom Netz gespeiste Synchronmaschine einen
+Der Bau des Li-Ionen-Akkumulators hat sich leider sehr verzögert. Um effektiv an der Inbetriebnahme des Antriebssystems weiterarbeiten zu können, musste vorübergehend eine alternative Spannungsversorgung gefunden werden, welche für die Anforderungen der Motorsteuerung geeignet ist. Da der Motor und die Motorsteuerung jedoch eine bipolare Spannungsquelle (beide Energierichtungen) benötigen, um ordnungsgemäß in Betrieb genommen werden zu können, erwies sich dies vorerst schwierieger als gedacht. Die Beschaffung eines bipolaren Netzteils erwies sich als zu kosten- und zeitintensiv, weshalb der Betreuungslehrer vorschlug, die bipolare Spannungsquelle mittels eines Leonard-Umformers zu realisieren. Dabei treibt eine vom Netz gespeiste Synchronmaschine einen Gleichstrommotor an. Hierbei kann die Statorwicklung für die Spannungsquelle verwendet werden, mit der Erregerspannung kann der gewünschte Spannungswert eingestellt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -626,13 +630,5 @@ Der Aufbau mit den Bleiakkumulatoren hat vorübergehend ganz gut funktioniert. E
 \textbf{Erste Inbetriebnahme:}
 \\[2mm]
 Der Testlauf zur Einstellung der Motorparameter hat mithilfe der Bleiakkumulatoren beim ersten Versuch erfolgreich funktioniert. Der Motor konnte nach weiteren Konfigurationen letztendlich auch eine bestimmte Drehzahl abhängig von einem Spannungssignal anfahren. 
-
-
-\begin{figure}[H]
-	\begin{center}
-		%\includegraphics[width=\textwidth]{figures/antrieb/Bleiakku.png}
-		\caption{Bleiakku}
-	\end{center}
-\end{figure}
 
 \newpage
