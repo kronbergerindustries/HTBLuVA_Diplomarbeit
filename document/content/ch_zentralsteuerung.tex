@@ -33,11 +33,11 @@ Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittste
 
 \subsection{Steuereinheit}
 
-Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi.
+Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi \footnote{siehe Anhang \ref{app:rasp} oder  https://www.raspberrypi.org/}, welcher über die Interpretersprache Python \footnote{siehe https://www.python.org/} programmiert werden kann und die Programmierung um einiges einfacher gestalltet.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.08]{figures/hcis/raspberryPi.png}
+		\includegraphics[scale=0.07]{figures/hcis/raspberryPi.png}
 		\caption{Raspberry Pi - Steuereinheit des HCIS}
 	\end{center}
 \end{figure}
@@ -66,8 +66,6 @@ In der Abbildung \ref{fig:aufbauHCIS} wird der Grundaufbau des Systems und die D
 		\label{fig:aufbauHCIS}
 	\end{center}
 \end{figure}
-
-Nicht in der Abbildung dargestellt ist die Versorgung der einzelnen Komponenten, welche in dem folgenden Abschnitt noch genauer erläutert wird.
 
 \newpage
 
@@ -109,9 +107,29 @@ Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, 
 
 Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: siehe Anhang \ref{app:mw12}} entschieden. 
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{figures/hcis/versorgung_12V.png}
+		\caption{Aufbau des 12V Versorgungssystems}
+		\label{fig:12V_system}
+	\end{center}
+\end{figure}
+
+Diese Abbildung ist nur zur Veranschaulichung und kann im Anhang in original Größe gefunden werden.\footnote{siehe Anhang}
+
+\newpage
+
 \subsubsection{5V Versorgungssystem}
 
 Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl. Daher haben wir uns für einen 48V-5V, 30 Watt DC-DC Wandler von Meanwell \footnote{Datenblatt: siehe Anhang \ref{app:mw5}} entschieden.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/hcis/versorgung_5V.png}
+		\caption{Aufbau des 5V Versorgungssystems}
+		\label{fig:5V_system}
+	\end{center}
+\end{figure}
 
 \subsubsection{Abschalten der Spannungswandler}
 
@@ -132,12 +150,11 @@ Dennoch ist in der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage
 \subsection{Hardware}
 
 \subsubsection{Input}
-
-Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Eingang kann er die Zustände High und Low einnehmen. Zum Beispiel von einem Schalter oder Taster. In der Regel beschaltet man die GPIOs des Raspberry Pis mit Widerständen, um Eingänge auf einen definierten Pegel zu setzten oder um den Strom zu begrenzen. Standardmäßig werden 10k Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um nicht immer eine Spannung an den Eingängen des Raspberry Pis anliegen zu haben.
+Wenn wir eine digitale Schaltung wie die GPIO \footnote{general-purpose input/output} Pins betrachtet, sind die Pins immer entweder 0 oder 1. In diesem Fall muss der Zustand von 0 auf 1 oder von 1 auf 0 geändert werden. In beiden Fällen muss der digitale Pin entweder auf 0 gehalten und dann auf den Status auf 1 geändert werden oder andersherum. In beiden Fällen muss man den GPIO Pin entweder auf "Hoch" oder "Niedrig" setzen,er kann aber nicht schwebend gelassen werden. Dafür werden Pullup- oder Pulldown Widerstände verwendet. Standardmäßig werden hier 10kOhm Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig und hängt meistens von der Anwendung ab. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um nicht immer eine Spannung an den Eingängen des Raspberry Pis anliegen zu haben.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.8]{figures/hcis/input.png}
+		\includegraphics[scale=0.55]{figures/hcis/input.png}
 			\caption{Anschlussplan Eingänge}
 			\label{fig:input}
 	\end{center}
@@ -145,11 +162,37 @@ Man kann einen GPIO Pin entweder als Eingang oder als Ausgang betreiben. Als Ein
 
 \textbf{Pullup Widerstand}\\
 
-Bei dem Nutzen eines Pullup Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von VCC gezogen. Der Grundzustand des Eingangs ist dann High. Mit einem Schalter oder Taster wird der Eingang dann gegen Ground gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Massepotential am Eingang an.\\\medskip
+Hier kann der digitale Logikeingangspin mit dem Schalter von logisch 1 auf logisch 0 umgeschaltet werden. Der Widerstand wirkt als Pull-up-Widerstand. Es ist mit der Logikspannung von der Versorgungsquelle von 3,3 Volt verbunden. Wenn der Schalter nicht gedrückt wird, hat der logische Eingangspin immer eine Standardspannung von 3,3 Volt oder der Pin ist immer hoch, bis der Schalter gedrückt und der Pin gegen Masse kurzgeschlossen wird, wodurch er logisch 0 wird.\\\medskip
 
 \textbf{Pulldown Widerstand}\\
 
-Bei dem Nutzen eines Pulldown Widerstands wird der GPIO Pin mit einem Widerstand auf die Spannnung von Ground gezogen. Der Grundzustand des Eingangs ist dann Low. Mit einem Schalter oder Taster wird der Eingang dann gegen VCC gezogen. Das heißt er hat solange der Schalter geschlossen ist, liegt das Versorgunspotential am Eingang an.
+Bei einem Pulldown Widerstand passiert genau das Gegenteil. Der Widerstand ist mit Masse verbunden. Somit wird der digitale Logikpegel als Standard 0 gesetzt, bis der Schalter gedrückt wird und der Pegel logisch 1 wird. In diesem Fall fließt die geringe Strommenge mithilfe des geschlossenen Schalters und des Pulldown-Widerstands von den 3,3 Volt zur Erde, wodurch verhindert wird, dass der GPIO Pin mit der 3,3 Volt Quelle kurzgeschlossen wird. Weshalb wir uns auch für diese Variante entschieden haben
+
+\newpage
+
+\subsection{Umsetzung}
+
+Um diese Theorie auch an unser Projekt anwenden zu können, müssen zuerst die Taster und Schalter, welche sich normalerweise am Lenker des Motorrades befinden Ausgemessen werden. Dies wird gemacht um herauszufinden welche Drähte mit welchen Schalter verbunden ist. Das Gleiche gilt für die Frontbeleuchtung. Nur so können diese auch wieder richtig angeschlossen und verwendet werden.
+
+\subsubsection{Lenkerschalter}
+
+ Die einzelnen Schalter und deren Schaltstellungen sowie die dazugehörigen Drähte können mit Durchgangsmessung herausgefunden werden. Dafür muss nur ein Schalter umgelegt werden und mit Trial and Error nach dem geschlossenen Kontakt an den Drähten gesucht werden.  
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{figures/hcis/Motorrad-switches.png}
+		\caption{GUI Komponente - Modus Anzeige}
+		\label{fig:switches}
+	\end{center}
+\end{figure} 
+
+\newpage
+
+\subsubsection{Beleuchtung}
+
+Ähnlich konnten die Drähte den Richtigen Leuchten des Frontscheinwerfers zugeornet werden.
+
+\newpage
 
 \subsubsection{Output}
 
@@ -163,6 +206,7 @@ Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eing�
 	\end{center}
 \end{figure}
 
+
 \subsection{Software}
 
 Wichtig bei der Programmierung war in diesem Fall die dauerhafte Verfügbarkeit der Grundfunktionen  sowie die einfache Integrierbarkeit von alten und neuen Bauteilen. Dies wurde erreicht durch die Anwendung verschiedener Bibliotheken.\\
@@ -172,7 +216,7 @@ Die Wichtigsten in dieser Anwendung waren: \\
 
 Eine Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden. Hierzu kann die Klasse Button und DigitalOutputDevice verwendet werden. Dieser können Parameter wie die gewünschte Debounce Zeit und verwendete Pull-Widerstände übergeben werden. Es werden nur drei Zeilen Code benötigt um einen Aus- oder Eingang zu definieren und anzusteuern \footnote{siehe: Anhang}
 
-\subsubsection{threading}
+\subsubsection{threading} \label{sec:thread}
 
 Eine Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzeitig laufende Aufgabe} für das Programm zu öffnen, wodurch die Anwendung ohne Einflüsse oder Unterbrechungen anderer Programme weiter arbeiten kann. Der folgende Programmcode zeigt einen Ausschnitt der Klasse zum Steuern der GPIOs. 
 
@@ -211,7 +255,7 @@ Die Auflösung und die Größe des Paneels wirkt sich stark auf das Design der B
 \newpage
 
 \subsubsection{Befestigung}
-Besser: In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.
+In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.\footnote{siehe Anhang \ref{app:hcis}}
 
 \begin{figure}[H]
 	\begin{center}
@@ -323,13 +367,13 @@ Die Graph Komponente befindet sich auf dem Diagnose Fenster und dient zum Anzeig
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{figures/hcis/component_graph.png}
+		\includegraphics[scale=0.25]{figures/hcis/component_graph.png}
 		\caption{GUI Komponente - Graph}
 				\label{fig:kompGraph}
 	\end{center}
 \end{figure}
 
-Realisiert wurde diese Komponente über öffentliche Bibliothek \textit{Charts.js} (Referenz), welche durch die Java Script Unterstützung von \textit{QT}, mit der Installation eines Adapters mit dem QML Programm kompatibel ist. Dadurch wird nun das Zeichnen von verschiedensten Graphen ermöglicht.
+Realisiert wurde diese Komponente über öffentliche Bibliothek \textit{Charts.js} \footnote{siehe https://www.chartjs.org/}, welche durch die Java Script Unterstützung von \textit{QT}, mit der Installation eines Adapters \footnote{siehe https://github.com/MichaelVoelkel/ChartJs2QML} mit dem QML Programm kompatibel ist. Dadurch wird nun das Zeichnen von verschiedensten Graphen ermöglicht.
 
 \subsubsection{Weitere Komponenten}
 
@@ -407,7 +451,7 @@ Dieses Fenster dient Ähnlich wie das der Fahrdaten zur Darstellung wichtiger Da
 
 Dieses Fenster wird Standardmäßig während dem Laden des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden.
 
-\subsubsection{Fahrdaten Diagnose}
+\subsubsection{Fahrdaten Diagnose} \label{sec:diagnosis}
 
 Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorsteuerung versendet und vom Raspberry Pi verarbeitet und in einer Datenbank gespeichert werden, in Graphen angezeigt werden. Hierzu wird die \textit{Graph Komponente} \footnote{siehe Abschnitt \ref{sec:graph}} verwendet.
 \begin{figure}[H]
@@ -435,9 +479,9 @@ Sobald ein Fehlerdatenpaket über den CAN-Bus versendet wird, gibt der Listener 
 	\end{center}
 \end{figure}
 
-Der Name und die Beschreibung der Fehler, wird über eine Fehlertabelle\footnote{siehe Abschnitt } in der Datenbank ausgelesen. Diese werden während dem Testen des Motorrades gesammelt und häufig auftretende Fehler werden in diese Tabelle eingetragen. 
+Der Name und die Beschreibung der Fehler, wird über eine Fehlertabelle\footnote{siehe Abschnitt \ref{sec:error_dis} } in der Datenbank ausgelesen. Diese werden während dem Testen des Motorrades gesammelt und häufig auftretende Fehler werden in diese Tabelle eingetragen. 
 
-\subsubsection{Nutzer und Berechtigungen}
+\subsubsection{Nutzer und Berechtigungen} \label{sec:users}
 
 Um sicherzustellen das das Nutzen der Benutzeroberfläche nicht für jeden uneingeschränkt möglich ist wurde ein Anmeldesystem mit drei verschiedenen Benutzern, welche jeweils verschiedene Berechtigungen besitzen, umgesetzt.
 
@@ -462,7 +506,7 @@ Dieser Benutzer verfügt nur über sehr eingeschränkte Rechte. Er wird zum Prä
 QML \footnote{Qt Modeling Language} ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für Java-Script-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
 
 \subsubsection{Qt-Quick}
-Das Qt-Quick-Modul ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Backend Bibliotheken verbunden werden.
+Das Qt-Quick-Modul \footnote{siehe https://www.qt.io/} ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Backend Bibliotheken verbunden werden.
 
 \subsubsection{Slots und Signals} \label{sec:slots}
 Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Frontend und Backend verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
@@ -479,13 +523,14 @@ Diese können als Mitteilungen angesehen werden, welche über das Aufrufen der \
 \medskip
 
 \textbf{Slots}\\ \medskip
-Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind über die Bridge Klasse mit dem Frontend verknüpft. Dadurch können diese Funktionen im Frontend aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar.
+Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind über die Bridge Klasse mit dem Frontend verknüpft. Dadurch können diese Funktionen im Frontend aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar. 
+
 
 \newpage
 	
-\subsubsection{Bridge}
+\subsubsection{Bridge} \label{sec:bridge}
 
-Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des Backends mit denen der graphischen Benutzeroberfläche. 
+Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des Backends mit denen der graphischen Benutzeroberfläche. Die Kommunikation mit QtQuick findet mittels dem oben genannten Signal-Slot-Konzept statt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -493,6 +538,14 @@ Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Module des 
 		\caption{Verbindung Frontend zu Backend}
 	\end{center}
 \end{figure}
+
+Sie beinhaltet folgende Aufgaben:
+
+\begin{itemize}
+	\item Kommunikation mit der Datenbankschnittstelle
+	\item Verarbeitung der Übergebenen Daten in angepasste Modelle für QML
+	\item Echtzeitverarbeitung einiger Daten von der CAN-Bus Schnittstelle
+\end{itemize}
 
 \newpage
 
@@ -523,21 +576,56 @@ Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wi
 
 \newpage
 
-\subsection{Listener}
+\subsection{Listener} \label{sec:listener}
 
-Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle \footnote{siehe Abschnitt} sowie die Schnittstelle zum Frontend (Bridge) weiterzugeben.
+Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle \footnote{siehe Abschnitt \ref{sec:handler}} sowie die Schnittstelle zum Frontend (Bridge) \footnote{siehe Abschnitt \ref{sec:bridge}} weiterzugeben. Nach dem Konfigurieren werden die einzelnen Nachrichten nach dem Empfangen des Identifiers in eine Liste geordnet und an die Bridge und den Handler weitergegeben, um weiter verarbeitet zu werden. 
 
 \subsubsection{Konfigurieren der Schnittstelle}
-	
-\begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters},captionpos=b]
-	
 
+Für die Verbindung mit dem CAN-Modul wird die Bibliothek \textit{pyhton-can} \footnote{siehe https://python-can.readthedocs.io/en/master/index.html} verwendet. In unserem Fall wird diese Bibliothek mit einer bestimmten CAN-Schnittstelle verwendet. Diese kann im Code angegeben, aus Konfigurationsdateien oder Umgebungsvariablen gelesen werden.	
+
+Das \textit{can-Objekt} macht ein \textit{rc-Wörterbuch} verfügbar, mit dem die Schnittstelle und der Kanal vor dem Import aus \textit{can.interfaces} festgelegt werden können. 
+
+\begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters vor Import},captionpos=b]
+	
+import can
+can.rc['interface'] = 'socketcan'
+can.rc['channel'] = 'vcan0'
+can.rc['bitrate'] = 500000
+from can.interface import Bus
+	
+bus = Bus()
 	
 \end{lstlisting}
 
+Es kann aber auch die Schnittstelle und der Kanal für jede Businstanz angegeben werden:
+
+\begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters in Code},captionpos=b]
+	
+import can
+	
+bus = can.interface.Bus(bustype='socketcan', channel='vcan0', bitrate=500000)
+	
+\end{lstlisting}
+
+In der weiteren Entwicklung kann das CAN-Modul über eine Konfigurationsdatei instanziiert werden.
+
 \subsubsection{Empfangen der Daten}
+Um die Daten, welche am Bus versendet werden auszulesen wird wiederum die \textit{cantools} Bibliothek verwendet. Mit der \textit{can.recv} Funktion kann der Listener gestartet werden. Das anschließende Beispiel ist ein einfacher Listener, welche die Nachrichten auf dem CAN-Bus auslesen kann.
+  
+\begin{lstlisting}[language=Python, caption={Konfigurieren des CAN Adapters in Code},captionpos=b]
+	
+listener = Listener()
+meass = my_bus.recv()
 
+listener.on_message_received(msg)
 
+# Important to ensure all outputs are flushed
+listener.stop()
+	
+\end{lstlisting}
+
+In der weiteren Entwicklung wird ein Buffer und weitere Erweiterungen umgesetzt.
 
 \newpage
 
@@ -551,7 +639,7 @@ Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine 
 
 \subsubsection{Benutzer System}
 
-id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
+Diese Tabelle wird zum Einloggen in das Programm verwendet und ist mit keiner weiteren Tabelle verbunden. Der Inhalt dieser Tabelle \footnote{siehe Abschnitt \ref{sec:users}} sollte nicht verändert werden. Die Zuweisung der Rechte läuft über den Benutzernamen im Frontend. Die id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \begin{table}[H]
 	\begin{center}
@@ -570,13 +658,45 @@ id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \subsubsection{Motor Daten}
 
-\textbf{Datenpacket 1}
+\textbf{Fehler Datenpacket}
+
+Dieses Paket ist analog zu den Motordatenpaketen, welche in dem nächsten Abschnitt beschrieben werden.Es beinhaltet jedoch 7 ungeordnete Daten Attribute, welche die an der Motorsteuerung der anliegenden Fehler beschreibt.
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|l|}
+			\hline
+			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
+			id                          & int               & Identifikationsnummer                     \\ \hline
+			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
+			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
+			error\_2            		& int               & Fehlercode 2            					\\ \hline
+			error\_3        			& int               & Fehlercode 3       						\\ \hline
+			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
+			error\_5    				& int               & Fehlercode 5 								\\ \hline
+			error\_6					& int               & Fehlercode 6        						\\ \hline
+			error\_7					& int               & Fehlercode 7    							\\ \hline
+		\end{tabular}
+		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
+		\label{tab:data4}
+	\end{center}
+\end{table}
+
+\newpage
+
+{\large \textbf{Motor Datenpakete}}
+
+Das id Attribut ist nicht signiert und ist der Primärschlüssel, welcher mit der Auto-Inkrement Funktion versehen ist. date\_time ist ein Zeitattribut und wird mit der Funktion NOW() beschrieben, um die Zeit des Beschreibens festzuhalten. Dies ist wichtig für das Auslesen der Daten beim Zeichnen eines Graphen in der Benutzeroberfläche. Der kaskadierte Fremdschlüssel
+id\_data\_X wird für die Verbindung der Tabellen mit der JOIN Funktion verwendet. Die Restlichen Attribute sind die geordneten Daten, welche über die CAN-Schnittstelle empfangen werden. Die vier verschiedenen Datenpakete - inklusive dem Fehlerdatenpaket - sind gleich aufgebaut. Nur die 7 Datenattribute sind an die Pakete des Curtis Controllers angepasst. 
+
+\begin{center}
+	\textbf{Datenpacket 1}
+\end{center}
  
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|c|c|l|}
 			\hline
-			\multicolumn{3}{|c|}{\textbf{data1}} \\ \hline
 			\textbf{Attribut} & \textbf{Datentyp} & \textbf{Beschreibung}            \\ \hline
 			id                & int               & Identifikationsnummer            \\ \hline
 			date\_time        & datetime          & Datum der Erstellung             \\ \hline
@@ -592,20 +712,15 @@ id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 	\end{center}
 \end{table}
 
-id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
-step id ist ein Z¨ahlerattribut, das f ¨ ur die Reihenfolge der Schritte verwendet wird, wie
-sie in der grafischen Oberfl¨ache angezeigt werden. Der kaskadierte Fremdschl ¨ ussel
-tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨ ur die
 
-\newpage
-
-\textbf{Datenpacket 2}
+\begin{center}
+	\textbf{Datenpacket 2}
+\end{center}
 
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|c|c|l|}
 			\hline
-			\multicolumn{3}{|c|}{\textbf{data2}} \\ \hline
 			\textbf{Attribut}  & \textbf{Datentyp} & \textbf{Beschreibung}               \\ \hline
 			id                 & int               & Identifikationsnummer               \\ \hline
 			id\_data\_1        & int               & Fremdschlüssel von Datenpaket 1     \\ \hline
@@ -623,13 +738,14 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 	\end{center}
 \end{table}
 
-\textbf{Datenpacket 3}
+\begin{center}
+	\textbf{Datenpacket 3}
+\end{center}
 
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|c|c|l|}
 			\hline
-			\multicolumn{3}{|c|}{\textbf{data3}} \\ \hline
 			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     	\\ \hline
 			id                          & int               & Identifikationsnummer                     	\\ \hline
 			id\_data\_2                 & int               & Fremdschlüssel von Datenpaket 2          		\\ \hline
@@ -647,47 +763,35 @@ tutorial id wird f ¨ ur die Zuordnung zu dem jeweiligen Tutorial verwendet. F¨
 	\end{center}
 \end{table}
 
+
+
 \newpage
 
-\textbf{Datenpacket 4 - Fehler}
-
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|c|c|l|}
-			\hline
-			\multicolumn{3}{|c|}{\textbf{data4}} \\ \hline
-			\textbf{Attribut}           & \textbf{Datentyp} & \textbf{Beschreibung}                     \\ \hline
-			id                          & int               & Identifikationsnummer                     \\ \hline
-			id\_data\_3                 & int               & Fremdschlüssel von Datenpacket 3          \\ \hline
-			date\_time                	& datetime          & Datum der Erstellung        				\\ \hline
-			error\_1                 	& int	            & Fehlercode 1                      		\\ \hline
-			error\_2            		& int               & Fehlercode 2            					\\ \hline
-			error\_3        			& int               & Fehlercode 3       						\\ \hline
-			error\_4           			& int               & Fehlercode 4       	 					\\ \hline
-			error\_5    				& int               & Fehlercode 5 								\\ \hline
-			error\_6					& int               & Fehlercode 6        						\\ \hline
-			error\_7					& int               & Fehlercode 7    							\\ \hline
-		\end{tabular}
-		\caption{Datenbankstruktur der Fehler-Datenpaket Tabelle}
-		\label{tab:data4}
-	\end{center}
-\end{table}
-
-\subsubsection{Fehler Tabelle}
+\subsubsection{Fehler Tabelle} \label{sec:error_dis}
 
 Diese Tabelle ist ebenso in der Datenbank gespeichert. Sie beinhaltet die Fehlercodes der Motorsteuerung mit weiteren Informationen wie Name und Beschreibung. Sie muss per Hand angelegt werden und sollte während dem Testen der Maschine mit dokumentiert, um sie dann in das Fehler Fenster der Benutzeroberfläche zu implementieren.
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\textbf{Attribut}  & \textbf{Datentyp} & \textbf{Beschreibung}                 \\ \hline
+		error\_code        & hex               & Errorcode von Steuerung in HEX format \\ \hline
+		error\_name        & varchar(50)       & Kurze Benennung des Fehlers           \\ \hline
+		error\_description & varchar(255)      & Kurze Beschreibung des Fehlers        \\ \hline
+	\end{tabular}
+\end{table}
 
 \subsubsection{Akku Daten}
 
 Da die Kommunikation der BMS noch nicht umgesetzt wurde, werden von Ihr keine Daten auf den CAN-Bus gelegt und daher muss auch keine Tabelle dafür erstellt werden. Somit werden alle Daten über Akku und Ladestand über die Motorsteuerung empfangen.
 
-\subsection{Handler}
+\subsection{Handler} \label{sec:handler}
 
 Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und dem Programm herzustellen. Dazu verwendet sie die MySQL-Connector Bibliothek. Mit dieser können SQL Skripten direkt in die Python Klasse integriert werden ohne dass externe SQL Skript Dateien geöffnet werden müssen.
 
-Dieser bekommt in Echtzeit eine Liste der aktuell Empfangenen Daten der Listener Klasse \footnote{siehe Abschnitt } und schreibt diese in die dafür vorgesehenen Tabelle der Datenbank. Hierfür wird ein eigener Thread \footnote{siehe Abschnitt } geöffnet, um diese Aufgabe unabhängig von dem Restlichen Programm ausführen zu können.
+Dieser bekommt in Echtzeit eine Liste der aktuell Empfangenen Daten der Listener Klasse \footnote{siehe Abschnitt \ref{sec:listener}} und schreibt diese in die dafür vorgesehenen Tabelle der Datenbank. Hierfür wird ein eigener Thread \footnote{siehe Abschnitt \ref{sec:thread}} geöffnet, um diese Aufgabe unabhängig von dem Restlichen Programm ausführen zu können.
 
-Ebenso verfügt er über Funktionen, welche über das Diagnose Fenster \footnote{siehe Abschnitt } angewählt werden können und Daten aus der Datenbank auslesen, um sie in einem Graph anzeigen zu lassen.
+Ebenso verfügt er über Funktionen, welche über das Diagnose Fenster \footnote{siehe Abschnitt \ref{sec:diagnosis} } angewählt werden können und Daten aus der Datenbank auslesen, um sie in einem Graph anzeigen zu lassen.
 
 \subsubsection{Konfigurieren der Schnittstelle}
 
@@ -704,21 +808,16 @@ Um auf eine Datenbank zu zugreifen wird muss ein \textit{connect} Objekt, mit de
 	# Connection to the database
 	con = mysql.connector.connect(host=dbhost, user=dbuser, password=dbpass, database=dbname)
 	
-\end{lstlisting}
-
-\newpage
-
-\subsubsection{Cursor klasse}
-
-Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mithilfe eines Connection Objekts. Sie können 
-
-\begin{lstlisting}[language=Python, caption={Erstellen eines Cusorobjekts},captionpos=b]
-	
 	# Creating cursor for database queries
 	cursor = con.cursor()
 	
 \end{lstlisting}
 
+\newpage
+
+\subsubsection{Cursor}
+
+Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mithilfe eines Connection Objekts.
 Einpaar der Wichtigsten Befehle sind:
 
 \begin{itemize}
@@ -727,7 +826,7 @@ Einpaar der Wichtigsten Befehle sind:
 	
 	\item \textit{cursor.fetchall()} \\ Diese Methode ruft alle Zeilen einer Abfrage ab und gibt eine Liste von Tupeln \footnote{ein Datensatz (eine Zeile) einer Datenbank} zurück. Wenn keine Zeilen mehr verfügbar sind, wird eine leere Liste zurückgegeben.
 	
-	\item \textit{cursor.close()} \\ Diese Methode wird verwendet wenn man einem Cursor nicht mehr benötigt. Diese Methode schließt den Cursor, setzt alle Ergebnisse zurück und stellt sicher, dass das Cursorobjekt keinen Verweis auf sein ursprüngliches Verbindungsobjekt hat.
+	\item \textit{cursor.close()} \\ Diese Methode wird verwendet wenn ein Cursor nicht mehr benötigt wird. Diese Methode schließt den Cursor, setzt alle Ergebnisse zurück und stellt sicher, dass das Cursorobjekt keinen Verweis auf sein ursprüngliches Verbindungsobjekt hat.
 	
 \end{itemize}
 

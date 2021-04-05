@@ -695,5 +695,62 @@ Hier sind für ein besseres Verständnis die Sprungantworten der unterschiedlich
 
 %%%%%%%%%%%%%%%%%%% HCIS
 
-\section{Steuereinheiten}
+\fancyfoot[C]{Kronberger}
+
 \section{Bussysteme}
+
+\subsection{CAN-Bus}
+
+Controller Area Network ist eine serielle Netzwerktechnologie, die ursprünglich für die Automobilindustrie, insbesondere für europäische Autos, entwickelt wurde. Der CAN-Bus wird hauptsächlich in embedded systems verwendet und ist eine Netzwerktechnologie, die eine schnelle Kommunikation zwischen Mikrocontrollern bis hin zu Echtzeitanforderungen ermöglicht. \\ \medskip
+
+CAN ist ein Zweidraht-Halbduplex-Hochgeschwindigkeitsnetzwerksystem \footnote{Halb-Duplex und Voll-Duplex bestimmen, ob Hosts Daten gleichzeitig senden und empfangen können.}, das herkömmlichen seriellen Technologien wie RS232 in Bezug auf Funktionalität und Zuverlässigkeit weit überlegen ist und dennoch sind CAN-Implementierungen kostengünstiger. \footnote{vgl. \cite{can}}
+
+Es gibt im Gegensatz zu dem SPI-Bus hier keinen Master und Slave. Zur Übertragung wird eine Twisted-Pair Leitung mit einem positiven und einem negativen CAN-Signal (CAN-High/CAN-Low) benötigt. Parallel dazu werden die Bus-Teilnehmen (CAN-Nodes) geschalten.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/hcis/can_nodes.png}
+		\caption{Aufbau einer CAN-Bus Leitung}
+	\end{center}
+\end{figure}
+
+\subsection{SPI-Bus}
+
+Der SPI-Bus (Serial Peripheral Interface) wurde von Motorola entwickelt, um eine synchrone serielle Vollduplex-Kommunikation zwischen Master- und Slave-Geräten zu ermöglichen. Er wird üblicherweise für die Kommunikation mit Flash-Speichern, Sensoren, Echtzeituhren, Analog-Digital-Wandlern und mehr verwendet.\\ \medskip
+
+Eine Standard-SPI-Verbindung umfasst einen Master, der über die Leitungen Serial Clock (SCK), Master Out Slave In (MOSI), Master In Slave Out (MISO) und Slave Select (SS) mit Slaves verbunden ist. Die SCK-, MOSI- und MISO-Signale können von Slaves gemeinsam genutzt werden, während jeder Slave über eine eindeutige SS-Leitung verfügt. \footnote{vgl. \cite{spi}, Abschnitt 1}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/hcis/spi_master_slave.png}
+		\caption{Aufbau einer SPI-Bus Verbindung}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\section{Programmiersprachen}
+
+\subsection{Python}
+
+Python ist eine interpretierte, interaktive, objektorientierte Programmiersprache. Sie enthält Module, Ausnahmen, dynamische Typisierung, dynamische Datentypen auf sehr hoher Ebene und Klassen. Der Code wird automatisch zu Bytecode kompiliert und ausgeführt. Daher eignet sich Python zur Verwendung als Skriptsprache, Implementierungssprache für Webanwendungen. Ebenso kann sie in C und C ++ erweitert werden, wodurch Python die Geschwindigkeit bereitstellen kann, die für rechenintensive Aufgaben erforderlich ist. Aufgrund seiner starken Strukturierungskonstrukte und seiner konsequenten Verwendung von Objekten und objektorientierter Programmierung ermöglicht Python das Schreiben klarer, logischer Anwendungen für kleine und große Aufgaben. Es verfügt über Integrierte Datentypen auf hoher Ebene: Zeichenfolgen, Listen, Wörterbücher, sowie die üblichen Kontrollstrukturen: if, if-else, if-elif-else, while und noch viel mehr. Ebenso gibt es eine sehr große Anzahl an Bibliotheken, welche sonst schwere Aufgaben sehr einfach gestalten.\footnote{vgl- \autocite{python}, Abschnitt 1.1}
+
+\begin{lstlisting}[language=Python, caption={Hello World Programm in Pyhton},captionpos=b]
+	
+print("Hello World")
+	
+\end{lstlisting}
+
+\subsection{JavaScript}
+
+JavaScript ist eine benutzerfreundliche Skriptsprache für Objekte, mit der Live-Online-Anwendungen erstellt werden können, die Objekte und Ressourcen auf Clients und Servern miteinander verknüpfen. Während Java von Programmierern zum Erstellen neuer Objekte und Applets verwendet wird, wurde JavaScript für HTML-Seitenautoren und Entwickler von Unternehmensanwendungen entwickelt, um das Verhalten von Objekten, die entweder auf dem Client oder auf dem Server ausgeführt werden, dynamisch zu skripten. JavaScript ist kann von Personen mit wenig oder keiner Programmiererfahrung verwendet werden, um schnell komplexe Anwendungen zu erstellen. Das Design von JavaScript ist speziell für das Internet und die Erstellung netzwerkzentrierter Anwendungen entwickelt worden. \footnote{vgl. \cite{javascript}, Einleitung}
+
+\begin{lstlisting}[language=JavaScript, caption={Hello World Programm in JavaScript},captionpos=b]
+	
+console.log('Hello World');
+	
+\end{lstlisting}
+
+\newpage
+
+

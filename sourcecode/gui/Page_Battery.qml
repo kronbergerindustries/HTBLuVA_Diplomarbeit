@@ -34,6 +34,8 @@ Item {
             width: 600
             height: 600
             anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: 0
+            anchors.horizontalCenterOffset: 0
             value: 50
             progressStrokeColor: "#2bcc48"
             roundCap: false
@@ -63,37 +65,37 @@ Item {
                     fillMode: Image.PreserveAspectFit
                 }
             }
-        }
-
-        Text {
-            id: valueBattery
-            x: 835
-            y: 606
-            width: 120
-            height: 78
-            color: "#ffffff"
-            text: "50"
-            font.pixelSize: 60
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            transformOrigin: Item.Right
-            anchors.rightMargin: 960
-            textFormat: Text.RichText
 
             Text {
-                id: percBattery
-                y: -283
-                width: 61
+                id: valueBattery
+                x: 175
+                y: 366
+                width: 120
                 height: 78
-                color: "#666666"
-                text: "%"
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.right
+                color: "#ffffff"
+                text: "50"
                 font.pixelSize: 60
-                horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
-                anchors.leftMargin: 10
+                transformOrigin: Item.Right
+                anchors.rightMargin: 960
                 textFormat: Text.RichText
+
+                Text {
+                    id: percBattery
+                    y: -283
+                    width: 61
+                    height: 78
+                    color: "#666666"
+                    text: "%"
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.right
+                    font.pixelSize: 60
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    anchors.leftMargin: 10
+                    textFormat: Text.RichText
+                }
             }
         }
 

@@ -1,13 +1,45 @@
 \appendix
-\chapter{Arbeitsnachweis}
+\chapter{Allgemeines}
+
+\newpage
 
 \section{Zeitplan}
 
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[angle=90, scale=0.6] {figures/allgemein/zeitplan.png}
+		\caption{Zeitplan und Arbeitszeiten}
+		\label{fig:Zeitplan}
+	\end{center}
+\end{figure}
+
+\newpage
+
 \section{Kosten}
+
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[angle=-90, scale=0.6] {figures/allgemein/stückliste.png}
+		\caption{Kostenaufstellung und Stückliste}
+		\label{fig:Stückliste}
+	\end{center}
+\end{figure}
+
+\newpage
 
 \chapter{Programmcode}
 
+\section{HICS}
+
+\subsection{Benutzeroberfläche}
+
+
 \chapter{CAD-Zeichnungen}
+
+\newpage
+
+\section{Mechanik}
 
 \begin{figure} [H]
 	\begin{center}
@@ -17,6 +49,9 @@
 	\end{center}
 \end{figure}
 
+\fancyfoot[C]{Schmeisser}
+
+\newpage
 
 \begin{figure} [H]
 	\begin{center}
@@ -107,7 +142,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90, width=\textwidth]{figures/antrieb/Ashwoods_CAD.jpg}
@@ -124,17 +158,44 @@
 	\end{center}
 \end{figure}
 
-\chapter{Solid Edge Simulationen}
+\section{HCIS} \label{app:hcis}
 
-\includepdf [pages=-]{figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[scale=0.8]{figures/hcis/befestigung_display_cad.png}
+		\caption{Akkubox Mitte}
+		\label{fig:panel_cad}
+	\end{center}
+\end{figure}
 
-\includepdf[pages=-]{figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
+\fancyfoot[C]{Kronberger}
+
+\chapter{Simulationen}
+
+\section{Mechanik}
+
+\fancyfoot[C]{Schmeisser}
+
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
 
 \chapter{Schaltpläne}
 
+\fancyfoot[C]{Kronberger}
+
+\newpage
+
+\section{HCIS}
+
+
+
+
 \chapter{Datenblätter}
 
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
+
+\fancyfoot[C]{Kronberger}
+
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{HCIS} \subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
 \includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell5.pdf}
 
 
