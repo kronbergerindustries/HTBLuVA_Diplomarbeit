@@ -7,56 +7,63 @@ Illegal, another \bibstyle command---line 24 of file main.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
-Reallocating 'name_of_file' (item size: 1) to 19 items.
-Database file #1: content/schmeisser.bib
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: literatur.bib
 Warning--entry type for "Kuehlung1" isn't style-file defined
---line 3 of file content/schmeisser.bib
+--line 33 of file literatur.bib
 Warning--entry type for "Wasserkuehlung" isn't style-file defined
---line 21 of file content/schmeisser.bib
+--line 53 of file literatur.bib
+I was expecting a `,' or a `}'---line 55 of file literatur.bib
+ : 
+ : author = {Johannes Wiesinger},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "AktiveKuehlung" isn't style-file defined
---line 56 of file content/schmeisser.bib
+--line 89 of file literatur.bib
+Warning--entry type for "PassiveKuehlung" isn't style-file defined
+--line 101 of file literatur.bib
 Warning--empty author and editor in Luftkuehlung1
 Warning--can't use both volume and number fields in Luftkuehlung1
 Warning--there's a number but no series in Luftkuehlung2
-You've used 6 entries,
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            540 strings with 4599 characters,
-and the built_in function-call counts, 1282 in all, are:
-= -- 117
-> -- 36
+            550 strings with 4886 characters,
+and the built_in function-call counts, 1690 in all, are:
+= -- 152
+> -- 50
 < -- 2
-+ -- 16
-- -- 10
-* -- 63
-:= -- 212
-add.period$ -- 15
-call.type$ -- 6
-change.case$ -- 23
++ -- 22
+- -- 14
+* -- 79
+:= -- 280
+add.period$ -- 19
+call.type$ -- 8
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 58
-empty$ -- 135
-format.name$ -- 10
-if$ -- 278
+cite$ -- 11
+duplicate$ -- 77
+empty$ -- 179
+format.name$ -- 14
+if$ -- 366
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 5
-newline$ -- 29
-num.names$ -- 10
-pop$ -- 41
+int.to.str$ -- 8
+missing$ -- 7
+newline$ -- 37
+num.names$ -- 14
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 24
 quote$ -- 0
-skip$ -- 42
+skip$ -- 60
 stack$ -- 0
-substring$ -- 30
-swap$ -- 9
+substring$ -- 40
+swap$ -- 11
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 24
 warning$ -- 3
-while$ -- 10
-width$ -- 7
-write$ -- 61
-(There was 1 error message)
+while$ -- 14
+width$ -- 9
+write$ -- 78
+(There were 2 error messages)
