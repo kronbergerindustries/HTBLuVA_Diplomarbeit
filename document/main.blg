@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Illegal, another \bibstyle command---line 24 of file main.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+Database file #1: literatur.bib
+Warning--entry type for "Kuehlung1" isn't style-file defined
+--line 33 of file literatur.bib
+Warning--entry type for "Wasserkuehlung" isn't style-file defined
+--line 53 of file literatur.bib
+I was expecting a `,' or a `}'---line 55 of file literatur.bib
+ : 
+ : author = {Johannes Wiesinger},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "AktiveKuehlung" isn't style-file defined
+--line 89 of file literatur.bib
+Warning--entry type for "BalancingderPacks" isn't style-file defined
+--line 124 of file literatur.bib
+Warning--entry type for "GrundaufbauLiionenZelle" isn't style-file defined
+--line 133 of file literatur.bib
+Warning--empty author and editor in Luftkuehlung1
+Warning--can't use both volume and number fields in Luftkuehlung1
+Warning--there's a number but no series in Luftkuehlung2
+You've used 8 entries,
+            2118 wiz_defined-function locations,
+            548 strings with 4862 characters,
+and the built_in function-call counts, 1660 in all, are:
+= -- 147
+> -- 50
+< -- 2
++ -- 22
+- -- 14
+* -- 74
+:= -- 272
+add.period$ -- 18
+call.type$ -- 8
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 72
+empty$ -- 179
+format.name$ -- 14
+if$ -- 360
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 5
+newline$ -- 36
+num.names$ -- 14
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 62
+stack$ -- 0
+substring$ -- 40
+swap$ -- 11
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 26
+warning$ -- 3
+while$ -- 14
+width$ -- 9
+write$ -- 74
+(There were 2 error messages)

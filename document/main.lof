@@ -2,8 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {III.1}{\ignorespaces Grundaufbau einer Lithium-Ionen Zelle\relax }}{16}{figure.caption.4}%
-\contentsline {figure}{\numberline {III.2}{\ignorespaces Grundschaltung eines Batteriemanagementsystems\relax }}{19}{figure.caption.5}%
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Grundaufbau einer Lithium-Ionen Zelle [\cite {GrundaufbauLiionenZelle}]\relax }}{16}{figure.caption.4}%
+\contentsline {figure}{\numberline {III.2}{\ignorespaces Grundschaltung eines Batteriemanagementsystems[\cite {GrundschaltungBMS}]\relax }}{19}{figure.caption.5}%
 \contentsline {figure}{\numberline {III.3}{\ignorespaces Grundaufbau des allgemeinen Regelkreises\relax }}{23}{figure.caption.6}%
 \contentsline {figure}{\numberline {III.4}{\ignorespaces Zusammensetzung des PID-Reglers\relax }}{25}{figure.caption.7}%
 \contentsline {figure}{\numberline {III.5}{\ignorespaces Vergleich der verschiedenen Reglertypen\relax }}{25}{figure.caption.8}%
@@ -38,81 +38,82 @@
 \contentsline {figure}{\numberline {IV.28}{\ignorespaces Explosionsansicht des gesamten Getriebes\relax }}{45}{figure.caption.52}%
 \contentsline {figure}{\numberline {IV.29}{\ignorespaces Detailansicht Getriebe\relax }}{45}{figure.caption.53}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {V.1}{\ignorespaces Eigenschaften und Kennwerte einer Lithium Ionen Zelle\relax }}{48}{figure.caption.54}%
+\contentsline {figure}{\numberline {V.1}{\ignorespaces Eigenschaften und Kennwerte einer Lithium Ionen Zelle[\cite {ZellenEigenschaften}]\relax }}{48}{figure.caption.54}%
 \contentsline {figure}{\numberline {V.2}{\ignorespaces Explosionsdarstellung einer Doppelzelle\relax }}{49}{figure.caption.55}%
-\contentsline {figure}{\numberline {V.3}{\ignorespaces 1. Akkubox\relax }}{49}{figure.caption.56}%
+\contentsline {figure}{\numberline {V.3}{\ignorespaces 1. Akkubox\relax }}{50}{figure.caption.56}%
 \contentsline {figure}{\numberline {V.4}{\ignorespaces 2. Akkubox\relax }}{50}{figure.caption.57}%
 \contentsline {figure}{\numberline {V.5}{\ignorespaces 3. Akkubox\relax }}{51}{figure.caption.58}%
-\contentsline {figure}{\numberline {V.6}{\ignorespaces Serienschaltung beliebig vieler Zellen\relax }}{52}{figure.caption.59}%
-\contentsline {figure}{\numberline {V.7}{\ignorespaces Parallelschaltung beliebig vieler Zellen\relax }}{53}{figure.caption.60}%
+\contentsline {figure}{\numberline {V.6}{\ignorespaces Serienschaltung beliebig vieler Zellen[\cite {ReihenschaltungZellen}]\relax }}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {V.7}{\ignorespaces Parallelschaltung beliebig vieler Zellen[\cite {ParallelschaltungZellen}]\relax }}{53}{figure.caption.60}%
 \contentsline {figure}{\numberline {V.8}{\ignorespaces Verschaltung der einzelnen Zellen innerhalb der Akkupacks\relax }}{54}{figure.caption.61}%
 \contentsline {figure}{\numberline {V.9}{\ignorespaces Verschaltung der Akkupacks\relax }}{55}{figure.caption.62}%
-\contentsline {figure}{\numberline {V.10}{\ignorespaces Mini Batteriemanagementsystem der Firma EMUS\relax }}{57}{figure.caption.63}%
-\contentsline {figure}{\numberline {V.11}{\ignorespaces Vergleich zwischen Aktiven- und Passiven-Battery Balancing\relax }}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {V.12}{\ignorespaces Funktionsweise des Passiven Battery-Balancing\relax }}{61}{figure.caption.65}%
-\contentsline {figure}{\numberline {V.13}{\ignorespaces Funktionsweise des Aktiven Battery-Balancing\relax }}{62}{figure.caption.66}%
+\contentsline {figure}{\numberline {V.10}{\ignorespaces Mini Batteriemanagementsystem der Firma EMUS[\cite {EmusBmsMini}]\relax }}{57}{figure.caption.63}%
+\contentsline {figure}{\numberline {V.11}{\ignorespaces Vergleich zwischen Aktiven- und Passiven-Battery Balancing[\cite {VergleichBalancing}]\relax }}{60}{figure.caption.64}%
+\contentsline {figure}{\numberline {V.12}{\ignorespaces Funktionsweise des Passiven Battery-Balancing[\cite {FunktionsweisePassivBalancing}]\relax }}{61}{figure.caption.65}%
+\contentsline {figure}{\numberline {V.13}{\ignorespaces Funktionsweise des Aktiven Battery-Balancing[\cite {FunktionsweiseAktivBalancing}]\relax }}{62}{figure.caption.66}%
 \contentsline {figure}{\numberline {V.14}{\ignorespaces Anschlussplan der Akkupacks an das BMS\relax }}{64}{figure.caption.67}%
-\contentsline {figure}{\numberline {V.15}{\ignorespaces Anschlussplan der Temperatursensoren\relax }}{65}{figure.caption.68}%
-\contentsline {figure}{\numberline {V.16}{\ignorespaces Anschlussplan der Last an das BMS\relax }}{66}{figure.caption.69}%
+\contentsline {figure}{\numberline {V.15}{\ignorespaces Anschlussplan der Temperatursensoren[\cite {AnschlussplanTemp}]\relax }}{65}{figure.caption.68}%
+\contentsline {figure}{\numberline {V.16}{\ignorespaces Anschlussplan der Last an das BMS[\cite {AnschlussplanLast}]\relax }}{66}{figure.caption.69}%
 \contentsline {figure}{\numberline {V.17}{\ignorespaces Topologie eines High Speed CAN-Netzwerks\relax }}{67}{figure.caption.70}%
 \contentsline {figure}{\numberline {V.18}{\ignorespaces Steckerbelegung des CAN-Buses an dem BMS\relax }}{67}{figure.caption.71}%
-\contentsline {figure}{\numberline {V.19}{\ignorespaces Hauptansicht der EMUS EVGUI App\relax }}{68}{figure.caption.72}%
-\contentsline {figure}{\numberline {V.20}{\ignorespaces Detallierte Ansicht der EMUS EVGUI App\relax }}{69}{figure.caption.73}%
-\contentsline {figure}{\numberline {V.21}{\ignorespaces Menü der EMUS EVGUI App\relax }}{70}{figure.caption.74}%
-\contentsline {figure}{\numberline {V.22}{\ignorespaces Battery Status Anzeige der EMUS EVGUI App\relax }}{71}{figure.caption.75}%
-\contentsline {figure}{\numberline {V.23}{\ignorespaces BMS Status Anzeige der EMUS EVGUI App (Seite 1)\relax }}{72}{figure.caption.76}%
+\contentsline {figure}{\numberline {V.19}{\ignorespaces Hauptansicht der EMUS EVGUI App[\cite {HauptansichtApp}]\relax }}{68}{figure.caption.72}%
+\contentsline {figure}{\numberline {V.20}{\ignorespaces Detallierte Ansicht der EMUS EVGUI App[\cite {DetaillierteApp}]\relax }}{69}{figure.caption.73}%
+\contentsline {figure}{\numberline {V.21}{\ignorespaces Menü der EMUS EVGUI App[\cite {MenüApp}\relax }}{70}{figure.caption.74}%
+\contentsline {figure}{\numberline {V.22}{\ignorespaces Battery Status Anzeige der EMUS EVGUI App[\cite {BatteryStatusApp}]\relax }}{71}{figure.caption.75}%
+\contentsline {figure}{\numberline {V.23}{\ignorespaces BMS Status Anzeige der EMUS EVGUI App (Seite 1)[\cite {}]\relax }}{72}{figure.caption.76}%
 \contentsline {figure}{\numberline {V.24}{\ignorespaces BMS Status Anzeige der EMUS EVGUI App (Seite 2)\relax }}{73}{figure.caption.77}%
+\contentsline {figure}{\numberline {V.25}{\ignorespaces Verschaltung des Ladegeräts über das BMS\relax }}{75}{figure.caption.78}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{78}{figure.caption.78}%
-\contentsline {figure}{\numberline {VI.2}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{84}{figure.caption.79}%
-\contentsline {figure}{\numberline {VI.3}{\ignorespaces Digital Input Specifications\relax }}{85}{figure.caption.80}%
-\contentsline {figure}{\numberline {VI.4}{\ignorespaces Analog Input Specifications\relax }}{85}{figure.caption.81}%
-\contentsline {figure}{\numberline {VI.5}{\ignorespaces Throttle Input Specifications\relax }}{86}{figure.caption.82}%
-\contentsline {figure}{\numberline {VI.6}{\ignorespaces Sin/Cos Sensor Input Specifications\relax }}{86}{figure.caption.83}%
-\contentsline {figure}{\numberline {VI.7}{\ignorespaces KSI and Coil Return Input Specifications\relax }}{87}{figure.caption.84}%
-\contentsline {figure}{\numberline {VI.8}{\ignorespaces Analog Output Specifications\relax }}{87}{figure.caption.85}%
-\contentsline {figure}{\numberline {VI.9}{\ignorespaces Digital and PWM Output Specifications\relax }}{88}{figure.caption.86}%
-\contentsline {figure}{\numberline {VI.10}{\ignorespaces Power Supply Output Specifications\relax }}{88}{figure.caption.87}%
-\contentsline {figure}{\numberline {VI.11}{\ignorespaces Communications Port Specifications\relax }}{89}{figure.caption.88}%
-\contentsline {figure}{\numberline {VI.12}{\ignorespaces ECO/Sport-Select Programmierung\relax }}{98}{figure.caption.93}%
-\contentsline {figure}{\numberline {VI.13}{\ignorespaces Leonardumformer Versuchsaufbau\relax }}{99}{figure.caption.94}%
-\contentsline {figure}{\numberline {VI.14}{\ignorespaces Leonardumformer Spannungsüberhöhung\relax }}{100}{figure.caption.95}%
-\contentsline {figure}{\numberline {VI.15}{\ignorespaces Bleiakku\relax }}{101}{figure.caption.96}%
+\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{79}{figure.caption.79}%
+\contentsline {figure}{\numberline {VI.2}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{85}{figure.caption.80}%
+\contentsline {figure}{\numberline {VI.3}{\ignorespaces Digital Input Specifications\relax }}{86}{figure.caption.81}%
+\contentsline {figure}{\numberline {VI.4}{\ignorespaces Analog Input Specifications\relax }}{86}{figure.caption.82}%
+\contentsline {figure}{\numberline {VI.5}{\ignorespaces Throttle Input Specifications\relax }}{87}{figure.caption.83}%
+\contentsline {figure}{\numberline {VI.6}{\ignorespaces Sin/Cos Sensor Input Specifications\relax }}{87}{figure.caption.84}%
+\contentsline {figure}{\numberline {VI.7}{\ignorespaces KSI and Coil Return Input Specifications\relax }}{88}{figure.caption.85}%
+\contentsline {figure}{\numberline {VI.8}{\ignorespaces Analog Output Specifications\relax }}{88}{figure.caption.86}%
+\contentsline {figure}{\numberline {VI.9}{\ignorespaces Digital and PWM Output Specifications\relax }}{89}{figure.caption.87}%
+\contentsline {figure}{\numberline {VI.10}{\ignorespaces Power Supply Output Specifications\relax }}{89}{figure.caption.88}%
+\contentsline {figure}{\numberline {VI.11}{\ignorespaces Communications Port Specifications\relax }}{90}{figure.caption.89}%
+\contentsline {figure}{\numberline {VI.12}{\ignorespaces ECO/Sport-Select Programmierung\relax }}{99}{figure.caption.94}%
+\contentsline {figure}{\numberline {VI.13}{\ignorespaces Leonardumformer Versuchsaufbau\relax }}{100}{figure.caption.95}%
+\contentsline {figure}{\numberline {VI.14}{\ignorespaces Leonardumformer Spannungsüberhöhung\relax }}{101}{figure.caption.96}%
+\contentsline {figure}{\numberline {VI.15}{\ignorespaces Bleiakku\relax }}{102}{figure.caption.97}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {VII.1}{\ignorespaces Raspberry Pi - Steuereinheit des HCIS\relax }}{103}{figure.caption.97}%
-\contentsline {figure}{\numberline {VII.2}{\ignorespaces Grundaufbau des Human-Computer Interaction Systems\relax }}{103}{figure.caption.98}%
-\contentsline {figure}{\numberline {VII.3}{\ignorespaces Anschlussplan Eingänge\relax }}{105}{figure.caption.100}%
-\contentsline {figure}{\numberline {VII.4}{\ignorespaces Anschlussplan Relais\relax }}{106}{figure.caption.101}%
-\contentsline {figure}{\numberline {VII.5}{\ignorespaces Paneel Maße\relax }}{107}{figure.caption.102}%
-\contentsline {figure}{\numberline {VII.6}{\ignorespaces Befestigung des Displays\relax }}{108}{figure.caption.103}%
-\contentsline {figure}{\numberline {VII.7}{\ignorespaces Aufbau der Graphischen Benutzeroberfläche\relax }}{108}{figure.caption.104}%
-\contentsline {figure}{\numberline {VII.8}{\ignorespaces GUI Komponente - Navigation Menü\relax }}{109}{figure.caption.105}%
-\contentsline {figure}{\numberline {VII.9}{\ignorespaces GUI Komponente - Balken Anzeige\relax }}{110}{figure.caption.106}%
-\contentsline {figure}{\numberline {VII.10}{\ignorespaces GUI Komponente - Modus Anzeige\relax }}{110}{figure.caption.107}%
-\contentsline {figure}{\numberline {VII.11}{\ignorespaces GUI Komponente - Graph\relax }}{111}{figure.caption.108}%
-\contentsline {figure}{\numberline {VII.12}{\ignorespaces GUI Fenster - Login Menü\relax }}{112}{figure.caption.109}%
-\contentsline {figure}{\numberline {VII.13}{\ignorespaces GUI Fenster - Fahrdaten\relax }}{112}{figure.caption.110}%
-\contentsline {figure}{\numberline {VII.14}{\ignorespaces GUI Fenster - Akkudaten\relax }}{113}{figure.caption.111}%
-\contentsline {figure}{\numberline {VII.15}{\ignorespaces GUI Fenster - Fahrdaten Diagnose\relax }}{113}{figure.caption.112}%
-\contentsline {figure}{\numberline {VII.16}{\ignorespaces GUI Fenster - Fehler Liste\relax }}{114}{figure.caption.113}%
-\contentsline {figure}{\numberline {VII.17}{\ignorespaces Slots und Signals Konzept\relax }}{115}{figure.caption.114}%
-\contentsline {figure}{\numberline {VII.18}{\ignorespaces Verbindung Frontend zu Backend\relax }}{116}{figure.caption.115}%
-\contentsline {figure}{\numberline {VII.19}{\ignorespaces Anschlussplan CAN-Modul\relax }}{117}{figure.caption.116}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {VII.1}{\ignorespaces Raspberry Pi - Steuereinheit des HCIS\relax }}{104}{figure.caption.98}%
+\contentsline {figure}{\numberline {VII.2}{\ignorespaces Grundaufbau des Human-Computer Interaction Systems\relax }}{104}{figure.caption.99}%
+\contentsline {figure}{\numberline {VII.3}{\ignorespaces Anschlussplan Eingänge\relax }}{106}{figure.caption.101}%
+\contentsline {figure}{\numberline {VII.4}{\ignorespaces Anschlussplan Relais\relax }}{107}{figure.caption.102}%
+\contentsline {figure}{\numberline {VII.5}{\ignorespaces Paneel Maße\relax }}{108}{figure.caption.103}%
+\contentsline {figure}{\numberline {VII.6}{\ignorespaces Befestigung des Displays\relax }}{109}{figure.caption.104}%
+\contentsline {figure}{\numberline {VII.7}{\ignorespaces Aufbau der Graphischen Benutzeroberfläche\relax }}{109}{figure.caption.105}%
+\contentsline {figure}{\numberline {VII.8}{\ignorespaces GUI Komponente - Navigation Menü\relax }}{110}{figure.caption.106}%
+\contentsline {figure}{\numberline {VII.9}{\ignorespaces GUI Komponente - Balken Anzeige\relax }}{111}{figure.caption.107}%
+\contentsline {figure}{\numberline {VII.10}{\ignorespaces GUI Komponente - Modus Anzeige\relax }}{111}{figure.caption.108}%
+\contentsline {figure}{\numberline {VII.11}{\ignorespaces GUI Komponente - Graph\relax }}{112}{figure.caption.109}%
+\contentsline {figure}{\numberline {VII.12}{\ignorespaces GUI Fenster - Login Menü\relax }}{113}{figure.caption.110}%
+\contentsline {figure}{\numberline {VII.13}{\ignorespaces GUI Fenster - Fahrdaten\relax }}{113}{figure.caption.111}%
+\contentsline {figure}{\numberline {VII.14}{\ignorespaces GUI Fenster - Akkudaten\relax }}{114}{figure.caption.112}%
+\contentsline {figure}{\numberline {VII.15}{\ignorespaces GUI Fenster - Fahrdaten Diagnose\relax }}{114}{figure.caption.113}%
+\contentsline {figure}{\numberline {VII.16}{\ignorespaces GUI Fenster - Fehler Liste\relax }}{115}{figure.caption.114}%
+\contentsline {figure}{\numberline {VII.17}{\ignorespaces Slots und Signals Konzept\relax }}{116}{figure.caption.115}%
+\contentsline {figure}{\numberline {VII.18}{\ignorespaces Verbindung Frontend zu Backend\relax }}{117}{figure.caption.116}%
+\contentsline {figure}{\numberline {VII.19}{\ignorespaces Anschlussplan CAN-Modul\relax }}{118}{figure.caption.117}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Wellenersatz\relax }}{127}{figure.caption.122}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Seitenplatte Rechts\relax }}{128}{figure.caption.123}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Seitenplatte Links\relax }}{129}{figure.caption.124}%
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Abstandhalter\relax }}{130}{figure.caption.125}%
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Aufbau/Zusatzplatte\relax }}{131}{figure.caption.126}%
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Achse 1/Antriebsachsen\relax }}{132}{figure.caption.127}%
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Achse 3\relax }}{133}{figure.caption.128}%
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Achse 2\relax }}{134}{figure.caption.129}%
-\contentsline {figure}{\numberline {C.9}{\ignorespaces Akkubox Motorblock\relax }}{135}{figure.caption.130}%
-\contentsline {figure}{\numberline {C.10}{\ignorespaces Akkubox Vorderseite\relax }}{136}{figure.caption.131}%
-\contentsline {figure}{\numberline {C.11}{\ignorespaces Akkubox Mitte\relax }}{137}{figure.caption.132}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Wellenersatz\relax }}{128}{figure.caption.123}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Seitenplatte Rechts\relax }}{129}{figure.caption.124}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Seitenplatte Links\relax }}{130}{figure.caption.125}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Abstandhalter\relax }}{131}{figure.caption.126}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Aufbau/Zusatzplatte\relax }}{132}{figure.caption.127}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Achse 1/Antriebsachsen\relax }}{133}{figure.caption.128}%
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Achse 3\relax }}{134}{figure.caption.129}%
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Achse 2\relax }}{135}{figure.caption.130}%
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Akkubox Motorblock\relax }}{136}{figure.caption.131}%
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Akkubox Vorderseite\relax }}{137}{figure.caption.132}%
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Akkubox Mitte\relax }}{138}{figure.caption.133}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
