@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{PID-Regler}
+Allgemeines zu pid reglern.
+
+\bibitem{Synchronmaschine}
+Synchronmaschine.
+
+\bibitem{Kuehlung2}
+Karlheinz Blankenbach.
+\newblock {\em Wärmelehre}.
+\newblock Hochschule Pforzheim, Pforzheim, 2014.
+
+\bibitem{Manual}
+Inc. Curtis~Instruments.
+\newblock {\em Manual}.
+\newblock Curtis Instruments, Inc., Mt. Kisco, NY 10549, 2017.
+
+\bibitem{Fischer}
+Rolf Fischer.
+\newblock {\em Elektrische Maschinen}.
+\newblock Carl Hanser Verlag München, 089 München, 17., aktualisierte auflage
+  edition, 2017.
+
+\bibitem{AUT5}
+DI(FH)~Roland Holzer.
+\newblock {\em Automatisierungstechnik 5}.
+\newblock 5020 Salzburg, 2020.
+
+\bibitem{Luftkuehlung1}
+{\em Die Meisterprüfung im Kfz-Handwerk}, volume~3.
+\newblock Vogel Buchverlag, Würzburg, 12. auflage edition, 1991.
+
+\bibitem{Wasserkuehlung}
+Hans~J Leyhausen.
+
+\bibitem{Feldorientierte-Antriebssteuerung}
+Frank Malik.
+\newblock Foc-antriebssteuerung in mikrocontrollern meistern, 2018.
+
+\bibitem{AktiveKuehlung}
+Frima Merath.
+\newblock Elektronikkühlung – teil 2: Entwärmung mit aktiver kühlung,
+  2020.
+
+\bibitem{Dissertation}
+Hector~D. Perassi.
+\newblock {\em Feldorientierte Regelung der permanenterregten Synchronmaschine
+  ohne Lagegeber fur den gesamten ¨ Drehzahlbereich bis zum Stillstand}.
+\newblock 2006.
+
+\bibitem{Kuehlung1}
+Frank Pobell.
+\newblock Möglichst nahe am absoluten nullpunkt, 2008.
+
+\bibitem{Feldorientierte-Regelung}
+Jack Shandle.
+\newblock Feldorientierte regelung kleiner gleichstrommotoren verhilft drohnen
+  zum aufstieg, 2015.
+
+\bibitem{Luftkuehlung2}
+Jan Trommelmans.
+\newblock {\em Das Auto und seine Technik}.
+\newblock Number Teil 1. Motorbuchverlag, Stuttgard, 1. auflage edition, 1992.
+
+\bibitem{Regelungstechnik}
+Waste.
+\newblock Regelungstechnik, 2014.
+
+\end{thebibliography}
