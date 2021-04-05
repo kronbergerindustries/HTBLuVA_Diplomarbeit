@@ -31,21 +31,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {III.10}{\ignorespaces Grundschaltung eines Batteriemanagementsystems[\cite {GrundschaltungBMS}]\relax }}{25}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.11}{\ignorespaces Läufer einer dauermagneterregten Synchronmaschine\cite {Fischer}\relax }}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {III.11}{\ignorespaces Läufer einer dauermagneterregten Synchronmaschine \cite {Fischer}\relax }}{28}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.12}{\ignorespaces Ausgabe eines Sinus/Cosinus-Sensors\cite {Manual}\relax }}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {III.12}{\ignorespaces Ausgabe eines Sinus/Cosinus-Sensors \cite {Manual}\relax }}{29}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.13}{\ignorespaces Übersicht der häufigsten Bauformen eines Curtis Controllers\cite {Manual}\relax }}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {III.13}{\ignorespaces Übersicht der häufigsten Bauformen eines Curtis Controllers \cite {Manual}\relax }}{30}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.14}{\ignorespaces Kommutierung mittels Trapezsteuerung\cite {Feldorientierte-Antriebssteuerung}\relax }}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {III.14}{\ignorespaces Kommutierung mittels Trapezsteuerung \cite {Feldorientierte-Antriebssteuerung}\relax }}{31}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.15}{\ignorespaces Kommutierung mittels Vektorregelung\cite {Feldorientierte-Antriebssteuerung}\relax }}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {III.15}{\ignorespaces Kommutierung mittels Vektorregelung \cite {Feldorientierte-Antriebssteuerung}\relax }}{31}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.16}{\ignorespaces Das Blockschaltbild eines allgemeinen Regelkreises\cite {AUT5}\relax }}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {III.16}{\ignorespaces Das Blockschaltbild eines allgemeinen Regelkreises \cite {AUT5}\relax }}{33}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.17}{\ignorespaces Zusammensetzung des PID-Reglers\cite {Regelungstechnik}\relax }}{35}{figure.caption.21}%
+\contentsline {figure}{\numberline {III.17}{\ignorespaces Zusammensetzung des PID-Reglers \cite {Regelungstechnik}\relax }}{35}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {III.18}{\ignorespaces Vergleich der verschiedenen Reglertypen\cite {PID-Regler}\relax }}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {III.18}{\ignorespaces Vergleich der verschiedenen Reglertypen \cite {PID-Regler}\relax }}{35}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {III.19}{\ignorespaces Aufbau einer CAN-Bus Leitung\relax }}{36}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
@@ -165,29 +165,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{89}{figure.caption.95}%
+\contentsline {figure}{\numberline {VI.1}{\ignorespaces Grundaufbau des Laststromkreises [\ref {Grundaufbau_Laststromkreis}]\relax }}{89}{figure.caption.95}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {VI.2}{\ignorespaces Ashwoods-Motor Kennlinie\relax }}{93}{figure.caption.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.3}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{95}{figure.caption.97}%
+\contentsline {figure}{\numberline {VI.3}{\ignorespaces Grundaufbau des Steuerstromkreises [\ref {Grundaufbau_Steuerstromkreis}]\relax }}{95}{figure.caption.97}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.4}{\ignorespaces Digital Input Specifications\cite {Manual}\relax }}{96}{figure.caption.98}%
+\contentsline {figure}{\numberline {VI.4}{\ignorespaces Digital Input Specifications [\cite {Manual}]\relax }}{96}{figure.caption.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.5}{\ignorespaces Analog Input Specifications\cite {Manual}\relax }}{96}{figure.caption.99}%
+\contentsline {figure}{\numberline {VI.5}{\ignorespaces Analog Input Specifications [\cite {Manual}]\relax }}{96}{figure.caption.99}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.6}{\ignorespaces Throttle Input Specifications\cite {Manual}\relax }}{97}{figure.caption.100}%
+\contentsline {figure}{\numberline {VI.6}{\ignorespaces Throttle Input Specifications [\cite {Manual}]\relax }}{97}{figure.caption.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.7}{\ignorespaces Sin/Cos Sensor Input Specifications\cite {Manual}\relax }}{97}{figure.caption.101}%
+\contentsline {figure}{\numberline {VI.7}{\ignorespaces Sin/Cos Sensor Input Specifications [\cite {Manual}]\relax }}{97}{figure.caption.101}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.8}{\ignorespaces KSI and Coil Return Input Specifications\cite {Manual}\relax }}{98}{figure.caption.102}%
+\contentsline {figure}{\numberline {VI.8}{\ignorespaces KSI and Coil Return Input Specifications [\cite {Manual}]\relax }}{98}{figure.caption.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.9}{\ignorespaces Analog Output Specifications\cite {Manual}\relax }}{98}{figure.caption.103}%
+\contentsline {figure}{\numberline {VI.9}{\ignorespaces Analog Output Specifications [\cite {Manual}]\relax }}{98}{figure.caption.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.10}{\ignorespaces Digital and PWM Output Specifications\cite {Manual}\relax }}{99}{figure.caption.104}%
+\contentsline {figure}{\numberline {VI.10}{\ignorespaces Digital and PWM Output Specifications [\cite {Manual}]\relax }}{99}{figure.caption.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.11}{\ignorespaces Power Supply Output Specifications\cite {Manual}\relax }}{99}{figure.caption.105}%
+\contentsline {figure}{\numberline {VI.11}{\ignorespaces Power Supply Output Specifications [\cite {Manual}]\relax }}{99}{figure.caption.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VI.12}{\ignorespaces Communications Port Specifications\cite {Manual}\relax }}{100}{figure.caption.106}%
+\contentsline {figure}{\numberline {VI.12}{\ignorespaces Communications Port Specifications [\cite {Manual}]\relax }}{100}{figure.caption.106}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {VI.13}{\ignorespaces ECO/Sport-Select Programmierung\cite {VCL_Programmcode}\relax }}{109}{figure.caption.111}%
 \defcounter {refsection}{0}\relax 
@@ -284,5 +284,9 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Grundaufbau des Laststromkreises\relax }}{172}{figure.caption.159}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Grundaufbau des Steuerstromkreises\relax }}{173}{figure.caption.160}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
