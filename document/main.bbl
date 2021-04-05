@@ -1,7 +1,7 @@
 \begin{thebibliography}{1}
 
 \bibitem{Kuehlung2}
-Blankenbach.
+Karlheinz Blankenbach.
 \newblock {\em Wärmelehre}.
 \newblock Hochschule Pforzheim, Pforzheim, 2014.
 
@@ -9,8 +9,16 @@ Blankenbach.
 {\em Die Meisterprüfung im Kfz-Handwerk}, volume~3.
 \newblock Vogel Buchverlag, Würzburg, 12. auflage edition, 1991.
 
+\bibitem{Wasserkuehlung}
+Hans~J Leyhausen.
+
+\bibitem{PassiveKuehlung}
+Firma Merath.
+\newblock Kühlung von elektronik – teil 1: Wärmemanagement mit passiver
+  kühlung, 2020.
+
 \bibitem{AktiveKuehlung}
-Merath.
+Frima Merath.
 \newblock Elektronikkühlung – teil 2: Entwärmung mit aktiver kühlung,
   2020.
 
@@ -18,13 +26,14 @@ Merath.
 Frank Pobell.
 \newblock Möglichst nahe am absoluten nullpunkt, 2008.
 
+\bibitem{IPSchutzarten}
+Ing. Sigurd Seyr Ing. Günther Rösch Ing.~Hansjörg Praxmarer.
+\newblock {\em Elektroinstallation - Blitzschutz - Lichttechnik}.
+\newblock Jugend und Volk Westermann, Wien, 1004. auflage edition, 2016.
+
 \bibitem{Luftkuehlung2}
 Jan Trommelmans.
 \newblock {\em Das Auto und seine Technik}.
 \newblock Number Teil 1. Motorbuchverlag, Stuttgard, 1. auflage edition, 1992.
-
-\bibitem{Wasserkuehlung}
-Johannes Wiesinger.
-\newblock Die flüssigkeitskühlung, 2019.
 
 \end{thebibliography}

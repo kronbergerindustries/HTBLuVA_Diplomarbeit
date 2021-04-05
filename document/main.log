@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.17)  3 APR 2021 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.17)  5 APR 2021 11:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -1060,26 +1060,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 (C:\Users\Tobias.Schmeisser\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lm
 r.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (main.aux
-
-LaTeX Warning: Label `Kuehlung2' multiply defined.
-
-
-LaTeX Warning: Label `Luftkuehlung1' multiply defined.
-
-
-LaTeX Warning: Label `AktiveKuehlung' multiply defined.
-
-
-LaTeX Warning: Label `Kuehlung1' multiply defined.
-
-
-LaTeX Warning: Label `Luftkuehlung2' multiply defined.
-
-
-LaTeX Warning: Label `Wasserkuehlung' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -1263,7 +1244,7 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 n\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=817, 700.86844pt x 225.09094pt
+<figures/allgemein/HTBLuVA_Salzburg_Logo.png, id=825, 700.86844pt x 225.09094pt
 >
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -1342,7 +1323,7 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 103.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [13]
-Overfull \hbox (2.7354pt too wide) detected at line 130
+Overfull \hbox (2.7354pt too wide) detected at line 132
 \T1/lmr/bx/n/10 VII 
  []
 
@@ -1352,7 +1333,7 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 159.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [14]
-Overfull \hbox (7.41582pt too wide) detected at line 189
+Overfull \hbox (7.41582pt too wide) detected at line 191
 \T1/lmr/bx/n/10 VIII 
  []
 
@@ -1373,25 +1354,25 @@ been already used, duplicate ignored
 l.1  \chapter
              {Einführung} [1]
 Kapitel I.
-<figures/allgemein/portrait_Kronberger.jpg, id=1103, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Kronberger.jpg, id=1113, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Kronberger.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kronberger.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kronberger.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 115.23404pt x 172.72142pt.
-<figures/allgemein/portrait_Lackner.jpg, id=1104, 334.97145pt x 502.2765pt>
+<figures/allgemein/portrait_Lackner.jpg, id=1114, 334.97145pt x 502.2765pt>
 File: figures/allgemein/portrait_Lackner.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Lackner.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Lackner.jpg  used on input 
 line 14.
 (pdftex.def)             Requested size: 115.23404pt x 172.78741pt.
-<figures/allgemein/portrait_Kern.jpg, id=1105, 334.851pt x 501.91515pt>
+<figures/allgemein/portrait_Kern.jpg, id=1115, 334.851pt x 501.91515pt>
 File: figures/allgemein/portrait_Kern.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Kern.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Kern.jpg  used on input lin
 e 22.
 (pdftex.def)             Requested size: 115.23404pt x 172.72437pt.
-<figures/allgemein/portrait_Schmeisser.jpg, id=1106, 333.49594pt x 499.8675pt>
+<figures/allgemein/portrait_Schmeisser.jpg, id=1116, 333.49594pt x 499.8675pt>
 File: figures/allgemein/portrait_Schmeisser.jpg Graphic file (type jpg)
 <use figures/allgemein/portrait_Schmeisser.jpg>
 Package pdftex.def Info: figures/allgemein/portrait_Schmeisser.jpg  used on inp
@@ -1440,7 +1421,7 @@ nput line 17.
 [5
 
 ]
-<figures/mechanik/Ducati1.jpg, id=1124, 485.6544pt x 341.1144pt>
+<figures/mechanik/Ducati1.jpg, id=1134, 485.6544pt x 341.1144pt>
 File: figures/mechanik/Ducati1.jpg Graphic file (type jpg)
 <use figures/mechanik/Ducati1.jpg>
 Package pdftex.def Info: figures/mechanik/Ducati1.jpg  used on input line 23.
@@ -1450,7 +1431,7 @@ Overfull \hbox (10.29358pt too wide) in paragraph at lines 23--24
  [] 
  []
 
-<figures/mechanik/Ducati2.jpg, id=1125, 419.8887pt x 359.9046pt>
+<figures/mechanik/Ducati2.jpg, id=1135, 419.8887pt x 359.9046pt>
 File: figures/mechanik/Ducati2.jpg Graphic file (type jpg)
 <use figures/mechanik/Ducati2.jpg>
 Package pdftex.def Info: figures/mechanik/Ducati2.jpg  used on input line 32.
@@ -1478,10 +1459,12 @@ nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [8]
 Kapitel III.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 20.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 28.
+nput line 23.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [9
 
@@ -1489,161 +1472,250 @@ nput line 28.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 58.
+nput line 59.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [10]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 85.
+nput line 81.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [11]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 118.
+nput line 96.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [12]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 142.
+nput line 124.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [13]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 145.
+nput line 179.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [14]
+Overfull \hbox (48.0029pt too wide) in paragraph at lines 197--204
+[][] 
+ []
+
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 156.
+nput line 208.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [15]
+[15]
+<figures/mechanik/Untitled.jpg, id=1230, 134.00063pt x 112.92188pt>
+File: figures/mechanik/Untitled.jpg Graphic file (type jpg)
+<use figures/mechanik/Untitled.jpg>
+Package pdftex.def Info: figures/mechanik/Untitled.jpg  used on input line 215.
+
+(pdftex.def)             Requested size: 67.00014pt x 56.46078pt.
+<figures/mechanik/Solid Edge_Volumenkörper.jpg, id=1231, 349.305pt x 51.94406p
+t>
+File: figures/mechanik/Solid Edge_Volumenkörper.jpg Graphic file (type jpg)
+<use figures/mechanik/Solid Edge_Volumenkörper.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Volumenkörper.jpg  used o
+n input line 234.
+(pdftex.def)             Requested size: 139.71951pt x 20.77725pt.
+<figures/mechanik/Solid Edge_BemaßenZeichn.jpg, id=1232, 152.82094pt x 62.4834
+4pt>
+File: figures/mechanik/Solid Edge_BemaßenZeichn.jpg Graphic file (type jpg)
+<use figures/mechanik/Solid Edge_BemaßenZeichn.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_BemaßenZeichn.jpg  used o
+n input line 246.
+(pdftex.def)             Requested size: 61.12727pt x 24.99292pt.
+<figures/mechanik/Solid Edge_Strukturelle Lasten.jpg, id=1233, 92.59593pt x 60.
+97781pt>
+File: figures/mechanik/Solid Edge_Strukturelle Lasten.jpg Graphic file (type jp
+g)
+<use figures/mechanik/Solid Edge_Strukturelle Lasten.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Strukturelle Lasten.jpg  u
+sed on input line 260.
+(pdftex.def)             Requested size: 37.0377pt x 24.39069pt.
+<figures/mechanik/Solid Edge_Vernetzung.jpg, id=1234, 115.18031pt x 60.225pt>
+File: figures/mechanik/Solid Edge_Vernetzung.jpg Graphic file (type jpg)
+<use figures/mechanik/Solid Edge_Vernetzung.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Vernetzung.jpg  used on in
+put line 272.
+(pdftex.def)             Requested size: 46.07129pt x 24.08955pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 159.
+nput line 281.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [16]
+ [16 <./figures/mechanik/Untitled.jpg> <./figures/mechanik/Solid Edge_Volumenk�
+�rper.jpg> <./figures/mechanik/Solid Edge_BemaßenZeichn.jpg> <./figures/mechan
+ik/Solid Edge_Strukturelle Lasten.jpg> <./figures/mechanik/Solid Edge_Vernetzun
+g.jpg>]
+<figures/mechanik/Solid Edge_Animation.jpg, id=1244, 45.16875pt x 60.225pt>
+File: figures/mechanik/Solid Edge_Animation.jpg Graphic file (type jpg)
+<use figures/mechanik/Solid Edge_Animation.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Animation.jpg  used on inp
+ut line 285.
+(pdftex.def)             Requested size: 18.06717pt x 24.08955pt.
+<figures/mechanik/Solid Edge_Zeichnungsansichten.jpg, id=1245, 307.1475pt x 63.
+98906pt>
+File: figures/mechanik/Solid Edge_Zeichnungsansichten.jpg Graphic file (type jp
+g)
+<use figures/mechanik/Solid Edge_Zeichnungsansichten.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Zeichnungsansichten.jpg  u
+sed on input line 297.
+(pdftex.def)             Requested size: 122.85681pt x 25.59515pt.
+<figures/mechanik/Solid Edge_Zusammenbau.jpg, id=1246, 292.84406pt x 60.97781pt
+>
+File: figures/mechanik/Solid Edge_Zusammenbau.jpg Graphic file (type jpg)
+<use figures/mechanik/Solid Edge_Zusammenbau.jpg>
+Package pdftex.def Info: figures/mechanik/Solid Edge_Zusammenbau.jpg  used on i
+nput line 308.
+(pdftex.def)             Requested size: 146.42166pt x 30.48882pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 168.
+nput line 313.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [17]
-<figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png, id=1195, 351.31
-25pt x 371.3875pt>
-File: figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png Graphic fil
-e (type png)
-<use figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png>
-Package pdftex.def Info: figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).
-svg.png  used on input line 196.
-(pdftex.def)             Requested size: 175.6558pt x 185.69328pt.
+ [17 <./figures/mechanik/Solid Edge_Animation.jpg> <./figures/mechanik/Solid Ed
+ge_Zeichnungsansichten.jpg> <./figures/mechanik/Solid Edge_Zusammenbau.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 200.
+nput line 317.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [18 <./figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png>]
+ [18]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 231.
+nput line 328.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [19]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 235.
+nput line 331.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [20]
-<figures/Akku/bms-1schaltunggrund.jpg, id=1210, 706.64pt x 352.31625pt>
-File: figures/Akku/bms-1schaltunggrund.jpg Graphic file (type jpg)
-<use figures/Akku/bms-1schaltunggrund.jpg>
-Package pdftex.def Info: figures/Akku/bms-1schaltunggrund.jpg  used on input li
-ne 244.
-(pdftex.def)             Requested size: 353.31914pt x 176.15768pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 266.
+nput line 340.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [21 <./figures/Akku/bms-1schaltunggrund.jpg>]
+ [21]
+<figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png, id=1271, 351.31
+25pt x 371.3875pt>
+File: figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png Graphic fil
+e (type png)
+<use figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png>
+Package pdftex.def Info: figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).
+svg.png  used on input line 368.
+(pdftex.def)             Requested size: 175.6558pt x 185.69328pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 295.
+nput line 372.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [22]
+ [22 <./figures/Akku/350px-Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 329.
+nput line 403.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [23]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 362.
+nput line 407.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [24]
-<figures/antrieb/Regelkreis_Grundaufbau.png, id=1229, 1251.92719pt x 383.18156p
+<figures/Akku/bms-1schaltunggrund.jpg, id=1286, 706.64pt x 352.31625pt>
+File: figures/Akku/bms-1schaltunggrund.jpg Graphic file (type jpg)
+<use figures/Akku/bms-1schaltunggrund.jpg>
+Package pdftex.def Info: figures/Akku/bms-1schaltunggrund.jpg  used on input li
+ne 416.
+(pdftex.def)             Requested size: 353.31914pt x 176.15768pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 438.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [25 <./figures/Akku/bms-1schaltunggrund.jpg>]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 467.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+
+[26]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 501.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [27]
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 534.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+ [28]
+<figures/antrieb/Regelkreis_Grundaufbau.png, id=1305, 1251.92719pt x 383.18156p
 t>
 File: figures/antrieb/Regelkreis_Grundaufbau.png Graphic file (type png)
 <use figures/antrieb/Regelkreis_Grundaufbau.png>
 Package pdftex.def Info: figures/antrieb/Regelkreis_Grundaufbau.png  used on in
-put line 393.
+put line 565.
 (pdftex.def)             Requested size: 426.79134pt x 130.63081pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 398.
+nput line 570.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [25 <./figures/antrieb/Regelkreis_Grundaufbau.png>]
+ [29 <./figures/antrieb/Regelkreis_Grundaufbau.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 421.
+nput line 593.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[26]
-<figures/antrieb/PID_Regler.png, id=1246, 670.00313pt x 477.28313pt>
+ [30]
+<figures/antrieb/PID_Regler.png, id=1322, 670.00313pt x 477.28313pt>
 File: figures/antrieb/PID_Regler.png Graphic file (type png)
 <use figures/antrieb/PID_Regler.png>
-Package pdftex.def Info: figures/antrieb/PID_Regler.png  used on input line 440
+Package pdftex.def Info: figures/antrieb/PID_Regler.png  used on input line 612
 .
 (pdftex.def)             Requested size: 100.49612pt x 71.58937pt.
-<figures/antrieb/Reglertypen.png, id=1247, 1157.07281pt x 580.41844pt>
+<figures/antrieb/Reglertypen.png, id=1323, 1157.07281pt x 580.41844pt>
 File: figures/antrieb/Reglertypen.png Graphic file (type png)
 <use figures/antrieb/Reglertypen.png>
-Package pdftex.def Info: figures/antrieb/Reglertypen.png  used on input line 44
-9.
+Package pdftex.def Info: figures/antrieb/Reglertypen.png  used on input line 62
+1.
 (pdftex.def)             Requested size: 347.12453pt x 174.12688pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 456.
+nput line 628.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [27 <./figures/antrieb/PID_Regler.png> <./figures/antrieb/Reglertypen.png>]) (
-content/ch_mechanik.tex
+
+[31 <./figures/antrieb/PID_Regler.png> <./figures/antrieb/Reglertypen.png>])
+(content/ch_mechanik.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [28]
+ [32]
 Kapitel IV.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 18.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[29
+[33
 
 ]
-<figures/mechanik/Seitenplatte_Rechts.jpg, id=1265, 470.4777pt x 356.2911pt>
+<figures/mechanik/Seitenplatte_Rechts.jpg, id=1341, 470.4777pt x 356.2911pt>
 File: figures/mechanik/Seitenplatte_Rechts.jpg Graphic file (type jpg)
 <use figures/mechanik/Seitenplatte_Rechts.jpg>
 Package pdftex.def Info: figures/mechanik/Seitenplatte_Rechts.jpg  used on inpu
@@ -1654,15 +1726,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 81.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [30]
-<figures/mechanik/Seitenplatte_Links_innen.jpg, id=1272, 453.8556pt x 304.9794p
+ [34]
+<figures/mechanik/Seitenplatte_Links_innen.jpg, id=1348, 453.8556pt x 304.9794p
 t>
 File: figures/mechanik/Seitenplatte_Links_innen.jpg Graphic file (type jpg)
 <use figures/mechanik/Seitenplatte_Links_innen.jpg>
 Package pdftex.def Info: figures/mechanik/Seitenplatte_Links_innen.jpg  used on
  input line 84.
 (pdftex.def)             Requested size: 226.92725pt x 152.48932pt.
-<figures/mechanik/Welle_Rechts.jpg, id=1273, 445.1832pt x 358.4592pt>
+<figures/mechanik/Welle_Rechts.jpg, id=1349, 445.1832pt x 358.4592pt>
 File: figures/mechanik/Welle_Rechts.jpg Graphic file (type jpg)
 <use figures/mechanik/Welle_Rechts.jpg>
 Package pdftex.def Info: figures/mechanik/Welle_Rechts.jpg  used on input line 
@@ -1673,21 +1745,21 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 100.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [31 <./figures/mechanik/Seitenplatte_Rechts.jpg> <./figures/mechanik/Seitenpla
+ [35 <./figures/mechanik/Seitenplatte_Rechts.jpg> <./figures/mechanik/Seitenpla
 tte_Links_innen.jpg> <./figures/mechanik/Welle_Rechts.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 114.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [32]
-<figures/mechanik/Getriebe.jpg, id=1285, 718.3638pt x 367.1316pt>
+ [36]
+<figures/mechanik/Getriebe.jpg, id=1361, 718.3638pt x 367.1316pt>
 File: figures/mechanik/Getriebe.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebe.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebe.jpg  used on input line 118.
 
 (pdftex.def)             Requested size: 359.18102pt x 183.56534pt.
-<figures/mechanik/Getriebe_2.jpg, id=1286, 783.4068pt x 346.1733pt>
+<figures/mechanik/Getriebe_2.jpg, id=1362, 783.4068pt x 346.1733pt>
 File: figures/mechanik/Getriebe_2.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebe_2.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebe_2.jpg  used on input line 13
@@ -1699,20 +1771,20 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 137.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[33 <./figures/mechanik/Getriebe.jpg> <./figures/mechanik/Getriebe_2.jpg>]
-<figures/mechanik/Antriebsachse.jpg, id=1294, 464.6961pt x 371.4678pt>
+[37 <./figures/mechanik/Getriebe.jpg> <./figures/mechanik/Getriebe_2.jpg>]
+<figures/mechanik/Antriebsachse.jpg, id=1369, 464.6961pt x 371.4678pt>
 File: figures/mechanik/Antriebsachse.jpg Graphic file (type jpg)
 <use figures/mechanik/Antriebsachse.jpg>
 Package pdftex.def Info: figures/mechanik/Antriebsachse.jpg  used on input line
  149.
 (pdftex.def)             Requested size: 185.87514pt x 148.58449pt.
-<figures/mechanik/Achse_mit_nuten_20mm.jpg, id=1295, 420.6114pt x 322.3242pt>
+<figures/mechanik/Achse_mit_nuten_20mm.jpg, id=1370, 420.6114pt x 322.3242pt>
 File: figures/mechanik/Achse_mit_nuten_20mm.jpg Graphic file (type jpg)
 <use figures/mechanik/Achse_mit_nuten_20mm.jpg>
 Package pdftex.def Info: figures/mechanik/Achse_mit_nuten_20mm.jpg  used on inp
 ut line 161.
 (pdftex.def)             Requested size: 210.30519pt x 161.1617pt.
-<figures/mechanik/Achse_mit_nuten.jpg, id=1296, 440.847pt x 337.5009pt>
+<figures/mechanik/Achse_mit_nuten.jpg, id=1371, 440.847pt x 337.5009pt>
 File: figures/mechanik/Achse_mit_nuten.jpg Graphic file (type jpg)
 <use figures/mechanik/Achse_mit_nuten.jpg>
 Package pdftex.def Info: figures/mechanik/Achse_mit_nuten.jpg  used on input li
@@ -1724,16 +1796,16 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 178.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[34 <./figures/mechanik/Antriebsachse.jpg> <./figures/mechanik/Achse_mit_nuten_
+[38 <./figures/mechanik/Antriebsachse.jpg> <./figures/mechanik/Achse_mit_nuten_
 20mm.jpg>]
-<figures/mechanik/Aufbau_Seitenplatte_Links.jpg, id=1307, 498.663pt x 338.2236p
+<figures/mechanik/Aufbau_Seitenplatte_Links.jpg, id=1382, 498.663pt x 338.2236p
 t>
 File: figures/mechanik/Aufbau_Seitenplatte_Links.jpg Graphic file (type jpg)
 <use figures/mechanik/Aufbau_Seitenplatte_Links.jpg>
 Package pdftex.def Info: figures/mechanik/Aufbau_Seitenplatte_Links.jpg  used o
 n input line 186.
 (pdftex.def)             Requested size: 249.33089pt x 169.11139pt.
-<figures/mechanik/Seitenplatte_Abstandhalter.jpg, id=1308, 440.1243pt x 314.374
+<figures/mechanik/Seitenplatte_Abstandhalter.jpg, id=1383, 440.1243pt x 314.374
 5pt>
 File: figures/mechanik/Seitenplatte_Abstandhalter.jpg Graphic file (type jpg)
 <use figures/mechanik/Seitenplatte_Abstandhalter.jpg>
@@ -1748,9 +1820,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 203.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [35 <./figures/mechanik/Achse_mit_nuten.jpg> <./figures/mechanik/Aufbau_Seiten
+ [39 <./figures/mechanik/Achse_mit_nuten.jpg> <./figures/mechanik/Aufbau_Seiten
 platte_Links.jpg> <./figures/mechanik/Seitenplatte_Abstandhalter.jpg>]
-<figures/mechanik/14099505.jpg, id=1317, 329.5512pt x 292.6935pt>
+<figures/mechanik/14099505.jpg, id=1393, 329.5512pt x 292.6935pt>
 File: figures/mechanik/14099505.jpg Graphic file (type jpg)
 <use figures/mechanik/14099505.jpg>
 Package pdftex.def Info: figures/mechanik/14099505.jpg  used on input line 207.
@@ -1761,8 +1833,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 213.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [36 <./figures/mechanik/14099505.jpg>]
-<figures/mechanik/ISO 08 B-1 .PNG, id=1324, 383.18156pt x 190.46156pt>
+ [40 <./figures/mechanik/14099505.jpg>]
+<figures/mechanik/ISO 08 B-1 .PNG, id=1400, 383.18156pt x 190.46156pt>
 File: figures/mechanik/ISO 08 B-1 .PNG Graphic file (type png)
 <use figures/mechanik/ISO 08 B-1 .PNG>
 Package pdftex.def Info: figures/mechanik/ISO 08 B-1 .PNG  used on input line 2
@@ -1778,8 +1850,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 244.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[37 <./figures/mechanik/ISO 08 B-1 .PNG>]
-<figures/mechanik/ISO 10 B-1 .PNG, id=1334, 437.38406pt x 224.33812pt>
+[41 <./figures/mechanik/ISO 08 B-1 .PNG>]
+<figures/mechanik/ISO 10 B-1 .PNG, id=1410, 437.38406pt x 224.33812pt>
 File: figures/mechanik/ISO 10 B-1 .PNG Graphic file (type png)
 <use figures/mechanik/ISO 10 B-1 .PNG>
 Package pdftex.def Info: figures/mechanik/ISO 10 B-1 .PNG  used on input line 2
@@ -1795,32 +1867,32 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 269.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[38 <./figures/mechanik/ISO 10 B-1 .PNG>]
-<figures/mechanik/10581532.jpg, id=1343, 341.1144pt x 370.7451pt>
+[42 <./figures/mechanik/ISO 10 B-1 .PNG>]
+<figures/mechanik/10581532.jpg, id=1419, 341.1144pt x 370.7451pt>
 File: figures/mechanik/10581532.jpg Graphic file (type jpg)
 <use figures/mechanik/10581532.jpg>
 Package pdftex.def Info: figures/mechanik/10581532.jpg  used on input line 273.
 
 (pdftex.def)             Requested size: 102.3351pt x 111.22438pt.
-<figures/mechanik/10681532.jpg, id=1344, 303.534pt x 328.1058pt>
+<figures/mechanik/10681532.jpg, id=1420, 303.534pt x 328.1058pt>
 File: figures/mechanik/10681532.jpg Graphic file (type jpg)
 <use figures/mechanik/10681532.jpg>
 Package pdftex.def Info: figures/mechanik/10681532.jpg  used on input line 282.
 
 (pdftex.def)             Requested size: 91.0609pt x 98.4325pt.
-<figures/mechanik/10581632.jpg, id=1345, 317.988pt x 345.4506pt>
+<figures/mechanik/10581632.jpg, id=1421, 317.988pt x 345.4506pt>
 File: figures/mechanik/10581632.jpg Graphic file (type jpg)
 <use figures/mechanik/10581632.jpg>
 Package pdftex.def Info: figures/mechanik/10581632.jpg  used on input line 291.
 
 (pdftex.def)             Requested size: 95.39713pt x 103.63597pt.
-<figures/mechanik/10583038.jpg, id=1346, 283.2984pt x 333.1647pt>
+<figures/mechanik/10583038.jpg, id=1422, 283.2984pt x 333.1647pt>
 File: figures/mechanik/10583038.jpg Graphic file (type jpg)
 <use figures/mechanik/10583038.jpg>
 Package pdftex.def Info: figures/mechanik/10583038.jpg  used on input line 300.
 
 (pdftex.def)             Requested size: 84.99017pt x 99.95018pt.
-<figures/mechanik/2000 Monster M750 swingarm, suspension.jpg, id=1347, 271.0125
+<figures/mechanik/2000 Monster M750 swingarm, suspension.jpg, id=1423, 271.0125
 pt x 307.8702pt>
 File: figures/mechanik/2000 Monster M750 swingarm, suspension.jpg Graphic file 
 (type jpg)
@@ -1833,16 +1905,16 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 315.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [39 <./figures/mechanik/10581532.jpg> <./figures/mechanik/10681532.jpg> <./fig
+ [43 <./figures/mechanik/10581532.jpg> <./figures/mechanik/10681532.jpg> <./fig
 ures/mechanik/10581632.jpg> <./figures/mechanik/10583038.jpg> <./figures/mechan
 ik/2000 Monster M750 swingarm, suspension.jpg>]
-<figures/mechanik/6004-2RSH-SKF_gr.jpg, id=1358, 341.8371pt x 364.9635pt>
+<figures/mechanik/6004-2RSH-SKF_gr.jpg, id=1433, 341.8371pt x 364.9635pt>
 File: figures/mechanik/6004-2RSH-SKF_gr.jpg Graphic file (type jpg)
 <use figures/mechanik/6004-2RSH-SKF_gr.jpg>
 Package pdftex.def Info: figures/mechanik/6004-2RSH-SKF_gr.jpg  used on input l
 ine 322.
 (pdftex.def)             Requested size: 102.55191pt x 109.48988pt.
-<figures/mechanik/6206-2RS1-SKF_kl.jpg, id=1359, 357.0138pt x 364.2408pt>
+<figures/mechanik/6206-2RS1-SKF_kl.jpg, id=1434, 357.0138pt x 364.2408pt>
 File: figures/mechanik/6206-2RS1-SKF_kl.jpg Graphic file (type jpg)
 <use figures/mechanik/6206-2RS1-SKF_kl.jpg>
 Package pdftex.def Info: figures/mechanik/6206-2RS1-SKF_kl.jpg  used on input l
@@ -1853,15 +1925,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 342.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [40 <./figures/mechanik/6004-2RSH-SKF_gr.jpg> <./figures/mechanik/6206-2RS1-SK
+ [44 <./figures/mechanik/6004-2RSH-SKF_gr.jpg> <./figures/mechanik/6206-2RS1-SK
 F_kl.jpg>]
-<figures/mechanik/Getriebeproblem2.jpg, id=1367, 539.01375pt x 380.17032pt>
+<figures/mechanik/Getriebeproblem2.jpg, id=1442, 539.01375pt x 380.17032pt>
 File: figures/mechanik/Getriebeproblem2.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebeproblem2.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebeproblem2.jpg  used on input l
 ine 359.
 (pdftex.def)             Requested size: 269.50621pt x 190.08469pt.
-<figures/mechanik/Getriebeproblem1.jpg, id=1368, 590.205pt x 381.67593pt>
+<figures/mechanik/Getriebeproblem1.jpg, id=1443, 590.205pt x 381.67593pt>
 File: figures/mechanik/Getriebeproblem1.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebeproblem1.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebeproblem1.jpg  used on input l
@@ -1875,14 +1947,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 374.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [41 <./figures/mechanik/Getriebeproblem2.jpg>]
+ [45 <./figures/mechanik/Getriebeproblem2.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 375.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [42 <./figures/mechanik/Getriebeproblem1.jpg>]
-<figures/mechanik/Akku_Unterseite_Explosion.jpg, id=1381, 318.7107pt x 371.4678
+ [46 <./figures/mechanik/Getriebeproblem1.jpg>]
+<figures/mechanik/Akku_Unterseite_Explosion.jpg, id=1457, 318.7107pt x 371.4678
 pt>
 File: figures/mechanik/Akku_Unterseite_Explosion.jpg Graphic file (type jpg)
 <use figures/mechanik/Akku_Unterseite_Explosion.jpg>
@@ -1894,15 +1966,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 393.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [43 <./figures/mechanik/Akku_Unterseite_Explosion.jpg>]
-<figures/mechanik/Akku_Motorblock_Explosion.jpg, id=1387, 178.5069pt x 366.4089
+ [47 <./figures/mechanik/Akku_Unterseite_Explosion.jpg>]
+<figures/mechanik/Akku_Motorblock_Explosion.jpg, id=1463, 178.5069pt x 366.4089
 pt>
 File: figures/mechanik/Akku_Motorblock_Explosion.jpg Graphic file (type jpg)
 <use figures/mechanik/Akku_Motorblock_Explosion.jpg>
 Package pdftex.def Info: figures/mechanik/Akku_Motorblock_Explosion.jpg  used o
 n input line 401.
 (pdftex.def)             Requested size: 89.25322pt x 183.204pt.
-<figures/mechanik/Akku_Mitte_Explosion.jpg, id=1388, 247.1634pt x 370.7451pt>
+<figures/mechanik/Akku_Mitte_Explosion.jpg, id=1464, 247.1634pt x 370.7451pt>
 File: figures/mechanik/Akku_Mitte_Explosion.jpg Graphic file (type jpg)
 <use figures/mechanik/Akku_Mitte_Explosion.jpg>
 Package pdftex.def Info: figures/mechanik/Akku_Mitte_Explosion.jpg  used on inp
@@ -1913,21 +1985,21 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 420.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [44 <./figures/mechanik/Akku_Motorblock_Explosion.jpg> <./figures/mechanik/Akk
+ [48 <./figures/mechanik/Akku_Motorblock_Explosion.jpg> <./figures/mechanik/Akk
 u_Mitte_Explosion.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 443.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [45]
-<figures/mechanik/Zusamenbau_1.jpg, id=1400, 661.2705pt x 398.9304pt>
+ [49]
+<figures/mechanik/Zusamenbau_1.jpg, id=1475, 661.2705pt x 398.9304pt>
 File: figures/mechanik/Zusamenbau_1.jpg Graphic file (type jpg)
 <use figures/mechanik/Zusamenbau_1.jpg>
 Package pdftex.def Info: figures/mechanik/Zusamenbau_1.jpg  used on input line 
 453.
 (pdftex.def)             Requested size: 330.63443pt x 199.4647pt.
-<figures/mechanik/Zusammenbau_Schwingarm.jpg, id=1401, 661.2705pt x 398.9304pt>
+<figures/mechanik/Zusammenbau_Schwingarm.jpg, id=1476, 661.2705pt x 398.9304pt>
 
 File: figures/mechanik/Zusammenbau_Schwingarm.jpg Graphic file (type jpg)
 <use figures/mechanik/Zusammenbau_Schwingarm.jpg>
@@ -1939,15 +2011,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 468.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [46 <./figures/mechanik/Zusamenbau_1.jpg> <./figures/mechanik/Zusammenbau_Schw
+ [50 <./figures/mechanik/Zusamenbau_1.jpg> <./figures/mechanik/Zusammenbau_Schw
 ingarm.jpg>]
-<figures/mechanik/Getriebe_Explosion_4.jpg, id=1408, 966.2499pt x 396.0396pt>
+<figures/mechanik/Getriebe_Explosion_4.jpg, id=1483, 966.2499pt x 396.0396pt>
 File: figures/mechanik/Getriebe_Explosion_4.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebe_Explosion_4.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebe_Explosion_4.jpg  used on inp
 ut line 477.
 (pdftex.def)             Requested size: 386.4931pt x 158.41302pt.
-<figures/mechanik/Getriebe_Explosion_5.jpg, id=1409, 966.2499pt x 396.0396pt>
+<figures/mechanik/Getriebe_Explosion_5.jpg, id=1484, 966.2499pt x 396.0396pt>
 File: figures/mechanik/Getriebe_Explosion_5.jpg Graphic file (type jpg)
 <use figures/mechanik/Getriebe_Explosion_5.jpg>
 Package pdftex.def Info: figures/mechanik/Getriebe_Explosion_5.jpg  used on inp
@@ -1959,7 +2031,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [47 <./figures/mechanik/Getriebe_Explosion_4.jpg> <./figures/mechanik/Getriebe
+ [51 <./figures/mechanik/Getriebe_Explosion_4.jpg> <./figures/mechanik/Getriebe
 _Explosion_5.jpg>]
 Kapitel V.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1967,7 +2039,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 19.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[48
+[52
 
 ]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -1975,8 +2047,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 34.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [49]
-<figures/Akku/LithiumIonenZellen.PNG, id=1424, 320.99925pt x 330.63525pt>
+ [53]
+<figures/Akku/LithiumIonenZellen.PNG, id=1500, 320.99925pt x 330.63525pt>
 File: figures/Akku/LithiumIonenZellen.PNG Graphic file (type png)
 <use figures/Akku/LithiumIonenZellen.PNG>
 Package pdftex.def Info: figures/Akku/LithiumIonenZellen.PNG  used on input lin
@@ -1987,15 +2059,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 58.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [50 <./figures/Akku/LithiumIonenZellen.PNG>]
-<figures/Akku/Explosionsdarstellung2Zellen.PNG, id=1431, 153.57375pt x 362.5545
+ [54 <./figures/Akku/LithiumIonenZellen.PNG>]
+<figures/Akku/Explosionsdarstellung2Zellen.PNG, id=1507, 153.57375pt x 362.5545
 pt>
 File: figures/Akku/Explosionsdarstellung2Zellen.PNG Graphic file (type png)
 <use figures/Akku/Explosionsdarstellung2Zellen.PNG>
 Package pdftex.def Info: figures/Akku/Explosionsdarstellung2Zellen.PNG  used on
  input line 65.
 (pdftex.def)             Requested size: 76.78668pt x 181.27681pt.
-<figures/Akku/Akkubox1.PNG, id=1432, 571.53525pt x 385.44pt>
+<figures/Akku/Akkubox1.PNG, id=1508, 571.53525pt x 385.44pt>
 File: figures/Akku/Akkubox1.PNG Graphic file (type png)
 <use figures/Akku/Akkubox1.PNG>
 Package pdftex.def Info: figures/Akku/Akkubox1.PNG  used on input line 80.
@@ -2005,9 +2077,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 87.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [51 <./figures/Akku/Explosionsdarstellung2Zellen.PNG> <./figures/Akku/Akkubox1
+ [55 <./figures/Akku/Explosionsdarstellung2Zellen.PNG> <./figures/Akku/Akkubox1
 .PNG>]
-<figures/Akku/Box3.PNG, id=1442, 623.32875pt x 425.1885pt>
+<figures/Akku/Box3.PNG, id=1517, 623.32875pt x 425.1885pt>
 File: figures/Akku/Box3.PNG Graphic file (type png)
 <use figures/Akku/Box3.PNG>
 Package pdftex.def Info: figures/Akku/Box3.PNG  used on input line 92.
@@ -2022,8 +2094,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 97.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[52 <./figures/Akku/Box3.PNG>]
-<figures/Akku/Akkubox2.PNG, id=1449, 333.6465pt x 380.01974pt>
+[56 <./figures/Akku/Box3.PNG>]
+<figures/Akku/Akkubox2.PNG, id=1524, 333.6465pt x 380.01974pt>
 File: figures/Akku/Akkubox2.PNG Graphic file (type png)
 <use figures/Akku/Akkubox2.PNG>
 Package pdftex.def Info: figures/Akku/Akkubox2.PNG  used on input line 104.
@@ -2038,8 +2110,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 126.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[53 <./figures/Akku/Akkubox2.PNG>]
-<figures/Akku/SerienschaltungzweierBatterien.org.jpg, id=1456, 236.082pt x 168.
+[57 <./figures/Akku/Akkubox2.PNG>]
+<figures/Akku/SerienschaltungzweierBatterien.org.jpg, id=1532, 236.082pt x 168.
 63pt>
 File: figures/Akku/SerienschaltungzweierBatterien.org.jpg Graphic file (type jp
 g)
@@ -2052,8 +2124,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 155.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [54 <./figures/Akku/SerienschaltungzweierBatterien.org.jpg>]
-<figures/Akku/ParallelschaltungzweierBatterien.org.jpg, id=1462, 236.082pt x 16
+ [58 <./figures/Akku/SerienschaltungzweierBatterien.org.jpg>]
+<figures/Akku/ParallelschaltungzweierBatterien.org.jpg, id=1538, 236.082pt x 16
 8.63pt>
 File: figures/Akku/ParallelschaltungzweierBatterien.org.jpg Graphic file (type 
 jpg)
@@ -2066,8 +2138,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 172.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [55 <./figures/Akku/ParallelschaltungzweierBatterien.org.jpg>]
-<figures/Akku/Anschlussplan 40Zellen.PNG, id=1468, 813.0375pt x 375.804pt>
+ [59 <./figures/Akku/ParallelschaltungzweierBatterien.org.jpg>]
+<figures/Akku/Anschlussplan 40Zellen.PNG, id=1544, 813.0375pt x 375.804pt>
 File: figures/Akku/Anschlussplan 40Zellen.PNG Graphic file (type png)
 <use figures/Akku/Anschlussplan 40Zellen.PNG>
 Package pdftex.def Info: figures/Akku/Anschlussplan 40Zellen.PNG  used on input
@@ -2083,8 +2155,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 189.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[56 <./figures/Akku/Anschlussplan 40Zellen.PNG>]
-<figures/Akku/VerschaltungderAkkupacks.PNG, id=1475, 507.69675pt x 218.0145pt>
+[60 <./figures/Akku/Anschlussplan 40Zellen.PNG>]
+<figures/Akku/VerschaltungderAkkupacks.PNG, id=1551, 507.69675pt x 218.0145pt>
 File: figures/Akku/VerschaltungderAkkupacks.PNG Graphic file (type png)
 <use figures/Akku/VerschaltungderAkkupacks.PNG>
 Package pdftex.def Info: figures/Akku/VerschaltungderAkkupacks.PNG  used on inp
@@ -2100,14 +2172,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 210.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[57 <./figures/Akku/VerschaltungderAkkupacks.PNG>]
+[61 <./figures/Akku/VerschaltungderAkkupacks.PNG>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 242.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [58]
-<figures/Akku/BMSMINI.jpg, id=1487, 467.7475pt x 342.27875pt>
+ [62]
+<figures/Akku/BMSMINI.jpg, id=1562, 467.7475pt x 342.27875pt>
 File: figures/Akku/BMSMINI.jpg Graphic file (type jpg)
 <use figures/Akku/BMSMINI.jpg>
 Package pdftex.def Info: figures/Akku/BMSMINI.jpg  used on input line 251.
@@ -2117,20 +2189,20 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 269.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [59 <./figures/Akku/BMSMINI.jpg>]
+ [63 <./figures/Akku/BMSMINI.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 306.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [60]
+ [64]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 312.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [61]
-<figures/Akku/Vergleichaktivespassives.jpg, id=1502, 246.6816pt x 196.5744pt>
+ [65]
+<figures/Akku/Vergleichaktivespassives.jpg, id=1578, 246.6816pt x 196.5744pt>
 File: figures/Akku/Vergleichaktivespassives.jpg Graphic file (type jpg)
 <use figures/Akku/Vergleichaktivespassives.jpg>
 Package pdftex.def Info: figures/Akku/Vergleichaktivespassives.jpg  used on inp
@@ -2141,8 +2213,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 336.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [62 <./figures/Akku/Vergleichaktivespassives.jpg>]
-<figures/Akku/Passive-cell-balancing.png, id=1508, 718.685pt x 287.0725pt>
+ [66 <./figures/Akku/Vergleichaktivespassives.jpg>]
+<figures/Akku/Passive-cell-balancing.png, id=1584, 718.685pt x 287.0725pt>
 File: figures/Akku/Passive-cell-balancing.png Graphic file (type png)
 <use figures/Akku/Passive-cell-balancing.png>
 Package pdftex.def Info: figures/Akku/Passive-cell-balancing.png  used on input
@@ -2154,8 +2226,8 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 362.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[63 <./figures/Akku/Passive-cell-balancing.png>]
-<figures/Akku/Aktives Balancing.png, id=1516, 770.88pt x 578.16pt>
+[67 <./figures/Akku/Passive-cell-balancing.png>]
+<figures/Akku/Aktives Balancing.png, id=1591, 770.88pt x 578.16pt>
 File: figures/Akku/Aktives Balancing.png Graphic file (type png)
 <use figures/Akku/Aktives Balancing.png>
 Package pdftex.def Info: figures/Akku/Aktives Balancing.png  used on input line
@@ -2166,14 +2238,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 394.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [64 <./figures/Akku/Aktives Balancing.png>]
+ [68 <./figures/Akku/Aktives Balancing.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 403.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [65]
-<figures/Akku/BMSAkkupacks.PNG, id=1527, 764.25525pt x 364.36125pt>
+ [69]
+<figures/Akku/BMSAkkupacks.PNG, id=1603, 764.25525pt x 364.36125pt>
 File: figures/Akku/BMSAkkupacks.PNG Graphic file (type png)
 <use figures/Akku/BMSAkkupacks.PNG>
 Package pdftex.def Info: figures/Akku/BMSAkkupacks.PNG  used on input line 413.
@@ -2189,8 +2261,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 418.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[66 <./figures/Akku/BMSAkkupacks.PNG>]
-<figures/Akku/SystemStrukturBMSTemperatur.png, id=1534, 542.62724pt x 393.8715p
+[70 <./figures/Akku/BMSAkkupacks.PNG>]
+<figures/Akku/SystemStrukturBMSTemperatur.png, id=1610, 542.62724pt x 393.8715p
 t>
 File: figures/Akku/SystemStrukturBMSTemperatur.png Graphic file (type png)
 <use figures/Akku/SystemStrukturBMSTemperatur.png>
@@ -2202,8 +2274,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 429.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [67 <./figures/Akku/SystemStrukturBMSTemperatur.png>]
-<figures/Akku/SystemStrukturBMSLast.png, id=1541, 501.67426pt x 440.847pt>
+ [71 <./figures/Akku/SystemStrukturBMSTemperatur.png>]
+<figures/Akku/SystemStrukturBMSLast.png, id=1617, 501.67426pt x 440.847pt>
 File: figures/Akku/SystemStrukturBMSLast.png Graphic file (type png)
 <use figures/Akku/SystemStrukturBMSLast.png>
 Package pdftex.def Info: figures/Akku/SystemStrukturBMSLast.png  used on input 
@@ -2214,8 +2286,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 441.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [68 <./figures/Akku/SystemStrukturBMSLast.png>]
-<figures/Akku/TopologieCAN-Netzwerks.PNG, id=1548, 682.34924pt x 224.63925pt>
+ [72 <./figures/Akku/SystemStrukturBMSLast.png>]
+<figures/Akku/TopologieCAN-Netzwerks.PNG, id=1624, 682.34924pt x 224.63925pt>
 File: figures/Akku/TopologieCAN-Netzwerks.PNG Graphic file (type png)
 <use figures/Akku/TopologieCAN-Netzwerks.PNG>
 Package pdftex.def Info: figures/Akku/TopologieCAN-Netzwerks.PNG  used on input
@@ -2226,7 +2298,7 @@ Overfull \hbox (50.84988pt too wide) in paragraph at lines 449--450
  [] 
  []
 
-<figures/Akku/CANStecker.PNG, id=1549, 171.039pt x 99.9735pt>
+<figures/Akku/CANStecker.PNG, id=1625, 171.039pt x 99.9735pt>
 File: figures/Akku/CANStecker.PNG Graphic file (type png)
 <use figures/Akku/CANStecker.PNG>
 Package pdftex.def Info: figures/Akku/CANStecker.PNG  used on input line 460.
@@ -2236,9 +2308,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 471.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[69 <./figures/Akku/TopologieCAN-Netzwerks.PNG> <./figures/Akku/CANStecker.PNG>
+[73 <./figures/Akku/TopologieCAN-Netzwerks.PNG> <./figures/Akku/CANStecker.PNG>
 ]
-<figures/Akku/EMUSAPP1.jpg, id=1559, 481.8pt x 857.2025pt>
+<figures/Akku/EMUSAPP1.jpg, id=1634, 481.8pt x 857.2025pt>
 File: figures/Akku/EMUSAPP1.jpg Graphic file (type jpg)
 <use figures/Akku/EMUSAPP1.jpg>
 Package pdftex.def Info: figures/Akku/EMUSAPP1.jpg  used on input line 491.
@@ -2248,13 +2320,13 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 496.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [70 <./figures/Akku/EMUSAPP1.jpg>]
-<figures/Akku/EMUSAPP2.jpg, id=1565, 481.8pt x 857.2025pt>
+ [74 <./figures/Akku/EMUSAPP1.jpg>]
+<figures/Akku/EMUSAPP2.jpg, id=1640, 481.8pt x 857.2025pt>
 File: figures/Akku/EMUSAPP2.jpg Graphic file (type jpg)
 <use figures/Akku/EMUSAPP2.jpg>
 Package pdftex.def Info: figures/Akku/EMUSAPP2.jpg  used on input line 502.
 (pdftex.def)             Requested size: 240.8994pt x 428.6002pt.
-<figures/Akku/BMSAppMenü.png, id=1566, 509.905pt x 1027.84pt>
+<figures/Akku/BMSAppMenü.png, id=1641, 509.905pt x 1027.84pt>
 File: figures/Akku/BMSAppMenü.png Graphic file (type png)
 <use figures/Akku/BMSAppMenü.png>
 Package pdftex.def Info: figures/Akku/BMSAppMenü.png  used on input line 522.
@@ -2267,8 +2339,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 526.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [71 <./figures/Akku/EMUSAPP2.jpg>]
-<figures/Akku/BMSBatteryStatus.png, id=1572, 519.9425pt x 1027.84pt>
+ [75 <./figures/Akku/EMUSAPP2.jpg>]
+<figures/Akku/BMSBatteryStatus.png, id=1648, 519.9425pt x 1027.84pt>
 File: figures/Akku/BMSBatteryStatus.png Graphic file (type png)
 <use figures/Akku/BMSBatteryStatus.png>
 Package pdftex.def Info: figures/Akku/BMSBatteryStatus.png  used on input line 
@@ -2282,7 +2354,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 537.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [72 <./figures/Akku/BMSAppMenü.png>]
+ [76 <./figures/Akku/BMSAppMenü.png>]
 File: figures/Akku/BMSBatteryStatus.png Graphic file (type png)
 <use figures/Akku/BMSBatteryStatus.png>
 Package pdftex.def Info: figures/Akku/BMSBatteryStatus.png  used on input line 
@@ -2296,20 +2368,20 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 547.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [73 <./figures/Akku/BMSBatteryStatus.png>]) (content/ch_antrieb.tex
+ [77 <./figures/Akku/BMSBatteryStatus.png>]) (content/ch_antrieb.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 1.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [74]
+ [78]
 Kapitel VI.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 27.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[75
+[79
 
 ]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -2317,14 +2389,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 45.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [76]
+ [80]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 54.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [77]
-<figures/Antrieb/Antrieb_Laststromkreis.png, id=1601, 1367.8603pt x 588.69937pt
+ [81]
+<figures/Antrieb/Antrieb_Laststromkreis.png, id=1677, 1367.8603pt x 588.69937pt
 >
 File: figures/Antrieb/Antrieb_Laststromkreis.png Graphic file (type png)
 <use figures/Antrieb/Antrieb_Laststromkreis.png>
@@ -2341,39 +2413,39 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 86.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[78 <./figures/Antrieb/Antrieb_Laststromkreis.png>]
+[82 <./figures/Antrieb/Antrieb_Laststromkreis.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 123.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [79]
+ [83]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 140.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [80]
+ [84]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 163.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [81]
+ [85]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 177.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [82]
+ [86]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 207.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[83]
-<figures/Antrieb/Antrieb_Steuerstromkreis.png, id=1629, 692.5875pt x 633.86812p
+[87]
+<figures/Antrieb/Antrieb_Steuerstromkreis.png, id=1705, 692.5875pt x 633.86812p
 t>
 File: figures/Antrieb/Antrieb_Steuerstromkreis.png Graphic file (type png)
 <use figures/Antrieb/Antrieb_Steuerstromkreis.png>
@@ -2390,15 +2462,15 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 218.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[84 <./figures/Antrieb/Antrieb_Steuerstromkreis.png>]
-<figures/antrieb/Digital_Input_Specifications.png, id=1636, 910.15031pt x 528.4
+[88 <./figures/Antrieb/Antrieb_Steuerstromkreis.png>]
+<figures/antrieb/Digital_Input_Specifications.png, id=1712, 910.15031pt x 528.4
 7438pt>
 File: figures/antrieb/Digital_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Digital_Input_Specifications.png>
 Package pdftex.def Info: figures/antrieb/Digital_Input_Specifications.png  used
  on input line 226.
 (pdftex.def)             Requested size: 426.79134pt x 247.81851pt.
-<figures/antrieb/Analog_Input_Specifications.png, id=1637, 1201.48875pt x 318.4
+<figures/antrieb/Analog_Input_Specifications.png, id=1713, 1201.48875pt x 318.4
 3968pt>
 File: figures/antrieb/Analog_Input_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Input_Specifications.png>
@@ -2410,9 +2482,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 247.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [85 <./figures/antrieb/Digital_Input_Specifications.png> <./figures/antrieb/An
+ [89 <./figures/antrieb/Digital_Input_Specifications.png> <./figures/antrieb/An
 alog_Input_Specifications.png>]
-<figures/antrieb/Throttle_Input_Specifications.png, id=1646, 1324.19719pt x 398
+<figures/antrieb/Throttle_Input_Specifications.png, id=1722, 1324.19719pt x 398
 .23781pt>
 File: figures/antrieb/Throttle_Input_Specifications.png Graphic file (type png)
 
@@ -2420,7 +2492,7 @@ File: figures/antrieb/Throttle_Input_Specifications.png Graphic file (type png)
 Package pdftex.def Info: figures/antrieb/Throttle_Input_Specifications.png  use
 d on input line 257.
 (pdftex.def)             Requested size: 426.79134pt x 128.35019pt.
-<figures/antrieb/SinCosSensor_Input_Specifications.png, id=1647, 1316.66907pt x
+<figures/antrieb/SinCosSensor_Input_Specifications.png, id=1723, 1316.66907pt x
  237.88875pt>
 File: figures/antrieb/SinCosSensor_Input_Specifications.png Graphic file (type 
 png)
@@ -2433,9 +2505,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 276.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [86 <./figures/antrieb/Throttle_Input_Specifications.png> <./figures/antrieb/S
+ [90 <./figures/antrieb/Throttle_Input_Specifications.png> <./figures/antrieb/S
 inCosSensor_Input_Specifications.png>]
-<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=1656, 1270.7475pt 
+<figures/antrieb/KSI_CoilReturn_Input_Specifications.png, id=1732, 1270.7475pt 
 x 219.06844pt>
 File: figures/antrieb/KSI_CoilReturn_Input_Specifications.png Graphic file (typ
 e png)
@@ -2443,7 +2515,7 @@ e png)
 Package pdftex.def Info: figures/antrieb/KSI_CoilReturn_Input_Specifications.pn
 g  used on input line 285.
 (pdftex.def)             Requested size: 426.79134pt x 73.5764pt.
-<figures/antrieb/Analog_Output_Specifications.png, id=1657, 1267.73625pt x 185.
+<figures/antrieb/Analog_Output_Specifications.png, id=1733, 1267.73625pt x 185.
 94469pt>
 File: figures/antrieb/Analog_Output_Specifications.png Graphic file (type png)
 <use figures/antrieb/Analog_Output_Specifications.png>
@@ -2455,9 +2527,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 304.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [87 <./figures/antrieb/KSI_CoilReturn_Input_Specifications.png> <./figures/ant
+ [91 <./figures/antrieb/KSI_CoilReturn_Input_Specifications.png> <./figures/ant
 rieb/Analog_Output_Specifications.png>]
-<figures/antrieb/Digital_PWM_Output_Specifications.png, id=1667, 1327.20844pt x
+<figures/antrieb/Digital_PWM_Output_Specifications.png, id=1742, 1327.20844pt x
  442.65375pt>
 File: figures/antrieb/Digital_PWM_Output_Specifications.png Graphic file (type 
 png)
@@ -2465,7 +2537,7 @@ png)
 Package pdftex.def Info: figures/antrieb/Digital_PWM_Output_Specifications.png 
  used on input line 314.
 (pdftex.def)             Requested size: 426.79134pt x 142.34102pt.
-<figures/antrieb/Power_Supply_Output_Specifications.png, id=1668, 1284.29813pt 
+<figures/antrieb/Power_Supply_Output_Specifications.png, id=1743, 1284.29813pt 
 x 330.48468pt>
 File: figures/antrieb/Power_Supply_Output_Specifications.png Graphic file (type
  png)
@@ -2478,9 +2550,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 333.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [88 <./figures/antrieb/Digital_PWM_Output_Specifications.png> <./figures/antri
+ [92 <./figures/antrieb/Digital_PWM_Output_Specifications.png> <./figures/antri
 eb/Power_Supply_Output_Specifications.png>]
-<figures/antrieb/Communications_Port_Specifications.png, id=1677, 1307.63531pt 
+<figures/antrieb/Communications_Port_Specifications.png, id=1752, 1307.63531pt 
 x 447.92343pt>
 File: figures/antrieb/Communications_Port_Specifications.png Graphic file (type
  png)
@@ -2493,25 +2565,25 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 350.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [89 <./figures/antrieb/Communications_Port_Specifications.png>]
+ [93 <./figures/antrieb/Communications_Port_Specifications.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 369.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [90]
+ [94]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 399.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [91]
+ [95]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 425.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [92]
+ [96]
 Underfull \hbox (badness 1371) in paragraph at lines 455--455
 []|\T1/lmr/m/n/10 angesteuert wer-den kann. (Un-ab-h�n-gig von der
  []
@@ -2526,7 +2598,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 467.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[93]
+[97]
 Underfull \hbox (badness 5050) in paragraph at lines 473--473
 \T1/lmr/m/n/10 Ma-xi-mum an-ge-stie-gen ist. Gr�-�e-re
  []
@@ -2571,19 +2643,19 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 492.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[94]
+[98]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 532.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [95]
+ [99]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 542.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [96]
+ [100]
 Overfull \hbox (39.1596pt too wide) in paragraph at lines 549--560
 [][] 
  []
@@ -2593,8 +2665,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 566.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[97]
-<figures/antrieb/ECO_Sport_Select_Programmschnippsel.png, id=1721, 649.67719pt 
+[101]
+<figures/antrieb/ECO_Sport_Select_Programmschnippsel.png, id=1797, 649.67719pt 
 x 606.01407pt>
 File: figures/antrieb/ECO_Sport_Select_Programmschnippsel.png Graphic file (typ
 e png)
@@ -2607,8 +2679,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 580.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [98 <./figures/antrieb/ECO_Sport_Select_Programmschnippsel.png>]
-<figures/antrieb/Leonard_Umformer.png, id=1728, 1348.28719pt x 604.50844pt>
+ [102 <./figures/antrieb/ECO_Sport_Select_Programmschnippsel.png>]
+<figures/antrieb/Leonard_Umformer.png, id=1804, 1348.28719pt x 604.50844pt>
 File: figures/antrieb/Leonard_Umformer.png Graphic file (type png)
 <use figures/antrieb/Leonard_Umformer.png>
 Package pdftex.def Info: figures/antrieb/Leonard_Umformer.png  used on input li
@@ -2619,8 +2691,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 597.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [99 <./figures/antrieb/Leonard_Umformer.png>]
-<figures/antrieb/Leonard_Spannungsueberschwingung.png, id=1736, 868.74562pt x 6
+
+[103 <./figures/antrieb/Leonard_Umformer.png>]
+<figures/antrieb/Leonard_Spannungsueberschwingung.png, id=1811, 868.74562pt x 6
 26.34pt>
 File: figures/antrieb/Leonard_Spannungsueberschwingung.png Graphic file (type p
 ng)
@@ -2633,30 +2706,28 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 612.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [100 <./figures/antrieb/Leonard_Spannungsueberschwingung.png>]
+ [104 <./figures/antrieb/Leonard_Spannungsueberschwingung.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 638.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [101]) (content/ch_zentralsteuerung.tex
+ [105]) (content/ch_zentralsteuerung.tex
 Kapitel VII.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 32.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[102
+[106
 
 ]
-<figures/hcis/raspberryPi.png, id=1757, 3011.25pt x 1934.22626pt>
+<figures/hcis/raspberryPi.png, id=1830, 3011.25pt x 1934.22626pt>
 File: figures/hcis/raspberryPi.png Graphic file (type png)
 <use figures/hcis/raspberryPi.png>
 Package pdftex.def Info: figures/hcis/raspberryPi.png  used on input line 40.
 (pdftex.def)             Requested size: 240.90492pt x 154.74126pt.
-<figures/hcis/HCIS_Grundfunktion.png, id=1759, 460.72125pt x 302.12875pt>
+<figures/hcis/HCIS_Grundfunktion.png, id=1832, 460.72125pt x 302.12875pt>
 File: figures/hcis/HCIS_Grundfunktion.png Graphic file (type png)
 <use figures/hcis/HCIS_Grundfunktion.png>
 Package pdftex.def Info: figures/hcis/HCIS_Grundfunktion.png  used on input lin
@@ -2667,14 +2738,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 72.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [103 <./figures/hcis/raspberryPi.png> <./figures/hcis/HCIS_Grundfunktion.png>]
+ [107 <./figures/hcis/raspberryPi.png> <./figures/hcis/HCIS_Grundfunktion.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 121.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [104]
-<figures/hcis/input.png, id=1781, 358.33875pt x 285.065pt>
+ [108]
+<figures/hcis/input.png, id=1854, 358.33875pt x 285.065pt>
 File: figures/hcis/input.png Graphic file (type png)
 <use figures/hcis/input.png>
 Package pdftex.def Info: figures/hcis/input.png  used on input line 140.
@@ -2684,8 +2755,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 157.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [105 <./figures/hcis/input.png>]
-<figures/hcis/4ch_relai.png, id=1789, 385.44pt x 248.39467pt>
+ [109 <./figures/hcis/input.png>]
+<figures/hcis/4ch_relai.png, id=1861, 385.44pt x 248.39467pt>
 File: figures/hcis/4ch_relai.png Graphic file (type png)
 <use figures/hcis/4ch_relai.png>
 Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 160.
@@ -2702,8 +2773,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 190.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [106 <./figures/hcis/4ch_relai.png>]
-<figures/hcis/display_maße.png, id=1806, 803.0pt x 803.0pt>
+ [110 <./figures/hcis/4ch_relai.png>]
+<figures/hcis/display_maße.png, id=1878, 803.0pt x 803.0pt>
 File: figures/hcis/display_maße.png Graphic file (type png)
 <use figures/hcis/display_maße.png>
 Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 203
@@ -2714,14 +2785,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 211.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [107 <./figures/hcis/display_maße.png>]
-<figures/hcis/befestigung_display.png, id=1813, 1190.4475pt x 1190.4475pt>
+ [111 <./figures/hcis/display_maße.png>]
+<figures/hcis/befestigung_display.png, id=1886, 1190.4475pt x 1190.4475pt>
 File: figures/hcis/befestigung_display.png Graphic file (type png)
 <use figures/hcis/befestigung_display.png>
 Package pdftex.def Info: figures/hcis/befestigung_display.png  used on input li
 ne 218.
 (pdftex.def)             Requested size: 214.2713pt x 214.2713pt.
-<figures/hcis/gui_aufbau.png, id=1814, 1045.9075pt x 313.17pt>
+<figures/hcis/gui_aufbau.png, id=1887, 1045.9075pt x 313.17pt>
 File: figures/hcis/gui_aufbau.png Graphic file (type png)
 <use figures/hcis/gui_aufbau.png>
 Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 232.
@@ -2731,8 +2802,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 238.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [108 <./figures/hcis/befestigung_display.png> <./figures/hcis/gui_aufbau.png>]
-<figures/hcis/component_menu.png, id=1823, 1927.2pt x 233.87375pt>
+ [112 <./figures/hcis/befestigung_display.png> <./figures/hcis/gui_aufbau.png>]
+<figures/hcis/component_menu.png, id=1896, 1927.2pt x 233.87375pt>
 File: figures/hcis/component_menu.png Graphic file (type png)
 <use figures/hcis/component_menu.png>
 Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 26
@@ -2743,14 +2814,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 280.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [109 <./figures/hcis/component_menu.png>]
-<figures/hcis/component_bar.png, id=1831, 322.20375pt x 261.97874pt>
+ [113 <./figures/hcis/component_menu.png>]
+<figures/hcis/component_bar.png, id=1904, 322.20375pt x 261.97874pt>
 File: figures/hcis/component_bar.png Graphic file (type png)
 <use figures/hcis/component_bar.png>
 Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 296
 .
 (pdftex.def)             Requested size: 161.10147pt x 130.98904pt.
-<figures/hcis/component_mode.png, id=1832, 933.4875pt x 333.245pt>
+<figures/hcis/component_mode.png, id=1905, 933.4875pt x 333.245pt>
 File: figures/hcis/component_mode.png Graphic file (type png)
 <use figures/hcis/component_mode.png>
 Package pdftex.def Info: figures/hcis/component_mode.png  used on input line 30
@@ -2761,8 +2832,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 318.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [110 <./figures/hcis/component_bar.png> <./figures/hcis/component_mode.png>]
-<figures/hcis/component_graph.png, id=1841, 1448.41125pt x 716.6775pt>
+ [114 <./figures/hcis/component_bar.png> <./figures/hcis/component_mode.png>]
+<figures/hcis/component_graph.png, id=1914, 1448.41125pt x 716.6775pt>
 File: figures/hcis/component_graph.png Graphic file (type png)
 <use figures/hcis/component_graph.png>
 Package pdftex.def Info: figures/hcis/component_graph.png  used on input line 3
@@ -2778,14 +2849,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 362.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[111 <./figures/hcis/component_graph.png>]
-<figures/hcis/window_login.png, id=1849, 1087.06125pt x 612.78937pt>
+[115 <./figures/hcis/component_graph.png>]
+<figures/hcis/window_login.png, id=1921, 1087.06125pt x 612.78937pt>
 File: figures/hcis/window_login.png Graphic file (type png)
 <use figures/hcis/window_login.png>
 Package pdftex.def Info: figures/hcis/window_login.png  used on input line 372.
 
 (pdftex.def)             Requested size: 271.76465pt x 153.19696pt.
-<figures/hcis/window_dashboard.png, id=1851, 1084.05pt x 609.77812pt>
+<figures/hcis/window_dashboard.png, id=1923, 1084.05pt x 609.77812pt>
 File: figures/hcis/window_dashboard.png Graphic file (type png)
 <use figures/hcis/window_dashboard.png>
 Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
@@ -2796,14 +2867,14 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 394.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [112 <./figures/hcis/window_login.png> <./figures/hcis/window_dashboard.png>]
-<figures/hcis/window_battery.png, id=1861, 956.82469pt x 539.76656pt>
+ [116 <./figures/hcis/window_login.png> <./figures/hcis/window_dashboard.png>]
+<figures/hcis/window_battery.png, id=1933, 956.82469pt x 539.76656pt>
 File: figures/hcis/window_battery.png Graphic file (type png)
 <use figures/hcis/window_battery.png>
 Package pdftex.def Info: figures/hcis/window_battery.png  used on input line 40
 2.
 (pdftex.def)             Requested size: 239.20558pt x 134.9413pt.
-<figures/hcis/window_diagnosis.png, id=1864, 956.82469pt x 540.51938pt>
+<figures/hcis/window_diagnosis.png, id=1936, 956.82469pt x 540.51938pt>
 File: figures/hcis/window_diagnosis.png Graphic file (type png)
 <use figures/hcis/window_diagnosis.png>
 Package pdftex.def Info: figures/hcis/window_diagnosis.png  used on input line 
@@ -2814,9 +2885,9 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 424.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [113 <./figures/hcis/window_battery.png> <./figures/hcis/window_diagnosis.png>
+ [117 <./figures/hcis/window_battery.png> <./figures/hcis/window_diagnosis.png>
 ]
-<figures/hcis/window_error.png, id=1874, 1086.30844pt x 611.28375pt>
+<figures/hcis/window_error.png, id=1947, 1086.30844pt x 611.28375pt>
 File: figures/hcis/window_error.png Graphic file (type png)
 <use figures/hcis/window_error.png>
 Package pdftex.def Info: figures/hcis/window_error.png  used on input line 432.
@@ -2827,8 +2898,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 457.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [114 <./figures/hcis/window_error.png>]
-<figures/hcis/signals_slots.png, id=1884, 663.47874pt x 484.81125pt>
+ [118 <./figures/hcis/window_error.png>]
+<figures/hcis/signals_slots.png, id=1957, 663.47874pt x 484.81125pt>
 File: figures/hcis/signals_slots.png Graphic file (type png)
 <use figures/hcis/signals_slots.png>
 Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 472
@@ -2839,8 +2910,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 484.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [115 <./figures/hcis/signals_slots.png>]
-<figures/hcis/bridge.png, id=1892, 1300.86pt x 548.0475pt>
+ [119 <./figures/hcis/signals_slots.png>]
+<figures/hcis/bridge.png, id=1965, 1300.86pt x 548.0475pt>
 File: figures/hcis/bridge.png Graphic file (type png)
 <use figures/hcis/bridge.png>
 Package pdftex.def Info: figures/hcis/bridge.png  used on input line 492.
@@ -2855,8 +2926,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 497.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[116 <./figures/hcis/bridge.png>]
-<figures/hcis/can_module.png, id=1899, 413.545pt x 249.733pt>
+[120 <./figures/hcis/bridge.png>]
+<figures/hcis/can_module.png, id=1972, 413.545pt x 249.733pt>
 File: figures/hcis/can_module.png Graphic file (type png)
 <use figures/hcis/can_module.png>
 Package pdftex.def Info: figures/hcis/can_module.png  used on input line 513.
@@ -2866,44 +2937,44 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 524.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [117 <./figures/hcis/can_module.png>]
+ [121 <./figures/hcis/can_module.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 542.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
-[118]
+[122]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 600.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [119]
+ [123]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 650.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [120]
+ [124]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 707.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [121]
+ [125]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 709.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [122]
+ [126]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 766.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [123]) (content/ch_ergebnis.tex
+ [127]) (content/ch_ergebnis.tex
 Kapitel VIII.
 )) (anhang.tex
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -2911,7 +2982,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 2.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [124
+ [128
 
 ]
 Anhang A.
@@ -2920,7 +2991,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 8.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[125
+[129
 
 ]
 Anhang B.
@@ -2929,18 +3000,18 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[126
+[130
 
 ]
 Anhang C.
-<figures/mechanik/Welle_Rechts_Zeichnung.jpg, id=1989, 519.6213pt x 380.1402pt>
+<figures/mechanik/Welle_Rechts_Zeichnung.jpg, id=2062, 519.6213pt x 380.1402pt>
 
 File: figures/mechanik/Welle_Rechts_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Welle_Rechts_Zeichnung.jpg>
 Package pdftex.def Info: figures/mechanik/Welle_Rechts_Zeichnung.jpg  used on i
 nput line 14.
 (pdftex.def)             Requested size: 519.62003pt x 380.13925pt.
-<figures/mechanik/Seitenplatte_Fertigung_Rechts.jpg, id=1990, 522.5121pt x 380.
+<figures/mechanik/Seitenplatte_Fertigung_Rechts.jpg, id=2063, 522.5121pt x 380.
 1402pt>
 File: figures/mechanik/Seitenplatte_Fertigung_Rechts.jpg Graphic file (type jpg
 )
@@ -2953,10 +3024,10 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 28.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[127
+[131
 
  <./figures/mechanik/Welle_Rechts_Zeichnung.jpg>]
-<figures/mechanik/Seitenplatte_Fertigung_Links.jpg, id=1996, 526.1256pt x 380.1
+<figures/mechanik/Seitenplatte_Fertigung_Links.jpg, id=2069, 526.1256pt x 380.1
 402pt>
 File: figures/mechanik/Seitenplatte_Fertigung_Links.jpg Graphic file (type jpg)
 
@@ -2972,8 +3043,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 37.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [128 <./figures/mechanik/Seitenplatte_Fertigung_Rechts.jpg>]
-<figures/mechanik/Seitenplatte_Abstandhalter_Zeichnung.jpg, id=2002, 519.6213pt
+ [132 <./figures/mechanik/Seitenplatte_Fertigung_Rechts.jpg>]
+<figures/mechanik/Seitenplatte_Abstandhalter_Zeichnung.jpg, id=2075, 519.6213pt
  x 380.1402pt>
 File: figures/mechanik/Seitenplatte_Abstandhalter_Zeichnung.jpg Graphic file (t
 ype jpg)
@@ -2989,8 +3060,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 46.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [129 <./figures/mechanik/Seitenplatte_Fertigung_Links.jpg>]
-<figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg, id=2009, 521.7894pt x 3
+ [133 <./figures/mechanik/Seitenplatte_Fertigung_Links.jpg>]
+<figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg, id=2081, 521.7894pt x 3
 80.1402pt>
 File: figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg Graphic file (type 
 jpg)
@@ -3006,8 +3077,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 55.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [130 <./figures/mechanik/Seitenplatte_Abstandhalter_Zeichnung.jpg>]
-<figures/mechanik/Antriebsachse_Zeichnung.jpg, id=2015, 518.1759pt x 380.1402pt
+ [134 <./figures/mechanik/Seitenplatte_Abstandhalter_Zeichnung.jpg>]
+<figures/mechanik/Antriebsachse_Zeichnung.jpg, id=2087, 518.1759pt x 380.1402pt
 >
 File: figures/mechanik/Antriebsachse_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Antriebsachse_Zeichnung.jpg>
@@ -3022,8 +3093,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 64.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [131 <./figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg>]
-<figures/mechanik/Achse_mit_nuten_Zeichnung.jpg, id=2021, 524.6802pt x 380.1402
+ [135 <./figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg>]
+<figures/mechanik/Achse_mit_nuten_Zeichnung.jpg, id=2094, 524.6802pt x 380.1402
 pt>
 File: figures/mechanik/Achse_mit_nuten_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Achse_mit_nuten_Zeichnung.jpg>
@@ -3038,8 +3109,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 73.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [132 <./figures/mechanik/Antriebsachse_Zeichnung.jpg>]
-<figures/mechanik/Achse_mit_nuten_20mm_Zeichnung.jpg, id=2027, 520.344pt x 380.
+ [136 <./figures/mechanik/Antriebsachse_Zeichnung.jpg>]
+<figures/mechanik/Achse_mit_nuten_20mm_Zeichnung.jpg, id=2100, 520.344pt x 380.
 1402pt>
 File: figures/mechanik/Achse_mit_nuten_20mm_Zeichnung.jpg Graphic file (type jp
 g)
@@ -3055,8 +3126,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 82.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [133 <./figures/mechanik/Achse_mit_nuten_Zeichnung.jpg>]
-<figures/mechanik/Box_Zeichnung.jpg, id=2033, 521.7894pt x 380.1402pt>
+ [137 <./figures/mechanik/Achse_mit_nuten_Zeichnung.jpg>]
+<figures/mechanik/Box_Zeichnung.jpg, id=2106, 521.7894pt x 380.1402pt>
 File: figures/mechanik/Box_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Box_Zeichnung.jpg>
 Package pdftex.def Info: figures/mechanik/Box_Zeichnung.jpg  used on input line
@@ -3070,8 +3141,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 91.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [134 <./figures/mechanik/Achse_mit_nuten_20mm_Zeichnung.jpg>]
-<figures/mechanik/Box_2_Zeichnung.jpg, id=2039, 520.344pt x 380.1402pt>
+ [138 <./figures/mechanik/Achse_mit_nuten_20mm_Zeichnung.jpg>]
+<figures/mechanik/Box_2_Zeichnung.jpg, id=2112, 520.344pt x 380.1402pt>
 File: figures/mechanik/Box_2_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Box_2_Zeichnung.jpg>
 Package pdftex.def Info: figures/mechanik/Box_2_Zeichnung.jpg  used on input li
@@ -3085,8 +3156,8 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 100.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [135 <./figures/mechanik/Box_Zeichnung.jpg>]
-<figures/mechanik/Box_3_Zeichnung.jpg, id=2046, 524.6802pt x 380.1402pt>
+ [139 <./figures/mechanik/Box_Zeichnung.jpg>]
+<figures/mechanik/Box_3_Zeichnung.jpg, id=2118, 524.6802pt x 380.1402pt>
 File: figures/mechanik/Box_3_Zeichnung.jpg Graphic file (type jpg)
 <use figures/mechanik/Box_3_Zeichnung.jpg>
 Package pdftex.def Info: figures/mechanik/Box_3_Zeichnung.jpg  used on input li
@@ -3100,13 +3171,13 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 109.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [136 <./figures/mechanik/Box_2_Zeichnung.jpg>]
+ [140 <./figures/mechanik/Box_2_Zeichnung.jpg>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 110.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [137 <./figures/mechanik/Box_3_Zeichnung.jpg>]
+ [141 <./figures/mechanik/Box_3_Zeichnung.jpg>]
 Anhang D.
 
 
@@ -3114,7 +3185,7 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
 ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2057, 597.55246pt x 845.07718pt>
+ id=2130, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
@@ -3145,7 +3216,7 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
 ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2060, page=1, 597.55246pt x 845.07718pt>
+ id=2133, page=1, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
@@ -3165,7 +3236,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 112.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[138
+[142
 
 ]
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
@@ -3189,14 +3260,14 @@ pdf, page 1>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
 sche Berechnung 1_3.pdf , page1 used on input line 112.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [139 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 
+ [143 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 
 1_3.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
 ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2084, page=2, 597.55246pt x 845.07718pt>
+ id=2157, page=2, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
@@ -3217,122 +3288,6 @@ File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 pdf, page 2>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
 sche Berechnung 1_3.pdf , page2 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[140 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
-_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
-ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
-t most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2090, page=3, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[141 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
-_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
-ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
-t most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2097, page=4, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[142 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
-_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
-ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
-t most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2107, page=5, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page5 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page5 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page5 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[143 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
-_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
-ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
-t most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2114, page=6, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 6>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page6 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 6>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page6 used on input line 112.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
-.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 6>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page6 used on input line 112.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [144 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
 _3.pdf>]
@@ -3341,36 +3296,152 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
 ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
 t most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
- id=2121, page=7, 597.55246pt x 845.07718pt>
+ id=2163, page=3, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 7>
+pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page7 used on input line 112.
+sche Berechnung 1_3.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 7>
+pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page7 used on input line 112.
+sche Berechnung 1_3.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
 .pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
-pdf, page 7>
+pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
-sche Berechnung 1_3.pdf , page7 used on input line 112.
+sche Berechnung 1_3.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [145 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
+_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
+ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
+t most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
+ id=2169, page=4, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page4 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page4 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page4 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[146 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
+_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
+ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
+t most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
+ id=2179, page=5, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page5 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page5 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page5 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[147 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
+_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
+ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
+t most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
+ id=2187, page=6, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page6 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page6 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page6 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[148 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
+_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Lin
+ks_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but a
+t most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf,
+ id=2194, page=7, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3
+.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.
+pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Links_Stati
+sche Berechnung 1_3.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[149 <./figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1
 _3.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
 hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2127, 597.55246pt x 845.07718pt>
+, id=2200, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
@@ -3401,7 +3472,7 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
 hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2130, page=1, 597.55246pt x 845.07718pt>
+, id=2203, page=1, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
@@ -3436,122 +3507,6 @@ File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 .pdf, page 1>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
 ische Berechnung 1_3.pdf , page1 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[146 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
-1_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
-hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
-at most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2150, page=2, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 2>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page2 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 2>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page2 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 2>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page2 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[147 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
-1_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
-hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
-at most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2157, page=3, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page3 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page3 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 3>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page3 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[148 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
-1_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
-hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
-at most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2163, page=4, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page4 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page4 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 4>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page4 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[149 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
-1_3.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
-hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
-at most version <1.5> allowed
-<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2173, page=5, 597.55246pt x 845.07718pt>
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page5 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page5 used on input line 114.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
-3.pdf Graphic file (type pdf)
-<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 5>
-Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page5 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [150 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
 1_3.pdf>]
@@ -3560,27 +3515,27 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
 hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2180, page=6, 597.55246pt x 845.07718pt>
+, id=2223, page=2, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 6>
+.pdf, page 2>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page6 used on input line 114.
+ische Berechnung 1_3.pdf , page2 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 6>
+.pdf, page 2>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page6 used on input line 114.
+ische Berechnung 1_3.pdf , page2 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 6>
+.pdf, page 2>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page6 used on input line 114.
+ische Berechnung 1_3.pdf , page2 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [151 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
 1_3.pdf>]
@@ -3589,29 +3544,145 @@ pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
 hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
 <figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
-, id=2187, page=7, 597.55246pt x 845.07718pt>
+, id=2229, page=3, 597.55246pt x 845.07718pt>
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 7>
+.pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page7 used on input line 114.
+ische Berechnung 1_3.pdf , page3 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 7>
+.pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page7 used on input line 114.
+ische Berechnung 1_3.pdf , page3 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
 3.pdf Graphic file (type pdf)
 <use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
-.pdf, page 7>
+.pdf, page 3>
 Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
-ische Berechnung 1_3.pdf , page7 used on input line 114.
+ische Berechnung 1_3.pdf , page3 used on input line 114.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [152 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
+1_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
+hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
+at most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
+, id=2235, page=4, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page4 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page4 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 4>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page4 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[153 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
+1_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
+hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
+at most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
+, id=2246, page=5, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page5 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page5 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 5>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page5 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[154 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
+1_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
+hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
+at most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
+, id=2253, page=6, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page6 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page6 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 6>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page6 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[155 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
+1_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/mechanik/Simulationen/Seitenplatte_Rec
+hts_Statische Berechnung 1_3.pdf): PDF inclusion: found PDF version <1.7>, but 
+at most version <1.5> allowed
+<figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf
+, id=2260, page=7, 597.55246pt x 845.07718pt>
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page7 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page7 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_
+3.pdf Graphic file (type pdf)
+<use figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3
+.pdf, page 7>
+Package pdftex.def Info: figures/mechanik/Simulationen/Seitenplatte_Rechts_Stat
+ische Berechnung 1_3.pdf , page7 used on input line 114.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[156 <./figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 
 1_3.pdf>]
 Anhang E.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
@@ -3619,11 +3690,11 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 118.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[153
+[157
 
 ]
 Anhang F.
-<pdf/meanwell5.pdf, id=2198, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2270, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 120.
@@ -3632,7 +3703,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 120.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell5.pdf, id=2201, page=1, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2273, page=1, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell5.pdf , page1 used on input line 120.
@@ -3646,7 +3717,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 120.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[154
+[158
 
 ]
 File: pdf/meanwell5.pdf Graphic file (type pdf)
@@ -3671,7 +3742,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell5.pdf , page1 used on input line 120.
 (pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
-[155 <./pdf/meanwell5.pdf>]
+[159 <./pdf/meanwell5.pdf>]
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 121.
@@ -3680,7 +3751,7 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf>
 Package pdftex.def Info: pdf/meanwell5.pdf  used on input line 121.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell5.pdf, id=2249, page=2, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2322, page=2, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 2>
 Package pdftex.def Info: pdf/meanwell5.pdf , page2 used on input line 121.
@@ -3705,92 +3776,16 @@ nput line 121.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 2>
 Package pdftex.def Info: pdf/meanwell5.pdf , page2 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [156 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2259, page=3, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 121.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 3>
-Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [157 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2264, page=4, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 121.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 4>
-Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [158 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2275, page=5, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 121.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 5>
-Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [159 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2284, page=6, 597.45204pt x 845.1575pt>
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
-(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 121.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 6>
-Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [160 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2289, page=7, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2332, page=3, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -3798,18 +3793,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 121.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 7>
-Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+<use pdf/meanwell5.pdf, page 3>
+Package pdftex.def Info: pdf/meanwell5.pdf , page3 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [161 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2296, page=8, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2337, page=4, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -3817,18 +3812,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 121.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 8>
-Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+<use pdf/meanwell5.pdf, page 4>
+Package pdftex.def Info: pdf/meanwell5.pdf , page4 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [162 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2301, page=9, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2348, page=5, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -3836,11 +3831,87 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 121.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/meanwell5.pdf Graphic file (type pdf)
-<use pdf/meanwell5.pdf, page 9>
-Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+<use pdf/meanwell5.pdf, page 5>
+Package pdftex.def Info: pdf/meanwell5.pdf , page5 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
  [163 <./pdf/meanwell5.pdf>]
-<pdf/meanwell5.pdf, id=2306, page=10, 597.45204pt x 845.1575pt>
+<pdf/meanwell5.pdf, id=2356, page=6, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 121.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 6>
+Package pdftex.def Info: pdf/meanwell5.pdf , page6 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [164 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=2361, page=7, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 121.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 7>
+Package pdftex.def Info: pdf/meanwell5.pdf , page7 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [165 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=2369, page=8, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 121.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 8>
+Package pdftex.def Info: pdf/meanwell5.pdf , page8 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [166 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=2374, page=9, 597.45204pt x 845.1575pt>
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 121.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/meanwell5.pdf Graphic file (type pdf)
+<use pdf/meanwell5.pdf, page 9>
+Package pdftex.def Info: pdf/meanwell5.pdf , page9 used on input line 121.
+(pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
+ [167 <./pdf/meanwell5.pdf>]
+<pdf/meanwell5.pdf, id=2379, page=10, 597.45204pt x 845.1575pt>
 File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 10>
 Package pdftex.def Info: pdf/meanwell5.pdf , page10 used on input line 121.
@@ -3858,8 +3929,8 @@ File: pdf/meanwell5.pdf Graphic file (type pdf)
 <use pdf/meanwell5.pdf, page 10>
 Package pdftex.def Info: pdf/meanwell5.pdf , page10 used on input line 121.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [164 <./pdf/meanwell5.pdf>]
-<pdf/meanwell12.pdf, id=2311, 597.45204pt x 845.1575pt>
+ [168 <./pdf/meanwell5.pdf>]
+<pdf/meanwell12.pdf, id=2384, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 124.
@@ -3868,7 +3939,7 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 124.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell12.pdf, id=2314, page=1, 597.45204pt x 845.1575pt>
+<pdf/meanwell12.pdf, id=2387, page=1, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell12.pdf , page1 used on input line 124.
@@ -3894,7 +3965,7 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 1>
 Package pdftex.def Info: pdf/meanwell12.pdf , page1 used on input line 124.
 (pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
- [165 <./pdf/meanwell12.pdf>]
+ [169 <./pdf/meanwell12.pdf>]
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 125.
@@ -3903,7 +3974,7 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf>
 Package pdftex.def Info: pdf/meanwell12.pdf  used on input line 125.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-<pdf/meanwell12.pdf, id=2355, page=2, 597.45204pt x 845.1575pt>
+<pdf/meanwell12.pdf, id=2427, page=2, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 2>
 Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 125.
@@ -3930,8 +4001,8 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf/meanwell12.pdf , page2 used on input line 125.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
 
-[166 <./pdf/meanwell12.pdf>]
-<pdf/meanwell12.pdf, id=2360, page=3, 597.45204pt x 845.1575pt>
+[170 <./pdf/meanwell12.pdf>]
+<pdf/meanwell12.pdf, id=2432, page=3, 597.45204pt x 845.1575pt>
 File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 3>
 Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 125.
@@ -3949,8 +4020,8 @@ File: pdf/meanwell12.pdf Graphic file (type pdf)
 <use pdf/meanwell12.pdf, page 3>
 Package pdftex.def Info: pdf/meanwell12.pdf , page3 used on input line 125.
 (pdftex.def)             Requested size: 567.57622pt x 802.89508pt.
- [167 <./pdf/meanwell12.pdf>]
-<pdf/raspberry.pdf, id=2367, 597.50829pt x 845.0471pt>
+ [171 <./pdf/meanwell12.pdf>]
+<pdf/raspberry.pdf, id=2440, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf>
 Package pdftex.def Info: pdf/raspberry.pdf  used on input line 127.
@@ -3959,7 +4030,7 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf>
 Package pdftex.def Info: pdf/raspberry.pdf  used on input line 127.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<pdf/raspberry.pdf, id=2370, page=1, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=2443, page=1, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 1>
 Package pdftex.def Info: pdf/raspberry.pdf , page1 used on input line 127.
@@ -3985,107 +4056,31 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 1>
 Package pdftex.def Info: pdf/raspberry.pdf , page1 used on input line 127.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [168 <./pdf/raspberry.pdf>]
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf>
-Package pdftex.def Info: pdf/raspberry.pdf  used on input line 128.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf>
-Package pdftex.def Info: pdf/raspberry.pdf  used on input line 128.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<pdf/raspberry.pdf, id=2386, page=2, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 128.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 2>
-Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [169 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2401, page=3, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 128.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 3>
-Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [170 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2406, page=4, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 128.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 4>
-Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [171 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2412, page=5, 597.50829pt x 845.0471pt>
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
-File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
-<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
-Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 128.
-(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 5>
-Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
-(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [172 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2417, page=6, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+<use pdf/raspberry.pdf>
+Package pdftex.def Info: pdf/raspberry.pdf  used on input line 128.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf>
+Package pdftex.def Info: pdf/raspberry.pdf  used on input line 128.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<pdf/raspberry.pdf, id=2459, page=2, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -4093,18 +4088,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 128.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 6>
-Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+<use pdf/raspberry.pdf, page 2>
+Package pdftex.def Info: pdf/raspberry.pdf , page2 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [173 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2422, page=7, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=2474, page=3, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -4112,18 +4107,18 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 128.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 7>
-Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+<use pdf/raspberry.pdf, page 3>
+Package pdftex.def Info: pdf/raspberry.pdf , page3 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [174 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2432, page=8, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=2479, page=4, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
@@ -4131,11 +4126,87 @@ Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 128.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 File: pdf/raspberry.pdf Graphic file (type pdf)
-<use pdf/raspberry.pdf, page 8>
-Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+<use pdf/raspberry.pdf, page 4>
+Package pdftex.def Info: pdf/raspberry.pdf , page4 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
  [175 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2439, page=9, 597.50829pt x 845.0471pt>
+<pdf/raspberry.pdf, id=2484, page=5, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 128.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 5>
+Package pdftex.def Info: pdf/raspberry.pdf , page5 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [176 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2489, page=6, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 128.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 6>
+Package pdftex.def Info: pdf/raspberry.pdf , page6 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [177 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2495, page=7, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 128.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 7>
+Package pdftex.def Info: pdf/raspberry.pdf , page7 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [178 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2505, page=8, 597.50829pt x 845.0471pt>
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
+<use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
+Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
+nput line 128.
+(pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
+File: pdf/raspberry.pdf Graphic file (type pdf)
+<use pdf/raspberry.pdf, page 8>
+Package pdftex.def Info: pdf/raspberry.pdf , page8 used on input line 128.
+(pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
+ [179 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2512, page=9, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 9>
 Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 128.
@@ -4153,8 +4224,8 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 9>
 Package pdftex.def Info: pdf/raspberry.pdf , page9 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [176 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2478, page=10, 597.50829pt x 845.0471pt>
+ [180 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2551, page=10, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 10>
 Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 128.
@@ -4173,8 +4244,8 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf/raspberry.pdf , page10 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
 
-[177 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2485, page=11, 597.50829pt x 845.0471pt>
+[181 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2557, page=11, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 11>
 Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 128.
@@ -4192,8 +4263,8 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 11>
 Package pdftex.def Info: pdf/raspberry.pdf , page11 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [178 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2490, page=12, 597.50829pt x 845.0471pt>
+ [182 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2562, page=12, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 12>
 Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 128.
@@ -4211,8 +4282,8 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 12>
 Package pdftex.def Info: pdf/raspberry.pdf , page12 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [179 <./pdf/raspberry.pdf>]
-<pdf/raspberry.pdf, id=2495, page=13, 597.50829pt x 845.0471pt>
+ [183 <./pdf/raspberry.pdf>]
+<pdf/raspberry.pdf, id=2568, page=13, 597.50829pt x 845.0471pt>
 File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 13>
 Package pdftex.def Info: pdf/raspberry.pdf , page13 used on input line 128.
@@ -4230,207 +4301,227 @@ File: pdf/raspberry.pdf Graphic file (type pdf)
 <use pdf/raspberry.pdf, page 13>
 Package pdftex.def Info: pdf/raspberry.pdf , page13 used on input line 128.
 (pdftex.def)             Requested size: 567.62965pt x 802.7902pt.
- [180 <./pdf/raspberry.pdf>]) (main.bbl)
+ [184 <./pdf/raspberry.pdf>]) (main.bbl)
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 152.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [181
+ [185
 
 ] (main.lof
-Overfull \hbox (0.88872pt too wide) detected at line 22
-\T1/lmr/m/n/10 IV.10 
+Overfull \hbox (1.16628pt too wide) detected at line 16
+\T1/lmr/m/n/10 III.10 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 23
-\T1/lmr/m/n/10 IV.11 
+Overfull \hbox (1.16628pt too wide) detected at line 17
+\T1/lmr/m/n/10 III.11 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 24
-\T1/lmr/m/n/10 IV.12 
+Overfull \hbox (1.16628pt too wide) detected at line 18
+\T1/lmr/m/n/10 III.12 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 25
-\T1/lmr/m/n/10 IV.13 
- []
-
-
-Overfull \hbox (0.88872pt too wide) detected at line 26
-\T1/lmr/m/n/10 IV.14 
- []
-
-
-Overfull \hbox (0.88872pt too wide) detected at line 27
-\T1/lmr/m/n/10 IV.15 
- []
-
-
-Overfull \hbox (0.88872pt too wide) detected at line 28
-\T1/lmr/m/n/10 IV.16 
- []
-
-
-Overfull \hbox (0.88872pt too wide) detected at line 29
-\T1/lmr/m/n/10 IV.17 
+Overfull \hbox (1.16628pt too wide) detected at line 19
+\T1/lmr/m/n/10 III.13 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 30
-\T1/lmr/m/n/10 IV.18 
+\T1/lmr/m/n/10 IV.10 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 31
-\T1/lmr/m/n/10 IV.19 
+\T1/lmr/m/n/10 IV.11 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 32
-\T1/lmr/m/n/10 IV.20 
+\T1/lmr/m/n/10 IV.12 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 33
-\T1/lmr/m/n/10 IV.21 
+\T1/lmr/m/n/10 IV.13 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 34
-\T1/lmr/m/n/10 IV.22 
+\T1/lmr/m/n/10 IV.14 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 35
-\T1/lmr/m/n/10 IV.23 
+\T1/lmr/m/n/10 IV.15 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 36
-\T1/lmr/m/n/10 IV.24 
+\T1/lmr/m/n/10 IV.16 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 37
-\T1/lmr/m/n/10 IV.25 
+\T1/lmr/m/n/10 IV.17 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 38
-\T1/lmr/m/n/10 IV.26 
+\T1/lmr/m/n/10 IV.18 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 39
-\T1/lmr/m/n/10 IV.27 
+\T1/lmr/m/n/10 IV.19 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 40
-\T1/lmr/m/n/10 IV.28 
+\T1/lmr/m/n/10 IV.20 
  []
 
 
 Overfull \hbox (0.88872pt too wide) detected at line 41
+\T1/lmr/m/n/10 IV.21 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 42
+\T1/lmr/m/n/10 IV.22 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 43
+\T1/lmr/m/n/10 IV.23 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 44
+\T1/lmr/m/n/10 IV.24 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 45
+\T1/lmr/m/n/10 IV.25 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 46
+\T1/lmr/m/n/10 IV.26 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 47
+\T1/lmr/m/n/10 IV.27 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 48
+\T1/lmr/m/n/10 IV.28 
+ []
+
+
+Overfull \hbox (0.88872pt too wide) detected at line 49
 \T1/lmr/m/n/10 IV.29 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 51.
+nput line 52.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[182
+[186
 
 ]
-Overfull \hbox (0.88872pt too wide) detected at line 76
+Overfull \hbox (0.88872pt too wide) detected at line 84
 \T1/lmr/m/n/10 VI.10 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 77
+Overfull \hbox (0.88872pt too wide) detected at line 85
 \T1/lmr/m/n/10 VI.11 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 78
+Overfull \hbox (0.88872pt too wide) detected at line 86
 \T1/lmr/m/n/10 VI.12 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 79
+Overfull \hbox (0.88872pt too wide) detected at line 87
 \T1/lmr/m/n/10 VI.13 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 80
+Overfull \hbox (0.88872pt too wide) detected at line 88
 \T1/lmr/m/n/10 VI.14 
  []
 
 
-Overfull \hbox (0.88872pt too wide) detected at line 81
+Overfull \hbox (0.88872pt too wide) detected at line 89
 \T1/lmr/m/n/10 VI.15 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 92
+Overfull \hbox (4.7775pt too wide) detected at line 100
 \T1/lmr/m/n/10 VII.10 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 93
+Overfull \hbox (4.7775pt too wide) detected at line 101
 \T1/lmr/m/n/10 VII.11 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 94
+Overfull \hbox (4.7775pt too wide) detected at line 102
 \T1/lmr/m/n/10 VII.12 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 95
+Overfull \hbox (4.7775pt too wide) detected at line 103
 \T1/lmr/m/n/10 VII.13 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 96
+Overfull \hbox (4.7775pt too wide) detected at line 104
 \T1/lmr/m/n/10 VII.14 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 97
+Overfull \hbox (4.7775pt too wide) detected at line 105
 \T1/lmr/m/n/10 VII.15 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 98
+Overfull \hbox (4.7775pt too wide) detected at line 106
 \T1/lmr/m/n/10 VII.16 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 99
+Overfull \hbox (4.7775pt too wide) detected at line 107
 \T1/lmr/m/n/10 VII.17 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 100
+Overfull \hbox (4.7775pt too wide) detected at line 108
 \T1/lmr/m/n/10 VII.18 
  []
 
 
-Overfull \hbox (4.7775pt too wide) detected at line 101
+Overfull \hbox (4.7775pt too wide) detected at line 109
 \T1/lmr/m/n/10 VII.19 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 113.
+nput line 115.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
-[183])
+[187])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -4439,7 +4530,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 157.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [184] (main.lot)
+ [188] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
@@ -4448,7 +4539,7 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 162.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [185
+ [189
 
 ] (main.lol)
 \tf@lol=\write8
@@ -4459,26 +4550,17 @@ File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
 nput line 165.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
- [186
+ [190
 
 ] (main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 8346DE8C51AB74F9490523FAC4EE1A6F;33878
-(rerunfilecheck)             After:  A802E0FAEFE1C52E09A18CF0A10893E7;33878.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: FDBBD7BDFF8AD21B0E0DF2B98AF1F4D0;34355.
  ) 
 Here is how much of TeX's memory you used:
- 28017 strings out of 479300
- 520170 string characters out of 2847696
- 1120629 words of memory out of 3000000
- 44165 multiletter control sequences out of 15000+200000
+ 28112 strings out of 479300
+ 523076 string characters out of 2847696
+ 1121595 words of memory out of 3000000
+ 44224 multiletter control sequences out of 15000+200000
  482421 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,18n,89p,2498b,1289s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4516,9 +4598,9 @@ ype1/public/lm/lmsy10.pfb><C:/Users/Tobias.Schmeisser/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Tobias.Schmeisser/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Tobias.Sc
 hmeisser/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (202 pages, 13383477 bytes).
+Output written on main.pdf (206 pages, 13507713 bytes).
 PDF statistics:
- 2840 PDF objects out of 2984 (max. 8388607)
- 590 named destinations out of 1000 (max. 500000)
- 2477 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2927 PDF objects out of 2984 (max. 8388607)
+ 618 named destinations out of 1000 (max. 500000)
+ 2533 words of extra memory for PDF output out of 10000 (max. 10000000)
 
