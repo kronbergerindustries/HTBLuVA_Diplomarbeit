@@ -1,35 +1,175 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{CAN}
-Grundlagen zum can bus.
 
-\bibitem{SPI}
-Spi - serial peripheral interface.
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{javascript}{article}{}
+      \name{author}{1}{}{%
+        {{hash=49197f923a01b3c8503e22fbe363c4e0}{%
+           family={Communications},
+           familyi={C\bibinitperiod},
+           given={Netscape},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Englisch}%
+      }
+      \strng{namehash}{49197f923a01b3c8503e22fbe363c4e0}
+      \strng{fullhash}{49197f923a01b3c8503e22fbe363c4e0}
+      \strng{bibnamehash}{49197f923a01b3c8503e22fbe363c4e0}
+      \strng{authorbibnamehash}{49197f923a01b3c8503e22fbe363c4e0}
+      \strng{authornamehash}{49197f923a01b3c8503e22fbe363c4e0}
+      \strng{authorfullhash}{49197f923a01b3c8503e22fbe363c4e0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Netscape Company Relations}
+      \field{subtitle}{28 industrie-leading companies to endorse JavaScript as a complement to Java for easy online application development}
+      \field{title}{Netscape and Sun announce JavaScript, the open, cross-platform object scripting language for enterprise networks and the internet}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html
+      \endverb
+      \warn{\item Entry 'javascript' (literatur.bib): Invalid format '04.12.1995' of date field 'date' - ignoring}
+      \warn{\item Entry 'javascript' (literatur.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{spi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0b134b7fe4f399f80a9c281e93ded1e}{%
+           family={Corelis},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Englisch}%
+      }
+      \list{organization}{1}{%
+        {EWA GmbH}%
+      }
+      \strng{namehash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \strng{fullhash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \strng{bibnamehash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \strng{authorbibnamehash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \strng{authornamehash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \strng{authorfullhash}{f0b134b7fe4f399f80a9c281e93ded1e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SPI Tutorial}
+      \verb{urlraw}
+      \verb https://www.corelis.com/education/tutorials/spi-tutorial/#What_is_SPI
+      \endverb
+      \verb{url}
+      \verb https://www.corelis.com/education/tutorials/spi-tutorial/#What_is_SPI
+      \endverb
+      \warn{\item Entry 'spi' (literatur.bib): Invalid format '05.04.2021' of date field 'date' - ignoring}
+    \endentry
+    \entry{python}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2a6fcba16a9ad0207aa3d5e4a341ab88}{%
+           family={Kuhlman},
+           familyi={K\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Englisch}%
+      }
+      \list{location}{1}{%
+        {Vereinigte Staaten}%
+      }
+      \list{publisher}{1}{%
+        {Platypus Global Media}%
+      }
+      \strng{namehash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \strng{fullhash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \strng{bibnamehash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \strng{authorbibnamehash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \strng{authornamehash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \strng{authorfullhash}{2a6fcba16a9ad0207aa3d5e4a341ab88}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Section 1.1}
+      \field{isbn}{978-0984221233}
+      \field{subtitle}{eginning Python, Advanced Python, and Python Exercises}
+      \field{title}{A Python Book}
+      \field{volume}{1. Auflage}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20120623165941/http://cutter.rexx.com/~dkuhlman/python_book_01.html
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20120623165941/http://cutter.rexx.com/~dkuhlman/python_book_01.html
+      \endverb
+      \warn{\item Entry 'python' (literatur.bib): Invalid format '01.09.2011' of date field 'date' - ignoring}
+      \warn{\item Entry 'python' (literatur.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{can}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9d4ad8bde782945f70c3a13cb618b07f}{%
+           family={Voss},
+           familyi={V\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Englisch}%
+      }
+      \list{location}{1}{%
+        {Vereinigte Staaten}%
+      }
+      \list{publisher}{1}{%
+        {Copperhill Technologies Corporation}%
+      }
+      \strng{namehash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \strng{fullhash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \strng{bibnamehash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \strng{authorbibnamehash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \strng{authornamehash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \strng{authorfullhash}{9d4ad8bde782945f70c3a13cb618b07f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-938581-17-5}
+      \field{title}{Controller Area Network Prototyping with Arduino}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.at/books/about/Controller_Area_Network_Prototyping_With.html?id=GbJdCAAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false
+      \endverb
+      \verb{url}
+      \verb https://books.google.at/books/about/Controller_Area_Network_Prototyping_With.html?id=GbJdCAAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false
+      \endverb
+      \warn{\item Entry 'can' (literatur.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+  \missing{AktiveKuehlung}
+  \missing{Kuehlung1}
+  \missing{Kuehlung2}
+  \missing{Luftkuehlung1}
+  \missing{Luftkuehlung2}
+  \missing{Wasserkuehlung}
+\endrefsection
+\endinput
 
-\bibitem{Kuehlung2}
-Karlheinz Blankenbach.
-\newblock {\em Wärmelehre}.
-\newblock Hochschule Pforzheim, Pforzheim, 2014.
-
-\bibitem{Luftkuehlung1}
-{\em Die Meisterprüfung im Kfz-Handwerk}, volume~3.
-\newblock Vogel Buchverlag, Würzburg, 12. auflage edition, 1991.
-
-\bibitem{Wasserkuehlung}
-Hans~J Leyhausen.
-
-\bibitem{AktiveKuehlung}
-Frima Merath.
-\newblock Elektronikkühlung – teil 2: Entwärmung mit aktiver kühlung,
-  2020.
-
-\bibitem{Kuehlung1}
-Frank Pobell.
-\newblock Möglichst nahe am absoluten nullpunkt, 2008.
-
-\bibitem{Luftkuehlung2}
-Jan Trommelmans.
-\newblock {\em Das Auto und seine Technik}.
-\newblock Number Teil 1. Motorbuchverlag, Stuttgard, 1. auflage edition, 1992.
-
-\end{thebibliography}

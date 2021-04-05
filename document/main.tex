@@ -17,6 +17,10 @@
 
 %% Packages für Grafiken & Abbildungen & Pdf-Dateien & Zitieren
 
+
+\usepackage{biblatex}
+\addbibresource{literatur.bib}
+
 \usepackage{graphicx} 
 \usepackage{wrapfig}
 \usepackage{lipsum}
@@ -24,7 +28,6 @@
 \usepackage{tikz}
 \usepackage{pdfpages}
 \usepackage{floatrow}
-\bibliographystyle{plain}
 
 
 %% Packages für Formeln
@@ -107,6 +110,23 @@
 	stringstyle=\color{mymauve},     % string literal style
 }
 
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +149,6 @@
 %% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \tableofcontents
-\bibliographystyle{plain}
 
 %% INPUT FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -146,7 +165,7 @@
 \fancyfoot[C]{Kronberger, Lackner, Kern, Schmeisser}
 
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
-\bibliography{literatur.bib}
+\printbibliography
 
 %% Abbildungsverzeichnis
 
@@ -162,6 +181,5 @@
 
 \addcontentsline{toc}{chapter}{Codeverzeichnis}
 \lstlistoflistings
-
 
 \end{document}

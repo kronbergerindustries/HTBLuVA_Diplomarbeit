@@ -1,73 +1,28 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
-Illegal, another \bibstyle command---line 24 of file main.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Reallocating 'name_of_file' (item size: 1) to 14 items.
-Database file #1: literatur.bib
-Warning--entry type for "Kuehlung1" isn't style-file defined
---line 1 of file literatur.bib
-Warning--entry type for "Wasserkuehlung" isn't style-file defined
---line 19 of file literatur.bib
-I was expecting a `,' or a `}'---line 21 of file literatur.bib
- : 
- : author = {Johannes Wiesinger},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "AktiveKuehlung" isn't style-file defined
---line 51 of file literatur.bib
-Warning--entry type for "SPI" isn't style-file defined
---line 79 of file literatur.bib
-Warning--entry type for "CAN" isn't style-file defined
---line 99 of file literatur.bib
-Warning--to sort, need author or key in SPI
-Warning--to sort, need author or key in CAN
-Warning--empty author and editor in Luftkuehlung1
-Warning--can't use both volume and number fields in Luftkuehlung1
-Warning--there's a number but no series in Luftkuehlung2
-You've used 8 entries,
-            2118 wiz_defined-function locations,
-            543 strings with 4636 characters,
-and the built_in function-call counts, 1562 in all, are:
-= -- 137
-> -- 38
-< -- 2
-+ -- 18
-- -- 10
-* -- 72
-:= -- 236
-add.period$ -- 16
-call.type$ -- 8
-change.case$ -- 28
-chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 72
-empty$ -- 181
-format.name$ -- 10
-if$ -- 348
-int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 5
-newline$ -- 34
-num.names$ -- 10
-pop$ -- 56
-preamble$ -- 1
-purify$ -- 22
-quote$ -- 0
-skip$ -- 66
-stack$ -- 0
-substring$ -- 40
-swap$ -- 11
-text.length$ -- 2
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 26
-warning$ -- 5
-while$ -- 10
-width$ -- 9
-write$ -- 68
-(There were 2 error messages)
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[135] biber-MSWIN64:340> INFO - === 
+[178] Biber.pm:415> INFO - Reading 'main.bcf'
+[299] Biber.pm:952> INFO - Found 10 citekeys in bib section 0
+[315] Biber.pm:4340> INFO - Processing section 0
+[330] Biber.pm:4531> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[386] bibtex.pm:1689> INFO - LaTeX decoding ...
+[408] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
+[468] Utils.pm:395> WARN - Entry 'can' (literatur.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring
+[471] Utils.pm:395> WARN - Entry 'spi' (literatur.bib): Invalid format '05.04.2021' of date field 'date' - ignoring
+[474] Utils.pm:395> WARN - Entry 'python' (literatur.bib): Invalid format '01.09.2011' of date field 'date' - ignoring
+[475] Utils.pm:395> WARN - Entry 'python' (literatur.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring
+[478] Utils.pm:395> WARN - Entry 'javascript' (literatur.bib): Invalid format '04.12.1995' of date field 'date' - ignoring
+[478] Utils.pm:395> WARN - Entry 'javascript' (literatur.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'Kuehlung1' (section 0)
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'Kuehlung2' (section 0)
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'Wasserkuehlung' (section 0)
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'Luftkuehlung1' (section 0)
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'Luftkuehlung2' (section 0)
+[486] Utils.pm:395> WARN - I didn't find a database entry for 'AktiveKuehlung' (section 0)
+[497] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[497] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[497] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[497] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[508] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[510] bbl.pm:757> INFO - Output to main.bbl
+[510] Biber.pm:128> INFO - WARNINGS: 12

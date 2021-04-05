@@ -1,7 +1,7 @@
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Shapes 1.14
-import "Chart.js" as Char
+import QtCharts 2.15
 
 Item {
     id: diagnosisPage

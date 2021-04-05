@@ -1,213 +1,436 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {I}Einführung}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Projektteam}{2}{section.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Projektbetreuer}{3}{section.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Aufgabeneinteilung}{3}{section.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {II}Einleitung}{5}{chapter.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Motivation}{5}{section.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Zielsetzung}{5}{section.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Topologie des Gesamtsystems}{6}{section.2.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Leitfaden}{7}{section.2.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {III}Stand der Technik}{8}{chapter.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Kühlung}{8}{section.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}Thermodynamische Grundlagen}{8}{subsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}Technische Anwendung}{8}{subsection.3.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3}Funktionsweise}{9}{subsection.3.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4}Einsatzgebiete}{9}{subsection.3.1.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5}Beispiele}{9}{subsection.3.1.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.6}Wasserkühlung}{10}{subsection.3.1.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.6.1}Wasserkühlung bei elektronischen Geräten}{10}{subsubsection.3.1.6.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.6.2}Wasserkühlung in Personal Computern}{10}{subsubsection.3.1.6.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.7}Luftkühlung}{11}{subsection.3.1.7}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.7.1}Luftkühlung bei Personalcomputern}{11}{subsubsection.3.1.7.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.8}Ölkühlung}{11}{subsection.3.1.8}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.9}Aktive Kühlung}{12}{subsection.3.1.9}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.9.1}Aufbau}{12}{subsubsection.3.1.9.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Akkusysteme}{13}{section.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Batteriearten}{14}{section.3.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Bleiakkumulator}{14}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Nickel-Metallhybrid Akkumulatoren}{14}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Nickel-Cadmium Akkumulatoren}{15}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Lithium-Ionen Batterie}{16}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.1}Geschichte}{16}{subsubsection.3.3.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.2}Allgemeines}{16}{subsubsection.3.3.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.3}Prinzip der Lithium-Ionen Batterie}{17}{subsubsection.3.3.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.4}Lagerung und Sicherheithinweise}{18}{subsubsection.3.3.4.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.5}Anwendungbereiche von Lithium-Ionen Akkumulatoren}{19}{subsubsection.3.3.4.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5}Batteriemanagementsystem}{20}{subsection.3.3.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.5.1}Komponenten eines BMS}{21}{subsubsection.3.3.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.5.2}Battery-Balancing}{22}{subsubsection.3.3.5.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Synchronmaschine mit Dauermagneterregung}{22}{section.3.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Auswertung der Antriebswelle (Encoder)}{22}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Curtis Controller}{22}{section.3.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}Allgemeines}{22}{subsection.3.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Feldorientierte Regelung}{22}{subsection.3.5.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Leonard-Umformer}{22}{section.3.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Allgemeines}{22}{subsection.3.6.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2} }{22}{subsection.3.6.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}PID-Regler}{23}{section.3.7}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1}Einleitung}{23}{subsection.3.7.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2}Der Regelkreis}{23}{subsection.3.7.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3}Die Regelstrecke}{25}{subsection.3.7.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.4}Der Regler}{25}{subsection.3.7.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Bussysteme}{27}{section.3.8}%
-\contentsline {subsection}{\numberline {8.1}SPI-Bus}{27}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {8.2}CAN-Bus}{27}{subsection.3.8.2}%
-\contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{28}{chapter.4}%
-\contentsline {section}{\numberline {1}Gehäuse}{28}{section.4.1}%
-\contentsline {subsection}{\numberline {1.1}Anforderung an das Gehäuse}{28}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {1.2}Dimensionierung}{29}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {1.3}Gewicht}{29}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {1.4}Gesamtgewicht des Zero-Emission-Power-Bikes:}{29}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {1.5}Festlegung der Maße}{29}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {1.6}Material}{29}{subsection.4.1.6}%
-\contentsline {section}{\numberline {2}Getriebe}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {2.1}Aufgabe des Getriebes}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {2.2}Das Getriebe}{31}{subsection.4.2.2}%
-\contentsline {section}{\numberline {3}Akkupacks}{42}{section.4.3}%
-\contentsline {subsection}{\numberline {3.1}Akkupack Vorderseite}{42}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {3.2}Akkupack Motorblock}{43}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {3.3}Akkupack Mitte}{43}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4}Akkukühlung}{44}{section.4.4}%
-\contentsline {subsection}{\numberline {4.1}Warum eine Kühlung notwendig ist}{44}{subsection.4.4.1}%
-\contentsline {section}{\numberline {5}Zusammenbau}{45}{section.4.5}%
-\contentsline {chapter}{\numberline {V}Akku und Ladekonzept}{47}{chapter.5}%
-\contentsline {section}{\numberline {1}Übersicht}{47}{section.5.1}%
-\contentsline {subsection}{\numberline {1.1}Aufgaben der Energieversorgung}{47}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {1.2}Aufgaben des Batteriemanagement}{47}{subsection.5.1.2}%
-\contentsline {section}{\numberline {2}Energieversorgung}{48}{section.5.2}%
-\contentsline {subsection}{\numberline {2.1}Dimensionierung der Akkuzellen}{48}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {2.2}Zusammenstellung der Batteriezellen}{50}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {2.3}Verschaltung der Batteriezellen}{53}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Serienschaltung}{53}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Parallelschaltung}{54}{subsubsection.5.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Kombination aus Serien- und Parallelschaltung}{55}{subsubsection.5.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Geschätzt Betriebszeit des Akkumulators}{57}{subsubsection.5.2.3.4}%
-\contentsline {subsection}{\numberline {2.4}Allgemeine Übersicht der Elektroinstallation}{57}{subsection.5.2.4}%
-\contentsline {section}{\numberline {3}Batteriemanagementsystem}{58}{section.5.3}%
-\contentsline {subsection}{\numberline {3.1}Funktionen des Batteriemanagementsystems}{60}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {3.2}Verschaltung des Batteriemanagementsystems}{65}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Anschließen der Akkupacks an das BMS}{65}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Temperaturmessung mithilfe des BMS}{66}{subsubsection.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Anschlussplan der Last}{67}{subsubsection.5.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Kommunikation mittels CAN-Bus}{68}{subsubsection.5.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Applikation des BMS Mini}{69}{subsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Konfiguration der EMUS EVGUI App}{70}{subsubsection.5.3.3.1}%
-\contentsline {subsection}{\numberline {3.4}Akkumulatoren}{73}{subsection.5.3.4}%
-\contentsline {chapter}{\numberline {VI}Antriebsstrang}{74}{chapter.6}%
-\contentsline {section}{\numberline {1}Übersicht}{74}{section.6.1}%
-\contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{74}{subsection.6.1.1}%
-\contentsline {section}{\numberline {2}Hardwareaufbau des Antriebssystems}{75}{section.6.2}%
-\contentsline {subsection}{\numberline {2.1}Mechanische Umsetzung}{76}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {2.2}Der Laststromkreis}{77}{subsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Elektrische Energieübertragung}{78}{subsubsection.6.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Leitungsschutzorgane}{80}{subsubsection.6.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Motorbeschreibung}{81}{subsubsection.6.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Der Steuerstromkreis}{82}{subsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- und Ausgänge}{82}{subsubsection.6.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{84}{subsubsection.6.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{84}{subsubsection.6.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{85}{subsubsection.6.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-Feedback Input)}{85}{subsubsection.6.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{86}{subsubsection.6.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{86}{subsubsection.6.2.3.7}%
-\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{87}{subsubsection.6.2.3.8}%
-\contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{87}{subsubsection.6.2.3.9}%
-\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{88}{subsubsection.6.2.3.10}%
-\contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{89}{section.6.3}%
-\contentsline {subsection}{\numberline {3.1}Parameterbasierte Programmierung (Programmer)}{90}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{90}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{90}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{92}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{92}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{94}{subsubsection.6.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{95}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{95}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{96}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{97}{subsubsection.6.3.3.3}%
-\contentsline {section}{\numberline {4}Inbetriebnahme}{98}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{98}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{100}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {VII}Human-Computer Interaction System}{101}{chapter.7}%
-\contentsline {section}{\numberline {1}Übersicht}{101}{section.7.1}%
-\contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{101}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {1.2}Steuereinheit}{102}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {1.3}Grundaufbau des Systems}{102}{subsection.7.1.3}%
-\contentsline {section}{\numberline {2}Spannungsversorgung}{103}{section.7.2}%
-\contentsline {subsection}{\numberline {2.1}Aufbau des Versorgungssystems}{103}{subsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}12V Versorgungsysstem}{103}{subsubsection.7.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}5V Versorgungssystem}{104}{subsubsection.7.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Abschalten der Spannungswandler}{104}{subsubsection.7.2.1.3}%
-\contentsline {section}{\numberline {3}Steuerung der Peripherie}{105}{section.7.3}%
-\contentsline {subsection}{\numberline {3.1}Hardware}{105}{subsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Input}{105}{subsubsection.7.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Umsetzung}{106}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {3.3}Lenkerschalter}{106}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {3.4}Beleuchtung}{106}{subsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Output}{107}{subsubsection.7.3.4.1}%
-\contentsline {subsection}{\numberline {3.5}Software}{107}{subsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}gpiozero}{107}{subsubsection.7.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}threading}{107}{subsubsection.7.3.5.2}%
-\contentsline {section}{\numberline {4}Benutzeroberfläche}{108}{section.7.4}%
-\contentsline {subsection}{\numberline {4.1}Hardware}{108}{subsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Befestigung}{109}{subsubsection.7.4.1.1}%
-\contentsline {subsection}{\numberline {4.2}Software}{109}{subsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Aufbau}{109}{subsubsection.7.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Nutzer / Berechtigungen}{110}{subsubsection.7.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Komponenten}{110}{subsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Navigationsmenü}{110}{subsubsection.7.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Balken Anzeige}{111}{subsubsection.7.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Modus Anzeige}{111}{subsubsection.7.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Graph}{112}{subsubsection.7.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.5}Weitere Komponenten}{112}{subsubsection.7.4.3.5}%
-\contentsline {subsection}{\numberline {4.4}Programm Fenster}{113}{subsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Login}{113}{subsubsection.7.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Fahrdaten}{113}{subsubsection.7.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Akku- und Ladedaten}{114}{subsubsection.7.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Fahrdaten Diagnose}{114}{subsubsection.7.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Fehler}{115}{subsubsection.7.4.4.5}%
-\contentsline {subsubsection}{\numberline {4.4.6}Nutzer und Berechtigungen}{115}{subsubsection.7.4.4.6}%
-\contentsline {subsection}{\numberline {4.5}Realisierung der Benutzeroberfächer}{116}{subsection.7.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}QML}{116}{subsubsection.7.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Qt-Quick}{116}{subsubsection.7.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Slots und Signals}{116}{subsubsection.7.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Bridge}{117}{subsubsection.7.4.5.4}%
-\contentsline {section}{\numberline {5}Kommunikation}{118}{section.7.5}%
-\contentsline {subsection}{\numberline {5.1}Hardware}{118}{subsection.7.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}CAN-Modul}{118}{subsubsection.7.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Netzwerkstruktur}{118}{subsubsection.7.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Listener}{119}{subsection.7.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Konfigurieren der Schnittstelle}{119}{subsubsection.7.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Empfangen der Daten}{119}{subsubsection.7.5.2.2}%
-\contentsline {section}{\numberline {6}Fahrdatenspeicher}{120}{section.7.6}%
-\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{120}{subsection.7.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Benutzer System}{120}{subsubsection.7.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{120}{subsubsection.7.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Fehler Tabelle}{122}{subsubsection.7.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Akku Daten}{122}{subsubsection.7.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}Handler}{122}{subsection.7.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Konfigurieren der Schnittstelle}{122}{subsubsection.7.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Cursor}{123}{subsubsection.7.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}SELECT Befehl}{123}{subsubsection.7.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}INSERT Befehl}{123}{subsubsection.7.6.2.4}%
-\contentsline {chapter}{\numberline {VIII}Endergebnis}{124}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Allgemeines}{125}{appendix.A}%
-\contentsline {section}{\numberline {1}Zeitplan}{126}{section.A.1}%
-\contentsline {section}{\numberline {2}Kosten}{127}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Programmcode}{128}{appendix.B}%
-\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{129}{appendix.C}%
-\contentsline {section}{\numberline {1}Mechanik}{130}{section.C.1}%
-\contentsline {section}{\numberline {2}HCIS}{141}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Simulationen}{142}{appendix.D}%
-\contentsline {section}{\numberline {1}Mechanik}{142}{section.D.1}%
-\contentsline {chapter}{\numberline {E}Schaltpläne}{157}{appendix.E}%
-\contentsline {section}{\numberline {1}HCIS}{158}{section.E.1}%
-\contentsline {chapter}{\numberline {F}Datenblätter}{159}{appendix.F}%
-\contentsline {section}{\numberline {1}HCIS}{160}{section.F.1}%
-\contentsline {subsection}{\numberline {1.1}Mean Well RSD-30H-5}{160}{subsection.F.1.1}%
-\contentsline {subsection}{\numberline {1.2}Mean Well SD-350C-12}{170}{subsection.F.1.2}%
-\contentsline {subsection}{\numberline {1.3}Raspberry Pi 4 Moddel B}{173}{subsection.F.1.3}%
-\contentsline {chapter}{Literaturverzeichnis}{186}{subsection.F.1.3}%
-\contentsline {chapter}{Abbildungsverzeichnis}{186}{appendix*.137}%
-\contentsline {chapter}{Tabellenverzeichnis}{189}{appendix*.138}%
-\contentsline {chapter}{Codeverzeichnis}{190}{appendix*.139}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}CAN-Bus}{27}{subsection.3.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}SPI-Bus}{27}{subsection.3.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Programmiersprachen}{28}{section.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Python}{28}{subsection.3.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}JavaScript}{28}{subsection.3.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {IV}Mechanische Umsetzung}{29}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Gehäuse}{29}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Anforderung an das Gehäuse}{29}{subsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Dimensionierung}{30}{subsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Gewicht}{30}{subsection.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Gesamtgewicht des Zero-Emission-Power-Bikes:}{30}{subsection.4.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5}Festlegung der Maße}{30}{subsection.4.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6}Material}{30}{subsection.4.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Getriebe}{32}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Aufgabe des Getriebes}{32}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Das Getriebe}{32}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Akkupacks}{43}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Akkupack Vorderseite}{43}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Akkupack Motorblock}{44}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Akkupack Mitte}{44}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Akkukühlung}{45}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Warum eine Kühlung notwendig ist}{45}{subsection.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Zusammenbau}{46}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {V}Akku und Ladekonzept}{48}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Übersicht}{48}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Aufgaben der Energieversorgung}{48}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Aufgaben des Batteriemanagement}{48}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Energieversorgung}{49}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Dimensionierung der Akkuzellen}{49}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Zusammenstellung der Batteriezellen}{51}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Verschaltung der Batteriezellen}{54}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Serienschaltung}{54}{subsubsection.5.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Parallelschaltung}{55}{subsubsection.5.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Kombination aus Serien- und Parallelschaltung}{56}{subsubsection.5.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.4}Geschätzt Betriebszeit des Akkumulators}{58}{subsubsection.5.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Allgemeine Übersicht der Elektroinstallation}{58}{subsection.5.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Batteriemanagementsystem}{59}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Funktionen des Batteriemanagementsystems}{61}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Verschaltung des Batteriemanagementsystems}{66}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Anschließen der Akkupacks an das BMS}{66}{subsubsection.5.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Temperaturmessung mithilfe des BMS}{67}{subsubsection.5.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Anschlussplan der Last}{68}{subsubsection.5.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.4}Kommunikation mittels CAN-Bus}{69}{subsubsection.5.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Applikation des BMS Mini}{70}{subsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Konfiguration der EMUS EVGUI App}{71}{subsubsection.5.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Akkumulatoren}{74}{subsection.5.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {VI}Antriebsstrang}{75}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Übersicht}{75}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{75}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Hardwareaufbau des Antriebssystems}{76}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Mechanische Umsetzung}{77}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Der Laststromkreis}{78}{subsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Elektrische Energieübertragung}{79}{subsubsection.6.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Leitungsschutzorgane}{81}{subsubsection.6.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Motorbeschreibung}{82}{subsubsection.6.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Der Steuerstromkreis}{83}{subsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Übersicht Ein- und Ausgänge}{83}{subsubsection.6.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Digitale Eingänge (Digital Inputs)}{85}{subsubsection.6.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Analoge Eingänge (Analog Inputs)}{85}{subsubsection.6.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.4}Gas- und Bremseingänge (Throttle and Brake Inputs)}{86}{subsubsection.6.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.5}Positionsrückmeldung vom Encoder (Position-Feedback Input)}{86}{subsubsection.6.2.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.6}Prozessorversorgung und Spulenrücklauf (KSI and Coil Return)}{87}{subsubsection.6.2.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.7}Analoge Ausgänge (Analog Outputs)}{87}{subsubsection.6.2.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.8}Digitale und Pulsweitenmodulierbare Ausgänge (Digital and PWM Outputs)}{88}{subsubsection.6.2.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.9}Spannungsversorgungs-Ausgänge (Power Supply Outputs)}{88}{subsubsection.6.2.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.10}Kommunikations-Ports}{89}{subsubsection.6.2.3.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Softwareaufbau des Antriebssystems}{90}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Parameterbasierte Programmierung (Programmer)}{91}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Allgemeines}{91}{subsubsection.6.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}Funktionen}{91}{subsubsection.6.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Drehmomentsteuerung (Torquecontrol)}{93}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Parameter}{93}{subsubsection.6.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}ECO- und Sportmodus (Speed-Mode-Select)}{95}{subsubsection.6.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Vehicle-Control-Language (VCL) Programmierung}{96}{subsection.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Grundfunktion}{96}{subsubsection.6.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Kommunikation (CAN-Bus)}{97}{subsubsection.6.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3}Speed-Mode-Select}{98}{subsubsection.6.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Inbetriebnahme}{99}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Leonard-Versuchsaufbau}{99}{subsection.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Bleiakku-Versuchsaufbau}{101}{subsection.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {VII}Human-Computer Interaction System}{102}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Übersicht}{102}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Grundfunktionen des Systems}{102}{subsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Steuereinheit}{103}{subsection.7.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Grundaufbau des Systems}{103}{subsection.7.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Spannungsversorgung}{104}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Aufbau des Versorgungssystems}{104}{subsection.7.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}12V Versorgungsysstem}{104}{subsubsection.7.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}5V Versorgungssystem}{105}{subsubsection.7.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Abschalten der Spannungswandler}{105}{subsubsection.7.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Steuerung der Peripherie}{106}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Hardware}{106}{subsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Input}{106}{subsubsection.7.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Umsetzung}{107}{subsection.7.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Lenkerschalter}{107}{subsubsection.7.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Beleuchtung}{108}{subsubsection.7.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Output}{109}{subsubsection.7.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Software}{109}{subsection.7.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}gpiozero}{109}{subsubsection.7.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}threading}{109}{subsubsection.7.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Benutzeroberfläche}{110}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Hardware}{110}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Befestigung}{111}{subsubsection.7.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Software}{111}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Aufbau}{111}{subsubsection.7.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Nutzer / Berechtigungen}{112}{subsubsection.7.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Komponenten}{112}{subsection.7.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}Navigationsmenü}{112}{subsubsection.7.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2}Balken Anzeige}{113}{subsubsection.7.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.3}Modus Anzeige}{113}{subsubsection.7.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.4}Graph}{114}{subsubsection.7.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.5}Weitere Komponenten}{114}{subsubsection.7.4.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Programm Fenster}{115}{subsection.7.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1}Login}{115}{subsubsection.7.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.2}Fahrdaten}{115}{subsubsection.7.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.3}Akku- und Ladedaten}{116}{subsubsection.7.4.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.4}Fahrdaten Diagnose}{116}{subsubsection.7.4.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.5}Fehler}{117}{subsubsection.7.4.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.6}Nutzer und Berechtigungen}{117}{subsubsection.7.4.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Realisierung der Benutzeroberfächer}{118}{subsection.7.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.1}QML}{118}{subsubsection.7.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2}Qt-Quick}{118}{subsubsection.7.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.3}Slots und Signals}{118}{subsubsection.7.4.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.4}Bridge}{119}{subsubsection.7.4.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Kommunikation}{120}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Hardware}{120}{subsection.7.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}CAN-Modul}{120}{subsubsection.7.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}Netzwerkstruktur}{120}{subsubsection.7.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Listener}{121}{subsection.7.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Konfigurieren der Schnittstelle}{121}{subsubsection.7.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Empfangen der Daten}{121}{subsubsection.7.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Fahrdatenspeicher}{122}{section.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Datenbankstruktur}{122}{subsection.7.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Benutzer System}{122}{subsubsection.7.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2}Motor Daten}{122}{subsubsection.7.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.3}Fehler Tabelle}{124}{subsubsection.7.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.4}Akku Daten}{124}{subsubsection.7.6.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Handler}{124}{subsection.7.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.1}Konfigurieren der Schnittstelle}{124}{subsubsection.7.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2}Cursor}{125}{subsubsection.7.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.3}SELECT Befehl}{125}{subsubsection.7.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.4}INSERT Befehl}{125}{subsubsection.7.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {VIII}Endergebnis}{126}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Allgemeines}{127}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Zeitplan}{128}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Kosten}{129}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Programmcode}{130}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}HICS}{130}{section.B.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Benutzeroberfläche}{130}{subsection.B.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{131}{appendix.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Mechanik}{132}{section.C.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}HCIS}{143}{section.C.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Simulationen}{144}{appendix.D}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Mechanik}{144}{section.D.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Schaltpläne}{159}{appendix.E}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}HCIS}{160}{section.E.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {F}Datenblätter}{161}{appendix.F}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}HCIS}{162}{section.F.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Mean Well RSD-30H-5}{162}{subsection.F.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Mean Well SD-350C-12}{172}{subsection.F.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Raspberry Pi 4 Moddel B}{175}{subsection.F.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literaturverzeichnis}{188}{subsection.F.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{188}{appendix*.139}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{191}{appendix*.140}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Codeverzeichnis}{192}{appendix*.141}%
