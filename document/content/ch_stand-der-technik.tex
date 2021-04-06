@@ -476,7 +476,7 @@ Die permanenterregte Synchronmaschine benötigt keine zusätzlichen Komponenten 
 \\[5mm]
 \begin{itemize}
 	\item Aufgrund der Erregung mit Permanentmagneten ist die Einspeisung einer flussbildenden Blindstromkomponente, wie bei der Asynchronmaschine bekannt ist, nicht notwendig. Somit ist der einzuspeisende Strom und damit der Energieverbrauch für vergleichbare Maschinen kleiner\footnote{vgl. \cite{Dissertation}, S. 15ff.}. \\[3mm]
-	\item Weiteres erlauben die fehlende Läufernutung und die hohe Remanenzflussdichte der Dauermagneten höhere Luftspaltflussdichten, dadurch lassen sich auch höhere Leistunsdaten realisieren. \\[3mm]
+	\item Weiters erlauben die fehlende Läufernutung und die hohe Remanenzflussdichte der Dauermagneten höhere Luftspaltflussdichten, dadurch lassen sich auch höhere Leistungsdaten realisieren. \\[3mm]
 \end{itemize}
 
 Verglichen mit Asynchronmaschinen haben permanenterregte Synchronmotoren also eine mindestens doppelt so große Bemessungsleistung bei gleicher Baugröße, zudem besitzen sie ebenfalls weniger Gesamtverluste. Die PSM müssen jedoch anwendungsspezifischer ausgelegt werden, denn es entfallen alle Einflussmöglichkeiten auf die Betriebsdaten, speziell auf Betrag und Phasenlage des Ständerstroms, die sonst durch die Änderung des Feldes über den Erregerstrom gegeben sind.
@@ -487,12 +487,12 @@ Um eine gute Ausnutzung des Bauvolumens realisieren zu können, wird der Stände
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{figures/antrieb/Läufer_Synchronmaschine.jpg}
-		\caption{Läufer einer dauermagneterregten Synchronmaschine\cite{Fischer}}
+		\caption{Läufer einer dauermagneterregten Synchronmaschine \cite{Fischer}}
 	\end{center}
 \end{figure}
 
 \subsection{Funktionsweise}
-Im Motorbetrieb wird an die Klemmen der Ständerwicklungen ein Drehstrom angelegt und dadurch ein sinusförmiges Drehfeld erzeugt. Da sich ungleiche magnetische Pole anziehen, wird der Rotor mit seinem zugehörigen Magnetfeld synchron mit dem angelegten Drehfeld mitbewegt. Im Leerlauf stehen sich also der Norpol des Stator-Drehfelds und der Südpol des permanenterregten Rotor-Magnetfelds exakt gegenüber, die Drehzahl des Läufers ist also synchron mit der Drehzahl des angelegten Drehfelds. Bei bremsender Last eilt das Magnetfeld des Permanentmagneten dem Stator-Drehfeld um den Polradwinkel nach. Die Größe des Winkels stellt sich also abhängig von der Stärke des Lastdrehmoments ein. Dies kann jedoch nur bis zum sogenannten Kippmoment (Polradwinkel $\vartheta = 90^\circ$) gesteigert werden. Übersteigt das Drehmoment der Last das Kippmoment, so spricht man vom \glqq Abreißen\grqq{} der magnetischen Felder und die Synchronmaschine bleibt stehen. Das selbe gilt für den Generatorbetrieb, hier eilt aber das Drehfeld des Rotors vor. Bei Frequenzumrichterspeisung mit Feldorientierung kann jedoch dauerhaft mit $\vartheta$ = +/- $90^\circ$ gefahren werden, man spricht von sogenannter Querstromspeisung, der Zusammenhang zwischen (Läufer)-Feld und (Ständer)-Strom entspricht dann jenem der fremderregten Gleichstrommaschine\footnote{vgl. \cite{Synchronmaschine}}.
+Im Motorbetrieb wird an die Klemmen der Ständerwicklungen ein Drehstrom angelegt und dadurch ein sinusförmiges Drehfeld erzeugt. Da sich ungleiche magnetische Pole anziehen, wird der Rotor mit seinem zugehörigen Magnetfeld synchron mit dem angelegten Drehfeld mitbewegt. Im Leerlauf stehen sich also der Nordpol des Stator-Drehfelds und der Südpol des permanenterregten Rotor-Magnetfelds exakt gegenüber, die Drehzahl des Läufers ist also synchron mit der Drehzahl des angelegten Drehfelds. Bei bremsender Last eilt das Magnetfeld des Permanentmagneten dem Stator-Drehfeld um den Polradwinkel nach. Die Größe des Winkels stellt sich also abhängig von der Stärke des Lastdrehmoments ein. Dies kann jedoch nur bis zum sogenannten Kippmoment (Polradwinkel $\vartheta = 90^\circ$) gesteigert werden. Übersteigt das Drehmoment der Last das Kippmoment, so spricht man vom \glqq Abreißen\grqq{} der magnetischen Felder und die Synchronmaschine bleibt stehen. Das selbe gilt für den Generatorbetrieb, hier eilt aber das Drehfeld des Rotors vor. Bei Frequenzumrichterspeisung mit Feldorientierung kann jedoch dauerhaft mit $\vartheta$ = +/- $90^\circ$ gefahren werden, man spricht von sogenannter Querstromspeisung, der Zusammenhang zwischen (Läufer)-Feld und (Ständer)-Strom entspricht dann jenem der fremderregten Gleichstrommaschine\footnote{vgl. \cite{Synchronmaschine}}.
 
 	
 \newpage
@@ -505,7 +505,7 @@ Die Übertragung des elektrischen Signals erfolgt in Synchronmaschinen mit einge
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{figures/antrieb/SinCos_Sensor.png}
-		\caption{Ausgabe eines Sinus/Cosinus-Sensors\cite{Manual}}
+		\caption{Ausgabe eines Sinus/Cosinus-Sensors \cite{Manual}}
 	\end{center}
 \end{figure}
 
@@ -515,11 +515,11 @@ Die Übertragung des elektrischen Signals erfolgt in Synchronmaschinen mit einge
 
 \section{Curtis Controller}
 \subsection{Allgemeines}
-Der Curtis Controller ermöglicht eine genaue, zuverlässige und hocheffiziente Regelung von Drehzahl und Drehmoment bei Wechselstrom-Induktionsmotoren (ACIM) und Permanentmagnet-Synchronmotoren (SPM). Dieser Motorcontroller verfügt über zwei unabhängige Microprozessoren, um gleichzeitig eine außergewöhnliche Leistungsfähigkeit und funktionale Sicherheit gewährleisten zu können. 
+Der Curtis Controller ermöglicht eine genaue, zuverlässige und hocheffiziente Regelung von Drehzahl und Drehmoment bei Wechselstrom-Induktionsmotoren (ACIM) und Permanentmagnet-Synchronmotoren (PSM). Dieser Motorcontroller verfügt über zwei unabhängige Mikroprozessoren, um gleichzeitig eine außergewöhnliche Leistungsfähigkeit und funktionale Sicherheit gewährleisten zu können. 
 
-Der primäre Mikroprozessor führt eine fortschrittliche feldorientierte AC-Motorregelung durch, ebenso beinhaltet er einen weiteren integrierten Logik-Prozessor für eine zeitgleiche Operation durch die VCL-Software. Der zweite Mikroprozessor überwacht kontinuierlich den Betrieb des Gesamtsystems. Er misst Eingänge und kontrolliert die zugehörigen Ergebnisse, weiteres überprüft er kritische Zeitpunkte und Operationen. 
+Der primäre Mikroprozessor führt eine fortschrittliche feldorientierte AC-Motorregelung durch, ebenso beinhaltet er einen weiteren integrierten Logik-Prozessor für eine zeitgleiche Operation durch die VCL-Software. Der zweite Mikroprozessor überwacht kontinuierlich den Betrieb des Gesamtsystems. Er misst Eingänge und kontrolliert die zugehörigen Ergebnisse, weiters überprüft er kritische Zeitpunkte und Operationen. 
 
-Die Vehicle-Control-Language (VCL) ist eine  innovative Programmiersprache, welche von Curtis entwickelt wurde. Sehr viele einzigartige Funktionen sind in dieser Programmiersprache enthalten, weiteres können bei Bedarf selbst Funktionen erstellt und konfiguriert werden. VCL eröffnet neue Möglichkeiten der Anpassung, sodass bestimmte fahrzeugspezifische Anwendungen schnell und einfach in der Motorsteuerung selbst erstellt werden können, um den Einbau von zusätzlichen Steuer-Modulen verhindern zu können.
+Die Vehicle-Control-Language (VCL) ist eine  innovative Programmiersprache, welche von Curtis entwickelt wurde. Sehr viele einzigartige Funktionen sind in dieser Programmiersprache enthalten, weiters können bei Bedarf selbst Funktionen erstellt und konfiguriert werden. VCL eröffnet neue Möglichkeiten der Anpassung, sodass bestimmte fahrzeugspezifische Anwendungen schnell und einfach in der Motorsteuerung selbst erstellt werden können, um den Einbau von zusätzlichen Steuer-Modulen verhindern zu können.
 
 Für die umfassende Einsatzmöglichkeit dieses Controllers sind ebenfalls sehr wichtige Kommunikationsmöglichkeit über den CAN-Bus gegeben. Ein- und Ausgänge können im gesamten System geteilt und optimal gemeinsam genutzt werden, wodurch die Verkabelung minimiert und zusätzliche Applikationsmöglichkeiten erstellt werden können, die häufig die Kosten des Gesamtsystems senken.
 
@@ -528,7 +528,7 @@ Dieser Motorcontroller ist eine ideale Lösung für Motorantriebe in der Anwendu
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{figures/antrieb/Curtis_Bauformen.png}
-		\caption{Übersicht der häufigsten Bauformen eines Curtis Controllers\cite{Manual}}
+		\caption{Übersicht der häufigsten Bauformen eines Curtis Controllers \cite{Manual}}
 	\end{center}
 \end{figure}
 
@@ -537,21 +537,21 @@ Dieser Motorcontroller ist eine ideale Lösung für Motorantriebe in der Anwendu
 \newpage
  
 \subsection{Feldorientierte Regelung}
-Die herkömmliche Technik zur Regelung von PSM wird als Sechsstufen- oder Trapezsteuerung bezeichnet. Dabei wir der Stator in einem sechsstufigen Prozess angesteuert, der Schwankungen des erzeugten Drehmoments hervorruft. Jedes Wicklungspaar wird einzeln erregt, bis der Rotor die nächste Position erreicht, dann wird der Motor zum nächsten Schritt kommutiert. Skalare Techniken sind jedoch für Anwendungen mit dynamisch wechselnden Lasten nicht präzise genug. Durch den Einsatz der feldorientierten Regelung lässt sich die Präzision, Effizients und Lebensdauer des Antriebs erheblich steigern, weiteres lassen sich bei hohen und niedrigen Drehzahlen leistungsstarke Drehmomentregelungen realisieren\footnote{vgl. \cite{Feldorientierte-Regelung}}.
+"Die herkömmliche Technik zur Regelung von PSM wird als Sechsstufen- oder Trapezsteuerung bezeichnet. Dabei wir der Stator in einem sechsstufigen Prozess angesteuert, der Schwankungen des erzeugten Drehmoments hervorruft. Jedes Wicklungspaar wird einzeln erregt, bis der Rotor die nächste Position erreicht, dann wird der Motor zum nächsten Schritt kommutiert. Skalare Techniken sind jedoch für Anwendungen mit dynamisch wechselnden Lasten nicht präzise genug". Durch den Einsatz der feldorientierten Regelung lässt sich die Präzision, Effizienz und Lebensdauer des Antriebs erheblich steigern, weiters lassen sich bei hohen und niedrigen Drehzahlen leistungsstarke Drehmomentregelungen realisieren\footnote{vgl. \cite{Feldorientierte-Regelung}}.
 
-Die feldorientierte Regelung (auch Vektorregelung gennant) ist ein sinusförmiges Kommutierungsverfahren. Der Motorcontroller hat die Aufgabe die Statorströme zu berechnen, um den Rotor basierend auf der Stromrückkoppelung des Motors ansteuern zu können. Abgeleitet von der Raumzeigerdarstellung für Wechselspannungen und -strömen und deren bezug zueinander wird ein rotierendes Koordinatensystem mit den Größen Drehmoment und magnetische Flussdichte als Achsen erstellt. Das Verfahren wandelt die Statorströme über dieses Koordinatensystem in magnetische Flussdichte und Drehmoment erzeugende Komponenten um. Zudem regelt es die Statorströme über einen PID-Regler und wandelt sie dann in drei Spannungswerte zurück, aus denen wiederum der PWM-Ausgang erstellt wird. Dieser ist dann auch für das sinusförmige Kommutierungssignal verantwortlich\footnote{vgl. \cite{Feldorientierte-Antriebssteuerung}}.
+Die feldorientierte Regelung (auch Vektorregelung genannt) ist ein sinusförmiges Kommutierungsverfahren. Der Motorcontroller hat die Aufgabe die Statorströme zu berechnen, um den Rotor basierend auf der Stromrückkoppelung des Motors ansteuern zu können. Abgeleitet von der Raumzeigerdarstellung für Wechselspannungen und -strömen und deren Bezug zueinander wird ein rotierendes Koordinatensystem mit den Größen Drehmoment und magnetische Flussdichte als Achsen erstellt. Das Verfahren wandelt die Statorströme über dieses Koordinatensystem in magnetische Flussdichte und Drehmoment erzeugende Komponenten um. Zudem regelt es die Statorströme über einen PID-Regler und wandelt sie dann in drei Spannungswerte zurück, aus denen wiederum der PWM-Ausgang erstellt wird. Dieser ist dann auch für das sinusförmige Kommutierungssignal verantwortlich\footnote{vgl. \cite{Feldorientierte-Antriebssteuerung}}.
 \\[7mm]
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{figures/antrieb/Kommutierung_Trapezsteuerung.png}
-		\caption{Kommutierung mittels Trapezsteuerung\cite{Feldorientierte-Antriebssteuerung}}
+		\caption{Kommutierung mittels Trapezsteuerung \cite{Feldorientierte-Antriebssteuerung}}
 	\end{center}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{figures/antrieb/Kommutierung_Vektorregelung.png}
-		\caption{Kommutierung mittels Vektorregelung\cite{Feldorientierte-Antriebssteuerung}}
+		\caption{Kommutierung mittels Vektorregelung \cite{Feldorientierte-Antriebssteuerung}}
 	\end{center}
 \end{figure}
 
@@ -564,7 +564,7 @@ Die feldorientierte Regelung (auch Vektorregelung gennant) ist ein sinusförmige
 
 \section{Der Regler}
 \subsection{Einleitung}
-Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
+"Regelungen sind ein Bestandteil unseres Lebens und das nicht nur seit Erfindung der Dampfmaschine.
 
 Allein schon der aufrechte Gang funktioniert nur mit Regelung. Dabei wirken die Sinne als Sensoren, das Gehirn als Regler und die Muskeln als Aktoren. Weitere Regelungen in unserem Körper sind z.B. die Konstanthaltung der Körpertemperatur, der Blutdruck, die Anpassung der Pupille auf Helligkeitsänderungen usw.
 
@@ -591,11 +591,11 @@ Das Prinzip einer Regelung ist das fortlaufende Messen – Vergleichen – Stell
 
 Ein Regelkreis dient dazu, eine vorgegebene physikalische Größe, die Regelgröße, auf einen gewünschten Wert (Sollwert) zu bringen und dort zu halten, unabhängig von eventuell auftretenden Störungen. Um die Regelungsaufgabe zu erfüllen, muss der Augenblickswert der Regelgröße – der Istwert – gemessen und mit dem Sollwert verglichen werden. Auftretende Abweichungen müssen in geeigneter Art und Weise nachgestellt werden.
 
-Um nun diese Aufgabe technisch zu lösen, gibt es die Regelungstechnik. Sie baut im wesentlichen auf die mathematische Beschreibung und Modellbildung des Systems Regelkreis. Zur Modellierung, Beschreibung und Simulation werden Blockschaltbilder mit diskreten Signalgliedern verwendet\footnote{vgl. \cite{Regelungstechnik}}.
+Um nun diese Aufgabe technisch zu lösen, gibt es die Regelungstechnik. Sie baut im wesentlichen auf die mathematische Beschreibung und Modellbildung des Systems Regelkreis. Zur Modellierung, Beschreibung und Simulation werden Blockschaltbilder mit diskreten Signalgliedern verwendet".\footnote{Zitatquelle: \cite{Regelungstechnik}}
 	
 \newpage
 
-Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es oft in der Regelungstechnik verwendet wird, aus den Hauptteilen Regler und Regelstrecke:
+Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es meist in der Regelungstechnik verwendet wird, aus den Hauptteilen Regler und Regelstrecke:
 \\[5mm]
 
 \begin{itemize}
@@ -620,14 +620,14 @@ Ein Regelkreis besteht entsprechend des vereinfachten Blockschaltbildes, wie es 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{figures/antrieb/Regelkreis_Grundaufbau.png}
-		\caption{Das Blockschaltbild eines allgemeinen Regelkreises\cite{AUT5}}
+		\caption{Das Blockschaltbild eines allgemeinen Regelkreises \cite{AUT5}}
 	\end{center}
 \end{figure}
 
 \newpage
 
 \subsection{Der PID-Regler}
-Der PID-Regler vereinigt die guten Eigenschaften der anderen klassischen Regler. Der PID-Regler ist genau und sehr schnell, in den meisten Anwendungen kommt deshalb dieser Regler zum Einsatz. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht.
+Der PID-Regler vereint die guten Eigenschaften der anderen klassischen Regler. Der PID-Regler ist genau und sehr schnell, in den meisten Anwendungen kann dieser Regler deshalb verwendet werden. Vorab sollte man jedoch überprüfen, ob ein einfacherer bzw. billigerer Regler für die Realisierung der gewünschten Anwendung ebenfalls ausreicht.
 \\[5mm]
 Der PID-Regler besteht grundlegend aus drei einzelnen Reglern, die mit einander kombiniert werden:
 \\[5mm]
@@ -646,20 +646,20 @@ Reglergleichung: \hspace{5mm} $y(t) = K_I \cdot \int\limits_{0}^{t} e(t) \,dt$ \
 \textbf{D-Anteil}\\[1mm]
 Der D-Anteil ist ein Differenzierer, der nur in Verbindung mit anderen Reglern eingesetzt wird. Er reagiert nicht auf die Regelabweichung, sondern nur auf deren Änderungsgeschwindigkeit. Je schneller sich das Signal ändert, desto größer ist die Ausgangsgröße, diese wird noch mit Kd multipliziert.
 
-Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktor stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden\footnote{vgl. \cite{AUT5}, Kapitel 4}.
+Ein Nachteil aller Regler mit D-Anteil kann die Unruhe im Kreis sein. Ist das Sensorsignal verrauscht, so wird dieses Rauschen durch das Differenzieren weiter verstärkt und wieder in den Kreis hineingegeben. Dadurch wird der Aktor stärker belastet. Solche Probleme können aber durch Anpassung der Regelparameter oder mit dem Hinzufügen eines Filters behoben werden\footnote{vgl. \cite{PID-Regler}},\footnote{vgl. \cite{AUT5}, Kapitel 4}.
 \\[4mm]
 Reglergleichung: \hspace{7mm} $y(t) = K_D \cdot \dfrac{de(t)}{dt}$\hspace{5mm} bzw. \hspace{5mm} $G_R = K_D \cdot s$
 
 \newpage
 
-Kombiniert man also die drei unterschiedlichen Regler miteinander, so erhält man den sogennanten PID-Regler, dieser vereint die guten Eigenschaften der einzelnen Regler. Der P-Regler ist für die schnelle Korrekturen zuständig, er reagiert ohne Verzögerung auf die Regelabweichung. Der I-Regler überwacht die Regelung des P-Reglers und korrigiert diese über die Zeit, um eventuelle Regelabweichungen auszubessern. Der D-Anteil verstärkt bei schnellen Veränderungen beide Regelkreise, um das Ansprechverhalten zu verbessern\footnote{vgl. \cite{PID-Regler}}.
+Kombiniert man also die drei unterschiedlichen Regler miteinander, so erhält man den sogenannten PID-Regler, dieser vereint die guten Eigenschaften der einzelnen Regler. Der P-Regler ist für die schnellen Korrekturen zuständig, er reagiert ohne Verzögerung auf die Regelabweichung. Der I-Regler überwacht die Regelung des P-Reglers und korrigiert diese über die Zeit, um eventuelle Regelabweichungen auszubessern. Der D-Anteil verstärkt bei schnellen Veränderungen beide Regelkreise, um das Ansprechverhalten zu verbessern\footnote{vgl. \cite{PID-Regler}}.
 \\[4mm]
-Reglerleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^{t} e(t) \,dt + K_D \cdot \dfrac{de(t)}{dt}$ \hspace{3mm} bzw. \hspace{3mm} $G_R = K_P + \dfrac{K_I}{s} + K_D \cdot s$
+Reglergleichung: \hspace{3mm} $y(t) = K_P \cdot e(t) + K_I \cdot \int\limits_{0}^{t} e(t) \,dt + K_D \cdot \dfrac{de(t)}{dt}$ \hspace{3mm} bzw. \hspace{3mm} $G_R = K_P + \dfrac{K_I}{s} + K_D \cdot s$
 \\[5mm]
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.15]{figures/antrieb/PID_Regler.png}
-		\caption{Zusammensetzung des PID-Reglers\cite{Regelungstechnik}}
+		\caption{Zusammensetzung des PID-Reglers \cite{Regelungstechnik}}
 	\end{center}
 \end{figure}
 \vspace{5mm}
@@ -668,7 +668,7 @@ Hier sind für ein besseres Verständnis die Sprungantworten der unterschiedlich
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.3]{figures/antrieb/Reglertypen.png}
-		\caption{Vergleich der verschiedenen Reglertypen\cite{PID-Regler}}
+		\caption{Vergleich der verschiedenen Reglertypen \cite{PID-Regler}}
 	\end{center}
 \end{figure}
 

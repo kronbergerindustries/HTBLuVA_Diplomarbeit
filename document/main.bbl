@@ -19,22 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{PID-Regler}{online}{}
-      \list{organization}{1}{%
-        {3DIGI}%
-      }
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeltitlesource}{title}
-      \field{title}{Allgemeines zu PID Reglern}
-      \verb{urlraw}
-      \verb http://3digi.wikidot.com/allgemeines-zu-pid-reglern
-      \endverb
-      \verb{url}
-      \verb http://3digi.wikidot.com/allgemeines-zu-pid-reglern
-      \endverb
-      \warn{\item Entry 'PID-Regler' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
-    \endentry
     \entry{AnschlussplanLast}{online}{}
       \list{organization}{1}{%
         {EMUS UAB}%
@@ -226,6 +210,7 @@
       \strng{authorbibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
       \strng{authornamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
       \strng{authorfullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -239,6 +224,111 @@
       \verb https://www.maurelma.ch/Produkte/Antriebstechnik/Controller/Curtis/manual_1232E_34E_36E_38E.pdf
       \endverb
       \warn{\item Entry 'Manual' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{VCL_Common_Functions}{book}{}
+      \name{author}{1}{}{%
+        {{hash=dedb59b4e4ab2df0d6e34c55c5d92342}{%
+           family={Curtis\bibnamedelima Instruments},
+           familyi={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mt. Kisco, NY 10509}%
+      }
+      \list{publisher}{1}{%
+        {Curtis Instruments, Inc.}%
+      }
+      \strng{namehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{fullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{bibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorbibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authornamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorfullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{VCL Common Functions}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \verb{url}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \warn{\item Entry 'VCL_Common_Functions' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{VCL_Programmer}{book}{}
+      \name{author}{1}{}{%
+        {{hash=dedb59b4e4ab2df0d6e34c55c5d92342}{%
+           family={Curtis\bibnamedelima Instruments},
+           familyi={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mt. Kisco, NY 10509}%
+      }
+      \list{publisher}{1}{%
+        {Curtis Instruments, Inc.}%
+      }
+      \strng{namehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{fullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{bibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorbibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authornamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorfullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \field{extraname}{3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{VCL Programmer's Guide}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \verb{url}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \warn{\item Entry 'VCL_Programmer' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{WIN_VCL}{book}{}
+      \name{author}{1}{}{%
+        {{hash=dedb59b4e4ab2df0d6e34c55c5d92342}{%
+           family={Curtis\bibnamedelima Instruments},
+           familyi={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mt. Kisco, NY 10509}%
+      }
+      \list{publisher}{1}{%
+        {Curtis Instruments, Inc.}%
+      }
+      \strng{namehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{fullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{bibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorbibnamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authornamehash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \strng{authorfullhash}{dedb59b4e4ab2df0d6e34c55c5d92342}
+      \field{extraname}{4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{WinVCL User's Guide}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \verb{url}
+      \verb https://www.curtisinstruments.com/
+      \endverb
+      \warn{\item Entry 'WIN_VCL' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{DetaillierteApp}{online}{}
       \list{organization}{1}{%
@@ -693,7 +783,7 @@
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Feldorientierte Regelung der permanenterregten Synchronmaschine ohne Lagegeber fur den gesamten ¨ Drehzahlbereich bis zum Stillstand}
+      \field{title}{Feldorientierte Regelung der permanenterregten Synchronmaschine ohne Lagegeber fuer den gesamten Drehzahlbereich bis zum Stillstand}
       \field{year}{2006}
       \verb{urlraw}
       \verb https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00013770/ilm1-2007000172.pdf
@@ -875,12 +965,59 @@
       \endverb
       \warn{\item Entry 'FunktionsweiseAktivBalancing' (literatur.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring}
     \endentry
+    \entry{PID-Regler}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {3DIGI}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Allgemeines zu PID Reglern}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb http://3digi.wikidot.com/allgemeines-zu-pid-reglern
+      \endverb
+      \verb{url}
+      \verb http://3digi.wikidot.com/allgemeines-zu-pid-reglern
+      \endverb
+      \warn{\item Entry 'PID-Regler' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
     \entry{Synchronmaschine}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
       \list{organization}{1}{%
         {studyflix}%
       }
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{2}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Synchronmaschine}
       \verb{urlraw}
@@ -908,6 +1045,7 @@
       \strng{authorbibnamehash}{ff064a97492e27dd42c3096d559e4411}
       \strng{authornamehash}{ff064a97492e27dd42c3096d559e4411}
       \strng{authorfullhash}{ff064a97492e27dd42c3096d559e4411}
+      \field{extraname}{3}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
       \field{labelnamesource}{author}
@@ -1023,10 +1161,6 @@
     \endentry
   \enddatalist
   \missing{BM}
-  \missing{VCL_Common_Functions}
-  \missing{VCL_Programmcode}
-  \missing{VCL_Programmer}
-  \missing{WIN_VCL}
 \endrefsection
 \endinput
 
