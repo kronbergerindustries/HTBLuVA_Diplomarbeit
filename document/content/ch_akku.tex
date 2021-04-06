@@ -6,21 +6,21 @@
 
 
 \subsection{Aufgaben der Energieversorgung}
-In den Bereichen der Wirtschaft und der Technik bedeudet der Ausdruck Energieversorgung so viel wie, die Belieferung von Verbrauchern mit Energie. Es gibt unterschiedliche Arten von Energieträgern. Einerseits gibt es leitungsgebundene Energietrieger wie den elektrischen Strom andererseits gibt es auch feste Energieträger wie Kohle oder Holz. In naher Zukunft werden regenerative Energie vermehrt an Bedeutung gewinnen.
+In den Bereichen der Wirtschaft und der Technik bedeutet der Ausdruck Energieversorgung so viel wie, die Belieferung von Verbrauchern mit Energie. Es gibt unterschiedliche Arten von Energieträgern. Einerseits gibt es leitungsgebundene Energieträger wie den elektrischen Strom andererseits gibt es auch feste Energieträger wie Kohle oder Holz. In naher Zukunft werden regenerative Energie vermehrt an Bedeutung gewinnen.
 
 Eine stabil Energieversorgung, die mit allen Verbrauchern verbunden ist, wird benötigt, um dem emissionsfreien Sportmotorrad Mobilität zu verleihen. Die Aufgabe der Energieversorgung besteht daher darin, alle Komponenten mit ausreichend Spannung zu versorgen und noch wichtiger, diese Komponenten bei elektrischem Versagen vor Schäden zu schützen. Daher ist die Energieversorgung ein äußerst wichtiger Bestandteil eines solchen Projekts. Im weiteren Verlauf dieses Kapitel wird erklärt, wie die Energieversorgung geplant und in weiterer Folge umgesetzt wurde.
 
 \subsection{Aufgaben des Batteriemanagement}
-Wie bereits im Kapitel 2.5 erklärt wurde, bestehen die Aufgaben des Batteriemanagement darin, Kennwerte der Akkumulatoren aufzunehmen und an eine Steuereinheit weiterzuleiten. Weiters ist es auch für den Schutz der Akkumulatoren zuständig und ebenfalls für einen geregelten Ladevorgang.
+Wie bereits im Kapitel [\ref{Batteriemanagementsystem}] erklärt wurde, bestehen die Aufgaben des Batteriemanagement darin, Kennwerte der Akkumulatoren aufzunehmen und an eine Steuereinheit weiterzuleiten. Weiters ist es auch für den Schutz der Akkumulatoren zuständig und ebenfalls für einen geregelten Ladevorgang.
 
 Ein Bestandteil des Batteriemanagements ist das sogenannte Batteriemanagementsystem (BMS). Das BMS hat die Aufgabe die Akkumulatoren auf ihre Ladung und Entladung zu überwachen und ebenfalls zu regeln. Die Hauptaufgabe des Batteriemanagementsystem besteht jedoch darin, die Restenergie in den Zellen optimal zu nutzen. Um keine Beschädigungen an Zellen zu bekommen, schützt das Batteriemanagementsystem die Batterien vor Tiefenentladung, vor Überspannung, vor zu schneller Ladung (begrenzen des Ladestroms) und ebenfalls vor einem zu hohen Entladestrom. Bei Akkupacks, d.h. Akkumulatoren mit mehreren Zellen, sorgt das Batteriemanagementsystem außerdem für ein sogenanntes Balancing, das sich darin ausdrückt, dass die verschiedenen Batteriezellen gleiche Ladezustände und Entladezustände haben. Das Batteriemanagementsystem liest und verarbeitet alle Daten, die anschließend über ein Bussystem an die Zentralsteuerung weitergegeben werden.
 
-Um die Akkumualtoren beziehungsweise die Akkupacks wieder aufladen zu können, wird ein externes Ladegerät benötigt. Bei Badarf wird dieses Ladegerät mit den Akkumulatoren verbunden um den Ladevorgang in Gang zu setzten.
+Um die Akkumulatoren beziehungsweise die Akkupacks wieder aufladen zu können, wird ein externes Ladegerät benötigt. Bei Bedarf wird dieses Ladegerät mit den Akkumulatoren verbunden um den Ladevorgang in Gang zu setzten.
 \newpage
 
 \section{Energieversorgung}
 \subsection{Dimensionierung der Akkuzellen}
-Es ist besonders wichtig die Daten der Zellen vorher zu beachten um die Dimensionierung gut zu planen und schließlich auch umszusetzten. Um die Energie effizient speicher zu können wurden Lithium-Ionen Akkumulatoren verwendet. Da der Elektromotor mit einer Spannung von 50,4V gespeist werden muss, haben wir uns desswegen auch auf ein solches Versorgungssystem geeinigt. Weiters ist bei der Dimensionierung besonders wichtig auf die Lade- und Entladeströme zu achten. Einerseits muss beim Ladestrom nur auf den Strom des Ladegeräts geachtet werden. Andererseits ist es beim Entladestrom etwas komplizierter. Um den Richtwert des Entladestrom einzuhalten, muss der Nennstrom aller Verbraucher in einem System addiert werden.
+Es ist besonders wichtig die Daten der Zellen vorher zu beachten um die Dimensionierung gut zu planen und schließlich auch umzusetzen. Um die Energie effizient speicher zu können wurden Lithium-Ionen Akkumulatoren verwendet. Da der Elektromotor mit einer Spannung von 50,4V gespeist werden muss, haben wir uns deswegen auch auf ein solches Versorgungssystem geeinigt. Weiters ist bei der Dimensionierung besonders wichtig auf die Lade- und Entladeströme zu achten. Einerseits muss beim Ladestrom nur auf den Strom des Ladegeräts geachtet werden. Andererseits ist es beim Entladestrom etwas komplizierter. Um den Richtwert des Entladestrom einzuhalten, muss der Nennstrom aller Verbraucher in einem System addiert werden.
 
 Der Verbrauch der Steuerelemente setzt sich aus dem verwendeten Raspberry, dem Batteriemanagementsystem und dem Motorcontroller zusammen. Der Raspberry benötigt eine Spannung von 5V und darf eine maximale Leistung von ca. 8W aufweisen. Der Motorcontroller weist eine Nennspannung von 50,4V auf und benötigt eine Leistung von ungefähr 19,5kW. In den folgenden Formel wird der Strom dieser Komponenten berechnet.
 \begin{align*}
@@ -38,7 +38,7 @@ In der Nachfolgenden Abbildung kann man die Kenndaten einer einzelnen Lithium-Io
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1.0]{figures/Akku/LithiumIonenZellen.PNG}
-		\caption{Eigenschaften und Kennwerte einer Lithium Ionen Zelle[\cite{ZellenEigenschaften}]}
+		\caption{Eigenschaften und Kennwerte einer Lithium Ionen Zelle\cite{ZellenEigenschaften}}
 		\label{fig: Eigenschaften und Kennwerte einer Lithium Ionen Zelle}
 	\end{center}
 \end{figure}
@@ -69,7 +69,7 @@ Die Aufgabe besteht darin, die einzelnen Zellen zu sogenannten Akkupacks zusamme
 	\end{center}
 \end{figure}
 
-Im nächsten Schritt wurden diese Doppelzellen zusammgeschalten, die vereint ein Akkupack ergeben. Die Schwierigkeit dabei war, die Doppelzellen so anzuordnen, dass der Platz in der Schutzbox für die Akkumulatoren möglichst effizient genutzt wird. Jedoch waren wir beim Designen der Akkubox realtiv eingeschränkt, da wir darauf achten mussten, diese Boxen auch an unser Motorrad anzubringen. Die Boxen zusammen mit dem Inhalt sind auch extrem schwer. Desswegen war es wichtig, diese Boxen möglicht unten und in der Mitte zwischen den Achsen anzubringen um den Schwerpunkt des emissionsfreien Sportmotorrads nicht drastisch zu verändern.
+Im nächsten Schritt wurden diese Doppelzellen zusammengeschalteten, die vereint ein Akkupack ergeben. Die Schwierigkeit dabei war, die Doppelzellen so anzuordnen, dass der Platz in der Schutzbox für die Akkumulatoren möglichst effizient genutzt wird. Jedoch waren wir beim Designen der Akkubox relativ eingeschränkt, da wir darauf achten mussten, diese Boxen auch an unser Motorrad anzubringen. Die Boxen zusammen mit dem Inhalt sind auch extrem schwer. Deswegen war es wichtig, diese Boxen möglichst unten und in der Mitte zwischen den Achsen anzubringen um den Schwerpunkt des emissionsfreien Sportmotorrads nicht drastisch zu verändern.
 
 Wie bereits vorher erwähnt müssen diese Akkupacks geschützt werden. Dies ist notwendig um die Lebenszeit der Akkumulatoren zu verlängern und um sie vor äußeren Einflüssen zu schützen. Diese Akkuboxen haben unterschiedliche Formen, da sie an unterschiedlichen Positionen an dem Sportmotorrad angebracht werden. Grundsätzlich haben wir 3 verschiedene Akkuboxen designt und angefertigt.
 \newpage
@@ -144,12 +144,12 @@ Grundsätzlich gibt es 3 verschiedene Möglichkeiten einzelne Zellen zu verschal
 \end{itemize}
 
 \subsubsection{Serienschaltung}
-Das Prinzip der Serienschaltung ist relativ einfach. Der Minuspol der einen Batterie wird einfach mit dem Pluspol der anderen Batterie verbunden. Das hat zur Folge, dass alle Zellen mit dem selben Strom durchflossen werden. Jedoch addieren sich alle Teilspannungen der Zellen zu einer Gesamtspannung. Die Serienschaltung von Batterien wird häufig auch als Hintereinanderschaltung oder Reihenschaltung bezeichnet.
+Das Prinzip der Serienschaltung ist relativ einfach. Der Minuspol der einen Batterie wird einfach mit dem Pluspol der anderen Batterie verbunden. Das hat zur Folge, dass alle Zellen mit dem selben Strom durchflossen werden. Jedoch addieren sich alle Teilspannungen der Zellen zu einer Gesamtspannung. Die Serienschaltung von Batterien wird häufig auch als Hintereinanderschaltung oder Reihenschaltung bezeichnet\footnote{vgl. \cite{Seriensch}}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1.0]{figures/Akku/SerienschaltungzweierBatterien.org.jpg}
-		\caption{Serienschaltung beliebig vieler Zellen[\cite{ReihenschaltungZellen}]}
+		\caption{Serienschaltung beliebig vieler Zellen\cite{ReihenschaltungZellen}}
 		\label{fig: Serienschaltung beliebig vieler Zellen}
 	\end{center}
 \end{figure}
@@ -158,16 +158,16 @@ Beispiel: Werden zwei Batterien mit jeweils 300Ah (Amperestunden) und 9V (Volt) 
 
 \textbf{Vorteile und Nachteile:}
 
-Durch die Reihenschaltung wird ermöglicht, höhere Gesmatspannungen zu erzeugen. Ein bedeutender Nachteil ist jedoch, dass die schwächste Zelle die Leistung der gesamten Reihenschaltung beeinflusst. Außerdem kann es vorkommen, dass wenn eine einzelne Batteriezelle defekt ist, die gesamte Batteriereihe ausfällt. Daher ist es notwendig zusätzliche Sicherungen hinzu zu schalten. Im Normalfall können nur Batteriezellen vom gleichen Hersteller, Typ und von der selben Batterietechnik kombiniert und in Serie geschalten werden.
+Durch die Reihenschaltung wird ermöglicht, höhere Gesamtspannungen zu erzeugen. Ein bedeutender Nachteil ist jedoch, dass die schwächste Zelle die Leistung der gesamten Reihenschaltung beeinflusst. Außerdem kann es vorkommen, dass wenn eine einzelne Batteriezelle defekt ist, die gesamte Batteriereihe ausfällt. Daher ist es notwendig zusätzliche Sicherungen hinzu zu schalten. Im Normalfall können nur Batteriezellen vom gleichen Hersteller, Typ und von der selben Batterietechnik kombiniert und in Serie geschalteten werden.
 \newpage
 
 \subsubsection{Parallelschaltung}
-Das Prinzip der Parallelschatung ist relativ ähnlich zu der Serienschaltung. Der große Unterschied jedoch besteht darin, dass der Minuspol der einen Batterie mit dem Minuspol der anderen Batterie verschaltet wird. Dadurch summieren sich die Ladekapazitäten (Ah) der einzelnen Zellen zu einer gesmaten Ladekapazität. Die Gesamtspannung entspricht jedoch der Spannung einer einzelnen Batterie. 
+Das Prinzip der Parallelschaltung ist relativ ähnlich zu der Serienschaltung. Der große Unterschied jedoch besteht darin, dass der Minuspol der einen Batterie mit dem Minuspol der anderen Batterie verschaltet wird. Dadurch summieren sich die Ladekapazitäten (Ah) der einzelnen Zellen zu einer gesamten Ladekapazität. Die Gesamtspannung entspricht jedoch der Spannung einer einzelnen Batterie\footnote{vgl. \cite{Parallelsch}}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1.0]{figures/Akku/ParallelschaltungzweierBatterien.org.jpg}
-		\caption{Parallelschaltung beliebig vieler Zellen[\cite{ParallelschaltungZellen}]}
+		\caption{Parallelschaltung beliebig vieler Zellen\cite{ParallelschaltungZellen}}
 		\label{fig: Parallelschaltung beliebig vieler Zellen}
 	\end{center}
 \end{figure}
@@ -176,17 +176,17 @@ Beispiel: Werden zwei Batterien mit jeweils 300 Ah und 9V parallel geschaltet, s
 
 \textbf{Vorteile und Nachteile:}
 
-Die Parallelschaltung führt dazu, die Leistungsfähigkeit und außerdem die Lebensdauer zu steigern. Jedoch ist die Laderegelung bei einer Parallelschaltung nicht unkompliziert, da jede Zelle unterschiedlich schnell altert und damit einer Fehlerquelle darstellen kann. Deshalb kann es vorteilhaft sein, eine größere Batterie anstatt mehrerer einzelner Zellen zu verwenden. Sollte trotzdem einer Parallelschaltung mehrerer Zellen vorgenommen werden, sollte unbedingt darauf geachtet werden Batterien mit gleicher  Kapapzität, Bauart und Ladezustand einzusetzten. Außerdem ist es von Vorteil möglichst kurze Leitungen einzusetzten, um Spannungsverlust zu verhindern.
+Die Parallelschaltung führt dazu, die Leistungsfähigkeit und außerdem die Lebensdauer zu steigern. Jedoch ist die Laderegelung bei einer Parallelschaltung nicht unkompliziert, da jede Zelle unterschiedlich schnell altert und damit einer Fehlerquelle darstellen kann. Deshalb kann es vorteilhaft sein, eine größere Batterie anstatt mehrerer einzelner Zellen zu verwenden. Sollte trotzdem einer Parallelschaltung mehrerer Zellen vorgenommen werden, sollte unbedingt darauf geachtet werden Batterien mit gleicher  Kapazität, Bauart und Ladezustand einzusetzen. Außerdem ist es von Vorteil möglichst kurze Leitungen einzusetzen, um Spannungsverlust zu verhindern.
 \newpage
 
 \subsubsection{Kombination aus Serien- und Parallelschaltung}
 Durch eine Kombination aus einer Serien- und Parallelschaltung ermöglicht man eine größeres Flexibilität zur Erreichung einer bestimmten Spannung und auch Leistung. Wie bereits vorher erwähnt, erreicht man durch eine Parallelschaltung die benötigte Gesamtkapazität und durch die Serienschaltung die gewünscht Betriebsspannung.
 
-Diese Methode wird in der Praxis am häufigsten eingesetzt und ist auch bei unserem Akkusystem zum Einsatz gekommen.
+Diese Methode wird in der Praxis am häufigsten eingesetzt und ist auch bei unserem Akkusystem zum Einsatz gekommen.\footnote{vgl. \cite{Kombinationsch}}.
 
 \subsubsection{Verschaltung der Zellen zu einem Akkupack}
 
-Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zelle eine Spannung von 3,6V aufweist haben wir jeweils 40 einzelne Lithium Ionen Akkus zusammgeschaltet. Die einzelnen Batterie werden in den Akkupacks parallel verschaltet, da wir so einen deutlich höhere Leistungsfähigkeit erreichen und die Lebensdauer dadurch verlängert wird. 
+Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zelle eine Spannung von 3,6V aufweist haben wir jeweils 40 einzelne Lithium Ionen Akkus zusammengeschaltet. Die einzelnen Batterie werden in den Akkupacks parallel verschaltet, da wir so einen deutlich höhere Leistungsfähigkeit erreichen und die Lebensdauer dadurch verlängert wird. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -201,8 +201,8 @@ Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zel
 
 Durch die Parallelschaltung innerhalb der Akkupacks wird jedoch nicht die Spannung erhöht. Wir haben eine Anzahl von 560 einzelnen Lithium Ionen Zellen. Ein Akkupack beinhaltet 40 Zellen was dazu führt, dass wir insgesamt 14 Akkupacks haben. Diese 14 Akkupacks werden seriell verschalten um die Spannung von 3,6V auf die gewünschten 50,4V zu vergrößern.
 
-Die seperaten Zellen werden mithilfe eines Hiluminband Punktgeschweißt um so eine Verbindung zwischen den Zellen herzustellen.
-Wichtig ist darauf zu achten, dass das Hiluminband nur bis zu einer Stromstärke von 30A zulässig ist. Da wir jedoch weitaus höhere Ströme zu erwarten haben, muss wir dieses Hiluminband verstärkern. Dies erfolt über eine Metallplatte die jeweils an der Oberseite sowie auch an der Unterseite angebracht wird. Dadurch wird die Schweißverbindung gestärkt, damit in weiterer Folge keine Fehler auftreten. 
+Die separaten Zellen werden mithilfe eines Hiluminband Punktgeschweißt um so eine Verbindung zwischen den Zellen herzustellen.
+Wichtig ist darauf zu achten, dass das Hiluminband nur bis zu einer Stromstärke von 30A zulässig ist. Da wir jedoch weitaus höhere Ströme zu erwarten haben, muss wir dieses Hiluminband verstärken. Dies erfolgt über eine Metallplatte die jeweils an der Oberseite sowie auch an der Unterseite angebracht wird. Dadurch wird die Schweißverbindung gestärkt, damit in weiterer Folge keine Fehler auftreten. 
 
 \begin{align*}
 U_{Gesamt} &= U_{Akkupack} \cdot 14= U_{Zelle} \cdot 14= 3.6~\mathrm{V} \cdot 14 = 50.4~\mathrm{V}\\
@@ -220,7 +220,7 @@ Aus Darstellungsgründen wurden die Akkupacks 4 - 13 durch das  Akkupack ... ers
 \newpage
 \subsubsection{Geschätzt Betriebszeit des Akkumulators}
 
-In diesem Abschnitt wurden alle relevanten Daten gesammelt, um schließlich eine Näherung für die Laufzeit des Akkumulators durchzuführen. Diese Daten wurden bereits im Kapitel Dimensionierung teilwiese berechnet.
+In diesem Abschnitt wurden alle relevanten Daten gesammelt, um schließlich eine Näherung für die Laufzeit des Akkumulators durchzuführen. Diese Daten wurden bereits im Kapitel Dimensionierung teilweise berechnet.
 
 Im ersten Schritt wird die Energie, die der Akkumulator aufnehmen kann berechnet.
 
@@ -234,13 +234,13 @@ Als nächstes wird die Leistung berechnet. Da sich das Motorrad jedoch nicht imm
 P_{Gesamt} &= P_{Motorcontroller} \cdot P_{Raspberry} = 19.5~\mathrm{kW} \cdot 8~\mathrm{W} = 19.508~\mathrm{kW}\\
 \end{align*}
 
-Wie bereits vorher erwähnt müssen von dieser berechneten Gesmatleistung 25 Prozent abgezogen werden. Da jedoch die Leistung des Raspberry so gering im Vergleich zur Leistung des Motorcontrollers ist, kann diese vernachlässigt werden.
+Wie bereits vorher erwähnt müssen von dieser berechneten Gesamtleistung 25 Prozent abgezogen werden. Da jedoch die Leistung des Raspberry so gering im Vergleich zur Leistung des Motorcontrollers ist, kann diese vernachlässigt werden.
 
 \begin{align*}
 P_{Gesamt,real} &= P_{Gesamt} \cdot 0,75 = 19.5~\mathrm{kW} \cdot 0.75 = 14.63~\mathrm{kW}\\
 \end{align*}
 
-Schlussendlich kann die ungefähre Laufzeit des emissionsfreien Sportmotorads berechnet werden.
+Schlussendlich kann die ungefähre Laufzeit des emissionsfreien Sportmotorrads berechnet werden.
 
 \begin{align*}
 t_{Laufzeit} &= \frac{W_{Akkumualtor}}{P_{Gesamt,real}} = \frac{9880~\mathrm{Wh}}{14.63~\mathrm{kW}} = 0,68~\mathrm{h} = 41~\mathrm{min}\\
@@ -253,12 +253,12 @@ Die geschätzte durch eine Näherung berechnet Laufzeit des Akkumulator beträgt
 \section{Batteriemanagementsystem}
 Der zweite Teil, der für ein funktionierendes Akkusystem notwendig ist, ist das Batteriemanagementsystem. Die Aufgabe des BMS ist es die Akkumulatoren zu überwachen und an die aufgenommenen Daten über eine serielle Schnittstelle an die Zentralsteuerung weiterzugeben. 
 
-In unserm Projekt wurde ein BMS Mini des Hersteller EMUS verwendet. Wir haben uns für das EMUS BMS Mini entschieden, da es ein eigenständiges Lithium-Batteriemanagementsystem mit vielen bereits integrierten Bauteilen und die passenden Spezifikationen für unser Projekt hat. Unter anderem passen die Anwendungsbereiche des Batteriemanagementsystems genau zu unserer Anwendung. Außerdem sind all diese BMS-Funktionen in einem einzigen Gerät integriert. 
+In unserm Projekt wurde ein BMS Mini des Hersteller EMUS verwendet. Wir haben uns für das EMUS BMS Mini entschieden, da es ein eigenständiges Lithium-Batteriemanagementsystem mit vielen bereits integrierten Bauteilen und die passenden Spezifikationen für unser Projekt hat. Unter anderem passen die Anwendungsbereiche des Batteriemanagementsystems genau zu unserer Anwendung. Außerdem sind all diese BMS-Funktionen in einem einzigen Gerät integriert\footnote{vgl. \cite{BmSFkt}}.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.9]{figures/Akku/BMSMINI.jpg}
-		\caption{Mini Batteriemanagementsystem der Firma EMUS[\cite{EmusBmsMini}]}
+		\includegraphics[scale=0.15]{figures/Akku/BMSMINI.jpg}
+		\caption{Mini Batteriemanagementsystem der Firma EMUS\cite{EmusBmsMini}}
 		\label{fig: Mini Batteriemanagementsystem der Firma EMUS}
 	\end{center}
 \end{figure}
@@ -285,7 +285,7 @@ In unserm Projekt wurde ein BMS Mini des Hersteller EMUS verwendet. Wir haben un
 \item {Betriebstemperatur: -40°C bis +80°C}
 \item {Verbrauchte Leistung: im aktiven Modus (11mA bei 24V)}
 \item {Verbrauchte Leistung: im Leerlaufmodus (4mA bei 24V)}
-\item {Verbrauchte Leistung: im Tiefschalf (1mA bei 24V)}
+\item {Verbrauchte Leistung: im Tiefschlaf (1mA bei 24V)}
 \item {Ausgleichsstrom: bis zu 200mA}
 \item {Dauerstrom 45A laden/entladen (Spitze 100A - 5s)}
 \item {Maße: 97 x 67,1 x 16,6mm}
@@ -307,7 +307,7 @@ In unserm Projekt wurde ein BMS Mini des Hersteller EMUS verwendet. Wir haben un
 \item {DeltaQ CANopen Ladegeräte}
 \end{itemize}
 
-Wie bereits vorher erwähnt beinhaltet unser Akkusystem 560 Zellen. Die Bezeichnung 16s bedeudet, dass das Batteriemanagement insgesamt maximal 16 Zellen überwachen kann. Daher ist es nicht möglich jede Zelle einzeln zu überwachen da so viele Anschlüsse nicht vorhanden sind. Jedes Akkupack beinhaltet 40 Zellen.
+Wie bereits vorher erwähnt beinhaltet unser Akkusystem 560 Zellen. Die Bezeichnung 16s bedeutet, dass das Batteriemanagement insgesamt maximal 16 Zellen überwachen kann. Daher ist es nicht möglich jede Zelle einzeln zu überwachen da so viele Anschlüsse nicht vorhanden sind. Jedes Akkupack beinhaltet 40 Zellen.
 
 \begin{align*}
 Akkupacks &= \frac{Zellen_{gesamt}}{Zellen_{Akkupack}} = \frac{560~\mathrm{Zellen}}{40~\mathrm{Zellen}} = 14~\mathrm{Akkupacks}\\
@@ -316,7 +316,7 @@ Akkupacks &= \frac{Zellen_{gesamt}}{Zellen_{Akkupack}} = \frac{560~\mathrm{Zelle
 \newpage
 \subsection{Funktionen des Batteriemanagementsystems}
 
-Unter dem Begriff Batteriemanagementsystem versteht man die Überwachung und Regelung von Akkumulatoren beim Laden und ebenfalls Entladen. Ein BMS ist nichts anderes als eine elktronische Regelschaltung. Zu den häufigsten Batteriekennwerten gehören die Erkennung des Batterietyps, die Batteriespannung, die Spannung der Zellen sowie die Temperatur einzelner Akkumulatoren oder gesamter Akkupacks, die Akkukapazität, der Ladezustand, die Restbetriebszeit, die Stromentnahme und einige Kennwerte mehr. Die Aufgabe des Batteriemanagementsystems besteht also darin, sichzugehen, dass die Energie in einer Zellen effizient genutzt wird. Um Beschädigungen von Akkus zu vermeiden, haben die Akkus einen Tiefentladungsschutz, einen Überspannungsschutz und außerdem schützt das BMS auch vor zu schneller Ladung und ebenfalls vor einem zu hohen Entladestrom. Oft ist es der Fall, dass in einem Projekt mehrere einzelne Akkus oder sogar Akkupacks zum Einsatz kommen. In einem solchen Fall sorgt das Batteriemanagementsystem für ein sogenanntes Balancing. Das Battery-Balancing sorgt dafür, dass die Akkupacks oder einzelne Zellen gleiche Ladezustände und Entladezustände haben. 
+Unter dem Begriff Batteriemanagementsystem versteht man die Überwachung und Regelung von Akkumulatoren beim Laden und ebenfalls Entladen. Ein BMS ist nichts anderes als eine elektronische Regelschaltung. Zu den häufigsten Batteriekennwerten gehören die Erkennung des Batterietyps, die Batteriespannung, die Spannung der Zellen sowie die Temperatur einzelner Akkumulatoren oder gesamter Akkupacks, die Akkukapazität, der Ladezustand, die Restbetriebszeit, die Stromentnahme und einige Kennwerte mehr. Die Aufgabe des Batteriemanagementsystems besteht also darin, sicherzugehen, dass die Energie in einer Zellen effizient genutzt wird. Um Beschädigungen von Akkus zu vermeiden, haben die Akkus einen Tiefentladungsschutz, einen Überspannungsschutz und außerdem schützt das BMS auch vor zu schneller Ladung und ebenfalls vor einem zu hohen Entladestrom. Oft ist es der Fall, dass in einem Projekt mehrere einzelne Akkus oder sogar Akkupacks zum Einsatz kommen. In einem solchen Fall sorgt das Batteriemanagementsystem für ein sogenanntes Balancing. Das Battery-Balancing sorgt dafür, dass die Akkupacks oder einzelne Zellen gleiche Ladezustände und Entladezustände haben. 
 
 Die folgenden Funktionen des Batteriemanagementsystems werden in den weiteren Seite genauer erklärt:
 
@@ -337,7 +337,7 @@ Grundsätzlich wurde das Battery-Balancing bereits im Kapitel \ref{Battery-Balan
 
 \textbf{Balancing in Zusammenhang mit den Akkupacks:}
 
-Muss noch zitiert werden: Cluster oder Akkupacks bestehen zur Erhöhung der Nennspannung in der Regel aus mehreren in Reihe geschalteten Einzelzellen oder Zellblöcken. Fertigungs- und alterungsbedingt gibt es hierbei Schwankungen in der Kapazität, im Innenwiderstand und weiteren Parametern dieser Zellen. Die schwächste Zelle ist dabei bestimmend, wie viel geladen oder entladen werden darf. Im praktischen Einsatz von mehrzelligen in Reihe verschalteten Akkus führt dieser Umstand dazu, dass die Zellen in Reihe unterschiedlich geladen und entladen werden.
+Muss noch zitiert werden: Cluster oder Akkupacks bestehen zur Erhöhung der Nennspannung in der Regel aus mehreren in Reihe geschalteten Einzelzellen oder Zellblöcken. Fertigungs- und alterungsbedingt gibt es hierbei Schwankungen in der Kapazität, im Innenwiderstand und weiteren Parametern dieser Zellen. Die schwächste Zelle ist dabei bestimmend, wie viel geladen oder entladen werden darf. Im praktischen Einsatz von mehrzelligen in Reihe geschalteten Akkus führt dieser Umstand dazu, dass die Zellen in Reihe unterschiedlich geladen und entladen werden.
 
 Es kommt dann im Verbund zu kritischer Tiefentladung oder bei der Ladung zu einer Überladung und Überschreiten der Ladeschlussspannung einzelner Zellen. Je nach Akkutyp kann es dabei zu einer irreversiblen Schädigung einzelner Zellen kommen. Die Folge: das gesamte Akkupack verliert an Kapazität. (Ende des Zitates)
 Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wichtige Rolle. Beim Battery-Balancing gibt es zwei verschiedene Arten. 
@@ -349,7 +349,7 @@ Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wich
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1.5]{figures/Akku/Vergleichaktivespassives.jpg}
-		\caption{Vergleich zwischen Aktiven- und Passiven-Battery Balancing[\cite{VergleichBalancing}]}
+		\caption{Vergleich zwischen Aktiven- und Passiven-Battery Balancing\cite{VergleichBalancing}}
 		\label{fig: Vergleich zwischen Aktiven- und Passiven-Battery Balancing}
 	\end{center}
 \end{figure}
@@ -357,19 +357,19 @@ Um das zu verhindern, spielen im Batteriemanagementsystem die Balancer eine wich
 
 \textbf{Passives Battery-Balancing:}
 
-Eine technische weit verbreitete Methode für das Balancing ist das Passive Battery-Balancing. Dabei arbeitet es nur im Bereich des Ladeschlusses. Der Ausdruck Ladeschluss bedeutet soviel, dass wenn die Akkumulatoren fast vollständig aufgeladen sind das Balancing zu arbeiten beginnt. Sobald die Zellen die Ladeschlussspannung erreicht haben, wird durch den Balancer ein Widerstand parallel dazugeschalten, um so die Spannung auf die Ladeschlussspannung zu begrenzen. Zellen, welche diese Spannung bereits erreicht haben, werden dann nur noch geringfügig weitergeladen oder teilweise sogar etwas entladen. Die Zellen, die jedoch noch in der Reihenschaltung verschalten sind und die Ladeschlussspannung noch nicht erreicht haben, werden weiterhin mit dem Ladestrom versorgt und somit weitergeladen. Wichtig ist darauf zu achten, dass die Leistung des Parallelwiderstandes auf den Ladstrom angepasst werden muss, da sonst zuviel Energie in Form von Wärme am Widerstand auftreten wird.
+Eine technische weit verbreitete Methode für das Balancing ist das Passive Battery-Balancing. Dabei arbeitet es nur im Bereich des Ladeschlusses. Der Ausdruck Ladeschluss bedeutet soviel, dass wenn die Akkumulatoren fast vollständig aufgeladen sind das Balancing zu arbeiten beginnt. Sobald die Zellen die Ladeschlussspannung erreicht haben, wird durch den Balancer ein Widerstand parallel dazugeschaltet, um so die Spannung auf die Ladeschlussspannung zu begrenzen. Zellen, welche diese Spannung bereits erreicht haben, werden dann nur noch geringfügig weitergeladen oder teilweise sogar etwas entladen. Die Zellen, die jedoch noch in der Reihenschaltung verschalten sind und die Ladeschlussspannung noch nicht erreicht haben, werden weiterhin mit dem Ladestrom versorgt und somit weitergeladen. Wichtig ist darauf zu achten, dass die Leistung des Parallelwiderstandes auf den Ladestrom angepasst werden muss, da sonst zuviel Energie in Form von Wärme am Widerstand auftreten wird\footnote{vgl. \cite{PassivBalancing}}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{figures/Akku/Passive-cell-balancing.png}
-		\caption{Funktionsweise des Passiven Battery-Balancing[\cite{FunktionsweisePassivBalancing}]}
+		\caption{Funktionsweise des Passiven Battery-Balancing\cite{FunktionsweisePassivBalancing}}
 		\label{fig: Funktionsweise des Passiven Battery-Balancing}
 	\end{center}
 \end{figure}
 
 \textbf{Vorteile} des Passiven Battery-Balancing:
 \begin{itemize}
-\item {sehr kostengünsigt} \medskip\\
+\item {sehr kostengünstig} \medskip\\
 \item {technisch relativ leicht realisierbar} \medskip\\
 \end{itemize}
 
@@ -384,12 +384,12 @@ Eine technische weit verbreitete Methode für das Balancing ist das Passive Batt
 
 \textbf{Aktives Battery-Balancing:}
 
-Diese Methode des Balancing ist etwas komplexer als beim Passiven Battery-Balancing, jedoch ist sie deutlich effizienter. Bei den aktiven Balancern wird ein Ladungstransfer von Zellen untereinander realisiert. Das bedeutet, dass die Energie der Zellen die bereits ein höher Ladung aufweisen, auf die Akkumulatoren mit niedrigerer Ladung übertragen werden. Beim Aktiven Battery-Balancing werden sogenannte Ladreglungen benötigt. Ladreglungen sind im Prinzip speziell auf eine Anwendung optimierte Schaltregler, die pro Zelle arbeiten und aktiv die Energie übertragen. Dieser Vorgang kann bereits während des Ladeprozesses erfolgen. Standardmäßig wird dieser Vorgang jedoch erst im Bereich des Ladeschlusses aktiv (gleich wie beim Passiven Battery-Balancing). Eine weiterentwickelte Form dieses Systems wird bidirektionalens Balancer-System genannt. Hierbei ist es möglich, dass des Ladungsaustausch sowohl beim Entladen als auch beim Aufladen der Zellen stattfinden kann. Desswegen sind diese bidrektionalen Balancer noch deutlich effizienter. Das Akitve Battery-Balancing wird heutzutage meistens bei größeren Leistungen angewandt, wie zum Beispiel im Bereich der Elektromobilität.
+Diese Methode des Balancing ist etwas komplexer als beim Passiven Battery-Balancing, jedoch ist sie deutlich effizienter. Bei den aktiven Balancern wird ein Ladungstransfer von Zellen untereinander realisiert. Das bedeutet, dass die Energie der Zellen die bereits ein höher Ladung aufweisen, auf die Akkumulatoren mit niedrigerer Ladung übertragen werden. Beim Aktiven Battery-Balancing werden sogenannte Ladereglungen benötigt. Laderegelungen sind im Prinzip speziell auf eine Anwendung optimierte Schaltregler, die pro Zelle arbeiten und aktiv die Energie übertragen. Dieser Vorgang kann bereits während des Ladeprozesses erfolgen. Standardmäßig wird dieser Vorgang jedoch erst im Bereich des Ladeschlusses aktiv (gleich wie beim Passiven Battery-Balancing). Eine weiterentwickelte Form dieses Systems wird bidirektionales Balancer-System genannt. Hierbei ist es möglich, dass des Ladungsaustausch sowohl beim Entladen als auch beim Aufladen der Zellen stattfinden kann. Deswegen sind diese bidirektionalen Balancer noch deutlich effizienter. Das Aktive Battery-Balancing wird heutzutage meistens bei größeren Leistungen angewandt, wie zum Beispiel im Bereich der Elektromobilität\footnote{vgl. \cite{AktivBalancing}}.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.4]{figures/Akku/Aktives Balancing.png}
-		\caption{Funktionsweise des Aktiven Battery-Balancing[\cite{FunktionsweiseAktivBalancing}]}
+		\includegraphics[scale=0.35]{figures/Akku/Aktives Balancing.png}
+		\caption{Funktionsweise des Aktiven Battery-Balancing\cite{FunktionsweiseAktivBalancing}}
 		\label{fig: Funktionsweise des Aktiven Battery-Balancing}
 	\end{center}
 \end{figure}
@@ -408,16 +408,17 @@ Im zweiten Schaltvorgang (Schleife in blau, 2) wird die Energie in der Spule L n
 
 \textbf{Nachteile} des Aktiven Battery-Balancing:
 \begin{itemize}
-\item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten} \medskip\\
+\item {höherer Verschaltungsaufwand, dadurch erhöhte Initialkosten}
 \end{itemize}
+\newpage
 
 \subsubsection{Spannungsmessung}
 
-Lithium Ionen haben die Eigenschaft, dass sie Überladungen (Überspannung) sowie auch Unterspannung nicht gut verkraften. Im schlimmsten Fall, kann das sogar zur vollständigen Zerstörung einer Zelle kommen. Desswegen hat das Batteriemanagementsystem die Aufgabe jedes Akkupack zu messen und bei gegebener Über- und Unterspannung sofort abzuschalten. Der Schutz vor Überspannung wird zum Beispiel dann eingeschalten, sollte es zu einer ungewollten Rückspeisung kommen. Der Unterspannungsschutz hingegen tritt ein, wenn der vorgegebene Unterspannungsparameter überschritten wird. Sollte dies der Fall sein wird der Akkumulator von der Last getrennt, sodass der Akku nicht weiter entladen oder auch überladen werden kann. Die Spannungsmessung ist außerdem dafür zuständig die Spannung der Akkupacks zu m
+Lithium Ionen haben die Eigenschaft, dass sie Überladungen (Überspannung) sowie auch Unterspannung nicht gut verkraften. Im schlimmsten Fall, kann das sogar zur vollständigen Zerstörung einer Zelle kommen. Deswegen hat das Batteriemanagementsystem die Aufgabe jedes Akkupack zu messen und bei gegebener Über- und Unterspannung sofort abzuschalten. Der Schutz vor Überspannung wird zum Beispiel dann eingeschalten, sollte es zu einer ungewollten Rückspeisung kommen. Der Unterspannungsschutz hingegen tritt ein, wenn der vorgegebene Unterspannungsparameter überschritten wird. Sollte dies der Fall sein wird der Akkumulator von der Last getrennt, sodass der Akku nicht weiter entladen oder auch überladen werden kann. Die Spannungsmessung ist außerdem dafür zuständig die Spannung der Akkupacks zu m
 essen.
 \subsubsection{Strommessung}
 
-Bei dem Daly Batteriemanagementsystem ist eine Strommesseinrichtung bereits integriert. Diese Strommesseinrichtung misst einerseits den Entladestrom und andererseits den Ladestrom. Sollte es wie beim Überspannungschutz zu einer ungewollten Rückspeisung kommen, greift der Ladestromschutz ein. Sollte es dazu kommen, dass der Akkumulator zu viel Strom abgeben würde, wird der Entladeschutz aktiviert. Zudem wird die Strommesseinrichtung dazu benötigt, den Ladezustand des Akkumulator anzuzeigen.
+Bei dem Daly Batteriemanagementsystem ist eine Strommesseinrichtung bereits integriert. Diese Strommesseinrichtung misst einerseits den Entladestrom und andererseits den Ladestrom. Sollte es wie beim Überspannungsschutz zu einer ungewollten Rückspeisung kommen, greift der Ladestromschutz ein. Sollte es dazu kommen, dass der Akkumulator zu viel Strom abgeben würde, wird der Entladeschutz aktiviert. Zudem wird die Strommesseinrichtung dazu benötigt, den Ladezustand des Akkumulator anzuzeigen.
 
 \subsubsection{Temperaturüberwachung}
 
@@ -441,12 +442,12 @@ Die Hersteller des BMS mini empfehlen die Akkumulatoren in einem möglichst geri
 \newpage
 \subsubsection{Temperaturmessung mithilfe des BMS}
 
-Im nächsten Schritt werden Temperatursensoren gleichmäßig verteilt und an die Akkupacks angebracht. Es ist nicht notwendig an jedem einzelnen Akkupacks einen Temperatursensor anzubringen. Jedoch sollteman sich bewusst sein, dass mithilfe solcher Sensoren teilweise Fehler schon im vorhinein behoben werden können bevor es noch zu größern Schäden im System kommt.
+Im nächsten Schritt werden Temperatursensoren gleichmäßig verteilt und an die Akkupacks angebracht. Es ist nicht notwendig an jedem einzelnen Akkupacks einen Temperatursensor anzubringen. Jedoch sollte man sich bewusst sein, dass mithilfe solcher Sensoren teilweise Fehler schon im Vorhinein behoben werden können bevor es noch zu größeren Schäden im System kommt\footnote{vgl. \cite{Tempmess}}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{figures/Akku/SystemStrukturBMSTemperatur.png}
-		\caption{Anschlussplan der Temperatursensoren[\cite{AnschlussplanTemp}]}
+		\caption{Anschlussplan der Temperatursensoren\cite{AnschlussplanTemp}}
 		\label{fig: Anschlussplan der Temperatursensoren}
 	\end{center}
 \end{figure}
@@ -454,12 +455,12 @@ Im nächsten Schritt werden Temperatursensoren gleichmäßig verteilt und an die
 
 \subsubsection{Anschlussplan der Last}
 
-Im letzten Schritt wird die Last an dem Batteriemanagementsystem angeschlossen. Die Last entspricht entweder dem Verbrauchen oder anderfalls dem Ladegrät. Um die Last an das BMS anzuschließen muss das Power (+) Terminal mit dem Pluspol der Last (Load/Motor (+) Terminal) verbunden werden. Der zweite Pol der Last (Load/Motor (-) Terminal) wird mit dem Battery (-) Terminal verbunden. Sehr wichtig ist dabei darauf zu achten, dass die Last nicht unmittelbar mit Strom versorgt werden muss. Dazu wird ein Leistungsschutzschalter zwischen Last und dem Power (+) Terminal dazwischengeschalten.
+Im letzten Schritt wird die Last an dem Batteriemanagementsystem angeschlossen. Die Last entspricht entweder dem Verbrauchen oder andernfalls dem Ladegerät. Um die Last an das BMS anzuschließen muss das Power (+) Terminal mit dem Pluspol der Last (Load/Motor (+) Terminal) verbunden werden. Der zweite Pol der Last (Load/Motor (-) Terminal) wird mit dem Battery (-) Terminal verbunden. Sehr wichtig ist dabei darauf zu achten, dass die Last nicht unmittelbar mit Strom versorgt werden muss. Dazu wird ein Leistungsschutzschalter zwischen Last und dem Power (+) Terminal dazwischengeschaltet\footnote{vgl. \cite{Lastmess}}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{figures/Akku/SystemStrukturBMSLast.png}
-		\caption{Anschlussplan der Last an das BMS[\cite{AnschlussplanLast}]}
+		\caption{Anschlussplan der Last an das BMS\cite{AnschlussplanLast}}
 		\label{fig: Anschlussplan der Last an das BMS}
 	\end{center}
 \end{figure}
@@ -467,7 +468,7 @@ Im letzten Schritt wird die Last an dem Batteriemanagementsystem angeschlossen. 
 
 \subsubsection{Kommunikation mittels CAN-Bus}
 
-Der CAN-Bus ist aufgrund seiner Stärkern und seines Kommunikationsmechanismus in vielen Anwendungsbereichen weit verbreitet. Wichtig ist, dass der CAN-Bus richtig eingerichtet wird, da man sonst seine Zuverlässigkeit stark gefährdet. Dies ist bereits bei den EMUS BMS-Komponenten welche mit einem CAN ausgestattet sind der Fall und weiters ist es sogar in der Norm ISO 11898-2 festgelegt. Meistens wird der CAN-Bus in Hochgeschwindigkeits Netzwerken verwendet. In der Norm ist eine Standard definierte Netzwerktopologie mit einer einzelnen Leistungstruktur abgebildet. Die Kernaussage dieser Norm ist, dass am Ende zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand integriert sein muss. Wie bereits vorher erwähnt kommuniziert das Batteriemanagementsystem mit der Zentralsteuerung mittel CAN-Bus. In der folgenden Abbildung ist die Topologie eines CAN-Netzwerkes abgebildet.
+Der CAN-Bus ist aufgrund seiner Stärken und seines Kommunikationsmechanismus in vielen Anwendungsbereichen weit verbreitet. Wichtig ist, dass der CAN-Bus richtig eingerichtet wird, da man sonst seine Zuverlässigkeit stark gefährdet. Dies ist bereits bei den EMUS BMS-Komponenten welche mit einem CAN Bus ausgestattet sind der Fall, weiters ist es sogar in der Norm ISO 11898-2 festgelegt. Meistens wird der CAN-Bus in Hochgeschwindigkeits- Netzwerken verwendet. In der Norm ist eine Standard definierte Netzwerktopologie mit einer einzelnen Leitungsstruktur abgebildet. Die Kernaussage dieser Norm ist, dass am Ende zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand integriert sein muss. Wie bereits vorher erwähnt kommuniziert das Batteriemanagementsystem mit der Zentralsteuerung mittel CAN-Bus. In der folgenden Abbildung ist die Topologie eines CAN-Netzwerkes abgebildet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -477,7 +478,7 @@ Der CAN-Bus ist aufgrund seiner Stärkern und seines Kommunikationsmechanismus i
 	\end{center}
 \end{figure}
 
-Wenn man Daten von dem Batteriemanagementsystem zur SPS sendet, kann es zu Übertragungsproblemen kommen. Um diese Übertragungsprobleme zu minimieren muss zwischen CAN High und CAN Low ein Leitungsabschlusswiderstand (Skizze: Terminator) eingebaut werden. Dieser Terminator wird jeweils an dem Batteriemanagementsystem (Bus-"Ende" links) und ebenfalls an der SPS (Bus-"Ende" rechts) angebracht, da diese zwei Komponenten ununterbrochen miteinander verbunden sind. 
+Wenn man Daten von dem Batteriemanagementsystem zur SPS sendet, kann es zu Übertragungsproblemen kommen. Um diese Übertragungsprobleme zu minimieren muss zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand (Skizze: Terminator) eingebaut werden. Dieser Terminator wird jeweils an dem Batteriemanagementsystem (Bus-"Ende" links) und ebenfalls an der SPS (Bus-"Ende" rechts) angebracht, da diese zwei Komponenten ununterbrochen miteinander verbunden sind. 
 
 \textbf{CAN-Bus Stecker an dem Batteriemanagementsystem:}
 
@@ -499,7 +500,7 @@ Pin 6: CAN - LOW\\
 
 \subsection{Applikation des BMS Mini}
 
-Die Hersteller, EMUS, des Batteriemanagementsystems haben eine eigene Anwendung, die auf jedem Smartphone und Tablet verfügbar ist, erstellt. Die Anwendung Namens EMUS EVGUI ist eine frei verfügbare App für Android- und iOS-Geräte, die speziell für die Überwachung des Batteriestatus in einem Elektrofahrzeug entwickelt worden ist. Das Smartphone kann einerseits über ein drahtloses BT-Protokoll mit dem BMS Mini verbunden werden. Dazu wird jedoch die EMUS G1 Smartphone-Konnektivität benötigt. Die zweite Möglickeit besteht darin, das Smartphone über ein einfachs USB Kabel mit dem Batteriemanagementsystem zu verbinden.\\
+Die Hersteller, EMUS, des Batteriemanagementsystems haben eine eigene Anwendung, die auf jedem Smartphone und Tablett verfügbar ist, erstellt. Die Anwendung Namens EMUS EVGUI ist eine frei verfügbare App für Android- und iOS-Geräte, die speziell für die Überwachung des Batteriestatus in einem Elektrofahrzeug entwickelt worden ist. Das Smartphone kann einerseits über ein drahtloses BT-Protokoll mit dem BMS Mini verbunden werden. Dazu wird jedoch die EMUS G1 Smartphone-Konnektivität benötigt. Die zweite Möglichkeit besteht darin, das Smartphone über ein einfaches USB Kabel mit dem Batteriemanagementsystem zu verbinden\footnote{vgl. \cite{ApplikationBMS}}.\\
 
 In der Hauptansicht der EMUS EVGUI App sind die wichtigsten Anzeigen abgebildet:
 
@@ -516,7 +517,7 @@ In der Hauptansicht der EMUS EVGUI App sind die wichtigsten Anzeigen abgebildet:
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/EMUSAPP1.jpg}
-		\caption{Hauptansicht der EMUS EVGUI App[\cite{HauptansichtApp}]}
+		\caption{Hauptansicht der EMUS EVGUI App\cite{HauptansichtApp}}
 		\label{fig: Hauptansicht der EMUS EVGUI App}
 	\end{center}
 \end{figure}
@@ -528,7 +529,7 @@ Sobald man in dem Hauptansichtsfenster einen beliebigen Unterpunkt anklickt, öf
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/EMUSAPP2.jpg}
-		\caption{Detallierte Ansicht der EMUS EVGUI App[\cite{DetaillierteApp}]}
+		\caption{Detallierte Ansicht der EMUS EVGUI App\cite{DetaillierteApp}}
 		\label{fig: Detallierte Ansicht der EMUS EVGUI App}
 	\end{center}
 \end{figure}
@@ -550,20 +551,20 @@ Klickt man diesen Button an, scheinen 4 weitere Unterpunkte auf.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/BMSAppMenü.png}
-		\caption{Menü der EMUS EVGUI App[\cite{MenüApp}]} 
+		\caption{Menü der EMUS EVGUI App\cite{MenüApp}} 
 		\label{fig: Menü der EMUS EVGUI App}
 	\end{center}
 \end{figure}
 \newpage
 
-Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. Auf diese zwei Punkte wird mithilfe von Bildern in den folgenden Seiten etwas genauer eingegangen.
+Die wichtigsten zwei Punkte sind hierbei der Battery-Status und der Bms-Status. Auf diese zwei Punkte wird mithilfe von Bildern in den folgenden Seiten etwas genauer eingegangen.
 
 \textbf{Battery Status:}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/BMSBatteryStatus.png}
-		\caption{Battery Status Anzeige der EMUS EVGUI App[\cite{BatteryStatusApp}]}
+		\caption{Battery Status Anzeige der EMUS EVGUI App\cite{BatteryStatusApp}]}
 		\label{fig: Battery Status Anzeige der EMUS EVGUI App}
 	\end{center}
 \end{figure}
@@ -573,7 +574,7 @@ Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/BMSStatus.png}
-		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 1)[\cite{BM}]}
+		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 1)\cite{BMSStatusApp1}}
 		\label{fig: BMS Status Anzeige der EMUS EVGUI App (Seite 1)}
 	\end{center}
 \end{figure}
@@ -582,7 +583,7 @@ Die wichtigsten zwei Punkte sind hierbei der Battery Status und der Bms Status. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/Akku/BMSStatus2.png}
-		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 2)}
+		\caption{BMS Status Anzeige der EMUS EVGUI App (Seite 2)\cite{BMSStatusApp2}}
 		\label{fig: BMS Status Anzeige der EMUS EVGUI App (Seite 2)}
 	\end{center}
 \end{figure}
@@ -598,8 +599,8 @@ In der Kategorie BMS Status kann man widerrum verschiedenste Unterpunkte auswäh
 \newpage
 
 \subsection{Laderegelung}
-Die Steuerung des Ladevorgangs ist eine der wichtigsten Aufgaben eines Batteriemanagementsystems. Es ist von besonderer Bedeutung, diesen Ladevorgang richtig durchzuführen um einen sicheren Betrieb der Lithiumakkumulatoren zu gewährleisten. Die Auswahl eines bestimmten Ladegeräts sollte immer unter der Berücksichtigung verschiedener Aspekte der Anwendung durchgeführt werden. Die Ausgabeparameter sind aus der Sicht des BMS am wichtigsten. Die maximale Ausgangsspannung sollt geringfügig höher sein als die von der Zelle angegebene Ladespannung multipliziert mit der Anzahl der in Reihe geschaltenen Zellen bei maximaler Leistung. Der Strom sollte den maximalen Ladestrom nie überschreiten. In den folgenden Kapiteln werden die verschiedenen Ladegerättypen, die von der EMUS BMS Mini unterstützt werden, beschrieben.
-Grundsätzlich gibt es drei verschiedene Ladetypen die mit diesem Batteriemanagementsystem kompatibel sind.
+Die Steuerung des Ladevorgangs ist eine der wichtigsten Aufgaben eines Batteriemanagementsystems. Es ist von besonderer Bedeutung, diesen Ladevorgang richtig durchzuführen um einen sicheren Betrieb der Lithium-Akkumulatoren zu gewährleisten. Die Auswahl eines bestimmten Ladegeräts sollte immer unter der Berücksichtigung verschiedener Aspekte der Anwendung durchgeführt werden. Die Ausgabeparameter sind aus der Sicht des BMS am wichtigsten. Die maximale Ausgangsspannung sollt geringfügig höher sein als die von der Zelle angegebene Ladespannung multipliziert mit der Anzahl der in Reihe geschalteten Zellen bei maximaler Leistung. Der Strom sollte den maximalen Ladestrom nie überschreiten. In den folgenden Kapiteln werden die verschiedenen Ladegerät Typen, die von der EMUS BMS Mini unterstützt werden, beschrieben.
+Grundsätzlich gibt es drei verschiedene Ladetypen die mit diesem Batteriemanagementsystem kompatibel sind\footnote{vgl. \cite{Laderegelung}}.
 
 \begin{itemize}
 \item{CAN based chargers}\\
@@ -607,17 +608,18 @@ Grundsätzlich gibt es drei verschiedene Ladetypen die mit diesem Batteriemanage
 \item{Analog signal-controlled chargers}\\
 \end{itemize}
 
-Bei unserem Projekt entschieden wir uns für ein Can basiertes Ladegerät. Bei dieser Methode der Laderegelung wird ein Ladegerät verwendet, dass zusätzlich mittel CAN-Bus mit dem BMS verbunden wird. Diese Methode ist mit Abstand am effizientesten, da das Batteriemanagementsytsem auf den Ladestrom sowie auch auf die Ladespannung zugreifen bzw. vorgeben kann. Außerdem ist dies die schnellste und sicherste Methode die Akkumulatoren zu laden. Zur Anwendung ist schlussendlichen ein TC Can-Charger gekommen, da dieser kompatibel mit dem EMUS BMS Mini ist.
+Bei unserem Projekt entschieden wir uns für ein CAN basiertes Ladegerät. Bei dieser Methode der Laderegelung wird ein Ladegerät verwendet, dass zusätzlich mittel CAN-Bus mit dem BMS verbunden wird. Diese Methode ist mit Abstand am effizientesten, da das Batteriemanagementsystem auf den Ladestrom sowie auch auf die Ladespannung zugreifen bzw. vorgeben kann. Außerdem ist dies die schnellste und sicherste Methode die Akkumulatoren zu laden. Zur Anwendung ist schlussendlichen ein TC Can-Charger gekommen, da dieser kompatibel mit dem EMUS BMS Mini ist.
 \newpage
 
 \subsubsection{Verschaltung}
-Das Ladegrät wird mithilfe des CAN-Buses mit dem Batteriemanagementsystem verbunden. Diese Verbindung diehnt jedoch nur zur Komminukation für die Regelung. Das Ladegrät und die Akkumulatoren werden jedoch über das BMS verbunden. Die grau markierte Linie in dem folgenden Bild sollte keine Leitung darstellen. Es sollte nur zeigen, dass sich der 6-polige Stecker direkt auf dem Batteriemanagementsystem befindet.
+Das Ladegerät wird mithilfe des CAN-Buses mit dem Batteriemanagementsystem verbunden. Diese Verbindung diehnt jedoch nur zur Kommuniukation für die Regelung. Das Ladegerät und die Akkumulatoren werden jedoch über das BMS verbunden. Die grau markierte Linie in dem folgenden Bild sollte keine Leitung darstellen. Es sollte nur zeigen, dass sich der 6-polige Stecker direkt auf dem Batteriemanagementsystem befindet.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.6]{figures/Akku/VerschaltungCharger.png}
-		\caption{Verschaltung des Ladegeräts über das BMS}
+		\caption{Verschaltung des Ladegeräts über das BMS \cite{LadegerätBMS}}
 		\label{fig: Verschaltung des Ladegeräts über das BMS}
 	\end{center}
 \end{figure}
+
 

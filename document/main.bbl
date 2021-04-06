@@ -19,6 +19,21 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Lastmess}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Anschlussplan der Last}
+      \verb{urlraw}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+    \endentry
     \entry{AnschlussplanLast}{online}{}
       \list{organization}{1}{%
         {EMUS UAB}%
@@ -49,6 +64,36 @@
       \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
       \endverb
     \endentry
+    \entry{LadegerätBMS}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Anschlussplan des Ladegeräts über das BMS}
+      \verb{urlraw}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdfy
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdfy
+      \endverb
+    \endentry
+    \entry{ApplikationBMS}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Applikation des BMS Mini}
+      \verb{urlraw}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+    \endentry
     \entry{BatteryStatusApp}{online}{}
       \list{organization}{1}{%
         {EMUS UAB}%
@@ -57,6 +102,21 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labeltitlesource}{title}
       \field{title}{Batterie Status Anzeige der EMUS EVGUI App}
+      \verb{urlraw}
+      \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
+      \endverb
+      \verb{url}
+      \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
+      \endverb
+    \endentry
+    \entry{BMSStatusApp2}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{title}{Batterie Status Anzeige der EMUS EVGUI App (Seite 2)}
       \verb{urlraw}
       \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
       \endverb
@@ -97,6 +157,21 @@
       \verb http://eitidaten.fh-pforzheim.de/daten/mitarbeiter/blankenbach/vorlesungen/physik_1/Physik_Bla_WAERMELEHRE.pdf
       \endverb
     \endentry
+    \entry{BMSStatusApp1}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{title}{BMS Status Anzeige der EMUS EVGUI App}
+      \verb{urlraw}
+      \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
+      \endverb
+      \verb{url}
+      \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
+      \endverb
+    \endentry
     \entry{javascript}{article}{}
       \name{author}{1}{}{%
         {{hash=49197f923a01b3c8503e22fbe363c4e0}{%
@@ -127,8 +202,8 @@
       \verb{url}
       \verb https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html
       \endverb
-      \warn{\item Entry 'javascript' (literatur.bib): Invalid format '04.12.1995' of date field 'date' - ignoring}
-      \warn{\item Entry 'javascript' (literatur.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'javascript' (document.bib): Invalid format '04.12.1995' of date field 'date' - ignoring}
+      \warn{\item Entry 'javascript' (document.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring}
     \endentry
     \entry{spi}{online}{}
       \name{author}{1}{}{%
@@ -159,7 +234,7 @@
       \verb{url}
       \verb https://www.corelis.com/education/tutorials/spi-tutorial/#What_is_SPI
       \endverb
-      \warn{\item Entry 'spi' (literatur.bib): Invalid format '05.04.2021' of date field 'date' - ignoring}
+      \warn{\item Entry 'spi' (document.bib): Invalid format '05.04.2021' of date field 'date' - ignoring}
     \endentry
     \entry{VergleichBalancing}{online}{}
       \name{author}{1}{}{%
@@ -223,7 +298,7 @@
       \verb{url}
       \verb https://www.maurelma.ch/Produkte/Antriebstechnik/Controller/Curtis/manual_1232E_34E_36E_38E.pdf
       \endverb
-      \warn{\item Entry 'Manual' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Manual' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{VCL_Common_Functions}{book}{}
       \name{author}{1}{}{%
@@ -258,7 +333,7 @@
       \verb{url}
       \verb https://www.curtisinstruments.com/
       \endverb
-      \warn{\item Entry 'VCL_Common_Functions' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'VCL_Common_Functions' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{VCL_Programmer}{book}{}
       \name{author}{1}{}{%
@@ -293,7 +368,7 @@
       \verb{url}
       \verb https://www.curtisinstruments.com/
       \endverb
-      \warn{\item Entry 'VCL_Programmer' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'VCL_Programmer' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{WIN_VCL}{book}{}
       \name{author}{1}{}{%
@@ -328,7 +403,7 @@
       \verb{url}
       \verb https://www.curtisinstruments.com/
       \endverb
-      \warn{\item Entry 'WIN_VCL' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'WIN_VCL' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{DetaillierteApp}{online}{}
       \list{organization}{1}{%
@@ -345,7 +420,7 @@
       \verb https://play.google.com/store/apps/details?id=eu.elektromotus.emusbms.evgui.blue&hl=de_AT&gl=US
       \endverb
     \endentry
-    \entry{ParallelschaltungZellen}{online}{}
+    \entry{Kombinationsch}{online}{}
       \name{author}{1}{}{%
         {{hash=5a138ab84c2b417fe16210b1db1d916f}{%
            family={Doelling},
@@ -367,7 +442,7 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Parallelschaltung von Batterien}
+      \field{title}{Kombination aus Serien- und Parallelschaltung von Batterien}
       \field{year}{2016}
       \verb{urlraw}
       \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
@@ -375,9 +450,9 @@
       \verb{url}
       \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
       \endverb
-      \warn{\item Entry 'ParallelschaltungZellen' (literatur.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Kombinationsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
     \endentry
-    \entry{ReihenschaltungZellen}{online}{}
+    \entry{Parallelsch}{online}{}
       \name{author}{1}{}{%
         {{hash=5a138ab84c2b417fe16210b1db1d916f}{%
            family={Doelling},
@@ -399,6 +474,70 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{title}{Parallelschaltung von Batterien}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \verb{url}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \warn{\item Entry 'Parallelsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{ParallelschaltungZellen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5a138ab84c2b417fe16210b1db1d916f}{%
+           family={Doelling},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Greenhouse Media GmbH}%
+      }
+      \strng{namehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{fullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{bibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorbibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authornamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorfullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \field{extraname}{3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Parallelschaltung von Batterien}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \verb{url}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \warn{\item Entry 'ParallelschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{ReihenschaltungZellen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5a138ab84c2b417fe16210b1db1d916f}{%
+           family={Doelling},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Greenhouse Media GmbH}%
+      }
+      \strng{namehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{fullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{bibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorbibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authornamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorfullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \field{extraname}{4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{title}{Reihenschaltung von Batterien}
       \field{year}{2016}
       \verb{urlraw}
@@ -407,7 +546,39 @@
       \verb{url}
       \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
       \endverb
-      \warn{\item Entry 'ReihenschaltungZellen' (literatur.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'ReihenschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Seriensch}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5a138ab84c2b417fe16210b1db1d916f}{%
+           family={Doelling},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Greenhouse Media GmbH}%
+      }
+      \strng{namehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{fullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{bibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorbibnamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authornamehash}{5a138ab84c2b417fe16210b1db1d916f}
+      \strng{authorfullhash}{5a138ab84c2b417fe16210b1db1d916f}
+      \field{extraname}{5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Serienschaltung von Batterien}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \verb{url}
+      \verb https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/reihenschaltung
+      \endverb
+      \warn{\item Entry 'Seriensch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring}
     \endentry
     \entry{HauptansichtApp}{online}{}
       \list{organization}{1}{%
@@ -590,8 +761,23 @@
       \verb{url}
       \verb https://web.archive.org/web/20120623165941/http://cutter.rexx.com/~dkuhlman/python_book_01.html
       \endverb
-      \warn{\item Entry 'python' (literatur.bib): Invalid format '01.09.2011' of date field 'date' - ignoring}
-      \warn{\item Entry 'python' (literatur.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'python' (document.bib): Invalid format '01.09.2011' of date field 'date' - ignoring}
+      \warn{\item Entry 'python' (document.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Laderegelung}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Laderegelung}
+      \verb{urlraw}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
     \endentry
     \entry{Feldorientierte-Antriebssteuerung}{online}{}
       \name{author}{1}{}{%
@@ -622,7 +808,7 @@
       \verb{url}
       \verb https://www.all-electronics.de/foc-mcu-antriebssteuerung/
       \endverb
-      \warn{\item Entry 'Feldorientierte-Antriebssteuerung' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Feldorientierte-Antriebssteuerung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{MenüApp}{online}{}
       \list{organization}{1}{%
@@ -656,7 +842,6 @@
       \strng{authorbibnamehash}{b13bd5371b235a1390825a8c92d3ce97}
       \strng{authornamehash}{b13bd5371b235a1390825a8c92d3ce97}
       \strng{authorfullhash}{b13bd5371b235a1390825a8c92d3ce97}
-      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -669,39 +854,7 @@
       \verb{url}
       \verb https://merath.com/waermemanagement-passive-kuehlung
       \endverb
-      \warn{\item Entry 'PassiveKuehlung' (literatur.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{AktiveKuehlung}{online}{}
-      \name{author}{1}{}{%
-        {{hash=4d17750b29cf800ca4b252b6459a82a1}{%
-           family={Merath},
-           familyi={M\bibinitperiod},
-           given={Frima},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {merath}%
-      }
-      \strng{namehash}{4d17750b29cf800ca4b252b6459a82a1}
-      \strng{fullhash}{4d17750b29cf800ca4b252b6459a82a1}
-      \strng{bibnamehash}{4d17750b29cf800ca4b252b6459a82a1}
-      \strng{authorbibnamehash}{4d17750b29cf800ca4b252b6459a82a1}
-      \strng{authornamehash}{4d17750b29cf800ca4b252b6459a82a1}
-      \strng{authorfullhash}{4d17750b29cf800ca4b252b6459a82a1}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Elektronikkühlung – Teil 2: Entwärmung mit aktiver Kühlung}
-      \field{year}{2020}
-      \verb{urlraw}
-      \verb https://merath.com/aktive-elektronikkuehlung
-      \endverb
-      \verb{url}
-      \verb https://merath.com/aktive-elektronikkuehlung
-      \endverb
-      \warn{\item Entry 'AktiveKuehlung' (literatur.bib): Invalid format '21.03.2020' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'PassiveKuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{EmusBmsMini}{online}{}
       \name{author}{1}{}{%
@@ -733,7 +886,39 @@
       \verb{url}
       \verb https://emusbms.com/product/bms-mini#gallery
       \endverb
-      \warn{\item Entry 'EmusBmsMini' (literatur.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'EmusBmsMini' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{BmSFkt}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0e81503cc4a3dec678b18844fed08ced}{%
+           family={Milašauskas},
+           familyi={M\bibinitperiod},
+           given={Mindaugas},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \strng{namehash}{0e81503cc4a3dec678b18844fed08ced}
+      \strng{fullhash}{0e81503cc4a3dec678b18844fed08ced}
+      \strng{bibnamehash}{0e81503cc4a3dec678b18844fed08ced}
+      \strng{authorbibnamehash}{0e81503cc4a3dec678b18844fed08ced}
+      \strng{authornamehash}{0e81503cc4a3dec678b18844fed08ced}
+      \strng{authorfullhash}{0e81503cc4a3dec678b18844fed08ced}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Funktionen des EMUS BMS Mini}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://emusbms.com/product/bms-mini
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/product/bms-mini
+      \endverb
+      \warn{\item Entry 'BmSFkt' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring}
     \endentry
     \entry{FunktionsweisePassivBalancing}{online}{}
       \name{author}{1}{}{%
@@ -749,7 +934,7 @@
       \strng{authorbibnamehash}{0e81503cc4a3dec678b18844fed08ced}
       \strng{authornamehash}{0e81503cc4a3dec678b18844fed08ced}
       \strng{authorfullhash}{0e81503cc4a3dec678b18844fed08ced}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -791,7 +976,7 @@
       \verb{url}
       \verb https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00013770/ilm1-2007000172.pdf
       \endverb
-      \warn{\item Entry 'Dissertation' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Dissertation' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{Kuehlung1}{online}{}
       \name{author}{1}{}{%
@@ -822,7 +1007,7 @@
       \verb{url}
       \verb https://www.weltderphysik.de/gebiet/materie/analyse-von-materialien/kuehlung/
       \endverb
-      \warn{\item Entry 'Kuehlung1' (literatur.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Kuehlung1' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{ZellenEigenschaften}{online}{}
       \list{organization}{1}{%
@@ -839,7 +1024,7 @@
       \verb{url}
       \verb https://eu.nkon.nl/samsung-inr21700-50e.html
       \endverb
-      \warn{\item Entry 'ZellenEigenschaften' (literatur.bib): Invalid format '22.05.2020' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'ZellenEigenschaften' (document.bib): Invalid format '22.05.2020' of date field 'urldate' - ignoring}
     \endentry
     \entry{BalancingderPacks}{online}{}
       \name{author}{1}{}{%
@@ -870,7 +1055,7 @@
       \verb{url}
       \verb https://www.elektronikpraxis.vogel.de/worauf-es-beim-battery-balancing-von-lithium-ionen-akkus-ankommt-a-682080/
       \endverb
-      \warn{\item Entry 'BalancingderPacks' (literatur.bib): Invalid format '24.03.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'BalancingderPacks' (document.bib): Invalid format '24.03.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{GrundschaltungBMS}{online}{}
       \name{author}{1}{}{%
@@ -901,7 +1086,7 @@
       \verb{url}
       \verb https://www.glueck-engineering.de/produkte/bms/
       \endverb
-      \warn{\item Entry 'GrundschaltungBMS' (literatur.bib): Invalid format '19.03.2019' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'GrundschaltungBMS' (document.bib): Invalid format '19.03.2019' of date field 'urldate' - ignoring}
     \endentry
     \entry{Feldorientierte-Regelung}{online}{}
       \name{author}{1}{}{%
@@ -932,7 +1117,36 @@
       \verb{url}
       \verb https://www.digikey.de/de/articles/field-oriented-control-of-small-dc-motors-put-drones-on-a-rising-flight-path
       \endverb
-      \warn{\item Entry 'Feldorientierte-Regelung' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Feldorientierte-Regelung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{AktivBalancing}{online}{}
+      \name{author}{1}{}{%
+        {{hash=effdd4d519bed2e6fc8f97757462c725}{%
+           family={Straub},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{fullhash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{bibnamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authorbibnamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authornamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authorfullhash}{effdd4d519bed2e6fc8f97757462c725}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aktives Battery Balancing}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.all-electronics.de/battery-balancing-verbessert-leistung-und-lebensdauer/
+      \endverb
+      \verb{url}
+      \verb https://www.all-electronics.de/battery-balancing-verbessert-leistung-und-lebensdauer/
+      \endverb
+      \warn{\item Entry 'AktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring}
     \endentry
     \entry{FunktionsweiseAktivBalancing}{online}{}
       \name{author}{1}{}{%
@@ -951,6 +1165,7 @@
       \strng{authorbibnamehash}{effdd4d519bed2e6fc8f97757462c725}
       \strng{authornamehash}{effdd4d519bed2e6fc8f97757462c725}
       \strng{authorfullhash}{effdd4d519bed2e6fc8f97757462c725}
+      \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -963,7 +1178,51 @@
       \verb{url}
       \verb https://www.all-electronics.de/battery-balancing-verbessert-leistung-und-lebensdauer/
       \endverb
-      \warn{\item Entry 'FunktionsweiseAktivBalancing' (literatur.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'FunktionsweiseAktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{PassivBalancing}{online}{}
+      \name{author}{1}{}{%
+        {{hash=effdd4d519bed2e6fc8f97757462c725}{%
+           family={Straub},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{fullhash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{bibnamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authorbibnamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authornamehash}{effdd4d519bed2e6fc8f97757462c725}
+      \strng{authorfullhash}{effdd4d519bed2e6fc8f97757462c725}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Passives Battery Balancing}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.all-electronics.de/battery-balancing-verbessert-leistung-und-lebensdauer/
+      \endverb
+      \verb{url}
+      \verb https://www.all-electronics.de/battery-balancing-verbessert-leistung-und-lebensdauer/
+      \endverb
+      \warn{\item Entry 'PassivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Tempmess}{online}{}
+      \list{organization}{1}{%
+        {EMUS UAB}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{Temperaturmessung mithilfe des BMS}
+      \verb{urlraw}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
+      \verb{url}
+      \verb https://emusbms.com/wp-content/uploads/2018/10/EMUS-BMS-mini-User-Manual_v0.8.pdf
+      \endverb
     \endentry
     \entry{PID-Regler}{online}{}
       \name{author}{1}{}{%
@@ -995,7 +1254,263 @@
       \verb{url}
       \verb http://3digi.wikidot.com/allgemeines-zu-pid-reglern
       \endverb
-      \warn{\item Entry 'PID-Regler' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'PID-Regler' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Bleiakkumulator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{2}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bleiakkkumulator}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Bleiakkumulator
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Bleiakkumulator
+      \endverb
+      \warn{\item Entry 'Bleiakkumulator' (document.bib): Invalid format '19. März 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lithium-Ionen-AkkumulatorAllgemeines}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lithium-Ionen-Akkumulator Allgemeines}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Allgemeines
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Allgemeines
+      \endverb
+      \warn{\item Entry 'Lithium-Ionen-AkkumulatorAllgemeines' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lithium-Ionen-AkkumulatorAufbau}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{4}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lithium-Ionen-Akkumulator Aufbau}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Aufbau
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Aufbau
+      \endverb
+      \warn{\item Entry 'Lithium-Ionen-AkkumulatorAufbau' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lithium-Ionen-AkkumulatorGeschichte}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{5}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lithium-Ionen-Akkumulator Geschichte}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Geschichte
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Geschichte
+      \endverb
+      \warn{\item Entry 'Lithium-Ionen-AkkumulatorGeschichte' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{LithiumIonenAkkumulatorLagerung}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{6}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lithium-Ionen-Akkumulator Lagerung und Sicherheitshinweise}
+      \verb{urlraw}
+      \verb https://www.chemie.de/lexikon/Lithium-Ionen-Akkumulator.html#Lagerung_und_Sicherheitshinweise
+      \endverb
+      \verb{url}
+      \verb https://www.chemie.de/lexikon/Lithium-Ionen-Akkumulator.html#Lagerung_und_Sicherheitshinweise
+      \endverb
+      \warn{\item Entry 'LithiumIonenAkkumulatorLagerung' (document.bib): Invalid format '5. Mai 2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lithium-Ionen-AkkumulatorPrinzip}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{7}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lithium-Ionen-Akkumulator Prinzip}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Prinzip
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Prinzip
+      \endverb
+      \warn{\item Entry 'Lithium-Ionen-AkkumulatorPrinzip' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Nickel-Cadmium-Akkumulator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{8}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nickel-Cadmium-Akkumulator}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Nickel-Cadmium-Akkumulator
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Nickel-Cadmium-Akkumulator
+      \endverb
+      \warn{\item Entry 'Nickel-Cadmium-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Nickel-Metallhydrid-Akkumulator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{9}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nickel-Metallhydrid-Akkumulator}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Nickel-Metallhydrid-Akkumulator
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Nickel-Metallhydrid-Akkumulator
+      \endverb
+      \warn{\item Entry 'Nickel-Metallhydrid-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{GrundaufbauLiionenZelle}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778f35892297054131ce4698de263698}{%
+           family={Unbekannt},
+           familyi={U\bibinitperiod},
+           given={Autor:},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Wikipedia}%
+      }
+      \strng{namehash}{778f35892297054131ce4698de263698}
+      \strng{fullhash}{778f35892297054131ce4698de263698}
+      \strng{bibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
+      \strng{authornamehash}{778f35892297054131ce4698de263698}
+      \strng{authorfullhash}{778f35892297054131ce4698de263698}
+      \field{extraname}{10}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schematischer Aufbau einer Lithium-Ionen-Zelle}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg
+      \endverb
+      \warn{\item Entry 'GrundaufbauLiionenZelle' (document.bib): Invalid format '23.03.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{Synchronmaschine}{online}{}
       \name{author}{1}{}{%
@@ -1014,7 +1529,7 @@
       \strng{authorbibnamehash}{778f35892297054131ce4698de263698}
       \strng{authornamehash}{778f35892297054131ce4698de263698}
       \strng{authorfullhash}{778f35892297054131ce4698de263698}
-      \field{extraname}{2}
+      \field{extraname}{11}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
       \field{labelnamesource}{author}
@@ -1026,39 +1541,7 @@
       \verb{url}
       \verb https://studyflix.de/elektrotechnik/synchronmaschine-1428
       \endverb
-      \warn{\item Entry 'Synchronmaschine' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{GrundaufbauLiionenZelle}{online}{}
-      \name{author}{1}{}{%
-        {{hash=ff064a97492e27dd42c3096d559e4411}{%
-           family={Unbekannt},
-           familyi={U\bibinitperiod},
-           given={Original:},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Wikipedia}%
-      }
-      \strng{namehash}{ff064a97492e27dd42c3096d559e4411}
-      \strng{fullhash}{ff064a97492e27dd42c3096d559e4411}
-      \strng{bibnamehash}{ff064a97492e27dd42c3096d559e4411}
-      \strng{authorbibnamehash}{ff064a97492e27dd42c3096d559e4411}
-      \strng{authornamehash}{ff064a97492e27dd42c3096d559e4411}
-      \strng{authorfullhash}{ff064a97492e27dd42c3096d559e4411}
-      \field{extraname}{3}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Schematischer Aufbau einer Lithium-Ionen-Zelle}
-      \field{year}{2008}
-      \verb{urlraw}
-      \verb https://commons.wikimedia.org/wiki/File:Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg
-      \endverb
-      \verb{url}
-      \verb https://commons.wikimedia.org/wiki/File:Li-Ion-Zelle_(CoO2-Carbon,_Schema).svg
-      \endverb
-      \warn{\item Entry 'GrundaufbauLiionenZelle' (literatur.bib): Invalid format '23.03.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Synchronmaschine' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{can}{book}{}
       \name{author}{1}{}{%
@@ -1097,7 +1580,7 @@
       \verb{url}
       \verb https://books.google.at/books/about/Controller_Area_Network_Prototyping_With.html?id=GbJdCAAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false
       \endverb
-      \warn{\item Entry 'can' (literatur.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'can' (document.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{Regelungstechnik}{online}{}
       \name{author}{1}{}{%
@@ -1126,7 +1609,7 @@
       \verb{url}
       \verb https://rn-wissen.de/wiki/index.php/Regelungstechnik
       \endverb
-      \warn{\item Entry 'Regelungstechnik' (literatur.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Regelungstechnik' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring}
     \endentry
     \entry{Wasserkuehlung}{online}{}
       \name{author}{1}{}{%
@@ -1157,10 +1640,11 @@
       \verb{url}
       \verb https://www.kfztech.de/kfztechnik/motor/kuehlung/wasserkuehlung.htm
       \endverb
-      \warn{\item Entry 'Wasserkuehlung' (literatur.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
+      \warn{\item Entry 'Wasserkuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring}
     \endentry
   \enddatalist
-  \missing{BM}
+  \missing{Batteriemanagementsystem}
+  \missing{vgl. \cite {intus}}
 \endrefsection
 \endinput
 
