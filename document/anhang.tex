@@ -17,7 +17,6 @@
 
 \section{Kosten}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=-90, scale=0.6] {figures/allgemein/stückliste.png}
@@ -30,18 +29,9 @@
 
 \chapter{Programmcode}
 
-\section{HICS}
-
-\subsection{Benutzeroberfläche}
-
-
-\section{Antrieb}
-
 \chapter{CAD-Zeichnungen}
 
 \newpage
-
-\section{Mechanik}
 
 \begin{figure} [H]
 	\begin{center}
@@ -50,8 +40,6 @@
 		\label{fig:Wellenersatz1}
 	\end{center}
 \end{figure}
-
-\newpage
 
 \begin{figure} [H]
 	\begin{center}
@@ -149,8 +137,7 @@
 	\end{center}
 \end{figure}
 
-\section{HCIS} \label{app:hcis}
-
+\label{app:hcis}
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[scale=0.8]{figures/hcis/befestigung_display_cad.png}
@@ -161,31 +148,32 @@
 
 \chapter{Simulationen}
 
-\section{Mechanik}
-
-\fancyfoot[C]{Schmeisser}
-
 \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
 \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
 
+\newpage
+
 \chapter{Schaltpläne}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.35]{figures/Antrieb/Antrieb_Laststromkreis.png}
+		\caption{Grundaufbau des Laststromkreises}
+		\label{Grundaufbau_Laststromkreis}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.67]{figures/Antrieb/Antrieb_Steuerstromkreis.png}
+		\caption{Grundaufbau des Steuerstromkreises}
+		\label{Grundaufbau_Steuerstromkreis}
+	\end{center}
+\end{figure}
 
 \newpage
 
-\section{HCIS}
-
 \chapter{Datenblätter}
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{HCIS} \subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell5.pdf}
-
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Mean Well SD-350C-12} \label{app:mw12}}, scale=0.8] {pdf/meanwell12.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell12.pdf}
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Raspberry Pi 4 Moddel B} \label{app:rasp}}, scale=0.8] {pdf/raspberry.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/raspberry.pdf}
-
 
 \includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{Antrieb}\subsection{Ashwoods Elektro-Motor IPM-200-50} 
 \label{Ashwoods_Motor}}, scale=0.75] {pdf/Ashwoods_IPM-200-50.pdf}
@@ -200,3 +188,11 @@
 
 \includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Leistungsdaten Hirschmann elektronischer Gasdrehgriff v1.0} \label{Hirschmann_E-Gas_Drehgriff}}, scale=0.8] {pdf/Leistungsdaten_Hirschmann_E-Gas_Drehgriff.pdf}
 \includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.85] {pdf/Leistungsdaten_Hirschmann_E-Gas_Drehgriff.pdf}
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{VCL Common Functions} \label{VCL_Common_Functions}}, scale=0.87] {pdf/VCL_Common_Functions.pdf}
+\includepdf[pages=3-7, pagecommand={\thispagestyle{fancy}}, scale=0.88] {pdf/VCL_Common_Functions.pdf}
+\includepdf[pages=39-41, pagecommand={\thispagestyle{fancy}}, scale=0.88] {pdf/VCL_Common_Functions.pdf}
+\includepdf[pages=56-60, pagecommand={\thispagestyle{fancy}}, scale=0.88] {pdf/VCL_Common_Functions.pdf}
+\includepdf[pages=78-97, pagecommand={\thispagestyle{fancy}}, scale=0.88] {pdf/VCL_Common_Functions.pdf}
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{EMUS-BMS-mini-User-Manual}}, scale=0.8] {pdf/EMUS-BMS-mini-User-Manual_v0.8.pdf}
+\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.85] {pdf/EMUS-BMS-mini-User-Manual_v0.8.pdf}
+
