@@ -1,51 +1,60 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[156] biber-MSWIN64:340> INFO - === 
-[198] Biber.pm:415> INFO - Reading 'main.bcf'
-[359] Biber.pm:952> INFO - Found 62 citekeys in bib section 0
-[378] Biber.pm:4340> INFO - Processing section 0
-[394] Biber.pm:4531> INFO - Looking for bibtex format file 'document.bib' for section 0
-[454] bibtex.pm:1689> INFO - LaTeX decoding ...
-[546] bibtex.pm:1494> INFO - Found BibTeX data source 'document.bib'
-[551] Utils.pm:395> WARN - Duplicate entry key: 'Lithium-Ionen-Akkumulator' in file 'document.bib', skipping ...
-[551] Utils.pm:395> WARN - Duplicate entry key: 'Lithium-Ionen-Akkumulator' in file 'document.bib', skipping ...
-[593] Utils.pm:395> WARN - Entry 'Kuehlung1' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
-[603] Utils.pm:395> WARN - Entry 'Wasserkuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
-[611] Utils.pm:395> WARN - Entry 'PassiveKuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
-[619] Utils.pm:395> WARN - Entry 'Bleiakkumulator' (document.bib): Invalid format '19. März 2021' of date field 'urldate' - ignoring
-[622] Utils.pm:395> WARN - Entry 'Nickel-Metallhydrid-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring
-[626] Utils.pm:395> WARN - Entry 'Nickel-Cadmium-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring
-[630] Utils.pm:395> WARN - Entry 'GrundaufbauLiionenZelle' (document.bib): Invalid format '23.03.2021' of date field 'urldate' - ignoring
-[633] Utils.pm:395> WARN - Entry 'LithiumIonenAkkumulatorLagerung' (document.bib): Invalid format '5. Mai 2019' of date field 'urldate' - ignoring
-[637] Utils.pm:395> WARN - Entry 'GrundschaltungBMS' (document.bib): Invalid format '19.03.2019' of date field 'urldate' - ignoring
-[640] Utils.pm:395> WARN - Entry 'BalancingderPacks' (document.bib): Invalid format '24.03.2021' of date field 'urldate' - ignoring
-[643] Utils.pm:395> WARN - Entry 'Dissertation' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[650] Utils.pm:395> WARN - Entry 'Synchronmaschine' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[654] Utils.pm:395> WARN - Entry 'Manual' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[657] Utils.pm:395> WARN - Entry 'Feldorientierte-Regelung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[661] Utils.pm:395> WARN - Entry 'Feldorientierte-Antriebssteuerung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[665] Utils.pm:395> WARN - Entry 'Regelungstechnik' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[672] Utils.pm:395> WARN - Entry 'PID-Regler' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[701] Utils.pm:395> WARN - Entry 'can' (document.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring
-[705] Utils.pm:395> WARN - Entry 'spi' (document.bib): Invalid format '05.04.2021' of date field 'date' - ignoring
-[709] Utils.pm:395> WARN - Entry 'python' (document.bib): Invalid format '01.09.2011' of date field 'date' - ignoring
-[710] Utils.pm:395> WARN - Entry 'python' (document.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring
-[713] Utils.pm:395> WARN - Entry 'javascript' (document.bib): Invalid format '04.12.1995' of date field 'date' - ignoring
-[714] Utils.pm:395> WARN - Entry 'javascript' (document.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring
-[715] Utils.pm:395> WARN - Entry 'ZellenEigenschaften' (document.bib): Invalid format '22.05.2020' of date field 'urldate' - ignoring
-[719] Utils.pm:395> WARN - Entry 'Seriensch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
-[722] Utils.pm:395> WARN - Entry 'ReihenschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
-[726] Utils.pm:395> WARN - Entry 'Parallelsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
-[730] Utils.pm:395> WARN - Entry 'ParallelschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
-[734] Utils.pm:395> WARN - Entry 'Kombinationsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
-[737] Utils.pm:395> WARN - Entry 'BmSFkt' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring
-[741] Utils.pm:395> WARN - Entry 'EmusBmsMini' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring
-[747] Utils.pm:395> WARN - Entry 'PassivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
-[753] Utils.pm:395> WARN - Entry 'AktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
-[757] Utils.pm:395> WARN - Entry 'FunktionsweiseAktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
-[768] Utils.pm:395> WARN - Entry 'WIN_VCL' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[772] Utils.pm:395> WARN - Entry 'VCL_Programmer' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[776] Utils.pm:395> WARN - Entry 'VCL_Common_Functions' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
-[783] Utils.pm:411> ERROR - BibTeX subsystem: C:\Users\marti\AppData\Local\Temp\biber_tmp_ie7S\c323e634dab0a47a6a1beafc420af47c_5980.utf8, line 261, syntax error: found "Allgemeines", expected ","
-[784] Biber.pm:128> INFO - WARNINGS: 39
-[784] Biber.pm:132> INFO - ERRORS: 1
+[155] biber-MSWIN64:340> INFO - === 
+[207] Biber.pm:415> INFO - Reading 'main.bcf'
+[387] Biber.pm:952> INFO - Found 62 citekeys in bib section 0
+[409] Biber.pm:4340> INFO - Processing section 0
+[428] Biber.pm:4531> INFO - Looking for bibtex format file 'document.bib' for section 0
+[498] bibtex.pm:1689> INFO - LaTeX decoding ...
+[587] bibtex.pm:1494> INFO - Found BibTeX data source 'document.bib'
+[632] Utils.pm:395> WARN - Entry 'Kuehlung1' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
+[642] Utils.pm:395> WARN - Entry 'Wasserkuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
+[651] Utils.pm:395> WARN - Entry 'PassiveKuehlung' (document.bib): Invalid format '21.03.2021' of date field 'urldate' - ignoring
+[659] Utils.pm:395> WARN - Entry 'Bleiakkumulator' (document.bib): Invalid format '19. März 2021' of date field 'urldate' - ignoring
+[663] Utils.pm:395> WARN - Entry 'Nickel-Metallhydrid-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring
+[667] Utils.pm:395> WARN - Entry 'Nickel-Cadmium-Akkumulator' (document.bib): Invalid format '21. Januar 2021' of date field 'urldate' - ignoring
+[671] Utils.pm:395> WARN - Entry 'Lithium-Ionen-AkkumulatorGeschichte' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring
+[677] Utils.pm:395> WARN - Entry 'Lithium-Ionen-AkkumulatorAllgemeines' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring
+[681] Utils.pm:395> WARN - Entry 'Lithium-Ionen-AkkumulatorPrinzip' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring
+[686] Utils.pm:395> WARN - Entry 'Lithium-Ionen-AkkumulatorAufbau' (document.bib): Invalid format '4. April 2021' of date field 'urldate' - ignoring
+[690] Utils.pm:395> WARN - Entry 'GrundaufbauLiionenZelle' (document.bib): Invalid format '23.03.2021' of date field 'urldate' - ignoring
+[694] Utils.pm:395> WARN - Entry 'LithiumIonenAkkumulatorLagerung' (document.bib): Invalid format '5. Mai 2019' of date field 'urldate' - ignoring
+[698] Utils.pm:395> WARN - Entry 'GrundschaltungBMS' (document.bib): Invalid format '19.03.2019' of date field 'urldate' - ignoring
+[703] Utils.pm:395> WARN - Entry 'BalancingderPacks' (document.bib): Invalid format '24.03.2021' of date field 'urldate' - ignoring
+[707] Utils.pm:395> WARN - Entry 'Dissertation' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[714] Utils.pm:395> WARN - Entry 'Synchronmaschine' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[719] Utils.pm:395> WARN - Entry 'Manual' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[724] Utils.pm:395> WARN - Entry 'Feldorientierte-Regelung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[728] Utils.pm:395> WARN - Entry 'Feldorientierte-Antriebssteuerung' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[732] Utils.pm:395> WARN - Entry 'Regelungstechnik' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[738] Utils.pm:395> WARN - Entry 'PID-Regler' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[764] Utils.pm:395> WARN - Entry 'can' (document.bib): Invalid format '05.04.2021' of date field 'urldate' - ignoring
+[767] Utils.pm:395> WARN - Entry 'spi' (document.bib): Invalid format '05.04.2021' of date field 'date' - ignoring
+[771] Utils.pm:395> WARN - Entry 'python' (document.bib): Invalid format '01.09.2011' of date field 'date' - ignoring
+[772] Utils.pm:395> WARN - Entry 'python' (document.bib): Invalid format '23.06.2012' of date field 'urldate' - ignoring
+[776] Utils.pm:395> WARN - Entry 'javascript' (document.bib): Invalid format '04.12.1995' of date field 'date' - ignoring
+[776] Utils.pm:395> WARN - Entry 'javascript' (document.bib): Invalid format '16.09.2007' of date field 'urldate' - ignoring
+[778] Utils.pm:395> WARN - Entry 'ZellenEigenschaften' (document.bib): Invalid format '22.05.2020' of date field 'urldate' - ignoring
+[782] Utils.pm:395> WARN - Entry 'Seriensch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
+[786] Utils.pm:395> WARN - Entry 'ReihenschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
+[789] Utils.pm:395> WARN - Entry 'Parallelsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
+[793] Utils.pm:395> WARN - Entry 'ParallelschaltungZellen' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
+[798] Utils.pm:395> WARN - Entry 'Kombinationsch' (document.bib): Invalid format '14.03.2016' of date field 'urldate' - ignoring
+[805] Utils.pm:395> WARN - Entry 'BmSFkt' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring
+[811] Utils.pm:395> WARN - Entry 'EmusBmsMini' (document.bib): Invalid format '27.10.2019' of date field 'urldate' - ignoring
+[819] Utils.pm:395> WARN - Entry 'PassivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
+[826] Utils.pm:395> WARN - Entry 'AktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
+[830] Utils.pm:395> WARN - Entry 'FunktionsweiseAktivBalancing' (document.bib): Invalid format '04.09.2019' of date field 'urldate' - ignoring
+[841] Utils.pm:395> WARN - Entry 'WIN_VCL' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[845] Utils.pm:395> WARN - Entry 'VCL_Programmer' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[849] Utils.pm:395> WARN - Entry 'VCL_Common_Functions' (document.bib): Invalid format '04.04.2021' of date field 'urldate' - ignoring
+[857] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\marti\AppData\Local\Temp\biber_tmp_mVuM\c323e634dab0a47a6a1beafc420af47c_13496.utf8, line 486, warning: 1 characters of junk seen at toplevel
+[858] Utils.pm:395> WARN - I didn't find a database entry for 'Batteriemanagementsystem' (section 0)
+[858] Utils.pm:395> WARN - I didn't find a database entry for 'vgl. \cite {intus}' (section 0)
+[932] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[933] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[933] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[933] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[1040] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1068] bbl.pm:757> INFO - Output to main.bbl
+[1068] Biber.pm:128> INFO - WARNINGS: 44
