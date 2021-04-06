@@ -84,7 +84,33 @@ Im folgenden Bild ist der Grundaufbau des Laststromkreises ausführlich beschrie
 
 \newpage
 
+%% Motorauslegung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motorbeschreibung}
+Die Nennleistung des Akkumulators übersteigt die Nennleistung von Motor und Motorcontroller, weshalb die Nennwerte dieser Bauteile ebenso relevant für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Ebenfalls stellen der Motor und die Motorsteuerung zentrale Elemente des E-Motorrades dar, weshalb unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben werden.
 
+Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, ist dieser Motor eigentlich eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
+
+Der Motor wurde von der Firma Ashwoods gebaut und hat die Bezeichnung \glqq IPM-200-50\grqq{}. Er besitzt eine mechanische Spitzenleistung von 16 kW und ein maximales Drehmoment von 74 Nm. Die maximale Drehzahl beträgt 8500 U/min und der Wirkungsgrad liegt bei circa 85\%\footnote{Ashwoods Motor CAD-Zeichnung: [\ref{Ashwoods_CAD}]}.
+
+Die Motorsteuerung wurde von der Firma Curtis gebaut, der Controller ist ein Prototyp mit der Modellnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb hat der Motorcontroller einen Leistungsverbrauch von rund 500W\footnote{Curtis Controller CAD-Zeichnung: [\ref{Curtis_CAD}]}.
+
+Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale elektrische Leistung von 19,5 kW, sprich einen maximalen Strom von 387A bei einer Nennspannung von 50,4V. Mit zusätzlicher Einberechnung der Phasenanordnung und dem Wirkungsgrad ergibt das einen Motor-Phasenstrom von 263A (AC). 
+
+\begin{align*}
+	P_{MDCmax} &= P_{Motor} + P_{Controller} = \dfrac{16~\mathrm{kW}}{0,85}  + 500~\mathrm{W} \approx 19,5~\mathrm{kW}\\[3mm]
+	I_{MDCmax} &=	\dfrac{P_{MDCmax}}{U_{Nenn}} = \dfrac{19,5~\mathrm{kW}}{50,4~\mathrm{V}} \approx 387~\mathrm{A}\\[3mm]
+	I_{MACmax} &=	\dfrac{I_{MDCmax}}{\sqrt{3} \cdot cos(\varphi)} = \dfrac{19,5~\mathrm{kW}}{\sqrt{3} \cdot 0,85} \approx 263~\mathrm{A}
+\end{align*}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.81\textwidth]{figures/Antrieb/Ashwoods_Kennlinie.png}
+		\caption{Ashwoods-Motor Kennlinie}
+	\end{center}
+\end{figure}
+
+\newpage
 
 %% Elektrische Energieübertragung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Elektrische Energieübertragung}
@@ -99,7 +125,7 @@ Bei der Auswahl von Leitungen muss man grundsätzlich den Querschnitt und die L�
 
 \textbf{Berechnung:} 
 \\[2mm]
-In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Der Motor erhält nahezu die selbe Leistung, weshalb der Motorstrom durch die Anordnung der Phasen ebenfalls bestimmt werden kann. Da die Größenordnungen der beiden Ströme im Akkumulator-Stromkreis und im Motor-Stromkreis sehr unterschiedlich sind, können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\[6mm]
+In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme, die wir zur Auswahl der richtigen Leitungen benötigen. Da wir den maximalen Strom, welcher durch eine Zelle zur Verfügung gestellt werden kann, bereits aus dem Datenblatt kennen, können wir von der Seite des Akkumulators mit der Berechnung beginnen. Zuerst berechnet man also den maximalen Strom, welcher sich aus der Parallelschaltung der Zellen ergibt. Da jedoch der Motor über einen geringeren Leistungsverbrauch besitzt, als der Akkumulator zur Verfügung stellen kann, und deshalb den Strom begrenzt, spielt nur de ausgerechnete Motor-Maximalstrom eine Rolle. Die Größenordnungen der beiden Ströme im Akkumulator-Stromkreis und im Motor-Stromkreis (AC) sind sehr unterschiedlich, deshalb können ebenfalls verschiedene Leitungsquerschnitte verwendet werden. Die Berechnung des Leitungswiderstands lässt nun auch auf den Spannungsabfall schließen, diese Berechnung muss jedoch bei beiden Stromkreisen erfolgen.\\[6mm]
 \begin{itemize}
 	\item \textbf{Berechnung der Ströme:}
 	\\[1mm] Maximaler Strom, der von einer Zelle zur Verfügung gestellt werden kann: 14 A 
@@ -117,19 +143,18 @@ In diesem Abschnitt befassen wir uns zunächst mit der Berechnung aller Ströme,
 \begin{align*}
 \text{Berechnung der Ströme:} \\[2mm]
 I_{Zmax} &= 14~\mathrm{A}	\\[3mm]
-I_{Amax} &= 40 \cdot I_{Zmax} = 40 \cdot 14~\mathrm{A} = 560~\mathrm{A} \\[3mm]
-I_{Mmax} &= \dfrac{I_{Amax}}{\sqrt{3}} = \dfrac{560~\mathrm{A}}{\sqrt{3}} = 323~\mathrm{A} \\[7mm]
+I_{Amax} &= 40 \cdot I_{Zmax} = 40 \cdot 14~\mathrm{A} = 560~\mathrm{A}
 \end{align*}
 \newpage
 \begin{align*}
 \text{Spannungsabfall Akkumulator-Stromkreis:} \\
 R_{A} &= \dfrac{\delta_{A} \cdot l_{A}}{A_{A}} = \dfrac{0,0278~\mathrm{\dfrac{\Omega \cdot mm^{2}}{m}}  \cdot 1~\mathrm{m}}{70\mathrm{mm^{2}}} = 0,397~\mathrm{m\Omega} \\[3mm]
-\Delta U &= R_{A}\cdot I_{Amax} = 0,397~\mathrm{m\Omega} \cdot 560~\mathrm{A} = 222~\mathrm{mV} \\[3mm]
-U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 222~\mathrm{mV} = 50,178~\mathrm{V} \\[9mm]
+\Delta U &= R_{A}\cdot I_{MDCmax} = 0,397~\mathrm{m\Omega} \cdot 387~\mathrm{A} = 154~\mathrm{mV} \\[3mm]
+U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 154~\mathrm{mV} = 50,246~\mathrm{V} \\[9mm]
 \text{Spannungsabfall Motor-Stromkreis:} \\
 R_{M} &= \dfrac{\delta_{K} \cdot l_{M}}{A_{M}} = \dfrac{0,01786~\mathrm{\dfrac{\Omega \cdot mm^{2}}{m}}  \cdot 1~\mathrm{m}}{35\mathrm{mm^{2}}} = 0,51~\mathrm{m\Omega} \\[3mm]
-\Delta U &= R_{M}\cdot I_{Mmax} = 0,51~\mathrm{m\Omega} \cdot 323~\mathrm{A} = 165~\mathrm{mV} \\[3mm]
-U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 165~\mathrm{mV} = 50,235~\mathrm{V} \\[5mm]
+\Delta U &= R_{M}\cdot I_{MACmax} = 0,51~\mathrm{m\Omega} \cdot 263~\mathrm{A} = 134~\mathrm{mV} \\[3mm]
+U_{VB} &= U_{Q} - \Delta U = 50,4~\mathrm{V} - 165~\mathrm{mV} = 50,266~\mathrm{V}
 \end{align*}
 
 \textbf{Fazit:}
@@ -154,40 +179,16 @@ Bei der Auswahl des Hochleistungs-Relais muss vor allem der maximale Strom, der 
 
 \textbf{Hochgeschwindigkeits-Schmelzsicherung:}
  \\[2mm]
-Bei der Auswahl der Schmelzsicherung ist es vor allem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Milliohm liegt, ist der Kurschlussstrom mindestens 10 mal so groß wie der Nennstrom der Sicherung, was bei der ausgewählten Schmelzsicherung \glqq FWA-400B\grqq{} von der Firma \glqq Bussmann / Eaton\grqq{} eine Ausschaltzeit von wenigen Millisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Management-System überprüft und begrenzt wird\footnote{Hochleistungs-Schmelzsicherung Datenblatt: [\ref{FWA-400B}]}.
-\\[5mm]
-
-\textbf{Fazit:}
-\\[2mm]
-benötigt?
-
-\newpage
-
-%% Motorauslegung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Motorbeschreibung}
-Die Nennleistung von Motor und Motorcontroller übersteigen die Nennleistung des Akkumulators, weshalb die Nennwerte dieser Bauteile unwichtig für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Da jedoch Motor und Motorsteuerung die zentralen Elemente des E-Motorrades darstellen, werden unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben.
-
-Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, ist dieser Motor eigentlich eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
-
-Der Motor wurde von der Firma Ashwoods gebaut und hat die Bezeichnung \glqq IPM-200-50\grqq{}. Er besitzt eine mechanische Spitzenleistung von 16 kW und ein maximales Drehmoment von 74 Nm. Die maximale Drehzahl beträgt 8500 U/min und der Wirkungsgrad liegt bei circa 85\%\footnote{Ashwoods Motor CAD-Zeichnung: [\ref{Ashwoods_CAD}]}.
-
-Die Motorsteuerung wurde von der Firma Curtis gebaut, der Controller ist ein Prototyp mit der Modellnummer \glqq AC-F4-A-Proto-002\grqq{}. Er besitzt einen maximalen Motorstrom von 450A RMS. Im Betrieb hat der Motorcontroller einen Leistungsverbrauch von rund 500W\footnote{Curtis Controller CAD-Zeichnung: [\ref{Curtis_CAD}]}.
-
-Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale elektrische Leistung von 19,5 kW, sprich einen maximalen Strom von 385A bei einer Nennspannung von 50,4V. 
+Bei der Auswahl der Schmelzsicherung ist es vor allem wichtig, dass der Stromkreis bei einem Kurzschlussfall in kurzer Zeit unterbrochen wird, die zulässigen Nennströme jedoch dauerhaft geleitet werden können. Das bedeutet, der Kurzschlussstrom muss um ein Vielfaches größer sein, als der Nennstrom der Schmelzsicherung. Da jedoch die Kurzschlussimpedanz im Bereich von wenigen Milliohm liegt, ist der Kurschlussstrom sogar bei 5-facher Annahme mindestens 20 mal so groß wie der Nennstrom der Sicherung, was bei der ausgewählten Schmelzsicherung \glqq FWA-400B\grqq{} von der Firma \glqq Bussmann / Eaton\grqq{} eine Ausschaltzeit von weniger als eine Millisekunden bedeutet. Normalerweise ist es ebenfalls in Bezug auf die Leitungen wichtig, dass der zulässige Dauerstrom der Leitungen größer als der Nennstrom der Schmelzsicherung ausgewählt wird, um Beschädigungen an den Leitungen verhindern zu können. In unserem Fall ist dies aber eher nebensächlich, da der vom Motor angeforderte Strom, wie bereits erwähnt, dauerhaft durch das Batterie-Management-System überprüft und begrenzt wird\footnote{Hochleistungs-Schmelzsicherung Datenblatt: [\ref{FWA-400B}]}.
 
 \begin{align*}
-P_{max} &= 	P_{Motor} + P_{Controller} = \frac{16~\mathrm{kW}}{0,85}  + 500~\mathrm{W} \approx 19,5~\mathrm{kW}\\[3mm]
+	Z_{Ks} &= R_{A} + R_{M} = 0,397~\mathrm{m\Omega} + 0,51~\mathrm{m\Omega} \approx 1~\mathrm{m\Omega}\\[3mm]
+	I_{Ks} &= \frac{U_{Nenn}}{5 \cdot Z_{Ks}} = \frac{50,4~\mathrm{V}}{5 \cdot 1~\mathrm{m\Omega}} = 10080~\mathrm{A}
 \end{align*}
 
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=\textwidth]{figures/Antrieb/Ashwoods_Kennlinie.png}
-		\caption{Ashwoods-Motor Kennlinie}
-	\end{center}
-\end{figure}
-
 \newpage
+
+
 
 
 %% Der Steuerstromkreis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
