@@ -1,13 +1,47 @@
 \appendix
-\chapter{Arbeitsnachweis}
+\chapter{Allgemeines}
+
+\newpage
 
 \section{Zeitplan}
 
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[angle=90, scale=0.6] {figures/allgemein/zeitplan.png}
+		\caption{Zeitplan und Arbeitszeiten}
+		\label{fig:Zeitplan}
+	\end{center}
+\end{figure}
+
+\newpage
+
 \section{Kosten}
+
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[angle=-90, scale=0.6] {figures/allgemein/stückliste.png}
+		\caption{Kostenaufstellung und Stückliste}
+		\label{fig:Stückliste}
+	\end{center}
+\end{figure}
+
+\newpage
 
 \chapter{Programmcode}
 
+\section{HICS}
+
+\subsection{Benutzeroberfläche}
+
+
+\section{Antrieb}
+
 \chapter{CAD-Zeichnungen}
+
+\newpage
+
+\section{Mechanik}
 
 \begin{figure} [H]
 	\begin{center}
@@ -17,6 +51,7 @@
 	\end{center}
 \end{figure}
 
+\newpage
 
 \begin{figure} [H]
 	\begin{center}
@@ -26,7 +61,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90]{figures/mechanik/Seitenplatte_Fertigung_Links.jpg}
@@ -34,7 +68,6 @@
 		\label{fig:Seitenplatte Links}
 	\end{center}
 \end{figure}
-
 
 \begin{figure} [H]
 	\begin{center}
@@ -44,7 +77,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90]{figures/mechanik/Aufbau_Seitenplatte_Links_Zeichn.jpg}
@@ -52,7 +84,6 @@
 		\label{fig:Aufbau/Zusatzplatte}
 	\end{center}
 \end{figure}
-
 
 \begin{figure} [H]
 	\begin{center}
@@ -62,7 +93,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90]{figures/mechanik/Achse_mit_nuten_Zeichnung.jpg}
@@ -70,7 +100,6 @@
 		\label{fig:Achse3}
 	\end{center}
 \end{figure}
-
 
 \begin{figure} [H]
 	\begin{center}
@@ -80,7 +109,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90]{figures/mechanik/Box_Zeichnung.jpg}
@@ -88,7 +116,6 @@
 		\label{fig:Akkubox Motorblock}
 	\end{center}
 \end{figure}
-
 
 \begin{figure} [H]
 	\begin{center}
@@ -98,7 +125,6 @@
 	\end{center}
 \end{figure}
 
-
 \begin{figure} [H]
 	\begin{center}
 		\includegraphics[angle=90]{figures/mechanik/Box_3_Zeichnung.jpg}
@@ -107,17 +133,50 @@
 	\end{center}
 \end{figure}
 
-\chapter{Solid Edge Simulationen}
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[angle=90, width=\textwidth]{figures/antrieb/Ashwoods_CAD.jpg}
+		\caption{Ashwoods Motor}
+		\label{Ashwoods_CAD}
+	\end{center}
+\end{figure}
 
-\includepdf [pages=-]{figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[width=1.05\textwidth]{figures/antrieb/Curtis_CAD.png}
+		\caption{Curtis Controller}
+		\label{Curtis_CAD}
+	\end{center}
+\end{figure}
 
-\includepdf[pages=-]{figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
+\section{HCIS} \label{app:hcis}
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[scale=0.8]{figures/hcis/befestigung_display_cad.png}
+		\caption{Akkubox Mitte}
+		\label{fig:panel_cad}
+	\end{center}
+\end{figure}
+
+\chapter{Simulationen}
+
+\section{Mechanik}
+
+\fancyfoot[C]{Schmeisser}
+
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
 
 \chapter{Schaltpläne}
 
+\newpage
+
+\section{HCIS}
+
 \chapter{Datenblätter}
 
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{HCIS} \subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
 \includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell5.pdf}
 
 
@@ -126,3 +185,18 @@
 
 \includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Raspberry Pi 4 Moddel B} \label{app:rasp}}, scale=0.8] {pdf/raspberry.pdf}
 \includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/raspberry.pdf}
+
+
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{Antrieb}\subsection{Ashwoods Elektro-Motor IPM-200-50} 
+\label{Ashwoods_Motor}}, scale=0.75] {pdf/Ashwoods_IPM-200-50.pdf}
+\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.8] {pdf/Ashwoods_IPM-200-50.pdf}
+
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Hochleistungs-Relais: KILOVAC LEV200 A4ANA} 
+\label{KILOVAC_LEV200_A4ANA}}, scale=0.85] {pdf/KILOVAC_LEV200_A4ANA.pdf}
+\includepdf[pages=2, pagecommand={\thispagestyle{fancy}}, scale=0.9] {pdf/KILOVAC_LEV200_A4ANA.pdf}
+
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Hochgeschwindigkeits-Schmelzsicherung: FWA-400B} \label{FWA-400B}}, scale=0.82] {pdf/FWA-400B.pdf}
+\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.85] {pdf/FWA-400B.pdf}
+
+\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Leistungsdaten Hirschmann elektronischer Gasdrehgriff v1.0} \label{Hirschmann_E-Gas_Drehgriff}}, scale=0.8] {pdf/Leistungsdaten_Hirschmann_E-Gas_Drehgriff.pdf}
+\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.85] {pdf/Leistungsdaten_Hirschmann_E-Gas_Drehgriff.pdf}

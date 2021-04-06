@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtGraphicalEffects 1.15
 import QtQuick.Shapes 1.15
+import Qt.labs.animation 1.0
 
 Item {
     id: speedBar

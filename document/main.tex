@@ -17,14 +17,17 @@
 
 %% Packages für Grafiken & Abbildungen & Pdf-Dateien & Zitieren
 
+
+\usepackage{biblatex}
+\addbibresource{literatur.bib}
+
 \usepackage{graphicx} 
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{subfig}
 \usepackage{tikz}
-\usepackage{float}
 \usepackage{pdfpages}
-\bibliographystyle{plain}
+\usepackage{floatrow}
 
 
 %% Packages für Formeln
@@ -37,6 +40,7 @@
 \usepackage[all]{hypcap}
 \usepackage{mathrsfs}
 \usepackage{tabls}
+\usepackage{tabu}
 \usepackage{booktabs}
 \usepackage{amsthm}
 
@@ -46,7 +50,6 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
-
 \usepackage{pdfpages}
 
 %% Packages für Listings
@@ -107,11 +110,29 @@
 	stringstyle=\color{mymauve},     % string literal style
 }
 
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+	
 \thispagestyle{empty}
 \parindent 0pt
 
@@ -128,7 +149,6 @@
 %% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \tableofcontents
-\bibliographystyle{plain}
 
 %% INPUT FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -142,9 +162,10 @@
 
 %% Literaturverzeichnis
 
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\fancyfoot[C]{Kronberger, Lackner, Kern, Schmeisser}
 
-\bibliography{literatur}
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography
 
 %% Abbildungsverzeichnis
 
@@ -160,6 +181,5 @@
 
 \addcontentsline{toc}{chapter}{Codeverzeichnis}
 \lstlistoflistings
-
 
 \end{document}
