@@ -17,7 +17,9 @@ Die Allgemeinen Funktionen sind die allbekannten. Fahren mit Spitzen bis zu 130 
 \newpage
 
 \section{Topologie des Gesamtsystems}
+
 \subsection{Gesamtansicht}
+
 In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des Emissionsfreien-Sportmotorrads begutachten, ebenso kann man die einzelnen Teilbereiche grob erkennen:
 
 \begin{figure} [H]
@@ -34,12 +36,45 @@ In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des Emiss
 
 \newpage
 
+
 \subsection{Projekt-Teilbereiche}
 Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche gliedern. Der grundsätzliche topologische Zusammenhang der einzelnen Bereiche wird anschließend erläutert:
 
 \begin{figure}[H]
 	\begin{center}
+
 		\includegraphics[scale=0.7]{figures/allgemein/GesamtTopologie.png}
+
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/allgemein/Curtis_Controller.png}
+		\caption{Curtis Controller}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{figures/allgemein/Ashwoods_Motor.png}
+		\caption{Ashwoods Motor}
+
+	\end{center}
+\end{figure}
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[scale=0.75] {figures/Akku/Akkubox1.PNG}
+		\caption{Topologiebild Akkupack}
+	\end{center}
+\end{figure}
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[scale=0.2] {figures/Akku/BMSMINI.jpg}
+		\caption{Topologiebild des BMS}
 	\end{center}
 \end{figure}
 
@@ -50,6 +85,8 @@ Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient a
 Der Antrieb ist ebenso ein essenzieller Teil des Elektro-Motorrads, da die durch den Akkumulator zur Verfügung gestellte elektrische Energie mithilfe des Motorcontrollers im Motor in mechanisch nutzbare Rotationsenergie umgewandelt wird. Benutzerinteraktionen und Steuermöglichkeiten werden mithilfe der umfassenden Ein- und Ausgänge realisiert.
 
 Die zentrale Steuereinheit sorgt für ein reibungsloses Interagieren der anderen Steuerkomponenten und steuert allgemeine Schaltprozesse. Ein umfangreiches benutzerfreundliches Fahrerlebnis wird durch das Touch-Paneel geboten, weiters wird dadurch eine genaue aber übersichtliche Fahrdatenauswertung während des Betriebs ermöglicht. Der Raspberry PI speichert die gesamte CAN-Bus Kommunikation und sämtliche Benutzerkonfigurationen, um eine vollständige Daten- und Fehlerauswertung im Hinblick auf spätere Wartungen, Optimierungen und Weiterentwicklungen durchführen zu können.
+
+\subsection{Topologischer Überblick}
 
 \newpage
 
