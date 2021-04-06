@@ -30,56 +30,11 @@
 
 \chapter{Programmcode}
 
-\section{Antriebsstrang}
-\definecolor{mGreen}{rgb}{0,0.6,0}
-\definecolor{mGray}{rgb}{0.5,0.5,0.5}
-\definecolor{mPurple}{rgb}{0.58,0,0.82}
-\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
-
-\lstdefinestyle{CStyle}{
-	backgroundcolor=\color{backgroundColour},   
-	commentstyle=\color{mGreen},
-	keywordstyle=\color{magenta},
-	numberstyle=\tiny\color{mGray},
-	stringstyle=\color{mPurple},
-	basicstyle=\footnotesize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=2,
-	language=C
-}
-
-
-
-%\begin{document}
-%	\begin{lstlisting}[style=CStyle]
-%		#include <stdio.h>
-%		int main(void)
-%		{
-%			printf("Hello World!"); 
-%		}
-%	\end{lstlisting}
-%\end{document} 
-
-\section{HICS}
-
-\subsection{Benutzeroberfläche}
-
-
-
-
 \chapter{CAD-Zeichnungen}
 
 \newpage
 
-\section{Mechanik}
+\section{Mechanische Umsetzung}
 
 \begin{figure} [H]
 	\begin{center}
@@ -199,9 +154,7 @@
 
 \chapter{Simulationen}
 
-\section{Mechanik}
-
-\fancyfoot[C]{Schmeisser}
+\section{Mechanische Umsetzung}
 
 \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Links_Statische Berechnung 1_3.pdf}
 \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {figures/mechanik/Simulationen/Seitenplatte_Rechts_Statische Berechnung 1_3.pdf}
@@ -229,21 +182,7 @@
 
 \newpage
 
-\section{HCIS}
-
-\newpage
-
 \chapter{Datenblätter}
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{HCIS} \subsection{Mean Well RSD-30H-5} \label{app:mw5}}, scale=0.8] {pdf/meanwell5.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell5.pdf}
-
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Mean Well SD-350C-12} \label{app:mw12}}, scale=0.8] {pdf/meanwell12.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/meanwell12.pdf}
-
-\includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\subsection{Raspberry Pi 4 Moddel B} \label{app:rasp}}, scale=0.8] {pdf/raspberry.pdf}
-\includepdf[pages=2-, pagecommand={\thispagestyle{fancy}}, scale=0.95] {pdf/raspberry.pdf}
 
 \includepdf[pages=1, pagecommand={\thispagestyle{fancy}}, pagecommand={\section{Antrieb}\subsection{Ashwoods Elektro-Motor IPM-200-50} 
 \label{Ashwoods_Motor}}, scale=0.75] {pdf/Ashwoods_IPM-200-50.pdf}
