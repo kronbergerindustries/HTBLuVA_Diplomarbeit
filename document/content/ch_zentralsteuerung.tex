@@ -6,12 +6,12 @@
 
 \section{Übersicht}
 
-Das Human-Computer Interaction System ist, wie der Name schon sagt, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten elektrischen System dient. Durch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein. Ebenso sollte es wichtige Fahrdaten und andere Informationen speichern und dem User anzeigen können.\\
+Das Human-Computer Interaction System ist, wie der Name schon sagt, die Komponente, welche als Schnittstelle zwischen dem Nutzer und dem gesamten elektrischen System dient. Dadurch es sollte die fehlerfreie Nutzung der Funktionen des Motorrades gewährleistet sein. Ebenso speichert es wichtige Fahrdaten und andere Informationen und dem User anzeigen werden.\\
 Wichtig ist das System, trotz der großen Komplexität, so intuitiv und nutzerfreundlich wie möglich zu gestalten.
 
 \subsection{Grundfunktionen des Systems}
 
-Die geplanten Funktionen des HCIS \footnote{Abkurzümg: Human-Computer Interaction System} lassen sich grob in vier Grundfunktionen einteilen.
+Die geplanten Funktionen des HCIS \footnote{Abkürzung: Human-Computer Interaction System} lassen sich grob in vier Grundfunktionen einteilen.
 
 \begin{itemize}
 
@@ -19,13 +19,13 @@ Die geplanten Funktionen des HCIS \footnote{Abkurzümg: Human-Computer Interacti
 	Die Schalter und Buttons am Lenker, welche zuvor über den Kabelbaum die Leuchten, Blinker und die Hupe gesteuert haben, werden nun über die General-purpose input/output (GPIO) des Raspberry Pi Mikrocomputers gesteuert.
 
 	\item \textbf{Graphische Benutzeroberfläche}\medskip\\
-Dient der Anzeige wichtiger Fahr- und Ladedaten, welche entweder in Echtzeit oder über die Datenbankschnittstelle abgerufen und graphisch angezeigt werden können.
+Diese dient der Anzeige wichtiger Fahr- und Ladedaten, welche entweder in Echtzeit oder über die Datenbankschnittstelle abgerufen und graphisch angezeigt werden können.
 
 	\item \textbf{Kommunikation mit den Steuereinheiten des Motorrades} \medskip\\
 	Über CAN-Bus werden Daten von dem Batterie Management Systems (BMS) und der Curtis Motorsteuerung empfangen und an die Benutzeroberfläche zur Anzeige und an die Datenbankschnittstelle zur Langzeitsicherung der Fahrdaten weiter gegeben.
 
 	\item \textbf{Speichern der relevanten Fahrdaten über die Datenbankschnittstelle} \medskip\\
-Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittstelle (Handler) weitergegeben um die Daten für Datenauswertung und Testberichte zu speichern. Ebenso bezieht das Diagnosesystem der Benutzeroberfläche die Daten über diese Schnittstelle.
+Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittstelle (Handler) weitergegeben, um die Daten für Datenauswertung und Testberichte zu speichern. Ebenso bezieht das Diagnosesystem der Benutzeroberfläche die Daten über diese Schnittstelle.
 
 \end{itemize}
 
@@ -33,7 +33,7 @@ Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittste
 
 \subsection{Steuereinheit}
 
-Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi \footnote{Datenblatt https://www.raspberrypi.org/documentation}, welcher über die Interpretersprache Python \footnote{siehe https://www.python.org/} programmiert werden kann und die Programmierung um einiges einfacher gestalltet.
+Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi \footnote{Datenblatt https://www.raspberrypi.org/documentation}, welcher über die Interpretersprache Python \footnote{siehe https://www.python.org/} programmiert werden kann und die Programmierung um einiges einfacher gestalltet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -105,7 +105,7 @@ Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, 
 	\end{center}
 \end{table}
 
-Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: https://docs.rs-online.com/e3e0/0900766b81621db7.pdf} entschieden. 
+Der Spannungswandler wurde nun nach der größtmöglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: https://docs.rs-online.com/e3e0/0900766b81621db7.pdf} entschieden. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -143,12 +143,13 @@ Ebenso wird beim Abschalten des Motorrades über die BMS jegliches andere Bautei
 Die Grundfunktionen wie Beleuchtung, Hupe und Blinker werden hier als Peripherie bezeichnet. Diese sollten so einfach wie möglich und vom Lenker aus zu bedienen sein. Ebenso müssen sie verlässlich gesteuert werden können. Daher haben wir uns entschieden diese Funktionen ebenso über den Raspberry Pi zu steuern, da dieser bei einem Fehler der Motorsteuerung über den eingebauten Puffer gespeist werden kann und daher diese wichtigen Funktionen bis zu einem sicheren Stillstand weiter betrieben und gesteuert werden können.\\
 
 
-Dennoch ist in der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Eingängen zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode ist die Schaffung einer Zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
+Dennoch ist der Plan in Zukunft die Motorsteuerung, welche ebenso in der Lage wäre die Ausgänge abhängig von den Eingängen zu schalten, diese Aufgabe übernehmen zu lassen, solange die Ausfallsicherheit ebenso gegeben wäre. Der Vorteil dieser Methode ist die Schaffung einer zentralen Steuereinheit, welche alle Steueraufgaben in einem Bauteil vereinen kann.
 
 \subsection{Hardware}
 
 \subsubsection{Input}
-Wenn wir eine digitale Schaltung wie die GPIO \footnote{general-purpose input/output} Pins betrachtet, sind die Pins immer entweder 0 oder 1. In diesem Fall muss der Zustand von 0 auf 1 oder von 1 auf 0 geändert werden. In beiden Fällen muss der digitale Pin entweder auf 0 gehalten und dann auf den Status auf 1 geändert werden oder andersherum. In beiden Fällen muss man den GPIO Pin entweder auf "Hoch" oder "Niedrig" setzen,er kann aber nicht schwebend gelassen werden. Dafür werden Pullup- oder Pulldown Widerstände verwendet. Standardmäßig werden hier 10kOhm Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig und hängt meistens von der Anwendung ab. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um nicht immer eine Spannung an den Eingängen des Raspberry Pis anliegen zu haben.
+
+Wenn wir eine digitale Schaltung wie die GPIO \footnote{general-purpose input/output} Pins betrachten, sind die Pins immer entweder 0 oder 1. In diesem Fall muss der Zustand von 0 auf 1 oder von 1 auf 0 geändert werden. In beiden Fällen wird der digitale Pin entweder auf 0 gehalten und dann auf den Status auf 1 geändert oder andersherum. In beiden Fällen muss man den GPIO Pin entweder auf "High" oder "Low" setzen, er kann aber nicht schwebend gelassen werden. Dafür werden Pullup- oder Pulldown Widerstände verwendet. Standardmäßig werden hier 10kOhm Widerstände benutzt. Ob Pullup oder Pulldown ist grundsätzlich gleichgültig und hängt meistens von der Anwendung ab. Wir benutzen für das Einlesen der Eingänge 10k Pulldown Widerstände, um nicht immer eine Spannung an den Eingängen des Raspberry Pis anliegen zu haben.
 
 \begin{figure}[H]
 	\begin{center}
@@ -160,7 +161,7 @@ Wenn wir eine digitale Schaltung wie die GPIO \footnote{general-purpose input/ou
 
 \textbf{Pullup Widerstand}\\
 
-Hier kann der digitale Logikeingangspin mit dem Schalter von logisch 1 auf logisch 0 umgeschaltet werden. Der Widerstand wirkt als Pull-up-Widerstand. Es ist mit der Logikspannung von der Versorgungsquelle von 3,3 Volt verbunden. Wenn der Schalter nicht gedrückt wird, hat der logische Eingangspin immer eine Standardspannung von 3,3 Volt oder der Pin ist immer hoch, bis der Schalter gedrückt und der Pin gegen Masse kurzgeschlossen wird, wodurch er logisch 0 wird.\\\medskip
+Hier kann der digitale Logikeingangspin mit dem Schalter von logisch 1 auf logisch 0 umgeschaltet werden. Der Widerstand wirkt als Pull-up-Widerstand. Es ist mit der Logikspannung der Versorgungsquelle von 3,3 Volt verbunden. Wenn der Schalter nicht gedrückt wird, hat der logische Eingangspin immer eine Standardspannung von 3,3 Volt oder der Pin ist immer hoch, bis der Schalter gedrückt und der Pin gegen Masse kurzgeschlossen wird, wodurch er logisch 0 wird.\\\medskip
 
 \textbf{Pulldown Widerstand}\\
 
@@ -170,11 +171,11 @@ Bei einem Pulldown Widerstand passiert genau das Gegenteil. Der Widerstand ist m
 
 \subsection{Umsetzung}
 
-Um diese Theorie auch an unser Projekt anwenden zu können, müssen zuerst die Taster und Schalter, welche sich normalerweise am Lenker des Motorrades befinden Ausgemessen werden. Dies wird gemacht um herauszufinden welche Drähte mit welchen Schalter verbunden ist. Das Gleiche gilt für die Frontbeleuchtung. Nur so können diese auch wieder richtig angeschlossen und verwendet werden.
+Um diese Theorie auch in unserem Projekt anwenden zu können, müssen zuerst die Taster und Schalter, welche sich normalerweise am Lenker des Motorrades befinden, ausgemessen werden. Dies wird gemacht um herauszufinden welche Drähte mit welchem Schalter verbunden sind. Das Gleiche gilt für die Frontbeleuchtung. Nur so können diese auch wieder richtig angeschlossen und verwendet werden.
 
 \subsubsection{Lenkerschalter}
 
- Die einzelnen Schalter und deren Schaltstellungen sowie die dazugehörigen Drähte können mit Durchgangsmessung herausgefunden werden. Dafür muss nur ein Schalter umgelegt werden und mit Trial and Error nach dem geschlossenen Kontakt an den Drähten gesucht werden.  
+ Die einzelnen Schalter und deren Schaltstellungen sowie die dazugehörigen Drähte können mit Durchgangsmessung herausgefunden werden. Dafür muss nur ein Schalter umgelegt werden und mit Trial-and-Error nach dem geschlossenen Kontakt an den Drähten gesucht werden.  
 
 \begin{figure}[H]
 	\begin{center}
@@ -188,7 +189,7 @@ Um diese Theorie auch an unser Projekt anwenden zu können, müssen zuerst die T
 
 \subsubsection{Beleuchtung}
 
-Ähnlich konnten die Drähte den Richtigen Leuchten des Frontscheinwerfers zugeordnet werden. Es wurde der Schwarze als Masse angenommen und dann wurde nacheinander an die übriggebliebenen Anschlüsse über eine Gleichspannungsquelle 12V angelegt. Nun konnte an dem Leuchten der Lampen die Verschaltung erkannt werden:
+Ähnlich konnten die Drähte den richtigen Leuchten des Frontscheinwerfers zugeordnet werden. Es wurde der schwarze als Masse angenommen und dann wurde nacheinander an die übriggebliebenen Anschlüsse über eine Gleichspannungsquelle 12V angelegt. Nun konnte an dem Leuchten der Lampen die Verschaltung erkannt werden:
 
 \begin{figure}[H]
 	\begin{center}
@@ -200,7 +201,7 @@ Um diese Theorie auch an unser Projekt anwenden zu können, müssen zuerst die T
 
 \subsubsection{Anschluss}
 
-Angeschlossen werden alle Verbindungen über ein Prototypingschield (siehe: ). Dadurch kann man alle Drähte direkt am Raspberry angeschlossen werden, ohne eine extra Klemme zu verwenden.
+Angeschlossen werden alle Verbindungen über ein Prototypingschield. Dadurch kann man alle Drähte direkt am Raspberry anschließen, ohne eine extra Klemme zu verwenden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -214,7 +215,7 @@ Angeschlossen werden alle Verbindungen über ein Prototypingschield (siehe: ). D
 
 \subsubsection{Output}
 
-Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eingängen eines 4 Channel Relais Moduls, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun Möglich die 12V der Perpherie zu schalten und 
+Hierbei werden die GPIOs als Ausgang verwendet. Sie sind mit den Eingängen eines 4 Channel Relais Moduls verbunden, welches über die 5V direkt von dem Raspberry Pi gespeist wird. Hiermit ist es nun möglich die 12V der Perpherie zu schalten.
 
 \begin{figure}[H]
 	\begin{center}
@@ -227,12 +228,12 @@ Hierbei werden die GPIOs als Ausgang verwendet. Sie sind verbunden mit den Eing�
 
 \subsection{Software}
 
-Wichtig bei der Programmierung war in diesem Fall die dauerhafte Verfügbarkeit der Grundfunktionen  sowie die einfache Integrierbarkeit von alten und neuen Bauteilen. Dies wurde erreicht durch die Anwendung verschiedener Bibliotheken.\\
+Wichtig bei der Programmierung war in diesem Fall die dauerhafte Verfügbarkeit der Grundfunktionen  sowie die einfache Integrierbarkeit von alten und neuen Bauteilen. Dies wurde durch die Anwendung verschiedener Bibliotheken erreicht.\\
 Die Wichtigsten in dieser Anwendung waren: \\
 
 \subsubsection{gpiozero}
 
-Eine Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden. Hierzu kann die Klasse Button und DigitalOutputDevice verwendet werden. Dieser können Parameter wie die gewünschte Debounce Zeit und verwendete Pull-Widerstände übergeben werden. Es werden nur drei Zeilen Code benötigt um einen Aus- oder Eingang zu definieren und anzusteuern \footnote{siehe: Anhang}
+Eine Bibliothek, welche das einfache und schnelle Integrieren neuer Ein- oder Ausgänge ermöglicht. Dadurch können schnell und einfach Änderungen an dem Steuerverhalten der Peripherie gemacht werden. Hierzu kann die Klasse Button und DigitalOutputDevice benutzt werden. Dieser können Parameter wie die gewünschte Debounce Zeit und verwendete Pull-Widerstände übergeben werden. Es werden nur drei Zeilen Code benötigt um einen Aus- oder Eingang zu definieren und anzusteuern \footnote{siehe: Anhang}
 
 \subsubsection{threading} \label{sec:thread}
 
@@ -247,14 +248,14 @@ Eine Bibliothek, welche es ermöglicht, einen eigenen Thread \footnote{gleichzei
 
 \end{lstlisting}
 
-In diesem Beispiel wird ein Demon Thread erzeugt und gestartet. Das beutetet dieser Thread wird beim schließen des Programms automatisch mit geschlossen und muss dadurch nicht mehr überwacht werden. Das Target ist die Funktion, welche unabhängig ausgeführt werden soll.
+In diesem Beispiel wird ein Demon Thread erzeugt und gestartet. Das beutetet dieser Thread wird beim Schließen des Programms automatisch mit geschlossen und muss dadurch nicht mehr überwacht werden. Das Target ist die Funktion, welche unabhängig ausgeführt werden soll.
 
 \newpage
 
 %% Benutzeroberfläche %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Benutzeroberfläche}
-Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald das Motorrad zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und die aufgezeichneten Fahrdaten anzeigen zu lassen. Ebenso können der Akkuladestatus und Informationen über Fehler im System entnommen werden.
+Die Benutzeroberfläche stellt die Verbindung zwischen dem Nutzer und dem Motorrad dar. Sie sollte während der Fahrt die Instrumententafel des Motorrades ersetzen und dem Nutzer die wichtigsten Fahrinformationen anzeigen. Sobald das Motorrad zum Stillstand gekommen ist, wird es möglich Einstellungen zu ändern und sich die aufgezeichneten Fahrdaten anzeigen zu lassen. Ebenso können der Akkuladestatus und Informationen über Fehler im System entnommen werden.
 
 \subsection{Hardware}
 
@@ -273,7 +274,7 @@ Die Auflösung und die Größe des Paneels wirkt sich stark auf das Design der B
 \newpage
 
 \subsubsection{Befestigung}
-In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung nun an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.\footnote{siehe Anhang \ref{app:hcis}}
+In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 75mm integriert und kann daher einfach an Wänden oder Platten verschraubt werden. Um den Bildschirm nun in einer ähnlichen Position wie die Instrumententafel zu befestigen wurde eine 100mm x 210mm x 1.5mm Aluminium Platte - wie in der Abbildung zu sehen - gebogen und mit Löchern versehen. Um diese Halterung an dem Motorrad zu befestigten werden die Verschraubungen der alten Instrumententafel verwendet.\footnote{siehe Anhang \ref{app:hcis}}
 
 \begin{figure}[H]
 	\begin{center}
@@ -286,13 +287,13 @@ In das Gehäuse des Paneels sind M4 Verschraubungen in einem Raster von 75mm x 7
 \subsection{Software}
 Bevor die Software für die Benutzeroberfläche verfasst wurde, mussten das Design, die Funktionen sowie die angezeigten Informationen geplant werden, um einen reibungslosen Arbeitsablauf beim Entwickeln des Frontends zu gewährleisten. Design Elemente wurden zuvor in Adobe Illustrator vorgefertigt. In den folgenden Seiten wird das Ergebnis dieses Prozesses erläutert.
 \subsubsection{Aufbau}
-Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die einzelnen Fenster werden als Tabelle mit ihren angezeigten Informationen dargestellt. Dies is wichtig da jede dieser Informationen vom Backend an das Frontend gesendet werden müssen.\\
-Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente  zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen Phase der Entwicklung der Benutzeroberfläche definiert werden.
+Die nachfolgende Abbildung zeigt den grundsätzlichen Programmaufbau der Benutzeroberfläche. Die einzelnen Fenster werden als Tabelle mit ihren angezeigten Informationen dargestellt. Dies is wichtig da jede dieser Informationen vom Backend an das Frontend gesendet werden muss.\\
+Ebenso sind in den letzten Zeilen der Tabellen die QML-Elemente  zur Navigation zwischen den einzelnen Fenstern niedergeschrieben. Diese müssen auch schon in der frühen Phase der Entwicklung der Benutzeroberfläche definiert.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{figures/hcis/gui_aufbau.png}
-		\caption{Aufbau der Graphischen Benutzeroberfläche}
+		\caption{Aufbau der graphischen Benutzeroberfläche}
 		\label{fig:aufbauGUI}
 	\end{center}
 \end{figure}
@@ -332,7 +333,7 @@ Das Navigations-Menü ist ein Dropdown-Menü, welches zur Navigation zwischen de
 \textbf{Buttons} \\
 \vspace{2mm}
 Die Navigation wird über das QML-Element \textit{Mousearea}, welche direkt über den Icons der einzelnen Navigationselemente platziert wurde, gesteuert. Nun kann mit dem Befehl \textit{onClicked} eine Funktion aufgerufen werden, welche das gewünschte Fenster sichtbar macht, sowie das Navigationsmenü wieder nach oben fahren lässt.\\
-In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale Variable, welche beim Anmelden durch ein Signal gesetzt wird, abgefragt. Falls die Berechtigung die ausgewählte Funktion nicht zulässt wird ein Informationstext ausgegeben und das Menü wiederum geschlossen.\
+In dieser Funktion wird ebenso die Berechtigung des Nutzers über eine Globale Variable, welche beim Anmelden durch ein Signal gesetzt wird, abgefragt. Falls die Berechtigung die ausgewählte Funktion nicht zulässt, wird ein Informationstext ausgegeben und das Menü wiederum geschlossen.\
 
 \textbf{Abmelden} \\
 \vspace{2mm}
@@ -343,12 +344,12 @@ Wird der Abmeldebutton gedrückt, werden die Anmeldeinformationen zurückgesetzt
 
 \subsubsection{Balken Anzeige}
 
-Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung verschiedener Daten verwendet. Mit ihr können diese übersichtlicher Dargestellt werden. Diese Komponente wird in mehreren QML-Dateien verwendet, daher sind Properties zur Anpassung notwendig. Die wichtigsten davon sind:
+Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung verschiedener Daten verwendet. Mit ihr können diese übersichtlicher dargestellt werden. Diese Komponente wird in mehreren QML-Dateien verwendet, daher sind Properties zur Anpassung notwendig. Die Wichtigsten davon sind:
 
 \begin{itemize}
-	\item Wert - Der Aktuelle Wert, welcher am Balken angezeigt werden sollte.
+	\item Wert - Der aktuelle Wert, welcher am Balken angezeigt werden sollte.
 	\item Anfangswinkel - Der Winkel an dem der Balken entspringt.
-	\item maximaler Wert - Der maximal zu erreichende Wert. Dieser Bestimmt die Länge des Hintergrundbalkens
+	\item maximaler Wert - Der maximal zu erreichende Wert. Dieser bestimmt die Länge des Hintergrundbalkens
 	\item Hintergrundfarbe - Farbe des Hintergrundbalkens (in der Abbildung grau)
 	\item Balkenfarbe -Farbe des Anzeigebalkens (in der Abbildung blau)
 \end{itemize}
@@ -361,10 +362,10 @@ Die Komponente Balken Anzeige wird in der Benutzeroberfläche zur Visualisierung
 	\end{center}
 \end{figure}
 
-Über ein \textit{Signal} kann nun über das Backend der Wert des Balkens verändert werden und in Echtzeit angezeigt werden.
+Über ein \textit{Signal} kann nun über das Backend der Wert des Balkens verändert und in Echtzeit angezeigt werden.
 
 \subsubsection{Modus Anzeige}
-Diese Komponente befindet sich auf der Instrumenten Tafel. Der Modus kann über einen Button am Lenker, welcher mit der Curtis Steuerung verbunden ist, geändert werden. Sie dient zum Anzeigen der derzeitig gewählten Fahrmodi und wird über ein \textit{Signal} aus dem Backend gesteuert, welches mit der Listener Klasse verbunden ist.
+Diese Komponente befindet sich auf der Instrumenten Tafel. Der Modus kann über einen Button am Lenker, welcher mit der Curtis Steuerung verbunden ist, geändert werden. Sie dient zum Anzeigen der aktuell gewählten Fahrmodi und wird über ein \textit{Signal} aus dem Backend gesteuert, welches mit der Listener Klasse verbunden ist.
 
 \begin{figure}[H]
 	\begin{center}
@@ -391,15 +392,15 @@ Die Graph Komponente befindet sich auf dem Diagnose Fenster und dient zum Anzeig
 	\end{center}
 \end{figure}
 
-Realisiert wurde diese Komponente über öffentliche Bibliothek \textit{Charts.js} \footnote{siehe https://www.chartjs.org/}, welche durch die Java Script Unterstützung von \textit{QT}, mit der Installation eines Adapters \footnote{siehe https://github.com/MichaelVoelkel/ChartJs2QML} mit dem QML Programm kompatibel ist. Dadurch wird nun das Zeichnen von verschiedensten Graphen ermöglicht.
+Realisiert wurde diese Komponente über die öffentliche Bibliothek \textit{Charts.js} \footnote{siehe https://www.chartjs.org/}, welche durch die Java Script Unterstützung von \textit{QT}, mit der Installation eines Adapters \footnote{siehe https://github.com/MichaelVoelkel/ChartJs2QML} mit dem QML Programm kompatibel ist. Dadurch wird nun das Zeichnen von verschiedensten Graphen ermöglicht.
 
 \subsubsection{Weitere Komponenten}
 
-Wie schon bei der Fahr Modi Komponente, wurden weitere Objekte, welche zwischen zwei Zuständen hin und her gestalten werden müssen oder eine bestimmte Handlung ausführen sollten, über eine eigene QML Komponente verwirklicht. Diese Ermöglicht nun wiederum das wiederholte verwenden dieser Komponente, sowie das Ansteuern über \textit{States} und \textit{Signale}.\\
+Wie schon bei der Fahr Modi Komponente, wurden weitere Objekte, welche zwischen zwei Zuständen hin und her gestalten müssen oder eine bestimmte Handlung ausführen sollten, über eine eigene QML Komponente verwirklicht. Diese ermöglicht nun wiederum das wiederholte Verwenden dieser Komponente, sowie das Ansteuern über \textit{States} und \textit{Signale}.\\
 Diese Komponenten sind:
 
 \textbf{Umschaltkomponenten}\\
-Dies sind Komponenten, welche über ein \textit{Signal} angesteuert werden und dann mithilfe von \textit{States} ihr Aussehen verändern.
+Dies sind Komponenten, welche über ein \textit{Signal} angesteuert werden und dann mit Hilfe von \textit{States} ihr Aussehen verändern.
 
 \begin{itemize}
 	
@@ -437,11 +438,11 @@ Das Login Fenster dient zur Autorisierung des Benutzers. Über die User \textit{
 	\end{center}
 \end{figure}
 
- Um sich einzuloggen muss nur mehr das Passwort im \textit{Textfeld} darunter eingegeben werden. Nach dem Drücken des Login Pfeiles (Neben dem Passwort Textfeld) werden die Login Daten an das Backend versendet. Diese vergleicht die Daten über die Datenbankschnittstelle\footnote{siehe Abschnitt} und loggt, insofern das richtige Passwort gegeben ist, den Benutzer ein. Wird jedoch das Passwort falsch eingegeben, wird eine rote Fehlermeldung angezeigt.\\
+ Um sich einzuloggen muss nur mehr das Passwort im \textit{Textfeld} darunter eingegeben werden. Nach dem Drücken des Login Pfeiles (neben dem Passwort Textfeld) werden die Login Daten an das Backend versendet. Diese vergleicht die Daten über die Datenbankschnittstelle\footnote{siehe Abschnitt} und loggt, wenn das richtige Passwort gegeben ist, den Benutzer ein. Wird jedoch das Passwort falsch eingegeben, erscheint eine rote Fehlermeldung.\\
  
 \subsubsection{Fahrdaten}		
 
-Dieses Fenster dient als Ersatz für die Instrumententafel des Motorrades. Es ist daher das einzige während der Fahrt ersichtliche Fenster. Es Zeigt alle wichtigen Fahrdaten wie Leistung, Geschwindigkeit und Akkuladestand, sowie den Aktuellen Fahrmodus an. Diese Anzeige kann jedem Nutzer, unabhängig der Berechtigung, angezeigt werden.
+Dieses Fenster dient als Ersatz für die Instrumententafel des Motorrades. Es ist daher das einzige während der Fahrt ersichtliche Fenster. Es zeigt alle wichtigen Fahrdaten wie Leistung, Geschwindigkeit und Akkuladestand, sowie den aktuellen Fahrmodus an. Diese Anzeige kann jedem Nutzer, unabhängig der Berechtigung, angezeigt werden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -457,7 +458,7 @@ Der Status der Blinker und der Beleuchtung wird ebenso wie die Temperaturen der 
 
 \subsubsection{Akku- und Ladedaten}
 
-Dieses Fenster dient Ähnlich wie das der Fahrdaten zur Darstellung wichtiger Daten. Es können alle wichtigen Daten bezüglich Akku und BMS auf einem Blick abgelesen werden. 
+Dieses Fenster dient, ähnlich wie das der Fahrdaten zur Darstellung wichtiger Details. Es können alle wichtigen Daten bezüglich Akku und BMS auf einem Blick abgelesen werden. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -467,11 +468,11 @@ Dieses Fenster dient Ähnlich wie das der Fahrdaten zur Darstellung wichtiger Da
 	\end{center}
 \end{figure}
 
-Dieses Fenster wird Standardmäßig während dem Laden des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden. Da derzeit leider noch keine Kommunikation zwischen BMS und dem Raspberry Pi besteht, kann nur der Ladestand des Akkus, welcher über die Motorsteuerung empfangen werden kann, angezeigt werden.
+Dieses Fenster wird standardmäßig während des Ladens des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden. Da derzeit leider noch keine Kommunikation zwischen BMS und dem Raspberry Pi besteht, kann nur der Ladestand des Akkus, welcher über die Motorsteuerung empfangen werden kann, angezeigt werden.
 
 \subsubsection{Fahrdaten Diagnose} \label{sec:diagnosis}
 
-Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorsteuerung versendet und vom Raspberry Pi verarbeitet und in einer Datenbank gespeichert werden, in Graphen angezeigt werden. Hierzu wird die \textit{Graph Komponente} \footnote{siehe Abschnitt \ref{sec:graph}} verwendet.
+Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorsteuerung versendet, vom Raspberry Pi verarbeitet und in einer Datenbank gespeichert werden, in Graphen angezeigt werden. Hierzu wird die \textit{Graph Komponente} \footnote{siehe Abschnitt \ref{sec:graph}} verwendet.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{figures/hcis/window_diagnosis.png}
@@ -487,7 +488,7 @@ Hier können die Fahrdaten, welche während der Fahrt dauerhaft von der Motorste
 
 \subsubsection{Fehler}
 
-Sobald ein Fehlerdatenpaket über den CAN-Bus versendet wird, gibt der Listener Klasse die Fehlercodes an die Bridge Klasse weiter, um sie in diesem Fenster anzuzeigen. In einer \textit{Listview} werden nun die Aktiven Fehler angezeigt. Solange Fehler anliegen werden diese angezeigt und erst sobald die zuvor angezeigten Fehler nicht mehr anliegen werden diese aus der Liste gelöscht.
+Sobald ein Fehlerdatenpaket über den CAN-Bus versendet wird, gibt der Listener Klasse die Fehlercodes an die Bridge Klasse weiter, um sie in diesem Fenster anzuzeigen. In einer \textit{Listview} werden nun die aktiven Fehler angezeigt. Solange Fehler anliegen werden diese angezeigt und erst sobald die zuvor angezeigten Fehler nicht mehr anliegen, werden diese aus der Liste gelöscht.
 
 \begin{figure}[H]
 	\begin{center}
@@ -497,7 +498,7 @@ Sobald ein Fehlerdatenpaket über den CAN-Bus versendet wird, gibt der Listener 
 	\end{center}
 \end{figure}
 
-Der Name und die Beschreibung der Fehler, wird über eine Fehlertabelle\footnote{siehe Abschnitt \ref{sec:error_dis} } in der Datenbank ausgelesen. Diese werden während dem Testen des Motorrades gesammelt und häufig auftretende Fehler werden in diese Tabelle eingetragen. 
+Der Name und die Beschreibung der Fehler, wird über eine Fehlertabelle\footnote{siehe Abschnitt \ref{sec:error_dis} } in der Datenbank ausgelesen. Diese werden während des Testes des Motorrades gesammelt und häufig auftretende Fehler werden in diese Tabelle eingetragen. 
 
 \subsubsection{Nutzer und Berechtigungen} \label{sec:users}
 
@@ -514,7 +515,7 @@ Dieser Benutzer verfügt über wenig eingeschränkte Rechte. Er kann auf jede fe
 
 {\small \textbf{GUEST}} - Passwort: 00000\\ \vspace{2mm}
 
-Dieser Benutzer verfügt nur über sehr eingeschränkte Rechte. Er wird zum Präsentieren der Maschine benützt und lässt den unerfahrenen Nutzer nur auf die Fahrdaten und Akku- und Ladedaten zugreifen. Ebenso sollte in Zukunft die Leistung des Motorrades beim einloggen dieses Benutzers stark eingeschränkt werden, um Unfälle zu verhindern.
+Dieser Benutzer verfügt nur über sehr eingeschränkte Rechte. Er wird zum Präsentieren der Maschine benützt und lässt den unerfahrenen Nutzer nur auf die Fahrdaten und Akku- und Ladedaten zugreifen. Ebenso sollte in Zukunft die Leistung des Motorrades beim Einloggen dieses Benutzers stark eingeschränkt werden, um Unfälle zu verhindern.
 
 \newpage
 
@@ -524,7 +525,7 @@ Dieser Benutzer verfügt nur über sehr eingeschränkte Rechte. Er wird zum Prä
 QML \footnote{Qt Modeling Language} ist eine deklarative Sprache, mit der Benutzeroberflächen anhand ihrer visuellen Komponenten und ihrer Interaktion und Beziehung zueinander beschrieben werden können. Es ist eine gut lesbare Sprache, die entwickelt wurde, um die dynamische Verbindung von Komponenten zu ermöglichen und die die einfache Wiederverwendung und Anpassung von Komponenten innerhalb einer Benutzeroberfläche erlaubt. Es bietet  Syntax mit Unterstützung für Java-Script-Ausdrücke in Kombination mit dynamischen Eigenschaftsverbindungen.
 
 \subsubsection{Qt-Quick}
-Das Qt-Quick-Modul \footnote{siehe https://www.qt.io/} ist die Standardbibliothek zum schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML erstellt werden. Diese Benutzeroberflächen können mit beliebigen Backend Bibliotheken verbunden werden.
+Das Qt-Quick-Modul \footnote{siehe https://www.qt.io/} ist die Standardbibliothek zum Schreiben von QML-Anwendungen. Während das QML-Modul die Engine und die Sprachinfrastruktur bereitstellt, bietet das Qt Quick-Modul alle grundlegenden Typen, die zum Erstellen von Benutzeroberflächen mit QML erforderlich sind. Es bietet eine visuelle Zeichenfläche und Typen zum Erstellen und Animieren visueller Komponenten, zum Empfangen von Benutzereingaben, zum Erstellen von Datenmodellen und Ansichten sowie zum verzögerten Objektinstanziieren. Es können problemlos flüssige, animierte Benutzeroberflächen in QML angelegt werden. Diese Benutzeroberflächen können mit beliebigen Backend Bibliotheken verbunden werden.
 
 \subsubsection{Slots und Signals} \label{sec:slots}
 Slots und Signals werden in QML zur ereignisgesteuerten Kommunikation zwischen Frontend und Backend verwendet. In der folgenden Illustration wird diese anhand eines einfachen Beispiels erklärt.
@@ -541,14 +542,14 @@ Diese können als Mitteilungen angesehen werden, welche über das Aufrufen der \
 \medskip
 
 \textbf{Slots}\\ \medskip
-Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind über die Bridge Klasse mit dem Frontend verknüpft. Dadurch können diese Funktionen im Frontend aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar. 
+Slots sind Call-Back Funktionen, welche im Backend definiert werden und sind über die Bridge Klasse mit dem Frontend verknüpft sind. Dadurch können diese Funktionen im Frontend aufgerufen und mit Signalen verbunden werden. Sie stellen daher die wichtigste Verbindung zwischen dem Programm und der Benutzeroberfläche dar. 
 
 
 \newpage
 	
 \subsubsection{Bridge} \label{sec:bridge}
 
-Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Modulen des Backends mit denen der graphischen Benutzeroberfläche. Die Kommunikation findet mithilfe dem oben genannten Signal-Slot-Konzept statt.
+Die Bridge Klasse wird für die Kommunikation zwischen den einzelnen Modulen des Backends mit denen der graphischen Benutzeroberfläche. Die Kommunikation findet mit Hilfe des oben genannten Signal-Slot-Konzept statt.
 
 \begin{figure}[H]
 	\begin{center}
@@ -561,7 +562,7 @@ Sie beinhaltet folgende Aufgaben:
 
 \begin{itemize}
 	\item Kommunikation mit der Datenbankschnittstelle
-	\item Verarbeitung der Übergebenen Daten in angepasste Modelle für QML
+	\item Verarbeitung der übergebenen Daten in angepasste Modelle für QML
 	\item Echtzeitverarbeitung einiger Daten von der CAN-Bus Schnittstelle
 \end{itemize}
 
@@ -577,7 +578,7 @@ Um Daten zwischen den mehreren Steuereinheiten des Motorrades zu versenden, muss
 
 \subsubsection{CAN-Modul}
 
-Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Anschluss an die Busleitung über ein externes CAN-Modul, welches über das Serial Peripheral Interface (SPI) mit dem Raspberry Pi kommuniziert, welches wie folgt angeschlossen werden muss: 
+Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Anschluss an die Busleitung über ein externes CAN-Modul, welches über das Serial Peripheral Interface (SPI) mit dem Raspberry Pi kommuniziert und wie folgt angeschlossen werden muss: 
 
 \begin{figure}[H]
 	\begin{center}
@@ -586,7 +587,7 @@ Da der Raspberry Pi selbst nicht über ein CAN-System verfügt, erfolgt der Ansc
 	\end{center}
 \end{figure}
 
-Die Kommunikation wird über zwei Komponenten ermöglicht. Einen MCP2562 Transceiver, welcher für die Verarbeitung der Nachrichten zuständig ist und ein MCP2515 CAN Interface, welches die Daten zwischenspeichert und sich um das Versenden der Nachrichten kümmert. Gemeinsam mit dem Mikrocomputer ergibt dies nun einen CAN Node, welcher fähig ist Nachrichten zu versenden und zu empfangen.
+Die Kommunikation wird über zwei Komponenten ermöglicht. Einen MCP2562 Transceiver, welcher für die Verarbeitung der Nachrichten zuständig ist und ein MCP2515 CAN Interface, welches die Daten zwischenspeichert und sich um das Versenden der Nachrichten kümmert. Gemeinsam mit dem Mikrocomputer ergibt dies einen CAN Node, welcher fähig ist Nachrichten zu versenden und zu empfangen.
 
 \subsubsection{Netzwerkstruktur}
 
@@ -596,7 +597,7 @@ Ein CAN-Netzwerk wird standardmäßig als Bus- oder Sterntopologie aufgebaut. Wi
 
 \subsection{Listener} \label{sec:listener}
 
-Die Listener Klasse ist dafür zuständig den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle \footnote{siehe Abschnitt \ref{sec:handler}} sowie die Schnittstelle zum Frontend (Bridge) \footnote{siehe Abschnitt \ref{sec:bridge}} weiterzugeben. Nach dem Konfigurieren werden die einzelnen Nachrichten nach dem Empfangen des Identifiers in eine Liste geordnet und an die Bridge und den Handler weitergegeben, um weiter verarbeitet zu werden. 
+Die Listener Klasse ist dafür zuständig, den Datenverkehr am Bus zu überwachen und geordnet an die Datenbankschnittstelle \footnote{siehe Abschnitt \ref{sec:handler}} sowie die Schnittstelle zum Frontend (Bridge) \footnote{siehe Abschnitt \ref{sec:bridge}} weiterzugeben. Nach dem Konfigurieren werden die einzelnen Nachrichten nach dem Empfangen des Identifiers in eine Liste geordnet und an die Bridge und den Handler weitergegeben, um weiter verarbeitet zu werden. 
 
 \subsubsection{Konfigurieren der Schnittstelle}
 
@@ -651,13 +652,13 @@ In der weiteren Entwicklung wird ein Buffer und weitere Erweiterungen umgesetzt.
 
 \section{Fahrdatenspeicher}
 
-Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine Diagnose des gesamten Aufbaus zu gewährleisten. Dafür wird eine Datenbank verwendet, nämlich die weit verbreitete Software MySQL verwendet.
+Das Motorrad sollte seine Fahrdaten abspeichern und darstellen können, um eine Diagnose des gesamten Aufbaus zu gewährleisten. Dafür wird eine Datenbank verwendet, die weit verbreitete Software MySQL.
 
 \subsection{Datenbankstruktur}
 
 \subsubsection{Benutzer System}
 
-Diese Tabelle wird zum Einloggen in das Programm verwendet und ist mit keiner weiteren Tabelle verbunden. Der Inhalt dieser Tabelle \footnote{siehe Abschnitt \ref{sec:users}} sollte nicht verändert werden. Die Zuweisung der Rechte läuft über den Benutzernamen im Frontend. Die id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
+Diese Tabelle wird zum Einloggen in das Programm benutzt und ist mit keiner weiteren Tabelle verbunden. Der Inhalt dieser Tabelle \footnote{siehe Abschnitt \ref{sec:users}} sollte nicht verändert werden. Die Zuweisung der Rechte läuft über den Benutzernamen im Frontend. Die id ist nicht signiert und ist der Primärschlüssel mit Auto-Inkrement.
 
 \begin{table}[H]
 	\begin{center}
@@ -678,7 +679,7 @@ Diese Tabelle wird zum Einloggen in das Programm verwendet und ist mit keiner we
 
 \textbf{Fehler Datenpacket}
 
-Dieses Paket ist analog zu den Motordatenpaketen, welche in dem nächsten Abschnitt beschrieben werden.Es beinhaltet jedoch 7 ungeordnete Daten Attribute, welche die an der Motorsteuerung der anliegenden Fehler beschreibt.
+Dieses Paket ist analog zu den Motordatenpaketen, welche in dem nächsten Abschnitt beschrieben werden.Es beinhaltet jedoch sieben ungeordnete Daten Attribute, welche die an der Motorsteuerung anliegenden Fehler beschreibt.
 
 \begin{table}[H]
 	\begin{center}
@@ -705,7 +706,7 @@ Dieses Paket ist analog zu den Motordatenpaketen, welche in dem nächsten Abschn
 {\large \textbf{Motor Datenpakete}}
 
 Das id Attribut ist nicht signiert und ist der Primärschlüssel, welcher mit der Auto-Inkrement Funktion versehen ist. date\_time ist ein Zeitattribut und wird mit der Funktion NOW() beschrieben, um die Zeit des Beschreibens festzuhalten. Dies ist wichtig für das Auslesen der Daten beim Zeichnen eines Graphen in der Benutzeroberfläche. Der kaskadierte Fremdschlüssel
-id\_data\_X wird für die Verbindung der Tabellen mit der JOIN Funktion verwendet. Die Restlichen Attribute sind die geordneten Daten, welche über die CAN-Schnittstelle empfangen werden. Die vier verschiedenen Datenpakete - inklusive dem Fehlerdatenpaket - sind gleich aufgebaut. Nur die 7 Datenattribute sind an die Pakete des Curtis Controllers angepasst. 
+id\_data\_X wird für die Verbindung der Tabellen mit der JOIN Funktion verwendet. Die restlichen Attribute sind die geordneten Daten, welche über die CAN-Schnittstelle empfangen werden. Die vier verschiedenen Datenpakete - inklusive dem Fehlerdatenpaket - sind gleich aufgebaut. Nur die sieben Datenattribute sind an die Pakete des Curtis Controllers angepasst. 
 
 \begin{center}
 	\textbf{Datenpacket 1}
@@ -787,7 +788,7 @@ id\_data\_X wird für die Verbindung der Tabellen mit der JOIN Funktion verwende
 
 \subsubsection{Fehler Tabelle} \label{sec:error_dis}
 
-Diese Tabelle ist ebenso in der Datenbank gespeichert. Sie beinhaltet die Fehlercodes der Motorsteuerung mit weiteren Informationen wie Name und Beschreibung. Sie muss per Hand angelegt werden und sollte während dem Testen der Maschine mit dokumentiert, um sie dann in das Fehler Fenster der Benutzeroberfläche zu implementieren.
+Diese Tabelle ist ebenso in der Datenbank gespeichert. Sie beinhaltet die Fehlercodes der Motorsteuerung mit weiteren Informationen wie Name und Beschreibung. Sie muss per Hand angelegt und sollte während dem Testen der Maschine mit dokumentiert werden, um sie dann in das Fehler Fenster der Benutzeroberfläche zu implementieren.
 
 \begin{table}[H]
 	\begin{tabular}{|c|c|l|}
@@ -801,13 +802,13 @@ Diese Tabelle ist ebenso in der Datenbank gespeichert. Sie beinhaltet die Fehler
 
 \subsubsection{Akku Daten}
 
-Da die Kommunikation der BMS noch nicht umgesetzt wurde, werden von Ihr keine Daten auf den CAN-Bus gelegt und daher muss auch keine Tabelle dafür erstellt werden. Somit werden alle Daten über Akku und Ladestand über die Motorsteuerung empfangen.
+Da die Kommunikation der BMS noch nicht umgesetzt wurde, werden von ihr keine Daten auf den CAN-Bus gelegt und daher muss auch keine Tabelle dafür erstellt werden. Somit werden alle Daten über Akku und Ladestand über die Motorsteuerung empfangen.
 
 \subsection{Handler} \label{sec:handler}
 
 Die Handler Klasse hat die Aufgabe eine Verbindung zwischen der Datenbank und dem Programm herzustellen. Dazu verwendet sie die MySQL-Connector Bibliothek. Mit dieser können SQL Skripten direkt in die Python Klasse integriert werden ohne dass externe SQL Skript Dateien geöffnet werden müssen.
 
-Dieser bekommt in Echtzeit eine Liste der aktuell Empfangenen Daten der Listener Klasse \footnote{siehe Abschnitt \ref{sec:listener}} und schreibt diese in die dafür vorgesehenen Tabelle der Datenbank. Hierfür wird ein eigener Thread \footnote{siehe Abschnitt \ref{sec:thread}} geöffnet, um diese Aufgabe unabhängig von dem Restlichen Programm ausführen zu können.
+Dieser bekommt in Echtzeit eine Liste der aktuell empfangenen Daten der Listener Klasse \footnote{siehe Abschnitt \ref{sec:listener}} und schreibt diese in die dafür vorgesehenen Tabelle der Datenbank. Hierfür wird ein eigener Thread \footnote{siehe Abschnitt \ref{sec:thread}} geöffnet, um diese Aufgabe unabhängig von dem Restlichen Programm ausführen zu können.
 
 Ebenso verfügt er über Funktionen, welche über das Diagnose Fenster \footnote{siehe Abschnitt \ref{sec:diagnosis} } angewählt werden können und Daten aus der Datenbank auslesen, um sie in einem Graph anzeigen zu lassen.
 
@@ -835,12 +836,12 @@ Um auf eine Datenbank zu zugreifen wird muss ein \textit{connect} Objekt, mit de
 
 \subsubsection{Cursor}
 
-Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mithilfe eines Connection Objekts.
-Einpaar der Wichtigsten Befehle sind:
+Die Cursor Klasse instanziiert Objekte, die Operationen wie SQL-Anweisungen ausführen können. Cursor interagieren mit dem Server mit Hilfe eines Connection Objekts.
+Einpaar der wichtigsten Befehle sind:
 
 \begin{itemize}
 	
-	\item \textit{cursor.execute()} \\ Diese Methode führt die angegebene Abfrage aus. Die in den Tupel- oder Wörterbuchparametern gefundenen Parameter sind an die Variablen in der Operation gebunden. Geben Sie Variablen mit dem Parameterstil von \% s oder \% (Name) an.
+	\item \textit{cursor.execute()} \\ Diese Methode führt die angegebene Abfrage aus. Die in den Tupel- oder Wörterbuchparametern gefundenen Parameter sind an die Variablen in der Operation gebunden. Sie geben Variablen mit dem Parameterstil von \% s oder \% (Name) an.
 	
 	\item \textit{cursor.fetchall()} \\ Diese Methode ruft alle Zeilen einer Abfrage ab und gibt eine Liste von Tupeln \footnote{ein Datensatz (eine Zeile) einer Datenbank} zurück. Wenn keine Zeilen mehr verfügbar sind, wird eine leere Liste zurückgegeben.
 	
@@ -862,7 +863,7 @@ results = cursor.fetchall()
 \end{lstlisting}
 
 Der Befehl kann in zwei Bereiche unterteilt werden. In der ersten Zeile werden die
-Attribute, die von der Tabelle ausgegeben werden sollen, definiert.  Die anzuzeigenden Ergebnisse werden durch den \textit{WHERE} Befehl gefiltert werden.
+Attribute, die von der Tabelle ausgegeben werden sollen, definiert.  Die anzuzeigenden Ergebnisse werden durch den \textit{WHERE} Befehl gefiltert.
 \\ Nützlich ist auch der Befehl JOIN durch den Tabellen anhand der Fremdschlüssel verbunden werden.
 
 \subsubsection{INSERT Befehl}

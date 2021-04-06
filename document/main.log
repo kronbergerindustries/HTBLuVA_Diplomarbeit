@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  6 APR 2021 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  7 APR 2021 00:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -3541,243 +3541,243 @@ nput line 137.
 <figures/hcis/input.png, id=2370, 358.33875pt x 285.065pt>
 File: figures/hcis/input.png Graphic file (type png)
 <use figures/hcis/input.png>
-Package pdftex.def Info: figures/hcis/input.png  used on input line 155.
+Package pdftex.def Info: figures/hcis/input.png  used on input line 156.
 (pdftex.def)             Requested size: 197.08691pt x 156.78622pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 169.
+nput line 170.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [118 <./figures/hcis/input.png>]
 <figures/hcis/Motorrad-switches.png, id=2378, 607.51968pt x 800.23969pt>
 File: figures/hcis/Motorrad-switches.png Graphic file (type png)
 <use figures/hcis/Motorrad-switches.png>
 Package pdftex.def Info: figures/hcis/Motorrad-switches.png  used on input line
- 181.
+ 182.
 (pdftex.def)             Requested size: 364.51462pt x 480.14752pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 187.
+nput line 188.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [119 <./figures/hcis/Motorrad-switches.png>]
 <figures/hcis/Motorrad_light.png, id=2385, 819.06pt x 509.905pt>
 File: figures/hcis/Motorrad_light.png Graphic file (type png)
 <use figures/hcis/Motorrad_light.png>
 Package pdftex.def Info: figures/hcis/Motorrad_light.png  used on input line 19
-5.
+6.
 (pdftex.def)             Requested size: 286.6753pt x 178.46942pt.
 <figures/hcis/raspi_pinout.png, id=2386, 520.94624pt x 335.00156pt>
 File: figures/hcis/raspi_pinout.png Graphic file (type png)
 <use figures/hcis/raspi_pinout.png>
-Package pdftex.def Info: figures/hcis/raspi_pinout.png  used on input line 207.
+Package pdftex.def Info: figures/hcis/raspi_pinout.png  used on input line 208.
 
 (pdftex.def)             Requested size: 312.57016pt x 201.00247pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 213.
+nput line 214.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [120 <./figures/hcis/Motorrad_light.png> <./figures/hcis/raspi_pinout.png>]
 <figures/hcis/4ch_relai.png, id=2395, 385.44pt x 248.39467pt>
 File: figures/hcis/4ch_relai.png Graphic file (type png)
 <use figures/hcis/4ch_relai.png>
-Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 221.
+Package pdftex.def Info: figures/hcis/4ch_relai.png  used on input line 222.
 (pdftex.def)             Requested size: 269.80615pt x 173.87508pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 252.
+nput line 253.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [121 <./figures/hcis/4ch_relai.png>]
 <figures/hcis/display_maße.png, id=2413, 803.0pt x 803.0pt>
 File: figures/hcis/display_maße.png Graphic file (type png)
 <use figures/hcis/display_maße.png>
-Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 265
+Package pdftex.def Info: figures/hcis/display_maße.png  used on input line 266
 .
 (pdftex.def)             Requested size: 361.34666pt x 361.34666pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 273.
+nput line 274.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [122 <./figures/hcis/display_maße.png>]
 <figures/hcis/befestigung_display.png, id=2422, 1190.4475pt x 1190.4475pt>
 File: figures/hcis/befestigung_display.png Graphic file (type png)
 <use figures/hcis/befestigung_display.png>
 Package pdftex.def Info: figures/hcis/befestigung_display.png  used on input li
-ne 280.
+ne 281.
 (pdftex.def)             Requested size: 214.2713pt x 214.2713pt.
 <figures/hcis/gui_aufbau.png, id=2423, 1045.9075pt x 313.17pt>
 File: figures/hcis/gui_aufbau.png Graphic file (type png)
 <use figures/hcis/gui_aufbau.png>
-Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 294.
+Package pdftex.def Info: figures/hcis/gui_aufbau.png  used on input line 295.
 (pdftex.def)             Requested size: 418.35559pt x 125.26576pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 300.
+nput line 301.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [123 <./figures/hcis/befestigung_display.png> <./figures/hcis/gui_aufbau.png>]
 <figures/hcis/component_menu.png, id=2433, 1927.2pt x 233.87375pt>
 File: figures/hcis/component_menu.png Graphic file (type png)
 <use figures/hcis/component_menu.png>
 Package pdftex.def Info: figures/hcis/component_menu.png  used on input line 32
-6.
+7.
 (pdftex.def)             Requested size: 385.43318pt x 46.77391pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 342.
+nput line 343.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [124 <./figures/hcis/component_menu.png>]
 <figures/hcis/component_bar.png, id=2441, 322.20375pt x 261.97874pt>
 File: figures/hcis/component_bar.png Graphic file (type png)
 <use figures/hcis/component_bar.png>
-Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 358
+Package pdftex.def Info: figures/hcis/component_bar.png  used on input line 359
 .
 (pdftex.def)             Requested size: 161.10147pt x 130.98904pt.
 <figures/hcis/component_mode.png, id=2442, 933.4875pt x 333.245pt>
 File: figures/hcis/component_mode.png Graphic file (type png)
 <use figures/hcis/component_mode.png>
 Package pdftex.def Info: figures/hcis/component_mode.png  used on input line 37
-1.
+2.
 (pdftex.def)             Requested size: 373.38838pt x 133.29562pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 380.
+nput line 381.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [125 <./figures/hcis/component_bar.png> <./figures/hcis/component_mode.png>]
 <figures/hcis/component_graph.png, id=2451, 1678.77188pt x 1042.64531pt>
 File: figures/hcis/component_graph.png Graphic file (type png)
 <use figures/hcis/component_graph.png>
 Package pdftex.def Info: figures/hcis/component_graph.png  used on input line 3
-88.
+89.
 (pdftex.def)             Requested size: 284.52756pt x 176.70644pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 424.
+nput line 425.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [126 <./figures/hcis/component_graph.png>]
 <figures/hcis/window_login.png, id=2462, 1087.06125pt x 612.78937pt>
 File: figures/hcis/window_login.png Graphic file (type png)
 <use figures/hcis/window_login.png>
-Package pdftex.def Info: figures/hcis/window_login.png  used on input line 434.
+Package pdftex.def Info: figures/hcis/window_login.png  used on input line 435.
 
 (pdftex.def)             Requested size: 284.52756pt x 160.38742pt.
 <figures/hcis/window_dashboard.png, id=2464, 1084.05pt x 609.77812pt>
 File: figures/hcis/window_dashboard.png Graphic file (type png)
 <use figures/hcis/window_dashboard.png>
 Package pdftex.def Info: figures/hcis/window_dashboard.png  used on input line 
-448.
+449.
 (pdftex.def)             Requested size: 284.52756pt x 160.04588pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 456.
+nput line 457.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [127 <./figures/hcis/window_login.png> <./figures/hcis/window_dashboard.png>]
 <figures/hcis/window_battery.png, id=2475, 956.82469pt x 539.76656pt>
 File: figures/hcis/window_battery.png Graphic file (type png)
 <use figures/hcis/window_battery.png>
 Package pdftex.def Info: figures/hcis/window_battery.png  used on input line 46
-4.
+5.
 (pdftex.def)             Requested size: 284.52756pt x 160.50636pt.
 <figures/hcis/window_diagnosis.png, id=2478, 1447.4075pt x 812.03375pt>
 File: figures/hcis/window_diagnosis.png Graphic file (type png)
 <use figures/hcis/window_diagnosis.png>
 Package pdftex.def Info: figures/hcis/window_diagnosis.png  used on input line 
-477.
+478.
 (pdftex.def)             Requested size: 284.52756pt x 159.62837pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 486.
+nput line 487.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [128 <./figures/hcis/window_battery.png> <./figures/hcis/window_diagnosis.png>
 ]
 <figures/hcis/window_error.png, id=2488, 1448.41125pt x 815.045pt>
 File: figures/hcis/window_error.png Graphic file (type png)
 <use figures/hcis/window_error.png>
-Package pdftex.def Info: figures/hcis/window_error.png  used on input line 494.
+Package pdftex.def Info: figures/hcis/window_error.png  used on input line 495.
 
 (pdftex.def)             Requested size: 284.52756pt x 160.10838pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 519.
+nput line 520.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [129 <./figures/hcis/window_error.png>]
 <figures/hcis/signals_slots.png, id=2500, 663.47874pt x 484.81125pt>
 File: figures/hcis/signals_slots.png Graphic file (type png)
 <use figures/hcis/signals_slots.png>
-Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 534
+Package pdftex.def Info: figures/hcis/signals_slots.png  used on input line 535
 .
 (pdftex.def)             Requested size: 265.3868pt x 193.92105pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 547.
+nput line 548.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [130 <./figures/hcis/signals_slots.png>]
 <figures/hcis/bridge.png, id=2509, 1300.86pt x 548.0475pt>
 File: figures/hcis/bridge.png Graphic file (type png)
 <use figures/hcis/bridge.png>
-Package pdftex.def Info: figures/hcis/bridge.png  used on input line 555.
+Package pdftex.def Info: figures/hcis/bridge.png  used on input line 556.
 (pdftex.def)             Requested size: 429.28513pt x 180.85623pt.
 
-Overfull \hbox (2.49379pt too wide) in paragraph at lines 555--556
+Overfull \hbox (2.49379pt too wide) in paragraph at lines 556--557
  [] 
  []
 
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 568.
+nput line 569.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 [131 <./figures/hcis/bridge.png>]
 <figures/hcis/can_module.png, id=2516, 413.545pt x 249.733pt>
 File: figures/hcis/can_module.png Graphic file (type png)
 <use figures/hcis/can_module.png>
-Package pdftex.def Info: figures/hcis/can_module.png  used on input line 584.
+Package pdftex.def Info: figures/hcis/can_module.png  used on input line 585.
 (pdftex.def)             Requested size: 372.18704pt x 224.75761pt.
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 595.
+nput line 596.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [132 <./figures/hcis/can_module.png>]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 648.
+nput line 649.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
 
 [133]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 703.
+nput line 704.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [134]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 786.
+nput line 787.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [135]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 834.
+nput line 835.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [136]
 File: figures/allgemein/HTBLuVA_Salzburg_Logo.png Graphic file (type png)
 <use figures/allgemein/HTBLuVA_Salzburg_Logo.png>
 Package pdftex.def Info: figures/allgemein/HTBLuVA_Salzburg_Logo.png  used on i
-nput line 883.
+nput line 884.
 (pdftex.def)             Requested size: 56.07062pt x 18.00763pt.
  [137]) (content/ch_ergebnis.tex
 Kapitel VIII.
@@ -7730,7 +7730,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  37896 strings out of 479321
  723046 string characters out of 2856584
- 1578327 words of memory out of 3000000
+ 1578337 words of memory out of 3000000
  53584 multiletter control sequences out of 15000+600000
  488851 words of font info for 88 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -7765,7 +7765,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/marti/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/marti/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/marti/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (304 pages, 26491004 bytes).
+Output written on main.pdf (304 pages, 26491212 bytes).
 PDF statistics:
  4736 PDF objects out of 5155 (max. 8388607)
  905 named destinations out of 1000 (max. 500000)
