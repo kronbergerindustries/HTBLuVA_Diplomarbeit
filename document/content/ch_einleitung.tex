@@ -40,47 +40,41 @@ In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des Emiss
 \subsection{Projekt-Teilbereiche}
 Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche gliedern. Der grundsätzliche topologische Zusammenhang der einzelnen Bereiche wird anschließend erläutert:
 
-\begin{figure}[H]
-	\begin{center}
+\begin{figure}[H] 
+    \RawFloats
+	\centering 
+	\begin{minipage}[t]{4cm} 
+		\centering 
+		\includegraphics[width=5cm]{figures/allgemein/antrieb.png} 
+		\captionsetup{labelformat=empty}
+		\caption{Antriebsstrang} 
+	\end{minipage} 
+	\hspace{3cm} 
+	\begin{minipage}[t]{4cm} 
+		\centering 
+		\includegraphics[width=5cm]{figures/allgemein/akku.png}
+		\captionsetup{labelformat=empty}
+		\caption{Akku- und Ladekonzept} 
+	\end{minipage} 
+	
+	\begin{minipage}[t]{4cm} 
+		\centering 
+		\includegraphics[width=5cm]{figures/allgemein/hcis.png}
+		\captionsetup{labelformat=empty}
+		\caption{Human-Computer Interaction System} 
+	\end{minipage} 
+	\hspace{3cm} 
+	\begin{minipage}[t]{4cm} 
+		\centering 
+		\includegraphics[width=5cm]{figures/allgemein/mechanik.jpg}
+		\captionsetup{labelformat=empty}
+		\caption{Mechanische Umsetzung} 
+	\end{minipage} 
+\end{figure} 
 
-		\includegraphics[scale=0.7]{figures/allgemein/GesamtTopologie.png}
+Der mechanische Aufbau und die Kraftübertragung stellen die Grundkomponenten eines jeden Motorrads dar, die räumliche Aufteilung der anderen Bauteile wird hier vorgegeben. Die vom Motor umgesetzte Rotationsenergie wird mithilfe des Direkt-Getriebes in kinetische Antriebsenergie umgewandelt.
 
-	\end{center}
-\end{figure}
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.5]{figures/allgemein/Curtis_Controller.png}
-		\caption{Curtis Controller}
-	\end{center}
-\end{figure}
-
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[scale=0.5]{figures/allgemein/Ashwoods_Motor.png}
-		\caption{Ashwoods Motor}
-
-	\end{center}
-\end{figure}
-
-\begin{figure} [H]
-	\begin{center}
-		\includegraphics[scale=0.75] {figures/Akku/Akkubox1.PNG}
-		\caption{Topologiebild Akkupack}
-	\end{center}
-\end{figure}
-
-\begin{figure} [H]
-	\begin{center}
-		\includegraphics[scale=0.2] {figures/Akku/BMSMINI.jpg}
-		\caption{Topologiebild des BMS}
-	\end{center}
-\end{figure}
-
-Der mechanische Aufbau und die Kraftübertragung stellen die Grundkomponenten eines jeden Motorrads dar, die räumliche Aufteilung der anderen Bauteile wird hier vorgegeben. Die vom Motor umgesetzte Rotationsenergie wird mithilfe des Direkt-Getriebes in kinetische Antriebsenergie (translatorische Beschleunigungsenergie) umgewandelt.
-
-Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient als Zwischenspeicher für die durch das Ladegerät hinzugeführten Netzenergie. Das zugehörige Batterie-Management-System ist für die elektrische Kontrolle und notwendige Ladungsausgleiche der einzelnen Li-Ion-Zellen zuständig und steuert die Versorgung der weiteren Betriebsmittel, zusätzlich findet ein Datenaustausch mit den anderen Steuereinheiten über den CAN-Bus statt.
+Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient als Zwischenspeicher für die durch das Ladegerät hinzu geführten Netzenergie. Das zugehörige Batterie-Management-System ist für die elektrische Kontrolle und notwendige Ladungsausgleich der einzelnen Li-Ion-Zellen zuständig und steuert die Versorgung der weiteren Betriebsmittel, zusätzlich findet ein Datenaustausch mit den anderen Steuereinheiten über den CAN-Bus statt.
 
 Der Antrieb ist ebenso ein essenzieller Teil des Elektro-Motorrads, da die durch den Akkumulator zur Verfügung gestellte elektrische Energie mithilfe des Motorcontrollers im Motor in mechanisch nutzbare Rotationsenergie umgewandelt wird. Benutzerinteraktionen und Steuermöglichkeiten werden mithilfe der umfassenden Ein- und Ausgänge realisiert.
 
