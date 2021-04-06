@@ -38,7 +38,7 @@ In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des Emiss
 
 
 \subsection{Projekt-Teilbereiche}
-Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche gliedern, der grundsätzliche topologische Aufbau wird anschließend erläutert:
+Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche gliedern. Der grundsätzliche topologische Zusammenhang der einzelnen Bereiche wird anschließend erläutert:
 
 \begin{figure}[H]
 	\begin{center}
@@ -78,13 +78,13 @@ Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche
 	\end{center}
 \end{figure}
 
-Der mechanische Aufbau und die Kraftübertragung stellen die Grundkomponenten eines jeden Motorrads dar, die räumliche Aufteilung der anderen Bauteile wird hier vorgegeben. 
+Der mechanische Aufbau und die Kraftübertragung stellen die Grundkomponenten eines jeden Motorrads dar, die räumliche Aufteilung der anderen Bauteile wird hier vorgegeben. Die vom Motor umgesetzte Rotationsenergie wird mithilfe des Direkt-Getriebes in kinetische Antriebsenergie (translatorische Beschleunigungsenergie) umgewandelt.
 
-Die Energieversorgung wird mittels eines Akkumulators realisiert. Das zugehörige Batterie-Management-System dient zur elektrischen Überwachung der einzelnen Zellen und steuert die Versorgung der anderen Betriebsmittel.
+Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient als Zwischenspeicher für die durch das Ladegerät hinzugeführten Netzenergie. Das zugehörige Batterie-Management-System ist für die elektrische Kontrolle und notwendige Ladungsausgleiche der einzelnen Li-Ion-Zellen zuständig und steuert die Versorgung der weiteren Betriebsmittel, zusätzlich findet ein Datenaustausch mit den anderen Steuereinheiten über den CAN-Bus statt.
 
-Der Antrieb ist ebenso ein essenzieller Teil dieses Elektro-Fahrzeugs. Die durch den Akkumulator zur Verfügung gestellte elektrische Energie wird hier in einen mechanischen Nutzen umgewandelt.
+Der Antrieb ist ebenso ein essenzieller Teil des Elektro-Motorrads, da die durch den Akkumulator zur Verfügung gestellte elektrische Energie mithilfe des Motorcontrollers im Motor in mechanisch nutzbare Rotationsenergie umgewandelt wird. Benutzerinteraktionen und Steuermöglichkeiten werden mithilfe der umfassenden Ein- und Ausgänge realisiert.
 
-Die Zentralsteuerung verbindet die Benutzer Ein- und Ausgabe mit den anderen Steuerkomponenten. Das Speichern und Auswerten von Fahrdaten ist im Hinblick auf spätere Optimierungen eine wichtige Voraussetzung für die Weiterentwicklung.
+Die zentrale Steuereinheit sorgt für ein reibungsloses Interagieren der anderen Steuerkomponenten und steuert allgemeine Schaltprozesse. Ein umfangreiches benutzerfreundliches Fahrerlebnis wird durch das Touch-Paneel geboten, weiters wird dadurch eine genaue aber übersichtliche Fahrdatenauswertung während des Betriebs ermöglicht. Der Raspberry PI speichert die gesamte CAN-Bus Kommunikation und sämtliche Benutzerkonfigurationen, um eine vollständige Daten- und Fehlerauswertung im Hinblick auf spätere Wartungen, Optimierungen und Weiterentwicklungen durchführen zu können.
 
 \subsection{Topologischer Überblick}
 
