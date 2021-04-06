@@ -421,23 +421,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {B}Programmcode}{141}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}HICS}{141}{section.B.1}%
+\contentsline {section}{\numberline {1}Human-Computer Interaction System}{141}{section.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Frontend}{141}{subsection.B.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Backend}{141}{subsection.B.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Antrieb}{141}{section.B.2}%
+\contentsline {section}{\numberline {2}Antriebsstrang}{141}{section.B.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {C}CAD-Zeichnungen}{142}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Mechanik}{143}{section.C.1}%
+\contentsline {section}{\numberline {1}Mechanische Umsetzung}{143}{section.C.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}HCIS}{156}{section.C.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {D}Simulationen}{157}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Mechanik}{157}{section.D.1}%
+\contentsline {section}{\numberline {1}Mechanische Umsetzung}{157}{section.D.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {E}Schaltpläne}{172}{appendix.E}%
 \defcounter {refsection}{0}\relax 
