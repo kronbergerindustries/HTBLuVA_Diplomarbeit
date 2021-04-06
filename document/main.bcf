@@ -2446,6 +2446,7 @@
     <bcf:citekey order="100">VCL_Programmcode</bcf:citekey>
     <bcf:citekey order="101">VCL_Programmcode</bcf:citekey>
     <bcf:citekey order="102">VCL_Programmcode</bcf:citekey>
+    <bcf:citekey order="103">vgl. \cite {intus}</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

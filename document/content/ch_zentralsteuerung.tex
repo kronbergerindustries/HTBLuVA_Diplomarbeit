@@ -33,7 +33,7 @@ Die über den CAN-Bus empfangenen Daten werden sofort an die Datenbankschnittste
 
 \subsection{Steuereinheit}
 
-Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi \footnote{siehe Anhang \ref{app:rasp} oder  https://www.raspberrypi.org/}, welcher über die Interpretersprache Python \footnote{siehe https://www.python.org/} programmiert werden kann und die Programmierung um einiges einfacher gestalltet.
+Als Basis zur Auswahl der Steuereinheit wurden die zuvor erläuterten Grundfunktionen herangezogen genommen. Die Ausgewählte Steuereinheit sollte diese erfüllen können und ebenso Potential zur Erweiterung der Funktionen bieten. Genauso wichtig war das eine große Flexibilität und Individualität erreicht werden kann, um nicht in der Umsetzung unserer Ideen eingeschränkt zu sein. Zur Auswahl standen verschiedene Speicherprogrammierbare Steuerungen und Mikrocomputer, doch letzten Endes überzeugte der Mikrocomputer Raspberry Pi \footnote{Datenblatt https://www.raspberrypi.org/documentation}, welcher über die Interpretersprache Python \footnote{siehe https://www.python.org/} programmiert werden kann und die Programmierung um einiges einfacher gestalltet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -105,7 +105,7 @@ Um den Spannungswandler dimensionieren zu können mussten vorher alle Bauteile, 
 	\end{center}
 \end{table}
 
-Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: siehe Anhang \ref{app:mw12}} entschieden. 
+Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auftritt wenn alle Bauteile gleichzeitig auf Höchstleistung betrieben werden, ausgelegt. Diese maximale Leistung beträgt, wie in der Tabelle \ref{tab:leistung12V} zu sehen, 128 Watt. Um noch Ausbaumöglichkeiten zu gewährleisten und uns nicht dem Leistungslimit des Wandlers zu nähern, haben wir uns für einen 48V-12V, 300 Watt DC-DC Wandler von Mean Well \footnote{Datenblatt: https://docs.rs-online.com/e3e0/0900766b81621db7.pdf} entschieden. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -115,13 +115,11 @@ Der Spannungswandler wurde nun nach der größt möglichen Leistung, welche auft
 	\end{center}
 \end{figure}
 
-Diese Abbildung ist nur zur Veranschaulichung und kann im Anhang in original Größe gefunden werden.\footnote{siehe Anhang}
-
 \newpage
 
 \subsubsection{5V Versorgungssystem}
 
-Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl. Daher haben wir uns für einen 48V-5V, 30 Watt DC-DC Wandler von Meanwell \footnote{Datenblatt: siehe Anhang \ref{app:mw5}} entschieden.
+Die Leistung des Raspberry Pis ist mit einem Maximum von 6.2 Watt sehr klein und daher ist die Wahl des Spannungswandlers in diesem Fall nicht wirklich davon abhängig. Auch die Komponenten, welche angeschlossen werden, haben grundsätzlich keine erwähnenswerte Wirkleistung und müssen daher nicht genau ein berechnet werden. Nun entschied nur mehr das Preis-Leistungs-Verhältnis sowie die Ausfallsicherheit des Spannungswandlers die Wahl. Daher haben wir uns für einen 48V-5V, 30 Watt DC-DC Wandler von Meanwell \footnote{Datenblatt: https://docs.rs-online.com/8c84/0900766b815e8f97.pdf} entschieden.
 
 \begin{figure}[H]
 	\begin{center}
@@ -194,9 +192,21 @@ Um diese Theorie auch an unser Projekt anwenden zu können, müssen zuerst die T
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.3]{figures/hcis/Motorrad_light.png}
+		\includegraphics[scale=0.35]{figures/hcis/Motorrad_light.png}
 		\caption{Anschlussplan der Frontbeleuchtung}
 		\label{fig:light}
+	\end{center}
+\end{figure}
+
+\subsubsection{Anschluss}
+
+Angeschlossen werden alle Verbindungen über ein Prototypingschield (siehe: ). Dadurch kann man alle Drähte direkt am Raspberry angeschlossen werden, ohne eine extra Klemme zu verwenden.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{figures/hcis/raspi_pinout.png}
+		\caption{Anschlussplan Relais}
+		\label{fig:pinout}
 	\end{center}
 \end{figure}
 
@@ -457,7 +467,7 @@ Dieses Fenster dient Ähnlich wie das der Fahrdaten zur Darstellung wichtiger Da
 	\end{center}
 \end{figure}
 
-Dieses Fenster wird Standardmäßig während dem Laden des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden.
+Dieses Fenster wird Standardmäßig während dem Laden des Fahrzeuges angezeigt. Es benötigt also keine bestimmte Berechtigung und kann von jedem Nutzer über das Navigations-Menü angezeigt werden. Da derzeit leider noch keine Kommunikation zwischen BMS und dem Raspberry Pi besteht, kann nur der Ladestand des Akkus, welcher über die Motorsteuerung empfangen werden kann, angezeigt werden.
 
 \subsubsection{Fahrdaten Diagnose} \label{sec:diagnosis}
 
@@ -664,7 +674,7 @@ Diese Tabelle wird zum Einloggen in das Programm verwendet und ist mit keiner we
 	\end{center}
 \end{table}
 
-\subsubsection{Motor Daten}
+\subsubsection{Motor Daten} \label{sec:motor_data}
 
 \textbf{Fehler Datenpacket}
 
@@ -844,10 +854,10 @@ Der SELECT Befehl wird zum Abrufen von Daten einer Tabelle verwendet und besitzt
 
 \begin{lstlisting}[language=Python, caption={SELECT Befehl über MySQL Connector},captionpos=b]
 		
-	# Querying the data from the database
-	sql = "SELECT * from users WHERE username = %s and password = %s"
-	cursor.execute(sql, [(username), (password)])
-	results = cursor.fetchall()
+# Querying the data from the database
+sql = "SELECT * from users WHERE username = %s and password = %s"
+cursor.execute(sql, [(username), (password)])
+results = cursor.fetchall()
 	
 \end{lstlisting}
 
@@ -861,13 +871,13 @@ Der INSERT Befehl wird zum Schreiben von Daten in eine Tabelle verwendet.
 
 \begin{lstlisting}[language=Python, caption={INSERT Befehl über MySQL Connector},captionpos=b]
 	
-	# Inserting data into the database
-	sql = "INSERT INTO `users` (`id`, `username`, `password`); VALUES (1, %s, %s);"
-	cursor.execute(sql, [(username), (password)])
+# Inserting data into the database
+sql = "INSERT INTO `users` (`id`, `username`, `password`); VALUES (1, %s, %s);"
+cursor.execute(sql, [(username), (password)])
 	
 \end{lstlisting}
 
-Dieser Befehl kann in zwei Teile unterteilt werden. In der ersten Zeile wird die Zieltabelle mit den Attributen angegeben. In der zweiten Zeile folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. \\
-Als Wert wird ebenso die Funktion \textit{NOW()} unterstützt, wodurch intern der aktuelle Zeitstempel abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut\footnote{siehe Abschnitt }.
+Dieser Befehl hat zwei wichtige Attribute. In der ersten Zeile wird die Zieltabelle mit den Attributen angegeben. In der zweiten folgen die Werte, die in der Datenbank erfasst werden sollen. Hierbei ist die Reihenfolge der Attribute zu beachten. Das Attribut id wird standardmäßig von dem Datenbanksystem vergeben, es ist daher möglich das Attribut im Befehl zu vernachlässigen. \\
+Als Wert wird ebenso die Funktion \textit{NOW()} unterstützt, wodurch intern die aktuelle Zeit abgespeichert wird. Dadurch kümmert sich das Datenbanksystem um die korrekten Werte für das date\_time Attribut\footnote{siehe Abschnitt \ref{sec:motor_data}}}.\footcite{vgl. \cite{intus}}
 
 \newpage

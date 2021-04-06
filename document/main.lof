@@ -207,77 +207,79 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {VII.7}{\ignorespaces Anschlussplan der Frontbeleuchtung\relax }}{119}{figure.caption.121}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.8}{\ignorespaces Anschlussplan Relais\relax }}{120}{figure.caption.122}%
+\contentsline {figure}{\numberline {VII.8}{\ignorespaces Anschlussplan Relais\relax }}{119}{figure.caption.122}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.9}{\ignorespaces Paneel Maße\relax }}{121}{figure.caption.123}%
+\contentsline {figure}{\numberline {VII.9}{\ignorespaces Anschlussplan Relais\relax }}{120}{figure.caption.123}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.10}{\ignorespaces Befestigung des Displays\relax }}{122}{figure.caption.124}%
+\contentsline {figure}{\numberline {VII.10}{\ignorespaces Paneel Maße\relax }}{121}{figure.caption.124}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.11}{\ignorespaces Aufbau der Graphischen Benutzeroberfläche\relax }}{122}{figure.caption.125}%
+\contentsline {figure}{\numberline {VII.11}{\ignorespaces Befestigung des Displays\relax }}{122}{figure.caption.125}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.12}{\ignorespaces GUI Komponente - Navigation Menü\relax }}{123}{figure.caption.126}%
+\contentsline {figure}{\numberline {VII.12}{\ignorespaces Aufbau der Graphischen Benutzeroberfläche\relax }}{122}{figure.caption.126}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.13}{\ignorespaces GUI Komponente - Balken Anzeige\relax }}{124}{figure.caption.127}%
+\contentsline {figure}{\numberline {VII.13}{\ignorespaces GUI Komponente - Navigation Menü\relax }}{123}{figure.caption.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.14}{\ignorespaces GUI Komponente - Modus Anzeige\relax }}{124}{figure.caption.128}%
+\contentsline {figure}{\numberline {VII.14}{\ignorespaces GUI Komponente - Balken Anzeige\relax }}{124}{figure.caption.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.15}{\ignorespaces GUI Komponente - Graph\relax }}{125}{figure.caption.129}%
+\contentsline {figure}{\numberline {VII.15}{\ignorespaces GUI Komponente - Modus Anzeige\relax }}{124}{figure.caption.129}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.16}{\ignorespaces GUI Fenster - Login Menü\relax }}{126}{figure.caption.130}%
+\contentsline {figure}{\numberline {VII.16}{\ignorespaces GUI Komponente - Graph\relax }}{125}{figure.caption.130}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.17}{\ignorespaces GUI Fenster - Fahrdaten\relax }}{126}{figure.caption.131}%
+\contentsline {figure}{\numberline {VII.17}{\ignorespaces GUI Fenster - Login Menü\relax }}{126}{figure.caption.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.18}{\ignorespaces GUI Fenster - Akkudaten\relax }}{127}{figure.caption.132}%
+\contentsline {figure}{\numberline {VII.18}{\ignorespaces GUI Fenster - Fahrdaten\relax }}{126}{figure.caption.132}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.19}{\ignorespaces GUI Fenster - Fahrdaten Diagnose\relax }}{127}{figure.caption.133}%
+\contentsline {figure}{\numberline {VII.19}{\ignorespaces GUI Fenster - Akkudaten\relax }}{127}{figure.caption.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.20}{\ignorespaces GUI Fenster - Fehler Liste\relax }}{128}{figure.caption.134}%
+\contentsline {figure}{\numberline {VII.20}{\ignorespaces GUI Fenster - Fahrdaten Diagnose\relax }}{127}{figure.caption.134}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.21}{\ignorespaces Slots und Signals Konzept\relax }}{129}{figure.caption.135}%
+\contentsline {figure}{\numberline {VII.21}{\ignorespaces GUI Fenster - Fehler Liste\relax }}{128}{figure.caption.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.22}{\ignorespaces Verbindung Frontend zu Backend\relax }}{130}{figure.caption.136}%
+\contentsline {figure}{\numberline {VII.22}{\ignorespaces Slots und Signals Konzept\relax }}{129}{figure.caption.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {VII.23}{\ignorespaces Anschlussplan CAN-Modul\relax }}{131}{figure.caption.137}%
+\contentsline {figure}{\numberline {VII.23}{\ignorespaces Verbindung Frontend zu Backend\relax }}{130}{figure.caption.137}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Zeitplan und Arbeitszeiten\relax }}{139}{figure.caption.144}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Kostenaufstellung und Stückliste\relax }}{140}{figure.caption.145}%
+\contentsline {figure}{\numberline {VII.24}{\ignorespaces Anschlussplan CAN-Modul\relax }}{131}{figure.caption.138}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Wellenersatz\relax }}{143}{figure.caption.146}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Zeitplan und Arbeitszeiten\relax }}{139}{figure.caption.145}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Seitenplatte Rechts\relax }}{144}{figure.caption.147}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Kostenaufstellung und Stückliste\relax }}{140}{figure.caption.146}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Seitenplatte Links\relax }}{145}{figure.caption.148}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Abstandhalter\relax }}{146}{figure.caption.149}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Aufbau/Zusatzplatte\relax }}{147}{figure.caption.150}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Wellenersatz\relax }}{143}{figure.caption.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Achse 1/Antriebsachsen\relax }}{148}{figure.caption.151}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Seitenplatte Rechts\relax }}{144}{figure.caption.148}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Achse 3\relax }}{149}{figure.caption.152}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Seitenplatte Links\relax }}{145}{figure.caption.149}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Achse 2\relax }}{150}{figure.caption.153}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Abstandhalter\relax }}{146}{figure.caption.150}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.9}{\ignorespaces Akkubox Motorblock\relax }}{151}{figure.caption.154}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Aufbau/Zusatzplatte\relax }}{147}{figure.caption.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.10}{\ignorespaces Akkubox Vorderseite\relax }}{152}{figure.caption.155}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Achse 1/Antriebsachsen\relax }}{148}{figure.caption.152}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.11}{\ignorespaces Akkubox Mitte\relax }}{153}{figure.caption.156}%
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Achse 3\relax }}{149}{figure.caption.153}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.12}{\ignorespaces Ashwoods Motor\relax }}{154}{figure.caption.157}%
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Achse 2\relax }}{150}{figure.caption.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.13}{\ignorespaces Curtis Controller\relax }}{155}{figure.caption.158}%
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Akkubox Motorblock\relax }}{151}{figure.caption.155}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.14}{\ignorespaces Akkubox Mitte\relax }}{156}{figure.caption.159}%
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Akkubox Vorderseite\relax }}{152}{figure.caption.156}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Akkubox Mitte\relax }}{153}{figure.caption.157}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.12}{\ignorespaces Ashwoods Motor\relax }}{154}{figure.caption.158}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.13}{\ignorespaces Curtis Controller\relax }}{155}{figure.caption.159}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.14}{\ignorespaces Akkubox Mitte\relax }}{156}{figure.caption.160}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
