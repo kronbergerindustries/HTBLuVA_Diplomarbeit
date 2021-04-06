@@ -202,7 +202,7 @@ Da wir uns auf ein 50,4V Versorgungssystem geeinigt haben, und jede einzelne Zel
 Durch die Parallelschaltung innerhalb der Akkupacks wird jedoch nicht die Spannung erhöht. Wir haben eine Anzahl von 560 einzelnen Lithium Ionen Zellen. Ein Akkupack beinhaltet 40 Zellen was dazu führt, dass wir insgesamt 14 Akkupacks haben. Diese 14 Akkupacks werden seriell verschalten um die Spannung von 3,6V auf die gewünschten 50,4V zu vergrößern.
 
 Die separaten Zellen werden mithilfe eines Hiluminband Punktgeschweißt um so eine Verbindung zwischen den Zellen herzustellen.
-Wichtig ist darauf zu achten, dass das Hiluminband nur bis zu einer Stromstärke von 30A zulässig ist. Da wir jedoch weitaus höhere Ströme zu erwarten haben, muss wir dieses Hiluminband verstärken. Dies erfolgt über eine Metallplatte die jeweils an der Oberseite sowie auch an der Unterseite angebracht wird. Dadurch wird die Schweißverbindung gestärkt, damit in weiterer Folge keine Fehler auftreten. 
+Wichtig ist darauf zu achten, dass das Hiluminband nur bis zu einer Stromstärke von 30A zulässig ist. Da wir jedoch weitaus höhere Ströme zu erwarten haben, muss wir dieses Hiluminband verstärken. Dies erfolgt über eine Metallplatte die jeweils an der Oberseite sowie auch an der Unterseite angebracht wird. Dadurch wird die Schweißverbindung gestärkt, damit in weiterer Folge keine Probleme auftreten. 
 
 \begin{align*}
 U_{Gesamt} &= U_{Akkupack} \cdot 14= U_{Zelle} \cdot 14= 3.6~\mathrm{V} \cdot 14 = 50.4~\mathrm{V}\\
@@ -478,7 +478,7 @@ Der CAN-Bus ist aufgrund seiner Stärken und seines Kommunikationsmechanismus in
 	\end{center}
 \end{figure}
 
-Wenn man Daten von dem Batteriemanagementsystem zur SPS sendet, kann es zu Übertragungsproblemen kommen. Um diese Übertragungsprobleme zu minimieren muss zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand (Skizze: Terminator) eingebaut werden. Dieser Terminator wird jeweils an dem Batteriemanagementsystem (Bus-"Ende" links) und ebenfalls an der SPS (Bus-"Ende" rechts) angebracht, da diese zwei Komponenten ununterbrochen miteinander verbunden sind. 
+Wenn man Daten von dem Batteriemanagementsystem zur SPS sendet, kann es zu Übertragungsproblemen kommen. Um diese Übertragungsprobleme zu minimieren muss zwischen CAN-High und CAN-Low ein Leitungsabschlusswiderstand (Skizze: Terminator) eingebaut werden. Dieser Terminator wird jeweils an dem Batteriemanagementsystem (Bus-Ende links) und ebenfalls an der SPS (Bus-Ende rechts) angebracht, da diese zwei Komponenten ununterbrochen miteinander verbunden sind. 
 
 \textbf{CAN-Bus Stecker an dem Batteriemanagementsystem:}
 
@@ -612,7 +612,7 @@ Bei unserem Projekt entschieden wir uns für ein CAN basiertes Ladegerät. Bei d
 \newpage
 
 \subsubsection{Verschaltung}
-Das Ladegerät wird mithilfe des CAN-Buses mit dem Batteriemanagementsystem verbunden. Diese Verbindung diehnt jedoch nur zur Kommuniukation für die Regelung. Das Ladegerät und die Akkumulatoren werden jedoch über das BMS verbunden. Die grau markierte Linie in dem folgenden Bild sollte keine Leitung darstellen. Es sollte nur zeigen, dass sich der 6-polige Stecker direkt auf dem Batteriemanagementsystem befindet.
+Das Ladegerät wird mithilfe des CAN-Busses mit dem Batteriemanagementsystem verbunden. Diese Verbindung dient jedoch nur zur Kommunikation für die Regelung. Das Ladegerät und die Akkumulatoren werden jedoch über das BMS verbunden. Die grau markierte Linie in dem folgenden Bild sollte keine Leitung darstellen. Es sollte nur zeigen, dass sich der 6-polige Stecker direkt auf dem Batteriemanagementsystem befindet.
 
 \begin{figure}[H]
 	\begin{center}
