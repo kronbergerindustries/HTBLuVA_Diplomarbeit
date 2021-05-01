@@ -86,9 +86,9 @@ Im folgenden Bild ist der Grundaufbau des Laststromkreises ausführlich beschrie
 
 %% Motorauslegung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Motorbeschreibung}
-Die Nennleistung des Akkumulators übersteigt die Nennleistung von Motor und Motorcontroller, weshalb die Nennwerte dieser Bauteile ebenso relevant für die Dimensionierung der Leitungen und Leitungsschutzorgane ist. Ebenfalls stellen der Motor und die Motorsteuerung zentrale Elemente des E-Motorrades dar, weshalb unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben werden.
+Die Nennleistung des Akkumulators übersteigt die Nennleistung von Motor und Motorcontroller, weshalb die Nennwerte dieser Bauteile ebenso relevant für die Dimensionierung der Leitungen und Leitungsschutzorgane sind. Weiters stellen der Motor und die Motorsteuerung zentrale Elemente des E-Motorrades dar, weshalb unter diesem Punkt bestimmte Eigenschaften und Nenndaten genauer beschrieben werden.
 
-Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Da jedoch eine Motorsteuerung die drei Phasen des Motors mit Drehstrom versorgt, ist dieser Motor eigentlich eine Synchronmaschine mit einem Permanentmagneten im Läufer. 
+Für die Anwendung in einem E-Motorrad bot sich die Verwendung eines bürstenlosen  permanenterregten Gleichstrommotors an. Die Motorsteuerung versorgt aber die drei Phasen des Motors mit Drehstrom, weshalb dieser Motor wie eine Synchronmaschine mit einem Permanentmagneten im Läufer wirkt. 
 
 Der Motor wurde von der Firma Ashwoods gebaut und hat die Bezeichnung \glqq IPM-200-50\grqq{}. Er besitzt eine mechanische Spitzenleistung von 16 kW und ein maximales Drehmoment von 74 Nm. Die maximale Drehzahl beträgt 8500 U/min und der Wirkungsgrad liegt bei circa 85\%\footnote{Ashwoods Motor CAD-Zeichnung: [\ref{Ashwoods_CAD}]}.
 
@@ -99,7 +99,7 @@ Betrachtet man also beide Bauteile gemeinsam, ergibt das eine maximale elektrisc
 \begin{align*}
 	P_{MDCmax} &= P_{Motor} + P_{Controller} = \dfrac{16~\mathrm{kW}}{0,85}  + 500~\mathrm{W} \approx 19,5~\mathrm{kW}\\[3mm]
 	I_{MDCmax} &=	\dfrac{P_{MDCmax}}{U_{Nenn}} = \dfrac{19,5~\mathrm{kW}}{50,4~\mathrm{V}} \approx 387~\mathrm{A}\\[3mm]
-	I_{MACmax} &=	\dfrac{I_{MDCmax}}{\sqrt{3} \cdot cos(\varphi)} = \dfrac{19,5~\mathrm{kW}}{\sqrt{3} \cdot 0,85} \approx 263~\mathrm{A}
+	I_{MACmax} &=	\dfrac{I_{MDCmax}}{\sqrt{3} \cdot cos(\varphi)} = \dfrac{387~\mathrm{A}}{\sqrt{3} \cdot 0,85} \approx 263~\mathrm{A}
 \end{align*}
 
 
@@ -427,7 +427,7 @@ Mit diesem Parametermenü kann eine zusätzlich verbaute, elektromagnetische Bre
 \\[4mm]
 
 \textbf{Emergency Reverse (EMR)}\\[1mm]
-Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht, welche bei einem Motorrad nicht gebraucht wird. Das Fahrzeug wird für eine bestimmte Zeit auf die festgelegte Geschwindigkeit im Rückwärtsbetrieb gebracht. Wenn sich das Motorrad währenddessen Forwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
+Diese Funktion ist für die Erstellung eines Notfall-Rückwärtsgangs gedacht, welche bei einem Motorrad nicht gebraucht wird. Das Fahrzeug wird für eine bestimmte Zeit auf die festgelegte Geschwindigkeit im Rückwärtsbetrieb gebracht. Wenn sich das Motorrad währenddessen vorwärts bewegt, wird es zuerst abgebremst. Die Werte für die Verzögerung bzw. Beschleunigung können festgelegt werden, ebenso wie weitere Feineinstellungen.
 \\[4mm]
 
 \textbf{Interlock Braking}\\[1mm]
@@ -497,7 +497,7 @@ Diese Parameter werden in den folgenden Tabellen noch genau erklärt. Für ein b
 		Accel Rate 	& 0.1 - 30.0 s 		& Legt fest, wie lange es dauert, bis das\\
 		Accel\_Rate\_TrqM & 100 - 30000	& Motordrehmoment bei Vollgas auf das Maximum angestiegen ist. Größere Werte bedeuten eine langsamere\\&& Reaktion. \\\hline
 		Accel Release Rate	& 0.1 - 2.0 s 		& Legt fest, wie schnell die Verzögerung\\
-		Accel\_Release\_Rate\_TrqM & 100 - 2000 & des Fahrzeugs bei einem Loslassen des Gasdrehgriffs eingeleitet wird. Bei\\&& einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, kann es sich anfühlen, wie wenn das Fahrzeug für kurze Zeit\\&& weiterfährt.\\\hline
+		Accel\_Release\_Rate\_TrqM & 100 - 2000 & des Fahrzeugs bei einem Loslassen des Gasdrehgriffs eingeleitet wird. Bei\\&& einem geringen Wert wird der Übergang abrupt eingeleitet. Ist der Wert zu hoch eingestellt, kann es sich anfühlen, als würde sich das Fahrzeug für kurze Zeit\\&& weiterbewegen.\\\hline
 		Brake Rate 	& 0.1 - 5.0 s 		& Legt fest, wie lange es dauert, bis das\\
 		Brake\_Rate\_TrqM & 100 - 5000	& Bremsmoment bei einem startenden Bremsvorgang oder einem Fahrtrichtungswechsel aufgebaut wird. Größere Werte bedeuten einen\\&& schonenderen Bremsvorgang. \\\hline
 		Brake Release Rate	& 0.1 - 2.0 s 		& Beschreibt, wie schnell sich das Brems-\\
