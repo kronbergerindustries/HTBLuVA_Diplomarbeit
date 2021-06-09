@@ -1,26 +1,26 @@
 \chapter{Einleitung}
 
 \section{Motivation}
-Seit kurzem ist die E-Mobilität unter anderem ein neuer schulautonomer Schwerpunkt in der Abteilung Elektrotechnik, an der HTBLuVA-Salzburg. Passend zu diesem Schwerpunkt ergab sich die Idee ein Projekt zum Bereich E-Mobilität zu realisieren, um zukünftige Schüler dafür zu interessieren.
-Die E-Mobilität umfasst Elemente aus der Mechanik, Elektrotechnik, Kunststofftechnik und Informatik, das Projekt sollte so viele Fachgebiete wie möglich davon abdecken und darstellen können. Gleichzeitig kann diese Arbeit, eine Art Prototyp für neu entwickelte Elektromotorräder sein und nicht nur als Abschlussprojekt dienen.
+Seit kurzem ist die E-Mobilität unter anderem ein neuer schulautonomer Schwerpunkt in der Abteilung Elektrotechnik an der HTBLuVA-Salzburg. Passend zu diesem Schwerpunkt ergab sich die Idee, ein Projekt zum Bereich E-Mobilität zu realisieren, um das Interesse bei zukünftigen Schülern zu wecken.
+Die E-Mobilität umfasst Elemente aus der Mechanik, Elektrotechnik, Kunststofftechnik und Informatik, das Projekt sollte so viele Fachgebiete wie möglich davon abdecken und darstellen können. Gleichzeitig kann diese Arbeit eine Art Prototyp für neu entwickelte Elektromotorräder sein und nicht nur als Abschlussprojekt dienen.
 
-Das Umdenken der Gesellschaft von Verbrennungsmotoren auf Elektromotoren hat zur Folge, dass alltägliche Maschinen immer öfter mit Elektromotoren ausgestattet werden. Motorräder in dieser Größenordnung sind bis dato nicht vorhanden oder erhältlich. Es sind einige Firmen mit der Entwicklung dieser beschäftigt und es werden immer öfter neue Produkte präsentiert, doch diese Zeitalter ist erst am Anfang und benötigt noch Zeit.
+Das Umdenken der Gesellschaft von Verbrennungsmotoren auf Elektromotoren hat zur Folge, dass alltägliche Maschinen immer öfter mit Elektromotoren ausgestattet werden. Motorräder in dieser Größenordnung sind bis dato nicht vorhanden oder erhältlich. Es sind einige Firmen mit der Entwicklung von Elektromotorrädern beschäftigt und es werden immer öfter neue Produkte präsentiert, doch dieses Zeitalter ist erst am Anfang und benötigt noch Zeit.
 
-Für die Herstellung eines zugelassenen Motorrades ist der Umfang einer Diplomarbeit, aus zeitlichen, sowie budgetären Gründen nicht realisierbar und aus diesem Grund ist dieses Projekt ein Prototyp eines vielleicht zukünftigen Elektro-Sport-Motorades, welches die Verwirklichung des Systems wiedergeben soll.
+Für die Herstellung eines zugelassenen Motorrades ist der Umfang einer Diplomarbeit, aus zeitlichen, sowie budgetären Gründen nicht realisierbar und aus diesem Grund ist dieses Projekt ein Prototyp eines vielleicht zukünftigen Elektro-Sport-Motorrades, welches die Verwirklichung des Systems wiedergeben soll.
 
 \section{Zielsetzung}
 Ziel dieses Projektes war ein funktionierendes Motorrad, ohne Licht, Hupe oder sonstigen Zusatzfunktionen. Es sollte einfach das System funktionieren, welches die Fortbewegung ermöglichen soll. Das Betriebssystem soll funktionsfähig und die Versorgung über die Akkus sichergestellt sein. 
 
-Schlussendlich soll das Ergebnis ein fahrtüchtiges Elektromotorrad mit denselben Fähigkeit, wie das Original sein. Das Gewicht sollte wenn möglich reduziert, aber niemals erhöht werden. Die Zulassung wird in den darauffolgenden Jahren mit der Erweiterung von Licht, Hupe, und so weiter in der Studienzeit erlangt werden. Dieses Projekt soll Firmen das Interesse des Projektteams an einer Entwicklung eines solchen Produkts zeigen, um aus diesen Prototypen einmal einen Verkaufsartikel zu machen.
+Schlussendlich soll das Ergebnis ein fahrtüchtiges Elektromotorrad mit denselben Fähigkeit, wie das Original sein. Das Gewicht sollte wenn möglich reduziert, aber bei Möglichkeit nicht erhöht werden. Die Zulassung wird in den darauffolgenden Jahren mit der Erweiterung von Licht, Hupe, und so weiter in der Studienzeit erlangt werden. Dieses Projekt soll Firmen das Interesse des Projektteams an einer Entwicklung eines solchen Produkts zeigen, um aus diesen Prototypen einmal einen Verkaufsartikel zu machen.
 
-Die allgemeinen Funktionen sind die allbekannten. Fahren mit Spitzen bis zu 130 km/h, bremsen, ABS. Bei elektrischen Antrieben kann die Bremsleistung beim Bergabfahren wieder in den Akku eingespeist werden. Diese Funktion nennt sich Rekuperation und wird bei Elektroautos schon verwendet und soll natürlich auch bei dem Elektromotorrad genutzt werden.
+Die allgemeinen Funktionen sind die allbekannten: fahren mit Spitzen bis zu 130 km/h, bremsen, ABS. Bei elektrischen Antrieben kann die Bremsleistung beim Bergabfahren wieder in den Akku eingespeist werden. Diese Funktion nennt sich Rekuperation und wird bei Elektroautos schon verwendet und soll natürlich auch bei dem Elektromotorrad genutzt werden.
 \newpage
 
 \section{Topologie des Gesamtsystems}
 
 \subsection{Gesamtansicht}
 
-In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des Emissionsfreien-Sportmotorrads begutachten, ebenso kann man die einzelnen Teilbereiche grob erkennen:
+In den folgenden Abbildungen kann man das zusammengebaute Gesamtsystem des emissionsfreien Sportmotorrads begutachten, ebenso kann man die einzelnen Teilbereiche grob erkennen:
 
 \begin{figure} [H]
 	\begin{center}
@@ -74,7 +74,7 @@ Das gesamte Projekt lässt sich inhaltlich in vier unterschiedliche Teilbereiche
 
 Der mechanische Aufbau und die Kraftübertragung stellen die Grundkomponenten eines jeden Motorrads dar, die räumliche Aufteilung der anderen Bauteile wird hier vorgegeben. Die vom Motor umgesetzte Rotationsenergie wird mithilfe des Direkt-Getriebes in kinetische Antriebsenergie umgewandelt.
 
-Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient als Zwischenspeicher für die durch das Ladegerät hinzu geführten Netzenergie. Das zugehörige Batterie-Management-System ist für die elektrische Kontrolle und notwendige Ladungsausgleich der einzelnen Li-Ion-Zellen zuständig und steuert die Versorgung der weiteren Betriebsmittel, zusätzlich findet ein Datenaustausch mit den anderen Steuereinheiten über den CAN-Bus statt.
+Die Energieversorgung wird mittels eines Akkumulators realisiert, dieser dient als Zwischenspeicher für die durch das Ladegerät hinzugeführten Netzenergie. Das zugehörige Batterie-Management-System ist für die elektrische Kontrolle und dem notwendigen Ladungsausgleich der einzelnen Li-Ion-Zellen zuständig und steuert die Versorgung der weiteren Betriebsmittel, zusätzlich findet ein Datenaustausch mit den anderen Steuereinheiten über den CAN-Bus statt.
 
 Der Antrieb ist ebenso ein essenzieller Teil des Elektro-Motorrads, da die durch den Akkumulator zur Verfügung gestellte elektrische Energie mithilfe des Motorcontrollers im Motor in mechanisch nutzbare Rotationsenergie umgewandelt wird. Benutzerinteraktionen und Steuermöglichkeiten werden mithilfe der umfassenden Ein- und Ausgänge realisiert.
 
@@ -95,14 +95,14 @@ Die zentrale Steuereinheit sorgt für ein reibungsloses Interagieren der anderen
 
 Die folgenden Kapitel dieses Dokuments beschreiben die verschiedenen Aspekte des Projekts im Detail. 
 
-In Kapitel \ref{Stand der Technik} ist der Stand der Technik, der verwendeten Technologien, sowie kleinere Auszüge von Normen vorhanden. Dieses Kapitel soll einen Überblick über die Technologien gegeben. Diesem Abschnitt folgen die Kapitel zur Beschreibung des "emissionslosen Sportmotorrades". 
+In Kapitel \ref{Stand der Technik} ist der Stand der Technik der verwendeten Technologien, sowie kleinere Auszüge von Normen angeführt. Dieses Kapitel soll einen Überblick über die Technologien gegeben. Diesem Abschnitt folgen die Kapitel zur Beschreibung des "emissionslosen Sportmotorrades". 
 
-In Kapitel \ref{Mechanische Umsetzung} wird als erstes auf die mechanische Umsetzung von Gehäuse, Getriebe, Akkupacks, Akkukühlung und der Zusammenbau dieser Komponenten eingegangen. 
+In Kapitel \ref{Mechanische Umsetzung} wird als erstes auf die mechanische Umsetzung von Gehäuse, Getriebe, Akkupacks, Akkukühlung und dem Zusammenbau dieser Komponenten eingegangen. 
 
-Kapitel \ref{Akku und Ladekonzept} handelt vom Akku- und Ladekozept, in dem eine Übersicht über die Aufgaben der Energieversorgung und des Batteriemanagement gegeben wird, sowie die Energieversorgung dokumentiert ist. 
+Kapitel \ref{Akku und Ladekonzept} handelt vom Akku- und Ladekonzept, in dem eine Übersicht über die Aufgaben der Energieversorgung und des Batteriemanagementsystems gegeben wird, sowie die Energieversorgung dokumentiert ist. 
 
 Anschließend beschreibt Kapitel \ref{Antriebsstrang} die Übersicht, den Hardwareaufbau,den Softwareaufbau und die Inbetriebnahme des Antriebsstranges und gibt Einblicke in die Entwicklung der Motorsteuerung. 
 
-Als letztes wird in Kapitel \ref{Zentralsteuerung} Das Human-Computer-Interaction-System Beschrieben. Diese Kapitel beinhaltet die Beschreibung der Zentralsteuerung mit Fahrdatenspeicher, der Benutzeroberfläche am Display und Kommunikation mit der Motorsteuerung, die für den Betrieb entwickelt worden sind.
+Als letztes wird in Kapitel \ref{Zentralsteuerung} Das Human-Computer-Interaction-System beschrieben. Dieses Kapitel beinhaltet die Beschreibung der Zentralsteuerung mit Fahrdatenspeicher, der Benutzeroberfläche am Display und Kommunikation mit der Motorsteuerung, die für den Betrieb entwickelt worden sind.
 
-In nachfolgenden Teilbereichen gilt in den einzelnen Kapiteln eine interne Referenzierung auf einen Unterpunkt in selbigem Kapitel – heißt: „siehe Abschnitt 2.3“ bedeutet, dass besagter Punkt innerhalb des Kapitels nachzuschlagen ist.Wird allerdings auf Abschnitte oder Abbildungen verwiesen, die sich in einem anderen Kapitel befinden, so wird dies beispielsweise als „siehe Kapitel Stand der Technik Abschnitt 2.1.3“ angegeben. Die Namen der Kapitel sind dabei stets mit kursiver Schrift hervorgehoben, um eine bessere Lesbarkeit zu schaffen.
+In den nachfolgenden Teilbereichen gilt in den einzelnen Kapiteln eine interne Referenzierung auf einen Unterpunkt im selbigen Kapitel – heißt: „siehe Abschnitt 2.3“ bedeutet, dass besagter Punkt innerhalb des Kapitels nachzuschlagen ist. Wird allerdings auf Abschnitte oder Abbildungen verwiesen, die sich in einem anderen Kapitel befinden, so wird dies beispielsweise als „siehe Kapitel Stand der Technik Abschnitt 2.1.3“ angegeben. Die Namen der Kapitel sind dabei stets mit kursiver Schrift hervorgehoben, um eine bessere Lesbarkeit zu schaffen.
